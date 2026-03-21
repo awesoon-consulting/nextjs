@@ -1,0 +1,391 @@
+{
+  "nav": {
+    "home": "Home",
+    "solutions": "Solutions",
+    "insights": "Insights",
+    "about": "About",
+    "cta": "Get a Free Audit",
+    "openMenu": "Open navigation menu",
+    "closeMenu": "Close navigation menu",
+    "megaMenu": {
+      "groupOps": "Operations & Integration",
+      "groupImplementation": "Implementation & Advisory",
+      "opsOutgrown": "Ops Outgrown Tools",
+      "spreadsheetOps": "Spreadsheet Operations",
+      "systemIntegration": "System Integration",
+      "apiIntegrations": "API Integrations",
+      "erpImpl": "ERP Implementation",
+      "crmImpl": "CRM Implementation",
+      "vendorMgmt": "Vendor Management",
+      "systemsAudit": "Free Systems Audit"
+    }
+  },
+  "hero": {
+    "headline": "Your ops outgrew your tools. We fix that.",
+    "subtext": "We help mid-market manufacturing, distribution, and industrial companies build connected systems, scalable infrastructure, and operational clarity — so you can grow without the chaos.",
+    "primaryCta": "Get a Free Systems Audit",
+    "secondaryCta": "See How We Work",
+    "trustBadge": "Trusted by operations leaders across North America"
+  },
+  "whoWeHelp": {
+    "title": "Who We Help",
+    "subtitle": "We specialize in B2B operations for companies with 10–500 employees in complex, process-driven industries.",
+    "industries": {
+      "manufacturing": {
+        "title": "Manufacturing",
+        "description": "Job shops, contract manufacturers, and OEMs who need their production, inventory, and finance systems to work as one."
+      },
+      "distribution": {
+        "title": "Distribution & Logistics",
+        "description": "Distributors and 3PLs struggling with disconnected order management, warehouse ops, and carrier integrations."
+      },
+      "industrial": {
+        "title": "Industrial Services",
+        "description": "Field service, maintenance, and specialty contractors who've outgrown spreadsheets and need real operational infrastructure."
+      },
+      "other": {
+        "title": "Other B2B Operations",
+        "description": "Any B2B business with operational complexity that has outpaced its current toolset."
+      }
+    }
+  },
+  "differentiators": {
+    "title": "Why Operations Leaders Choose Awesoon",
+    "subtitle": "We're not a big-four consulting firm. We're operators who've been in the weeds and built the systems to get out.",
+    "items": [
+      {
+        "title": "Operator-led, not analyst-led",
+        "description": "Our team has run operations at real companies. We understand what it feels like to manage a warehouse with 3 systems that don't talk to each other."
+      },
+      {
+        "title": "Systems-first thinking",
+        "description": "We design around your actual workflows, not around software vendor demos. Technology should serve your operations, not the other way around."
+      },
+      {
+        "title": "Implementation-obsessed",
+        "description": "We don't just give you a report and walk away. We stay until the system is live, the team is trained, and the data is accurate."
+      },
+      {
+        "title": "Right-sized for mid-market",
+        "description": "Most consulting firms ignore companies under $100M. We've built our entire practice around the specific challenges of mid-market operations."
+      }
+    ]
+  },
+  "process": {
+    "title": "How We Work",
+    "subtitle": "A proven four-step engagement model that gets you from chaos to clarity.",
+    "steps": [
+      {
+        "number": "01",
+        "title": "Systems Audit",
+        "description": "We map your current tools, integrations, data flows, and workflows. You'll get a complete picture of where your operational complexity lives — and what it's costing you."
+      },
+      {
+        "number": "02",
+        "title": "Solution Design",
+        "description": "We design a connected system architecture tailored to your operations. No generic playbooks — every recommendation is specific to your team, your processes, and your budget."
+      },
+      {
+        "number": "03",
+        "title": "Implementation",
+        "description": "We manage the full implementation: vendor selection, configuration, data migration, integrations, and change management. We do the heavy lifting."
+      },
+      {
+        "number": "04",
+        "title": "Stabilization & Handoff",
+        "description": "We don't disappear at go-live. We stay through stabilization, train your team, document everything, and make sure your ops team is confident and capable."
+      }
+    ]
+  },
+  "solutions": {
+    "title": "Solutions",
+    "subtitle": "Every engagement starts with a deep understanding of your operations. Here are the most common problems we solve.",
+    "learnMore": "Learn more",
+    "cards": {
+      "opsOutgrown": {
+        "title": "Ops Outgrown Your Tools",
+        "description": "Your business has scaled but your systems haven't kept up. We design and implement the infrastructure your next stage of growth demands.",
+        "slug": "ops-outgrown-tools"
+      },
+      "spreadsheetOps": {
+        "title": "Spreadsheet Operations",
+        "description": "Running a mid-market company on Excel is a liability. We replace spreadsheet-dependent processes with reliable, scalable systems.",
+        "slug": "spreadsheet-operations"
+      },
+      "systemIntegration": {
+        "title": "System Integration",
+        "description": "Disconnected systems create manual work, errors, and blind spots. We connect your tools so data flows automatically where it needs to go.",
+        "slug": "system-integration"
+      },
+      "erpImplementation": {
+        "title": "ERP Implementation",
+        "description": "ERP projects fail when led by vendors. We're on your side — selecting, configuring, and implementing an ERP that actually fits your operations.",
+        "slug": "erp-implementation"
+      },
+      "crmImplementation": {
+        "title": "CRM Implementation",
+        "description": "Your sales team needs more than a contact database. We implement CRMs that give your team pipeline visibility, forecasting, and actionable data.",
+        "slug": "crm-implementation"
+      },
+      "apiIntegrations": {
+        "title": "API Integrations",
+        "description": "Manual data transfer between systems is a productivity tax. We build the integrations that eliminate re-keying, reduce errors, and save hours every week.",
+        "slug": "api-integrations"
+      },
+      "vendorManagement": {
+        "title": "Vendor Management & Selection",
+        "description": "Choosing the wrong software is expensive. We run a structured vendor selection process so you choose the right tool for your specific operations.",
+        "slug": "vendor-management"
+      },
+      "systemsAudit": {
+        "title": "Systems Audit",
+        "description": "Don't know where to start? Our systems audit gives you a complete map of your operational tech stack, gaps, and a prioritized roadmap for improvement.",
+        "slug": "systems-audit"
+      }
+    }
+  },
+  "insights": {
+    "title": "Operational Insights",
+    "subtitle": "Practical guidance from operators who've been in the weeds.",
+    "readMore": "Read more",
+    "allPosts": "All posts",
+    "categories": {
+      "erp": "ERP",
+      "integration": "Integration",
+      "operations": "Operations",
+      "strategy": "Strategy",
+      "technology": "Technology"
+    },
+    "noPosts": "No posts yet. Check back soon."
+  },
+  "about": {
+    "title": "About Awesoon",
+    "hero": {
+      "headline": "Built by operators, for operators.",
+      "subtext": "We started Awesoon because we lived the problem. We've managed operations at growing companies and watched good businesses suffer because their systems couldn't keep up."
+    },
+    "mission": {
+      "title": "Our Mission",
+      "text": "To give every mid-market operations team the connected systems and operational clarity they need to compete and grow — without the bloated fees and cookie-cutter solutions of traditional consulting."
+    },
+    "values": {
+      "title": "Our Values",
+      "items": [
+        {
+          "title": "Honesty over polish",
+          "description": "We'll tell you what we actually think, not what sounds good in a slide deck."
+        },
+        {
+          "title": "Implementation over advice",
+          "description": "Recommendations are worth nothing if they're never executed. We build it with you."
+        },
+        {
+          "title": "Right-fit over best-in-class",
+          "description": "The best system for you is the one your team will actually use. We optimize for adoption."
+        },
+        {
+          "title": "Long-term over quick wins",
+          "description": "We design for where your business is going, not just where it is today."
+        }
+      ]
+    },
+    "team": {
+      "title": "The Team",
+      "subtitle": "Operations consultants with real-world operator experience."
+    },
+    "cta": {
+      "headline": "Ready to fix your operations?",
+      "subtext": "Let's start with a free systems audit. No pitch deck, no sales pressure — just a clear-eyed look at where your operations stand and what it would take to level up.",
+      "button": "Book a Free Audit"
+    }
+  },
+  "contact": {
+    "title": "Get a Free Systems Audit",
+    "subtitle": "Tell us about your operations and we'll schedule a no-pressure discovery call.",
+    "steps": {
+      "1": "Your Business",
+      "2": "Your Challenges",
+      "3": "Timeline & Budget",
+      "4": "Your Details"
+    },
+    "fields": {
+      "industry": "Industry",
+      "companySize": "Company Size",
+      "problems": "What are your biggest operational challenges?",
+      "timeline": "When are you looking to start?",
+      "budget": "Budget Range",
+      "name": "Full Name",
+      "company": "Company Name",
+      "email": "Work Email",
+      "phone": "Phone (optional)",
+      "message": "Anything else you'd like to share?"
+    },
+    "placeholders": {
+      "name": "Jane Smith",
+      "company": "Acme Manufacturing Inc.",
+      "email": "jane@acmemfg.com",
+      "phone": "+1 (555) 000-0000",
+      "message": "Tell us more about your situation..."
+    },
+    "industries": {
+      "manufacturing": "Manufacturing",
+      "distribution": "Distribution & Logistics",
+      "industrial": "Industrial Services",
+      "other": "Other B2B Operations"
+    },
+    "companySizes": {
+      "small": "10–50 employees",
+      "medium": "51–200 employees",
+      "large": "201–500 employees",
+      "enterprise": "500+ employees"
+    },
+    "problems": {
+      "outgrown": "Systems can't keep up with our growth",
+      "spreadsheets": "Running key processes on spreadsheets",
+      "disconnected": "Systems don't talk to each other",
+      "manual": "Too much manual data entry and workarounds",
+      "noScalability": "No clear path to scale our operations"
+    },
+    "timelines": {
+      "asap": "As soon as possible",
+      "oneToThree": "1–3 months",
+      "threeToSix": "3–6 months",
+      "exploring": "Just exploring options"
+    },
+    "budgets": {
+      "under25k": "Under $25,000",
+      "25kTo75k": "$25,000–$75,000",
+      "75kTo150k": "$75,000–$150,000",
+      "over150k": "$150,000+",
+      "preferNotToSay": "Prefer not to say"
+    },
+    "buttons": {
+      "next": "Next Step",
+      "back": "Back",
+      "submit": "Submit Request",
+      "submitting": "Submitting..."
+    },
+    "validation": {
+      "nameRequired": "Full name is required.",
+      "emailRequired": "Work email is required.",
+      "emailInvalid": "Please enter a valid email address.",
+      "companyRequired": "Company name is required.",
+      "industryRequired": "Please select your industry.",
+      "companySizeRequired": "Please select your company size.",
+      "problemRequired": "Please select at least one challenge.",
+      "timelineRequired": "Please select a timeline.",
+      "budgetRequired": "Please select a budget range."
+    },
+    "success": {
+      "title": "We've received your request!",
+      "message": "Thank you for reaching out. Sarah Chen, our Operations Lead, will be in touch within 1 business day to schedule your free systems audit.",
+      "responderName": "Sarah Chen",
+      "responderTitle": "Operations Lead, Awesoon"
+    },
+    "error": {
+      "generic": "Something went wrong. Please try again or email us directly at hello@awesoon.com.",
+      "rateLimit": "Too many submissions. Please wait a moment before trying again."
+    }
+  },
+  "footer": {
+    "tagline": "Your ops outgrew your tools. We fix that.",
+    "solutions": "Solutions",
+    "company": "Company",
+    "legal": "Legal",
+    "privacy": "Privacy Policy",
+    "terms": "Terms of Service",
+    "cookies": "Cookie Policy",
+    "copyright": "© {year} Awesoon. All rights reserved.",
+    "noTracking": "No cookies set without your consent.",
+    "madeWith": "Built with care in Montreal."
+  },
+  "cookie": {
+    "banner": {
+      "title": "We use cookies",
+      "description": "We use essential cookies to make our site work. With your permission, we'd also like to use analytics cookies to understand how you use our site and improve your experience.",
+      "acceptAll": "Accept All",
+      "rejectAll": "Reject All",
+      "manage": "Manage Preferences",
+      "learnMore": "Learn more about our cookie policy"
+    },
+    "manager": {
+      "title": "Manage Cookie Preferences",
+      "save": "Save Preferences",
+      "categories": {
+        "necessary": {
+          "title": "Necessary Cookies",
+          "description": "These cookies are required for the site to function. They cannot be disabled.",
+          "alwaysOn": "Always On"
+        },
+        "analytics": {
+          "title": "Analytics Cookies",
+          "description": "These cookies help us understand how visitors use our site. We use Google Analytics 4. No personal data is sent without your consent."
+        },
+        "marketing": {
+          "title": "Marketing Cookies",
+          "description": "These cookies are used to deliver relevant ads and track campaign effectiveness. Currently, we do not use any marketing cookies."
+        }
+      }
+    }
+  },
+  "privacy": {
+    "title": "Privacy Policy",
+    "lastUpdated": "Last updated: March 21, 2026",
+    "effectiveDate": "Effective date: March 21, 2026"
+  },
+  "terms": {
+    "title": "Terms of Service",
+    "lastUpdated": "Last updated: March 21, 2026"
+  },
+  "cookies": {
+    "title": "Cookie Policy",
+    "lastUpdated": "Last updated: March 21, 2026"
+  },
+  "notFound": {
+    "title": "Page Not Found",
+    "headline": "We couldn't find that page.",
+    "message": "It may have been moved, or the URL might be incorrect.",
+    "homeCta": "Go to Homepage",
+    "contactCta": "Contact Us"
+  },
+  "common": {
+    "loading": "Loading...",
+    "error": "An error occurred. Please try again.",
+    "success": "Success!",
+    "required": "Required",
+    "optional": "Optional",
+    "learnMore": "Learn more",
+    "getStarted": "Get started",
+    "backToHome": "Back to homepage",
+    "skipToContent": "Skip to main content"
+  },
+  "sitemap": {
+    "title": "Sitemap"
+  },
+  "problemSolutions": {
+    "title": "Recognize Any of These?",
+    "subtitle": "If your operations look like this, we've built the playbook to fix it.",
+    "items": [
+      {
+        "problem": "\"We have 4 systems and none of them talk to each other.\"",
+        "solution": "System Integration",
+        "slug": "system-integration"
+      },
+      {
+        "problem": "\"Our entire order process lives in a spreadsheet.\"",
+        "solution": "Spreadsheet Operations",
+        "slug": "spreadsheet-operations"
+      },
+      {
+        "problem": "\"We bought an ERP 2 years ago and we're still not live.\"",
+        "solution": "ERP Implementation",
+        "slug": "erp-implementation"
+      },
+      {
+        "problem": "\"We don't know what's in our warehouse until we physically count it.\"",
+        "solution": "Ops Infrastructure",
+        "slug": "ops-outgrown-tools"
+      }
+    ]
+  }
+}

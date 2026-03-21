@@ -1,26 +1,222 @@
 @import "tailwindcss";
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
-
 @theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+  --font-heading: var(--font-heading);
+  --font-body: var(--font-body);
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+/* ─────────────────────────────────────────────────────────────
+   CSS VARIABLES — Design token bridge for light / dark mode
+   All values map to theme.ts tokens. Dark mode overrides below.
+   ───────────────────────────────────────────────────────────── */
+:root {
+  --color-primary: #0F1B2D;
+  --color-secondary: #1E3A5F;
+  --color-accent: #F59E0B;
+  --color-surface: #FAFAF7;
+  --color-surface-elevated: #FFFFFF;
+  --color-text: #0F1B2D;
+  --color-text-secondary: #4A4A42;
+  --color-text-muted: #9B9B90;
+  --color-border: #E8E8E2;
+
+  /* Transition speed for theme switching */
+  --theme-transition: 200ms ease;
+}
+
+/* Dark mode overrides */
+.dark {
+  --color-surface: #0F1B2D;
+  --color-surface-elevated: #1E3A5F;
+  --color-text: #FAFAF7;
+  --color-text-secondary: #D1D1C8;
+  --color-text-muted: #6B6B60;
+  --color-border: #1E3A5F;
+}
+
+/* ─────────────────────────────────────────────────────────────
+   GLOBAL RESET & BASE
+   ───────────────────────────────────────────────────────────── */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  /* Smooth theme transitions on every property that changes */
+  transition: background-color var(--theme-transition), color var(--theme-transition);
 }
 
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  background-color: #FAFAF7;
+  color: #0F1B2D;
+  font-family: var(--font-body, 'Inter', sans-serif);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  transition: background-color var(--theme-transition), color var(--theme-transition);
+}
+
+.dark body {
+  background-color: #0F1B2D;
+  color: #FAFAF7;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-heading, 'Sora', sans-serif);
+}
+
+/* ─────────────────────────────────────────────────────────────
+   FOCUS STATES
+   ───────────────────────────────────────────────────────────── */
+:focus-visible {
+  outline: 2px solid #F59E0B;
+  outline-offset: 3px;
+  border-radius: 4px;
+}
+
+a, button {
+  transition-property: color, background-color, border-color, box-shadow, opacity, transform;
+  transition-duration: 150ms;
+  transition-timing-function: ease-in-out;
+}
+
+/* ─────────────────────────────────────────────────────────────
+   VIEWPORT ENTRY ANIMATION KEYFRAMES
+   All used by AnimateIn.tsx via inline styles (no class needed),
+   but kept here as reference + for direct CSS use in Hero etc.
+   ───────────────────────────────────────────────────────────── */
+@keyframes fade-in {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
+
+@keyframes slide-up {
+  from { opacity: 0; transform: translateY(32px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes slide-down {
+  from { opacity: 0; transform: translateY(-24px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes slide-left {
+  from { opacity: 0; transform: translateX(-32px); }
+  to   { opacity: 1; transform: translateX(0); }
+}
+
+@keyframes slide-right {
+  from { opacity: 0; transform: translateX(32px); }
+  to   { opacity: 1; transform: translateX(0); }
+}
+
+@keyframes scale-in {
+  from { opacity: 0; transform: scale(0.92); }
+  to   { opacity: 1; transform: scale(1); }
+}
+
+/* Hero stagger helpers — used directly on Hero section elements */
+@keyframes hero-badge {
+  from { opacity: 0; transform: translateY(-12px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+/* Form step transitions */
+@keyframes slide-in-from-right-4 {
+  from { transform: translateX(1rem); }
+  to   { transform: translateX(0); }
+}
+
+/* Mega menu drop */
+@keyframes menu-drop {
+  from { opacity: 0; transform: translateY(-8px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+/* Floating CTA pulse ring */
+@keyframes ping-slow {
+  0%   { transform: scale(1);    opacity: 0.4; }
+  80%  { transform: scale(1.6);  opacity: 0; }
+  100% { transform: scale(1.6);  opacity: 0; }
+}
+
+/* ─────────────────────────────────────────────────────────────
+   ANIMATION UTILITY CLASSES
+   ───────────────────────────────────────────────────────────── */
+.animate-in {
+  animation-fill-mode: both;
+  animation-duration: 600ms;
+  animation-timing-function: cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.anim-fade-in       { animation-name: fade-in; }
+.anim-slide-up      { animation-name: slide-up; }
+.anim-slide-down    { animation-name: slide-down; }
+.anim-slide-left    { animation-name: slide-left; }
+.anim-slide-right   { animation-name: slide-right; }
+.anim-scale-in      { animation-name: scale-in; }
+.anim-hero-badge    { animation-name: hero-badge; }
+.anim-menu-drop     { animation-name: menu-drop; }
+
+/* Stagger delays — apply to children */
+.delay-0   { animation-delay: 0ms; }
+.delay-100 { animation-delay: 100ms; }
+.delay-150 { animation-delay: 150ms; }
+.delay-200 { animation-delay: 200ms; }
+.delay-300 { animation-delay: 300ms; }
+.delay-400 { animation-delay: 400ms; }
+.delay-500 { animation-delay: 500ms; }
+.delay-600 { animation-delay: 600ms; }
+.delay-700 { animation-delay: 700ms; }
+
+/* Ping animation for floating CTA */
+.animate-ping-slow {
+  animation: ping-slow 2.5s cubic-bezier(0, 0, 0.2, 1) infinite;
+}
+
+/* ─────────────────────────────────────────────────────────────
+   REDUCE MOTION — respect user OS preference
+   ───────────────────────────────────────────────────────────── */
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
+
+/* ─────────────────────────────────────────────────────────────
+   SCREEN READER UTILITIES
+   ───────────────────────────────────────────────────────────── */
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border-width: 0;
+}
+
+.sr-only:focus {
+  position: fixed;
+  width: auto;
+  height: auto;
+  padding: 0.5rem 1rem;
+  margin: 0;
+  overflow: visible;
+  clip: auto;
+  white-space: normal;
+}
+
+/* ─────────────────────────────────────────────────────────────
+   SELECTION COLOR
+   ───────────────────────────────────────────────────────────── */
+::selection {
+  background-color: #F59E0B;
+  color: #0F1B2D;
 }

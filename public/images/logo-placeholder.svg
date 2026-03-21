@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 48" fill="none">
+  <rect width="200" height="48" rx="4" fill="#0F1B2D"/>
+  <!-- Circuit node icon -->
+  <g transform="translate(8, 8)">
+    <circle cx="16" cy="16" r="4" fill="#F59E0B"/>
+    <circle cx="4" cy="4" r="2" fill="#1E3A5F" stroke="#F59E0B" strokeWidth="1"/>
+    <circle cx="28" cy="4" r="2" fill="#1E3A5F" stroke="#F59E0B" strokeWidth="1"/>
+    <circle cx="4" cy="28" r="2" fill="#1E3A5F" stroke="#F59E0B" strokeWidth="1"/>
+    <circle cx="28" cy="28" r="2" fill="#1E3A5F" stroke="#F59E0B" strokeWidth="1"/>
+    <line x1="4" y1="4" x2="16" y2="16" stroke="#F59E0B" strokeWidth="1" opacity="0.6"/>
+    <line x1="28" y1="4" x2="16" y2="16" stroke="#F59E0B" strokeWidth="1" opacity="0.6"/>
+    <line x1="4" y1="28" x2="16" y2="16" stroke="#F59E0B" strokeWidth="1" opacity="0.6"/>
+    <line x1="28" y1="28" x2="16" y2="16" stroke="#F59E0B" strokeWidth="1" opacity="0.6"/>
+  </g>
+  <!-- Wordmark -->
+  <text x="50" y="32" fontFamily="Sora, sans-serif" fontSize="20" fontWeight="700" fill="#FAFAF7" letterSpacing="-0.5">Awesoon</text>
+</svg>

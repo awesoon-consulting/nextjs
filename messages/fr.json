@@ -1,0 +1,392 @@
+{
+  "_note": "TODO: Professional French translation review required. These are machine-translated placeholders.",
+  "nav": {
+    "home": "Accueil",
+    "solutions": "Solutions",
+    "insights": "Perspectives",
+    "about": "À propos",
+    "cta": "Audit gratuit",
+    "openMenu": "Ouvrir le menu de navigation",
+    "closeMenu": "Fermer le menu de navigation",
+    "megaMenu": {
+      "groupOps": "Opérations & Intégration",
+      "groupImplementation": "Implémentation & Conseil",
+      "opsOutgrown": "Opérations dépassées",
+      "spreadsheetOps": "Opérations sur tableurs",
+      "systemIntegration": "Intégration de systèmes",
+      "apiIntegrations": "Intégrations API",
+      "erpImpl": "Implémentation ERP",
+      "crmImpl": "Implémentation CRM",
+      "vendorMgmt": "Gestion des fournisseurs",
+      "systemsAudit": "Audit gratuit des systèmes"
+    }
+  },
+  "hero": {
+    "headline": "Vos opérations ont dépassé vos outils. Nous réglons ça.",
+    "subtext": "Nous aidons les entreprises manufacturières, de distribution et industrielles à bâtir des systèmes connectés, une infrastructure évolutive et une clarté opérationnelle — pour que vous puissiez croître sans le chaos.",
+    "primaryCta": "Obtenir un audit gratuit",
+    "secondaryCta": "Voir comment nous travaillons",
+    "trustBadge": "Reconnu par les leaders opérationnels en Amérique du Nord"
+  },
+  "whoWeHelp": {
+    "title": "Qui nous aidons",
+    "subtitle": "Nous nous spécialisons dans les opérations B2B pour les entreprises de 10 à 500 employés dans des secteurs complexes.",
+    "industries": {
+      "manufacturing": {
+        "title": "Fabrication",
+        "description": "Ateliers de travail, fabricants sous contrat et OEM qui ont besoin que leurs systèmes de production, d'inventaire et de finance fonctionnent comme un tout."
+      },
+      "distribution": {
+        "title": "Distribution et logistique",
+        "description": "Distributeurs et 3PL aux prises avec des systèmes de gestion des commandes, des opérations d'entrepôt et des intégrations de transporteurs déconnectés."
+      },
+      "industrial": {
+        "title": "Services industriels",
+        "description": "Entrepreneurs en services sur le terrain, en maintenance et spécialisés qui ont dépassé les feuilles de calcul et ont besoin d'une véritable infrastructure opérationnelle."
+      },
+      "other": {
+        "title": "Autres opérations B2B",
+        "description": "Toute entreprise B2B dont la complexité opérationnelle a dépassé sa boîte à outils actuelle."
+      }
+    }
+  },
+  "differentiators": {
+    "title": "Pourquoi les leaders opérationnels choisissent Awesoon",
+    "subtitle": "Nous ne sommes pas un cabinet de conseil. Nous sommes des opérateurs qui ont vécu le problème.",
+    "items": [
+      {
+        "title": "Dirigé par des opérateurs, pas des analystes",
+        "description": "Notre équipe a géré des opérations dans de vraies entreprises. Nous comprenons ce que c'est de gérer un entrepôt avec 3 systèmes qui ne se parlent pas."
+      },
+      {
+        "title": "Pensée axée sur les systèmes",
+        "description": "Nous concevons autour de vos flux de travail réels, pas autour des démos de fournisseurs de logiciels. La technologie doit servir vos opérations, pas l'inverse."
+      },
+      {
+        "title": "Obsédés par l'implémentation",
+        "description": "Nous ne vous donnons pas seulement un rapport et disparaissons. Nous restons jusqu'à ce que le système soit en direct, l'équipe formée et les données exactes."
+      },
+      {
+        "title": "Adapté au marché intermédiaire",
+        "description": "La plupart des cabinets de conseil ignorent les entreprises de moins de 100 M$. Nous avons construit toute notre pratique autour des défis spécifiques des opérations du marché intermédiaire."
+      }
+    ]
+  },
+  "process": {
+    "title": "Comment nous travaillons",
+    "subtitle": "Un modèle d'engagement éprouvé en quatre étapes pour passer du chaos à la clarté.",
+    "steps": [
+      {
+        "number": "01",
+        "title": "Audit des systèmes",
+        "description": "Nous cartographions vos outils, intégrations, flux de données et flux de travail actuels. Vous obtiendrez une image complète de l'endroit où vit votre complexité opérationnelle."
+      },
+      {
+        "number": "02",
+        "title": "Conception de la solution",
+        "description": "Nous concevons une architecture de système connecté adaptée à vos opérations. Pas de manuels génériques — chaque recommandation est spécifique à votre équipe, vos processus et votre budget."
+      },
+      {
+        "number": "03",
+        "title": "Implémentation",
+        "description": "Nous gérons l'implémentation complète: sélection des fournisseurs, configuration, migration des données, intégrations et gestion du changement. Nous faisons le gros du travail."
+      },
+      {
+        "number": "04",
+        "title": "Stabilisation et transfert",
+        "description": "Nous ne disparaissons pas au lancement. Nous restons pendant la stabilisation, formons votre équipe, documentons tout et nous assurons que votre équipe opérationnelle est confiante et capable."
+      }
+    ]
+  },
+  "solutions": {
+    "title": "Solutions",
+    "subtitle": "Chaque engagement commence par une compréhension approfondie de vos opérations.",
+    "learnMore": "En savoir plus",
+    "cards": {
+      "opsOutgrown": {
+        "title": "Opérations dépassées",
+        "description": "Votre entreprise a évolué mais vos systèmes n'ont pas suivi. Nous concevons et implémentons l'infrastructure que votre prochaine étape de croissance exige.",
+        "slug": "ops-outgrown-tools"
+      },
+      "spreadsheetOps": {
+        "title": "Opérations sur feuilles de calcul",
+        "description": "Gérer une entreprise du marché intermédiaire sur Excel est un risque. Nous remplaçons les processus dépendants des feuilles de calcul par des systèmes fiables et évolutifs.",
+        "slug": "spreadsheet-operations"
+      },
+      "systemIntegration": {
+        "title": "Intégration des systèmes",
+        "description": "Les systèmes déconnectés créent du travail manuel, des erreurs et des angles morts. Nous connectons vos outils pour que les données circulent automatiquement.",
+        "slug": "system-integration"
+      },
+      "erpImplementation": {
+        "title": "Implémentation ERP",
+        "description": "Les projets ERP échouent quand ils sont dirigés par les fournisseurs. Nous sommes de votre côté — sélectionnant, configurant et implémentant un ERP qui correspond réellement à vos opérations.",
+        "slug": "erp-implementation"
+      },
+      "crmImplementation": {
+        "title": "Implémentation CRM",
+        "description": "Votre équipe de vente a besoin de plus qu'une base de données de contacts. Nous implémentons des CRM qui donnent à votre équipe une visibilité sur le pipeline et des données exploitables.",
+        "slug": "crm-implementation"
+      },
+      "apiIntegrations": {
+        "title": "Intégrations API",
+        "description": "Le transfert manuel de données entre systèmes est une taxe sur la productivité. Nous construisons les intégrations qui éliminent la re-saisie et économisent des heures chaque semaine.",
+        "slug": "api-integrations"
+      },
+      "vendorManagement": {
+        "title": "Gestion des fournisseurs",
+        "description": "Choisir le mauvais logiciel est coûteux. Nous effectuons un processus structuré de sélection des fournisseurs pour que vous choisissiez le bon outil pour vos opérations spécifiques.",
+        "slug": "vendor-management"
+      },
+      "systemsAudit": {
+        "title": "Audit des systèmes",
+        "description": "Vous ne savez pas par où commencer? Notre audit des systèmes vous donne une carte complète de votre stack technologique opérationnel, des lacunes et une feuille de route priorisée.",
+        "slug": "systems-audit"
+      }
+    }
+  },
+  "insights": {
+    "title": "Perspectives opérationnelles",
+    "subtitle": "Des conseils pratiques d'opérateurs qui ont été dans les tranchées.",
+    "readMore": "Lire la suite",
+    "allPosts": "Tous les articles",
+    "categories": {
+      "erp": "ERP",
+      "integration": "Intégration",
+      "operations": "Opérations",
+      "strategy": "Stratégie",
+      "technology": "Technologie"
+    },
+    "noPosts": "Aucun article pour l'instant. Revenez bientôt."
+  },
+  "about": {
+    "title": "À propos d'Awesoon",
+    "hero": {
+      "headline": "Construit par des opérateurs, pour des opérateurs.",
+      "subtext": "Nous avons fondé Awesoon parce que nous avons vécu le problème. Nous avons géré des opérations dans des entreprises en croissance et regardé de bonnes entreprises souffrir parce que leurs systèmes ne pouvaient pas suivre."
+    },
+    "mission": {
+      "title": "Notre mission",
+      "text": "Donner à chaque équipe d'opérations du marché intermédiaire les systèmes connectés et la clarté opérationnelle dont elle a besoin pour concurrencer et croître."
+    },
+    "values": {
+      "title": "Nos valeurs",
+      "items": [
+        {
+          "title": "Honnêteté avant tout",
+          "description": "Nous vous dirons ce que nous pensons vraiment, pas ce qui sonne bien dans un diaporama."
+        },
+        {
+          "title": "Implémentation, pas seulement conseils",
+          "description": "Les recommandations ne valent rien si elles ne sont jamais exécutées. Nous construisons avec vous."
+        },
+        {
+          "title": "Adapté plutôt que meilleur en classe",
+          "description": "Le meilleur système pour vous est celui que votre équipe utilisera réellement."
+        },
+        {
+          "title": "Long terme plutôt que gains rapides",
+          "description": "Nous concevons pour où votre entreprise se dirige, pas seulement où elle est aujourd'hui."
+        }
+      ]
+    },
+    "team": {
+      "title": "L'équipe",
+      "subtitle": "Des consultants en opérations avec une véritable expérience d'opérateur."
+    },
+    "cta": {
+      "headline": "Prêt à améliorer vos opérations?",
+      "subtext": "Commençons par un audit des systèmes gratuit. Pas de présentation commerciale, pas de pression — juste un regard objectif sur vos opérations.",
+      "button": "Réserver un audit gratuit"
+    }
+  },
+  "contact": {
+    "title": "Obtenez un audit des systèmes gratuit",
+    "subtitle": "Parlez-nous de vos opérations et nous programmerons un appel de découverte sans pression.",
+    "steps": {
+      "1": "Votre entreprise",
+      "2": "Vos défis",
+      "3": "Calendrier et budget",
+      "4": "Vos coordonnées"
+    },
+    "fields": {
+      "industry": "Secteur",
+      "companySize": "Taille de l'entreprise",
+      "problems": "Quels sont vos plus grands défis opérationnels?",
+      "timeline": "Quand souhaitez-vous commencer?",
+      "budget": "Budget",
+      "name": "Nom complet",
+      "company": "Nom de l'entreprise",
+      "email": "Courriel professionnel",
+      "phone": "Téléphone (optionnel)",
+      "message": "Autre chose à partager?"
+    },
+    "placeholders": {
+      "name": "Jean Tremblay",
+      "company": "Fabrication Acme Inc.",
+      "email": "jean@acmefab.com",
+      "phone": "+1 (555) 000-0000",
+      "message": "Dites-nous en plus sur votre situation..."
+    },
+    "industries": {
+      "manufacturing": "Fabrication",
+      "distribution": "Distribution et logistique",
+      "industrial": "Services industriels",
+      "other": "Autres opérations B2B"
+    },
+    "companySizes": {
+      "small": "10–50 employés",
+      "medium": "51–200 employés",
+      "large": "201–500 employés",
+      "enterprise": "500+ employés"
+    },
+    "problems": {
+      "outgrown": "Les systèmes ne peuvent pas suivre notre croissance",
+      "spreadsheets": "Processus clés sur des feuilles de calcul",
+      "disconnected": "Les systèmes ne communiquent pas entre eux",
+      "manual": "Trop de saisie manuelle et de solutions de contournement",
+      "noScalability": "Pas de chemin clair pour faire évoluer nos opérations"
+    },
+    "timelines": {
+      "asap": "Dès que possible",
+      "oneToThree": "1–3 mois",
+      "threeToSix": "3–6 mois",
+      "exploring": "Juste en train d'explorer les options"
+    },
+    "budgets": {
+      "under25k": "Moins de 25 000 $",
+      "25kTo75k": "25 000 $ – 75 000 $",
+      "75kTo150k": "75 000 $ – 150 000 $",
+      "over150k": "150 000 $+",
+      "preferNotToSay": "Préfère ne pas dire"
+    },
+    "buttons": {
+      "next": "Étape suivante",
+      "back": "Retour",
+      "submit": "Envoyer la demande",
+      "submitting": "Envoi en cours..."
+    },
+    "validation": {
+      "nameRequired": "Le nom complet est requis.",
+      "emailRequired": "L'adresse courriel professionnelle est requise.",
+      "emailInvalid": "Veuillez entrer une adresse courriel valide.",
+      "companyRequired": "Le nom de l'entreprise est requis.",
+      "industryRequired": "Veuillez sélectionner votre secteur.",
+      "companySizeRequired": "Veuillez sélectionner la taille de votre entreprise.",
+      "problemRequired": "Veuillez sélectionner au moins un défi.",
+      "timelineRequired": "Veuillez sélectionner un calendrier.",
+      "budgetRequired": "Veuillez sélectionner une fourchette de budget."
+    },
+    "success": {
+      "title": "Nous avons reçu votre demande!",
+      "message": "Merci de nous avoir contactés. Sarah Chen, notre responsable des opérations, vous contactera dans un délai d'un jour ouvrable.",
+      "responderName": "Sarah Chen",
+      "responderTitle": "Responsable des opérations, Awesoon"
+    },
+    "error": {
+      "generic": "Une erreur s'est produite. Veuillez réessayer ou nous écrire directement à hello@awesoon.com.",
+      "rateLimit": "Trop de soumissions. Veuillez attendre un moment avant de réessayer."
+    }
+  },
+  "footer": {
+    "tagline": "Vos opérations ont dépassé vos outils. Nous réglons ça.",
+    "solutions": "Solutions",
+    "company": "Entreprise",
+    "legal": "Légal",
+    "privacy": "Politique de confidentialité",
+    "terms": "Conditions d'utilisation",
+    "cookies": "Politique des témoins",
+    "copyright": "© {year} Awesoon. Tous droits réservés.",
+    "noTracking": "Aucun témoin défini sans votre consentement.",
+    "madeWith": "Construit avec soin à Montréal."
+  },
+  "cookie": {
+    "banner": {
+      "title": "Nous utilisons des témoins",
+      "description": "Nous utilisons des témoins essentiels pour faire fonctionner notre site. Avec votre permission, nous aimerions également utiliser des témoins d'analyse pour comprendre comment vous utilisez notre site.",
+      "acceptAll": "Tout accepter",
+      "rejectAll": "Tout refuser",
+      "manage": "Gérer les préférences",
+      "learnMore": "En savoir plus sur notre politique des témoins"
+    },
+    "manager": {
+      "title": "Gérer les préférences de témoins",
+      "save": "Enregistrer les préférences",
+      "categories": {
+        "necessary": {
+          "title": "Témoins nécessaires",
+          "description": "Ces témoins sont requis pour le bon fonctionnement du site. Ils ne peuvent pas être désactivés.",
+          "alwaysOn": "Toujours actif"
+        },
+        "analytics": {
+          "title": "Témoins d'analyse",
+          "description": "Ces témoins nous aident à comprendre comment les visiteurs utilisent notre site. Nous utilisons Google Analytics 4."
+        },
+        "marketing": {
+          "title": "Témoins marketing",
+          "description": "Ces témoins sont utilisés pour diffuser des publicités pertinentes. Nous n'utilisons actuellement aucun témoin marketing."
+        }
+      }
+    }
+  },
+  "privacy": {
+    "title": "Politique de confidentialité",
+    "lastUpdated": "Dernière mise à jour: 21 mars 2026",
+    "effectiveDate": "Date d'entrée en vigueur: 21 mars 2026"
+  },
+  "terms": {
+    "title": "Conditions d'utilisation",
+    "lastUpdated": "Dernière mise à jour: 21 mars 2026"
+  },
+  "cookies": {
+    "title": "Politique des témoins",
+    "lastUpdated": "Dernière mise à jour: 21 mars 2026"
+  },
+  "notFound": {
+    "title": "Page introuvable",
+    "headline": "Nous n'avons pas pu trouver cette page.",
+    "message": "Elle a peut-être été déplacée ou l'URL est incorrecte.",
+    "homeCta": "Aller à l'accueil",
+    "contactCta": "Nous contacter"
+  },
+  "common": {
+    "loading": "Chargement...",
+    "error": "Une erreur s'est produite. Veuillez réessayer.",
+    "success": "Succès!",
+    "required": "Requis",
+    "optional": "Optionnel",
+    "learnMore": "En savoir plus",
+    "getStarted": "Commencer",
+    "backToHome": "Retour à l'accueil",
+    "skipToContent": "Aller au contenu principal"
+  },
+  "sitemap": {
+    "title": "Plan du site"
+  },
+  "problemSolutions": {
+    "title": "Vous reconnaissez-vous?",
+    "subtitle": "Si vos opérations ressemblent à ceci, nous avons le manuel pour y remédier.",
+    "items": [
+      {
+        "problem": "\"Nous avons 4 systèmes et aucun ne se parle.\"",
+        "solution": "Intégration des systèmes",
+        "slug": "system-integration"
+      },
+      {
+        "problem": "\"Notre processus de commande entier vit dans une feuille de calcul.\"",
+        "solution": "Opérations sur feuilles de calcul",
+        "slug": "spreadsheet-operations"
+      },
+      {
+        "problem": "\"Nous avons acheté un ERP il y a 2 ans et nous ne sommes toujours pas en ligne.\"",
+        "solution": "Implémentation ERP",
+        "slug": "erp-implementation"
+      },
+      {
+        "problem": "\"Nous ne savons pas ce qu'il y a dans notre entrepôt jusqu'à ce que nous le comptions physiquement.\"",
+        "solution": "Infrastructure opérationnelle",
+        "slug": "ops-outgrown-tools"
+      }
+    ]
+  }
+}
