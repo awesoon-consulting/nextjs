@@ -78,35 +78,38 @@ export default function DifferentiatorCards() {
 
   return (
     <section
-      className="w-full py-24 bg-primary dark:bg-primary relative overflow-hidden"
+      className="w-full py-24 bg-neutral-100 dark:bg-primary relative overflow-hidden"
       aria-labelledby="differentiators-title"
     >
-      {/* Subtle background texture */}
+      {/* Subtle border lines */}
       <div className="absolute inset-0 pointer-events-none" aria-hidden="true">
-        <div className="absolute top-0 left-1/2 -translate-x-1/2 w-full h-px bg-gradient-to-r from-transparent via-white/10 to-transparent" />
-        <div className="absolute bottom-0 left-1/2 -translate-x-1/2 w-full h-px bg-gradient-to-r from-transparent via-white/10 to-transparent" />
+        <div className="absolute top-0 left-1/2 -translate-x-1/2 w-full h-px bg-gradient-to-r from-transparent via-neutral-300/60 dark:via-white/10 to-transparent" />
+        <div className="absolute bottom-0 left-1/2 -translate-x-1/2 w-full h-px bg-gradient-to-r from-transparent via-neutral-300/60 dark:via-white/10 to-transparent" />
       </div>
 
       <div className="relative w-full px-4 sm:px-6 lg:px-10 xl:px-16">
         <AnimateIn variant="slide-up" threshold={0.1}>
           <div className="text-center mb-16">
-            <p className="text-white/40 text-xs font-semibold uppercase tracking-widest mb-3">
+            <p className="text-neutral-400 dark:text-white/40 text-xs font-semibold uppercase tracking-widest mb-3">
               Why Awesoon
             </p>
             <h2
               id="differentiators-title"
-              className="font-heading font-bold text-4xl sm:text-5xl text-white mb-4"
+              className="font-heading font-bold text-4xl sm:text-5xl text-text-primary dark:text-white mb-4"
             >
               {t('title')}
             </h2>
-            <p className="text-lg text-neutral-400 max-w-2xl mx-auto">{t('subtitle')}</p>
+            <p className="text-lg text-text-secondary dark:text-neutral-400 max-w-2xl mx-auto">{t('subtitle')}</p>
           </div>
         </AnimateIn>
 
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
           {items.map((idx) => (
             <AnimateIn key={idx} variant="scale" delay={idx * 100} threshold={0.05}>
-              <div className="relative p-8 rounded-2xl border border-white/10 bg-white/5 hover:bg-white/8 hover:border-accent/30 transition-all duration-300 group cursor-default h-full">
+              <div
+                className="relative p-8 rounded-2xl border border-neutral-200 dark:border-white/10 hover:border-accent/40 hover:shadow-lg transition-all duration-300 group cursor-default h-full"
+                style={{ backgroundColor: 'var(--card-bg, #ffffff)' }}
+              >
                 {/* Accent corner line */}
                 <div
                   className="absolute top-0 left-8 w-12 h-0.5 bg-accent opacity-0 group-hover:opacity-100 transition-opacity duration-300"
@@ -116,11 +119,11 @@ export default function DifferentiatorCards() {
                   <div className="flex-shrink-0 w-12 h-12 bg-accent/10 border border-accent/20 rounded-xl flex items-center justify-center text-accent group-hover:bg-accent/20 group-hover:border-accent/40 transition-colors">
                     {icons[idx]}
                   </div>
-                  <h3 className="font-heading font-semibold text-xl text-white group-hover:text-accent transition-colors">
+                  <h3 className="font-heading font-semibold text-xl text-text-primary dark:text-white group-hover:text-accent transition-colors">
                     {t(`items.${idx}.title`)}
                   </h3>
                 </div>
-                <p className="text-neutral-400 leading-relaxed group-hover:text-neutral-300 transition-colors">
+                <p className="text-text-secondary dark:text-neutral-400 leading-relaxed group-hover:text-text-primary dark:group-hover:text-neutral-300 transition-colors">
                   {t(`items.${idx}.description`)}
                 </p>
               </div>
