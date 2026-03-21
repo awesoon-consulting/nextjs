@@ -22,11 +22,11 @@ export const insights: InsightPost[] = [
     slug: 'why-erp-projects-fail',
     title: 'Why Most ERP Projects Fail (And How to Avoid It)',
     excerpt:
-      `ERP implementations have a notorious failure rate. After working through dozens of these projects, we've identified the patterns that predict failure — and how to avoid them.`,
+      `ERP implementations have a notorious failure rate. After working through dozens of these projects, we've identified the patterns that predict failure,  and how to avoid them.`,
     content: `
 # Why Most ERP Projects Fail (And How to Avoid It)
 
-ERP implementations have a notorious failure rate. Studies put it anywhere from 50% to 75% depending on how you define "failure." After working through dozens of these projects with mid-market manufacturers and distributors, we've identified the patterns that predict failure — and what the successful projects do differently.
+ERP implementations have a notorious failure rate. Studies put it anywhere from 50% to 75% depending on how you define "failure." After working through dozens of these projects with mid-market manufacturers and distributors, we've identified the patterns that predict failure,  and what the successful projects do differently.
 
 ## The Most Common Failure Mode: Letting the Vendor Lead
 
@@ -38,13 +38,13 @@ The problem: you've designed your implementation around the vendor's strengths, 
 
 The vendor knows their software better than you do. They know how to configure it to look impressive in a demo. They don't know your warehouse layout, your customer exceptions, your union rules, or the 47 workarounds your team has built over 10 years.
 
-**The fix:** Define your requirements before you talk to a single vendor. Start with your people — what does each person on the floor actually need to do their job? What data do they need to see? What decisions does the system need to support? Build that list, then evaluate vendors against it.
+**The fix:** Define your requirements before you talk to a single vendor. Start with your people,  what does each person on the floor actually need to do their job? What data do they need to see? What decisions does the system need to support? Build that list, then evaluate vendors against it.
 
 ## Underestimating Data Migration
 
 Every ERP project we've seen underestimates data migration. Every single one.
 
-Your historical data is messy. It was entered by different people over different years with different standards. Item numbers are inconsistent. Customer records are duplicated. Costs are wrong. Some of it doesn't even exist digitally — it's in filing cabinets or people's heads.
+Your historical data is messy. It was entered by different people over different years with different standards. Item numbers are inconsistent. Customer records are duplicated. Costs are wrong. Some of it doesn't even exist digitally,  it's in filing cabinets or people's heads.
 
 **The fix:** Allocate 30% of your total project timeline to data cleanup and migration. Start the data audit on day one. Have a clear owner. Don't let go-live be blocked by last-minute data chaos.
 
@@ -60,7 +60,7 @@ This doesn't work. People who were forced to adopt a new system without understa
 
 ERP projects fail when the implementation is led by vendor consultants instead of your own team (with outside help). They fail when data migration is underestimated. They fail when change management is an afterthought.
 
-The projects that succeed are the ones where the client owns the outcome — where someone internal is accountable, where requirements came from the business, and where the team was brought along, not dragged along.
+The projects that succeed are the ones where the client owns the outcome,  where someone internal is accountable, where requirements came from the business, and where the team was brought along, not dragged along.
     `.trim(),
     category: 'erp',
     author: 'Awesoon Team',
@@ -93,9 +93,9 @@ Go department by department. Ask each team lead to inventory every spreadsheet t
 - What breaks if this spreadsheet is wrong?
 
 You'll typically find three categories:
-1. **Spreadsheets that should be in a real system** — order tracking, inventory counts, production schedules
-2. **Spreadsheets compensating for a broken process** — these reveal process problems, not just tool problems
-3. **Spreadsheets that are actually fine** — ad hoc analysis, one-time projects, executive reporting that's too custom for a generic tool
+1. **Spreadsheets that should be in a real system**,  order tracking, inventory counts, production schedules
+2. **Spreadsheets compensating for a broken process**,  these reveal process problems, not just tool problems
+3. **Spreadsheets that are actually fine**,  ad hoc analysis, one-time projects, executive reporting that's too custom for a generic tool
 
 Only the first category needs to be migrated. The second category needs a process fix before any tech change. The third category can stay.
 
@@ -142,7 +142,7 @@ Moving off spreadsheets successfully requires an honest audit, risk-based priori
     content: `
 # How to Run a Vendor Selection Process That Actually Works
 
-Most software vendor selections are theater. By the time you've sat through four vendor demos, your team has formed opinions based on which demo they liked best — and you end up buying software based on a polished pitch instead of an objective evaluation.
+Most software vendor selections are theater. By the time you've sat through four vendor demos, your team has formed opinions based on which demo they liked best,  and you end up buying software based on a polished pitch instead of an objective evaluation.
 
 The consequences are real. We've seen companies spend $150,000 on an ERP that was wrong for their operations from the start, simply because the vendor's demo team was better than the competition's.
 
@@ -175,11 +175,11 @@ The scenarios where vendors fumble are more informative than the features they h
 
 Build a scoring matrix based on your requirements document. Assign weights to each requirement based on how critical it is. Score each vendor on each requirement.
 
-This doesn't have to be complicated — a simple spreadsheet with 15–20 requirements and a 1–5 scale will do. The value is forcing your team to be explicit about their assessments rather than voting on gut feel.
+This doesn't have to be complicated,  a simple spreadsheet with 15–20 requirements and a 1–5 scale will do. The value is forcing your team to be explicit about their assessments rather than voting on gut feel.
 
 ## Don't Skip Reference Checks
 
-Call references. Not the references the vendor provides — those are curated. Find customers on LinkedIn or through industry groups and call them cold.
+Call references. Not the references the vendor provides,  those are curated. Find customers on LinkedIn or through industry groups and call them cold.
 
 Ask: What would you do differently if you were starting this implementation again? That question gets you the honest answer that the curated reference check won't.
 
@@ -211,11 +211,11 @@ This guide covers the framework we use to design and build integrations that act
 
 ## Map Before You Build
 
-Before you touch a single API, map your current data flows — or lack thereof.
+Before you touch a single API, map your current data flows,  or lack thereof.
 
 Create a simple diagram with each system as a node. Draw arrows showing where data moves today (even if it's manual). Label each arrow with: what data moves, how often, who moves it, and what happens if it doesn't get moved.
 
-This map will reveal your highest-value integration opportunities — the manual transfers that happen most frequently, touch the most people, or have the highest error risk.
+This map will reveal your highest-value integration opportunities,  the manual transfers that happen most frequently, touch the most people, or have the highest error risk.
 
 ## Choose the Right Integration Approach
 
@@ -231,7 +231,7 @@ Not all integrations need to be built the same way. The right approach depends o
 
 ## Build for Failure, Not for the Happy Path
 
-The most common mistake in integration projects is building for the happy path — what happens when everything works as expected.
+The most common mistake in integration projects is building for the happy path,  what happens when everything works as expected.
 
 Real integrations fail. APIs go down. Records don't match. Data arrives out of order. Duplicate records get created.
 
@@ -243,7 +243,7 @@ Good integrations include:
 
 ## Conclusion
 
-System integration is infrastructure work. Done well, it's invisible — data flows, systems stay in sync, and your team can trust what they see. Done poorly, it creates a new category of problems that's harder to diagnose than the manual processes it replaced.
+System integration is infrastructure work. Done well, it's invisible,  data flows, systems stay in sync, and your team can trust what they see. Done poorly, it creates a new category of problems that's harder to diagnose than the manual processes it replaced.
 
 Start with a map. Prioritize by impact. Choose the simplest approach that meets your requirements. And build for failure from day one.
     `.trim(),

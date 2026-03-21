@@ -23,7 +23,7 @@
   },
   "hero": {
     "headline": "Tus operaciones superaron tus herramientas. Nosotros lo arreglamos.",
-    "subtext": "Ayudamos a empresas manufactureras, de distribución e industriales a construir sistemas conectados, infraestructura escalable y claridad operacional — para que puedas crecer sin el caos.",
+    "subtext": "Ayudamos a empresas manufactureras, de distribución e industriales a construir sistemas conectados, infraestructura escalable y claridad operacional,  para que puedas crecer sin el caos.",
     "primaryCta": "Obtener una auditoría gratuita",
     "secondaryCta": "Ver cómo trabajamos",
     "trustBadge": "Elegido por líderes operacionales en Norteamérica"
@@ -84,7 +84,7 @@
       {
         "number": "02",
         "title": "Diseño de solución",
-        "description": "Diseñamos una arquitectura de sistema conectado adaptada a tus operaciones. Sin manuales genéricos — cada recomendación es específica para tu equipo, tus procesos y tu presupuesto."
+        "description": "Diseñamos una arquitectura de sistema conectado adaptada a tus operaciones. Sin manuales genéricos,  cada recomendación es específica para tu equipo, tus procesos y tu presupuesto."
       },
       {
         "number": "03",
@@ -120,7 +120,7 @@
       },
       "erpImplementation": {
         "title": "Implementación de ERP",
-        "description": "Los proyectos ERP fallan cuando son dirigidos por proveedores. Estamos de tu lado — seleccionando, configurando e implementando un ERP que realmente se adapte a tus operaciones.",
+        "description": "Los proyectos ERP fallan cuando son dirigidos por proveedores. Estamos de tu lado,  seleccionando, configurando e implementando un ERP que realmente se adapte a tus operaciones.",
         "slug": "erp-implementation"
       },
       "crmImplementation": {
@@ -196,7 +196,7 @@
     },
     "cta": {
       "headline": "¿Listo para mejorar tus operaciones?",
-      "subtext": "Empecemos con una auditoría de sistemas gratuita. Sin presentación de ventas, sin presión — solo una mirada objetiva a tus operaciones.",
+      "subtext": "Empecemos con una auditoría de sistemas gratuita. Sin presentación de ventas, sin presión,  solo una mirada objetiva a tus operaciones.",
       "button": "Reservar una auditoría gratuita"
     }
   },

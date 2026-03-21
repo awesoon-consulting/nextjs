@@ -1,5 +1,5 @@
 /**
- * Site configuration — navigation, social links, contact info, solution slugs.
+ * Site configuration,  navigation, social links, contact info, solution slugs.
  * Import from this file whenever you need site-wide constants.
  */
 

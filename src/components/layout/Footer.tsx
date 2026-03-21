@@ -3,7 +3,7 @@ import { useTranslations, useLocale } from 'next-intl'
 import { siteConfig } from '@/src/config/site'
 
 /**
- * Footer — full-viewport-width dark footer with:
+ * Footer,  full-viewport-width dark footer with:
  * - Brand column with tagline and LinkedIn link
  * - Solutions, Company, Contact link columns
  * - Inline CTA strip above the bottom bar ("Ready to fix your ops?")
@@ -26,7 +26,6 @@ export default function Footer() {
 
   return (
     <footer className="w-full bg-primary text-white" role="contentinfo">
-
       {/* ── Pre-footer CTA strip ── */}
       <div className="w-full bg-secondary/40 border-t border-b border-white/10">
         <div className="w-full px-4 sm:px-6 lg:px-10 xl:px-16 py-8 flex flex-col sm:flex-row items-center justify-between gap-4">
@@ -43,8 +42,19 @@ export default function Footer() {
             className="flex-shrink-0 inline-flex items-center gap-2 bg-accent hover:bg-accent-dark text-primary font-semibold px-6 py-3 rounded-xl transition-colors duration-150 focus:outline-none focus-visible:ring-2 focus-visible:ring-accent focus-visible:ring-offset-2 focus-visible:ring-offset-secondary shadow-md hover:shadow-lg"
           >
             Get a Free Systems Audit
-            <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
-              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
+            <svg
+              className="w-4 h-4"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+              aria-hidden="true"
+            >
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth={2}
+                d="M17 8l4 4m0 0l-4 4m4-4H3"
+              />
             </svg>
           </Link>
         </div>
@@ -53,8 +63,7 @@ export default function Footer() {
       {/* ── Main footer columns ── */}
       <div className="w-full px-4 sm:px-6 lg:px-10 xl:px-16 py-16">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-12">
-
-          {/* Brand column — spans 4 of 12 */}
+          {/* Brand column,  spans 4 of 12 */}
           <div className="lg:col-span-4">
             <Link
               href={localHref('/')}
@@ -81,7 +90,7 @@ export default function Footer() {
             </div>
           </div>
 
-          {/* Solutions column — spans 3 of 12 */}
+          {/* Solutions column,  spans 3 of 12 */}
           <div className="lg:col-span-3">
             <h3 className="text-xs font-semibold uppercase tracking-widest text-neutral-400 mb-4">
               {t('footer.solutions')}
@@ -100,7 +109,7 @@ export default function Footer() {
             </ul>
           </div>
 
-          {/* Company column — spans 2 of 12 */}
+          {/* Company column,  spans 2 of 12 */}
           <div className="lg:col-span-2">
             <h3 className="text-xs font-semibold uppercase tracking-widest text-neutral-400 mb-4">
               {t('footer.company')}
@@ -119,7 +128,7 @@ export default function Footer() {
             </ul>
           </div>
 
-          {/* Contact column — spans 3 of 12 */}
+          {/* Contact column,  spans 3 of 12 */}
           <div className="lg:col-span-3">
             <h3 className="text-xs font-semibold uppercase tracking-widest text-neutral-400 mb-4">
               Contact
@@ -137,7 +146,8 @@ export default function Footer() {
               <li className="pt-2">
                 <p className="text-xs text-neutral-500 leading-relaxed">
                   A real person replies within 24 hours.
-                  <br />No chatbots, no auto-responders.
+                  <br />
+                  No chatbots, no auto-responders.
                 </p>
               </li>
             </ul>
@@ -164,9 +174,7 @@ export default function Footer() {
               ))}
             </nav>
           </div>
-          <p className="mt-3 text-xs text-neutral-600">
-            {t('footer.madeWith')}
-          </p>
+          <p className="mt-3 text-xs text-neutral-600">{t('footer.madeWith')}</p>
         </div>
       </div>
     </footer>

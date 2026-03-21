@@ -28,24 +28,24 @@ Accepts contact form submissions and appends them to a Google Sheet.
 
 ## Required Fields
 
-- `name` — non-empty string
-- `email` — valid email format
-- `company` — non-empty string
-- `industry` — non-empty string
-- `companySize` — non-empty string
-- `problems` — non-empty array
-- `timeline` — non-empty string
-- `budget` — non-empty string
+- `name`,  non-empty string
+- `email`,  valid email format
+- `company`,  non-empty string
+- `industry`,  non-empty string
+- `companySize`,  non-empty string
+- `problems`,  non-empty array
+- `timeline`,  non-empty string
+- `budget`,  non-empty string
 
 ## Responses
 
 | Status | Description |
 |---|---|
-| 200 | Success — row appended to Google Sheet |
-| 400 | Validation failed — missing or invalid fields |
-| 405 | Method not allowed — only POST is accepted |
-| 429 | Rate limited — 10 submissions per IP per hour |
-| 500 | Server error — Google Sheets API failure |
+| 200 | Success,  row appended to Google Sheet |
+| 400 | Validation failed,  missing or invalid fields |
+| 405 | Method not allowed,  only POST is accepted |
+| 429 | Rate limited,  10 submissions per IP per hour |
+| 500 | Server error,  Google Sheets API failure |
 
 ## Rate Limiting
 

@@ -5,7 +5,7 @@
  */
 
 export type ConsentCategories = {
-  necessary: boolean // always true — cannot be toggled
+  necessary: boolean // always true,  cannot be toggled
   analytics: boolean
   marketing: boolean
 }

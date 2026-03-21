@@ -49,7 +49,7 @@ function initGtagConsentDefaults() {
       window.dataLayer?.push(args)
     }
   }
-  // Default all to denied — GDPR compliant
+  // Default all to denied,  GDPR compliant
   window.gtag('consent', 'default', {
     analytics_storage: 'denied',
     ad_storage: 'denied',

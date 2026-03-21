@@ -23,7 +23,7 @@
   },
   "hero": {
     "headline": "Vos opérations ont dépassé vos outils. Nous réglons ça.",
-    "subtext": "Nous aidons les entreprises manufacturières, de distribution et industrielles à bâtir des systèmes connectés, une infrastructure évolutive et une clarté opérationnelle — pour que vous puissiez croître sans le chaos.",
+    "subtext": "Nous aidons les entreprises manufacturières, de distribution et industrielles à bâtir des systèmes connectés, une infrastructure évolutive et une clarté opérationnelle,  pour que vous puissiez croître sans le chaos.",
     "primaryCta": "Obtenir un audit gratuit",
     "secondaryCta": "Voir comment nous travaillons",
     "trustBadge": "Reconnu par les leaders opérationnels en Amérique du Nord"
@@ -84,7 +84,7 @@
       {
         "number": "02",
         "title": "Conception de la solution",
-        "description": "Nous concevons une architecture de système connecté adaptée à vos opérations. Pas de manuels génériques — chaque recommandation est spécifique à votre équipe, vos processus et votre budget."
+        "description": "Nous concevons une architecture de système connecté adaptée à vos opérations. Pas de manuels génériques,  chaque recommandation est spécifique à votre équipe, vos processus et votre budget."
       },
       {
         "number": "03",
@@ -120,7 +120,7 @@
       },
       "erpImplementation": {
         "title": "Implémentation ERP",
-        "description": "Les projets ERP échouent quand ils sont dirigés par les fournisseurs. Nous sommes de votre côté — sélectionnant, configurant et implémentant un ERP qui correspond réellement à vos opérations.",
+        "description": "Les projets ERP échouent quand ils sont dirigés par les fournisseurs. Nous sommes de votre côté,  sélectionnant, configurant et implémentant un ERP qui correspond réellement à vos opérations.",
         "slug": "erp-implementation"
       },
       "crmImplementation": {
@@ -196,7 +196,7 @@
     },
     "cta": {
       "headline": "Prêt à améliorer vos opérations?",
-      "subtext": "Commençons par un audit des systèmes gratuit. Pas de présentation commerciale, pas de pression — juste un regard objectif sur vos opérations.",
+      "subtext": "Commençons par un audit des systèmes gratuit. Pas de présentation commerciale, pas de pression,  juste un regard objectif sur vos opérations.",
       "button": "Réserver un audit gratuit"
     }
   },

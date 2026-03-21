@@ -48,7 +48,7 @@ export async function generateMetadata(): Promise<Metadata> {
 
   return {
     title: {
-      default: `${siteConfig.name} — ${siteConfig.tagline}`,
+      default: `${siteConfig.name},  ${siteConfig.tagline}`,
       template: `%s | ${siteConfig.name}`,
     },
     description:
@@ -76,7 +76,7 @@ export async function generateMetadata(): Promise<Metadata> {
     openGraph: {
       type: 'website',
       siteName: siteConfig.name,
-      title: `${siteConfig.name} — ${siteConfig.tagline}`,
+      title: `${siteConfig.name},  ${siteConfig.tagline}`,
       description:
         'B2B operations consulting for mid-market manufacturing and distribution companies.',
       locale: locale,
@@ -84,7 +84,7 @@ export async function generateMetadata(): Promise<Metadata> {
     },
     twitter: {
       card: 'summary_large_image',
-      title: `${siteConfig.name} — ${siteConfig.tagline}`,
+      title: `${siteConfig.name},  ${siteConfig.tagline}`,
       description:
         'B2B operations consulting for mid-market manufacturing and distribution companies.',
     },
@@ -117,29 +117,15 @@ export default async function LocaleLayout({ children, params }: LocaleLayoutPro
   const gaMeasurementId = process.env.NEXT_PUBLIC_GA_MEASUREMENT_ID
 
   return (
-    <html
-      lang={locale}
-      className={`${sora.variable} ${inter.variable}`}
-      suppressHydrationWarning
-    >
+    <html lang={locale} className={`${sora.variable} ${inter.variable}`} suppressHydrationWarning>
       <head>
         {/* Preconnect to Google Fonts */}
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
-        {/*
-          Inline script to set dark class before first paint — prevents FOUC.
-          Reads from localStorage before React hydrates.
-        */}
+        {/* Anti-FOUC: apply stored theme class before first paint */}
         <script
           dangerouslySetInnerHTML={{
-            __html: `
-              try {
-                var t = localStorage.getItem('awesoon_theme');
-                if (t === 'dark' || (!t && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
-                  document.documentElement.classList.add('dark');
-                }
-              } catch(e) {}
-            `,
+            __html: `(function(){try{var t=localStorage.getItem('awesoon_theme');var d=document.documentElement;if(t==='dark'||(t!=='light'&&window.matchMedia('(prefers-color-scheme: dark)').matches)){d.classList.add('dark')}}catch(e){}})()`,
           }}
         />
       </head>
@@ -163,13 +149,13 @@ export default async function LocaleLayout({ children, params }: LocaleLayoutPro
 
               <Footer />
 
-              {/* Floating conversion CTA — shows after scrolling past hero */}
+              {/* Floating conversion CTA,  shows after scrolling past hero */}
               <FloatingCTA />
             </ConsentManager>
           </ThemeProvider>
         </NextIntlClientProvider>
 
-        {/* GA4 — loaded after body, consent mode handled by ConsentManager */}
+        {/* GA4,  loaded after body, consent mode handled by ConsentManager */}
         {gaMeasurementId && <GoogleAnalytics gaId={gaMeasurementId} />}
       </body>
     </html>

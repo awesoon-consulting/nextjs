@@ -2,7 +2,7 @@
 
 Components are organized into four categories:
 
-## `/ui` — Primitive UI Components
+## `/ui`,  Primitive UI Components
 
 Stateless, reusable primitives. No business logic, no translations.
 
@@ -17,7 +17,7 @@ Stateless, reusable primitives. No business logic, no translations.
 | `ProgressBar` | `value`, `label`, `showValue` | Used for multi-step form progress |
 | `Modal` | `isOpen`, `onClose`, `title`, `size` | Focus trap, Escape key, body scroll lock |
 
-## `/layout` — Layout Components
+## `/layout`,  Layout Components
 
 Shell components that wrap page content.
 
@@ -29,7 +29,7 @@ Shell components that wrap page content.
 | `ConsentManager` | Client component, manages gtag consent mode v2, exposes ConsentContext |
 | `LanguageSwitcher` | Switches locale while preserving path |
 
-## `/sections` — Page Sections
+## `/sections`,  Page Sections
 
 Composable page sections. Each handles its own translations via `useTranslations`.
 
@@ -45,7 +45,7 @@ Composable page sections. Each handles its own translations via `useTranslations
 | `TeamGrid` | About |
 | `CTABlock` | All pages (configurable via props) |
 
-## `/forms` — Form Components
+## `/forms`,  Form Components
 
 Multi-step contact form.
 

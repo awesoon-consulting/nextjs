@@ -1,6 +1,6 @@
-# Library Utilities — `/src/lib`
+# Library Utilities,  `/src/lib`
 
-## `consent.ts` — Cookie Consent
+## `consent.ts`,  Cookie Consent
 
 Reads and writes consent preferences from `localStorage`.
 
@@ -31,7 +31,7 @@ type ConsentCategories = {
 }
 ```
 
-## `analytics.ts` — GA4 Events
+## `analytics.ts`,  GA4 Events
 
 All functions are no-ops if analytics consent is not granted.
 
@@ -47,7 +47,7 @@ trackFormSubmit('contact-form')
 
 **Never fires until analytics consent is granted.** Checks `isConsentGranted('analytics')` before every call.
 
-## `sheets.ts` — Google Sheets API
+## `sheets.ts`,  Google Sheets API
 
 Server-side only. Uses service account authentication.
 

@@ -1,5 +1,5 @@
 /**
- * DESIGN TOKENS — Single source of truth for all design decisions.
+ * DESIGN TOKENS,  Single source of truth for all design decisions.
  * Edit this file to update colors, typography, spacing across the entire site.
  * All Tailwind config extends from here. No hardcoded values in components.
  * @see /src/config/README.md for usage instructions

@@ -1,7 +1,7 @@
 'use client'
 
 /**
- * ProcessSteps — 4-step process with connecting line.
+ * ProcessSteps,  4-step process with connecting line.
  * Full-width. Steps stagger in left-to-right via AnimateIn.
  * Light/dark mode aware.
  */
@@ -24,7 +24,7 @@ export default function ProcessSteps() {
       <div className="w-full px-4 sm:px-6 lg:px-10 xl:px-16">
         <AnimateIn variant="slide-up" threshold={0.1}>
           <div className="text-center mb-16">
-            <p className="text-accent text-sm font-semibold uppercase tracking-widest mb-3">
+            <p className="text-text-muted dark:text-white/40 text-xs font-semibold uppercase tracking-widest mb-3">
               How We Work
             </p>
             <h2
@@ -70,7 +70,7 @@ export default function ProcessSteps() {
                   {/* Step 1 and 2 get inline nudge */}
                   {(idx === 0 || idx === 1) && (
                     <p className="mt-3 text-xs text-accent font-medium">
-                      {idx === 0 ? 'Free — no commitment' : 'Delivered in 48h'}
+                      {idx === 0 ? 'Free,  no commitment' : 'Delivered in 48h'}
                     </p>
                   )}
                 </div>
@@ -87,9 +87,17 @@ export default function ProcessSteps() {
                 Start with a Free Systems Audit
                 <svg
                   className="w-5 h-5 transition-transform duration-200 group-hover:translate-x-1"
-                  fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                  aria-hidden="true"
                 >
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth={2}
+                    d="M17 8l4 4m0 0l-4 4m4-4H3"
+                  />
                 </svg>
               </Button>
             </Link>

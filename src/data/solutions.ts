@@ -54,7 +54,7 @@ export const solutions: SolutionData[] = [
     problemHeadline: "You're running a mid-market company on spreadsheets",
     category: 'Operations Infrastructure',
     painPoints: [
-      'Critical business processes — inventory, orders, production planning — live in Excel',
+      'Critical business processes,  inventory, orders, production planning,  live in Excel',
       'No one person has a complete picture because the data is spread across dozens of files',
       'Spreadsheets break, get corrupted, get emailed to the wrong person',
       'Onboarding a new team member means teaching them which spreadsheet does what',
@@ -84,7 +84,7 @@ export const solutions: SolutionData[] = [
     problemHeadline: "Your systems don't talk to each other",
     category: 'Integration',
     painPoints: [
-      `You have good software but it's all siloed — ERP, CRM, WMS, and ecommerce don't share data`,
+      `You have good software but it's all siloed,  ERP, CRM, WMS, and ecommerce don't share data`,
       'Your team re-keys the same data into 2–4 systems every day',
       'Orders, inventory, and financial data are always slightly out of sync',
       'Reporting requires pulling data from multiple systems and manually combining it',
@@ -146,7 +146,7 @@ export const solutions: SolutionData[] = [
     painPoints: [
       'Deal tracking lives in individual spreadsheets or email inboxes',
       `You can't accurately forecast revenue because you don't know what's in the pipeline`,
-      'Customer history is scattered — no one person has the full picture',
+      'Customer history is scattered,  no one person has the full picture',
       'Your CRM was set up years ago and no one actually uses it as intended',
       `Sales and operations are constantly surprised by each other's reality`,
     ],
@@ -252,7 +252,7 @@ export const solutions: SolutionData[] = [
       'A prioritized list of improvements ranked by impact and implementation complexity',
       'Alignment across leadership on what to fix and in what order',
       `Clear business cases for the investments you're considering`,
-      'A confident starting point — no more analysis paralysis',
+      'A confident starting point,  no more analysis paralysis',
     ],
     ctaText: 'Book a Systems Audit',
     relatedSlugs: ['ops-outgrown-tools', 'erp-implementation', 'vendor-management'],

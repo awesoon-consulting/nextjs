@@ -1,7 +1,7 @@
 'use client'
 
 /**
- * Navbar — sticky top nav with:
+ * Navbar,  sticky top nav with:
  * - Full-width mega menu for Solutions (8 solution cards in a grid)
  * - Dark/light mode toggle (reads from ThemeProvider)
  * - Mobile hamburger menu with full menu
@@ -21,26 +21,33 @@ import { usePathname } from 'next/navigation'
 import { siteConfig } from '@/src/config/site'
 import Button from '@/src/components/ui/Button'
 import LanguageSwitcher from './LanguageSwitcher'
-import { useTheme } from './ThemeProvider'
 
-// Mega menu content — Solutions grid
+// Mega menu content,  Solutions grid
 const SOLUTION_GROUPS = [
   {
     groupKey: 'nav.megaMenu.groupOps',
     items: [
-      { labelKey: 'nav.megaMenu.opsOutgrown',   href: '/solutions/ops-outgrown-tools',       icon: '⚡' },
-      { labelKey: 'nav.megaMenu.spreadsheetOps', href: '/solutions/spreadsheet-operations',   icon: '📊' },
-      { labelKey: 'nav.megaMenu.systemIntegration', href: '/solutions/system-integration',   icon: '🔗' },
-      { labelKey: 'nav.megaMenu.apiIntegrations', href: '/solutions/api-integrations',        icon: '⚙️' },
+      { labelKey: 'nav.megaMenu.opsOutgrown', href: '/solutions/ops-outgrown-tools', icon: '⚡' },
+      {
+        labelKey: 'nav.megaMenu.spreadsheetOps',
+        href: '/solutions/spreadsheet-operations',
+        icon: '📊',
+      },
+      {
+        labelKey: 'nav.megaMenu.systemIntegration',
+        href: '/solutions/system-integration',
+        icon: '🔗',
+      },
+      { labelKey: 'nav.megaMenu.apiIntegrations', href: '/solutions/api-integrations', icon: '⚙️' },
     ],
   },
   {
     groupKey: 'nav.megaMenu.groupImplementation',
     items: [
-      { labelKey: 'nav.megaMenu.erpImpl',         href: '/solutions/erp-implementation',      icon: '🏗️' },
-      { labelKey: 'nav.megaMenu.crmImpl',         href: '/solutions/crm-implementation',      icon: '📋' },
-      { labelKey: 'nav.megaMenu.vendorMgmt',      href: '/solutions/vendor-management',       icon: '🤝' },
-      { labelKey: 'nav.megaMenu.systemsAudit',    href: '/solutions/systems-audit',           icon: '🔍' },
+      { labelKey: 'nav.megaMenu.erpImpl', href: '/solutions/erp-implementation', icon: '🏗️' },
+      { labelKey: 'nav.megaMenu.crmImpl', href: '/solutions/crm-implementation', icon: '📋' },
+      { labelKey: 'nav.megaMenu.vendorMgmt', href: '/solutions/vendor-management', icon: '🤝' },
+      { labelKey: 'nav.megaMenu.systemsAudit', href: '/solutions/systems-audit', icon: '🔍' },
     ],
   },
 ]
@@ -48,9 +55,19 @@ const SOLUTION_GROUPS = [
 // Sun icon for light mode
 function SunIcon() {
   return (
-    <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
-      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.75}
-        d="M12 3v2m0 14v2M3 12H1m4.22-6.36L3.86 4.22M18.36 5.64l1.42-1.42M21 12h2m-3.64 6.36 1.42 1.42M5.64 18.36l-1.42 1.42M12 8a4 4 0 100 8 4 4 0 000-8z" />
+    <svg
+      className="w-5 h-5"
+      fill="none"
+      stroke="currentColor"
+      viewBox="0 0 24 24"
+      aria-hidden="true"
+    >
+      <path
+        strokeLinecap="round"
+        strokeLinejoin="round"
+        strokeWidth={1.75}
+        d="M12 3v2m0 14v2M3 12H1m4.22-6.36L3.86 4.22M18.36 5.64l1.42-1.42M21 12h2m-3.64 6.36 1.42 1.42M5.64 18.36l-1.42 1.42M12 8a4 4 0 100 8 4 4 0 000-8z"
+      />
     </svg>
   )
 }
@@ -58,9 +75,19 @@ function SunIcon() {
 // Moon icon for dark mode
 function MoonIcon() {
   return (
-    <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
-      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.75}
-        d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z" />
+    <svg
+      className="w-5 h-5"
+      fill="none"
+      stroke="currentColor"
+      viewBox="0 0 24 24"
+      aria-hidden="true"
+    >
+      <path
+        strokeLinecap="round"
+        strokeLinejoin="round"
+        strokeWidth={1.75}
+        d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z"
+      />
     </svg>
   )
 }
@@ -69,7 +96,34 @@ export default function Navbar() {
   const t = useTranslations()
   const locale = useLocale()
   const pathname = usePathname()
-  const { theme, toggle } = useTheme()
+
+  // Theme state: read from DOM directly to stay in sync across components
+  const [isDark, setIsDark] = useState(false)
+
+  useEffect(() => {
+    // Sync from DOM on mount
+    setIsDark(document.documentElement.classList.contains('dark'))
+
+    // Watch for external changes (e.g. system preference)
+    const observer = new MutationObserver(() => {
+      setIsDark(document.documentElement.classList.contains('dark'))
+    })
+    observer.observe(document.documentElement, { attributes: true, attributeFilter: ['class'] })
+    return () => observer.disconnect()
+  }, [])
+
+  function toggle() {
+    const nextDark = !isDark
+    if (nextDark) {
+      document.documentElement.classList.add('dark')
+    } else {
+      document.documentElement.classList.remove('dark')
+    }
+    try {
+      localStorage.setItem('awesoon_theme', nextDark ? 'dark' : 'light')
+    } catch {}
+    setIsDark(nextDark)
+  }
 
   const [isScrolled, setIsScrolled] = useState(false)
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false)
@@ -152,7 +206,7 @@ export default function Navbar() {
           <Link
             href={localHref('/')}
             className="flex items-center gap-2 focus:outline-none focus-visible:ring-2 focus-visible:ring-accent rounded"
-            aria-label={`${siteConfig.name} — Home`}
+            aria-label={`${siteConfig.name},  Home`}
           >
             <span className="font-heading font-bold text-xl text-white tracking-tight">
               {siteConfig.name}
@@ -182,9 +236,17 @@ export default function Navbar() {
                     {t(labelKey)}
                     <svg
                       className={`w-4 h-4 transition-transform duration-200 ${isMegaMenuOpen ? 'rotate-180' : ''}`}
-                      fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true"
+                      fill="none"
+                      stroke="currentColor"
+                      viewBox="0 0 24 24"
+                      aria-hidden="true"
                     >
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
+                      <path
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        strokeWidth={2}
+                        d="M19 9l-7 7-7-7"
+                      />
                     </svg>
                   </button>
                 )
@@ -214,10 +276,10 @@ export default function Navbar() {
             {/* Theme toggle */}
             <button
               onClick={toggle}
-              aria-label={theme === 'dark' ? 'Switch to light mode' : 'Switch to dark mode'}
+              aria-label={isDark ? 'Switch to light mode' : 'Switch to dark mode'}
               className="p-2 text-neutral-400 hover:text-white rounded-lg transition-colors focus:outline-none focus-visible:ring-2 focus-visible:ring-accent"
             >
-              {theme === 'dark' ? <SunIcon /> : <MoonIcon />}
+              {isDark ? <SunIcon /> : <MoonIcon />}
             </button>
 
             <Link href={localHref(siteConfig.nav.cta.href)}>
@@ -232,10 +294,10 @@ export default function Navbar() {
             <LanguageSwitcher />
             <button
               onClick={toggle}
-              aria-label={theme === 'dark' ? 'Switch to light mode' : 'Switch to dark mode'}
+              aria-label={isDark ? 'Switch to light mode' : 'Switch to dark mode'}
               className="p-2 text-neutral-400 hover:text-white rounded-lg focus:outline-none focus-visible:ring-2 focus-visible:ring-accent"
             >
-              {theme === 'dark' ? <SunIcon /> : <MoonIcon />}
+              {isDark ? <SunIcon /> : <MoonIcon />}
             </button>
             <button
               onClick={() => setIsMobileMenuOpen((prev) => !prev)}
@@ -244,12 +306,34 @@ export default function Navbar() {
               className="p-2 text-neutral-300 hover:text-white rounded-lg focus:outline-none focus-visible:ring-2 focus-visible:ring-accent transition-colors"
             >
               {isMobileMenuOpen ? (
-                <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
+                <svg
+                  className="w-6 h-6"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                  aria-hidden="true"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth={2}
+                    d="M6 18L18 6M6 6l12 12"
+                  />
                 </svg>
               ) : (
-                <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 12h16M4 18h16" />
+                <svg
+                  className="w-6 h-6"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                  aria-hidden="true"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth={2}
+                    d="M4 6h16M4 12h16M4 18h16"
+                  />
                 </svg>
               )}
             </button>
@@ -257,7 +341,7 @@ export default function Navbar() {
         </div>
       </nav>
 
-      {/* ── MEGA MENU — Full-width solutions panel ── */}
+      {/* ── MEGA MENU,  Full-width solutions panel ── */}
       {isMegaMenuOpen && (
         <div
           ref={megaMenuRef}
@@ -281,7 +365,9 @@ export default function Navbar() {
                         className="flex items-start gap-3 p-3 rounded-xl hover:bg-white/8 transition-colors group focus:outline-none focus-visible:ring-2 focus-visible:ring-accent"
                         onClick={() => setIsMegaMenuOpen(false)}
                       >
-                        <span className="text-lg mt-0.5 flex-shrink-0" aria-hidden="true">{icon}</span>
+                        <span className="text-lg mt-0.5 flex-shrink-0" aria-hidden="true">
+                          {icon}
+                        </span>
                         <span className="text-sm font-medium text-neutral-300 group-hover:text-white transition-colors leading-snug">
                           {t(labelKey as Parameters<typeof t>[0])}
                         </span>
@@ -323,23 +409,33 @@ export default function Navbar() {
                       {t(labelKey)}
                       <svg
                         className={`w-4 h-4 transition-transform ${isMobileSolutionsOpen ? 'rotate-180' : ''}`}
-                        fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true"
+                        fill="none"
+                        stroke="currentColor"
+                        viewBox="0 0 24 24"
+                        aria-hidden="true"
                       >
-                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
+                        <path
+                          strokeLinecap="round"
+                          strokeLinejoin="round"
+                          strokeWidth={2}
+                          d="M19 9l-7 7-7-7"
+                        />
                       </svg>
                     </button>
                     {isMobileSolutionsOpen && (
                       <div className="mt-1 ml-4 space-y-1 border-l border-white/10 pl-4">
-                        {SOLUTION_GROUPS.flatMap((g) => g.items).map(({ labelKey: lk, href: h, icon }) => (
-                          <Link
-                            key={h}
-                            href={localHref(h)}
-                            className="flex items-center gap-2 px-3 py-2 text-sm text-neutral-400 hover:text-white rounded-lg transition-colors"
-                          >
-                            <span aria-hidden="true">{icon}</span>
-                            {t(lk as Parameters<typeof t>[0])}
-                          </Link>
-                        ))}
+                        {SOLUTION_GROUPS.flatMap((g) => g.items).map(
+                          ({ labelKey: lk, href: h, icon }) => (
+                            <Link
+                              key={h}
+                              href={localHref(h)}
+                              className="flex items-center gap-2 px-3 py-2 text-sm text-neutral-400 hover:text-white rounded-lg transition-colors"
+                            >
+                              <span aria-hidden="true">{icon}</span>
+                              {t(lk as Parameters<typeof t>[0])}
+                            </Link>
+                          )
+                        )}
                       </div>
                     )}
                   </div>

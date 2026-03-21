@@ -17,7 +17,7 @@ export async function generateMetadata({
   const t = await getTranslations({ locale, namespace: 'hero' })
 
   return {
-    title: `${siteConfig.name} — ${siteConfig.tagline}`,
+    title: `${siteConfig.name},  ${siteConfig.tagline}`,
     description: t('subtext'),
   }
 }

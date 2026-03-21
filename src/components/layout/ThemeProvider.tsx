@@ -1,95 +1,97 @@
 'use client'
 
 /**
- * ThemeProvider — manages light/dark mode via a `dark` class on <html>.
- * Reads initial preference from localStorage, falls back to system preference.
- * Exposes useTheme() hook for toggle access anywhere in the tree.
- *
- * @see /src/components/README.md
+ * ThemeProvider — custom dark/light mode implementation.
+ * Directly manipulates the `dark` class on <html>.
+ * Persists to localStorage, respects system preference on first visit.
  */
 
-import {
-  createContext,
-  useContext,
-  useEffect,
-  useState,
-  useCallback,
-  type ReactNode,
-} from 'react'
-
-type Theme = 'light' | 'dark'
-
-interface ThemeContextValue {
-  theme: Theme
-  toggle: () => void
-  setTheme: (t: Theme) => void
-}
-
-const ThemeContext = createContext<ThemeContextValue | null>(null)
+import { createContext, useCallback, useContext, useEffect, useState } from 'react'
+import type { ReactNode } from 'react'
 
 const STORAGE_KEY = 'awesoon_theme'
 
-function getInitialTheme(): Theme {
-  // Only runs on client — ThemeProvider is 'use client'
+interface ThemeContextValue {
+  theme: 'light' | 'dark'
+  resolvedTheme: 'light' | 'dark'
+  setTheme: (t: 'light' | 'dark' | 'system') => void
+}
+
+const ThemeContext = createContext<ThemeContextValue>({
+  theme: 'light',
+  resolvedTheme: 'light',
+  setTheme: () => {},
+})
+
+export function useTheme() {
+  return useContext(ThemeContext)
+}
+
+function getSystemTheme(): 'light' | 'dark' {
   if (typeof window === 'undefined') return 'light'
-  const stored = localStorage.getItem(STORAGE_KEY) as Theme | null
-  if (stored === 'light' || stored === 'dark') return stored
   return window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light'
 }
 
-export function ThemeProvider({ children }: { children: ReactNode }) {
-  const [theme, setThemeState] = useState<Theme>('light')
-  const [mounted, setMounted] = useState(false)
+function applyTheme(resolved: 'light' | 'dark') {
+  const html = document.documentElement
+  if (resolved === 'dark') {
+    html.classList.add('dark')
+  } else {
+    html.classList.remove('dark')
+  }
+}
 
-  // On mount, read real preference (avoids SSR mismatch)
+interface ThemeProviderProps {
+  children: ReactNode
+}
+
+export function ThemeProvider({ children }: ThemeProviderProps) {
+  const [theme, setThemeState] = useState<'light' | 'dark' | 'system'>('system')
+  const [resolvedTheme, setResolvedTheme] = useState<'light' | 'dark'>('light')
+
+  // On mount: read stored preference, apply it
   useEffect(() => {
-    const initial = getInitialTheme()
+    let stored: string | null = null
+    try {
+      stored = localStorage.getItem(STORAGE_KEY)
+    } catch {}
+
+    const initial = (stored === 'light' || stored === 'dark' || stored === 'system')
+      ? stored as 'light' | 'dark' | 'system'
+      : 'system'
+
+    const resolved = initial === 'system' ? getSystemTheme() : initial
     setThemeState(initial)
-    applyTheme(initial)
-    setMounted(true)
+    setResolvedTheme(resolved)
+    applyTheme(resolved)
   }, [])
 
-  function applyTheme(t: Theme) {
-    const root = document.documentElement
-    if (t === 'dark') {
-      root.classList.add('dark')
-    } else {
-      root.classList.remove('dark')
+  // Watch system preference changes when theme is 'system'
+  useEffect(() => {
+    if (theme !== 'system') return
+    const mq = window.matchMedia('(prefers-color-scheme: dark)')
+    function handler(e: MediaQueryListEvent) {
+      const r = e.matches ? 'dark' : 'light'
+      setResolvedTheme(r)
+      applyTheme(r)
     }
-    localStorage.setItem(STORAGE_KEY, t)
-  }
+    mq.addEventListener('change', handler)
+    return () => mq.removeEventListener('change', handler)
+  }, [theme])
 
-  const setTheme = useCallback((t: Theme) => {
+  const setTheme = useCallback((t: 'light' | 'dark' | 'system') => {
+    const resolved = t === 'system' ? getSystemTheme() : t
     setThemeState(t)
-    applyTheme(t)
+    setResolvedTheme(resolved)
+    applyTheme(resolved)
+    try {
+      localStorage.setItem(STORAGE_KEY, t)
+    } catch {}
   }, [])
-
-  const toggle = useCallback(() => {
-    setThemeState((prev) => {
-      const next = prev === 'dark' ? 'light' : 'dark'
-      applyTheme(next)
-      return next
-    })
-  }, [])
-
-  // Suppress flash of wrong theme before mount
-  if (!mounted) {
-    return (
-      <ThemeContext.Provider value={{ theme: 'light', toggle, setTheme }}>
-        <div style={{ visibility: 'hidden' }}>{children}</div>
-      </ThemeContext.Provider>
-    )
-  }
 
   return (
-    <ThemeContext.Provider value={{ theme, toggle, setTheme }}>
+    <ThemeContext.Provider value={{ theme: resolvedTheme, resolvedTheme, setTheme }}>
       {children}
     </ThemeContext.Provider>
   )
-}
-
-export function useTheme(): ThemeContextValue {
-  const ctx = useContext(ThemeContext)
-  if (!ctx) throw new Error('useTheme must be used inside ThemeProvider')
-  return ctx
 }

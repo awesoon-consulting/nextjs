@@ -1,12 +1,12 @@
 'use client'
 
 /**
- * CTABlock — high-conversion inline CTA section.
+ * CTABlock,  high-conversion inline CTA section.
  *
  * Variants:
- *   'default' — dark navy bg, amber button (primary CTA, used on home)
- *   'accent'  — full amber bg, dark text (maximum contrast CTA)
- *   'light'   — light surface bg, secondary styled (used mid-page)
+ *   'default',  dark navy bg, amber button (primary CTA, used on home)
+ *   'accent' ,  full amber bg, dark text (maximum contrast CTA)
+ *   'light'  ,  light surface bg, secondary styled (used mid-page)
  *
  * Full-width section. AnimateIn on content block.
  * Trust signals (no chatbot, 24h reply, free) are always shown.
@@ -113,7 +113,10 @@ export default function CTABlock({
               {showTrust && (
                 <div className="mt-8 flex flex-wrap items-center justify-center gap-6">
                   {trustSignals.map(({ icon, text }) => (
-                    <div key={text} className="flex items-center gap-2 text-text-muted dark:text-neutral-500">
+                    <div
+                      key={text}
+                      className="flex items-center gap-2 text-text-muted dark:text-neutral-500"
+                    >
                       <span aria-hidden="true">{icon}</span>
                       <span className="text-sm">{text}</span>
                     </div>
@@ -135,7 +138,11 @@ export default function CTABlock({
     >
       {/* Background pattern */}
       <div className="absolute inset-0 pointer-events-none" aria-hidden="true">
-        <svg className="absolute right-0 top-0 h-full opacity-[0.06]" viewBox="0 0 500 700" xmlns="http://www.w3.org/2000/svg">
+        <svg
+          className="absolute right-0 top-0 h-full opacity-[0.06]"
+          viewBox="0 0 500 700"
+          xmlns="http://www.w3.org/2000/svg"
+        >
           <g stroke="#F59E0B" strokeWidth="1" fill="none">
             <circle cx="250" cy="350" r="250" />
             <circle cx="250" cy="350" r="180" />
@@ -149,7 +156,7 @@ export default function CTABlock({
       <div className="relative w-full px-4 sm:px-6 lg:px-10 xl:px-16">
         <AnimateIn variant="slide-up" threshold={0.1}>
           <div className="max-w-3xl mx-auto text-center">
-            <p className="text-accent text-sm font-semibold uppercase tracking-widest mb-4">
+            <p className="text-white/40 text-xs font-semibold uppercase tracking-widest mb-4">
               Take the first step
             </p>
             <h2
@@ -166,9 +173,17 @@ export default function CTABlock({
                 {t(buttonKey as Parameters<typeof t>[0])}
                 <svg
                   className="w-5 h-5 transition-transform duration-200 group-hover:translate-x-1"
-                  fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                  aria-hidden="true"
                 >
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth={2}
+                    d="M17 8l4 4m0 0l-4 4m4-4H3"
+                  />
                 </svg>
               </Button>
             </Link>

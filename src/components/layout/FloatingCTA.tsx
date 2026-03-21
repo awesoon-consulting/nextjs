@@ -1,14 +1,14 @@
 'use client'
 
 /**
- * FloatingCTA — sticky conversion bar that appears after scrolling
+ * FloatingCTA,  sticky conversion bar that appears after scrolling
  * past the hero section (~600px down). Dismissible per session.
  *
  * Conversion design:
  * - Slides up from bottom after scroll threshold
  * - Shows on all pages except /contact (checked via pathname)
  * - "Get a Free Systems Audit" primary CTA
- * - Dismissible (session storage — returns on next visit)
+ * - Dismissible (session storage,  returns on next visit)
  * - Amber pulsing dot for attention without being annoying
  * - Respects reduced-motion preference
  *
@@ -38,7 +38,7 @@ export default function FloatingCTA() {
         setDismissed(true)
       }
     } catch {
-      // sessionStorage unavailable (e.g. incognito restrictions) — show anyway
+      // sessionStorage unavailable (e.g. incognito restrictions),  show anyway
     }
   }, [])
 
@@ -121,8 +121,19 @@ export default function FloatingCTA() {
           aria-label="Dismiss this offer"
           className="flex-shrink-0 p-1.5 text-neutral-500 hover:text-neutral-300 rounded-lg transition-colors focus:outline-none focus-visible:ring-2 focus-visible:ring-accent"
         >
-          <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
-            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
+          <svg
+            className="w-4 h-4"
+            fill="none"
+            stroke="currentColor"
+            viewBox="0 0 24 24"
+            aria-hidden="true"
+          >
+            <path
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              strokeWidth={2}
+              d="M6 18L18 6M6 6l12 12"
+            />
           </svg>
         </button>
       </div>

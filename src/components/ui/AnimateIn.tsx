@@ -1,18 +1,18 @@
 'use client'
 
 /**
- * AnimateIn — wraps any content and applies a CSS entrance animation
+ * AnimateIn,  wraps any content and applies a CSS entrance animation
  * once the element scrolls into the viewport.
  *
- * Uses useInView (IntersectionObserver) + pure CSS transforms — no
+ * Uses useInView (IntersectionObserver) + pure CSS transforms,  no
  * external animation library required.
  *
  * Variants:
- *   'fade'        — opacity 0 → 1
- *   'slide-up'    — translateY(32px) + fade
- *   'slide-left'  — translateX(-32px) + fade  (content enters from left)
- *   'slide-right' — translateX(32px) + fade   (content enters from right)
- *   'scale'       — scale(0.92) + fade
+ *   'fade'       ,  opacity 0 → 1
+ *   'slide-up'   ,  translateY(32px) + fade
+ *   'slide-left' ,  translateX(-32px) + fade  (content enters from left)
+ *   'slide-right',  translateX(32px) + fade   (content enters from right)
+ *   'scale'      ,  scale(0.92) + fade
  *
  * @example
  *   <AnimateIn variant="slide-up" delay={200}>
@@ -34,7 +34,7 @@ interface AnimateInProps {
   delay?: number
   /** Duration in ms. Default: 600 */
   duration?: number
-  /** Easing function. Default: cubic-bezier(0.16, 1, 0.3, 1) — snappy ease-out */
+  /** Easing function. Default: cubic-bezier(0.16, 1, 0.3, 1),  snappy ease-out */
   easing?: string
   /** Pass extra className to the wrapper div */
   className?: string
@@ -43,11 +43,11 @@ interface AnimateInProps {
 }
 
 const hiddenStyles: Record<AnimateInVariant, CSSProperties> = {
-  fade:        { opacity: 0 },
-  'slide-up':  { opacity: 0, transform: 'translateY(32px)' },
-  'slide-left':  { opacity: 0, transform: 'translateX(-32px)' },
+  fade: { opacity: 0 },
+  'slide-up': { opacity: 0, transform: 'translateY(32px)' },
+  'slide-left': { opacity: 0, transform: 'translateX(-32px)' },
   'slide-right': { opacity: 0, transform: 'translateX(32px)' },
-  scale:       { opacity: 0, transform: 'scale(0.92)' },
+  scale: { opacity: 0, transform: 'scale(0.92)' },
 }
 
 const visibleStyles: CSSProperties = {
@@ -73,11 +73,7 @@ export default function AnimateIn({
   }
 
   return (
-    <div
-      ref={ref as React.RefObject<HTMLDivElement>}
-      style={style}
-      className={className}
-    >
+    <div ref={ref as React.RefObject<HTMLDivElement>} style={style} className={className}>
       {children}
     </div>
   )

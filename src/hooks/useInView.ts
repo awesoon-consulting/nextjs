@@ -1,7 +1,7 @@
 'use client'
 
 /**
- * useInView — fires once when an element enters the viewport.
+ * useInView,  fires once when an element enters the viewport.
  * Uses IntersectionObserver under the hood. No external dependencies.
  * Designed for "play once on enter" viewport animations.
  *
@@ -35,7 +35,7 @@ export function useInView({
     const el = ref.current
     if (!el) return
 
-    // Respect reduced-motion preference — immediately mark as visible
+    // Respect reduced-motion preference,  immediately mark as visible
     if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
       setInView(true)
       return

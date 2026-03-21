@@ -1,4 +1,4 @@
-# Design Tokens — `/src/config/theme.ts`
+# Design Tokens,  `/src/config/theme.ts`
 
 This file is the single source of truth for all design decisions. Every color, font, spacing value, shadow, and border radius is defined here and consumed by `tailwind.config.ts`.
 

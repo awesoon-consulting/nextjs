@@ -1,7 +1,7 @@
 'use client'
 
 /**
- * DifferentiatorCards — 4 differentiator cards on a dark bg.
+ * DifferentiatorCards,  4 differentiator cards on a dark bg.
  * Full-width section. Cards stagger in via AnimateIn.
  * Always dark-themed for brand contrast (section anchors the page).
  */
@@ -10,17 +10,65 @@ import { useTranslations } from 'next-intl'
 import AnimateIn from '@/src/components/ui/AnimateIn'
 
 const icons = [
-  <svg key="1" className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
-    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0z" />
+  <svg
+    key="1"
+    className="w-6 h-6"
+    fill="none"
+    stroke="currentColor"
+    viewBox="0 0 24 24"
+    aria-hidden="true"
+  >
+    <path
+      strokeLinecap="round"
+      strokeLinejoin="round"
+      strokeWidth={1.5}
+      d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0z"
+    />
   </svg>,
-  <svg key="2" className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
-    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M9 3H5a2 2 0 00-2 2v4m6-6h10a2 2 0 012 2v4M9 3v18m0 0h10a2 2 0 002-2V9M9 21H5a2 2 0 01-2-2V9m0 0h18" />
+  <svg
+    key="2"
+    className="w-6 h-6"
+    fill="none"
+    stroke="currentColor"
+    viewBox="0 0 24 24"
+    aria-hidden="true"
+  >
+    <path
+      strokeLinecap="round"
+      strokeLinejoin="round"
+      strokeWidth={1.5}
+      d="M9 3H5a2 2 0 00-2 2v4m6-6h10a2 2 0 012 2v4M9 3v18m0 0h10a2 2 0 002-2V9M9 21H5a2 2 0 01-2-2V9m0 0h18"
+    />
   </svg>,
-  <svg key="3" className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
-    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+  <svg
+    key="3"
+    className="w-6 h-6"
+    fill="none"
+    stroke="currentColor"
+    viewBox="0 0 24 24"
+    aria-hidden="true"
+  >
+    <path
+      strokeLinecap="round"
+      strokeLinejoin="round"
+      strokeWidth={1.5}
+      d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"
+    />
   </svg>,
-  <svg key="4" className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
-    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6" />
+  <svg
+    key="4"
+    className="w-6 h-6"
+    fill="none"
+    stroke="currentColor"
+    viewBox="0 0 24 24"
+    aria-hidden="true"
+  >
+    <path
+      strokeLinecap="round"
+      strokeLinejoin="round"
+      strokeWidth={1.5}
+      d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6"
+    />
   </svg>,
 ]
 
@@ -42,7 +90,7 @@ export default function DifferentiatorCards() {
       <div className="relative w-full px-4 sm:px-6 lg:px-10 xl:px-16">
         <AnimateIn variant="slide-up" threshold={0.1}>
           <div className="text-center mb-16">
-            <p className="text-accent text-sm font-semibold uppercase tracking-widest mb-3">
+            <p className="text-white/40 text-xs font-semibold uppercase tracking-widest mb-3">
               Why Awesoon
             </p>
             <h2
@@ -60,7 +108,10 @@ export default function DifferentiatorCards() {
             <AnimateIn key={idx} variant="scale" delay={idx * 100} threshold={0.05}>
               <div className="relative p-8 rounded-2xl border border-white/10 bg-white/5 hover:bg-white/8 hover:border-accent/30 transition-all duration-300 group cursor-default h-full">
                 {/* Accent corner line */}
-                <div className="absolute top-0 left-8 w-12 h-0.5 bg-accent opacity-0 group-hover:opacity-100 transition-opacity duration-300" aria-hidden="true" />
+                <div
+                  className="absolute top-0 left-8 w-12 h-0.5 bg-accent opacity-0 group-hover:opacity-100 transition-opacity duration-300"
+                  aria-hidden="true"
+                />
                 <div className="flex items-center gap-4 mb-4">
                   <div className="flex-shrink-0 w-12 h-12 bg-accent/10 border border-accent/20 rounded-xl flex items-center justify-center text-accent group-hover:bg-accent/20 group-hover:border-accent/40 transition-colors">
                     {icons[idx]}

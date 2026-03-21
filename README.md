@@ -1,4 +1,4 @@
-# Awesoon — Marketing Website
+# Awesoon,  Marketing Website
 
 Production-ready multi-language marketing website for Awesoon, a B2B operations consulting firm.
 
@@ -29,7 +29,7 @@ cp .env.example .env.local
 npm run dev
 ```
 
-Open http://localhost:3000 — the middleware will redirect to `/en`.
+Open http://localhost:3000,  the middleware will redirect to `/en`.
 
 ---
 
@@ -104,9 +104,9 @@ Timestamp | Name | Company | Email | Phone | Industry | Company Size | Problems 
 ## 4. i18n Translation Instructions
 
 Translations live in `/messages/`:
-- `en.json` — English (source of truth)
-- `fr.json` — French (machine-translated, marked TODO for professional review)
-- `es.json` — Spanish (machine-translated, marked TODO for professional review)
+- `en.json`,  English (source of truth)
+- `fr.json`,  French (machine-translated, marked TODO for professional review)
+- `es.json`,  Spanish (machine-translated, marked TODO for professional review)
 
 ### Adding a New String
 

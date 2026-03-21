@@ -22,7 +22,7 @@
   },
   "hero": {
     "headline": "Your ops outgrew your tools. We fix that.",
-    "subtext": "We help mid-market manufacturing, distribution, and industrial companies build connected systems, scalable infrastructure, and operational clarity — so you can grow without the chaos.",
+    "subtext": "We help mid-market manufacturing, distribution, and industrial companies build connected systems, scalable infrastructure, and operational clarity,  so you can grow without the chaos.",
     "primaryCta": "Get a Free Systems Audit",
     "secondaryCta": "See How We Work",
     "trustBadge": "Trusted by operations leaders across North America"
@@ -78,12 +78,12 @@
       {
         "number": "01",
         "title": "Systems Audit",
-        "description": "We map your current tools, integrations, data flows, and workflows. You'll get a complete picture of where your operational complexity lives — and what it's costing you."
+        "description": "We map your current tools, integrations, data flows, and workflows. You'll get a complete picture of where your operational complexity lives,  and what it's costing you."
       },
       {
         "number": "02",
         "title": "Solution Design",
-        "description": "We design a connected system architecture tailored to your operations. No generic playbooks — every recommendation is specific to your team, your processes, and your budget."
+        "description": "We design a connected system architecture tailored to your operations. No generic playbooks,  every recommendation is specific to your team, your processes, and your budget."
       },
       {
         "number": "03",
@@ -119,7 +119,7 @@
       },
       "erpImplementation": {
         "title": "ERP Implementation",
-        "description": "ERP projects fail when led by vendors. We're on your side — selecting, configuring, and implementing an ERP that actually fits your operations.",
+        "description": "ERP projects fail when led by vendors. We're on your side,  selecting, configuring, and implementing an ERP that actually fits your operations.",
         "slug": "erp-implementation"
       },
       "crmImplementation": {
@@ -166,7 +166,7 @@
     },
     "mission": {
       "title": "Our Mission",
-      "text": "To give every mid-market operations team the connected systems and operational clarity they need to compete and grow — without the bloated fees and cookie-cutter solutions of traditional consulting."
+      "text": "To give every mid-market operations team the connected systems and operational clarity they need to compete and grow,  without the bloated fees and cookie-cutter solutions of traditional consulting."
     },
     "values": {
       "title": "Our Values",
@@ -195,7 +195,7 @@
     },
     "cta": {
       "headline": "Ready to fix your operations?",
-      "subtext": "Let's start with a free systems audit. No pitch deck, no sales pressure — just a clear-eyed look at where your operations stand and what it would take to level up.",
+      "subtext": "Let's start with a free systems audit. No pitch deck, no sales pressure,  just a clear-eyed look at where your operations stand and what it would take to level up.",
       "button": "Book a Free Audit"
     }
   },

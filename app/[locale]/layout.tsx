@@ -39,7 +39,7 @@ export async function generateMetadata(): Promise<Metadata> {
 
   return {
     title: {
-      default: `${siteConfig.name} — ${siteConfig.tagline}`,
+      default: `${siteConfig.name},  ${siteConfig.tagline}`,
       template: `%s | ${siteConfig.name}`,
     },
     description:
@@ -67,7 +67,7 @@ export async function generateMetadata(): Promise<Metadata> {
     openGraph: {
       type: 'website',
       siteName: siteConfig.name,
-      title: `${siteConfig.name} — ${siteConfig.tagline}`,
+      title: `${siteConfig.name},  ${siteConfig.tagline}`,
       description:
         'B2B operations consulting for mid-market manufacturing and distribution companies.',
       locale: locale,
@@ -75,7 +75,7 @@ export async function generateMetadata(): Promise<Metadata> {
     },
     twitter: {
       card: 'summary_large_image',
-      title: `${siteConfig.name} — ${siteConfig.tagline}`,
+      title: `${siteConfig.name},  ${siteConfig.tagline}`,
       description:
         'B2B operations consulting for mid-market manufacturing and distribution companies.',
     },
@@ -133,7 +133,7 @@ export default async function LocaleLayout({ children, params }: LocaleLayoutPro
           </ConsentManager>
         </NextIntlClientProvider>
 
-        {/* GA4 — loaded after body, consent mode handled by ConsentManager */}
+        {/* GA4,  loaded after body, consent mode handled by ConsentManager */}
         {gaMeasurementId && <GoogleAnalytics gaId={gaMeasurementId} />}
       </body>
     </html>
