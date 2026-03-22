@@ -107,7 +107,7 @@ export default function DifferentiatorCards() {
           {items.map((idx) => (
             <AnimateIn key={idx} variant="scale" delay={idx * 100} threshold={0.05}>
               <div
-                className="relative p-8 rounded-2xl border border-neutral-200 dark:border-white/10 hover:border-accent/40 hover:shadow-lg transition-all duration-300 group cursor-default h-full"
+                className="relative p-8 rounded-2xl border border-neutral-200 dark:border-white/10 hover:border-accent/40 dark:hover:border-white/20 hover:shadow-lg transition-all duration-300 group cursor-default h-full"
                 style={{ backgroundColor: 'var(--card-bg, #ffffff)' }}
               >
                 {/* Accent corner line */}
@@ -116,10 +116,10 @@ export default function DifferentiatorCards() {
                   aria-hidden="true"
                 />
                 <div className="flex items-center gap-4 mb-4">
-                  <div className="flex-shrink-0 w-12 h-12 bg-accent/10 border border-accent/20 rounded-xl flex items-center justify-center text-accent group-hover:bg-accent/20 group-hover:border-accent/40 transition-colors">
+                  <div className="flex-shrink-0 w-12 h-12 bg-accent/10 dark:bg-white/10 border border-accent/20 dark:border-white/10 rounded-xl flex items-center justify-center text-accent dark:text-white/80 group-hover:bg-accent/20 dark:group-hover:bg-white/15 group-hover:border-accent/40 dark:group-hover:border-white/20 transition-colors">
                     {icons[idx]}
                   </div>
-                  <h3 className="font-heading font-semibold text-xl text-text-primary dark:text-white group-hover:text-accent transition-colors">
+                  <h3 className="font-heading font-semibold text-xl text-text-primary dark:text-white group-hover:text-accent dark:group-hover:text-white transition-colors">
                     {t(`items.${idx}.title`)}
                   </h3>
                 </div>

@@ -111,13 +111,13 @@ export default function WhoWeHelp() {
           {industries.map((industry, idx) => (
             <AnimateIn key={industry} variant="slide-up" delay={idx * 80} threshold={0.05}>
               <div
-                className="group h-full p-8 rounded-2xl border border-neutral-200 dark:border-white/10 hover:border-accent/50 dark:hover:border-accent/40 hover:shadow-lg transition-all duration-300 cursor-default"
+                className="group h-full p-8 rounded-2xl border border-neutral-200 dark:border-white/10 hover:border-accent/50 dark:hover:border-white/20 hover:shadow-lg transition-all duration-300 cursor-default"
                 style={{ backgroundColor: 'var(--card-bg, #ffffff)' }}
               >
-                <div className="w-14 h-14 bg-accent/10 dark:bg-accent/10 border border-accent/20 rounded-xl flex items-center justify-center text-accent mb-5 group-hover:bg-accent/20 transition-colors">
+                <div className="w-14 h-14 bg-accent/10 dark:bg-white/10 border border-accent/20 dark:border-white/10 rounded-xl flex items-center justify-center text-accent dark:text-white/80 mb-5 group-hover:bg-accent/20 dark:group-hover:bg-white/15 transition-colors">
                   {industryIcons[industry]}
                 </div>
-                <h3 className="font-heading font-semibold text-xl text-text-primary dark:text-white mb-2 group-hover:text-secondary dark:group-hover:text-accent transition-colors">
+                <h3 className="font-heading font-semibold text-xl text-text-primary dark:text-white mb-2 group-hover:text-secondary dark:group-hover:text-white transition-colors">
                   {t(`industries.${industry}.title`)}
                 </h3>
                 <p className="text-sm text-text-secondary dark:text-neutral-400 leading-relaxed">

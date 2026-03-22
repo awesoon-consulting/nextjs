@@ -23,10 +23,10 @@ const Checkbox = forwardRef<HTMLInputElement, CheckboxProps>(function Checkbox(
           aria-invalid={!!error}
           className={[
             'h-5 w-5 rounded border-2 cursor-pointer',
-            'text-accent bg-surface-elevated',
+            'bg-surface-elevated text-accent dark:border-white/15 dark:bg-secondary/55',
             'transition-colors duration-150',
-            'focus:outline-none focus:ring-2 focus:ring-secondary focus:ring-offset-1',
-            error ? 'border-error' : 'border-neutral-300',
+            'focus:outline-none focus:ring-2 focus:ring-secondary focus:ring-offset-1 focus:ring-offset-white dark:focus:ring-accent dark:focus:ring-offset-primary',
+            error ? 'border-error' : 'border-neutral-300 dark:hover:border-white/20',
           ]
             .filter(Boolean)
             .join(' ')}

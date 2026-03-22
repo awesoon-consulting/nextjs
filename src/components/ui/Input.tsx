@@ -36,13 +36,13 @@ const Input = forwardRef<HTMLInputElement, InputProps>(function Input(
           error ? `${inputId}-error` : hint ? `${inputId}-hint` : undefined
         }
         className={[
-          'w-full px-4 py-3 rounded-lg border text-text-primary bg-surface-elevated',
-          'placeholder:text-text-muted text-base',
+          'w-full rounded-lg border bg-surface-elevated px-4 py-3 text-base text-text-primary dark:border-white/10 dark:bg-secondary/55 dark:text-text-inverse',
+          'placeholder:text-text-muted dark:placeholder:text-neutral-500',
           'transition-colors duration-150',
-          'focus:outline-none focus:ring-2 focus:ring-secondary focus:border-secondary',
+          'focus:outline-none focus:ring-2 focus:ring-secondary focus:border-secondary dark:focus:border-accent',
           error
             ? 'border-error focus:ring-error'
-            : 'border-neutral-300 hover:border-neutral-400',
+            : 'border-neutral-300 hover:border-neutral-400 dark:hover:border-white/20',
           className,
         ]
           .filter(Boolean)

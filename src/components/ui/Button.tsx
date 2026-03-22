@@ -12,13 +12,13 @@ interface ButtonProps extends ButtonHTMLAttributes<HTMLButtonElement> {
 
 const variantClasses: Record<ButtonVariant, string> = {
   primary:
-    'bg-accent text-primary font-semibold hover:bg-accent-dark focus-visible:ring-accent shadow-md hover:shadow-lg active:scale-[0.98]',
+    'bg-primary text-text-inverse font-semibold hover:bg-secondary focus-visible:ring-secondary shadow-md hover:shadow-lg active:scale-[0.98] dark:bg-secondary dark:hover:bg-secondary-light',
   secondary:
-    'bg-secondary text-text-inverse font-semibold hover:bg-secondary-light focus-visible:ring-secondary shadow-md hover:shadow-lg active:scale-[0.98]',
+    'border border-neutral-200 bg-white text-text-primary font-semibold hover:bg-neutral-100 focus-visible:ring-secondary shadow-md hover:shadow-lg active:scale-[0.98] dark:border-white/10 dark:bg-secondary dark:text-text-inverse dark:hover:bg-secondary-light',
   outline:
-    'border-2 border-accent text-accent bg-transparent font-semibold hover:bg-accent hover:text-primary focus-visible:ring-accent active:scale-[0.98]',
+    'border-2 border-accent text-accent bg-transparent font-semibold hover:bg-accent hover:text-text-inverse focus-visible:ring-accent active:scale-[0.98]',
   ghost:
-    'bg-transparent text-text-primary hover:bg-neutral-100 focus-visible:ring-neutral-400 active:scale-[0.98]',
+    'bg-transparent text-text-primary hover:bg-neutral-100 focus-visible:ring-neutral-400 active:scale-[0.98] dark:text-text-inverse dark:hover:bg-white/10',
   danger:
     'bg-error text-white font-semibold hover:opacity-90 focus-visible:ring-error shadow-md active:scale-[0.98]',
 }

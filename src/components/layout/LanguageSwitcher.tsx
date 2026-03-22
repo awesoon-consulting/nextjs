@@ -49,8 +49,8 @@ export default function LanguageSwitcher({ className = '' }: LanguageSwitcherPro
             'px-2 py-1 text-xs font-semibold rounded transition-colors duration-150',
             'focus:outline-none focus-visible:ring-2 focus-visible:ring-accent',
             locale === loc
-              ? 'bg-accent text-primary'
-              : 'text-text-muted hover:text-text-inverse hover:bg-white/10',
+              ? 'bg-accent text-text-inverse'
+              : 'text-text-muted hover:text-text-primary hover:bg-neutral-100 dark:hover:text-text-inverse dark:hover:bg-white/10',
           ]
             .filter(Boolean)
             .join(' ')}

@@ -7,10 +7,10 @@ interface CardProps extends HTMLAttributes<HTMLDivElement> {
 }
 
 const variantClasses = {
-  default: 'bg-surface shadow-md',
-  elevated: 'bg-surface-elevated shadow-lg',
-  bordered: 'bg-surface-elevated border border-neutral-200 shadow-sm',
-  dark: 'bg-primary text-text-inverse shadow-lg',
+  default: 'bg-surface shadow-md dark:bg-secondary/45 dark:shadow-none',
+  elevated: 'bg-surface-elevated shadow-lg dark:border dark:border-white/10 dark:bg-primary dark:shadow-none',
+  bordered: 'border border-neutral-200 bg-surface-elevated shadow-sm dark:border-white/10 dark:bg-primary dark:shadow-none',
+  dark: 'bg-primary text-text-inverse shadow-lg dark:bg-secondary',
 }
 
 const paddingClasses = {

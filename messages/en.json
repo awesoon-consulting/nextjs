@@ -204,13 +204,15 @@
     "subtitle": "Tell us about your operations and we'll schedule a no-pressure discovery call.",
     "steps": {
       "1": "Your Business",
-      "2": "Your Challenges",
-      "3": "Timeline & Budget",
-      "4": "Your Details"
+      "2": "Your Area",
+      "3": "Your Challenges",
+      "4": "Timeline & Budget",
+      "5": "Your Details"
     },
     "fields": {
       "industry": "Industry",
       "companySize": "Company Size",
+      "areas": "Which areas in Vancouver interest you?",
       "problems": "What are your biggest operational challenges?",
       "timeline": "When are you looking to start?",
       "budget": "Budget Range",
@@ -265,6 +267,26 @@
       "submit": "Submit Request",
       "submitting": "Submitting..."
     },
+    "areas": {
+      "downtown": "Downtown",
+      "kitsilano": "Kitsilano",
+      "mountPleasant": "Mount Pleasant",
+      "yaletown": "Yaletown",
+      "gastown": "Gastown",
+      "commercialDrive": "Commercial Drive",
+      "westEnd": "West End",
+      "fairview": "Fairview",
+      "strathcona": "Strathcona",
+      "rileyPark": "Riley Park",
+      "kerrisdale": "Kerrisdale",
+      "dunbar": "Dunbar",
+      "pointGrey": "Point Grey",
+      "northVancouver": "North Vancouver",
+      "burnaby": "Burnaby",
+      "richmond": "Richmond",
+      "newWestminster": "New Westminster",
+      "surrey": "Surrey"
+    },
     "validation": {
       "nameRequired": "Full name is required.",
       "emailRequired": "Work email is required.",
@@ -272,6 +294,7 @@
       "companyRequired": "Company name is required.",
       "industryRequired": "Please select your industry.",
       "companySizeRequired": "Please select your company size.",
+      "areasRequired": "Please select at least one area.",
       "problemRequired": "Please select at least one challenge.",
       "timelineRequired": "Please select a timeline.",
       "budgetRequired": "Please select a budget range."

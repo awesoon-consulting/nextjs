@@ -44,7 +44,7 @@ export default function ProblemSolutions() {
             return (
               <AnimateIn key={idx} variant={variant} delay={idx * 80} threshold={0.05}>
                 <div
-                  className="group relative p-7 rounded-2xl border border-neutral-200 dark:border-white/10 hover:border-accent/40 dark:hover:border-accent/30 transition-all duration-300 hover:shadow-lg h-full"
+                  className="group relative p-7 rounded-2xl border border-neutral-200 dark:border-white/10 hover:border-accent/40 dark:hover:border-white/20 transition-all duration-300 hover:shadow-lg h-full"
                   style={{ backgroundColor: 'var(--card-bg, #ffffff)' }}
                 >
                   {/* Problem tag */}
@@ -70,10 +70,10 @@ export default function ProblemSolutions() {
                         &ldquo;{t(`items.${idx}.problem`)}&rdquo;
                       </p>
                       <div className="flex items-center gap-2">
-                        <div className="w-6 h-0.5 bg-accent flex-shrink-0" aria-hidden="true" />
+                        <div className="w-6 h-0.5 bg-accent dark:bg-white/30 flex-shrink-0" aria-hidden="true" />
                         <Link
                           href={`/${locale}/solutions/${t(`items.${idx}.slug`)}`}
-                          className="text-sm font-semibold text-accent hover:text-accent-dark transition-colors focus:outline-none focus-visible:ring-2 focus-visible:ring-accent rounded inline-flex items-center gap-1"
+                          className="inline-flex items-center gap-1 rounded text-sm font-semibold text-accent transition-colors hover:text-accent-dark focus:outline-none focus-visible:ring-2 focus-visible:ring-accent dark:text-neutral-200 dark:hover:text-white"
                         >
                           {t(`items.${idx}.solution`)}
                           <svg

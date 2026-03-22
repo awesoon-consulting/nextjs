@@ -28,7 +28,7 @@ export default function ProgressBar({
         </div>
       )}
       <div
-        className={['w-full bg-neutral-200 rounded-full overflow-hidden', heightClass].join(' ')}
+        className={['w-full overflow-hidden rounded-full bg-neutral-200 dark:bg-white/10', heightClass].join(' ')}
         role="progressbar"
         aria-valuenow={clamped}
         aria-valuemin={0}

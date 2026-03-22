@@ -76,7 +76,7 @@ export default function Modal({
         ref={dialogRef}
         tabIndex={-1}
         className={[
-          'relative w-full bg-surface-elevated rounded-2xl shadow-xl',
+          'relative w-full rounded-2xl border border-neutral-200 bg-surface-elevated shadow-xl dark:border-white/10 dark:bg-primary dark:shadow-none',
           'focus:outline-none',
           sizeClasses[size],
           className,
@@ -84,7 +84,7 @@ export default function Modal({
           .filter(Boolean)
           .join(' ')}
       >
-        <div className="flex items-center justify-between p-6 border-b border-neutral-200">
+        <div className="flex items-center justify-between border-b border-neutral-200 p-6 dark:border-white/10">
           {title && (
             <h2 id="modal-title" className="text-xl font-heading font-semibold text-text-primary">
               {title}
@@ -92,7 +92,7 @@ export default function Modal({
           )}
           <button
             onClick={onClose}
-            className="ml-auto text-text-muted hover:text-text-primary transition-colors p-1 rounded-lg focus:outline-none focus-visible:ring-2 focus-visible:ring-secondary"
+            className="ml-auto rounded-lg p-1 text-text-muted transition-colors hover:text-text-primary focus:outline-none focus-visible:ring-2 focus-visible:ring-secondary dark:text-neutral-500 dark:hover:text-text-inverse"
             aria-label="Close modal"
           >
             <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">

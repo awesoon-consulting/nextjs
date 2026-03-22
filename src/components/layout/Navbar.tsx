@@ -113,7 +113,7 @@ export default function Navbar() {
             <span className="font-heading text-xl font-bold tracking-tight text-text-primary dark:text-white">
               {siteConfig.name}
             </span>
-            <span className="hidden text-xl font-bold text-accent sm:inline-block">.</span>
+            <span className="hidden text-xl font-bold text-accent dark:text-white/50 sm:inline-block">.</span>
           </Link>
 
           <div className="hidden items-center gap-1 md:flex">
@@ -126,7 +126,7 @@ export default function Navbar() {
                   className={[
                     navLinkBase,
                     isActive(href)
-                      ? 'text-accent'
+                      ? 'text-accent dark:text-white'
                       : 'text-text-secondary hover:bg-neutral-100 hover:text-text-primary dark:text-neutral-300 dark:hover:bg-white/10 dark:hover:text-white',
                   ].join(' ')}
                 >
@@ -227,7 +227,7 @@ export default function Navbar() {
                   className={[
                     'block rounded-lg px-4 py-3 text-base font-medium transition-colors focus:outline-none focus-visible:ring-2 focus-visible:ring-accent',
                     isActive(href)
-                      ? 'bg-accent/10 text-accent dark:bg-white/10'
+                      ? 'bg-accent/10 text-accent dark:bg-white/10 dark:text-white'
                       : 'text-text-secondary hover:bg-neutral-100 hover:text-text-primary dark:text-neutral-300 dark:hover:bg-white/10 dark:hover:text-white',
                   ].join(' ')}
                 >

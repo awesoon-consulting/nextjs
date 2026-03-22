@@ -30,10 +30,10 @@ interface CTABlockProps {
 }
 
 const trustSignals = [
-  { icon: '🚫', text: 'No chatbots' },
-  { icon: '⏱️', text: 'Reply within 24h' },
-  { icon: '🆓', text: 'Completely free' },
-  { icon: '👤', text: 'Named point of contact' },
+  { icon: '⚪', text: 'No chatbots' },
+  { icon: '⚪', text: 'Reply within 24h' },
+  { icon: '⚪', text: 'Completely free' },
+  { icon: '⚪', text: 'Named point of contact' },
 ]
 
 export default function CTABlock({
@@ -90,7 +90,7 @@ export default function CTABlock({
   if (variant === 'light') {
     return (
       <section
-        className="w-full py-24 bg-neutral-100 dark:bg-secondary/20"
+        className="w-full border-y border-neutral-200 bg-white py-24 dark:border-white/10 dark:bg-secondary/20"
         aria-labelledby="cta-heading"
       >
         <div className="w-full px-4 sm:px-6 lg:px-10 xl:px-16">
@@ -133,39 +133,39 @@ export default function CTABlock({
   // ── Default variant: dark with pattern ─────────────────────────────
   return (
     <section
-      className="w-full py-28 bg-primary relative overflow-hidden"
+      className="relative w-full overflow-hidden border-y border-neutral-200 bg-white py-28 dark:border-white/10 dark:bg-primary"
       aria-labelledby="cta-heading"
     >
       {/* Background pattern */}
       <div className="absolute inset-0 pointer-events-none" aria-hidden="true">
         <svg
-          className="absolute right-0 top-0 h-full opacity-[0.06]"
+          className="absolute right-0 top-0 h-full opacity-[0.08] dark:opacity-[0.06]"
           viewBox="0 0 500 700"
           xmlns="http://www.w3.org/2000/svg"
         >
-          <g stroke="#F59E0B" strokeWidth="1" fill="none">
+          <g stroke="#0F1D33" strokeWidth="1" fill="none">
             <circle cx="250" cy="350" r="250" />
             <circle cx="250" cy="350" r="180" />
             <circle cx="250" cy="350" r="110" />
             <circle cx="250" cy="350" r="50" />
           </g>
         </svg>
-        <div className="absolute inset-0 bg-gradient-to-br from-secondary/20 via-transparent to-transparent" />
+        <div className="absolute inset-0 bg-gradient-to-br from-neutral-100 via-transparent to-transparent dark:from-secondary/20" />
       </div>
 
       <div className="relative w-full px-4 sm:px-6 lg:px-10 xl:px-16">
         <AnimateIn variant="slide-up" threshold={0.1}>
           <div className="max-w-3xl mx-auto text-center">
-            <p className="text-white/40 text-xs font-semibold uppercase tracking-widest mb-4">
+            <p className="mb-4 text-xs font-semibold uppercase tracking-widest text-text-muted dark:text-white/40">
               Take the first step
             </p>
             <h2
               id="cta-heading"
-              className="font-heading font-bold text-4xl sm:text-5xl lg:text-6xl text-white mb-5"
+              className="mb-5 font-heading text-4xl font-bold text-text-primary dark:text-white sm:text-5xl lg:text-6xl"
             >
               {t(titleKey as Parameters<typeof t>[0])}
             </h2>
-            <p className="text-lg text-neutral-400 max-w-2xl mx-auto mb-10">
+            <p className="mx-auto mb-10 max-w-2xl text-lg text-text-secondary dark:text-neutral-400">
               {t(subtextKey as Parameters<typeof t>[0])}
             </p>
             <Link href={target}>
@@ -191,7 +191,10 @@ export default function CTABlock({
             {showTrust && (
               <div className="mt-8 flex flex-wrap items-center justify-center gap-6">
                 {trustSignals.map(({ icon, text }) => (
-                  <div key={text} className="flex items-center gap-2 text-neutral-500">
+                  <div
+                    key={text}
+                    className="flex items-center gap-2 text-text-muted dark:text-neutral-500"
+                  >
                     <span aria-hidden="true">{icon}</span>
                     <span className="text-sm">{text}</span>
                   </div>

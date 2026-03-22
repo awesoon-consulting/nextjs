@@ -10,43 +10,43 @@
   --font-heading: var(--font-heading);
   --font-body: var(--font-body);
 
-  /* Primary,  dark navy */
-  --color-primary: #0f1b2d;
-  --color-primary-light: #1e3a5f;
-  --color-primary-dark: #070e18;
+  /* Primary,  rich near-black for light mode copy and dark mode surfaces */
+  --color-primary: #0a0a0a;
+  --color-primary-light: #1c1c1c;
+  --color-primary-dark: #000000;
 
-  /* Secondary,  medium navy */
-  --color-secondary: #1e3a5f;
-  --color-secondary-light: #2d5a8e;
-  --color-secondary-dark: #0f1b2d;
+  /* Secondary,  graphite in light mode */
+  --color-secondary: #2b2b2b;
+  --color-secondary-light: #404040;
+  --color-secondary-dark: #111111;
 
-  /* Accent,  amber */
-  --color-accent: #f59e0b;
-  --color-accent-light: #fcd34d;
-  --color-accent-dark: #d97706;
+  /* Accent,  brand navy */
+  --color-accent: #0f1d33;
+  --color-accent-light: #17304f;
+  --color-accent-dark: #050914;
 
   /* Neutral scale */
-  --color-neutral-50: #fafaf7;
-  --color-neutral-100: #f4f4f0;
-  --color-neutral-200: #e8e8e2;
-  --color-neutral-300: #d1d1c8;
-  --color-neutral-400: #9b9b90;
-  --color-neutral-500: #6b6b60;
-  --color-neutral-600: #4a4a42;
-  --color-neutral-700: #333330;
-  --color-neutral-800: #1f1f1c;
-  --color-neutral-900: #0f0f0d;
+  --color-neutral-50: #ffffff;
+  --color-neutral-100: #fafafa;
+  --color-neutral-200: #ececec;
+  --color-neutral-300: #d4d4d4;
+  --color-neutral-400: #a3a3a3;
+  --color-neutral-500: #737373;
+  --color-neutral-600: #525252;
+  --color-neutral-700: #404040;
+  --color-neutral-800: #262626;
+  --color-neutral-900: #171717;
 
   /* Surface */
-  --color-surface: #fafaf7;
+  --color-surface: #ffffff;
   --color-surface-elevated: #ffffff;
-  --color-surface-dark: #0f1b2d;
+  --color-surface-dark: #050914;
 
   /* Semantic text */
-  --color-text-primary: #0f1b2d;
-  --color-text-secondary: #4a4a42;
-  --color-text-muted: #9b9b90;
-  --color-text-inverse: #fafaf7;
+  --color-text-primary: #0a0a0a;
+  --color-text-secondary: #303030;
+  --color-text-muted: #6b6b6b;
+  --color-text-inverse: #ffffff;
 
   /* Status */
   --color-error: #dc2626;
@@ -77,11 +77,11 @@
   --radius-full: 9999px;
 
   /* Shadows */
-  --shadow-sm: 0 1px 2px 0 rgb(15 27 45 / 0.05);
-  --shadow: 0 1px 3px 0 rgb(15 27 45 / 0.1), 0 1px 2px -1px rgb(15 27 45 / 0.1);
-  --shadow-md: 0 4px 6px -1px rgb(15 27 45 / 0.1), 0 2px 4px -2px rgb(15 27 45 / 0.1);
-  --shadow-lg: 0 10px 15px -3px rgb(15 27 45 / 0.1), 0 4px 6px -4px rgb(15 27 45 / 0.1);
-  --shadow-xl: 0 20px 25px -5px rgb(15 27 45 / 0.1), 0 8px 10px -6px rgb(15 27 45 / 0.1);
+  --shadow-sm: 0 1px 2px 0 rgb(10 10 10 / 0.05);
+  --shadow: 0 10px 30px -18px rgb(10 10 10 / 0.18);
+  --shadow-md: 0 16px 40px -22px rgb(10 10 10 / 0.18);
+  --shadow-lg: 0 24px 60px -28px rgb(10 10 10 / 0.22);
+  --shadow-xl: 0 36px 80px -36px rgb(10 10 10 / 0.25);
 }
 
 /* ─────────────────────────────────────────────────────────────
@@ -101,17 +101,23 @@
    ───────────────────────────────────────────────────────────── */
 :root {
   --card-bg: #ffffff;
-  --card-bg-subtle: #f4f4f0;
+  --card-bg-subtle: #fafafa;
 }
 
 .dark {
-  --color-surface: #0f1b2d;
-  --color-surface-elevated: #1e3a5f;
-  --color-text-primary: #fafaf7;
-  --color-text-secondary: #d1d1c8;
-  --color-text-muted: #6b6b60;
-  --card-bg: rgba(255, 255, 255, 0.05);
-  --card-bg-subtle: rgba(255, 255, 255, 0.08);
+  --color-primary: #050914;
+  --color-primary-light: #0c1321;
+  --color-primary-dark: #02050b;
+  --color-secondary: #0f1d33;
+  --color-secondary-light: #17304f;
+  --color-secondary-dark: #09111d;
+  --color-surface: #050914;
+  --color-surface-elevated: #0d1524;
+  --color-text-primary: #ffffff;
+  --color-text-secondary: #cfd6e2;
+  --color-text-muted: #7e889a;
+  --card-bg: rgba(255, 255, 255, 0.04);
+  --card-bg-subtle: rgba(255, 255, 255, 0.07);
 }
 
 /* ─────────────────────────────────────────────────────────────
@@ -128,19 +134,14 @@ html {
 }
 
 body {
-  background-color: #fafaf7;
-  color: #0f1b2d;
+  background-color: var(--color-surface);
+  color: var(--color-text-primary);
   font-family: var(--font-body, 'Inter', sans-serif);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   transition:
     background-color 200ms ease,
     color 200ms ease;
-}
-
-.dark body {
-  background-color: #0f1b2d;
-  color: #fafaf7;
 }
 
 h1,
@@ -156,7 +157,7 @@ h6 {
    FOCUS STATES
    ───────────────────────────────────────────────────────────── */
 :focus-visible {
-  outline: 2px solid #f59e0b;
+  outline: 2px solid var(--color-accent);
   outline-offset: 3px;
   border-radius: 4px;
 }

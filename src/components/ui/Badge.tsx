@@ -9,11 +9,11 @@ interface BadgeProps extends HTMLAttributes<HTMLSpanElement> {
 }
 
 const variantClasses: Record<BadgeVariant, string> = {
-  default: 'bg-neutral-100 text-text-secondary',
-  accent: 'bg-accent text-primary',
+  default: 'bg-neutral-100 text-text-secondary dark:bg-white/10 dark:text-neutral-300',
+  accent: 'bg-accent text-text-inverse',
   success: 'bg-success-light text-success',
   error: 'bg-error-light text-error',
-  outline: 'border border-neutral-300 text-text-secondary bg-transparent',
+  outline: 'border border-neutral-300 bg-transparent text-text-secondary dark:border-white/15 dark:text-neutral-300',
 }
 
 const sizeClasses: Record<BadgeSize, string> = {

@@ -65,7 +65,7 @@ interface ConsentManagerProps {
 
 export default function ConsentManager({ children }: ConsentManagerProps) {
   const t = useTranslations()
-  const [consent, setConsentState] = useState<ConsentCategories | null>(null)
+  const [consent, setConsentState] = useState<ConsentCategories | null>(() => getConsent())
   const [isModalOpen, setIsModalOpen] = useState(false)
   const [draftConsent, setDraftConsent] = useState<ConsentCategories>({
     necessary: true,
@@ -76,12 +76,10 @@ export default function ConsentManager({ children }: ConsentManagerProps) {
   // Initialize gtag consent defaults immediately (SSR-safe)
   useEffect(() => {
     initGtagConsentDefaults()
-    const stored = getConsent()
-    if (stored) {
-      setConsentState(stored)
-      applyGtagConsent(stored)
+    if (consent) {
+      applyGtagConsent(consent)
     }
-  }, [])
+  }, [consent])
 
   // Listen for consent-updated events from CookieBanner
   useEffect(() => {
@@ -129,7 +127,7 @@ export default function ConsentManager({ children }: ConsentManagerProps) {
       >
         <div className="space-y-6">
           {/* Necessary */}
-          <div className="flex items-center justify-between p-4 rounded-lg bg-neutral-50 border border-neutral-200">
+          <div className="flex items-center justify-between rounded-lg border border-neutral-200 bg-neutral-50 p-4 dark:border-white/10 dark:bg-secondary/45">
             <div>
               <p className="text-sm font-semibold text-text-primary">
                 {t('cookie.manager.categories.necessary.title')}
@@ -144,7 +142,7 @@ export default function ConsentManager({ children }: ConsentManagerProps) {
           </div>
 
           {/* Analytics */}
-          <div className="p-4 rounded-lg border border-neutral-200">
+          <div className="rounded-lg border border-neutral-200 p-4 dark:border-white/10 dark:bg-secondary/35">
             <div className="flex items-start justify-between gap-4">
               <div>
                 <p className="text-sm font-semibold text-text-primary">
@@ -167,7 +165,7 @@ export default function ConsentManager({ children }: ConsentManagerProps) {
           </div>
 
           {/* Marketing */}
-          <div className="p-4 rounded-lg border border-neutral-200">
+          <div className="rounded-lg border border-neutral-200 p-4 dark:border-white/10 dark:bg-secondary/35">
             <div className="flex items-start justify-between gap-4">
               <div>
                 <p className="text-sm font-semibold text-text-primary">

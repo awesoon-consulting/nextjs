@@ -26,43 +26,45 @@ const SCROLL_THRESHOLD = 600
 export default function FloatingCTA() {
   const locale = useLocale()
   const pathname = usePathname()
-  const [visible, setVisible] = useState(false)
+  const [visiblePath, setVisiblePath] = useState<string | null>(null)
   const [dismissed, setDismissed] = useState(false)
-  const [mounted, setMounted] = useState(false)
+  const [isReady, setIsReady] = useState(false)
+  const isVisible = visiblePath === pathname
 
-  // Check if user already dismissed this session
   useEffect(() => {
-    setMounted(true)
-    try {
-      if (sessionStorage.getItem(DISMISSED_KEY)) {
-        setDismissed(true)
+    const frame = window.requestAnimationFrame(() => {
+      setIsReady(true)
+      try {
+        if (sessionStorage.getItem(DISMISSED_KEY)) {
+          setDismissed(true)
+        }
+      } catch {
+        // sessionStorage unavailable (e.g. incognito restrictions), show anyway
       }
-    } catch {
-      // sessionStorage unavailable (e.g. incognito restrictions),  show anyway
-    }
+    })
+
+    return () => window.cancelAnimationFrame(frame)
   }, [])
 
-  // Show after scrolling past hero
   useEffect(() => {
-    if (!mounted || dismissed) return
+    if (!isReady || dismissed) return
 
     function handleScroll() {
-      setVisible(window.scrollY > SCROLL_THRESHOLD)
+      setVisiblePath(window.scrollY > SCROLL_THRESHOLD ? pathname : null)
     }
 
     window.addEventListener('scroll', handleScroll, { passive: true })
-    handleScroll() // check on mount
-    return () => window.removeEventListener('scroll', handleScroll)
-  }, [mounted, dismissed])
+    const frame = window.requestAnimationFrame(handleScroll)
 
-  // Reset visibility on route change
-  useEffect(() => {
-    setVisible(false)
-  }, [pathname])
+    return () => {
+      window.cancelAnimationFrame(frame)
+      window.removeEventListener('scroll', handleScroll)
+    }
+  }, [dismissed, isReady, pathname])
 
   function dismiss() {
     setDismissed(true)
-    setVisible(false)
+    setVisiblePath(null)
     try {
       sessionStorage.setItem(DISMISSED_KEY, '1')
     } catch {
@@ -72,7 +74,7 @@ export default function FloatingCTA() {
 
   // Don't show on /contact pages
   const isContactPage = pathname.includes('/contact')
-  if (!mounted || dismissed || isContactPage) return null
+  if (!isReady || dismissed || isContactPage) return null
 
   const contactHref = `/${locale}/contact`
 
@@ -83,13 +85,13 @@ export default function FloatingCTA() {
       className={[
         'fixed bottom-6 left-1/2 -translate-x-1/2 z-50 w-full max-w-xl px-4',
         'transition-all duration-500',
-        visible
+        isVisible
           ? 'translate-y-0 opacity-100 pointer-events-auto'
           : 'translate-y-8 opacity-0 pointer-events-none',
       ].join(' ')}
       style={{ willChange: 'transform, opacity' }}
     >
-      <div className="relative bg-primary border border-accent/30 rounded-2xl shadow-2xl px-5 py-4 flex items-center gap-4">
+      <div className="relative flex items-center gap-4 rounded-2xl border border-neutral-200 bg-white px-5 py-4 shadow-[0_28px_80px_rgba(10,10,10,0.18)] dark:border-white/10 dark:bg-primary dark:shadow-2xl">
         {/* Pulse indicator */}
         <div className="relative flex-shrink-0" aria-hidden="true">
           <span className="absolute inline-flex w-3 h-3 rounded-full bg-accent animate-ping-slow" />
@@ -98,10 +100,10 @@ export default function FloatingCTA() {
 
         {/* Message */}
         <div className="flex-1 min-w-0">
-          <p className="text-white font-semibold text-sm leading-tight">
+          <p className="text-sm font-semibold leading-tight text-text-primary dark:text-white">
             Your systems audit is free.
           </p>
-          <p className="text-neutral-400 text-xs mt-0.5">
+          <p className="mt-0.5 text-xs text-text-secondary dark:text-neutral-400">
             30 minutes. A real operator. No pitch deck.
           </p>
         </div>
@@ -109,8 +111,8 @@ export default function FloatingCTA() {
         {/* CTA */}
         <Link
           href={contactHref}
-          className="flex-shrink-0 bg-accent hover:bg-accent-dark text-primary font-semibold text-sm px-4 py-2 rounded-xl transition-colors duration-150 focus:outline-none focus-visible:ring-2 focus-visible:ring-accent focus-visible:ring-offset-2 focus-visible:ring-offset-primary whitespace-nowrap"
-          onClick={() => setVisible(false)}
+          className="flex-shrink-0 whitespace-nowrap rounded-xl bg-primary px-4 py-2 text-sm font-semibold text-text-inverse transition-colors duration-150 hover:bg-secondary focus:outline-none focus-visible:ring-2 focus-visible:ring-secondary focus-visible:ring-offset-2 focus-visible:ring-offset-white dark:bg-secondary dark:hover:bg-secondary-light dark:focus-visible:ring-offset-primary"
+          onClick={() => setVisiblePath(null)}
         >
           Claim It →
         </Link>
@@ -119,7 +121,7 @@ export default function FloatingCTA() {
         <button
           onClick={dismiss}
           aria-label="Dismiss this offer"
-          className="flex-shrink-0 p-1.5 text-neutral-500 hover:text-neutral-300 rounded-lg transition-colors focus:outline-none focus-visible:ring-2 focus-visible:ring-accent"
+          className="flex-shrink-0 rounded-lg p-1.5 text-text-muted transition-colors hover:text-text-primary focus:outline-none focus-visible:ring-2 focus-visible:ring-accent dark:text-neutral-500 dark:hover:text-neutral-300"
         >
           <svg
             className="w-4 h-4"

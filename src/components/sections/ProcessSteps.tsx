@@ -42,7 +42,7 @@ export default function ProcessSteps() {
         <div className="relative">
           {/* Connecting line (desktop) */}
           <div
-            className="hidden lg:block absolute top-12 left-[calc(12.5%+3rem)] right-[calc(12.5%+3rem)] h-0.5 bg-gradient-to-r from-neutral-300 dark:from-white/10 via-accent/50 to-neutral-300 dark:to-white/10"
+            className="hidden lg:block absolute top-12 left-[calc(12.5%+3rem)] right-[calc(12.5%+3rem)] h-0.5 bg-gradient-to-r from-neutral-300 dark:from-white/10 via-accent/50 dark:via-white/20 to-neutral-300 dark:to-white/10"
             aria-hidden="true"
           />
 
@@ -51,16 +51,16 @@ export default function ProcessSteps() {
               <AnimateIn key={idx} variant="slide-up" delay={idx * 120} threshold={0.05}>
                 <div className="relative flex flex-col items-center text-center group">
                   {/* Step number circle */}
-                  <div className="relative z-10 w-24 h-24 rounded-full bg-white dark:bg-primary/80 border-2 border-neutral-200 dark:border-white/20 group-hover:border-accent dark:group-hover:border-accent flex flex-col items-center justify-center mb-6 transition-all duration-300 shadow-md group-hover:shadow-lg">
+                  <div className="relative z-10 w-24 h-24 rounded-full bg-white dark:bg-primary/80 border-2 border-neutral-200 dark:border-white/20 group-hover:border-accent dark:group-hover:border-white/20 flex flex-col items-center justify-center mb-6 transition-all duration-300 shadow-md group-hover:shadow-lg">
                     <span className="text-xs font-medium text-text-muted dark:text-neutral-500 uppercase tracking-widest">
                       Step
                     </span>
-                    <span className="font-heading font-bold text-2xl text-secondary dark:text-accent">
+                    <span className="font-heading font-bold text-2xl text-secondary dark:text-white">
                       {t(`steps.${idx}.number`)}
                     </span>
                   </div>
 
-                  <h3 className="font-heading font-semibold text-xl text-text-primary dark:text-white mb-3 group-hover:text-secondary dark:group-hover:text-accent transition-colors">
+                  <h3 className="font-heading font-semibold text-xl text-text-primary dark:text-white mb-3 group-hover:text-secondary dark:group-hover:text-white transition-colors">
                     {t(`steps.${idx}.title`)}
                   </h3>
                   <p className="text-sm text-text-secondary dark:text-neutral-400 leading-relaxed">
@@ -69,7 +69,7 @@ export default function ProcessSteps() {
 
                   {/* Step 1 and 2 get inline nudge */}
                   {(idx === 0 || idx === 1) && (
-                    <p className="mt-3 text-xs text-accent font-medium">
+                    <p className="mt-3 text-xs font-medium text-accent dark:text-neutral-300">
                       {idx === 0 ? 'Free,  no commitment' : 'Delivered in 48h'}
                     </p>
                   )}

@@ -3,9 +3,8 @@ import { useTranslations, useLocale } from 'next-intl'
 import Button from '@/src/components/ui/Button'
 
 /**
- * Hero,  always dark navy. Full-viewport-width.
- * Design: typography-first, geometric grid pattern, no colour noise.
- * Amber used only on the accent word and CTA button.
+ * Hero, premium monochrome in light mode and deep navy in dark mode.
+ * The structure stays typography-first, with subtle geometry and shadowed depth.
  */
 export default function Hero() {
   const t = useTranslations()
@@ -13,30 +12,40 @@ export default function Hero() {
 
   return (
     <section
-      className="relative w-full min-h-screen flex items-center overflow-hidden"
-      style={{ backgroundColor: '#0F1B2D' }}
+      className="relative flex min-h-screen w-full items-center overflow-hidden bg-white dark:bg-primary"
       aria-label="Hero"
     >
-      {/* Subtle geometric grid,  very low opacity */}
+      {/* Subtle geometric grid and glows */}
       <div className="absolute inset-0 pointer-events-none select-none" aria-hidden="true">
         <svg
           className="absolute inset-0 w-full h-full"
-          style={{ opacity: 0.03 }}
+          style={{ opacity: 0.05 }}
           xmlns="http://www.w3.org/2000/svg"
           preserveAspectRatio="xMidYMid slice"
         >
           <defs>
             <pattern id="hero-grid" width="80" height="80" patternUnits="userSpaceOnUse">
+              <path d="M 80 0 L 0 0 0 80" fill="none" stroke="#0A0A0A" strokeWidth="0.5" />
+            </pattern>
+            <pattern id="hero-grid-dark" width="80" height="80" patternUnits="userSpaceOnUse">
               <path d="M 80 0 L 0 0 0 80" fill="none" stroke="#ffffff" strokeWidth="0.5" />
             </pattern>
           </defs>
-          <rect width="100%" height="100%" fill="url(#hero-grid)" />
+          <rect width="100%" height="100%" fill="url(#hero-grid)" className="dark:hidden" />
+          <rect width="100%" height="100%" fill="url(#hero-grid-dark)" className="hidden dark:block" />
         </svg>
 
-        {/* Single subtle glow,  no amber */}
         <div
-          className="absolute top-1/2 right-0 -translate-y-1/2 w-[600px] h-[600px] rounded-full blur-[160px]"
-          style={{ backgroundColor: 'rgba(30,58,95,0.5)' }}
+          className="absolute left-[-10%] top-24 h-[420px] w-[420px] rounded-full blur-[140px]"
+          style={{ backgroundColor: 'rgba(245,158,11,0.10)' }}
+        />
+        <div
+          className="absolute right-[-8%] top-1/2 h-[560px] w-[560px] -translate-y-1/2 rounded-full blur-[180px] dark:hidden"
+          style={{ backgroundColor: 'rgba(10,10,10,0.08)' }}
+        />
+        <div
+          className="absolute right-0 top-1/2 hidden h-[600px] w-[600px] -translate-y-1/2 rounded-full blur-[160px] dark:block"
+          style={{ backgroundColor: 'rgba(15,29,51,0.52)' }}
         />
       </div>
 
@@ -45,30 +54,23 @@ export default function Hero() {
         <div className="max-w-4xl">
           {/* Badge */}
           <div
-            className="animate-in anim-hero-badge delay-0 inline-flex items-center gap-2 rounded-full px-4 py-1.5 mb-8"
-            style={{
-              backgroundColor: 'rgba(255,255,255,0.06)',
-              border: '1px solid rgba(255,255,255,0.12)',
-            }}
+            className="animate-in anim-hero-badge delay-0 inline-flex items-center gap-2 rounded-full px-4 py-1.5 mb-8 bg-white/94 border border-black/8 shadow-[0_16px_40px_-24px_rgba(10,10,10,0.35)] dark:bg-white/5 dark:border-white/10 dark:shadow-none"
           >
-            <span className="w-1.5 h-1.5 bg-white/60 rounded-full" aria-hidden="true" />
-            <span className="text-white/60 text-sm font-medium tracking-wide">
+            <span className="h-1.5 w-1.5 rounded-full bg-accent" aria-hidden="true" />
+            <span className="text-sm font-medium tracking-wide text-text-secondary dark:text-white/60">
               {t('hero.trustBadge')}
             </span>
           </div>
 
           {/* Headline */}
-          <h1 className="animate-in anim-slide-up delay-100 font-heading font-bold text-5xl sm:text-6xl lg:text-7xl xl:text-8xl text-white leading-[1.05] tracking-tight mb-6">
-            Your ops outgrew <span className="text-accent">your tools.</span>
+          <h1 className="animate-in anim-slide-up delay-100 mb-6 font-heading text-5xl font-bold leading-[1.05] tracking-tight text-text-primary dark:text-white sm:text-6xl lg:text-7xl xl:text-8xl">
+            Your ops outgrew <span className="text-accent dark:text-white">your tools.</span>
             <br />
             We fix that.
           </h1>
 
           {/* Subtext */}
-          <p
-            className="animate-in anim-slide-up delay-200 text-lg sm:text-xl leading-relaxed mb-10 max-w-2xl"
-            style={{ color: 'rgba(255,255,255,0.55)' }}
-          >
+          <p className="animate-in anim-slide-up delay-200 mb-10 max-w-2xl text-lg leading-relaxed text-text-secondary dark:text-white/55 sm:text-xl">
             {t('hero.subtext')}
           </p>
 
@@ -102,8 +104,7 @@ export default function Hero() {
 
           {/* Trust signals */}
           <div
-            className="animate-in anim-fade-in delay-500 mt-12 pt-8 flex flex-wrap gap-6 sm:gap-10"
-            style={{ borderTop: '1px solid rgba(255,255,255,0.1)' }}
+            className="animate-in anim-fade-in delay-500 mt-12 flex flex-wrap gap-6 border-t border-neutral-200 pt-8 dark:border-white/10 sm:gap-10"
             aria-label="Trust signals"
           >
             {[
@@ -112,11 +113,10 @@ export default function Hero() {
               { stat: '0', label: 'Chatbots. Ever.' },
             ].map(({ stat, label }) => (
               <div key={stat} className="flex items-center gap-3">
-                <span className="font-heading font-bold text-2xl text-white">{stat}</span>
-                <span
-                  className="text-sm leading-tight max-w-[100px]"
-                  style={{ color: 'rgba(255,255,255,0.4)' }}
-                >
+                <span className="font-heading text-2xl font-bold text-text-primary dark:text-white">
+                  {stat}
+                </span>
+                <span className="max-w-[100px] text-sm leading-tight text-text-muted dark:text-white/40">
                   {label}
                 </span>
               </div>
@@ -128,12 +128,12 @@ export default function Hero() {
       {/* Bottom fade into next section */}
       <div
         className="absolute bottom-0 left-0 right-0 h-32 dark:hidden"
-        style={{ background: 'linear-gradient(to top, #FAFAF7, transparent)' }}
+        style={{ background: 'linear-gradient(to top, #FFFFFF, transparent)' }}
         aria-hidden="true"
       />
       <div
         className="absolute bottom-0 left-0 right-0 h-32 hidden dark:block"
-        style={{ background: 'linear-gradient(to top, #0F1B2D, transparent)' }}
+        style={{ background: 'linear-gradient(to top, #050914, transparent)' }}
         aria-hidden="true"
       />
     </section>

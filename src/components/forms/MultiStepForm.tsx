@@ -6,11 +6,23 @@ import { usePathname } from 'next/navigation'
 import Button from '@/src/components/ui/Button'
 import Input from '@/src/components/ui/Input'
 import Select from '@/src/components/ui/Select'
-import Checkbox from '@/src/components/ui/Checkbox'
+import ChipSelect from '@/src/components/ui/ChipSelect'
 import ProgressBar from '@/src/components/ui/ProgressBar'
 import FormStep from './FormStep'
 import { trackFormStep, trackFormSubmit } from '@/src/lib/analytics'
 
+// ─── Step configuration ────────────────────────────────────────────────────────
+// Flip `multiSelect` per step to toggle between single- and multi-select chip UI.
+const STEP_CONFIG = [
+  { step: 1, multiSelect: false }, // Business info   — Select dropdowns, flag unused
+  { step: 2, multiSelect: true  }, // Challenges      — ChipSelect, toggle here
+  { step: 3, multiSelect: false }, // Timeline/Budget — Select dropdowns, flag unused
+  { step: 4, multiSelect: false }, // Contact details — inputs, flag unused
+] as const satisfies readonly { step: number; multiSelect: boolean }[]
+
+const TOTAL_STEPS = STEP_CONFIG.length
+
+// ─── Types ─────────────────────────────────────────────────────────────────────
 interface FormData {
   industry: string
   companySize: string
@@ -35,8 +47,6 @@ interface FormErrors {
   email?: string
 }
 
-const TOTAL_STEPS = 4
-
 const initialData: FormData = {
   industry: '',
   companySize: '',
@@ -50,6 +60,7 @@ const initialData: FormData = {
   message: '',
 }
 
+// ─── Component ─────────────────────────────────────────────────────────────────
 export default function MultiStepForm() {
   const t = useTranslations('contact')
   const locale = useLocale()
@@ -63,7 +74,9 @@ export default function MultiStepForm() {
   const [submitError, setSubmitError] = useState<string | null>(null)
 
   const progress = ((step - 1) / TOTAL_STEPS) * 100
+  const currentStepConfig = STEP_CONFIG[step - 1]
 
+  // ─── Field helpers ──────────────────────────────────────────────────────────
   function updateField<K extends keyof FormData>(field: K, value: FormData[K]) {
     setData((prev) => ({ ...prev, [field]: value }))
     if (errors[field as keyof FormErrors]) {
@@ -71,18 +84,7 @@ export default function MultiStepForm() {
     }
   }
 
-  function toggleProblem(value: string) {
-    setData((prev) => ({
-      ...prev,
-      problems: prev.problems.includes(value)
-        ? prev.problems.filter((p) => p !== value)
-        : [...prev.problems, value],
-    }))
-    if (errors.problems) {
-      setErrors((prev) => ({ ...prev, problems: undefined }))
-    }
-  }
-
+  // ─── Validation ─────────────────────────────────────────────────────────────
   function validateStep(currentStep: number): boolean {
     const newErrors: FormErrors = {}
 
@@ -111,6 +113,7 @@ export default function MultiStepForm() {
     return Object.keys(newErrors).length === 0
   }
 
+  // ─── Navigation ─────────────────────────────────────────────────────────────
   function handleNext() {
     if (!validateStep(step)) return
     trackFormStep(step, t(`steps.${step}` as Parameters<typeof t>[0]))
@@ -121,8 +124,9 @@ export default function MultiStepForm() {
     setStep((prev) => prev - 1)
   }
 
+  // ─── Submit ─────────────────────────────────────────────────────────────────
   async function handleSubmit() {
-    if (!validateStep(4)) return
+    if (!validateStep(5)) return
 
     setIsSubmitting(true)
     setSubmitError(null)
@@ -143,7 +147,6 @@ export default function MultiStepForm() {
         setSubmitError(t('error.rateLimit'))
         return
       }
-
       if (!response.ok) {
         setSubmitError(t('error.generic'))
         return
@@ -158,6 +161,7 @@ export default function MultiStepForm() {
     }
   }
 
+  // ─── Success state ──────────────────────────────────────────────────────────
   if (isSuccess) {
     return (
       <div className="text-center py-12 px-6">
@@ -170,8 +174,7 @@ export default function MultiStepForm() {
           {t('success.title')}
         </h2>
         <p className="text-text-secondary mb-8 max-w-md mx-auto">{t('success.message')}</p>
-        {/* Named responder */}
-        <div className="flex items-center gap-4 max-w-xs mx-auto bg-neutral-50 border border-neutral-200 rounded-xl p-4">
+        <div className="mx-auto flex max-w-xs items-center gap-4 rounded-xl border border-neutral-200 bg-neutral-50 p-4 dark:border-white/10 dark:bg-secondary/45">
           <div className="w-12 h-12 rounded-full bg-secondary/10 border-2 border-secondary/20 flex items-center justify-center flex-shrink-0">
             <span className="font-heading font-bold text-secondary text-sm">SC</span>
           </div>
@@ -184,6 +187,7 @@ export default function MultiStepForm() {
     )
   }
 
+  // ─── Option sets ────────────────────────────────────────────────────────────
   const industryOptions = [
     { value: 'manufacturing', label: t('industries.manufacturing') },
     { value: 'distribution', label: t('industries.distribution') },
@@ -196,6 +200,14 @@ export default function MultiStepForm() {
     { value: '51-200', label: t('companySizes.medium') },
     { value: '201-500', label: t('companySizes.large') },
     { value: '500+', label: t('companySizes.enterprise') },
+  ]
+
+  const problemOptions = [
+    { value: 'outgrown', label: t('problems.outgrown') },
+    { value: 'spreadsheets', label: t('problems.spreadsheets') },
+    { value: 'disconnected', label: t('problems.disconnected') },
+    { value: 'manual', label: t('problems.manual') },
+    { value: 'no-scalability', label: t('problems.noScalability') },
   ]
 
   const timelineOptions = [
@@ -213,21 +225,14 @@ export default function MultiStepForm() {
     { value: 'prefer-not-to-say', label: t('budgets.preferNotToSay') },
   ]
 
-  const problemOptions = [
-    { value: 'outgrown', label: t('problems.outgrown') },
-    { value: 'spreadsheets', label: t('problems.spreadsheets') },
-    { value: 'disconnected', label: t('problems.disconnected') },
-    { value: 'manual', label: t('problems.manual') },
-    { value: 'no-scalability', label: t('problems.noScalability') },
-  ]
-
+  // ─── Render ─────────────────────────────────────────────────────────────────
   return (
     <div>
       {/* Step indicators */}
       <div className="mb-8">
         <ProgressBar value={progress} size="md" />
         <div className="flex justify-between mt-3">
-          {[1, 2, 3, 4].map((s) => (
+          {STEP_CONFIG.map(({ step: s }) => (
             <span
               key={s}
               className={[
@@ -270,31 +275,20 @@ export default function MultiStepForm() {
       </FormStep>
 
       {/* Step 2: Challenges */}
-      <FormStep isActive={step === 2} title={t('steps.2')}>
-        <fieldset>
-          <legend className="text-sm font-semibold text-text-primary mb-3">
-            {t('fields.problems')}
-            <span className="text-error ml-1" aria-label="required">*</span>
-          </legend>
-          <div className="space-y-3">
-            {problemOptions.map((opt) => (
-              <Checkbox
-                key={opt.value}
-                id={`problem-${opt.value}`}
-                label={opt.label}
-                checked={data.problems.includes(opt.value)}
-                onChange={() => toggleProblem(opt.value)}
-              />
-            ))}
-          </div>
-          {errors.problems && (
-            <p role="alert" className="text-xs text-error mt-2">{errors.problems}</p>
-          )}
-        </fieldset>
+      <FormStep isActive={step === 3} title={t('steps.3')}>
+        <ChipSelect
+          options={problemOptions}
+          value={data.problems}
+          onChange={(values) => updateField('problems', values)}
+          multiSelect={currentStepConfig.step === 3 ? STEP_CONFIG[2].multiSelect : true}
+          label={t('fields.problems')}
+          error={errors.problems}
+          required
+        />
       </FormStep>
 
-      {/* Step 3: Timeline & Budget */}
-      <FormStep isActive={step === 3} title={t('steps.3')}>
+      {/* Step 4: Timeline & Budget */}
+      <FormStep isActive={step === 4} title={t('steps.4')}>
         <Select
           id="timeline"
           label={t('fields.timeline')}
@@ -317,8 +311,8 @@ export default function MultiStepForm() {
         />
       </FormStep>
 
-      {/* Step 4: Personal details */}
-      <FormStep isActive={step === 4} title={t('steps.4')}>
+      {/* Step 5: Contact details */}
+      <FormStep isActive={step === 5} title={t('steps.5')}>
         <Input
           id="name"
           label={t('fields.name')}
@@ -370,7 +364,7 @@ export default function MultiStepForm() {
         </div>
       )}
 
-      {/* Navigation buttons */}
+      {/* Navigation */}
       <div className="flex items-center gap-3 mt-8">
         {step > 1 && (
           <Button variant="ghost" onClick={handleBack} disabled={isSubmitting}>
