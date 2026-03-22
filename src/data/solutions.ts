@@ -9,11 +9,14 @@ export interface SolutionData {
   descriptionKey: string
   problemHeadline: string
   category: string
+  seoSummary: string
   painPoints: string[]
   whatWeDo: string[]
+  aiOpportunities: string[]
   outcomes: string[]
   ctaText: string
   relatedSlugs: string[]
+  relatedInsightSlugs: string[]
 }
 
 export const solutions: SolutionData[] = [
@@ -23,6 +26,8 @@ export const solutions: SolutionData[] = [
     descriptionKey: 'solutions.cards.opsOutgrown.description',
     problemHeadline: "Your systems can't keep up with your growth",
     category: 'Operations Strategy',
+    seoSummary:
+      'Operations consulting for mid-market companies that have outgrown disconnected tools, manual workflows, and fragile reporting.',
     painPoints: [
       `You're managing more SKUs, customers, and transactions than your current systems were designed for`,
       'Your team is filling gaps with spreadsheets, emails, and manual workarounds',
@@ -37,6 +42,11 @@ export const solutions: SolutionData[] = [
       'Build a phased implementation roadmap with clear ROI milestones',
       'Manage the full implementation and ensure a clean handoff to your team',
     ],
+    aiOpportunities: [
+      'Deploy AI copilots that answer operational questions using approved SOPs, ERP data, and team documentation through a secure RAG layer',
+      'Use agentic workflows to triage exceptions, summarize bottlenecks, and route follow-up tasks to the right teams',
+      'Turn fragmented tribal knowledge into searchable operational playbooks for faster onboarding and fewer repeat mistakes',
+    ],
     outcomes: [
       'A connected operational infrastructure that scales with your business',
       'Dramatically reduced manual work and human error',
@@ -46,6 +56,7 @@ export const solutions: SolutionData[] = [
     ],
     ctaText: 'Get a Free Systems Audit',
     relatedSlugs: ['systems-audit', 'system-integration', 'erp-implementation'],
+    relatedInsightSlugs: ['ai-operations-readiness', 'system-integration-guide'],
   },
   {
     slug: 'spreadsheet-operations',
@@ -53,6 +64,8 @@ export const solutions: SolutionData[] = [
     descriptionKey: 'solutions.cards.spreadsheetOps.description',
     problemHeadline: "You're running a mid-market company on spreadsheets",
     category: 'Operations Infrastructure',
+    seoSummary:
+      'Spreadsheet replacement consulting for operations teams that need scalable systems, cleaner data, and less manual risk.',
     painPoints: [
       'Critical business processes,  inventory, orders, production planning,  live in Excel',
       'No one person has a complete picture because the data is spread across dozens of files',
@@ -67,6 +80,11 @@ export const solutions: SolutionData[] = [
       'Build automation to eliminate manual re-entry between systems',
       'Train your team and document every process we implement',
     ],
+    aiOpportunities: [
+      'Convert spreadsheet logic into governed workflows that AI agents can monitor, summarize, and flag for exceptions',
+      'Use retrieval-backed assistants to help teams find the right version of process rules, pricing assumptions, and operating procedures',
+      'Layer AI forecasting and anomaly detection on top of cleaned operational data once it is no longer trapped in Excel files',
+    ],
     outcomes: [
       'Core processes running on purpose-built tools, not Excel',
       'Single source of truth for inventory, orders, and operational data',
@@ -76,6 +94,7 @@ export const solutions: SolutionData[] = [
     ],
     ctaText: 'Replace Your Spreadsheets',
     relatedSlugs: ['ops-outgrown-tools', 'erp-implementation', 'system-integration'],
+    relatedInsightSlugs: ['spreadsheet-to-erp-migration', 'ai-operations-readiness'],
   },
   {
     slug: 'system-integration',
@@ -83,6 +102,8 @@ export const solutions: SolutionData[] = [
     descriptionKey: 'solutions.cards.systemIntegration.description',
     problemHeadline: "Your systems don't talk to each other",
     category: 'Integration',
+    seoSummary:
+      'System integration consulting to connect ERP, CRM, WMS, ecommerce, and finance platforms across mid-market operations.',
     painPoints: [
       `You have good software but it's all siloed,  ERP, CRM, WMS, and ecommerce don't share data`,
       'Your team re-keys the same data into 2–4 systems every day',
@@ -97,6 +118,11 @@ export const solutions: SolutionData[] = [
       'Set up automated data sync, error handling, and monitoring',
       'Provide documentation and runbooks for your IT team',
     ],
+    aiOpportunities: [
+      'Prepare your stack for AI by creating clean, governed data pipelines that retrieval systems and agents can trust',
+      'Use AI monitoring to classify sync failures, summarize root causes, and recommend the next operational action',
+      'Create unified data access layers that support chat-based reporting and cross-system operational assistants',
+    ],
     outcomes: [
       'Data flows automatically between your systems without manual intervention',
       'Single source of truth for orders, inventory, customers, and financials',
@@ -106,6 +132,7 @@ export const solutions: SolutionData[] = [
     ],
     ctaText: 'Connect Your Systems',
     relatedSlugs: ['api-integrations', 'erp-implementation', 'ops-outgrown-tools'],
+    relatedInsightSlugs: ['system-integration-guide', 'building-rag-agents-for-operations'],
   },
   {
     slug: 'erp-implementation',
@@ -113,6 +140,8 @@ export const solutions: SolutionData[] = [
     descriptionKey: 'solutions.cards.erpImplementation.description',
     problemHeadline: 'You need an ERP that actually fits your operations',
     category: 'ERP',
+    seoSummary:
+      'ERP implementation support for mid-market operations teams that need objective selection, clean rollout, and strong adoption.',
     painPoints: [
       `You bought an ERP and it was never fully implemented, or it's barely used`,
       `You're evaluating ERP options but don't know how to compare them objectively`,
@@ -127,6 +156,11 @@ export const solutions: SolutionData[] = [
       'Lead the full implementation: configuration, data migration, testing, training',
       'Manage change management and ensure adoption across your team',
     ],
+    aiOpportunities: [
+      'Use the ERP rollout to establish the data discipline needed for AI forecasting, reporting copilots, and document retrieval',
+      'Create role-based AI assistants that help users navigate ERP processes, training content, and exception handling without guesswork',
+      'Pair ERP workflows with agentic support for follow-ups, approvals, and operational alerts after go-live',
+    ],
     outcomes: [
       `An ERP that's configured for your actual processes, not the default setup`,
       'Full team adoption and confidence in the new system',
@@ -136,6 +170,7 @@ export const solutions: SolutionData[] = [
     ],
     ctaText: 'Get ERP Implementation Help',
     relatedSlugs: ['systems-audit', 'vendor-management', 'system-integration'],
+    relatedInsightSlugs: ['why-erp-projects-fail', 'ai-operations-readiness'],
   },
   {
     slug: 'crm-implementation',
@@ -143,6 +178,8 @@ export const solutions: SolutionData[] = [
     descriptionKey: 'solutions.cards.crmImplementation.description',
     problemHeadline: 'Your sales team is flying blind',
     category: 'CRM',
+    seoSummary:
+      'CRM implementation for teams that need pipeline visibility, better forecasting, and stronger sales-to-operations handoffs.',
     painPoints: [
       'Deal tracking lives in individual spreadsheets or email inboxes',
       `You can't accurately forecast revenue because you don't know what's in the pipeline`,
@@ -157,6 +194,11 @@ export const solutions: SolutionData[] = [
       'Build the reports and dashboards your leadership team actually needs',
       'Train your sales team and create adoption incentives',
     ],
+    aiOpportunities: [
+      'Enable AI sales copilots that summarize accounts, surface next-best actions, and retrieve customer context from approved data sources',
+      'Use agents to draft follow-ups, identify stalled deals, and escalate handoff risks before they hit operations',
+      'Connect CRM knowledge with operational systems so teams can answer customer questions with current inventory, lead time, and project status data',
+    ],
     outcomes: [
       'Accurate pipeline visibility for leadership',
       'Sales team using the CRM because it actually helps them, not just for management reporting',
@@ -166,6 +208,7 @@ export const solutions: SolutionData[] = [
     ],
     ctaText: 'Fix Your CRM',
     relatedSlugs: ['system-integration', 'ops-outgrown-tools', 'api-integrations'],
+    relatedInsightSlugs: ['vendor-selection-process', 'building-rag-agents-for-operations'],
   },
   {
     slug: 'api-integrations',
@@ -173,6 +216,8 @@ export const solutions: SolutionData[] = [
     descriptionKey: 'solutions.cards.apiIntegrations.description',
     problemHeadline: 'Manual data transfer is killing your productivity',
     category: 'Integration',
+    seoSummary:
+      'API integration services that automate repetitive data movement and support reliable, scalable operational workflows.',
     painPoints: [
       'Someone on your team spends hours every day copying data between systems',
       `Orders placed on one platform don't automatically appear in your fulfillment system`,
@@ -187,6 +232,11 @@ export const solutions: SolutionData[] = [
       'Implement error handling, logging, and monitoring so nothing silently fails',
       'Document everything and train whoever will own it going forward',
     ],
+    aiOpportunities: [
+      'Use API-first architecture to feed RAG systems and agents with current operational data instead of stale exports',
+      'Add AI-based classification for inbound requests, tickets, order exceptions, and integration error queues',
+      'Create lightweight agents that trigger workflows across systems while preserving approvals and human oversight',
+    ],
     outcomes: [
       'Zero manual data re-entry for high-volume, repetitive workflows',
       'Real-time or near-real-time data sync across your core systems',
@@ -196,6 +246,7 @@ export const solutions: SolutionData[] = [
     ],
     ctaText: 'Automate Your Data Flows',
     relatedSlugs: ['system-integration', 'erp-implementation', 'ops-outgrown-tools'],
+    relatedInsightSlugs: ['system-integration-guide', 'building-rag-agents-for-operations'],
   },
   {
     slug: 'vendor-management',
@@ -203,6 +254,8 @@ export const solutions: SolutionData[] = [
     descriptionKey: 'solutions.cards.vendorManagement.description',
     problemHeadline: 'Vendor selection is a black box',
     category: 'Strategy',
+    seoSummary:
+      'Software vendor selection and negotiation support for operations leaders making ERP, CRM, and systems decisions.',
     painPoints: [
       `You're evaluating software and every vendor says they can do everything`,
       `You don't have internal expertise to evaluate technical claims objectively`,
@@ -217,6 +270,11 @@ export const solutions: SolutionData[] = [
       'Score vendors against your requirements with documented rationale',
       'Support contract negotiations with market knowledge',
     ],
+    aiOpportunities: [
+      'Evaluate vendor AI claims with the same rigor as core workflow claims so you do not buy vague “AI-ready” promises',
+      'Define where RAG, copilots, or agentic automation would create real value before software vendors lock you into their roadmap',
+      'Choose platforms with the APIs, permissions, and data models needed for future AI initiatives and governance',
+    ],
     outcomes: [
       'A confident, well-documented vendor selection decision',
       'A contract with protections and terms that actually reflect your requirements',
@@ -226,6 +284,7 @@ export const solutions: SolutionData[] = [
     ],
     ctaText: 'Get Vendor Selection Help',
     relatedSlugs: ['erp-implementation', 'crm-implementation', 'systems-audit'],
+    relatedInsightSlugs: ['vendor-selection-process', 'ai-operations-readiness'],
   },
   {
     slug: 'systems-audit',
@@ -233,6 +292,8 @@ export const solutions: SolutionData[] = [
     descriptionKey: 'solutions.cards.systemsAudit.description',
     problemHeadline: "You don't know where to start",
     category: 'Strategy',
+    seoSummary:
+      'Operational systems audit for companies that need a clear roadmap across ERP, integrations, spreadsheets, and AI readiness.',
     painPoints: [
       `You know your operations have problems but you're not sure which ones to fix first`,
       'You have a list of system improvement ideas but no way to prioritize them',
@@ -247,6 +308,11 @@ export const solutions: SolutionData[] = [
       'Benchmark against what best-in-class operations look like at your size',
       'Deliver a prioritized roadmap with effort estimates and ROI projections',
     ],
+    aiOpportunities: [
+      'Assess AI readiness across data quality, permissions, documentation maturity, and process stability before any rollout begins',
+      'Identify the highest-ROI use cases for RAG assistants, workflow agents, and AI-enabled reporting inside your current stack',
+      'Build an implementation roadmap that sequences foundations first so AI investments land on stable operational ground',
+    ],
     outcomes: [
       'A complete map of your operational tech stack and where it breaks down',
       'A prioritized list of improvements ranked by impact and implementation complexity',
@@ -256,6 +322,7 @@ export const solutions: SolutionData[] = [
     ],
     ctaText: 'Book a Systems Audit',
     relatedSlugs: ['ops-outgrown-tools', 'erp-implementation', 'vendor-management'],
+    relatedInsightSlugs: ['ai-operations-readiness', 'vendor-selection-process'],
   },
 ]
 

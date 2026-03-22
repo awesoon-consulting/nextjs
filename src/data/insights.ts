@@ -15,6 +15,7 @@ export interface InsightPost {
   readingTime: number // minutes
   tags: string[]
   relatedSlugs: string[]
+  relatedSolutionSlugs: string[]
 }
 
 export const insights: InsightPost[] = [
@@ -69,6 +70,7 @@ The projects that succeed are the ones where the client owns the outcome,  where
     readingTime: 7,
     tags: ['ERP', 'Implementation', 'Operations', 'Change Management'],
     relatedSlugs: ['spreadsheet-to-erp-migration', 'vendor-selection-process'],
+    relatedSolutionSlugs: ['erp-implementation', 'systems-audit', 'vendor-management'],
   },
   {
     slug: 'spreadsheet-to-erp-migration',
@@ -133,6 +135,7 @@ Moving off spreadsheets successfully requires an honest audit, risk-based priori
     readingTime: 8,
     tags: ['Spreadsheets', 'Operations', 'ERP', 'Process Improvement'],
     relatedSlugs: ['why-erp-projects-fail', 'vendor-selection-process'],
+    relatedSolutionSlugs: ['spreadsheet-operations', 'erp-implementation', 'ops-outgrown-tools'],
   },
   {
     slug: 'vendor-selection-process',
@@ -194,6 +197,7 @@ Software vendor selection should be a structured, objective process driven by yo
     readingTime: 6,
     tags: ['Vendor Selection', 'Software', 'Strategy', 'ERP'],
     relatedSlugs: ['why-erp-projects-fail', 'system-integration-guide'],
+    relatedSolutionSlugs: ['vendor-management', 'erp-implementation', 'crm-implementation'],
   },
   {
     slug: 'system-integration-guide',
@@ -254,6 +258,145 @@ Start with a map. Prioritize by impact. Choose the simplest approach that meets 
     readingTime: 9,
     tags: ['Integration', 'API', 'Tech Stack', 'Operations'],
     relatedSlugs: ['why-erp-projects-fail', 'vendor-selection-process'],
+    relatedSolutionSlugs: ['system-integration', 'api-integrations', 'ops-outgrown-tools'],
+  },
+  {
+    slug: 'ai-operations-readiness',
+    title: 'AI Readiness for Operations Teams: What to Fix Before You Buy the Hype',
+    excerpt:
+      "Most operations teams don't have an AI problem. They have a data quality, workflow clarity, and systems trust problem. Here's how to get AI-ready the right way.",
+    content: `
+# AI Readiness for Operations Teams: What to Fix Before You Buy the Hype
+
+Every mid-market operations leader is hearing the same pitch: add AI and your team will move faster, make better decisions, and operate with less overhead.
+
+Sometimes that's true. But in most cases, AI amplifies the condition of your underlying operation. If your systems are fragmented, your data is unreliable, and your SOPs only exist in people's heads, AI won't fix that. It will surface the mess faster.
+
+## Start with Operational Reality
+
+Before you evaluate copilots, RAG tools, or agentic workflow platforms, answer four questions:
+- Is the underlying process stable enough to automate?
+- Is the source data accurate enough to trust?
+- Do permissions and ownership exist for the information involved?
+- Is the team clear on where human review is required?
+
+If the answer to any of those is no, the first investment should not be an AI layer. It should be operational cleanup.
+
+## RAG Is Only as Good as the Retrieval Layer
+
+Retrieval-augmented generation can be powerful for operations teams. It can help employees find SOPs, answer policy questions, surface customer context, and reduce time spent hunting through files.
+
+But RAG fails when:
+- Documents are outdated
+- File ownership is unclear
+- Different systems disagree with each other
+- No one has defined which source is authoritative
+
+The hard part is not the model. The hard part is governance.
+
+## Agentic Workflows Need Guardrails
+
+Agentic automation sounds attractive because it promises to move beyond answering questions and into taking action.
+
+That only works when the workflow has:
+- Clear success and failure states
+- Approval checkpoints
+- Reliable system access
+- Logging, monitoring, and rollback plans
+
+An agent that can trigger a purchase order, update a customer record, or route a warehouse exception is only useful if the surrounding controls are mature.
+
+## The Best Early AI Use Cases
+
+The highest-value AI use cases in mid-market operations are usually:
+- Internal knowledge assistants backed by approved SOPs and policy documents
+- Exception triage for tickets, orders, or workflow queues
+- Summaries across long operational records, notes, or customer histories
+- Search and reporting copilots that sit on top of trusted operational data
+
+These use cases create value quickly without pretending AI should replace core systems or human judgment.
+
+## Conclusion
+
+The right AI strategy starts with operational clarity. Fix data flow issues. Clean up ownership. Document workflows. Then add AI where it reduces friction, not where it creates a new layer of ambiguity.
+    `.trim(),
+    category: 'technology',
+    author: 'Awesoon Team',
+    authorTitle: 'Operations Consulting',
+    publishedAt: '2026-03-22',
+    readingTime: 8,
+    tags: ['AI', 'RAG', 'Operations', 'Governance'],
+    relatedSlugs: ['building-rag-agents-for-operations', 'system-integration-guide'],
+    relatedSolutionSlugs: ['systems-audit', 'ops-outgrown-tools', 'vendor-management'],
+  },
+  {
+    slug: 'building-rag-agents-for-operations',
+    title: 'Where RAG and Agentic Workflows Actually Fit in Mid-Market Operations',
+    excerpt:
+      'RAG and agentic systems can create real operational leverage, but only when they are connected to the right workflows, data sources, and controls.',
+    content: `
+# Where RAG and Agentic Workflows Actually Fit in Mid-Market Operations
+
+RAG and agentic AI get lumped together in software pitches, but they solve different problems.
+
+RAG helps people get grounded answers from approved sources. Agentic systems go a step further and take action inside workflows. Operations teams need both concepts, but they should not buy or implement them the same way.
+
+## Where RAG Delivers Fast Value
+
+RAG works best when the job is to find, summarize, or explain information that already exists somewhere in the business.
+
+Strong examples include:
+- SOP assistants for warehouse, production, and service teams
+- Customer context assistants that combine CRM history, account notes, and support documentation
+- ERP and policy copilots for internal training and adoption
+- Commercial knowledge tools that answer pricing, lead time, and process questions from approved sources
+
+This is often the cleanest first AI win because it improves speed without directly changing records in your core systems.
+
+## Where Agentic Automation Makes Sense
+
+Agentic workflows become interesting when there is a clear operational trigger, a defined action, and measurable business impact.
+
+Examples:
+- Triage and route order exceptions
+- Draft responses for customer service teams with human review
+- Monitor integration failures and escalate by severity
+- Trigger follow-up tasks after specific ERP or CRM events
+
+The key is not autonomy for its own sake. The key is controlled execution in repetitive, rules-based workflows.
+
+## What Needs to Exist First
+
+Before either approach works reliably, you need:
+- Stable source systems
+- Defined system ownership
+- Permission-aware access to data
+- Clear handoffs between teams
+- Monitoring for failure cases
+
+Without those foundations, your AI layer becomes another disconnected system for the team to work around.
+
+## How to Sequence the Rollout
+
+For most mid-market companies, the right sequence is:
+1. Fix spreadsheet dependencies and core data flow issues
+2. Connect source systems and define the system of record
+3. Deploy a RAG assistant for high-frequency internal questions
+4. Add narrowly scoped agents around one or two repetitive workflows
+5. Expand only after usage, trust, and controls are proven
+
+## Conclusion
+
+RAG is usually the first practical layer. Agentic workflows come next when the process is stable enough to automate action. Companies that sequence this well get compounding value instead of compounding confusion.
+    `.trim(),
+    category: 'technology',
+    author: 'Awesoon Team',
+    authorTitle: 'Operations Consulting',
+    publishedAt: '2026-03-22',
+    readingTime: 9,
+    tags: ['AI', 'RAG', 'Agents', 'Integration'],
+    relatedSlugs: ['ai-operations-readiness', 'system-integration-guide'],
+    relatedSolutionSlugs: ['api-integrations', 'system-integration', 'crm-implementation'],
   },
 ]
 

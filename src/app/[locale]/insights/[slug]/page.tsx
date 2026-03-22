@@ -2,6 +2,7 @@ import type { Metadata } from 'next'
 import { notFound } from 'next/navigation'
 import Link from 'next/link'
 import { getInsightBySlug, getAllInsightSlugs } from '@/src/data/insights'
+import { getSolutionBySlug } from '@/src/data/solutions'
 import { siteConfig } from '@/src/config/site'
 import Badge from '@/src/components/ui/Badge'
 import CTABlock from '@/src/components/sections/CTABlock'
@@ -153,6 +154,58 @@ export default async function InsightPage({ params }: InsightPageProps) {
               ))}
             </div>
           </div>
+
+          {post.relatedSolutionSlugs.length > 0 && (
+            <div className="mt-12 border-t border-neutral-200 pt-8">
+              <h2 className="mb-5 font-heading text-2xl font-bold text-text-primary">
+                Related Solutions
+              </h2>
+              <div className="grid gap-3 sm:grid-cols-2">
+                {post.relatedSolutionSlugs.map((solutionSlug) => {
+                  const solution = getSolutionBySlug(solutionSlug)
+                  if (!solution) return null
+
+                  return (
+                    <Link
+                      key={solutionSlug}
+                      href={`/${locale}/solutions/${solutionSlug}`}
+                      className="rounded-xl border border-neutral-200 p-4 transition-colors hover:border-secondary/40 focus:outline-none focus-visible:ring-2 focus-visible:ring-secondary"
+                    >
+                      <p className="font-medium text-text-primary">{solution.problemHeadline}</p>
+                      <p className="mt-2 text-sm text-text-secondary">
+                        {solution.seoSummary}
+                      </p>
+                    </Link>
+                  )
+                })}
+              </div>
+            </div>
+          )}
+
+          {post.relatedSlugs.length > 0 && (
+            <div className="mt-12 border-t border-neutral-200 pt-8">
+              <h2 className="mb-5 font-heading text-2xl font-bold text-text-primary">
+                Keep Reading
+              </h2>
+              <div className="space-y-3">
+                {post.relatedSlugs.map((relatedSlug) => {
+                  const relatedPost = getInsightBySlug(relatedSlug)
+                  if (!relatedPost) return null
+
+                  return (
+                    <Link
+                      key={relatedSlug}
+                      href={`/${locale}/insights/${relatedSlug}`}
+                      className="block rounded-xl border border-neutral-200 p-4 transition-colors hover:border-secondary/40 focus:outline-none focus-visible:ring-2 focus-visible:ring-secondary"
+                    >
+                      <p className="font-medium text-text-primary">{relatedPost.title}</p>
+                      <p className="mt-2 text-sm text-text-secondary">{relatedPost.excerpt}</p>
+                    </Link>
+                  )
+                })}
+              </div>
+            </div>
+          )}
         </div>
       </article>
 

@@ -3,6 +3,7 @@ import { notFound } from 'next/navigation'
 import Link from 'next/link'
 import { getTranslations } from 'next-intl/server'
 import { getSolutionBySlug, getAllSolutionSlugs } from '@/src/data/solutions'
+import { getInsightBySlug } from '@/src/data/insights'
 import { siteConfig } from '@/src/config/site'
 import CTABlock from '@/src/components/sections/CTABlock'
 import Badge from '@/src/components/ui/Badge'
@@ -28,7 +29,7 @@ export async function generateMetadata({ params }: SolutionPageProps): Promise<M
 
   return {
     title: t(solution.titleKey as Parameters<typeof t>[0]),
-    description: solution.problemHeadline,
+    description: solution.seoSummary,
   }
 }
 
@@ -145,6 +146,28 @@ export default async function SolutionPage({ params }: SolutionPageProps) {
                   ))}
                 </ul>
               </div>
+
+              {/* AI opportunities */}
+              <div>
+                <h2 className="font-heading font-bold text-2xl text-text-primary mb-6">
+                  AI, RAG, and Agentic Value Add
+                </h2>
+                <p className="mb-5 text-text-secondary">
+                  Once the operational foundation is stable, this solution also creates room for practical AI deployment.
+                </p>
+                <ul className="space-y-3" role="list">
+                  {solution.aiOpportunities.map((item, i) => (
+                    <li key={i} className="flex items-start gap-3">
+                      <div className="mt-0.5 flex h-6 w-6 flex-shrink-0 items-center justify-center rounded-full bg-secondary/10 border border-secondary/20">
+                        <svg className="h-3.5 w-3.5 text-secondary" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 4v16m8-8H4" />
+                        </svg>
+                      </div>
+                      <p className="text-text-secondary">{item}</p>
+                    </li>
+                  ))}
+                </ul>
+              </div>
             </div>
 
             {/* Sidebar CTA */}
@@ -180,6 +203,29 @@ export default async function SolutionPage({ params }: SolutionPageProps) {
                           className="block p-3 rounded-lg border border-neutral-200 hover:border-secondary/40 transition-colors text-sm font-medium text-text-secondary hover:text-secondary focus:outline-none focus-visible:ring-2 focus-visible:ring-secondary"
                         >
                           {t(related.titleKey as Parameters<typeof t>[0])}
+                        </Link>
+                      )
+                    })}
+                  </div>
+                </div>
+              )}
+
+              {solution.relatedInsightSlugs.length > 0 && (
+                <div className="mt-8">
+                  <h4 className="text-sm font-semibold uppercase tracking-wider text-text-muted mb-4">
+                    Related Insights
+                  </h4>
+                  <div className="space-y-2">
+                    {solution.relatedInsightSlugs.map((insightSlug) => {
+                      const relatedInsight = getInsightBySlug(insightSlug)
+                      if (!relatedInsight) return null
+                      return (
+                        <Link
+                          key={insightSlug}
+                          href={`/${locale}/insights/${insightSlug}`}
+                          className="block rounded-lg border border-neutral-200 p-3 text-sm font-medium text-text-secondary transition-colors hover:border-secondary/40 hover:text-secondary focus:outline-none focus-visible:ring-2 focus-visible:ring-secondary"
+                        >
+                          {relatedInsight.title}
                         </Link>
                       )
                     })}
