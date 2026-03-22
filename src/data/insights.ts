@@ -1,4 +1,4 @@
-/**
+/
  * Blog/insights data. Replace with a CMS or MDX files as the content grows.
  * Currently uses static placeholder data to demonstrate structure.
  */
@@ -38,7 +38,7 @@ The problem: you've designed your implementation around the vendor's strengths, 
 
 The vendor knows their software better than you do. They know how to configure it to look impressive in a demo. They don't know your warehouse layout, your customer exceptions, your union rules, or the 47 workarounds your team has built over 10 years.
 
-**The fix:** Define your requirements before you talk to a single vendor. Start with your people,  what does each person on the floor actually need to do their job? What data do they need to see? What decisions does the system need to support? Build that list, then evaluate vendors against it.
+The fix: Define your requirements before you talk to a single vendor. Start with your people,  what does each person on the floor actually need to do their job? What data do they need to see? What decisions does the system need to support? Build that list, then evaluate vendors against it.
 
 ## Underestimating Data Migration
 
@@ -46,7 +46,7 @@ Every ERP project we've seen underestimates data migration. Every single one.
 
 Your historical data is messy. It was entered by different people over different years with different standards. Item numbers are inconsistent. Customer records are duplicated. Costs are wrong. Some of it doesn't even exist digitally,  it's in filing cabinets or people's heads.
 
-**The fix:** Allocate 30% of your total project timeline to data cleanup and migration. Start the data audit on day one. Have a clear owner. Don't let go-live be blocked by last-minute data chaos.
+The fix: Allocate 30% of your total project timeline to data cleanup and migration. Start the data audit on day one. Have a clear owner. Don't let go-live be blocked by last-minute data chaos.
 
 ## Change Management as an Afterthought
 
@@ -54,7 +54,7 @@ Most ERP projects think of training as something you do in the last two weeks be
 
 This doesn't work. People who were forced to adopt a new system without understanding why it's better than the old one will find workarounds immediately. Six months after go-live, you'll find spreadsheets being used to compensate for a system no one actually uses.
 
-**The fix:** Involve your heaviest users early. Get their input on how the system should be configured. Make them feel like they built it, not like something was done to them.
+The fix: Involve your heaviest users early. Get their input on how the system should be configured. Make them feel like they built it, not like something was done to them.
 
 ## Conclusion
 
@@ -93,19 +93,19 @@ Go department by department. Ask each team lead to inventory every spreadsheet t
 - What breaks if this spreadsheet is wrong?
 
 You'll typically find three categories:
-1. **Spreadsheets that should be in a real system**,  order tracking, inventory counts, production schedules
-2. **Spreadsheets compensating for a broken process**,  these reveal process problems, not just tool problems
-3. **Spreadsheets that are actually fine**,  ad hoc analysis, one-time projects, executive reporting that's too custom for a generic tool
+1. Spreadsheets that should be in a real system,  order tracking, inventory counts, production schedules
+2. Spreadsheets compensating for a broken process,  these reveal process problems, not just tool problems
+3. Spreadsheets that are actually fine,  ad hoc analysis, one-time projects, executive reporting that's too custom for a generic tool
 
 Only the first category needs to be migrated. The second category needs a process fix before any tech change. The third category can stay.
 
 ## Step 2: Prioritize by Business Risk
 
 Not all spreadsheets are equal risk. Prioritize by:
-- **Frequency of use:** Daily-use spreadsheets are higher priority than monthly ones
-- **Number of users:** More users = more potential for version conflicts
-- **Downstream dependencies:** Does other reporting depend on this data being accurate?
-- **Audit/compliance exposure:** Are regulators or auditors going to ask about this data?
+- Frequency of use: Daily-use spreadsheets are higher priority than monthly ones
+- Number of users: More users = more potential for version conflicts
+- Downstream dependencies: Does other reporting depend on this data being accurate?
+- Audit/compliance exposure: Are regulators or auditors going to ask about this data?
 
 Build a 2x2 of risk vs. migration complexity and start with high-risk, low-complexity migrations.
 
@@ -114,11 +114,11 @@ Build a 2x2 of risk vs. migration complexity and start with high-risk, low-compl
 This is where most companies make mistakes. They assume "get off spreadsheets" means "implement an ERP." Sometimes it does. Often it doesn't.
 
 The right replacement depends on the category:
-- **Inventory management:** WMS or ERP inventory module
-- **Order tracking:** OMS or CRM with order capability
-- **Production scheduling:** MES or ERP production module, or sometimes a specialized tool
-- **Project/job tracking:** PSA or project management tool
-- **Customer data:** CRM
+- Inventory management: WMS or ERP inventory module
+- Order tracking: OMS or CRM with order capability
+- Production scheduling: MES or ERP production module, or sometimes a specialized tool
+- Project/job tracking: PSA or project management tool
+- Customer data: CRM
 
 The mistake is trying to replace everything with one tool. Except in specific cases, that's not how mid-market operations work. You're going to have multiple systems. The goal is having the right tool for each job, not having one tool for every job.
 
@@ -221,13 +221,13 @@ This map will reveal your highest-value integration opportunities,  the manual t
 
 Not all integrations need to be built the same way. The right approach depends on your systems, your budget, and your maintenance capacity.
 
-**Native integrations:** Some systems have pre-built connectors to other common platforms. Always start here. They're maintained by the vendor and require no custom code.
+Native integrations: Some systems have pre-built connectors to other common platforms. Always start here. They're maintained by the vendor and require no custom code.
 
-**iPaaS platforms (Zapier, Make, Boomi, Celigo, etc.):** For connecting SaaS tools, an integration platform is often faster and cheaper than custom development. These tools have visual, no-code/low-code interfaces and are maintainable by non-developers.
+iPaaS platforms (Zapier, Make, Boomi, Celigo, etc.): For connecting SaaS tools, an integration platform is often faster and cheaper than custom development. These tools have visual, no-code/low-code interfaces and are maintainable by non-developers.
 
-**Custom API integrations:** For complex transformations, high data volumes, or systems with limited native integration support, custom code is sometimes the right answer. More expensive to build and maintain, but more flexible.
+Custom API integrations: For complex transformations, high data volumes, or systems with limited native integration support, custom code is sometimes the right answer. More expensive to build and maintain, but more flexible.
 
-**Middleware/ESB:** For large enterprises with dozens of systems, an enterprise service bus or middleware platform makes sense. For most mid-market companies, this is overkill.
+Middleware/ESB: For large enterprises with dozens of systems, an enterprise service bus or middleware platform makes sense. For most mid-market companies, this is overkill.
 
 ## Build for Failure, Not for the Happy Path
 

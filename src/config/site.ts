@@ -13,7 +13,7 @@ export const siteConfig = {
     email: 'hello@awesoon.com',
     privacyEmail: 'privacy@awesoon.com',
     phone: '+1 (555) 000-0000', // PLACEHOLDER
-    address: 'Montreal, QC, Canada', // PLACEHOLDER
+    address: '4609-1480 Howe Street, Vancouver, BC, Canada',
   },
 
   nav: {
