@@ -11,6 +11,7 @@
     "megaMenu": {
       "groupOps": "Operaciones e Integración",
       "groupImplementation": "Implementación y Asesoría",
+      "aiOperations": "Operaciones con IA",
       "opsOutgrown": "Operaciones superadas",
       "spreadsheetOps": "Operaciones en hojas de cálculo",
       "systemIntegration": "Integración de sistemas",
@@ -109,6 +110,11 @@
     "subtitle": "Cada participación comienza con una comprensión profunda de tus operaciones.",
     "learnMore": "Saber más",
     "cards": {
+      "aiOperations": {
+        "title": "Operaciones con IA y habilitación RAG",
+        "description": "Ayudamos a equipos del mercado medio a desplegar asistentes RAG, agentes de flujo de trabajo y copilotos de IA sobre sistemas estables, datos gobernados y casos de uso operativos reales.",
+        "slug": "ai-operations"
+      },
       "opsOutgrown": {
         "title": "Operaciones superadas",
         "description": "Tu negocio ha escalado pero tus sistemas no han seguido el ritmo. Diseñamos e implementamos la infraestructura que tu próxima etapa de crecimiento exige.",

@@ -10,6 +10,7 @@
     "megaMenu": {
       "groupOps": "Operations & Integration",
       "groupImplementation": "Implementation & Advisory",
+      "aiOperations": "AI Operations",
       "opsOutgrown": "Ops Outgrown Tools",
       "spreadsheetOps": "Spreadsheet Operations",
       "systemIntegration": "System Integration",
@@ -108,6 +109,11 @@
     "subtitle": "Every engagement starts with a deep understanding of your operations. Here are the most common problems we solve.",
     "learnMore": "Learn more",
     "cards": {
+      "aiOperations": {
+        "title": "AI Operations & RAG Enablement",
+        "description": "We help mid-market teams deploy RAG assistants, workflow agents, and AI copilots on top of stable systems, governed data, and real operational use cases.",
+        "slug": "ai-operations"
+      },
       "opsOutgrown": {
         "title": "Ops Outgrown Your Tools",
         "description": "Your business has scaled but your systems haven't kept up. We design and implement the infrastructure your next stage of growth demands.",

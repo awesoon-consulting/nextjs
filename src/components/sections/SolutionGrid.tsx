@@ -5,6 +5,7 @@ import Badge from '@/src/components/ui/Badge'
 import AnimateIn from '@/src/components/ui/AnimateIn'
 
 const solutionKeys = [
+  { key: 'aiOperations', category: 'AI & Automation' },
   { key: 'opsOutgrown', category: 'Operations Strategy' },
   { key: 'spreadsheetOps', category: 'Infrastructure' },
   { key: 'systemIntegration', category: 'Integration' },

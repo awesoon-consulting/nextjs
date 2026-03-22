@@ -21,6 +21,44 @@ export interface SolutionData {
 
 export const solutions: SolutionData[] = [
   {
+    slug: 'ai-operations',
+    titleKey: 'solutions.cards.aiOperations.title',
+    descriptionKey: 'solutions.cards.aiOperations.description',
+    problemHeadline: 'You want AI to create leverage, not more operational chaos',
+    category: 'AI & Automation',
+    seoSummary:
+      'AI operations consulting for mid-market teams adopting RAG assistants, workflow agents, and AI copilots on top of real operational foundations.',
+    painPoints: [
+      `You're getting pitched AI tools but no one can explain how they fit your actual workflows`,
+      `Your data is spread across systems, files, and tribal knowledge, so AI outputs would be unreliable today`,
+      `You want to use RAG, copilots, or agents, but you don't know what should be automated and what needs human review`,
+      `Your leadership team wants an AI roadmap, but your operations team is already overloaded`,
+      `You're worried about governance, permissions, hallucinations, and vendor hype`,
+    ],
+    whatWeDo: [
+      'Assess your operational and data readiness for AI adoption across systems, documentation, and workflows',
+      'Identify the highest-ROI use cases for RAG assistants, AI copilots, and agentic workflow automation',
+      'Define the source systems, retrieval layers, permissions, and human-in-the-loop controls each use case requires',
+      'Design and implement practical pilots that connect AI to your real operating environment',
+      'Document governance, monitoring, and rollout plans so the solution is usable and trusted after launch',
+    ],
+    aiOpportunities: [
+      'RAG assistants that answer SOP, policy, training, account, and process questions using approved internal sources',
+      'Agentic workflows that classify, summarize, and route repetitive operational work with human oversight',
+      'AI copilots for reporting, customer context, ERP support, sales handoffs, and exception management',
+    ],
+    outcomes: [
+      'A clear AI roadmap tied to operational value, not generic experimentation',
+      'Safer AI deployment built on trustworthy data, permissions, and source-of-truth decisions',
+      'Faster internal search, better decision support, and less time lost to knowledge gaps',
+      'Focused automation in repetitive workflows without creating governance blind spots',
+      'Executive confidence that AI investments are grounded in operational reality',
+    ],
+    ctaText: 'Plan Your AI Roadmap',
+    relatedSlugs: ['systems-audit', 'system-integration', 'api-integrations'],
+    relatedInsightSlugs: ['ai-operations-readiness', 'building-rag-agents-for-operations'],
+  },
+  {
     slug: 'ops-outgrown-tools',
     titleKey: 'solutions.cards.opsOutgrown.title',
     descriptionKey: 'solutions.cards.opsOutgrown.description',
@@ -55,7 +93,7 @@ export const solutions: SolutionData[] = [
       `The operational capacity to take on growth you've been avoiding`,
     ],
     ctaText: 'Get a Free Systems Audit',
-    relatedSlugs: ['systems-audit', 'system-integration', 'erp-implementation'],
+    relatedSlugs: ['systems-audit', 'system-integration', 'erp-implementation', 'ai-operations'],
     relatedInsightSlugs: ['ai-operations-readiness', 'system-integration-guide'],
   },
   {
@@ -93,7 +131,7 @@ export const solutions: SolutionData[] = [
       'Hours per week saved on data management tasks',
     ],
     ctaText: 'Replace Your Spreadsheets',
-    relatedSlugs: ['ops-outgrown-tools', 'erp-implementation', 'system-integration'],
+    relatedSlugs: ['ops-outgrown-tools', 'erp-implementation', 'system-integration', 'ai-operations'],
     relatedInsightSlugs: ['spreadsheet-to-erp-migration', 'ai-operations-readiness'],
   },
   {
@@ -131,7 +169,7 @@ export const solutions: SolutionData[] = [
       'Ability to add new systems without creating new silos',
     ],
     ctaText: 'Connect Your Systems',
-    relatedSlugs: ['api-integrations', 'erp-implementation', 'ops-outgrown-tools'],
+    relatedSlugs: ['api-integrations', 'erp-implementation', 'ops-outgrown-tools', 'ai-operations'],
     relatedInsightSlugs: ['system-integration-guide', 'building-rag-agents-for-operations'],
   },
   {
@@ -169,7 +207,7 @@ export const solutions: SolutionData[] = [
       'An implementation that came in on time and on budget',
     ],
     ctaText: 'Get ERP Implementation Help',
-    relatedSlugs: ['systems-audit', 'vendor-management', 'system-integration'],
+    relatedSlugs: ['systems-audit', 'vendor-management', 'system-integration', 'ai-operations'],
     relatedInsightSlugs: ['why-erp-projects-fail', 'ai-operations-readiness'],
   },
   {
@@ -207,7 +245,7 @@ export const solutions: SolutionData[] = [
       'Shorter sales cycles because reps have the context they need',
     ],
     ctaText: 'Fix Your CRM',
-    relatedSlugs: ['system-integration', 'ops-outgrown-tools', 'api-integrations'],
+    relatedSlugs: ['system-integration', 'ops-outgrown-tools', 'api-integrations', 'ai-operations'],
     relatedInsightSlugs: ['vendor-selection-process', 'building-rag-agents-for-operations'],
   },
   {
@@ -245,7 +283,7 @@ export const solutions: SolutionData[] = [
       'Confidence that your data is accurate without manual reconciliation',
     ],
     ctaText: 'Automate Your Data Flows',
-    relatedSlugs: ['system-integration', 'erp-implementation', 'ops-outgrown-tools'],
+    relatedSlugs: ['system-integration', 'erp-implementation', 'ops-outgrown-tools', 'ai-operations'],
     relatedInsightSlugs: ['system-integration-guide', 'building-rag-agents-for-operations'],
   },
   {
@@ -283,7 +321,7 @@ export const solutions: SolutionData[] = [
       'Avoided cost of choosing the wrong platform',
     ],
     ctaText: 'Get Vendor Selection Help',
-    relatedSlugs: ['erp-implementation', 'crm-implementation', 'systems-audit'],
+    relatedSlugs: ['erp-implementation', 'crm-implementation', 'systems-audit', 'ai-operations'],
     relatedInsightSlugs: ['vendor-selection-process', 'ai-operations-readiness'],
   },
   {
@@ -321,7 +359,7 @@ export const solutions: SolutionData[] = [
       'A confident starting point,  no more analysis paralysis',
     ],
     ctaText: 'Book a Systems Audit',
-    relatedSlugs: ['ops-outgrown-tools', 'erp-implementation', 'vendor-management'],
+    relatedSlugs: ['ops-outgrown-tools', 'erp-implementation', 'vendor-management', 'ai-operations'],
     relatedInsightSlugs: ['ai-operations-readiness', 'vendor-selection-process'],
   },
 ]

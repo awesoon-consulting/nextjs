@@ -33,6 +33,7 @@ export const siteConfig = {
 
   footer: {
     solutionLinks: [
+      { labelKey: 'solutions.cards.aiOperations.title', href: '/solutions/ai-operations' },
       { labelKey: 'solutions.cards.opsOutgrown.title', href: '/solutions/ops-outgrown-tools' },
       { labelKey: 'solutions.cards.spreadsheetOps.title', href: '/solutions/spreadsheet-operations' },
       { labelKey: 'solutions.cards.systemIntegration.title', href: '/solutions/system-integration' },
@@ -55,6 +56,7 @@ export const siteConfig = {
   },
 
   solutionSlugs: [
+    'ai-operations',
     'ops-outgrown-tools',
     'spreadsheet-operations',
     'system-integration',
