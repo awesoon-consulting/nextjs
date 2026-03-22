@@ -74,8 +74,6 @@ export default function MultiStepForm() {
   const [submitError, setSubmitError] = useState<string | null>(null)
 
   const progress = ((step - 1) / TOTAL_STEPS) * 100
-  const currentStepConfig = STEP_CONFIG[step - 1]
-
   // ─── Field helpers ──────────────────────────────────────────────────────────
   function updateField<K extends keyof FormData>(field: K, value: FormData[K]) {
     setData((prev) => ({ ...prev, [field]: value }))
@@ -126,7 +124,7 @@ export default function MultiStepForm() {
 
   // ─── Submit ─────────────────────────────────────────────────────────────────
   async function handleSubmit() {
-    if (!validateStep(5)) return
+    if (!validateStep(4)) return
 
     setIsSubmitting(true)
     setSubmitError(null)
@@ -275,20 +273,20 @@ export default function MultiStepForm() {
       </FormStep>
 
       {/* Step 2: Challenges */}
-      <FormStep isActive={step === 3} title={t('steps.3')}>
+      <FormStep isActive={step === 2} title={t('steps.2')}>
         <ChipSelect
           options={problemOptions}
           value={data.problems}
           onChange={(values) => updateField('problems', values)}
-          multiSelect={currentStepConfig.step === 3 ? STEP_CONFIG[2].multiSelect : true}
+          multiSelect={STEP_CONFIG[1].multiSelect}
           label={t('fields.problems')}
           error={errors.problems}
           required
         />
       </FormStep>
 
-      {/* Step 4: Timeline & Budget */}
-      <FormStep isActive={step === 4} title={t('steps.4')}>
+      {/* Step 3: Timeline & Budget */}
+      <FormStep isActive={step === 3} title={t('steps.3')}>
         <Select
           id="timeline"
           label={t('fields.timeline')}
@@ -311,8 +309,8 @@ export default function MultiStepForm() {
         />
       </FormStep>
 
-      {/* Step 5: Contact details */}
-      <FormStep isActive={step === 5} title={t('steps.5')}>
+      {/* Step 4: Contact details */}
+      <FormStep isActive={step === 4} title={t('steps.4')}>
         <Input
           id="name"
           label={t('fields.name')}
