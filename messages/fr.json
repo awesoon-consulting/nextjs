@@ -205,15 +205,13 @@
     "subtitle": "Parlez-nous de vos opérations et nous programmerons un appel de découverte sans pression.",
     "steps": {
       "1": "Votre entreprise",
-      "2": "Votre quartier",
-      "3": "Vos défis",
-      "4": "Calendrier et budget",
-      "5": "Vos coordonnées"
+      "2": "Vos défis",
+      "3": "Calendrier et budget",
+      "4": "Vos coordonnées"
     },
     "fields": {
       "industry": "Secteur",
       "companySize": "Taille de l'entreprise",
-      "areas": "Quels quartiers de Vancouver vous intéressent?",
       "problems": "Quels sont vos plus grands défis opérationnels?",
       "timeline": "Quand souhaitez-vous commencer?",
       "budget": "Budget",
@@ -268,26 +266,6 @@
       "submit": "Envoyer la demande",
       "submitting": "Envoi en cours..."
     },
-    "areas": {
-      "downtown": "Centre-ville",
-      "kitsilano": "Kitsilano",
-      "mountPleasant": "Mount Pleasant",
-      "yaletown": "Yaletown",
-      "gastown": "Gastown",
-      "commercialDrive": "Commercial Drive",
-      "westEnd": "West End",
-      "fairview": "Fairview",
-      "strathcona": "Strathcona",
-      "rileyPark": "Riley Park",
-      "kerrisdale": "Kerrisdale",
-      "dunbar": "Dunbar",
-      "pointGrey": "Point Grey",
-      "northVancouver": "North Vancouver",
-      "burnaby": "Burnaby",
-      "richmond": "Richmond",
-      "newWestminster": "New Westminster",
-      "surrey": "Surrey"
-    },
     "validation": {
       "nameRequired": "Le nom complet est requis.",
       "emailRequired": "L'adresse courriel professionnelle est requise.",
@@ -295,7 +273,6 @@
       "companyRequired": "Le nom de l'entreprise est requis.",
       "industryRequired": "Veuillez sélectionner votre secteur.",
       "companySizeRequired": "Veuillez sélectionner la taille de votre entreprise.",
-      "areasRequired": "Veuillez sélectionner au moins un quartier.",
       "problemRequired": "Veuillez sélectionner au moins un défi.",
       "timelineRequired": "Veuillez sélectionner un calendrier.",
       "budgetRequired": "Veuillez sélectionner une fourchette de budget."

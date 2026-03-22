@@ -205,15 +205,13 @@
     "subtitle": "Cuéntanos sobre tus operaciones y programaremos una llamada de descubrimiento sin presión.",
     "steps": {
       "1": "Tu empresa",
-      "2": "Tu zona",
-      "3": "Tus desafíos",
-      "4": "Cronograma y presupuesto",
-      "5": "Tus datos"
+      "2": "Tus desafíos",
+      "3": "Cronograma y presupuesto",
+      "4": "Tus datos"
     },
     "fields": {
       "industry": "Industria",
       "companySize": "Tamaño de la empresa",
-      "areas": "¿Qué zonas de Vancouver te interesan?",
       "problems": "¿Cuáles son tus mayores desafíos operacionales?",
       "timeline": "¿Cuándo quieres empezar?",
       "budget": "Rango de presupuesto",
@@ -268,26 +266,6 @@
       "submit": "Enviar solicitud",
       "submitting": "Enviando..."
     },
-    "areas": {
-      "downtown": "Centro",
-      "kitsilano": "Kitsilano",
-      "mountPleasant": "Mount Pleasant",
-      "yaletown": "Yaletown",
-      "gastown": "Gastown",
-      "commercialDrive": "Commercial Drive",
-      "westEnd": "West End",
-      "fairview": "Fairview",
-      "strathcona": "Strathcona",
-      "rileyPark": "Riley Park",
-      "kerrisdale": "Kerrisdale",
-      "dunbar": "Dunbar",
-      "pointGrey": "Point Grey",
-      "northVancouver": "North Vancouver",
-      "burnaby": "Burnaby",
-      "richmond": "Richmond",
-      "newWestminster": "New Westminster",
-      "surrey": "Surrey"
-    },
     "validation": {
       "nameRequired": "El nombre completo es obligatorio.",
       "emailRequired": "El correo electrónico laboral es obligatorio.",
@@ -295,7 +273,6 @@
       "companyRequired": "El nombre de la empresa es obligatorio.",
       "industryRequired": "Por favor selecciona tu industria.",
       "companySizeRequired": "Por favor selecciona el tamaño de tu empresa.",
-      "areasRequired": "Por favor selecciona al menos una zona.",
       "problemRequired": "Por favor selecciona al menos un desafío.",
       "timelineRequired": "Por favor selecciona un cronograma.",
       "budgetRequired": "Por favor selecciona un rango de presupuesto."
