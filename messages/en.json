@@ -382,6 +382,23 @@
     "subtext": "30 minutes. A real operator. No pitch deck.",
     "button": "Claim It →"
   },
+  "solutionPage": {
+    "painPointsTitle": "Does This Sound Familiar?",
+    "whatWeDoTitle": "What We Do",
+    "outcomesTitle": "What You Get",
+    "aiTitle": "AI, RAG, and Agentic Value Add",
+    "aiSubtitle": "Once the operational foundation is stable, this solution also creates room for practical AI deployment.",
+    "sidebarTitle": "Ready to get started?",
+    "sidebarText": "Start with a free systems audit. No pitch deck, no pressure.",
+    "relatedSolutions": "Related Solutions",
+    "relatedInsights": "Related Insights"
+  },
+  "insightPage": {
+    "minRead": "min read",
+    "relatedSolutions": "Related Solutions",
+    "keepReading": "Keep Reading",
+    "sources": "Sources"
+  },
   "common": {
     "loading": "Loading...",
     "step": "Step",

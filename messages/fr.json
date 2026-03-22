@@ -383,6 +383,23 @@
     "subtext": "30 minutes. Un vrai opérateur. Pas de présentation.",
     "button": "Je le veux →"
   },
+  "solutionPage": {
+    "painPointsTitle": "Cela vous semble familier?",
+    "whatWeDoTitle": "Ce que nous faisons",
+    "outcomesTitle": "Ce que vous obtenez",
+    "aiTitle": "Valeur ajoutée IA, RAG et agentique",
+    "aiSubtitle": "Une fois la base opérationnelle stabilisée, cette solution ouvre aussi la voie à un déploiement IA utile.",
+    "sidebarTitle": "Prêt à commencer?",
+    "sidebarText": "Commencez par un audit gratuit des systèmes. Aucun pitch, aucune pression.",
+    "relatedSolutions": "Solutions liées",
+    "relatedInsights": "Articles liés"
+  },
+  "insightPage": {
+    "minRead": "min de lecture",
+    "relatedSolutions": "Solutions liées",
+    "keepReading": "Continuer la lecture",
+    "sources": "Sources"
+  },
   "common": {
     "loading": "Chargement...",
     "step": "Étape",

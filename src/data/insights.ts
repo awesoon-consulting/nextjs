@@ -16,6 +16,7 @@ export interface InsightPost {
   tags: string[]
   relatedSlugs: string[]
   relatedSolutionSlugs: string[]
+  sourceLinks?: { label: string; url: string }[]
 }
 
 export const insights: InsightPost[] = [
@@ -328,6 +329,20 @@ The right AI strategy starts with operational clarity. Fix data flow issues. Cle
     tags: ['AI', 'RAG', 'Operations', 'Governance'],
     relatedSlugs: ['building-rag-agents-for-operations', 'system-integration-guide'],
     relatedSolutionSlugs: ['systems-audit', 'ops-outgrown-tools', 'vendor-management'],
+    sourceLinks: [
+      {
+        label: 'NIST AI Risk Management Framework 1.0',
+        url: 'https://www.nist.gov/publications/artificial-intelligence-risk-management-framework-ai-rmf-10',
+      },
+      {
+        label: 'AWS Prescriptive Guidance on grounding and RAG',
+        url: 'https://docs.aws.amazon.com/prescriptive-guidance/latest/agentic-ai-serverless/grounding-and-rag.html',
+      },
+      {
+        label: 'Microsoft guidance on retrieval augmented generation',
+        url: 'https://learn.microsoft.com/en-us/microsoft-copilot-studio/guidance/retrieval-augmented-generation',
+      },
+    ],
   },
   {
     slug: 'building-rag-agents-for-operations',
@@ -397,6 +412,216 @@ RAG is usually the first practical layer. Agentic workflows come next when the p
     tags: ['AI', 'RAG', 'Agents', 'Integration'],
     relatedSlugs: ['ai-operations-readiness', 'system-integration-guide'],
     relatedSolutionSlugs: ['api-integrations', 'system-integration', 'crm-implementation'],
+    sourceLinks: [
+      {
+        label: 'AWS Prescriptive Guidance on grounding and RAG',
+        url: 'https://docs.aws.amazon.com/prescriptive-guidance/latest/agentic-ai-serverless/grounding-and-rag.html',
+      },
+      {
+        label: 'Microsoft guidance on retrieval augmented generation',
+        url: 'https://learn.microsoft.com/en-us/microsoft-copilot-studio/guidance/retrieval-augmented-generation',
+      },
+      {
+        label: 'NIST AI Risk Management Framework 1.0',
+        url: 'https://www.nist.gov/publications/artificial-intelligence-risk-management-framework-ai-rmf-10',
+      },
+    ],
+  },
+  {
+    slug: 'retire-spreadsheets-without-breaking-operations',
+    title: 'How to Retire Spreadsheets Without Breaking Operations',
+    excerpt:
+      'Spreadsheet replacement works when teams map what each file does, classify risk, and migrate the process before they migrate the tool.',
+    content: `
+# How to Retire Spreadsheets Without Breaking Operations
+
+Most spreadsheet replacement projects fail for a simple reason. The team starts by asking what software to buy instead of asking what the spreadsheet is actually doing for the business.
+
+In real operations, spreadsheets are rarely just files. They are unofficial systems for planning, pricing, scheduling, exception handling, and reporting. If you remove them without understanding that role, you just move chaos from Excel into a more expensive platform.
+
+## Start with a Function Audit
+
+Before you migrate anything, build an inventory of the spreadsheets that matter. For each file, answer:
+- What decision does this spreadsheet support?
+- Who updates it?
+- How often is it used?
+- What happens if the data is wrong?
+- What downstream process depends on it?
+
+This forces the team to distinguish between business-critical spreadsheets and the files that are only convenient.
+
+## Separate Process from File Format
+
+Many spreadsheet problems are not really spreadsheet problems. They are signs of missing process ownership, weak system design, or disconnected applications.
+
+That means the first goal is not to eliminate every spreadsheet. The goal is to identify which spreadsheets are acting as unofficial systems of record and replace those with governed workflows.
+
+Useful ad hoc analysis can stay in spreadsheets. Core operational execution should not.
+
+## Prioritize by Risk, Not by Noise
+
+The loudest spreadsheet complaints are not always the most important ones.
+
+Start with spreadsheets that:
+- Drive daily operational decisions
+- Feed other systems or reports
+- Are edited by multiple people
+- Create customer, audit, or financial risk when they are wrong
+
+This gives you a rational migration sequence instead of a politically driven one.
+
+## Match the Replacement to the Job
+
+Not every spreadsheet should become an ERP module.
+
+Some should move into:
+- ERP workflows
+- CRM processes
+- WMS or inventory platforms
+- Integration layers
+- Lightweight operational tooling
+
+The right answer depends on the process, the owner, and the downstream dependencies. Good replacement work is architectural, not ideological.
+
+## Build the Exit Plan Before the Cutover
+
+Spreadsheet retirement only sticks when the team knows exactly when the old file becomes read-only, who owns the new process, and how training will happen.
+
+That means every migration needs:
+- Clean source data
+- A documented workflow
+- Named ownership
+- Team training
+- A defined decommission date
+
+Without that, the spreadsheet comes back the first time the new process feels slower.
+
+## Conclusion
+
+Retiring spreadsheets safely is less about software and more about operational design. Audit the function, prioritize by risk, match the tool to the workflow, and shut down the old path with intention. That is how you reduce risk without disrupting the business.
+    `.trim(),
+    category: 'operations',
+    author: 'Awesoon Team',
+    authorTitle: 'Operations Consulting',
+    publishedAt: '2026-03-22',
+    readingTime: 9,
+    tags: ['Spreadsheets', 'Migration', 'Operations', 'Systems'],
+    relatedSlugs: ['spreadsheet-to-erp-migration', 'system-integration-guide', 'ai-operations-readiness'],
+    relatedSolutionSlugs: ['spreadsheet-operations', 'system-integration', 'erp-implementation', 'ops-outgrown-tools'],
+    sourceLinks: [
+      {
+        label: 'UK National Archives guidance on exporting and transferring electronic data',
+        url: 'https://www.nationalarchives.gov.uk/information-management/manage-information/managing-risk/exporting-transferring-electronic-data/',
+      },
+      {
+        label: 'Microsoft Learn Migration Manager overview',
+        url: 'https://learn.microsoft.com/en-us/sharepointmigration/mm-get-started',
+      },
+      {
+        label: 'Microsoft support guidance for migration mapping',
+        url: 'https://support.microsoft.com/en-us/office/mapping-google-source-ids-in-the-migration-spreadsheet-to-resolve-broken-links-post-migration-773f8208-ad95-4678-a6c0-bfe1a4405262',
+      },
+    ],
+  },
+  {
+    slug: 'vendor-selection-in-ai-and-integration-sprawl',
+    title: 'Vendor Selection in a World of AI Claims and Integration Sprawl',
+    excerpt:
+      'The best software selection process asks what the platform must do, what it must connect to, and what risks the supplier must prove they can manage.',
+    content: `
+# Vendor Selection in a World of AI Claims and Integration Sprawl
+
+Modern software selection is harder than it used to be. Every vendor now claims strong AI capabilities, fast implementation, easy integrations, and immediate ROI.
+
+The problem is that most of those claims are presented in a vacuum. They are not tested against your workflows, your data model, your permissions, or your implementation capacity.
+
+That is how mid-market companies end up buying a polished demo instead of buying a system that fits reality.
+
+## Start with Workflow Requirements
+
+Before you compare vendors, define what the system actually needs to support.
+
+That should include:
+- Core workflows
+- User roles
+- Required reporting
+- Integration dependencies
+- Approval and audit requirements
+- Data ownership and access expectations
+
+If those requirements are vague, the vendor with the best presentation usually wins for the wrong reasons.
+
+## Treat Integration Fit as a Primary Criterion
+
+In most operations environments, the software is only part of the decision. The other part is what that software has to connect to.
+
+That means your scorecard should include:
+- API availability
+- Native connectors
+- Data export and import quality
+- Permission controls
+- Reliability of sync options
+- Ease of monitoring and troubleshooting
+
+If the integration layer is weak, the total cost of ownership goes up fast after the contract is signed.
+
+## Evaluate AI Claims Like Any Other Feature
+
+Vendors often market AI as a reason to accelerate the buying decision. That is exactly when teams should slow down.
+
+Ask:
+- What source data does the AI use?
+- What permissions control access?
+- What actions can it take?
+- What audit trail exists?
+- How is output validated?
+
+If the answers are vague, the AI story should not improve the vendor's score.
+
+## Procurement Should Surface Operational Risk
+
+Software selection is not only a functional exercise. It is also a risk exercise.
+
+Good procurement work should test:
+- Security expectations
+- Implementation accountability
+- Support model
+- Data portability
+- Exit terms
+- Responsibility for failures and remediation
+
+This is especially important when vendors are asking buyers to trust automation or AI-enabled workflows.
+
+## Conclusion
+
+Strong vendor selection gets harder when software categories overlap and every platform claims AI leadership. The answer is not speed. The answer is better criteria. Start with workflows, score integration fit seriously, interrogate AI claims, and make risk part of the decision model from the beginning.
+    `.trim(),
+    category: 'strategy',
+    author: 'Awesoon Team',
+    authorTitle: 'Operations Consulting',
+    publishedAt: '2026-03-22',
+    readingTime: 8,
+    tags: ['Vendor Selection', 'AI', 'Integration', 'Procurement'],
+    relatedSlugs: ['vendor-selection-process', 'ai-operations-readiness', 'why-erp-projects-fail'],
+    relatedSolutionSlugs: ['vendor-management', 'erp-implementation', 'system-integration', 'ai-operations'],
+    sourceLinks: [
+      {
+        label: 'CISA Software Acquisition Guide Fact Sheet',
+        url: 'https://www.cisa.gov/resources-tools/resources/software-acquisition-guide-fact-sheet',
+      },
+      {
+        label: 'CISA Secure by Demand Guide',
+        url: 'https://www.cisa.gov/resources-tools/resources/secure-demand-guide',
+      },
+      {
+        label: 'GSA purchasing guidance',
+        url: 'https://www.gsa.gov/buy-through-us/purchasing-programs/commercial-platforms/purchasing-guidance',
+      },
+      {
+        label: 'NIST AI Risk Management Framework 1.0',
+        url: 'https://www.nist.gov/publications/artificial-intelligence-risk-management-framework-ai-rmf-10',
+      },
+    ],
   },
 ]
 

@@ -17,6 +17,7 @@ export interface SolutionData {
   ctaText: string
   relatedSlugs: string[]
   relatedInsightSlugs: string[]
+  translations?: Partial<Record<'fr' | 'es', Omit<SolutionData, 'slug' | 'titleKey' | 'descriptionKey' | 'relatedSlugs' | 'relatedInsightSlugs' | 'translations'>>>
 }
 
 export const solutions: SolutionData[] = [
@@ -57,6 +58,74 @@ export const solutions: SolutionData[] = [
     ctaText: 'Plan Your AI Roadmap',
     relatedSlugs: ['systems-audit', 'system-integration', 'api-integrations'],
     relatedInsightSlugs: ['ai-operations-readiness', 'building-rag-agents-for-operations'],
+    translations: {
+      fr: {
+        problemHeadline: "Vous voulez que l'IA crée un effet de levier, pas plus de chaos opérationnel",
+        category: 'IA et automatisation',
+        seoSummary:
+          "Conseil en opérations IA pour les équipes du marché intermédiaire qui adoptent des assistants RAG, des agents de workflow et des copilotes IA sur de vraies bases opérationnelles.",
+        painPoints: [
+          "On vous présente des outils d'IA, mais personne ne peut expliquer comment ils s'intègrent à vos flux de travail réels",
+          "Vos données sont réparties entre plusieurs systèmes, fichiers et connaissances informelles, donc les résultats de l'IA seraient peu fiables aujourd'hui",
+          "Vous voulez utiliser le RAG, des copilotes ou des agents, mais vous ne savez pas ce qui doit être automatisé et ce qui exige une validation humaine",
+          "Votre direction veut une feuille de route IA, mais votre équipe des opérations est déjà surchargée",
+          "Vous vous inquiétez de la gouvernance, des permissions, des hallucinations et du battage des fournisseurs",
+        ],
+        whatWeDo: [
+          "Évaluer votre préparation opérationnelle et vos données pour l'adoption de l'IA dans les systèmes, la documentation et les workflows",
+          "Identifier les cas d'usage à plus fort ROI pour les assistants RAG, les copilotes IA et l'automatisation agentique des workflows",
+          "Définir les systèmes sources, les couches de recherche, les permissions et les contrôles humains requis pour chaque cas d'usage",
+          "Concevoir et mettre en oeuvre des pilotes pratiques qui connectent l'IA à votre environnement opérationnel réel",
+          "Documenter la gouvernance, la surveillance et le plan de déploiement pour que la solution soit fiable après lancement",
+        ],
+        aiOpportunities: [
+          'Des assistants RAG qui répondent aux questions sur les SOP, politiques, formations, comptes et processus à partir de sources internes approuvées',
+          'Des workflows agentiques qui classent, résument et acheminent le travail opérationnel répétitif avec supervision humaine',
+          'Des copilotes IA pour le reporting, le contexte client, le support ERP, les relais commerciaux et la gestion des exceptions',
+        ],
+        outcomes: [
+          "Une feuille de route IA claire liée à la valeur opérationnelle, pas à l'expérimentation générique",
+          "Un déploiement IA plus sûr fondé sur des données fiables, des permissions claires et des sources de vérité définies",
+          'Une recherche interne plus rapide, une meilleure aide à la décision et moins de temps perdu à cause des lacunes de connaissance',
+          "Une automatisation ciblée dans les workflows répétitifs sans créer d'angles morts de gouvernance",
+          "Une direction confiante que les investissements IA reposent sur une réalité opérationnelle solide",
+        ],
+        ctaText: 'Planifier votre feuille de route IA',
+      },
+      es: {
+        problemHeadline: 'Quieres que la IA genere ventaja, no más caos operativo',
+        category: 'IA y automatización',
+        seoSummary:
+          'Consultoría de operaciones con IA para equipos del mercado medio que adoptan asistentes RAG, agentes de flujo de trabajo y copilotos de IA sobre bases operativas reales.',
+        painPoints: [
+          'Te están ofreciendo herramientas de IA, pero nadie puede explicar cómo encajan en tus flujos de trabajo reales',
+          'Tus datos están repartidos entre sistemas, archivos y conocimiento informal, así que las respuestas de la IA hoy serían poco fiables',
+          'Quieres usar RAG, copilotos o agentes, pero no sabes qué debe automatizarse y qué requiere revisión humana',
+          'Tu equipo directivo quiere una hoja de ruta de IA, pero operaciones ya está sobrecargado',
+          'Te preocupan la gobernanza, los permisos, las alucinaciones y el marketing vacío de los proveedores',
+        ],
+        whatWeDo: [
+          'Evaluar tu preparación operativa y de datos para adoptar IA en sistemas, documentación y flujos de trabajo',
+          'Identificar los casos de uso con mayor ROI para asistentes RAG, copilotos de IA y automatización agéntica',
+          'Definir los sistemas fuente, capas de recuperación, permisos y controles humanos necesarios para cada caso de uso',
+          'Diseñar e implementar pilotos prácticos que conecten la IA con tu entorno operativo real',
+          'Documentar la gobernanza, el monitoreo y el plan de despliegue para que la solución sea confiable después del lanzamiento',
+        ],
+        aiOpportunities: [
+          'Asistentes RAG que responden preguntas sobre SOP, políticas, capacitación, cuentas y procesos con fuentes internas aprobadas',
+          'Flujos agénticos que clasifican, resumen y enrutan trabajo operativo repetitivo con supervisión humana',
+          'Copilotos de IA para reportes, contexto del cliente, soporte ERP, traspasos comerciales y gestión de excepciones',
+        ],
+        outcomes: [
+          'Una hoja de ruta de IA clara, vinculada al valor operativo y no a la experimentación genérica',
+          'Un despliegue de IA más seguro, basado en datos confiables, permisos claros y fuentes de verdad definidas',
+          'Búsqueda interna más rápida, mejor soporte a decisiones y menos tiempo perdido por vacíos de conocimiento',
+          'Automatización enfocada en flujos repetitivos sin crear puntos ciegos de gobernanza',
+          'Confianza ejecutiva en que las inversiones en IA están basadas en una realidad operativa sólida',
+        ],
+        ctaText: 'Planifica tu hoja de ruta de IA',
+      },
+    },
   },
   {
     slug: 'ops-outgrown-tools',
@@ -95,6 +164,74 @@ export const solutions: SolutionData[] = [
     ctaText: 'Get a Free Systems Audit',
     relatedSlugs: ['systems-audit', 'system-integration', 'erp-implementation', 'ai-operations'],
     relatedInsightSlugs: ['ai-operations-readiness', 'system-integration-guide'],
+    translations: {
+      fr: {
+        problemHeadline: 'Vos systèmes ne suivent plus votre croissance',
+        category: 'Stratégie opérationnelle',
+        seoSummary:
+          "Conseil en opérations pour les entreprises du marché intermédiaire qui ont dépassé des outils déconnectés, des workflows manuels et des rapports fragiles.",
+        painPoints: [
+          "Vous gérez plus de SKU, de clients et de transactions que vos systèmes actuels ne peuvent supporter",
+          "Votre équipe compense avec des feuilles de calcul, des emails et des contournements manuels",
+          "Les données vivent dans trop d'endroits et personne ne leur fait totalement confiance",
+          "L'intégration des nouveaux employés prend trop de temps faute de processus documenté",
+          "Vous refusez de nouvelles opportunités de croissance parce que vos opérations ne tiendront pas la charge",
+        ],
+        whatWeDo: [
+          'Cartographier votre situation opérationnelle actuelle, vos outils, workflows, flux de données et structure d’équipe',
+          'Identifier les plus gros points de friction et les inefficacités les plus coûteuses',
+          'Concevoir une architecture de systèmes connectés pour votre prochaine phase de croissance',
+          'Construire une feuille de route de mise en oeuvre progressive avec des jalons de ROI clairs',
+          "Piloter l'implémentation complète et assurer une transition propre vers votre équipe",
+        ],
+        aiOpportunities: [
+          'Déployer des copilotes IA qui répondent aux questions opérationnelles à partir des SOP approuvées, des données ERP et de la documentation d’équipe via une couche RAG sécurisée',
+          'Utiliser des workflows agentiques pour trier les exceptions, résumer les goulets d’étranglement et router les actions de suivi',
+          'Transformer les connaissances dispersées en playbooks opérationnels consultables pour accélérer l’intégration et réduire les erreurs répétées',
+        ],
+        outcomes: [
+          'Une infrastructure opérationnelle connectée qui évolue avec votre entreprise',
+          'Beaucoup moins de travail manuel et moins d’erreurs humaines',
+          'Une visibilité en temps réel sur vos opérations sans rapports manuels',
+          "Une équipe en confiance avec les systèmes qu'elle utilise",
+          'La capacité opérationnelle de prendre la croissance que vous évitiez jusqu’ici',
+        ],
+        ctaText: 'Obtenir un audit gratuit des systèmes',
+      },
+      es: {
+        problemHeadline: 'Tus sistemas ya no pueden seguir el ritmo de tu crecimiento',
+        category: 'Estrategia operativa',
+        seoSummary:
+          'Consultoría operativa para empresas del mercado medio que han superado herramientas desconectadas, flujos manuales e informes frágiles.',
+        painPoints: [
+          'Gestionas más SKU, clientes y transacciones de los que tus sistemas actuales fueron diseñados para soportar',
+          'Tu equipo tapa huecos con hojas de cálculo, correos y soluciones manuales',
+          'Los datos viven en demasiados lugares y nadie confía del todo en ellos',
+          'Incorporar a nuevos empleados tarda demasiado porque no existe un proceso documentado',
+          'Estás frenando crecimiento porque sabes que tus operaciones no lo soportan',
+        ],
+        whatWeDo: [
+          'Mapear tu estado operativo actual, herramientas, flujos de trabajo, flujos de datos y estructura del equipo',
+          'Identificar los mayores puntos de fricción y las ineficiencias más costosas',
+          'Diseñar una arquitectura de sistemas conectados para tu siguiente etapa de crecimiento',
+          'Construir una hoja de ruta por fases con hitos claros de ROI',
+          'Gestionar toda la implementación y asegurar una transición limpia a tu equipo',
+        ],
+        aiOpportunities: [
+          'Desplegar copilotos de IA que respondan preguntas operativas con SOP aprobados, datos ERP y documentación interna mediante una capa RAG segura',
+          'Usar flujos agénticos para clasificar excepciones, resumir cuellos de botella y enrutar acciones de seguimiento',
+          'Convertir conocimiento disperso en playbooks operativos consultables para acelerar la incorporación y reducir errores repetidos',
+        ],
+        outcomes: [
+          'Una infraestructura operativa conectada que escala con tu negocio',
+          'Mucho menos trabajo manual y menos error humano',
+          'Visibilidad en tiempo real de tus operaciones sin construir reportes manuales',
+          'Un equipo que confía en los sistemas que usa',
+          'La capacidad operativa para asumir el crecimiento que venías evitando',
+        ],
+        ctaText: 'Obtén una auditoría gratuita de sistemas',
+      },
+    },
   },
   {
     slug: 'spreadsheet-operations',
@@ -133,6 +270,28 @@ export const solutions: SolutionData[] = [
     ctaText: 'Replace Your Spreadsheets',
     relatedSlugs: ['ops-outgrown-tools', 'erp-implementation', 'system-integration', 'ai-operations'],
     relatedInsightSlugs: ['spreadsheet-to-erp-migration', 'ai-operations-readiness'],
+    translations: {
+      fr: {
+        problemHeadline: 'Vous gérez une entreprise du marché intermédiaire sur des feuilles de calcul',
+        category: 'Infrastructure opérationnelle',
+        seoSummary: "Conseil en remplacement des feuilles de calcul pour les équipes opérationnelles qui ont besoin de systèmes évolutifs et de données plus propres.",
+        painPoints: ['Des processus critiques vivent dans Excel', 'Les données sont dispersées dans des dizaines de fichiers', 'Les feuilles se cassent, se corrompent ou partent au mauvais destinataire', "Former un nouvel arrivant revient à lui expliquer quel fichier sert à quoi", "Vous avez dépassé l'outil sans savoir quoi mettre à la place"],
+        whatWeDo: ['Auditer chaque processus dépendant des feuilles de calcul', 'Identifier le bon système pour chaque catégorie de workflow', 'Migrer vos données et votre logique métier vers les bons outils', 'Construire des automatisations pour supprimer les ressaisies manuelles', 'Former votre équipe et documenter chaque processus mis en place'],
+        aiOpportunities: ['Transformer la logique des feuilles en workflows gouvernés que des agents IA peuvent surveiller et résumer', 'Utiliser des assistants basés sur la recherche pour retrouver les bonnes règles de processus et hypothèses métier', "Ajouter de la prévision IA et de la détection d'anomalies une fois les données sorties d'Excel"],
+        outcomes: ['Des processus clés exécutés sur de vrais systèmes', 'Une source unique de vérité pour les données opérationnelles', 'La fin des conflits de versions et des corruptions de fichiers', 'Une intégration plus rapide grâce à des systèmes intuitifs', 'Des heures gagnées chaque semaine sur la gestion des données'],
+        ctaText: 'Remplacer vos feuilles de calcul',
+      },
+      es: {
+        problemHeadline: 'Estás operando una empresa del mercado medio con hojas de cálculo',
+        category: 'Infraestructura operativa',
+        seoSummary: 'Consultoría para reemplazar hojas de cálculo por sistemas escalables, confiables y con datos más limpios.',
+        painPoints: ['Procesos críticos viven en Excel', 'Los datos están repartidos en decenas de archivos', 'Las hojas se rompen, se corrompen o se envían a la persona equivocada', 'Incorporar a alguien nuevo significa explicarle qué hace cada archivo', 'Ya superaste la herramienta pero no sabes con qué reemplazarla'],
+        whatWeDo: ['Auditar cada proceso dependiente de hojas de cálculo', 'Identificar el sistema correcto para cada tipo de flujo', 'Migrar tus datos y lógica de negocio a las herramientas adecuadas', 'Construir automatizaciones para eliminar la recaptura manual', 'Capacitar al equipo y documentar cada proceso implementado'],
+        aiOpportunities: ['Convertir la lógica de las hojas en flujos gobernados que agentes de IA puedan supervisar y resumir', 'Usar asistentes de recuperación para encontrar reglas operativas y supuestos correctos', 'Agregar pronóstico con IA y detección de anomalías cuando los datos ya no estén atrapados en Excel'],
+        outcomes: ['Procesos clave funcionando en herramientas de verdad', 'Una única fuente de verdad para inventario, pedidos y datos operativos', 'Eliminación del riesgo de corrupción o conflicto de versiones', 'Onboarding más rápido gracias a sistemas intuitivos', 'Horas ahorradas cada semana en tareas de datos'],
+        ctaText: 'Reemplaza tus hojas de cálculo',
+      },
+    },
   },
   {
     slug: 'system-integration',
@@ -171,6 +330,28 @@ export const solutions: SolutionData[] = [
     ctaText: 'Connect Your Systems',
     relatedSlugs: ['api-integrations', 'erp-implementation', 'ops-outgrown-tools', 'ai-operations'],
     relatedInsightSlugs: ['system-integration-guide', 'building-rag-agents-for-operations'],
+    translations: {
+      fr: {
+        problemHeadline: 'Vos systèmes ne se parlent pas',
+        category: 'Intégration',
+        seoSummary: 'Conseil en intégration de systèmes pour connecter ERP, CRM, WMS, ecommerce et finance dans des opérations du marché intermédiaire.',
+        painPoints: ['Vous avez de bons logiciels mais ils sont en silos', 'Votre équipe ressaisit les mêmes données dans plusieurs systèmes', 'Les commandes, stocks et données financières sont désynchronisés', 'Le reporting exige des consolidations manuelles', 'Chaque nouveau système aggrave le problème'],
+        whatWeDo: ['Cartographier les systèmes existants et leurs flux de données', 'Concevoir une architecture d’intégration entre les plateformes clés', 'Construire des intégrations natives ou middleware selon le besoin', 'Mettre en place synchronisation, gestion des erreurs et monitoring', 'Fournir la documentation et les runbooks à votre équipe IT'],
+        aiOpportunities: ['Préparer votre stack pour l’IA avec des pipelines de données propres et gouvernés', 'Utiliser l’IA pour classifier les erreurs de synchronisation et recommander la prochaine action', 'Créer des couches d’accès aux données pour le reporting conversationnel et les assistants inter-systèmes'],
+        outcomes: ['Des données qui circulent automatiquement entre vos systèmes', 'Une source unique de vérité pour commandes, stocks, clients et finances', 'Des heures gagnées chaque semaine sur la saisie et la réconciliation', 'Moins d’erreurs dues à la ressaisie manuelle', 'La capacité d’ajouter de nouveaux systèmes sans créer de nouveaux silos'],
+        ctaText: 'Connecter vos systèmes',
+      },
+      es: {
+        problemHeadline: 'Tus sistemas no se comunican entre sí',
+        category: 'Integración',
+        seoSummary: 'Consultoría de integración para conectar ERP, CRM, WMS, ecommerce y finanzas en operaciones del mercado medio.',
+        painPoints: ['Tienes buen software pero está aislado', 'Tu equipo recaptura los mismos datos en varios sistemas', 'Pedidos, inventario y finanzas siempre están desincronizados', 'Los reportes requieren consolidación manual', 'Cada sistema nuevo empeora el problema'],
+        whatWeDo: ['Mapear los sistemas existentes y sus flujos de datos', 'Diseñar una arquitectura de integración entre tus plataformas clave', 'Construir integraciones nativas o middleware según corresponda', 'Configurar sincronización, manejo de errores y monitoreo', 'Entregar documentación y runbooks al equipo interno'],
+        aiOpportunities: ['Preparar tu stack para IA con pipelines limpios y gobernados', 'Usar IA para clasificar fallos de sincronización y recomendar la siguiente acción', 'Crear capas de acceso a datos para reportes conversacionales y asistentes entre sistemas'],
+        outcomes: ['Los datos fluyen automáticamente entre tus sistemas', 'Una sola fuente de verdad para pedidos, inventario, clientes y finanzas', 'Horas ahorradas cada semana en captura y conciliación', 'Menos errores por recaptura manual', 'La capacidad de añadir nuevos sistemas sin crear nuevos silos'],
+        ctaText: 'Conecta tus sistemas',
+      },
+    },
   },
   {
     slug: 'erp-implementation',
@@ -209,6 +390,28 @@ export const solutions: SolutionData[] = [
     ctaText: 'Get ERP Implementation Help',
     relatedSlugs: ['systems-audit', 'vendor-management', 'system-integration', 'ai-operations'],
     relatedInsightSlugs: ['why-erp-projects-fail', 'ai-operations-readiness'],
+    translations: {
+      fr: {
+        problemHeadline: 'Vous avez besoin d’un ERP vraiment adapté à vos opérations',
+        category: 'ERP',
+        seoSummary: 'Accompagnement ERP pour les équipes du marché intermédiaire qui ont besoin d’une sélection objective, d’un déploiement propre et d’une adoption forte.',
+        painPoints: ['Vous avez acheté un ERP jamais réellement déployé', 'Vous comparez des ERP sans grille objective', 'Vous avez peur des dépassements de budget et de délais', 'Le fournisseur pousse des fonctionnalités inutiles', 'Votre équipe résiste à cause d’un précédent échec logiciel'],
+        whatWeDo: ['Définir vos besoins à partir de la réalité opérationnelle', 'Mener une sélection structurée entre plusieurs plateformes', 'Négocier les contrats en votre nom', 'Piloter configuration, migration, tests et formation', 'Gérer le changement et assurer l’adoption'],
+        aiOpportunities: ['Utiliser le projet ERP pour établir la discipline de données requise pour les copilotes IA et le reporting', 'Créer des assistants IA par rôle pour naviguer les processus ERP', 'Ajouter des soutiens agentiques pour les suivis, approbations et alertes après go-live'],
+        outcomes: ['Un ERP configuré pour vos vrais processus', 'Une adoption complète par l’équipe', 'Des données historiques propres et validées', 'Des processus documentés et une équipe formée', 'Un projet livré à temps et dans le budget'],
+        ctaText: "Obtenir de l'aide pour votre ERP",
+      },
+      es: {
+        problemHeadline: 'Necesitas un ERP que realmente se adapte a tus operaciones',
+        category: 'ERP',
+        seoSummary: 'Apoyo en implementación ERP para equipos del mercado medio que necesitan selección objetiva, despliegue limpio y adopción real.',
+        painPoints: ['Compraste un ERP que nunca quedó bien implementado', 'Estás evaluando ERP sin una comparación objetiva', 'Te preocupan los sobrecostos y retrasos', 'El proveedor empuja funciones que no necesitas', 'Tu equipo se resiste por una mala experiencia anterior'],
+        whatWeDo: ['Definir requisitos desde tu realidad operativa', 'Dirigir una selección estructurada entre varias plataformas', 'Negociar contratos en tu nombre', 'Liderar configuración, migración, pruebas y capacitación', 'Gestionar el cambio y asegurar adopción'],
+        aiOpportunities: ['Aprovechar el proyecto ERP para establecer la disciplina de datos necesaria para copilotos y reportes con IA', 'Crear asistentes de IA por rol para apoyar procesos ERP', 'Sumar soporte agéntico para seguimientos, aprobaciones y alertas después de la salida en vivo'],
+        outcomes: ['Un ERP configurado para tus procesos reales', 'Adopción completa del equipo', 'Datos históricos limpios y validados', 'Procesos documentados y equipo capacitado', 'Una implementación entregada a tiempo y dentro del presupuesto'],
+        ctaText: 'Obtén ayuda con tu ERP',
+      },
+    },
   },
   {
     slug: 'crm-implementation',
@@ -247,6 +450,28 @@ export const solutions: SolutionData[] = [
     ctaText: 'Fix Your CRM',
     relatedSlugs: ['system-integration', 'ops-outgrown-tools', 'api-integrations', 'ai-operations'],
     relatedInsightSlugs: ['vendor-selection-process', 'building-rag-agents-for-operations'],
+    translations: {
+      fr: {
+        problemHeadline: 'Votre équipe commerciale pilote à vue',
+        category: 'CRM',
+        seoSummary: 'Implémentation CRM pour les équipes qui ont besoin de visibilité pipeline, de prévisions fiables et de meilleurs relais vers les opérations.',
+        painPoints: ['Le suivi des opportunités vit dans des feuilles et boîtes mail', 'Vous ne pouvez pas prévoir le revenu correctement', 'L’historique client est dispersé', 'Votre CRM n’est plus utilisé comme prévu', 'Les ventes et les opérations se surprennent mutuellement'],
+        whatWeDo: ['Définir votre vrai processus commercial', 'Choisir et configurer un CRM adapté à votre façon de vendre', 'Migrer les contacts et opportunités existants', 'Construire les rapports et tableaux de bord utiles à la direction', 'Former les équipes et soutenir l’adoption'],
+        aiOpportunities: ['Activer des copilotes commerciaux qui résument les comptes et suggèrent les prochaines actions', 'Utiliser des agents pour rédiger des suivis et détecter les opportunités bloquées', 'Relier la connaissance CRM aux systèmes opérationnels pour répondre avec des données actuelles'],
+        outcomes: ['Une visibilité pipeline fiable pour la direction', 'Une équipe commerciale qui utilise réellement le CRM', 'Des données client connectées entre ventes et opérations', 'Des prévisions plus fiables', 'Des cycles de vente plus courts grâce à un meilleur contexte'],
+        ctaText: 'Corriger votre CRM',
+      },
+      es: {
+        problemHeadline: 'Tu equipo comercial está operando a ciegas',
+        category: 'CRM',
+        seoSummary: 'Implementación CRM para equipos que necesitan visibilidad del pipeline, mejores pronósticos y mejores handoffs hacia operaciones.',
+        painPoints: ['El seguimiento de oportunidades vive en hojas y correos', 'No puedes pronosticar ingresos con precisión', 'El historial del cliente está disperso', 'Tu CRM ya no se usa como fue diseñado', 'Ventas y operaciones se sorprenden mutuamente'],
+        whatWeDo: ['Definir tu proceso comercial real', 'Seleccionar y configurar un CRM alineado con tu forma de vender', 'Migrar contactos y oportunidades existentes', 'Construir reportes y tableros útiles para dirección', 'Capacitar al equipo y reforzar la adopción'],
+        aiOpportunities: ['Habilitar copilotos comerciales que resuman cuentas y sugieran siguientes acciones', 'Usar agentes para redactar seguimientos y detectar oportunidades estancadas', 'Conectar el conocimiento del CRM con sistemas operativos para responder con datos actuales'],
+        outcomes: ['Visibilidad confiable del pipeline para la dirección', 'Un equipo comercial que realmente usa el CRM', 'Datos de clientes conectados entre ventas y operaciones', 'Pronósticos más confiables', 'Ciclos de venta más cortos gracias a un mejor contexto'],
+        ctaText: 'Arregla tu CRM',
+      },
+    },
   },
   {
     slug: 'api-integrations',
@@ -285,6 +510,28 @@ export const solutions: SolutionData[] = [
     ctaText: 'Automate Your Data Flows',
     relatedSlugs: ['system-integration', 'erp-implementation', 'ops-outgrown-tools', 'ai-operations'],
     relatedInsightSlugs: ['system-integration-guide', 'building-rag-agents-for-operations'],
+    translations: {
+      fr: {
+        problemHeadline: 'Le transfert manuel de données détruit votre productivité',
+        category: 'Intégration',
+        seoSummary: 'Services d’intégration API pour automatiser les flux de données répétitifs et soutenir des opérations fiables et évolutives.',
+        painPoints: ['Quelqu’un copie des données entre systèmes tous les jours', 'Les commandes ne remontent pas automatiquement vers la logistique', 'Les stocks sont faux faute de synchronisation temps réel', 'Vous ne savez pas comment évaluer les outils d’intégration', 'Votre équipe IT manque de bande passante pour développer et maintenir le tout'],
+        whatWeDo: ['Identifier chaque transfert manuel de données', 'Concevoir une architecture adaptée à votre stack', 'Construire des intégrations natives, iPaaS ou API custom', 'Mettre en place gestion des erreurs, logs et monitoring', 'Documenter et former les équipes qui reprendront la main'],
+        aiOpportunities: ['Utiliser une architecture API-first pour alimenter des systèmes RAG avec des données à jour', 'Ajouter de la classification IA aux demandes entrantes et files d’exceptions', 'Créer des agents légers qui déclenchent des workflows entre systèmes avec supervision'],
+        outcomes: ['Zéro ressaisie sur les flux à fort volume', 'Synchronisation en temps réel ou quasi temps réel', 'Moins d’erreurs humaines', 'Des heures gagnées chaque semaine', 'Une confiance plus élevée dans la qualité des données'],
+        ctaText: 'Automatiser vos flux de données',
+      },
+      es: {
+        problemHeadline: 'La transferencia manual de datos está destruyendo tu productividad',
+        category: 'Integración',
+        seoSummary: 'Servicios de integración API para automatizar movimientos repetitivos de datos y soportar operaciones confiables y escalables.',
+        painPoints: ['Alguien copia datos entre sistemas todos los días', 'Los pedidos no llegan automáticamente al sistema de cumplimiento', 'El inventario está desfasado por falta de sincronización', 'No sabes cómo evaluar herramientas de integración', 'Tu equipo de TI no tiene capacidad para construir y mantener integraciones'],
+        whatWeDo: ['Identificar cada transferencia manual de datos', 'Diseñar una arquitectura adecuada para tu stack', 'Construir integraciones nativas, iPaaS o APIs personalizadas', 'Implementar manejo de errores, logs y monitoreo', 'Documentar y capacitar a quienes operarán la solución'],
+        aiOpportunities: ['Usar una arquitectura API-first para alimentar sistemas RAG con datos actuales', 'Agregar clasificación con IA a solicitudes, tickets y colas de excepción', 'Crear agentes ligeros que disparen flujos entre sistemas con supervisión'],
+        outcomes: ['Cero recaptura manual en flujos repetitivos de alto volumen', 'Sincronización en tiempo real o casi real', 'Menos errores humanos', 'Horas ahorradas cada semana', 'Más confianza en la calidad de los datos'],
+        ctaText: 'Automatiza tus flujos de datos',
+      },
+    },
   },
   {
     slug: 'vendor-management',
@@ -323,6 +570,28 @@ export const solutions: SolutionData[] = [
     ctaText: 'Get Vendor Selection Help',
     relatedSlugs: ['erp-implementation', 'crm-implementation', 'systems-audit', 'ai-operations'],
     relatedInsightSlugs: ['vendor-selection-process', 'ai-operations-readiness'],
+    translations: {
+      fr: {
+        problemHeadline: 'La sélection fournisseur est une boîte noire',
+        category: 'Stratégie',
+        seoSummary: 'Accompagnement de sélection et négociation logicielle pour les responsables opérations qui évaluent ERP, CRM et autres systèmes.',
+        painPoints: ['Chaque fournisseur dit pouvoir tout faire', 'Vous manquez d’expertise interne pour valider les promesses techniques', 'Vous craignez un mauvais choix et un verrouillage', 'Vous avez déjà été déçus par un fournisseur', 'Vous ne savez pas comment structurer ou négocier les contrats'],
+        whatWeDo: ['Définir vos besoins à partir de vos workflows réels', 'Construire une shortlist crédible de plateformes', 'Organiser des démos structurées basées sur vos cas d’usage', 'Noter les fournisseurs avec une logique documentée', 'Soutenir la négociation contractuelle avec un regard marché'],
+        aiOpportunities: ['Évaluer les promesses IA des fournisseurs avec la même rigueur que les promesses fonctionnelles', 'Définir où RAG, copilotes ou automatisation agentique créent une vraie valeur', 'Choisir des plateformes avec les API, permissions et modèles de données adaptés à vos futurs projets IA'],
+        outcomes: ['Une décision fournisseur confiante et documentée', 'Un contrat mieux aligné avec vos besoins', 'Un plan d’implémentation clair avant la signature', 'Une équipe interne qui comprend le choix réalisé', 'Le coût évité d’un mauvais logiciel'],
+        ctaText: "Obtenir de l'aide pour la sélection fournisseur",
+      },
+      es: {
+        problemHeadline: 'La selección de proveedores es una caja negra',
+        category: 'Estrategia',
+        seoSummary: 'Apoyo en selección y negociación de software para líderes operativos que evalúan ERP, CRM y sistemas críticos.',
+        painPoints: ['Cada proveedor dice que puede hacerlo todo', 'No tienes experiencia interna para validar promesas técnicas', 'Te preocupa elegir mal y quedar atrapado', 'Ya te ha fallado un proveedor que prometió de más', 'No sabes cómo estructurar o negociar contratos'],
+        whatWeDo: ['Definir requisitos desde tus flujos reales', 'Construir una shortlist creíble de plataformas', 'Dirigir demos estructuradas basadas en tus casos de uso', 'Puntuar a cada proveedor con criterios documentados', 'Apoyar la negociación contractual con criterio de mercado'],
+        aiOpportunities: ['Evaluar las promesas de IA con el mismo rigor que las funciones centrales', 'Definir dónde RAG, copilotos o automatización agéntica generan valor real', 'Elegir plataformas con APIs, permisos y modelos de datos aptos para futuras iniciativas de IA'],
+        outcomes: ['Una decisión de proveedor más segura y documentada', 'Un contrato mejor alineado con tus requisitos', 'Un plan de implementación claro antes de firmar', 'Un equipo interno que entiende por qué se eligió esa plataforma', 'El costo evitado de elegir la herramienta equivocada'],
+        ctaText: 'Obtén ayuda con la selección de proveedores',
+      },
+    },
   },
   {
     slug: 'systems-audit',
@@ -361,6 +630,28 @@ export const solutions: SolutionData[] = [
     ctaText: 'Book a Systems Audit',
     relatedSlugs: ['ops-outgrown-tools', 'erp-implementation', 'vendor-management', 'ai-operations'],
     relatedInsightSlugs: ['ai-operations-readiness', 'vendor-selection-process'],
+    translations: {
+      fr: {
+        problemHeadline: 'Vous ne savez pas par où commencer',
+        category: 'Stratégie',
+        seoSummary: 'Audit des systèmes opérationnels pour les entreprises qui ont besoin d’une feuille de route claire sur ERP, intégrations, feuilles de calcul et préparation IA.',
+        painPoints: ['Vous savez que vos opérations ont des problèmes mais pas lesquels traiter en premier', 'Vous avez des idées d’amélioration sans moyen de prioriser', 'La direction n’est pas alignée sur ce qui est cassé', 'Les conseils fournisseurs vous semblent biaisés', 'Vous voulez une vision externe avant un investissement important'],
+        whatWeDo: ['Interviewer les parties prenantes clés', 'Cartographier les systèmes, workflows et flux de données actuels', 'Identifier les écarts, doublons et inefficacités coûteuses', 'Comparer votre situation aux meilleures pratiques de votre taille', 'Livrer une feuille de route priorisée avec effort et ROI estimés'],
+        aiOpportunities: ['Évaluer votre préparation IA sur la qualité des données, les permissions, la documentation et la stabilité des processus', 'Identifier les cas d’usage à plus fort ROI pour assistants RAG, agents et reporting IA', 'Construire une feuille de route qui séquence les fondations avant les investissements IA'],
+        outcomes: ['Une carte complète de votre stack opérationnelle et de ses ruptures', 'Une liste priorisée d’améliorations classées par impact et complexité', 'Un meilleur alignement de la direction sur les priorités', 'Des business cases plus clairs pour les investissements envisagés', 'Un point de départ solide sans paralysie analytique'],
+        ctaText: 'Réserver un audit des systèmes',
+      },
+      es: {
+        problemHeadline: 'No sabes por dónde empezar',
+        category: 'Estrategia',
+        seoSummary: 'Auditoría de sistemas operativos para empresas que necesitan una hoja de ruta clara sobre ERP, integraciones, hojas de cálculo y preparación para IA.',
+        painPoints: ['Sabes que tus operaciones tienen problemas pero no cuáles atacar primero', 'Tienes ideas de mejora sin forma de priorizarlas', 'La dirección no está alineada sobre qué está roto', 'Los consejos de proveedores te parecen sesgados', 'Quieres una visión externa antes de una inversión grande'],
+        whatWeDo: ['Entrevistar a las partes interesadas clave', 'Mapear sistemas, flujos de trabajo y flujos de datos actuales', 'Identificar vacíos, redundancias e ineficiencias costosas', 'Comparar tu situación con buenas prácticas según tu tamaño', 'Entregar una hoja de ruta priorizada con esfuerzo y ROI estimado'],
+        aiOpportunities: ['Evaluar tu preparación para IA en calidad de datos, permisos, documentación y estabilidad de procesos', 'Identificar los casos de uso con mayor ROI para asistentes RAG, agentes y reporting con IA', 'Construir una hoja de ruta que ordene primero las bases y luego las inversiones en IA'],
+        outcomes: ['Un mapa completo de tu stack operativo y de dónde falla', 'Una lista priorizada de mejoras según impacto y complejidad', 'Mayor alineación directiva sobre qué corregir y en qué orden', 'Casos de negocio más claros para las inversiones consideradas', 'Un punto de partida confiable sin parálisis por análisis'],
+        ctaText: 'Reserva una auditoría de sistemas',
+      },
+    },
   },
 ]
 
@@ -370,4 +661,22 @@ export function getSolutionBySlug(slug: string): SolutionData | undefined {
 
 export function getAllSolutionSlugs(): string[] {
   return solutions.map((s) => s.slug)
+}
+
+export function getLocalizedSolutionBySlug(
+  slug: string,
+  locale: string
+): SolutionData | undefined {
+  const solution = getSolutionBySlug(slug)
+  if (!solution) return undefined
+
+  if (locale !== 'fr' && locale !== 'es') return solution
+
+  const translated = solution.translations?.[locale]
+  if (!translated) return solution
+
+  return {
+    ...solution,
+    ...translated,
+  }
 }

@@ -2,7 +2,7 @@ import type { Metadata } from 'next'
 import { notFound } from 'next/navigation'
 import Link from 'next/link'
 import { getTranslations } from 'next-intl/server'
-import { getSolutionBySlug, getAllSolutionSlugs } from '@/src/data/solutions'
+import { getAllSolutionSlugs, getLocalizedSolutionBySlug } from '@/src/data/solutions'
 import { getInsightBySlug } from '@/src/data/insights'
 import { siteConfig } from '@/src/config/site'
 import CTABlock from '@/src/components/sections/CTABlock'
@@ -22,7 +22,7 @@ export async function generateStaticParams() {
 
 export async function generateMetadata({ params }: SolutionPageProps): Promise<Metadata> {
   const { locale, slug } = await params
-  const solution = getSolutionBySlug(slug)
+  const solution = getLocalizedSolutionBySlug(slug, locale)
   if (!solution) return {}
 
   const t = await getTranslations({ locale })
@@ -35,7 +35,7 @@ export async function generateMetadata({ params }: SolutionPageProps): Promise<M
 
 export default async function SolutionPage({ params }: SolutionPageProps) {
   const { locale, slug } = await params
-  const solution = getSolutionBySlug(slug)
+  const solution = getLocalizedSolutionBySlug(slug, locale)
 
   if (!solution) notFound()
 
@@ -93,7 +93,7 @@ export default async function SolutionPage({ params }: SolutionPageProps) {
               {/* Pain Points */}
               <div>
                 <h2 className="font-heading font-bold text-2xl text-text-primary mb-6">
-                  Does This Sound Familiar?
+                  {t('solutionPage.painPointsTitle')}
                 </h2>
                 <ul className="space-y-3" role="list">
                   {solution.painPoints.map((point, i) => (
@@ -112,7 +112,7 @@ export default async function SolutionPage({ params }: SolutionPageProps) {
               {/* What We Do */}
               <div>
                 <h2 className="font-heading font-bold text-2xl text-text-primary mb-6">
-                  What We Do
+                  {t('solutionPage.whatWeDoTitle')}
                 </h2>
                 <ol className="space-y-4" role="list">
                   {solution.whatWeDo.map((step, i) => (
@@ -131,7 +131,7 @@ export default async function SolutionPage({ params }: SolutionPageProps) {
               {/* Outcomes */}
               <div>
                 <h2 className="font-heading font-bold text-2xl text-text-primary mb-6">
-                  What You Get
+                  {t('solutionPage.outcomesTitle')}
                 </h2>
                 <ul className="space-y-3" role="list">
                   {solution.outcomes.map((outcome, i) => (
@@ -150,10 +150,10 @@ export default async function SolutionPage({ params }: SolutionPageProps) {
               {/* AI opportunities */}
               <div>
                 <h2 className="font-heading font-bold text-2xl text-text-primary mb-6">
-                  AI, RAG, and Agentic Value Add
+                  {t('solutionPage.aiTitle')}
                 </h2>
                 <p className="mb-5 text-text-secondary">
-                  Once the operational foundation is stable, this solution also creates room for practical AI deployment.
+                  {t('solutionPage.aiSubtitle')}
                 </p>
                 <ul className="space-y-3" role="list">
                   {solution.aiOpportunities.map((item, i) => (
@@ -174,10 +174,10 @@ export default async function SolutionPage({ params }: SolutionPageProps) {
             <div className="lg:col-span-1">
               <div className="sticky top-24 bg-primary rounded-2xl p-6 text-center">
                 <h3 className="font-heading font-bold text-xl text-text-inverse mb-3">
-                  Ready to get started?
+                  {t('solutionPage.sidebarTitle')}
                 </h3>
                 <p className="text-sm text-neutral-400 mb-6">
-                  Start with a free systems audit. No pitch deck, no pressure.
+                  {t('solutionPage.sidebarText')}
                 </p>
                 <Link href={`/${locale}/contact`}>
                   <Button variant="primary" size="md" fullWidth>
@@ -190,11 +190,11 @@ export default async function SolutionPage({ params }: SolutionPageProps) {
               {solution.relatedSlugs.length > 0 && (
                 <div className="mt-8">
                   <h4 className="text-sm font-semibold uppercase tracking-wider text-text-muted mb-4">
-                    Related Solutions
+                    {t('solutionPage.relatedSolutions')}
                   </h4>
                   <div className="space-y-2">
                     {solution.relatedSlugs.map((relSlug) => {
-                      const related = getSolutionBySlug(relSlug)
+                      const related = getLocalizedSolutionBySlug(relSlug, locale)
                       if (!related) return null
                       return (
                         <Link
@@ -213,7 +213,7 @@ export default async function SolutionPage({ params }: SolutionPageProps) {
               {solution.relatedInsightSlugs.length > 0 && (
                 <div className="mt-8">
                   <h4 className="text-sm font-semibold uppercase tracking-wider text-text-muted mb-4">
-                    Related Insights
+                    {t('solutionPage.relatedInsights')}
                   </h4>
                   <div className="space-y-2">
                     {solution.relatedInsightSlugs.map((insightSlug) => {

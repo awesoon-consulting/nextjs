@@ -1,6 +1,7 @@
 import type { Metadata } from 'next'
 import { notFound } from 'next/navigation'
 import Link from 'next/link'
+import { getTranslations } from 'next-intl/server'
 import { getInsightBySlug, getAllInsightSlugs } from '@/src/data/insights'
 import { getSolutionBySlug } from '@/src/data/solutions'
 import { siteConfig } from '@/src/config/site'
@@ -19,19 +20,24 @@ export async function generateStaticParams() {
 }
 
 export async function generateMetadata({ params }: InsightPageProps): Promise<Metadata> {
-  const { slug } = await params
+  const { slug, locale } = await params
   const post = getInsightBySlug(slug)
   if (!post) return {}
+  const t = await getTranslations({ locale, namespace: 'insights' })
 
   return {
     title: post.title,
     description: post.excerpt,
+    keywords: post.tags,
+    category: t(`categories.${post.category}` as Parameters<typeof t>[0]),
   }
 }
 
 export default async function InsightPage({ params }: InsightPageProps) {
   const { locale, slug } = await params
   const post = getInsightBySlug(slug)
+  const tInsights = await getTranslations({ locale, namespace: 'insights' })
+  const tPage = await getTranslations({ locale, namespace: 'insightPage' })
 
   if (!post) notFound()
 
@@ -50,13 +56,13 @@ export default async function InsightPage({ params }: InsightPageProps) {
             <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 19l-7-7 7-7" />
             </svg>
-            All Insights
+            {tInsights('allPosts')}
           </Link>
           <div className="flex items-center gap-3 mb-4">
             <Badge variant="accent" size="sm">
-              {post.category.charAt(0).toUpperCase() + post.category.slice(1)}
+              {tInsights(`categories.${post.category}` as Parameters<typeof tInsights>[0])}
             </Badge>
-            <span className="text-neutral-500 text-sm">{post.readingTime} min read</span>
+            <span className="text-neutral-500 text-sm">{post.readingTime} {tPage('minRead')}</span>
           </div>
           <h1 className="font-heading font-bold text-4xl sm:text-5xl text-text-inverse leading-tight mb-4">
             {post.title}
@@ -158,7 +164,7 @@ export default async function InsightPage({ params }: InsightPageProps) {
           {post.relatedSolutionSlugs.length > 0 && (
             <div className="mt-12 border-t border-neutral-200 pt-8">
               <h2 className="mb-5 font-heading text-2xl font-bold text-text-primary">
-                Related Solutions
+                {tPage('relatedSolutions')}
               </h2>
               <div className="grid gap-3 sm:grid-cols-2">
                 {post.relatedSolutionSlugs.map((solutionSlug) => {
@@ -185,7 +191,7 @@ export default async function InsightPage({ params }: InsightPageProps) {
           {post.relatedSlugs.length > 0 && (
             <div className="mt-12 border-t border-neutral-200 pt-8">
               <h2 className="mb-5 font-heading text-2xl font-bold text-text-primary">
-                Keep Reading
+                {tPage('keepReading')}
               </h2>
               <div className="space-y-3">
                 {post.relatedSlugs.map((relatedSlug) => {
@@ -203,6 +209,28 @@ export default async function InsightPage({ params }: InsightPageProps) {
                     </Link>
                   )
                 })}
+              </div>
+            </div>
+          )}
+
+          {post.sourceLinks && post.sourceLinks.length > 0 && (
+            <div className="mt-12 border-t border-neutral-200 pt-8">
+              <h2 className="mb-5 font-heading text-2xl font-bold text-text-primary">
+                {tPage('sources')}
+              </h2>
+              <div className="space-y-3">
+                {post.sourceLinks.map((source) => (
+                  <a
+                    key={source.url}
+                    href={source.url}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="block rounded-xl border border-neutral-200 p-4 transition-colors hover:border-secondary/40 focus:outline-none focus-visible:ring-2 focus-visible:ring-secondary"
+                  >
+                    <p className="font-medium text-text-primary">{source.label}</p>
+                    <p className="mt-2 text-sm break-all text-text-secondary">{source.url}</p>
+                  </a>
+                ))}
               </div>
             </div>
           )}

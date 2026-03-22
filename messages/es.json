@@ -383,6 +383,23 @@
     "subtext": "30 minutos. Un operador real. Sin presentación.",
     "button": "Reclamarlo →"
   },
+  "solutionPage": {
+    "painPointsTitle": "¿Te resulta familiar?",
+    "whatWeDoTitle": "Qué hacemos",
+    "outcomesTitle": "Qué obtienes",
+    "aiTitle": "Valor agregado de IA, RAG y agentes",
+    "aiSubtitle": "Cuando la base operativa ya es estable, esta solución también abre espacio para un despliegue práctico de IA.",
+    "sidebarTitle": "¿Listo para empezar?",
+    "sidebarText": "Empieza con una auditoría gratuita de sistemas. Sin presentación, sin presión.",
+    "relatedSolutions": "Soluciones relacionadas",
+    "relatedInsights": "Artículos relacionados"
+  },
+  "insightPage": {
+    "minRead": "min de lectura",
+    "relatedSolutions": "Soluciones relacionadas",
+    "keepReading": "Seguir leyendo",
+    "sources": "Fuentes"
+  },
   "common": {
     "loading": "Cargando...",
     "step": "Paso",
