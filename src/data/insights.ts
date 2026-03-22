@@ -1,4 +1,4 @@
-/
+/**
  * Blog/insights data. Replace with a CMS or MDX files as the content grows.
  * Currently uses static placeholder data to demonstrate structure.
  */

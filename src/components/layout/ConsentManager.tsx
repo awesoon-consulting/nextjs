@@ -101,10 +101,18 @@ export default function ConsentManager({ children }: ConsentManagerProps) {
     window.dispatchEvent(new Event('consent-updated'))
   }, [])
 
-  function openManager() {
-    setDraftConsent(consent ?? { necessary: true, analytics: false, marketing: false })
+  const openManager = useCallback(() => {
+    const storedConsent = getConsent()
+    setDraftConsent(storedConsent ?? consent ?? { necessary: true, analytics: false, marketing: false })
     setIsModalOpen(true)
-  }
+  }, [consent])
+
+  useEffect(() => {
+    const handleOpenManager = () => openManager()
+
+    window.addEventListener('open-cookie-manager', handleOpenManager)
+    return () => window.removeEventListener('open-cookie-manager', handleOpenManager)
+  }, [openManager])
 
   function savePreferences() {
     updateConsent(draftConsent)
