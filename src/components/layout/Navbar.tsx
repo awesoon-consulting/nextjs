@@ -91,6 +91,7 @@ export default function Navbar() {
     'rounded-lg px-4 py-2 text-sm font-medium transition-colors duration-150 focus:outline-none focus-visible:ring-2 focus-visible:ring-accent'
 
   return (
+    <>
     <header
       className={[
         'fixed top-0 left-0 right-0 z-50 border-b transition-all duration-300',
@@ -286,5 +287,6 @@ export default function Navbar() {
           </div>
         </div>
       </div>
+    </>
   )
 }
