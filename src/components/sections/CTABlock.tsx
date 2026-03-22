@@ -157,7 +157,7 @@ export default function CTABlock({
         <AnimateIn variant="slide-up" threshold={0.1}>
           <div className="max-w-3xl mx-auto text-center">
             <p className="mb-4 text-xs font-semibold uppercase tracking-widest text-text-muted dark:text-white/40">
-              Take the first step
+              {t('eyebrow.takeFirstStep')}
             </p>
             <h2
               id="cta-heading"

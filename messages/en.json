@@ -22,6 +22,9 @@
   },
   "hero": {
     "headline": "Your ops outgrew your tools. We fix that.",
+    "headline1": "Your ops outgrew",
+    "headlineAccent": "your tools.",
+    "headline2": "We fix that.",
     "subtext": "We help mid-market manufacturing, distribution, and industrial companies build connected systems, scalable infrastructure, and operational clarity,  so you can grow without the chaos.",
     "primaryCta": "Get a Free Systems Audit",
     "secondaryCta": "See How We Work",
@@ -73,6 +76,9 @@
   },
   "process": {
     "title": "How We Work",
+    "freeNoCommitment": "Free, no commitment",
+    "deliveredIn48h": "Delivered in 48h",
+    "ctaButton": "Start with a Free Systems Audit",
     "subtitle": "A proven four-step engagement model that gets you from chaos to clarity.",
     "steps": [
       {
@@ -225,7 +231,11 @@
       "company": "Acme Manufacturing Inc.",
       "email": "jane@acmemfg.com",
       "phone": "+1 (555) 000-0000",
-      "message": "Tell us more about your situation..."
+      "message": "Tell us more about your situation...",
+      "selectIndustry": "Select industry",
+      "selectCompanySize": "Select company size",
+      "selectTimeline": "Select timeline",
+      "selectBudget": "Select budget range"
     },
     "industries": {
       "manufacturing": "Manufacturing",
@@ -289,6 +299,11 @@
   },
   "footer": {
     "tagline": "Your ops outgrew your tools. We fix that.",
+    "readyHeadline": "Ready to stop managing workarounds?",
+    "readySubtext": "A 30-minute call. No pitch deck. Just an honest look at your systems.",
+    "contactHeading": "Contact",
+    "humanReplies": "A real person replies within 24 hours.",
+    "noChatbots": "No chatbots, no auto-responders.",
     "solutions": "Solutions",
     "company": "Company",
     "legal": "Legal",
@@ -348,8 +363,22 @@
     "homeCta": "Go to Homepage",
     "contactCta": "Contact Us"
   },
+  "eyebrow": {
+    "whyAwesoon": "Why Awesoon",
+    "soundFamiliar": "Sound familiar?",
+    "problemsWeSolve": "Problems We Solve",
+    "howWeWork": "How We Work",
+    "editorial": "Editorial",
+    "takeFirstStep": "Take the first step"
+  },
+  "floatingCta": {
+    "message": "Your systems audit is free.",
+    "subtext": "30 minutes. A real operator. No pitch deck.",
+    "button": "Claim It →"
+  },
   "common": {
     "loading": "Loading...",
+    "step": "Step",
     "error": "An error occurred. Please try again.",
     "success": "Success!",
     "required": "Required",

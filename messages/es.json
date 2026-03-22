@@ -23,6 +23,9 @@
   },
   "hero": {
     "headline": "Tus operaciones superaron tus herramientas. Nosotros lo arreglamos.",
+    "headline1": "Tus operaciones superaron",
+    "headlineAccent": "tus herramientas.",
+    "headline2": "Nosotros lo arreglamos.",
     "subtext": "Ayudamos a empresas manufactureras, de distribución e industriales a construir sistemas conectados, infraestructura escalable y claridad operacional,  para que puedas crecer sin el caos.",
     "primaryCta": "Obtener una auditoría gratuita",
     "secondaryCta": "Ver cómo trabajamos",
@@ -74,6 +77,9 @@
   },
   "process": {
     "title": "Cómo trabajamos",
+    "freeNoCommitment": "Gratis, sin compromiso",
+    "deliveredIn48h": "Entregado en 48h",
+    "ctaButton": "Empezar con una auditoría gratuita",
     "subtitle": "Un modelo de participación probado de cuatro pasos que te lleva del caos a la claridad.",
     "steps": [
       {
@@ -226,7 +232,11 @@
       "company": "Manufactura Acme S.A.",
       "email": "juan@acmemfg.com",
       "phone": "+1 (555) 000-0000",
-      "message": "Cuéntanos más sobre tu situación..."
+      "message": "Cuéntanos más sobre tu situación...",
+      "selectIndustry": "Seleccionar industria",
+      "selectCompanySize": "Seleccionar tamaño",
+      "selectTimeline": "Seleccionar cronograma",
+      "selectBudget": "Seleccionar presupuesto"
     },
     "industries": {
       "manufacturing": "Manufactura",
@@ -290,6 +300,11 @@
   },
   "footer": {
     "tagline": "Tus operaciones superaron tus herramientas. Nosotros lo arreglamos.",
+    "readyHeadline": "¿Listo para dejar de gestionar soluciones provisionales?",
+    "readySubtext": "Una llamada de 30 minutos. Sin presentación. Solo una mirada honesta a tus sistemas.",
+    "contactHeading": "Contacto",
+    "humanReplies": "Una persona real responde en 24 horas.",
+    "noChatbots": "Sin chatbots, sin respuestas automáticas.",
     "solutions": "Soluciones",
     "company": "Empresa",
     "legal": "Legal",
@@ -349,8 +364,22 @@
     "homeCta": "Ir al inicio",
     "contactCta": "Contáctanos"
   },
+  "eyebrow": {
+    "whyAwesoon": "Por qué Awesoon",
+    "soundFamiliar": "¿Te suena familiar?",
+    "problemsWeSolve": "Problemas que resolvemos",
+    "howWeWork": "Cómo trabajamos",
+    "editorial": "Editorial",
+    "takeFirstStep": "Da el primer paso"
+  },
+  "floatingCta": {
+    "message": "Tu auditoría de sistemas es gratuita.",
+    "subtext": "30 minutos. Un operador real. Sin presentación.",
+    "button": "Reclamarlo →"
+  },
   "common": {
     "loading": "Cargando...",
+    "step": "Paso",
     "error": "Ocurrió un error. Por favor intenta de nuevo.",
     "success": "¡Éxito!",
     "required": "Obligatorio",

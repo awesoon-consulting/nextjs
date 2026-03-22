@@ -18,13 +18,14 @@
 import { useEffect, useState } from 'react'
 import Link from 'next/link'
 import { usePathname } from 'next/navigation'
-import { useLocale } from 'next-intl'
+import { useLocale, useTranslations } from 'next-intl'
 
 const DISMISSED_KEY = 'awesoon_floating_cta_dismissed'
 const SCROLL_THRESHOLD = 600
 
 export default function FloatingCTA() {
   const locale = useLocale()
+  const t = useTranslations('floatingCta')
   const pathname = usePathname()
   const [visiblePath, setVisiblePath] = useState<string | null>(null)
   const [dismissed, setDismissed] = useState(false)
@@ -101,10 +102,10 @@ export default function FloatingCTA() {
         {/* Message */}
         <div className="flex-1 min-w-0">
           <p className="text-sm font-semibold leading-tight text-text-primary dark:text-white">
-            Your systems audit is free.
+            {t('message')}
           </p>
           <p className="mt-0.5 text-xs text-text-secondary dark:text-neutral-400">
-            30 minutes. A real operator. No pitch deck.
+            {t('subtext')}
           </p>
         </div>
 
@@ -114,7 +115,7 @@ export default function FloatingCTA() {
           className="flex-shrink-0 whitespace-nowrap rounded-xl bg-primary px-4 py-2 text-sm font-semibold text-text-inverse transition-colors duration-150 hover:bg-secondary focus:outline-none focus-visible:ring-2 focus-visible:ring-secondary focus-visible:ring-offset-2 focus-visible:ring-offset-white dark:bg-secondary dark:hover:bg-secondary-light dark:focus-visible:ring-offset-primary"
           onClick={() => setVisiblePath(null)}
         >
-          Claim It →
+          {t('button')}
         </Link>
 
         {/* Dismiss */}

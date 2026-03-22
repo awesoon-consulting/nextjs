@@ -12,6 +12,7 @@ import AnimateIn from '@/src/components/ui/AnimateIn'
 
 export default function ProblemSolutions() {
   const t = useTranslations('problemSolutions')
+  const tEyebrow = useTranslations('eyebrow')
   const locale = useLocale()
   const items = [0, 1, 2, 3] as const
 
@@ -24,7 +25,7 @@ export default function ProblemSolutions() {
         <AnimateIn variant="slide-up" threshold={0.1}>
           <div className="text-center mb-16">
             <p className="text-text-muted dark:text-white/40 text-xs font-semibold uppercase tracking-widest mb-3">
-              Sound familiar?
+              {tEyebrow('soundFamiliar')}
             </p>
             <h2
               id="problem-solutions-title"

@@ -11,6 +11,7 @@ interface InsightGridProps {
 
 export default function InsightGrid({ limit }: InsightGridProps) {
   const t = useTranslations('insights')
+  const tEyebrow = useTranslations('eyebrow')
   const locale = useLocale()
 
   const posts = limit ? insights.slice(0, limit) : insights
@@ -31,7 +32,7 @@ export default function InsightGrid({ limit }: InsightGridProps) {
         <AnimateIn variant="slide-up" threshold={0.08}>
           <div className="text-center mb-16">
             <p className="mb-3 text-xs font-semibold uppercase tracking-[0.28em] text-text-muted dark:text-white/40">
-              Editorial
+              {tEyebrow('editorial')}
             </p>
             <h2
               id="insights-title"

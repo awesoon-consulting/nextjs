@@ -25,7 +25,7 @@ export default function SolutionGrid() {
         <AnimateIn variant="slide-up" threshold={0.08}>
           <div className="mb-16 text-center">
             <p className="mb-3 text-xs font-semibold uppercase tracking-[0.28em] text-text-muted dark:text-white/40">
-              Problems We Solve
+              {t('eyebrow.problemsWeSolve')}
             </p>
             <h2
               id="solutions-title"

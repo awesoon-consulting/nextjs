@@ -1,7 +1,7 @@
 import type { Metadata } from 'next'
 import { Sora, Inter } from 'next/font/google'
 import { NextIntlClientProvider } from 'next-intl'
-import { getMessages, getLocale } from 'next-intl/server'
+import { getMessages, getLocale, getTranslations } from 'next-intl/server'
 import { GoogleAnalytics } from '@next/third-parties/google'
 import ConsentManager from '@/src/components/layout/ConsentManager'
 import { ThemeProvider } from '@/src/components/layout/ThemeProvider'
@@ -106,6 +106,7 @@ interface LocaleLayoutProps {
 export default async function LocaleLayout({ children, params }: LocaleLayoutProps) {
   const { locale } = await params
   const messages = await getMessages()
+  const tCommon = await getTranslations('common')
   const gaMeasurementId = process.env.NEXT_PUBLIC_GA_MEASUREMENT_ID
 
   return (
@@ -124,7 +125,7 @@ export default async function LocaleLayout({ children, params }: LocaleLayoutPro
                 href="#main-content"
                 className="sr-only focus:not-sr-only focus:fixed focus:top-4 focus:left-4 focus:z-50 focus:bg-accent focus:text-text-inverse focus:px-4 focus:py-2 focus:rounded-lg focus:font-semibold"
               >
-                Skip to main content
+                {tCommon('skipToContent')}
               </a>
 
               <Navbar />

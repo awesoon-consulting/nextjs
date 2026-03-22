@@ -13,6 +13,8 @@ import Button from '@/src/components/ui/Button'
 
 export default function ProcessSteps() {
   const t = useTranslations('process')
+  const tEyebrow = useTranslations('eyebrow')
+  const tCommon = useTranslations('common')
   const locale = useLocale()
   const steps = [0, 1, 2, 3]
 
@@ -25,7 +27,7 @@ export default function ProcessSteps() {
         <AnimateIn variant="slide-up" threshold={0.1}>
           <div className="text-center mb-16">
             <p className="text-text-muted dark:text-white/40 text-xs font-semibold uppercase tracking-widest mb-3">
-              How We Work
+              {tEyebrow('howWeWork')}
             </p>
             <h2
               id="process-title"
@@ -53,7 +55,7 @@ export default function ProcessSteps() {
                   {/* Step number circle */}
                   <div className="relative z-10 w-24 h-24 rounded-full bg-white dark:bg-primary/80 border-2 border-neutral-200 dark:border-white/20 group-hover:border-accent dark:group-hover:border-white/20 flex flex-col items-center justify-center mb-6 transition-all duration-300 shadow-md group-hover:shadow-lg">
                     <span className="text-xs font-medium text-text-muted dark:text-neutral-500 uppercase tracking-widest">
-                      Step
+                      {tCommon('step')}
                     </span>
                     <span className="font-heading font-bold text-2xl text-secondary dark:text-white">
                       {t(`steps.${idx}.number`)}
@@ -70,7 +72,7 @@ export default function ProcessSteps() {
                   {/* Step 1 and 2 get inline nudge */}
                   {(idx === 0 || idx === 1) && (
                     <p className="mt-3 text-xs font-medium text-accent dark:text-neutral-300">
-                      {idx === 0 ? 'Free,  no commitment' : 'Delivered in 48h'}
+                      {idx === 0 ? t('freeNoCommitment') : t('deliveredIn48h')}
                     </p>
                   )}
                 </div>
@@ -84,7 +86,7 @@ export default function ProcessSteps() {
           <div className="mt-16 text-center">
             <Link href={`/${locale}/contact`}>
               <Button variant="primary" size="lg" className="group">
-                Start with a Free Systems Audit
+                {t('ctaButton')}
                 <svg
                   className="w-5 h-5 transition-transform duration-200 group-hover:translate-x-1"
                   fill="none"

@@ -256,7 +256,7 @@ export default function MultiStepForm() {
           id="industry"
           label={t('fields.industry')}
           options={industryOptions}
-          placeholder="Select industry"
+          placeholder={t('placeholders.selectIndustry')}
           value={data.industry}
           onChange={(e) => updateField('industry', e.target.value)}
           error={errors.industry}
@@ -266,7 +266,7 @@ export default function MultiStepForm() {
           id="companySize"
           label={t('fields.companySize')}
           options={companySizeOptions}
-          placeholder="Select company size"
+          placeholder={t('placeholders.selectCompanySize')}
           value={data.companySize}
           onChange={(e) => updateField('companySize', e.target.value)}
           error={errors.companySize}
@@ -293,7 +293,7 @@ export default function MultiStepForm() {
           id="timeline"
           label={t('fields.timeline')}
           options={timelineOptions}
-          placeholder="Select timeline"
+          placeholder={t('placeholders.selectTimeline')}
           value={data.timeline}
           onChange={(e) => updateField('timeline', e.target.value)}
           error={errors.timeline}
@@ -303,7 +303,7 @@ export default function MultiStepForm() {
           id="budget"
           label={t('fields.budget')}
           options={budgetOptions}
-          placeholder="Select budget range"
+          placeholder={t('placeholders.selectBudget')}
           value={data.budget}
           onChange={(e) => updateField('budget', e.target.value)}
           error={errors.budget}

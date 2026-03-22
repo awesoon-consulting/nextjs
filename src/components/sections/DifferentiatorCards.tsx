@@ -74,6 +74,7 @@ const icons = [
 
 export default function DifferentiatorCards() {
   const t = useTranslations('differentiators')
+  const tEyebrow = useTranslations('eyebrow')
   const items = [0, 1, 2, 3]
 
   return (
@@ -91,7 +92,7 @@ export default function DifferentiatorCards() {
         <AnimateIn variant="slide-up" threshold={0.1}>
           <div className="text-center mb-16">
             <p className="text-neutral-400 dark:text-white/40 text-xs font-semibold uppercase tracking-widest mb-3">
-              Why Awesoon
+              {tEyebrow('whyAwesoon')}
             </p>
             <h2
               id="differentiators-title"

@@ -64,9 +64,9 @@ export default function Hero() {
 
           {/* Headline */}
           <h1 className="animate-in anim-slide-up delay-100 mb-6 font-heading text-5xl font-bold leading-[1.05] tracking-tight text-text-primary dark:text-white sm:text-6xl lg:text-7xl xl:text-8xl">
-            Your ops outgrew <span className="text-accent dark:text-white">your tools.</span>
+            {t('hero.headline1')} <span className="text-accent dark:text-white">{t('hero.headlineAccent')}</span>
             <br />
-            We fix that.
+            {t('hero.headline2')}
           </h1>
 
           {/* Subtext */}

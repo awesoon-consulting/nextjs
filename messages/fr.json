@@ -23,6 +23,9 @@
   },
   "hero": {
     "headline": "Vos opérations ont dépassé vos outils. Nous réglons ça.",
+    "headline1": "Vos opérations ont dépassé",
+    "headlineAccent": "vos outils.",
+    "headline2": "Nous réglons ça.",
     "subtext": "Nous aidons les entreprises manufacturières, de distribution et industrielles à bâtir des systèmes connectés, une infrastructure évolutive et une clarté opérationnelle,  pour que vous puissiez croître sans le chaos.",
     "primaryCta": "Obtenir un audit gratuit",
     "secondaryCta": "Voir comment nous travaillons",
@@ -74,6 +77,9 @@
   },
   "process": {
     "title": "Comment nous travaillons",
+    "freeNoCommitment": "Gratuit, sans engagement",
+    "deliveredIn48h": "Livré en 48h",
+    "ctaButton": "Commencer par un audit gratuit",
     "subtitle": "Un modèle d'engagement éprouvé en quatre étapes pour passer du chaos à la clarté.",
     "steps": [
       {
@@ -226,7 +232,11 @@
       "company": "Fabrication Acme Inc.",
       "email": "jean@acmefab.com",
       "phone": "+1 (555) 000-0000",
-      "message": "Dites-nous en plus sur votre situation..."
+      "message": "Dites-nous en plus sur votre situation...",
+      "selectIndustry": "Sélectionner le secteur",
+      "selectCompanySize": "Sélectionner la taille",
+      "selectTimeline": "Sélectionner le calendrier",
+      "selectBudget": "Sélectionner le budget"
     },
     "industries": {
       "manufacturing": "Fabrication",
@@ -290,6 +300,11 @@
   },
   "footer": {
     "tagline": "Vos opérations ont dépassé vos outils. Nous réglons ça.",
+    "readyHeadline": "Prêt à arrêter de gérer des contournements?",
+    "readySubtext": "Un appel de 30 minutes. Pas de présentation. Juste un regard honnête sur vos systèmes.",
+    "contactHeading": "Contact",
+    "humanReplies": "Une vraie personne répond dans les 24 heures.",
+    "noChatbots": "Pas de chatbots, pas de répondeurs automatiques.",
     "solutions": "Solutions",
     "company": "Entreprise",
     "legal": "Légal",
@@ -349,8 +364,22 @@
     "homeCta": "Aller à l'accueil",
     "contactCta": "Nous contacter"
   },
+  "eyebrow": {
+    "whyAwesoon": "Pourquoi Awesoon",
+    "soundFamiliar": "Ça vous semble familier?",
+    "problemsWeSolve": "Problèmes que nous résolvons",
+    "howWeWork": "Comment nous travaillons",
+    "editorial": "Éditorial",
+    "takeFirstStep": "Faites le premier pas"
+  },
+  "floatingCta": {
+    "message": "Votre audit des systèmes est gratuit.",
+    "subtext": "30 minutes. Un vrai opérateur. Pas de présentation.",
+    "button": "Je le veux →"
+  },
   "common": {
     "loading": "Chargement...",
+    "step": "Étape",
     "error": "Une erreur s'est produite. Veuillez réessayer.",
     "success": "Succès!",
     "required": "Requis",

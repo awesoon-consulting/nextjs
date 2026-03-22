@@ -34,10 +34,10 @@ export default function Footer() {
         <div className="w-full px-4 sm:px-6 lg:px-10 xl:px-16 py-8 flex flex-col sm:flex-row items-center justify-between gap-4">
           <div>
             <p className="font-heading font-bold text-xl text-text-primary dark:text-white">
-              Ready to stop managing workarounds?
+              {t('footer.readyHeadline')}
             </p>
             <p className="mt-1 text-sm text-text-secondary dark:text-neutral-400">
-              A 30-minute call. No pitch deck. Just an honest look at your systems.
+              {t('footer.readySubtext')}
             </p>
           </div>
           <Link
@@ -134,7 +134,7 @@ export default function Footer() {
           {/* Contact column,  spans 3 of 12 */}
           <div className="lg:col-span-3">
             <h3 className="mb-4 text-xs font-semibold uppercase tracking-widest text-text-muted dark:text-neutral-400">
-              Contact
+              {t('footer.contactHeading')}
             </h3>
             <ul className="space-y-2.5 text-sm text-text-secondary dark:text-neutral-400">
               <li>
@@ -148,9 +148,9 @@ export default function Footer() {
               <li>{siteConfig.contact.address}</li>
               <li className="pt-2">
                 <p className="text-xs leading-relaxed text-text-muted dark:text-neutral-500">
-                  A real person replies within 24 hours.
+                  {t('footer.humanReplies')}
                   <br />
-                  No chatbots, no auto-responders.
+                  {t('footer.noChatbots')}
                 </p>
               </li>
             </ul>
