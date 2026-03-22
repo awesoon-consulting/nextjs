@@ -94,7 +94,7 @@ export default function Navbar() {
     <header
       className={[
         'fixed top-0 left-0 right-0 z-50 border-b transition-all duration-300',
-        isScrolled || isMobileMenuOpen
+        isScrolled
           ? 'border-neutral-200/80 bg-white/96 shadow-lg backdrop-blur-xl dark:border-white/10 dark:bg-primary/98'
           : 'border-neutral-200/60 bg-white/82 shadow-md backdrop-blur-xl dark:border-white/5 dark:bg-primary/90',
       ].join(' ')}
@@ -215,36 +215,76 @@ export default function Navbar() {
         </div>
       </nav>
 
-      {isMobileMenuOpen && (
-        <div className="w-full border-t border-neutral-200/80 bg-white/98 dark:border-white/10 dark:bg-primary/98 md:hidden">
-          <div className="space-y-1 px-4 py-4">
-            {siteConfig.nav.main.map(({ labelKey, href }) => {
-              return (
-                <Link
-                  key={href}
-                  href={localHref(href)}
-                  aria-current={isActive(href) ? 'page' : undefined}
-                  className={[
-                    'block rounded-lg px-4 py-3 text-base font-medium transition-colors focus:outline-none focus-visible:ring-2 focus-visible:ring-accent',
-                    isActive(href)
-                      ? 'bg-accent/10 text-accent dark:bg-white/10 dark:text-white'
-                      : 'text-text-secondary hover:bg-neutral-100 hover:text-text-primary dark:text-neutral-300 dark:hover:bg-white/10 dark:hover:text-white',
-                  ].join(' ')}
-                >
-                  {t(labelKey)}
-                </Link>
-              )
-            })}
-            <div className="pt-3">
-              <Link href={localHref(siteConfig.nav.cta.href)}>
-                <Button variant="primary" size="md" fullWidth>
-                  {t(siteConfig.nav.cta.labelKey)}
-                </Button>
+    </header>
+
+      {/* Mobile drawer — rendered outside header so it can be full-height */}
+      <div className="md:hidden" aria-hidden={!isMobileMenuOpen}>
+        {/* Backdrop */}
+        <div
+          onClick={() => setMobileMenuPath(null)}
+          className={[
+            'fixed inset-0 z-40 bg-black/40 backdrop-blur-sm transition-opacity duration-300',
+            isMobileMenuOpen ? 'opacity-100 pointer-events-auto' : 'opacity-0 pointer-events-none',
+          ].join(' ')}
+          aria-hidden="true"
+        />
+
+        {/* Drawer */}
+        <div
+          className={[
+            'fixed top-0 right-0 z-50 h-full w-72 bg-white shadow-2xl dark:bg-primary',
+            'flex flex-col transition-transform duration-300 ease-in-out',
+            isMobileMenuOpen ? 'translate-x-0' : 'translate-x-full',
+          ].join(' ')}
+          role="dialog"
+          aria-modal="true"
+          aria-label="Mobile navigation"
+        >
+          {/* Drawer header */}
+          <div className="flex items-center justify-between border-b border-neutral-200/80 px-5 py-4 dark:border-white/10">
+            <span className="font-heading text-lg font-bold tracking-tight text-text-primary dark:text-white">
+              {siteConfig.name}<span className="text-accent dark:text-white/50">.</span>
+            </span>
+            <button
+              onClick={() => setMobileMenuPath(null)}
+              aria-label={t('nav.closeMenu')}
+              className="rounded-lg p-2 text-text-muted transition-colors hover:bg-neutral-100 hover:text-text-primary dark:text-neutral-400 dark:hover:bg-white/10 dark:hover:text-white focus:outline-none focus-visible:ring-2 focus-visible:ring-accent"
+            >
+              <svg className="h-5 w-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
+              </svg>
+            </button>
+          </div>
+
+          {/* Nav links */}
+          <nav className="flex-1 overflow-y-auto px-4 py-4 space-y-1">
+            {siteConfig.nav.main.map(({ labelKey, href }) => (
+              <Link
+                key={href}
+                href={localHref(href)}
+                onClick={() => setMobileMenuPath(null)}
+                aria-current={isActive(href) ? 'page' : undefined}
+                className={[
+                  'block rounded-lg px-4 py-3 text-base font-medium transition-colors focus:outline-none focus-visible:ring-2 focus-visible:ring-accent',
+                  isActive(href)
+                    ? 'bg-accent/10 text-accent dark:bg-white/10 dark:text-white'
+                    : 'text-text-secondary hover:bg-neutral-100 hover:text-text-primary dark:text-neutral-300 dark:hover:bg-white/10 dark:hover:text-white',
+                ].join(' ')}
+              >
+                {t(labelKey)}
               </Link>
-            </div>
+            ))}
+          </nav>
+
+          {/* CTA pinned to bottom */}
+          <div className="border-t border-neutral-200/80 px-4 py-4 dark:border-white/10">
+            <Link href={localHref(siteConfig.nav.cta.href)} onClick={() => setMobileMenuPath(null)}>
+              <Button variant="primary" size="md" fullWidth>
+                {t(siteConfig.nav.cta.labelKey)}
+              </Button>
+            </Link>
           </div>
         </div>
-      )}
-    </header>
+      </div>
   )
 }
