@@ -17,6 +17,15 @@
 - File header comments required on every code file (see global CLAUDE.md)
 - Read README.md chain before writing any code; update README after changes
 
+## Git & GitHub Credentials
+
+- Repo: `https://github.com/awesoon-consulting/nextjs.git`
+- The remote URL has the `awesoon-consulting` token embedded directly to bypass macOS keychain (which defaults to `rasoulirealestate`)
+- Format: `https://awesoon-consulting:<token>@github.com/awesoon-consulting/nextjs.git`
+- To refresh the token if it expires: `gh auth token --hostname github.com --user awesoon-consulting` then `git remote set-url origin https://awesoon-consulting:<new-token>@github.com/awesoon-consulting/nextjs.git`
+- Executors must never run `git push` — write branch name to `docs/task-queue/push-queue.txt` and let the Mac pusher handle it
+- Mac pusher script: `scripts/pusher.sh` (runs every 10 min via launchd, installed via `bash scripts/install-pusher.sh`)
+
 ## What Has Been Tried and Failed
 [system-optimizer populates this from experience]
 
