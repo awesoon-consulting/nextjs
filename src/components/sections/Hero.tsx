@@ -1,10 +1,12 @@
 import Link from 'next/link'
+import Image from 'next/image'
 import { useTranslations, useLocale } from 'next-intl'
 import Button from '@/src/components/ui/Button'
 
 /**
  * Hero, premium monochrome in light mode and deep navy in dark mode.
- * The structure stays typography-first, with subtle geometry and shadowed depth.
+ * Left column: headline, subtext, CTAs, trust stats.
+ * Right column (top on mobile): staggered portrait pair with fade+slide animation.
  */
 export default function Hero() {
   const t = useTranslations()
@@ -51,77 +53,132 @@ export default function Hero() {
 
       {/* Content */}
       <div className="relative w-full px-4 sm:px-6 lg:px-10 xl:px-16 py-32 pt-40">
-        <div className="max-w-4xl">
-          {/* Badge */}
-          <div
-            className="animate-in anim-hero-badge delay-0 inline-flex items-center gap-2 rounded-full px-4 py-1.5 mb-8 bg-white/94 border border-black/8 shadow-[0_16px_40px_-24px_rgba(10,10,10,0.35)] dark:bg-white/5 dark:border-white/10 dark:shadow-none"
-          >
-            <span className="h-1.5 w-1.5 rounded-full bg-accent" aria-hidden="true" />
-            <span className="text-sm font-medium tracking-wide text-text-secondary dark:text-white/60">
-              {t('hero.trustBadge')}
-            </span>
+        <div className="flex flex-col-reverse lg:flex-row items-center gap-12 lg:gap-16">
+
+          {/* ── Left: copy ── */}
+          <div className="w-full lg:max-w-[52%]">
+            {/* Badge */}
+            <div className="animate-in anim-hero-badge delay-0 inline-flex items-center gap-2 rounded-full px-4 py-1.5 mb-8 bg-white/94 border border-black/8 shadow-[0_16px_40px_-24px_rgba(10,10,10,0.35)] dark:bg-white/5 dark:border-white/10 dark:shadow-none">
+              <span className="h-1.5 w-1.5 rounded-full bg-accent" aria-hidden="true" />
+              <span className="text-sm font-medium tracking-wide text-text-secondary dark:text-white/60">
+                {t('hero.trustBadge')}
+              </span>
+            </div>
+
+            {/* Headline */}
+            <h1 className="animate-in anim-slide-up delay-100 mb-6 font-heading text-5xl font-bold leading-[1.05] tracking-tight text-text-primary dark:text-white sm:text-6xl lg:text-6xl xl:text-7xl">
+              {t('hero.headline1')}{' '}
+              <span className="text-accent dark:text-white">{t('hero.headlineAccent')}</span>
+              <br />
+              {t('hero.headline2')}
+            </h1>
+
+            {/* Subtext */}
+            <p className="animate-in anim-slide-up delay-200 mb-10 max-w-xl text-lg leading-relaxed text-text-secondary dark:text-white/55 sm:text-xl">
+              {t('hero.subtext')}
+            </p>
+
+            {/* CTAs */}
+            <div className="animate-in anim-slide-up delay-300 flex flex-col sm:flex-row gap-4">
+              <Link href={`/${locale}/contact`}>
+                <Button variant="primary" size="lg" className="group">
+                  {t('hero.primaryCta')}
+                  <svg
+                    className="w-5 h-5 transition-transform duration-200 group-hover:translate-x-1"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                    aria-hidden="true"
+                  >
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      strokeWidth={2}
+                      d="M17 8l4 4m0 0l-4 4m4-4H3"
+                    />
+                  </svg>
+                </Button>
+              </Link>
+              <Link href={`/${locale}/solutions`}>
+                <Button variant="outline" size="lg">
+                  {t('hero.secondaryCta')}
+                </Button>
+              </Link>
+            </div>
+
+            {/* Trust signals */}
+            <div
+              className="animate-in anim-fade-in delay-500 mt-12 flex flex-wrap gap-6 border-t border-neutral-200 pt-8 dark:border-white/10 sm:gap-10"
+              aria-label="Trust signals"
+            >
+              {[
+                { stat: '48h', label: 'Average audit turnaround' },
+                { stat: '100%', label: 'Senior operator delivery' },
+                { stat: '0', label: 'Chatbots. Ever.' },
+              ].map(({ stat, label }) => (
+                <div key={stat} className="flex items-center gap-3">
+                  <span className="font-heading text-2xl font-bold text-text-primary dark:text-white">
+                    {stat}
+                  </span>
+                  <span className="max-w-[100px] text-sm leading-tight text-text-muted dark:text-white/40">
+                    {label}
+                  </span>
+                </div>
+              ))}
+            </div>
           </div>
 
-          {/* Headline */}
-          <h1 className="animate-in anim-slide-up delay-100 mb-6 font-heading text-5xl font-bold leading-[1.05] tracking-tight text-text-primary dark:text-white sm:text-6xl lg:text-7xl xl:text-8xl">
-            {t('hero.headline1')} <span className="text-accent dark:text-white">{t('hero.headlineAccent')}</span>
-            <br />
-            {t('hero.headline2')}
-          </h1>
-
-          {/* Subtext */}
-          <p className="animate-in anim-slide-up delay-200 mb-10 max-w-2xl text-lg leading-relaxed text-text-secondary dark:text-white/55 sm:text-xl">
-            {t('hero.subtext')}
-          </p>
-
-          {/* CTAs */}
-          <div className="animate-in anim-slide-up delay-300 flex flex-col sm:flex-row gap-4">
-            <Link href={`/${locale}/contact`}>
-              <Button variant="primary" size="lg" className="group">
-                {t('hero.primaryCta')}
-                <svg
-                  className="w-5 h-5 transition-transform duration-200 group-hover:translate-x-1"
-                  fill="none"
-                  stroke="currentColor"
-                  viewBox="0 0 24 24"
-                  aria-hidden="true"
-                >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth={2}
-                    d="M17 8l4 4m0 0l-4 4m4-4H3"
-                  />
-                </svg>
-              </Button>
-            </Link>
-            <Link href={`/${locale}/solutions`}>
-              <Button variant="outline" size="lg">
-                {t('hero.secondaryCta')}
-              </Button>
-            </Link>
-          </div>
-
-          {/* Trust signals */}
+          {/* ── Right: team portraits ── */}
           <div
-            className="animate-in anim-fade-in delay-500 mt-12 flex flex-wrap gap-6 border-t border-neutral-200 pt-8 dark:border-white/10 sm:gap-10"
-            aria-label="Trust signals"
+            className="w-full lg:flex-1 flex justify-center lg:justify-end"
+            aria-hidden="true"
           >
-            {[
-              { stat: '48h', label: 'Average audit turnaround' },
-              { stat: '100%', label: 'Senior operator delivery' },
-              { stat: '0', label: 'Chatbots. Ever.' },
-            ].map(({ stat, label }) => (
-              <div key={stat} className="flex items-center gap-3">
-                <span className="font-heading text-2xl font-bold text-text-primary dark:text-white">
-                  {stat}
-                </span>
-                <span className="max-w-[100px] text-sm leading-tight text-text-muted dark:text-white/40">
-                  {label}
-                </span>
+            {/* Staggered card pair */}
+            <div className="relative w-[320px] h-[420px] sm:w-[380px] sm:h-[480px]">
+
+              {/* Ching — back card, slides in from right, slight offset */}
+              <div
+                className="animate-in anim-slide-right delay-200 absolute top-0 right-0 w-[200px] sm:w-[240px] h-[280px] sm:h-[330px] rounded-2xl overflow-hidden shadow-2xl border border-neutral-200 dark:border-white/10"
+                style={{ animationFillMode: 'both' }}
+              >
+                <Image
+                  src="/images/team-ching.png"
+                  alt="Ching Ho — Project Manager & ERP/CRM Consultant"
+                  fill
+                  className="object-cover"
+                  sizes="(max-width: 640px) 200px, 240px"
+                  priority
+                />
+                {/* Name label */}
+                <div className="absolute bottom-0 left-0 right-0 px-3 py-2 bg-gradient-to-t from-black/70 to-transparent">
+                  <p className="text-white text-xs font-semibold leading-tight">Ching Ho</p>
+                  <p className="text-white/70 text-[10px]">PM & ERP/CRM Consultant</p>
+                </div>
               </div>
-            ))}
+
+              {/* Ray — front card, slides in from right with more delay, offset down-left */}
+              <div
+                className="animate-in anim-slide-right delay-400 absolute bottom-0 left-0 w-[200px] sm:w-[240px] h-[280px] sm:h-[330px] rounded-2xl overflow-hidden shadow-2xl border border-neutral-200 dark:border-white/10"
+                style={{ animationFillMode: 'both' }}
+              >
+                <Image
+                  src="/images/team-ray.png"
+                  alt="Ray Rasouli — Software Engineer & Solution Developer"
+                  fill
+                  className="object-cover"
+                  sizes="(max-width: 640px) 200px, 240px"
+                  priority
+                />
+                {/* Name label */}
+                <div className="absolute bottom-0 left-0 right-0 px-3 py-2 bg-gradient-to-t from-black/70 to-transparent">
+                  <p className="text-white text-xs font-semibold leading-tight">Ray Rasouli</p>
+                  <p className="text-white/70 text-[10px]">Software Engineer & Solutions</p>
+                </div>
+              </div>
+
+            </div>
           </div>
+
         </div>
       </div>
 

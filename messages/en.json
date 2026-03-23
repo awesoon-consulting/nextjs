@@ -174,11 +174,11 @@
     "title": "About Awesoon",
     "hero": {
       "headline": "Built by operators, for operators.",
-      "subtext": "We started Awesoon because we lived the problem. We've managed operations at growing companies and watched good businesses suffer because their systems couldn't keep up."
+      "subtext": "Awesoon means \"easy\" in Persian. We chose that name deliberately — because running operations should feel that way. We started Awesoon after living the opposite: managing growth at real companies where the systems fought you at every turn. We built this practice to change that."
     },
     "mission": {
       "title": "Our Mission",
-      "text": "To give every mid-market operations team the connected systems and operational clarity they need to compete and grow,  without the bloated fees and cookie-cutter solutions of traditional consulting."
+      "text": "To make operations easy — not in a naive way, but in the way that comes from having the right systems, the right data, and the right processes working together. We give mid-market teams the connected infrastructure they need to grow without the chaos, without bloated consulting fees, and without cookie-cutter solutions that don't fit."
     },
     "values": {
       "title": "Our Values",
@@ -203,11 +203,11 @@
     },
     "team": {
       "title": "The Team",
-      "subtitle": "Operations consultants with real-world operator experience."
+      "subtitle": "Two operators who've been in the weeds — and built systems to get out."
     },
     "cta": {
-      "headline": "Ready to fix your operations?",
-      "subtext": "Let's start with a free systems audit. No pitch deck, no sales pressure,  just a clear-eyed look at where your operations stand and what it would take to level up.",
+      "headline": "Operations should feel easy. Let's get you there.",
+      "subtext": "Start with a free systems audit. No pitch deck, no sales pressure — just a clear-eyed look at where your operations stand and what it would take to make them work the way they should.",
       "button": "Book a Free Audit"
     }
   },
@@ -294,9 +294,9 @@
     },
     "success": {
       "title": "We've received your request!",
-      "message": "Thank you for reaching out. Sarah Chen, our Operations Lead, will be in touch within 1 business day to schedule your free systems audit.",
-      "responderName": "Sarah Chen",
-      "responderTitle": "Operations Lead, Awesoon"
+      "message": "Thank you for reaching out. Ching Ho, our ERP & CRM Consultant, will be in touch within 1 business day to schedule your free systems audit.",
+      "responderName": "Ching Ho",
+      "responderTitle": "Project Manager & ERP/CRM Consultant, Awesoon"
     },
     "error": {
       "generic": "Something went wrong. Please try again or email us directly at hello@awesoon.com.",
@@ -304,9 +304,9 @@
     }
   },
   "footer": {
-    "tagline": "Your ops outgrew your tools. We fix that.",
-    "readyHeadline": "Ready to stop managing workarounds?",
-    "readySubtext": "A 30-minute call. No pitch deck. Just an honest look at your systems.",
+    "tagline": "Awesoon means easy. That's what operations should feel like.",
+    "readyHeadline": "Ready for operations that actually feel easy?",
+    "readySubtext": "A 30-minute call. No pitch deck. Just an honest look at your systems and a clear path forward.",
     "contactHeading": "Contact",
     "humanReplies": "A real person replies within 24 hours.",
     "noChatbots": "No chatbots, no auto-responders.",

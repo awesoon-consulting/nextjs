@@ -11,22 +11,16 @@ interface TeamMember {
 
 const team: TeamMember[] = [
   {
-    name: 'Sarah Chen',
-    title: 'Operations Lead',
-    bio: 'Former VP of Operations at a $80M industrial distributor. Led 3 ERP implementations and 2 WMS deployments. Obsessed with process design that actually sticks.',
-    initials: 'SC',
+    name: 'Ray Rasouli',
+    title: 'Software Engineer & Solution Developer',
+    bio: 'Builds the technical architecture behind every engagement. Designs and implements connected systems, custom integrations, and AI-enabled workflows that fit how operations actually run.',
+    initials: 'RR',
   },
   {
-    name: 'Marcus Webb',
-    title: 'Systems Architect',
-    bio: '15 years designing and integrating operational tech stacks for mid-market manufacturers. Has connected more ERPs, WMSes, and CRMs than he can count.',
-    initials: 'MW',
-  },
-  {
-    name: 'Priya Nair',
-    title: 'Implementation Lead',
-    bio: 'Former operations manager who moved to consulting after fixing her own company\'s broken systems. Specializes in change management and user adoption.',
-    initials: 'PN',
+    name: 'Ching Ho',
+    title: 'Project Manager & ERP/CRM Consultant',
+    bio: 'Leads implementations from kickoff to stabilization. Deep expertise in ERP and CRM deployments, change management, and keeping complex projects on track without the chaos.',
+    initials: 'CH',
   },
 ]
 
@@ -48,7 +42,7 @@ export default function TeamGrid() {
           </div>
         </AnimateIn>
 
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-3xl mx-auto">
           {team.map((member, idx) => (
             <AnimateIn key={member.name} variant="slide-up" delay={idx * 90} threshold={0.04}>
               <Card variant="bordered" className="text-center">

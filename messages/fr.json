@@ -175,11 +175,11 @@
     "title": "À propos d'Awesoon",
     "hero": {
       "headline": "Construit par des opérateurs, pour des opérateurs.",
-      "subtext": "Nous avons fondé Awesoon parce que nous avons vécu le problème. Nous avons géré des opérations dans des entreprises en croissance et regardé de bonnes entreprises souffrir parce que leurs systèmes ne pouvaient pas suivre."
+      "subtext": "Awesoon signifie « facile » en persan. Nous avons choisi ce nom délibérément — parce que gérer des opérations devrait se sentir ainsi. Nous avons fondé Awesoon après avoir vécu le contraire : gérer la croissance dans de vraies entreprises où les systèmes vous freinaient à chaque étape. Nous avons bâti cette pratique pour changer ça."
     },
     "mission": {
       "title": "Notre mission",
-      "text": "Donner à chaque équipe d'opérations du marché intermédiaire les systèmes connectés et la clarté opérationnelle dont elle a besoin pour concurrencer et croître."
+      "text": "Rendre les opérations faciles — pas naïvement, mais dans le sens qui vient d'avoir les bons systèmes, les bonnes données et les bons processus qui travaillent ensemble. Nous donnons aux équipes du marché intermédiaire l'infrastructure connectée dont elles ont besoin pour croître sans le chaos, sans honoraires de conseil excessifs, et sans solutions génériques inadaptées."
     },
     "values": {
       "title": "Nos valeurs",
@@ -204,11 +204,11 @@
     },
     "team": {
       "title": "L'équipe",
-      "subtitle": "Des consultants en opérations avec une véritable expérience d'opérateur."
+      "subtitle": "Deux opérateurs qui ont été dans les tranchées — et qui ont bâti les systèmes pour en sortir."
     },
     "cta": {
-      "headline": "Prêt à améliorer vos opérations?",
-      "subtext": "Commençons par un audit des systèmes gratuit. Pas de présentation commerciale, pas de pression,  juste un regard objectif sur vos opérations.",
+      "headline": "Les opérations devraient être faciles. On vous y amène.",
+      "subtext": "Commençons par un audit des systèmes gratuit. Pas de présentation, pas de pression — juste un regard objectif sur vos opérations et un chemin clair pour les faire fonctionner comme elles le devraient.",
       "button": "Réserver un audit gratuit"
     }
   },
@@ -295,9 +295,9 @@
     },
     "success": {
       "title": "Nous avons reçu votre demande!",
-      "message": "Merci de nous avoir contactés. Sarah Chen, notre responsable des opérations, vous contactera dans un délai d'un jour ouvrable.",
-      "responderName": "Sarah Chen",
-      "responderTitle": "Responsable des opérations, Awesoon"
+      "message": "Merci de nous avoir contactés. Ching Ho, notre consultante ERP et CRM, vous contactera dans un délai d'un jour ouvrable pour planifier votre audit gratuit.",
+      "responderName": "Ching Ho",
+      "responderTitle": "Gestionnaire de projet & Consultante ERP/CRM, Awesoon"
     },
     "error": {
       "generic": "Une erreur s'est produite. Veuillez réessayer ou nous écrire directement à hello@awesoon.com.",
@@ -305,9 +305,9 @@
     }
   },
   "footer": {
-    "tagline": "Vos opérations ont dépassé vos outils. Nous réglons ça.",
-    "readyHeadline": "Prêt à arrêter de gérer des contournements?",
-    "readySubtext": "Un appel de 30 minutes. Pas de présentation. Juste un regard honnête sur vos systèmes.",
+    "tagline": "Awesoon signifie facile. C'est ce que vos opérations devraient ressentir.",
+    "readyHeadline": "Prêt pour des opérations qui se sentent vraiment faciles?",
+    "readySubtext": "Un appel de 30 minutes. Pas de présentation. Juste un regard honnête sur vos systèmes et un chemin clair vers l'avant.",
     "contactHeading": "Contact",
     "humanReplies": "Une vraie personne répond dans les 24 heures.",
     "noChatbots": "Pas de chatbots, pas de répondeurs automatiques.",
