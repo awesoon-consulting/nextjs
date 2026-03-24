@@ -58,20 +58,28 @@
     "subtitle": "We're not a big-four consulting firm. We're operators who've been in the weeds and built the systems to get out.",
     "items": [
       {
-        "title": "Operator-led, not analyst-led",
-        "description": "Our team has run operations at real companies. We understand what it feels like to manage a warehouse with 3 systems that don't talk to each other."
+        "title": "Independent by design",
+        "description": "We don't sell software — we design solutions. Our recommendations are driven by operational fit, not vendor partnerships or commissions."
       },
       {
-        "title": "Systems-first thinking",
-        "description": "We design around your actual workflows, not around software vendor demos. Technology should serve your operations, not the other way around."
+        "title": "Built from real operational experience",
+        "description": "We've worked inside growing businesses, not just around them — designing systems for real users, real constraints, and real scale."
       },
       {
-        "title": "Implementation-obsessed",
-        "description": "We don't just give you a report and walk away. We stay until the system is live, the team is trained, and the data is accurate."
+        "title": "Practical scaling, not corporate bureaucracy",
+        "description": "We help businesses grow structure and capability without losing agility, culture, or speed."
       },
       {
-        "title": "Right-sized for mid-market",
-        "description": "Most consulting firms ignore companies under $100M. We've built our entire practice around the specific challenges of mid-market operations."
+        "title": "End-user-first design",
+        "description": "Systems are only successful if people actually use them. We design for adoption, usability, and operational reality — not theoretical perfection."
+      },
+      {
+        "title": "High-touch, senior-led delivery",
+        "description": "You work with experienced operators, not layered teams or junior consultants. That means faster decisions, clearer communication, and real accountability."
+      },
+      {
+        "title": "Focus your team on what matters",
+        "description": "We remove the need to build internal delivery teams or hire FTE specialists — so you can stay focused on running and growing your business."
       }
     ]
   },
@@ -370,7 +378,7 @@
     "contactCta": "Contact Us"
   },
   "eyebrow": {
-    "whyAwesoon": "Why Awesoon",
+    "whyAwesoon": "Why Us",
     "soundFamiliar": "Sound familiar?",
     "problemsWeSolve": "Problems We Solve",
     "howWeWork": "How We Work",

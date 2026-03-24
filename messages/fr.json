@@ -59,20 +59,28 @@
     "subtitle": "Nous ne sommes pas un cabinet de conseil. Nous sommes des opérateurs qui ont vécu le problème.",
     "items": [
       {
-        "title": "Dirigé par des opérateurs, pas des analystes",
-        "description": "Notre équipe a géré des opérations dans de vraies entreprises. Nous comprenons ce que c'est de gérer un entrepôt avec 3 systèmes qui ne se parlent pas."
+        "title": "Independent by design",
+        "description": "We don't sell software — we design solutions. Our recommendations are driven by operational fit, not vendor partnerships or commissions."
       },
       {
-        "title": "Pensée axée sur les systèmes",
-        "description": "Nous concevons autour de vos flux de travail réels, pas autour des démos de fournisseurs de logiciels. La technologie doit servir vos opérations, pas l'inverse."
+        "title": "Built from real operational experience",
+        "description": "We've worked inside growing businesses, not just around them — designing systems for real users, real constraints, and real scale."
       },
       {
-        "title": "Obsédés par l'implémentation",
-        "description": "Nous ne vous donnons pas seulement un rapport et disparaissons. Nous restons jusqu'à ce que le système soit en direct, l'équipe formée et les données exactes."
+        "title": "Practical scaling, not corporate bureaucracy",
+        "description": "We help businesses grow structure and capability without losing agility, culture, or speed."
       },
       {
-        "title": "Adapté au marché intermédiaire",
-        "description": "La plupart des cabinets de conseil ignorent les entreprises de moins de 100 M$. Nous avons construit toute notre pratique autour des défis spécifiques des opérations du marché intermédiaire."
+        "title": "End-user-first design",
+        "description": "Systems are only successful if people actually use them. We design for adoption, usability, and operational reality — not theoretical perfection."
+      },
+      {
+        "title": "High-touch, senior-led delivery",
+        "description": "You work with experienced operators, not layered teams or junior consultants. That means faster decisions, clearer communication, and real accountability."
+      },
+      {
+        "title": "Focus your team on what matters",
+        "description": "We remove the need to build internal delivery teams or hire FTE specialists — so you can stay focused on running and growing your business."
       }
     ]
   },
@@ -371,7 +379,7 @@
     "contactCta": "Nous contacter"
   },
   "eyebrow": {
-    "whyAwesoon": "Pourquoi Awesoon",
+    "whyAwesoon": "Why Us",
     "soundFamiliar": "Ça vous semble familier?",
     "problemsWeSolve": "Problèmes que nous résolvons",
     "howWeWork": "Comment nous travaillons",
