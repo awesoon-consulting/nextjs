@@ -11,16 +11,16 @@ interface TeamMember {
 
 const team: TeamMember[] = [
   {
-    name: 'Ray Rasouli',
-    title: 'Software Engineer & Solution Developer',
-    bio: 'Builds the technical architecture behind every engagement. Designs and implements connected systems, custom integrations, and AI-enabled workflows that fit how operations actually run.',
-    initials: 'RR',
-  },
-  {
     name: 'Ching Ho',
     title: 'Project Manager & ERP/CRM Consultant',
     bio: 'Leads implementations from kickoff to stabilization. Deep expertise in ERP and CRM deployments, change management, and keeping complex projects on track without the chaos.',
     initials: 'CH',
+  },
+  {
+    name: 'Ray Rasouli',
+    title: 'Software Engineer & Solution Developer',
+    bio: 'Builds the technical architecture behind every engagement. Designs and implements connected systems, custom integrations, and AI-enabled workflows that fit how operations actually run.',
+    initials: 'RR',
   },
 ]
 
