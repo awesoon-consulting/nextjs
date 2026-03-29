@@ -1,5 +1,6 @@
 import type { Metadata } from 'next'
 import { Sora, Inter } from 'next/font/google'
+import { headers } from 'next/headers'
 import { NextIntlClientProvider } from 'next-intl'
 import { getMessages, getLocale, getTranslations } from 'next-intl/server'
 import { GoogleAnalytics } from '@next/third-parties/google'
@@ -26,17 +27,14 @@ const inter = Inter({
 
 export async function generateMetadata(): Promise<Metadata> {
   const locale = await getLocale()
-
-  const localeLabels: Record<string, string> = {
-    en: 'English',
-    fr: 'Français',
-    es: 'Español',
-  }
-
-  const alternates: Record<string, string> = {}
-  siteConfig.locales.forEach((loc) => {
-    alternates[localeLabels[loc] ?? loc] = `${siteConfig.url}/${loc}`
-  })
+  const headersList = await headers()
+  const host = headersList.get('x-forwarded-host') ?? headersList.get('host')
+  const protocol =
+    headersList.get('x-forwarded-proto') ?? (host?.includes('localhost') ? 'http' : 'https')
+  const configuredBaseUrl = process.env.NEXT_PUBLIC_SITE_URL ?? siteConfig.url
+  const configuredHost = new URL(configuredBaseUrl).host
+  const requestBaseUrl = host ? `${protocol}://${host}` : configuredBaseUrl
+  const baseUrl = host && host !== configuredHost ? requestBaseUrl : configuredBaseUrl
 
   return {
     title: {
@@ -60,7 +58,7 @@ export async function generateMetadata(): Promise<Metadata> {
     ],
     authors: [{ name: siteConfig.name }],
     creator: siteConfig.name,
-    metadataBase: new URL(siteConfig.url),
+    metadataBase: new URL(baseUrl),
     alternates: {
       canonical: `/${locale}`,
       languages: {
