@@ -5,7 +5,7 @@
     "support": "Support",
     "insights": "Insights",
     "about": "About",
-    "cta": "Start Here",
+    "cta": "Let's Talk",
     "openMenu": "Open navigation menu",
     "closeMenu": "Close navigation menu",
     "megaMenu": {
@@ -28,7 +28,7 @@
     "headlineAccent": "your tools.",
     "headline2": "We fix that.",
     "subtext": "We help mid-market manufacturing, distribution, and industrial companies build connected systems, scalable infrastructure, and operational clarity,  so you can grow without the chaos.",
-    "primaryCta": "Get a Free Systems Audit",
+    "primaryCta": "Let's Talk",
     "secondaryCta": "See How We Work",
     "trustBadge": "Trusted by operations leaders across North America"
   },
@@ -254,8 +254,8 @@
     }
   },
   "contact": {
-    "title": "Get a Free Systems Audit",
-    "subtitle": "Tell us about your operations and we'll schedule a no-pressure discovery call.",
+    "title": "Let's Talk",
+    "subtitle": "Tell us what’s breaking, growing, or getting stuck. We’ll help you find the right next move.",
     "steps": {
       "1": "Your Business",
       "2": "Your Challenges",
