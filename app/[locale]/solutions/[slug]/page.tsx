@@ -158,8 +158,9 @@ export default async function SolutionPage({ params }: SolutionPageProps) {
 
             {/* Sidebar CTA */}
             <div className="lg:col-span-1">
-              <AnimateIn variant="slide-left" delay={120} threshold={0.04}>
-                <div className="sticky top-24 rounded-2xl border border-neutral-200 bg-white p-6 text-center shadow-lg dark:border-white/10 dark:bg-primary dark:shadow-none">
+              <div className="sticky top-24 space-y-8">
+                <AnimateIn variant="slide-left" delay={120} threshold={0.04}>
+                  <div className="rounded-2xl border border-neutral-200 bg-white p-6 text-center shadow-lg dark:border-white/10 dark:bg-primary dark:shadow-none">
                   <h3 className="mb-3 font-heading text-xl font-bold text-text-primary dark:text-text-inverse">
                     Ready to get started?
                   </h3>
@@ -171,13 +172,11 @@ export default async function SolutionPage({ params }: SolutionPageProps) {
                       {solution.ctaText}
                     </Button>
                   </Link>
-                </div>
-              </AnimateIn>
+                  </div>
+                </AnimateIn>
 
-              {/* Related solutions */}
-              {solution.relatedSlugs.length > 0 && (
-                <AnimateIn variant="slide-left" delay={220} threshold={0.04}>
-                  <div className="mt-8">
+                {solution.relatedSlugs.length > 0 && (
+                  <AnimateIn variant="slide-left" delay={220} threshold={0.04}>
                     <h4 className="text-sm font-semibold uppercase tracking-wider text-text-muted mb-4">
                       Related Solutions
                     </h4>
@@ -196,9 +195,9 @@ export default async function SolutionPage({ params }: SolutionPageProps) {
                         )
                       })}
                     </div>
-                  </div>
-                </AnimateIn>
-              )}
+                  </AnimateIn>
+                )}
+              </div>
             </div>
           </div>
         </div>

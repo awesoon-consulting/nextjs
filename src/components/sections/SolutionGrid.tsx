@@ -12,6 +12,8 @@ const solutionKeys = [
   { key: 'erpImplementation', category: 'ERP' },
   { key: 'crmImplementation', category: 'CRM' },
   { key: 'apiIntegrations', category: 'Integration' },
+  { key: 'customApiDevelopment', category: 'Custom Development' },
+  { key: 'ecommerceDevelopment', category: 'Ecommerce' },
   { key: 'vendorManagement', category: 'Strategy' },
   { key: 'systemsAudit', category: 'Strategy' },
 ] as const

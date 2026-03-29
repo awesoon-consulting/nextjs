@@ -3,6 +3,7 @@
   "nav": {
     "home": "Accueil",
     "solutions": "Solutions",
+    "support": "Support",
     "insights": "Perspectives",
     "about": "À propos",
     "cta": "Audit gratuit",
@@ -153,6 +154,16 @@
         "description": "Le transfert manuel de données entre systèmes est une taxe sur la productivité. Nous construisons les intégrations qui éliminent la re-saisie et économisent des heures chaque semaine.",
         "slug": "api-integrations"
       },
+      "customApiDevelopment": {
+        "title": "Développement API sur mesure",
+        "description": "Quand les connecteurs natifs ne suffisent pas, nous construisons le middleware, les endpoints et la logique d'intégration réellement nécessaires.",
+        "slug": "custom-api-development"
+      },
+      "ecommerceDevelopment": {
+        "title": "Développement ecommerce",
+        "description": "Nous construisons des systèmes ecommerce qui relient storefront, fulfillment, inventaire, ERP, CRM et les opérations derrière.",
+        "slug": "ecommerce-development"
+      },
       "vendorManagement": {
         "title": "Gestion des fournisseurs",
         "description": "Choisir le mauvais logiciel est coûteux. Nous effectuons un processus structuré de sélection des fournisseurs pour que vous choisissiez le bon outil pour vos opérations spécifiques.",
@@ -162,6 +173,29 @@
         "title": "Audit des systèmes",
         "description": "Vous ne savez pas par où commencer? Notre audit des systèmes vous donne une carte complète de votre stack technologique opérationnel, des lacunes et une feuille de route priorisée.",
         "slug": "systems-audit"
+      }
+    }
+  },
+  "supportHome": {
+    "title": "Support après go-live",
+    "subtitle": "Nous ne faisons pas que livrer des projets. Nous soutenons aussi les systèmes en production, reprenons des prestataires faibles et aidons les équipes à continuer d'améliorer après lancement."
+  },
+  "support": {
+    "title": "Support",
+    "subtitle": "Support post-lancement piloté par des opérateurs pour les systèmes déjà au coeur de votre activité. Stabilisation, maintenance, demandes de changement, remplacement de prestataire et amélioration continue.",
+    "learnMore": "En savoir plus",
+    "cards": {
+      "systemsOperationsSupport": {
+        "title": "Support systèmes et opérations"
+      },
+      "crmSupport": {
+        "title": "Support CRM"
+      },
+      "erpSupport": {
+        "title": "Support ERP"
+      },
+      "ecommerceSupport": {
+        "title": "Support et maintenance ecommerce"
       }
     }
   },
@@ -320,6 +354,7 @@
     "humanReplies": "Une vraie personne répond dans les 24 heures.",
     "noChatbots": "Pas de chatbots, pas de répondeurs automatiques.",
     "solutions": "Solutions",
+    "support": "Support",
     "company": "Entreprise",
     "legal": "Légal",
     "privacy": "Politique de confidentialité",
@@ -382,6 +417,7 @@
     "whyAwesoon": "Why Us",
     "soundFamiliar": "Ça vous semble familier?",
     "problemsWeSolve": "Problèmes que nous résolvons",
+    "support": "Rester soutenu",
     "howWeWork": "Comment nous travaillons",
     "editorial": "Éditorial",
     "takeFirstStep": "Faites le premier pas"
@@ -401,6 +437,16 @@
     "sidebarText": "Commencez par un audit gratuit des systèmes. Aucun pitch, aucune pression.",
     "relatedSolutions": "Solutions liées",
     "relatedInsights": "Articles liés"
+  },
+  "supportPage": {
+    "painPointsTitle": "Ce qui déclenche généralement le support",
+    "whatWeDoTitle": "Comment nous aidons",
+    "platformsTitle": "Plateformes et environnements que nous supportons",
+    "platformsSubtitle": "Nous supportons des environnements opérationnels réels, pas seulement des écrans logiciels isolés.",
+    "outcomesTitle": "Ce que vous obtenez",
+    "sidebarTitle": "Besoin d'un partenaire support plus solide ?",
+    "sidebarText": "Faites-nous intervenir après livraison, après go-live ou quand votre prestataire actuel n'est plus au niveau.",
+    "relatedSolutions": "Solutions liées"
   },
   "insightPage": {
     "minRead": "min de lecture",

@@ -3,6 +3,7 @@
   "nav": {
     "home": "Inicio",
     "solutions": "Soluciones",
+    "support": "Soporte",
     "insights": "Perspectivas",
     "about": "Nosotros",
     "cta": "Auditoría gratuita",
@@ -153,6 +154,16 @@
         "description": "La transferencia manual de datos entre sistemas es un impuesto a la productividad. Construimos las integraciones que eliminan la reintroducción de datos y ahorran horas cada semana.",
         "slug": "api-integrations"
       },
+      "customApiDevelopment": {
+        "title": "Desarrollo API personalizado",
+        "description": "Cuando los conectores nativos no alcanzan, construimos middleware, endpoints y la lógica de integración que tu operación realmente necesita.",
+        "slug": "custom-api-development"
+      },
+      "ecommerceDevelopment": {
+        "title": "Desarrollo ecommerce",
+        "description": "Construimos sistemas ecommerce que conectan storefront, fulfillment, inventario, ERP, CRM y la realidad operativa detrás de ellos.",
+        "slug": "ecommerce-development"
+      },
       "vendorManagement": {
         "title": "Gestión de proveedores",
         "description": "Elegir el software equivocado es costoso. Ejecutamos un proceso estructurado de selección de proveedores para que elijas la herramienta correcta para tus operaciones específicas.",
@@ -162,6 +173,29 @@
         "title": "Auditoría de sistemas",
         "description": "¿No sabes por dónde empezar? Nuestra auditoría de sistemas te da un mapa completo de tu stack tecnológico operacional, brechas y una hoja de ruta priorizada.",
         "slug": "systems-audit"
+      }
+    }
+  },
+  "supportHome": {
+    "title": "Soporte después del go-live",
+    "subtitle": "No solo entregamos proyectos. También damos soporte a sistemas en producción, reemplazamos proveedores débiles y ayudamos a los equipos a seguir mejorando después del lanzamiento."
+  },
+  "support": {
+    "title": "Soporte",
+    "subtitle": "Soporte post-lanzamiento liderado por operadores para los sistemas que ya sostienen tu negocio. Estabilización, mantenimiento, solicitudes de cambio, reemplazo de proveedor y mejora continua.",
+    "learnMore": "Saber más",
+    "cards": {
+      "systemsOperationsSupport": {
+        "title": "Soporte de sistemas y operaciones"
+      },
+      "crmSupport": {
+        "title": "Soporte CRM"
+      },
+      "erpSupport": {
+        "title": "Soporte ERP"
+      },
+      "ecommerceSupport": {
+        "title": "Soporte y mantenimiento ecommerce"
       }
     }
   },
@@ -320,6 +354,7 @@
     "humanReplies": "Una persona real responde en 24 horas.",
     "noChatbots": "Sin chatbots, sin respuestas automáticas.",
     "solutions": "Soluciones",
+    "support": "Soporte",
     "company": "Empresa",
     "legal": "Legal",
     "privacy": "Política de privacidad",
@@ -382,6 +417,7 @@
     "whyAwesoon": "Why Us",
     "soundFamiliar": "¿Te suena familiar?",
     "problemsWeSolve": "Problemas que resolvemos",
+    "support": "Sigue con soporte",
     "howWeWork": "Cómo trabajamos",
     "editorial": "Editorial",
     "takeFirstStep": "Da el primer paso"
@@ -401,6 +437,16 @@
     "sidebarText": "Empieza con una auditoría gratuita de sistemas. Sin presentación, sin presión.",
     "relatedSolutions": "Soluciones relacionadas",
     "relatedInsights": "Artículos relacionados"
+  },
+  "supportPage": {
+    "painPointsTitle": "Lo que normalmente dispara la necesidad de soporte",
+    "whatWeDoTitle": "Cómo ayudamos",
+    "platformsTitle": "Plataformas y entornos que soportamos",
+    "platformsSubtitle": "Soportamos entornos operativos reales, no solo pantallas aisladas de software.",
+    "outcomesTitle": "Qué obtienes",
+    "sidebarTitle": "¿Necesitas un partner de soporte más sólido?",
+    "sidebarText": "Haznos entrar después de la entrega, después del go-live o cuando tu proveedor actual ya no esté dando la talla.",
+    "relatedSolutions": "Soluciones relacionadas"
   },
   "insightPage": {
     "minRead": "min de lectura",

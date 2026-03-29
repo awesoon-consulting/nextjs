@@ -1,18 +1,20 @@
 import { MetadataRoute } from 'next'
 import { siteConfig } from '@/src/config/site'
 import { getAllSolutionSlugs } from '@/src/data/solutions'
+import { getAllSupportSlugs } from '@/src/data/support'
 import { getAllInsightSlugs } from '@/src/data/insights'
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const baseUrl = process.env.NEXT_PUBLIC_SITE_URL ?? siteConfig.url
   const locales = siteConfig.locales
   const solutionSlugs = getAllSolutionSlugs()
+  const supportSlugs = getAllSupportSlugs()
   const insightSlugs = getAllInsightSlugs()
 
   const entries: MetadataRoute.Sitemap = []
 
   // Static pages per locale
-  const staticPaths = ['', '/solutions', '/insights', '/about', '/contact']
+  const staticPaths = ['', '/solutions', '/support', '/insights', '/about', '/contact']
 
   for (const locale of locales) {
     for (const path of staticPaths) {
@@ -39,6 +41,21 @@ export default function sitemap(): MetadataRoute.Sitemap {
         alternates: {
           languages: Object.fromEntries(
             locales.map((l) => [l, `${baseUrl}/${l}/solutions/${slug}`])
+          ),
+        },
+      })
+    }
+
+    // Support pages
+    for (const slug of supportSlugs) {
+      entries.push({
+        url: `${baseUrl}/${locale}/support/${slug}`,
+        lastModified: new Date(),
+        changeFrequency: 'monthly',
+        priority: 0.7,
+        alternates: {
+          languages: Object.fromEntries(
+            locales.map((l) => [l, `${baseUrl}/${l}/support/${slug}`])
           ),
         },
       })
