@@ -27,6 +27,7 @@ interface FormData {
   industry: string
   companySize: string
   problems: string[]
+  otherProblem: string
   timeline: string
   budget: string
   name: string
@@ -51,6 +52,7 @@ const initialData: FormData = {
   industry: '',
   companySize: '',
   problems: [],
+  otherProblem: '',
   timeline: '',
   budget: '',
   name: '',
@@ -283,6 +285,25 @@ export default function MultiStepForm() {
           error={errors.problems}
           required
         />
+        <div className="mt-6 flex flex-col gap-1">
+          <label htmlFor="otherProblem" className="text-sm font-medium text-text-primary">
+            {t('fields.otherProblem')}
+          </label>
+          <textarea
+            id="otherProblem"
+            rows={4}
+            value={data.otherProblem}
+            onChange={(e) => updateField('otherProblem', e.target.value)}
+            placeholder={t('placeholders.otherProblem')}
+            className={[
+              'w-full rounded-lg border bg-surface-elevated px-4 py-3 text-base text-text-primary dark:border-white/10 dark:bg-secondary/55 dark:text-text-inverse',
+              'placeholder:text-text-muted dark:placeholder:text-neutral-500',
+              'transition-colors duration-150',
+              'focus:outline-none focus:ring-2 focus:ring-secondary focus:border-secondary dark:focus:border-accent',
+              'border-neutral-300 hover:border-neutral-400 dark:hover:border-white/20 resize-y min-h-28',
+            ].join(' ')}
+          />
+        </div>
       </FormStep>
 
       {/* Step 3: Timeline & Budget */}

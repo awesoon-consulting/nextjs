@@ -86,6 +86,7 @@ export async function POST(request: NextRequest) {
     industry: body.industry!,
     companySize: body.companySize!,
     problems: body.problems!,
+    otherProblem: body.otherProblem?.trim() || undefined,
     timeline: body.timeline!,
     budget: body.budget!,
     message: body.message?.trim() || undefined,

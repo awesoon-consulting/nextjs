@@ -20,6 +20,7 @@ export interface LeadFormData {
   industry: string
   companySize: string
   problems: string[]
+  otherProblem?: string
   timeline: string
   budget: string
   message?: string
@@ -49,7 +50,7 @@ function getAuthClient() {
 
 /**
  * Appends a lead form submission as a new row in the Google Sheet.
- * Column order: Timestamp | Name | Company | Email | Phone | Industry | Company Size | Problems | Timeline | Budget | Message | Locale | Source URL
+ * Column order: Timestamp | Name | Company | Email | Phone | Industry | Company Size | Problems | Other Problem | Timeline | Budget | Message | Locale | Source URL
  */
 export async function appendLeadRow(data: LeadFormData): Promise<void> {
   const spreadsheetId = process.env.GOOGLE_SHEETS_SPREADSHEET_ID
@@ -70,6 +71,7 @@ export async function appendLeadRow(data: LeadFormData): Promise<void> {
     data.industry,
     data.companySize,
     data.problems.join(', '),
+    data.otherProblem ?? '',
     data.timeline,
     data.budget,
     data.message ?? '',
@@ -79,7 +81,7 @@ export async function appendLeadRow(data: LeadFormData): Promise<void> {
 
   await sheets.spreadsheets.values.append({
     spreadsheetId,
-    range: 'Sheet1!A:M',
+    range: 'Sheet1!A:N',
     valueInputOption: 'USER_ENTERED',
     insertDataOption: 'INSERT_ROWS',
     requestBody: {
@@ -101,7 +103,7 @@ export async function ensureHeaderRow(): Promise<void> {
   // Check if row 1 already has content
   const result = await sheets.spreadsheets.values.get({
     spreadsheetId,
-    range: 'Sheet1!A1:M1',
+    range: 'Sheet1!A1:N1',
   })
 
   const existing = result.data.values
@@ -116,6 +118,7 @@ export async function ensureHeaderRow(): Promise<void> {
     'Industry',
     'Company Size',
     'Problems',
+    'Other Problem',
     'Timeline',
     'Budget',
     'Message',
@@ -125,7 +128,7 @@ export async function ensureHeaderRow(): Promise<void> {
 
   await sheets.spreadsheets.values.update({
     spreadsheetId,
-    range: 'Sheet1!A1:M1',
+    range: 'Sheet1!A1:N1',
     valueInputOption: 'USER_ENTERED',
     requestBody: {
       values: [headers],
