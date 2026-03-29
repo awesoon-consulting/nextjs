@@ -6,7 +6,7 @@
     "support": "Support",
     "insights": "Perspectives",
     "about": "À propos",
-    "cta": "Audit gratuit",
+    "cta": "Parlons-en",
     "openMenu": "Ouvrir le menu de navigation",
     "closeMenu": "Fermer le menu de navigation",
     "megaMenu": {
@@ -29,7 +29,7 @@
     "headlineAccent": "vos outils.",
     "headline2": "Nous réglons ça.",
     "subtext": "Nous aidons les entreprises manufacturières, de distribution et industrielles à bâtir des systèmes connectés, une infrastructure évolutive et une clarté opérationnelle,  pour que vous puissiez croître sans le chaos.",
-    "primaryCta": "Obtenir un audit gratuit",
+    "primaryCta": "Parlons-en",
     "secondaryCta": "Voir comment nous travaillons",
     "trustBadge": "Reconnu par les leaders opérationnels en Amérique du Nord"
   },
@@ -255,8 +255,8 @@
     }
   },
   "contact": {
-    "title": "Obtenez un audit des systèmes gratuit",
-    "subtitle": "Parlez-nous de vos opérations et nous programmerons un appel de découverte sans pression.",
+    "title": "Parlons-en",
+    "subtitle": "Dites-nous ce qui se casse, ce qui grandit ou ce qui bloque. Nous vous aiderons à trouver la bonne prochaine étape.",
     "steps": {
       "1": "Votre entreprise",
       "2": "Vos défis",

@@ -6,7 +6,7 @@
     "support": "Soporte",
     "insights": "Perspectivas",
     "about": "Nosotros",
-    "cta": "Auditoría gratuita",
+    "cta": "Hablemos",
     "openMenu": "Abrir menú de navegación",
     "closeMenu": "Cerrar menú de navegación",
     "megaMenu": {
@@ -29,7 +29,7 @@
     "headlineAccent": "tus herramientas.",
     "headline2": "Nosotros lo arreglamos.",
     "subtext": "Ayudamos a empresas manufactureras, de distribución e industriales a construir sistemas conectados, infraestructura escalable y claridad operacional,  para que puedas crecer sin el caos.",
-    "primaryCta": "Obtener una auditoría gratuita",
+    "primaryCta": "Hablemos",
     "secondaryCta": "Ver cómo trabajamos",
     "trustBadge": "Elegido por líderes operacionales en Norteamérica"
   },
@@ -255,8 +255,8 @@
     }
   },
   "contact": {
-    "title": "Obtén una auditoría de sistemas gratuita",
-    "subtitle": "Cuéntanos sobre tus operaciones y programaremos una llamada de descubrimiento sin presión.",
+    "title": "Hablemos",
+    "subtitle": "Cuéntanos qué se está rompiendo, qué está creciendo o qué se está atascando. Te ayudaremos a encontrar el siguiente paso correcto.",
     "steps": {
       "1": "Tu empresa",
       "2": "Tus desafíos",
