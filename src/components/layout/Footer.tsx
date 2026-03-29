@@ -44,7 +44,7 @@ export default function Footer() {
             href={localHref('/contact')}
             className="inline-flex flex-shrink-0 items-center gap-2 rounded-xl bg-primary px-6 py-3 font-semibold text-text-inverse shadow-md transition-colors duration-150 hover:bg-secondary hover:shadow-lg focus:outline-none focus-visible:ring-2 focus-visible:ring-secondary focus-visible:ring-offset-2 focus-visible:ring-offset-white dark:bg-secondary dark:hover:bg-secondary-light dark:focus-visible:ring-offset-secondary"
           >
-            Get a Free Systems Audit
+            {t('nav.cta')}
             <svg
               className="w-4 h-4"
               fill="none"
