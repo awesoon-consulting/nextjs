@@ -5,7 +5,7 @@ import { siteConfig } from '@/src/config/site'
 /**
  * Footer,  premium footer with:
  * - Brand column with tagline and LinkedIn link
- * - Solutions, Company, Contact link columns
+ * - Solutions, Support, Company, Contact link columns
  * - Inline CTA strip above the bottom bar ("Ready to fix your ops?")
  * - Bottom bar: copyright, legal links, no-tracking note
  *
@@ -66,8 +66,7 @@ export default function Footer() {
       {/* ── Main footer columns ── */}
       <div className="w-full px-4 sm:px-6 lg:px-10 xl:px-16 py-16">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-12">
-          {/* Brand column,  spans 4 of 12 */}
-          <div className="lg:col-span-4">
+          <div className="lg:col-span-3">
             <Link
               href={localHref('/')}
               className="inline-flex items-center gap-1 font-heading font-bold text-2xl text-white mb-3 focus:outline-none focus-visible:ring-2 focus-visible:ring-accent rounded"
@@ -93,8 +92,7 @@ export default function Footer() {
             </div>
           </div>
 
-          {/* Solutions column,  spans 3 of 12 */}
-          <div className="lg:col-span-3">
+          <div className="lg:col-span-2">
             <h3 className="mb-4 text-xs font-semibold uppercase tracking-widest text-text-muted dark:text-neutral-400">
               {t('footer.solutions')}
             </h3>
@@ -112,7 +110,24 @@ export default function Footer() {
             </ul>
           </div>
 
-          {/* Company column,  spans 2 of 12 */}
+          <div className="lg:col-span-2">
+            <h3 className="mb-4 text-xs font-semibold uppercase tracking-widest text-text-muted dark:text-neutral-400">
+              {t('footer.support')}
+            </h3>
+            <ul className="space-y-2.5">
+              {siteConfig.footer.supportLinks.map(({ labelKey, href }) => (
+                <li key={href}>
+                  <Link
+                    href={localHref(href)}
+                    className="text-sm text-text-secondary transition-colors hover:text-text-primary focus:outline-none focus-visible:ring-2 focus-visible:ring-accent rounded dark:text-neutral-400 dark:hover:text-white"
+                  >
+                    {t(labelKey as Parameters<typeof t>[0])}
+                  </Link>
+                </li>
+              ))}
+            </ul>
+          </div>
+
           <div className="lg:col-span-2">
             <h3 className="mb-4 text-xs font-semibold uppercase tracking-widest text-text-muted dark:text-neutral-400">
               {t('footer.company')}
@@ -131,7 +146,6 @@ export default function Footer() {
             </ul>
           </div>
 
-          {/* Contact column,  spans 3 of 12 */}
           <div className="lg:col-span-3">
             <h3 className="mb-4 text-xs font-semibold uppercase tracking-widest text-text-muted dark:text-neutral-400">
               {t('footer.contactHeading')}

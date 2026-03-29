@@ -2,6 +2,7 @@
   "nav": {
     "home": "Home",
     "solutions": "Solutions",
+    "support": "Support",
     "insights": "Insights",
     "about": "About",
     "cta": "Get a Free Audit",
@@ -152,6 +153,16 @@
         "description": "Manual data transfer between systems is a productivity tax. We build the integrations that eliminate re-keying, reduce errors, and save hours every week.",
         "slug": "api-integrations"
       },
+      "customApiDevelopment": {
+        "title": "Custom API Development",
+        "description": "When native connectors are not enough, we build the middleware, endpoints, and integration logic your operation actually needs.",
+        "slug": "custom-api-development"
+      },
+      "ecommerceDevelopment": {
+        "title": "Ecommerce Development",
+        "description": "We build ecommerce systems that work across storefront, fulfillment, inventory, ERP, CRM, and the operational realities behind them.",
+        "slug": "ecommerce-development"
+      },
       "vendorManagement": {
         "title": "Vendor Management & Selection",
         "description": "Choosing the wrong software is expensive. We run a structured vendor selection process so you choose the right tool for your specific operations.",
@@ -161,6 +172,29 @@
         "title": "Systems Audit",
         "description": "Don't know where to start? Our systems audit gives you a complete map of your operational tech stack, gaps, and a prioritized roadmap for improvement.",
         "slug": "systems-audit"
+      }
+    }
+  },
+  "supportHome": {
+    "title": "Support After Go-Live",
+    "subtitle": "We do not only deliver projects. We also support live systems, take over from weak providers, and help teams keep improving after launch."
+  },
+  "support": {
+    "title": "Support",
+    "subtitle": "Operator-led post-launch support for the systems already running your business. Stabilization, maintenance, change requests, provider replacement, and ongoing improvement.",
+    "learnMore": "Learn more",
+    "cards": {
+      "systemsOperationsSupport": {
+        "title": "Systems & Operations Support"
+      },
+      "crmSupport": {
+        "title": "CRM Support"
+      },
+      "erpSupport": {
+        "title": "ERP Support"
+      },
+      "ecommerceSupport": {
+        "title": "Ecommerce Support & Maintenance"
       }
     }
   },
@@ -319,6 +353,7 @@
     "humanReplies": "A real person replies within 24 hours.",
     "noChatbots": "No chatbots, no auto-responders.",
     "solutions": "Solutions",
+    "support": "Support",
     "company": "Company",
     "legal": "Legal",
     "privacy": "Privacy Policy",
@@ -381,6 +416,7 @@
     "whyAwesoon": "Why Us",
     "soundFamiliar": "Sound familiar?",
     "problemsWeSolve": "Problems We Solve",
+    "support": "Stay Supported",
     "howWeWork": "How We Work",
     "editorial": "Editorial",
     "takeFirstStep": "Take the first step"
@@ -400,6 +436,16 @@
     "sidebarText": "Start with a free systems audit. No pitch deck, no pressure.",
     "relatedSolutions": "Related Solutions",
     "relatedInsights": "Related Insights"
+  },
+  "supportPage": {
+    "painPointsTitle": "What Usually Triggers Support",
+    "whatWeDoTitle": "How We Help",
+    "platformsTitle": "Platforms And Environments We Support",
+    "platformsSubtitle": "We support real operating environments, not just isolated software screens.",
+    "outcomesTitle": "What You Get",
+    "sidebarTitle": "Need a stronger support partner?",
+    "sidebarText": "Bring us in after delivery, after go-live, or when your current provider is no longer cutting it.",
+    "relatedSolutions": "Related Solutions"
   },
   "insightPage": {
     "minRead": "min read",

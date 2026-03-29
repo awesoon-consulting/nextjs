@@ -44,11 +44,16 @@ export async function generateMetadata(): Promise<Metadata> {
       template: `%s | ${siteConfig.name}`,
     },
     description:
-      'B2B operations consulting for mid-market manufacturing, distribution, and industrial companies. ERP implementations, system integrations, and operational infrastructure.',
+      'B2B operations consulting and support for mid-market manufacturing, distribution, and industrial companies. ERP, CRM, ecommerce, custom API development, system integrations, and post-launch support.',
     keywords: [
       'B2B operations consulting',
       'ERP implementation',
+      'ERP support',
+      'CRM support',
       'system integration',
+      'custom API development',
+      'ecommerce development',
+      'post-launch support',
       'mid-market operations',
       'manufacturing consulting',
       'distribution operations',
@@ -70,7 +75,7 @@ export async function generateMetadata(): Promise<Metadata> {
       siteName: siteConfig.name,
       title: `${siteConfig.name},  ${siteConfig.tagline}`,
       description:
-        'B2B operations consulting for mid-market manufacturing and distribution companies.',
+        'B2B operations consulting and support for mid-market manufacturing and distribution companies.',
       locale: locale,
       alternateLocale: siteConfig.locales.filter((l) => l !== locale),
     },
@@ -78,7 +83,7 @@ export async function generateMetadata(): Promise<Metadata> {
       card: 'summary_large_image',
       title: `${siteConfig.name},  ${siteConfig.tagline}`,
       description:
-        'B2B operations consulting for mid-market manufacturing and distribution companies.',
+        'B2B operations consulting and support for mid-market manufacturing and distribution companies.',
     },
     robots: {
       index: true,

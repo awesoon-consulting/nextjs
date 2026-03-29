@@ -594,6 +594,222 @@ export const solutions: SolutionData[] = [
     },
   },
   {
+    slug: 'custom-api-development',
+    titleKey: 'solutions.cards.customApiDevelopment.title',
+    descriptionKey: 'solutions.cards.customApiDevelopment.description',
+    problemHeadline: 'Off-the-shelf integrations are not enough for how your operation actually works',
+    category: 'Custom Development',
+    seoSummary:
+      'Custom API development for operations teams that need middleware, workflow endpoints, custom data sync, and bespoke integration logic between core systems.',
+    painPoints: [
+      `Your systems need to exchange data, but the native connectors don't support the business logic you actually need`,
+      `You've hit the limits of no-code tools and brittle middleware hacks`,
+      'Your workflows require custom validation, transformation, routing, or exception handling',
+      `Your team needs stable API infrastructure, not one-off scripts no one wants to maintain`,
+      'Every new requirement forces your team back into manual work because the integration layer was never designed properly',
+    ],
+    whatWeDo: [
+      'Design custom API architecture around your actual operational workflows and dependencies',
+      'Build middleware, sync services, and workflow endpoints that connect your systems reliably',
+      'Handle authentication, error handling, retries, logging, and monitoring so the solution is supportable',
+      'Implement the business logic that off-the-shelf connectors cannot represent cleanly',
+      'Document the integration layer so your internal team is not trapped by black-box custom code',
+    ],
+    aiOpportunities: [
+      'Create API layers that give RAG systems and AI agents governed access to current operational data',
+      'Build custom endpoints that let agents trigger operational workflows with proper approvals and auditability',
+      'Use structured API middleware to prepare cleaner event streams for AI monitoring, exception handling, and reporting copilots',
+    ],
+    outcomes: [
+      'An integration layer built around your real process logic instead of connector compromises',
+      'Less manual work where custom workflows previously fell between systems',
+      'More reliable sync, better observability, and fewer hidden failures',
+      'A cleaner foundation for future automation, reporting, and AI use cases',
+      'Custom development your team can actually support after launch',
+    ],
+    ctaText: 'Build Custom API Infrastructure',
+    relatedSlugs: ['api-integrations', 'system-integration', 'ecommerce-development', 'ai-operations'],
+    relatedInsightSlugs: ['system-integration-guide', 'building-rag-agents-for-operations'],
+    translations: {
+      fr: {
+        problemHeadline:
+          "Les intégrations standard ne suffisent pas à la réalité de vos opérations",
+        category: 'Développement sur mesure',
+        seoSummary:
+          'Développement API sur mesure pour équipes opérations ayant besoin de middleware, endpoints métier et logique d’intégration personnalisée.',
+        painPoints: [
+          'Vos systèmes doivent échanger des données mais les connecteurs natifs ne couvrent pas la logique métier nécessaire',
+          'Vous avez atteint les limites des outils no-code et des bricolages middleware',
+          'Vos workflows exigent validation, transformation, routage ou gestion d’exceptions sur mesure',
+          "Votre équipe a besoin d'une infrastructure API stable, pas de scripts ponctuels",
+          'Chaque nouvelle exigence renvoie le travail vers des tâches manuelles',
+        ],
+        whatWeDo: [
+          'Concevoir une architecture API sur mesure autour de vos workflows réels',
+          'Construire middleware, services de synchronisation et endpoints métiers',
+          'Gérer authentification, erreurs, retries, logs et monitoring',
+          'Implémenter la logique métier que les connecteurs standards ne couvrent pas',
+          "Documenter l'ensemble pour éviter le code boîte noire",
+        ],
+        aiOpportunities: [
+          'Créer des couches API qui donnent aux systèmes RAG un accès gouverné aux données',
+          'Construire des endpoints permettant à des agents IA de déclencher des workflows avec validations',
+          'Préparer des flux d’événements plus propres pour monitoring IA et copilotes de reporting',
+        ],
+        outcomes: [
+          'Une couche d’intégration alignée sur votre logique métier réelle',
+          'Moins de travail manuel dans les workflows sur mesure',
+          'Des synchronisations plus fiables et moins d’échecs cachés',
+          "Une meilleure base pour l'automatisation, le reporting et l'IA",
+          'Un développement sur mesure que votre équipe peut réellement supporter',
+        ],
+        ctaText: 'Construire une infrastructure API sur mesure',
+      },
+      es: {
+        problemHeadline:
+          'Las integraciones estándar no alcanzan para cómo realmente opera tu negocio',
+        category: 'Desarrollo a medida',
+        seoSummary:
+          'Desarrollo API personalizado para equipos operativos que necesitan middleware, endpoints de flujo y lógica de integración propia.',
+        painPoints: [
+          'Tus sistemas necesitan intercambiar datos, pero los conectores nativos no cubren la lógica real del negocio',
+          'Ya llegaste al límite de herramientas no-code y hacks frágiles de middleware',
+          'Tus flujos requieren validación, transformación, enrutamiento o manejo de excepciones personalizado',
+          'Tu equipo necesita infraestructura API estable, no scripts aislados',
+          'Cada nuevo requerimiento devuelve trabajo manual porque la capa de integración nunca se diseñó bien',
+        ],
+        whatWeDo: [
+          'Diseñar arquitectura API personalizada alrededor de tus flujos reales',
+          'Construir middleware, servicios de sincronización y endpoints operativos',
+          'Resolver autenticación, errores, reintentos, logs y monitoreo',
+          'Implementar la lógica de negocio que los conectores estándar no representan bien',
+          'Documentar la capa de integración para que no quede como código caja negra',
+        ],
+        aiOpportunities: [
+          'Crear capas API que den a sistemas RAG y agentes acceso gobernado a datos actuales',
+          'Construir endpoints que permitan a agentes activar flujos con aprobaciones y trazabilidad',
+          'Preparar eventos más limpios para monitoreo con IA y copilotos de reporting',
+        ],
+        outcomes: [
+          'Una capa de integración basada en tu lógica real de procesos',
+          'Menos trabajo manual donde los flujos a medida quedaban entre sistemas',
+          'Sincronización más confiable y menos fallos ocultos',
+          'Una mejor base para automatización, reporting e IA',
+          'Desarrollo personalizado que tu equipo sí puede soportar después del lanzamiento',
+        ],
+        ctaText: 'Construye infraestructura API personalizada',
+      },
+    },
+  },
+  {
+    slug: 'ecommerce-development',
+    titleKey: 'solutions.cards.ecommerceDevelopment.title',
+    descriptionKey: 'solutions.cards.ecommerceDevelopment.description',
+    problemHeadline: 'You need ecommerce that works operationally, not just visually',
+    category: 'Ecommerce',
+    seoSummary:
+      'End-to-end ecommerce development for operationally complex businesses needing storefront build, replatforming, backend integrations, and fulfillment-ready workflows.',
+    painPoints: [
+      `Your current ecommerce setup looks acceptable on the front end but creates chaos for inventory, fulfillment, customer service, and finance`,
+      `You're planning a new storefront or replatform but don't want another agency that only thinks about design`,
+      'Orders, products, pricing, and customer data need to flow cleanly into the rest of your operation',
+      `You've outgrown a simple catalog site and now need a true ecommerce system tied to operational reality`,
+      'You need one partner who can think through storefront UX and backend operational consequences at the same time',
+    ],
+    whatWeDo: [
+      'Design and build ecommerce experiences around the operational workflows behind them',
+      'Handle replatforming, storefront build, information architecture, and commerce configuration',
+      'Connect ecommerce with ERP, CRM, inventory, fulfillment, reporting, and finance systems',
+      'Build the workflow logic needed for products, pricing, orders, exceptions, and customer communication',
+      'Launch with documentation, stabilization support, and a plan for ongoing maintenance',
+    ],
+    aiOpportunities: [
+      'Use AI copilots to support catalog operations, customer context, exception handling, and internal search across ecommerce data',
+      'Create agentic workflows for order triage, support escalation, and fulfillment exception routing with human oversight',
+      'Prepare ecommerce and operational data for future AI reporting, forecasting, and customer-service support layers',
+    ],
+    outcomes: [
+      'An ecommerce system built for the way your business actually fulfills and serves customers',
+      'A stronger connection between storefront experience and backend operations',
+      'Cleaner data flow across orders, inventory, pricing, and customer records',
+      'Less manual patchwork after launch and fewer operational surprises',
+      'A platform your team can grow without constantly fighting the underlying setup',
+    ],
+    ctaText: 'Build Your Ecommerce Platform',
+    relatedSlugs: ['system-integration', 'custom-api-development', 'api-integrations', 'crm-implementation'],
+    relatedInsightSlugs: ['system-integration-guide', 'vendor-selection-process'],
+    translations: {
+      fr: {
+        problemHeadline:
+          'Vous avez besoin d’un ecommerce qui fonctionne aussi sur le plan opérationnel',
+        category: 'Ecommerce',
+        seoSummary:
+          'Développement ecommerce de bout en bout pour entreprises ayant besoin de storefront, replatforming et intégrations backend solides.',
+        painPoints: [
+          'Votre ecommerce paraît correct côté front mais crée du chaos pour stocks, fulfillment, service client et finance',
+          'Vous préparez une nouvelle boutique ou une replatforming sans vouloir une agence seulement design',
+          'Commandes, produits, prix et données clients doivent circuler proprement dans le reste de vos opérations',
+          'Vous avez dépassé un site catalogue simple et avez besoin d’un vrai système ecommerce',
+          'Vous cherchez un partenaire capable de penser UX storefront et conséquences backend en même temps',
+        ],
+        whatWeDo: [
+          'Concevoir et construire une expérience ecommerce autour des workflows opérationnels',
+          'Gérer replatforming, storefront, architecture de l’information et configuration commerce',
+          'Connecter ecommerce à ERP, CRM, inventaire, fulfillment, reporting et finance',
+          'Construire la logique de workflow pour produits, prix, commandes, exceptions et communication client',
+          'Lancer avec documentation, stabilisation et plan de maintenance',
+        ],
+        aiOpportunities: [
+          'Utiliser des copilotes IA pour opérations catalogue, contexte client et gestion des exceptions',
+          'Créer des workflows agentiques pour triage de commandes et escalade de support',
+          'Préparer les données ecommerce pour reporting IA, prévision et support client futur',
+        ],
+        outcomes: [
+          'Un système ecommerce construit pour votre réalité de fulfillment et de service',
+          'Un lien plus fort entre storefront et backend',
+          'Des flux de données plus propres sur commandes, stocks, prix et clients',
+          'Moins de bricolage manuel après lancement',
+          'Une plateforme que votre équipe peut faire évoluer sans subir sa base technique',
+        ],
+        ctaText: 'Construire votre plateforme ecommerce',
+      },
+      es: {
+        problemHeadline:
+          'Necesitas ecommerce que funcione operativamente, no solo visualmente',
+        category: 'Ecommerce',
+        seoSummary:
+          'Desarrollo ecommerce de extremo a extremo para empresas con complejidad operativa que necesitan storefront, replatforming e integraciones backend.',
+        painPoints: [
+          'Tu ecommerce puede verse bien al frente, pero crea caos en inventario, fulfillment, servicio al cliente y finanzas',
+          'Estás planeando una nueva tienda o replatform sin querer otra agencia que solo piense en diseño',
+          'Pedidos, productos, precios y datos de clientes deben fluir bien al resto de la operación',
+          'Ya superaste un sitio catálogo simple y ahora necesitas un sistema ecommerce real',
+          'Necesitas un partner que piense UX de storefront y consecuencias operativas al mismo tiempo',
+        ],
+        whatWeDo: [
+          'Diseñar y construir experiencias ecommerce alrededor de los flujos operativos reales',
+          'Gestionar replatforming, storefront, arquitectura de información y configuración comercial',
+          'Conectar ecommerce con ERP, CRM, inventario, fulfillment, reporting y finanzas',
+          'Construir la lógica necesaria para productos, precios, pedidos, excepciones y comunicación al cliente',
+          'Lanzar con documentación, soporte de estabilización y plan de mantenimiento',
+        ],
+        aiOpportunities: [
+          'Usar copilotos de IA para catálogo, contexto del cliente y manejo de excepciones',
+          'Crear flujos agénticos para triage de pedidos y escalado de soporte',
+          'Preparar datos ecommerce para reporting, pronóstico y soporte con IA',
+        ],
+        outcomes: [
+          'Un sistema ecommerce diseñado para cómo realmente cumples y atiendes clientes',
+          'Una conexión más fuerte entre storefront y operaciones backend',
+          'Flujos de datos más limpios entre pedidos, inventario, precios y clientes',
+          'Menos parches manuales después del lanzamiento',
+          'Una plataforma que tu equipo puede escalar sin pelear con la base técnica',
+        ],
+        ctaText: 'Construye tu plataforma ecommerce',
+      },
+    },
+  },
+  {
     slug: 'systems-audit',
     titleKey: 'solutions.cards.systemsAudit.title',
     descriptionKey: 'solutions.cards.systemsAudit.description',
