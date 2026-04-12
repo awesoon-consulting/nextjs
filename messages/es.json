@@ -165,6 +165,21 @@
         "title": "Diagnóstico de sistemas",
         "description": "¿No sabes por dónde empezar? Nuestro diagnóstico de sistemas te da un mapa completo de tu stack tecnológico operacional, brechas y una hoja de ruta priorizada.",
         "slug": "systems-audit"
+      },
+      "mobileWarehouse": {
+        "title": "Almacén móvil y códigos de barras",
+        "description": "Procesos manuales, picking en papel y actualizaciones tardías crean errores de inventario y fricción operativa. Una solución de almacén móvil permite la captura de datos en tiempo real integrada con tu ERP.",
+        "slug": "mobile-warehouse-barcoding"
+      },
+      "projectManagement": {
+        "title": "Gestión de proyectos",
+        "description": "Los proyectos de software a menudo se estancan — no por la tecnología, sino porque no hay un recurso interno que los impulse. Nosotros intervenimos para mantener todo alineado y en movimiento.",
+        "slug": "project-management"
+      },
+      "processFoundations": {
+        "title": "Procesos operativos y fundamentos",
+        "description": "A veces el problema no es tu sistema — es cómo se está usando. Te ayudamos a corregir los fundamentos para que tus operaciones funcionen como deberían.",
+        "slug": "operational-process-foundations"
       }
     }
   },

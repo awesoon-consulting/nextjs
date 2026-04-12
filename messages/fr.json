@@ -165,6 +165,21 @@
         "title": "Bilan des systèmes",
         "description": "Vous ne savez pas par où commencer? Notre bilan des systèmes vous donne une carte complète de votre stack technologique opérationnel, des lacunes et une feuille de route priorisée.",
         "slug": "systems-audit"
+      },
+      "mobileWarehouse": {
+        "title": "Entrepôt mobile et codes-barres",
+        "description": "Processus manuels, préparation papier et mises à jour en retard créent des erreurs d'inventaire et des frictions opérationnelles. Une solution d'entrepôt mobile permet la capture de données en temps réel intégrée à votre ERP.",
+        "slug": "mobile-warehouse-barcoding"
+      },
+      "projectManagement": {
+        "title": "Gestion de projet",
+        "description": "Les projets logiciels s'enlisent souvent — non pas à cause de la technologie, mais parce qu'il n'y a personne pour les piloter en interne. Nous intervenons pour garder tout aligné et en mouvement.",
+        "slug": "project-management"
+      },
+      "processFoundations": {
+        "title": "Processus opérationnels et fondations",
+        "description": "Parfois le problème n'est pas votre système — c'est comment il est utilisé. Nous vous aidons à remettre les fondamentaux en place pour que vos opérations tournent comme elles le devraient.",
+        "slug": "operational-process-foundations"
       }
     }
   },

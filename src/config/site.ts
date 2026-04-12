@@ -45,6 +45,9 @@ export const siteConfig = {
       { labelKey: 'solutions.cards.ecommerceDevelopment.title', href: '/solutions/ecommerce-development' },
       { labelKey: 'solutions.cards.vendorManagement.title', href: '/solutions/vendor-management' },
       { labelKey: 'solutions.cards.systemsAudit.title', href: '/solutions/systems-audit' },
+      { labelKey: 'solutions.cards.mobileWarehouse.title', href: '/solutions/mobile-warehouse-barcoding' },
+      { labelKey: 'solutions.cards.projectManagement.title', href: '/solutions/project-management' },
+      { labelKey: 'solutions.cards.processFoundations.title', href: '/solutions/operational-process-foundations' },
     ] as const,
     supportLinks: [
       { labelKey: 'support.cards.systemsOperationsSupport.title', href: '/support/systems-operations-support' },
@@ -77,6 +80,9 @@ export const siteConfig = {
     'ecommerce-development',
     'vendor-management',
     'systems-audit',
+    'mobile-warehouse-barcoding',
+    'project-management',
+    'operational-process-foundations',
   ] as const,
 
   locales: ['en', 'fr', 'es'] as const,

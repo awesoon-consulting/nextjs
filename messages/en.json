@@ -164,6 +164,21 @@
         "title": "Systems Health Check",
         "description": "Don't know where to start? Our systems health check gives you a complete map of your operational tech stack, gaps, and a prioritized roadmap for improvement.",
         "slug": "systems-audit"
+      },
+      "mobileWarehouse": {
+        "title": "Mobile Warehouse & Barcoding",
+        "description": "Manual processes, paper picking, and delayed updates create inventory inaccuracies and operational friction. A mobile warehouse solution enables real-time data capture integrated with your ERP.",
+        "slug": "mobile-warehouse-barcoding"
+      },
+      "projectManagement": {
+        "title": "Project Management",
+        "description": "Software projects often stall — not because of the technology, but because there's no internal resource to drive them. We step in to keep everything aligned, accountable, and moving forward.",
+        "slug": "project-management"
+      },
+      "processFoundations": {
+        "title": "Operational Process & System Foundations",
+        "description": "Sometimes the issue isn't your system — it's how it's being used. We help you get the fundamentals right so your operations run the way they should.",
+        "slug": "operational-process-foundations"
       }
     }
   },
