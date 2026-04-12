@@ -1,7 +1,7 @@
 import Link from 'next/link'
-import Image from 'next/image'
 import { useTranslations, useLocale } from 'next-intl'
 import Button from '@/src/components/ui/Button'
+import HeroIllustration from '@/src/components/ui/HeroIllustration'
 
 /**
  * Hero, premium monochrome in light mode and deep navy in dark mode.
@@ -128,54 +128,13 @@ export default function Hero() {
             </div>
           </div>
 
-          {/* ── Right: team portraits ── */}
+          {/* ── Right: animated operations illustration ── */}
           <div
-            className="w-full lg:flex-1 flex justify-center lg:justify-end"
+            className="animate-in anim-fade-in delay-300 w-full lg:flex-1 flex justify-center lg:justify-end"
             aria-hidden="true"
           >
-            {/* Staggered card pair */}
-            <div className="relative w-[320px] h-[420px] sm:w-[380px] sm:h-[480px]">
-
-              {/* Ching — back card, slides in from right, slight offset */}
-              <div
-                className="animate-in anim-slide-right delay-200 absolute top-0 right-0 w-[200px] sm:w-[240px] h-[280px] sm:h-[330px] rounded-2xl overflow-hidden shadow-2xl border border-neutral-200 dark:border-white/10"
-                style={{ animationFillMode: 'both' }}
-              >
-                <Image
-                  src="/images/team-ching.png"
-                  alt="Ching Ho — Project Manager & ERP/CRM Consultant"
-                  fill
-                  className="object-cover"
-                  sizes="(max-width: 640px) 200px, 240px"
-                  priority
-                />
-                {/* Name label */}
-                <div className="absolute bottom-0 left-0 right-0 px-3 py-2 bg-gradient-to-t from-black/70 to-transparent">
-                  <p className="text-white text-xs font-semibold leading-tight">Ching Ho</p>
-                  <p className="text-white/70 text-[10px]">{t('hero.teamLabels.chingTitle')}</p>
-                </div>
-              </div>
-
-              {/* Ray — front card, slides in from right with more delay, offset down-left */}
-              <div
-                className="animate-in anim-slide-right delay-400 absolute bottom-0 left-0 w-[200px] sm:w-[240px] h-[280px] sm:h-[330px] rounded-2xl overflow-hidden shadow-2xl border border-neutral-200 dark:border-white/10"
-                style={{ animationFillMode: 'both' }}
-              >
-                <Image
-                  src="/images/team-ray.png"
-                  alt="Ray Rasouli — Software Engineer & Solution Developer"
-                  fill
-                  className="object-cover"
-                  sizes="(max-width: 640px) 200px, 240px"
-                  priority
-                />
-                {/* Name label */}
-                <div className="absolute bottom-0 left-0 right-0 px-3 py-2 bg-gradient-to-t from-black/70 to-transparent">
-                  <p className="text-white text-xs font-semibold leading-tight">Ray Rasouli</p>
-                  <p className="text-white/70 text-[10px]">{t('hero.teamLabels.rayTitle')}</p>
-                </div>
-              </div>
-
+            <div className="relative w-[320px] h-[320px] sm:w-[420px] sm:h-[420px] lg:w-[480px] lg:h-[480px]">
+              <HeroIllustration />
             </div>
           </div>
 
