@@ -4,7 +4,7 @@
  * @file     HeroIllustration.tsx
  * @layer    src > components > ui
  * @readme   ./README.md
- * @purpose  Animated SVG illustration for the homepage hero — connected operations systems
+ * @purpose  Animated SVG illustration for the homepage hero; connected operations systems
  * @depends  React
  */
 
@@ -90,7 +90,7 @@ export default function HeroIllustration() {
       <line x1="295" y1="225" x2="385" y2="140" stroke="#F59E0B" strokeWidth="0.8" opacity="0.08" />
       <line x1="225" y1="295" x2="135" y2="375" stroke="#F59E0B" strokeWidth="0.8" opacity="0.08" />
 
-      {/* ── Central hub — dashboard ── */}
+      {/* ── Central hub; dashboard ── */}
       <g className="hero-node hero-hub">
         <rect x="220" y="220" width="80" height="80" rx="16" fill="#0F1D33" opacity="0.95">
           <animate attributeName="opacity" values="0.95;0.88;0.95" dur="3s" repeatCount="indefinite" />

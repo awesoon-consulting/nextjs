@@ -28,7 +28,7 @@
     "headline1": "Tus operaciones superaron",
     "headlineAccent": "tus herramientas.",
     "headline2": "Nosotros lo arreglamos.",
-    "subtext": "Trabajamos con equipos en crecimiento para arreglar sistemas rotos y construir los que realmente funcionan — prácticos, independientes y diseñados para el uso real, para que tu equipo pueda enfocarse en lo que mejor sabe hacer.",
+    "subtext": "Trabajamos con equipos en crecimiento para arreglar sistemas rotos y construir los que realmente funcionan; prácticos, independientes y diseñados para el uso real, para que tu equipo pueda enfocarse en lo que mejor sabe hacer.",
     "primaryCta": "Hablemos",
     "secondaryCta": "Ver cómo trabajamos",
     "trustBadge": "Elegido por líderes operacionales en Norteamérica",
@@ -48,19 +48,19 @@
     "industries": {
       "manufacturing": {
         "title": "Manufactura",
-        "description": "Producción, inventario y finanzas no están alineados — y estás atascado uniendo sistemas solo para mantener las cosas en marcha."
+        "description": "Producción, inventario y finanzas no están alineados; y estás atascado uniendo sistemas solo para mantener las cosas en marcha."
       },
       "distribution": {
         "title": "Distribución y logística",
-        "description": "Pedidos, operaciones de almacén e integraciones de transportistas están desconectados — creando soluciones provisionales constantes y falta de visibilidad."
+        "description": "Pedidos, operaciones de almacén e integraciones de transportistas están desconectados; creando soluciones provisionales constantes y falta de visibilidad."
       },
       "industrial": {
         "title": "Servicios industriales",
-        "description": "Los equipos de campo operan con hojas de cálculo y herramientas desconectadas — y eso empieza a fallar a medida que escalas."
+        "description": "Los equipos de campo operan con hojas de cálculo y herramientas desconectadas; y eso empieza a fallar a medida que escalas."
       },
       "other": {
         "title": "Otras operaciones en crecimiento",
-        "description": "Cualquier empresa en crecimiento donde los sistemas no han seguido el ritmo — y tu equipo compensa con trabajo manual, soluciones provisionales o contrataciones adicionales."
+        "description": "Cualquier empresa en crecimiento donde los sistemas no han seguido el ritmo; y tu equipo compensa con trabajo manual, soluciones provisionales o contrataciones adicionales."
       }
     }
   },
@@ -70,11 +70,11 @@
     "items": [
       {
         "title": "Trabaja con operadores, no con consultores",
-        "description": "Hemos sido responsables de cómo funciona realmente el negocio — sistemas, flujos de trabajo y operaciones diarias. Por eso construimos sistemas que realmente funcionan en el mundo real."
+        "description": "Hemos sido responsables de cómo funciona realmente el negocio; sistemas, flujos de trabajo y operaciones diarias. Por eso construimos sistemas que realmente funcionan en el mundo real."
       },
       {
         "title": "Independientes por diseño",
-        "description": "La tecnología debe servir a tus operaciones, no al revés. No estamos atados a proveedores ni plataformas — cada recomendación se basa en tu negocio, no en la agenda de otro."
+        "description": "La tecnología debe servir a tus operaciones, no al revés. No estamos atados a proveedores ni plataformas; cada recomendación se basa en tu negocio, no en la agenda de otro."
       },
       {
         "title": "Quita la carga a tu equipo",
@@ -82,7 +82,7 @@
       },
       {
         "title": "Liderado por los fundadores, de principio a fin",
-        "description": "Trabajas directamente con los fundadores de principio a fin — sin traspasos. Mantenemos nuestra lista de clientes pequeña para darte atención enfocada, decisiones más rápidas y responsabilidad real."
+        "description": "Trabajas directamente con los fundadores de principio a fin; sin traspasos. Mantenemos nuestra lista de clientes pequeña para darte atención enfocada, decisiones más rápidas y responsabilidad real."
       }
     ]
   },
@@ -102,17 +102,17 @@
       {
         "number": "02",
         "title": "Diseño de solución",
-        "description": "Trabajamos contigo para traducir lo que encontramos en un plan claro — definir requisitos, seleccionar las herramientas correctas, trabajar con las empresas de software y trazar el camino hacia la implementación."
+        "description": "Trabajamos contigo para traducir lo que encontramos en un plan claro; definir requisitos, seleccionar las herramientas correctas, trabajar con las empresas de software y trazar el camino hacia la implementación."
       },
       {
         "number": "03",
         "title": "Implementación",
-        "description": "Trabajamos contigo para hacer realidad el plan — manejando tanto o tan poco como necesites, desde la configuración del sistema hasta integraciones y gestión del proyecto."
+        "description": "Trabajamos contigo para hacer realidad el plan; manejando tanto o tan poco como necesites, desde la configuración del sistema hasta integraciones y gestión del proyecto."
       },
       {
         "number": "04",
         "title": "Soporte y optimización",
-        "description": "Nos quedamos contigo — tan involucrados como necesites, brindando soporte, haciendo mejoras y ayudando a que tus sistemas evolucionen con tu negocio."
+        "description": "Nos quedamos contigo; tan involucrados como necesites, brindando soporte, haciendo mejoras y ayudando a que tus sistemas evolucionen con tu negocio."
       }
     ]
   },
@@ -143,7 +143,7 @@
       },
       "erpImplementation": {
         "title": "Implementación de ERP",
-        "description": "Sin una visión operacional sólida, los proyectos ERP pueden fallar. Ahí es donde entramos nosotros — seleccionando, configurando e implementando un ERP que realmente se adapte a tus operaciones.",
+        "description": "Sin una visión operacional sólida, los proyectos ERP pueden fallar. Ahí es donde entramos nosotros; seleccionando, configurando e implementando un ERP que realmente se adapte a tus operaciones.",
         "slug": "erp-implementation"
       },
       "crmImplementation": {
@@ -183,12 +183,12 @@
       },
       "projectManagement": {
         "title": "Gestión de proyectos",
-        "description": "Los proyectos de software a menudo se estancan — no por la tecnología, sino porque no hay un recurso interno que los impulse. Nosotros intervenimos para mantener todo alineado y en movimiento.",
+        "description": "Los proyectos de software a menudo se estancan; no por la tecnología, sino porque no hay un recurso interno que los impulse. Nosotros intervenimos para mantener todo alineado y en movimiento.",
         "slug": "project-management"
       },
       "processFoundations": {
         "title": "Procesos operativos y fundamentos",
-        "description": "A veces el problema no es tu sistema — es cómo se está usando. Te ayudamos a corregir los fundamentos para que tus operaciones funcionen como deberían.",
+        "description": "A veces el problema no es tu sistema; es cómo se está usando. Te ayudamos a corregir los fundamentos para que tus operaciones funcionen como deberían.",
         "slug": "operational-process-foundations"
       }
     }
@@ -234,11 +234,11 @@
     "title": "Sobre Awesoon",
     "hero": {
       "headline": "Creamos Awesoon para hacer las cosas de manera diferente.",
-      "subtext": "Hemos vivido los desafíos de hacer crecer un negocio con sistemas desconectados, recursos limitados y soluciones que no encajaban del todo. También hemos trabajado con consultores que traían marcos rígidos, empujaban software y pasaban por alto cómo realmente funciona el negocio en el día a día. Así no es como trabajamos. Nos asociamos con empresas para construir sistemas prácticos y flexibles que apoyen cómo realmente operan — sin complejidad innecesaria, costos excesivos ni marcos rígidos. Creemos que el mejor trabajo surge de una verdadera colaboración — por eso elegimos trabajar con clientes que valoran la colaboración, la transparencia y hacer las cosas bien."
+      "subtext": "Hemos vivido los desafíos de hacer crecer un negocio con sistemas desconectados, recursos limitados y soluciones que no encajaban del todo. También hemos trabajado con consultores que traían marcos rígidos, empujaban software y pasaban por alto cómo realmente funciona el negocio en el día a día. Así no es como trabajamos. Nos asociamos con empresas para construir sistemas prácticos y flexibles que apoyen cómo realmente operan; sin complejidad innecesaria, costos excesivos ni marcos rígidos. Creemos que el mejor trabajo surge de una verdadera colaboración; por eso elegimos trabajar con clientes que valoran la colaboración, la transparencia y hacer las cosas bien."
     },
     "mission": {
       "title": "Nuestra misión",
-      "text": "Hacer que las operaciones sean fáciles — no de forma ingenua, sino en el sentido que viene de tener los sistemas correctos, los datos correctos y los procesos correctos trabajando juntos. Damos a los equipos en crecimiento la infraestructura conectada que necesitan para crecer sin el caos, sin honorarios de consultoría inflados y sin soluciones genéricas que no encajan."
+      "text": "Hacer que las operaciones sean fáciles; no de forma ingenua, sino en el sentido que viene de tener los sistemas correctos, los datos correctos y los procesos correctos trabajando juntos. Damos a los equipos en crecimiento la infraestructura conectada que necesitan para crecer sin el caos, sin honorarios de consultoría inflados y sin soluciones genéricas que no encajan."
     },
     "values": {
       "title": "Nuestros valores",
@@ -263,21 +263,21 @@
     },
     "team": {
       "title": "El equipo",
-      "subtitle": "Dos operadores que han estado en las trincheras — y construyeron los sistemas para salir de ellas.",
+      "subtitle": "Dos operadores que han estado en las trincheras; y construyeron los sistemas para salir de ellas.",
       "members": {
         "ching": {
           "title": "Gerente de Proyecto & Consultora ERP/CRM",
-          "bio": "Pasó casi una década gestionando operaciones, cadena de suministro y TI en múltiples ubicaciones y equipos de más de 50 personas antes de pasar al liderazgo de sistemas ERP. Aporta experiencia operativa real del piso al sistema — no solo conocimiento de configuración, sino una comprensión de cómo realmente funcionan los negocios día a día."
+          "bio": "Pasó casi una década gestionando operaciones, cadena de suministro y TI en múltiples ubicaciones y equipos de más de 50 personas antes de pasar al liderazgo de sistemas ERP. Aporta experiencia operativa real del piso al sistema; no solo conocimiento de configuración, sino una comprensión de cómo realmente funcionan los negocios día a día."
         },
         "ray": {
           "title": "Ingeniero de Software & Desarrollador de Soluciones",
-          "bio": "Desarrollador full-stack que ha construido y reemplazado plataformas enteras desde cero — desde migraciones de e-commerce e integraciones ERP hasta pipelines de datos asistidos por IA y herramientas de automatización internas. Maneja todo, desde diseño de bases de datos hasta infraestructura cloud, con un enfoque en eliminar flujos manuales y dar a los equipos operativos sistemas en los que realmente pueden confiar."
+          "bio": "Desarrollador full-stack que ha construido y reemplazado plataformas enteras desde cero; desde migraciones de e-commerce e integraciones ERP hasta pipelines de datos asistidos por IA y herramientas de automatización internas. Maneja todo, desde diseño de bases de datos hasta infraestructura cloud, con un enfoque en eliminar flujos manuales y dar a los equipos operativos sistemas en los que realmente pueden confiar."
         }
       }
     },
     "cta": {
       "headline": "Las operaciones deberían ser fáciles. Vamos a lograrlo.",
-      "subtext": "Empecemos con un diagnóstico de sistemas gratuito. Sin presentación, sin presión — solo una mirada objetiva a tus operaciones y un camino claro para que funcionen como deberían.",
+      "subtext": "Empecemos con un diagnóstico de sistemas gratuito. Sin presentación, sin presión; solo una mirada objetiva a tus operaciones y un camino claro para que funcionen como deberían.",
       "button": "Hablemos"
     }
   },

@@ -218,7 +218,7 @@ export default function Navbar() {
 
     </header>
 
-      {/* Mobile drawer — rendered outside header so it can be full-height */}
+      {/* Mobile drawer; rendered outside header so it can be full-height */}
       <div className="md:hidden" aria-hidden={!isMobileMenuOpen}>
         {/* Backdrop */}
         <div

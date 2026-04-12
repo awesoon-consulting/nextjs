@@ -28,7 +28,7 @@
     "headline1": "Vos opérations ont dépassé",
     "headlineAccent": "vos outils.",
     "headline2": "Nous réglons ça.",
-    "subtext": "Nous travaillons avec des équipes en croissance pour réparer les systèmes défaillants et en construire qui tiennent la route — pratiques, indépendants et conçus pour le terrain, afin que votre équipe puisse se concentrer sur ce qu'elle fait de mieux.",
+    "subtext": "Nous travaillons avec des équipes en croissance pour réparer les systèmes défaillants et en construire qui tiennent la route; pratiques, indépendants et conçus pour le terrain, afin que votre équipe puisse se concentrer sur ce qu'elle fait de mieux.",
     "primaryCta": "Parlons-en",
     "secondaryCta": "Voir comment nous travaillons",
     "trustBadge": "Reconnu par les leaders opérationnels en Amérique du Nord",
@@ -48,19 +48,19 @@
     "industries": {
       "manufacturing": {
         "title": "Fabrication",
-        "description": "Production, inventaire et finance ne s'alignent pas — et vous êtes coincé à bricoler des systèmes ensemble pour que tout continue à tourner."
+        "description": "Production, inventaire et finance ne s'alignent pas; et vous êtes coincé à bricoler des systèmes ensemble pour que tout continue à tourner."
       },
       "distribution": {
         "title": "Distribution et logistique",
-        "description": "Commandes, opérations d'entrepôt et intégrations transporteurs sont déconnectées — créant des solutions de contournement constantes et un manque de visibilité."
+        "description": "Commandes, opérations d'entrepôt et intégrations transporteurs sont déconnectées; créant des solutions de contournement constantes et un manque de visibilité."
       },
       "industrial": {
         "title": "Services industriels",
-        "description": "Les équipes terrain fonctionnent avec des feuilles de calcul et des outils déconnectés — et ça commence à craquer à mesure que vous grandissez."
+        "description": "Les équipes terrain fonctionnent avec des feuilles de calcul et des outils déconnectés; et ça commence à craquer à mesure que vous grandissez."
       },
       "other": {
         "title": "Autres opérations en croissance",
-        "description": "Toute entreprise en croissance dont les systèmes n'ont pas suivi — et dont l'équipe compense avec du travail manuel, des solutions de contournement ou des embauches supplémentaires."
+        "description": "Toute entreprise en croissance dont les systèmes n'ont pas suivi; et dont l'équipe compense avec du travail manuel, des solutions de contournement ou des embauches supplémentaires."
       }
     }
   },
@@ -70,11 +70,11 @@
     "items": [
       {
         "title": "Travaillez avec des opérateurs, pas des consultants",
-        "description": "Nous avons été responsables du fonctionnement réel de l'entreprise — systèmes, workflows et opérations quotidiennes. C'est pourquoi nous construisons des systèmes qui fonctionnent vraiment dans le monde réel."
+        "description": "Nous avons été responsables du fonctionnement réel de l'entreprise; systèmes, workflows et opérations quotidiennes. C'est pourquoi nous construisons des systèmes qui fonctionnent vraiment dans le monde réel."
       },
       {
         "title": "Indépendants par conception",
-        "description": "La technologie doit servir vos opérations, pas l'inverse. Nous ne sommes liés à aucun fournisseur ni plateforme — chaque recommandation est basée sur votre entreprise, pas sur l'agenda de quelqu'un d'autre."
+        "description": "La technologie doit servir vos opérations, pas l'inverse. Nous ne sommes liés à aucun fournisseur ni plateforme; chaque recommandation est basée sur votre entreprise, pas sur l'agenda de quelqu'un d'autre."
       },
       {
         "title": "Soulagez votre équipe",
@@ -82,7 +82,7 @@
       },
       {
         "title": "Dirigé par les fondateurs, du début à la fin",
-        "description": "Vous travaillez directement avec les fondateurs du début à la fin — pas de transferts. Nous gardons notre liste de clients réduite pour vous offrir une attention ciblée, des décisions plus rapides et une vraie responsabilité."
+        "description": "Vous travaillez directement avec les fondateurs du début à la fin; pas de transferts. Nous gardons notre liste de clients réduite pour vous offrir une attention ciblée, des décisions plus rapides et une vraie responsabilité."
       }
     ]
   },
@@ -102,17 +102,17 @@
       {
         "number": "02",
         "title": "Conception de la solution",
-        "description": "Nous travaillons avec vous pour traduire nos constats en un plan clair — définir les besoins, sélectionner les bons outils, collaborer avec les éditeurs et tracer le chemin vers l'implémentation."
+        "description": "Nous travaillons avec vous pour traduire nos constats en un plan clair; définir les besoins, sélectionner les bons outils, collaborer avec les éditeurs et tracer le chemin vers l'implémentation."
       },
       {
         "number": "03",
         "title": "Implémentation",
-        "description": "Nous travaillons avec vous pour concrétiser le plan — en prenant en charge autant ou aussi peu que nécessaire, de la configuration système aux intégrations et à la gestion de projet."
+        "description": "Nous travaillons avec vous pour concrétiser le plan; en prenant en charge autant ou aussi peu que nécessaire, de la configuration système aux intégrations et à la gestion de projet."
       },
       {
         "number": "04",
         "title": "Support et optimisation",
-        "description": "Nous restons à vos côtés — aussi impliqués que nécessaire, en assurant le support, en apportant des améliorations et en faisant évoluer vos systèmes avec votre entreprise."
+        "description": "Nous restons à vos côtés; aussi impliqués que nécessaire, en assurant le support, en apportant des améliorations et en faisant évoluer vos systèmes avec votre entreprise."
       }
     ]
   },
@@ -143,7 +143,7 @@
       },
       "erpImplementation": {
         "title": "Implémentation ERP",
-        "description": "Sans une vision opérationnelle solide, les projets ERP peuvent rater leur cible. C'est là que nous intervenons — sélection, configuration et implémentation d'un ERP adapté à vos opérations.",
+        "description": "Sans une vision opérationnelle solide, les projets ERP peuvent rater leur cible. C'est là que nous intervenons; sélection, configuration et implémentation d'un ERP adapté à vos opérations.",
         "slug": "erp-implementation"
       },
       "crmImplementation": {
@@ -183,12 +183,12 @@
       },
       "projectManagement": {
         "title": "Gestion de projet",
-        "description": "Les projets logiciels s'enlisent souvent — non pas à cause de la technologie, mais parce qu'il n'y a personne pour les piloter en interne. Nous intervenons pour garder tout aligné et en mouvement.",
+        "description": "Les projets logiciels s'enlisent souvent; non pas à cause de la technologie, mais parce qu'il n'y a personne pour les piloter en interne. Nous intervenons pour garder tout aligné et en mouvement.",
         "slug": "project-management"
       },
       "processFoundations": {
         "title": "Processus opérationnels et fondations",
-        "description": "Parfois le problème n'est pas votre système — c'est comment il est utilisé. Nous vous aidons à remettre les fondamentaux en place pour que vos opérations tournent comme elles le devraient.",
+        "description": "Parfois le problème n'est pas votre système; c'est comment il est utilisé. Nous vous aidons à remettre les fondamentaux en place pour que vos opérations tournent comme elles le devraient.",
         "slug": "operational-process-foundations"
       }
     }
@@ -234,11 +234,11 @@
     "title": "À propos d'Awesoon",
     "hero": {
       "headline": "Nous avons créé Awesoon pour faire les choses différemment.",
-      "subtext": "Nous avons vécu les défis de faire croître une entreprise avec des systèmes déconnectés, des ressources limitées et des solutions qui ne convenaient pas vraiment. Nous avons aussi travaillé avec des consultants qui apportaient des cadres rigides, poussaient des logiciels et ignoraient le fonctionnement réel de l'entreprise au quotidien. Ce n'est pas comme ça que nous travaillons. Nous nous associons aux entreprises pour construire des systèmes pratiques et flexibles qui soutiennent leur fonctionnement réel — sans complexité inutile, sans coûts excessifs et sans cadres rigides. Nous croyons que le meilleur travail naît d'un vrai partenariat — c'est pourquoi nous choisissons de travailler avec des clients qui valorisent la collaboration, la transparence et la bonne façon de faire."
+      "subtext": "Nous avons vécu les défis de faire croître une entreprise avec des systèmes déconnectés, des ressources limitées et des solutions qui ne convenaient pas vraiment. Nous avons aussi travaillé avec des consultants qui apportaient des cadres rigides, poussaient des logiciels et ignoraient le fonctionnement réel de l'entreprise au quotidien. Ce n'est pas comme ça que nous travaillons. Nous nous associons aux entreprises pour construire des systèmes pratiques et flexibles qui soutiennent leur fonctionnement réel; sans complexité inutile, sans coûts excessifs et sans cadres rigides. Nous croyons que le meilleur travail naît d'un vrai partenariat; c'est pourquoi nous choisissons de travailler avec des clients qui valorisent la collaboration, la transparence et la bonne façon de faire."
     },
     "mission": {
       "title": "Notre mission",
-      "text": "Rendre les opérations faciles — pas naïvement, mais dans le sens qui vient d'avoir les bons systèmes, les bonnes données et les bons processus qui travaillent ensemble. Nous donnons aux équipes en croissance l'infrastructure connectée dont elles ont besoin pour croître sans le chaos, sans honoraires de conseil excessifs, et sans solutions génériques inadaptées."
+      "text": "Rendre les opérations faciles; pas naïvement, mais dans le sens qui vient d'avoir les bons systèmes, les bonnes données et les bons processus qui travaillent ensemble. Nous donnons aux équipes en croissance l'infrastructure connectée dont elles ont besoin pour croître sans le chaos, sans honoraires de conseil excessifs, et sans solutions génériques inadaptées."
     },
     "values": {
       "title": "Nos valeurs",
@@ -263,21 +263,21 @@
     },
     "team": {
       "title": "L'équipe",
-      "subtitle": "Deux opérateurs qui ont été dans les tranchées — et qui ont bâti les systèmes pour en sortir.",
+      "subtitle": "Deux opérateurs qui ont été dans les tranchées; et qui ont bâti les systèmes pour en sortir.",
       "members": {
         "ching": {
           "title": "Gestionnaire de projet & Consultante ERP/CRM",
-          "bio": "A passé près d'une décennie à gérer les opérations, la chaîne d'approvisionnement et l'informatique sur plusieurs sites et des équipes de plus de 50 personnes avant de passer au leadership des systèmes ERP. Apporte une vraie expérience opérationnelle du terrain au système — pas seulement des connaissances de configuration, mais une compréhension du fonctionnement réel des entreprises au quotidien."
+          "bio": "A passé près d'une décennie à gérer les opérations, la chaîne d'approvisionnement et l'informatique sur plusieurs sites et des équipes de plus de 50 personnes avant de passer au leadership des systèmes ERP. Apporte une vraie expérience opérationnelle du terrain au système; pas seulement des connaissances de configuration, mais une compréhension du fonctionnement réel des entreprises au quotidien."
         },
         "ray": {
           "title": "Ingénieur logiciel & Développeur de solutions",
-          "bio": "Développeur full-stack qui a construit et remplacé des plateformes entières de A à Z — des migrations e-commerce et intégrations ERP aux pipelines de données assistés par IA et outils d'automatisation internes. Maîtrise tout, de la conception de bases de données à l'infrastructure cloud, avec un focus sur l'élimination des workflows manuels et la création de systèmes fiables pour les équipes opérationnelles."
+          "bio": "Développeur full-stack qui a construit et remplacé des plateformes entières de A à Z; des migrations e-commerce et intégrations ERP aux pipelines de données assistés par IA et outils d'automatisation internes. Maîtrise tout, de la conception de bases de données à l'infrastructure cloud, avec un focus sur l'élimination des workflows manuels et la création de systèmes fiables pour les équipes opérationnelles."
         }
       }
     },
     "cta": {
       "headline": "Les opérations devraient être faciles. On vous y amène.",
-      "subtext": "Commençons par un bilan des systèmes gratuit. Pas de présentation, pas de pression — juste un regard objectif sur vos opérations et un chemin clair pour les faire fonctionner comme elles le devraient.",
+      "subtext": "Commençons par un bilan des systèmes gratuit. Pas de présentation, pas de pression; juste un regard objectif sur vos opérations et un chemin clair pour les faire fonctionner comme elles le devraient.",
       "button": "Parlons-en"
     }
   },

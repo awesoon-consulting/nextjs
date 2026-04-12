@@ -77,5 +77,19 @@ export default function sitemap(): MetadataRoute.Sitemap {
     }
   }
 
+  // AI-facing files
+  entries.push({
+    url: `${baseUrl}/llms.txt`,
+    lastModified: new Date(),
+    changeFrequency: 'monthly',
+    priority: 0.5,
+  })
+  entries.push({
+    url: `${baseUrl}/llms-full.txt`,
+    lastModified: new Date(),
+    changeFrequency: 'monthly',
+    priority: 0.5,
+  })
+
   return entries
 }

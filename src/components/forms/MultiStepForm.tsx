@@ -15,10 +15,10 @@ import { getUtmParams } from '@/src/lib/utm'
 // ─── Step configuration ────────────────────────────────────────────────────────
 // Flip `multiSelect` per step to toggle between single- and multi-select chip UI.
 const STEP_CONFIG = [
-  { step: 1, multiSelect: false }, // Business info   — Select dropdowns, flag unused
-  { step: 2, multiSelect: true  }, // Challenges      — ChipSelect, toggle here
-  { step: 3, multiSelect: false }, // Timeline/Budget — Select dropdowns, flag unused
-  { step: 4, multiSelect: false }, // Contact details — inputs, flag unused
+  { step: 1, multiSelect: false }, // Business info  ; Select dropdowns, flag unused
+  { step: 2, multiSelect: true  }, // Challenges     ; ChipSelect, toggle here
+  { step: 3, multiSelect: false }, // Timeline/Budget; Select dropdowns, flag unused
+  { step: 4, multiSelect: false }, // Contact details; inputs, flag unused
 ] as const satisfies readonly { step: number; multiSelect: boolean }[]
 
 const TOTAL_STEPS = STEP_CONFIG.length

@@ -1000,8 +1000,8 @@ export const solutions: SolutionData[] = [
     whatWeDo: [
       'Act as your dedicated project manager across internal teams and software companies',
       'Provide structure through regular updates, status reporting, and decision tracking',
-      'Step in to support or execute technical work when needed — bridging strategy and delivery',
-      'Adapt to your situation — whether you need full project leadership or supplemental support',
+      'Step in to support or execute technical work when needed; bridging strategy and delivery',
+      'Adapt to your situation; whether you need full project leadership or supplemental support',
     ],
     aiOpportunities: [
       'Use AI to auto-generate status reports from project tracking tools and meeting notes',
@@ -1010,7 +1010,7 @@ export const solutions: SolutionData[] = [
     ],
     outcomes: [
       'A clear, structured project plan with defined timelines and ownership',
-      'Projects that move forward — on time and with clarity',
+      'Projects that move forward; on time and with clarity',
       'A single point of accountability across teams and software companies',
       'Reduced internal burden on your staff',
       'Confidence that both the project and execution are in good hands',
@@ -1034,8 +1034,8 @@ export const solutions: SolutionData[] = [
         whatWeDo: [
           'Agir comme votre chef de projet dédié entre équipes internes et éditeurs logiciels',
           'Apporter de la structure via des mises à jour régulières et le suivi des décisions',
-          'Intervenir sur le volet technique quand nécessaire — entre stratégie et livraison',
-          'S\'adapter à votre situation — pilotage complet ou support ponctuel',
+          'Intervenir sur le volet technique quand nécessaire; entre stratégie et livraison',
+          'S\'adapter à votre situation; pilotage complet ou support ponctuel',
         ],
         aiOpportunities: [
           'Utiliser l\'IA pour générer automatiquement des rapports d\'avancement',
@@ -1044,7 +1044,7 @@ export const solutions: SolutionData[] = [
         ],
         outcomes: [
           'Un plan de projet clair avec des délais et responsabilités définis',
-          'Des projets qui avancent — dans les temps et avec clarté',
+          'Des projets qui avancent; dans les temps et avec clarté',
           'Un seul point de responsabilité entre équipes et éditeurs',
           'Moins de charge pour votre équipe interne',
           'La confiance que le projet et l\'exécution sont entre de bonnes mains',
@@ -1066,8 +1066,8 @@ export const solutions: SolutionData[] = [
         whatWeDo: [
           'Actuar como tu gerente de proyecto dedicado entre equipos internos y empresas de software',
           'Aportar estructura con actualizaciones regulares y seguimiento de decisiones',
-          'Intervenir en el trabajo técnico cuando sea necesario — entre estrategia y entrega',
-          'Adaptarnos a tu situación — liderazgo completo o soporte puntual',
+          'Intervenir en el trabajo técnico cuando sea necesario; entre estrategia y entrega',
+          'Adaptarnos a tu situación; liderazgo completo o soporte puntual',
         ],
         aiOpportunities: [
           'Usar IA para generar automáticamente reportes de avance',
@@ -1076,7 +1076,7 @@ export const solutions: SolutionData[] = [
         ],
         outcomes: [
           'Un plan de proyecto claro con plazos y responsabilidades definidos',
-          'Proyectos que avanzan — a tiempo y con claridad',
+          'Proyectos que avanzan; a tiempo y con claridad',
           'Un solo punto de responsabilidad entre equipos y proveedores',
           'Menor carga para tu equipo interno',
           'Confianza en que el proyecto y la ejecución están en buenas manos',
@@ -1089,14 +1089,14 @@ export const solutions: SolutionData[] = [
     slug: 'operational-process-foundations',
     titleKey: 'solutions.cards.processFoundations.title',
     descriptionKey: 'solutions.cards.processFoundations.description',
-    problemHeadline: "The issue isn't your system — it's how it's being used",
+    problemHeadline: "The issue isn't your system; it's how it's being used",
     category: 'Operations',
     seoSummary:
       'Operational process and system foundations consulting to standardize workflows, improve data quality, and get more from your existing tools.',
     painPoints: [
       'Your system is in place, but your team uses it inconsistently',
       "Inventory or order data isn't reliable, but the root cause is unclear",
-      "Processes live in people's heads — not documented or standardized",
+      "Processes live in people's heads; not documented or standardized",
       'Workarounds and manual steps have become the norm',
       "You're not sure what 'good' looks like for your operations",
     ],
@@ -1116,7 +1116,7 @@ export const solutions: SolutionData[] = [
       'Clear, standardized processes your team can rely on',
       'Improved accuracy and consistency across operations',
       'A team that understands how and why things should be done',
-      'Better use of your existing systems — without needing to replace them',
+      'Better use of your existing systems; without needing to replace them',
       'A stronger operational foundation to support growth',
     ],
     ctaText: 'Strengthen Your Operations',
@@ -1124,14 +1124,14 @@ export const solutions: SolutionData[] = [
     relatedInsightSlugs: [],
     translations: {
       fr: {
-        problemHeadline: "Le problème n'est pas votre système — c'est comment il est utilisé",
+        problemHeadline: "Le problème n'est pas votre système; c'est comment il est utilisé",
         category: 'Opérations',
         seoSummary:
           'Conseil en processus opérationnels et fondations système pour standardiser les workflows, améliorer la qualité des données et mieux utiliser vos outils existants.',
         painPoints: [
           'Votre système est en place mais votre équipe l\'utilise de façon incohérente',
           'Les données d\'inventaire ou de commandes ne sont pas fiables sans cause claire',
-          'Les processus vivent dans la tête des gens — pas documentés ni standardisés',
+          'Les processus vivent dans la tête des gens; pas documentés ni standardisés',
           'Les solutions de contournement et étapes manuelles sont devenues la norme',
           'Vous n\'êtes pas sûr de ce à quoi de bonnes opérations ressemblent',
         ],
@@ -1151,20 +1151,20 @@ export const solutions: SolutionData[] = [
           'Des processus clairs et standardisés sur lesquels votre équipe peut compter',
           'Une meilleure précision et cohérence dans les opérations',
           'Une équipe qui comprend comment et pourquoi les choses doivent être faites',
-          'Une meilleure utilisation de vos systèmes existants — sans les remplacer',
+          'Une meilleure utilisation de vos systèmes existants; sans les remplacer',
           'Des fondations opérationnelles plus solides pour soutenir la croissance',
         ],
         ctaText: 'Renforcer vos opérations',
       },
       es: {
-        problemHeadline: 'El problema no es tu sistema — es cómo se está usando',
+        problemHeadline: 'El problema no es tu sistema; es cómo se está usando',
         category: 'Operaciones',
         seoSummary:
           'Consultoría de procesos operativos y fundamentos de sistemas para estandarizar flujos, mejorar calidad de datos y aprovechar mejor tus herramientas existentes.',
         painPoints: [
           'Tu sistema está implementado pero tu equipo lo usa de forma inconsistente',
           'Los datos de inventario o pedidos no son confiables sin causa clara',
-          'Los procesos viven en la cabeza de las personas — no documentados ni estandarizados',
+          'Los procesos viven en la cabeza de las personas; no documentados ni estandarizados',
           'Las soluciones provisionales y pasos manuales se han vuelto la norma',
           'No estás seguro de cómo se ven unas buenas operaciones',
         ],
@@ -1184,7 +1184,7 @@ export const solutions: SolutionData[] = [
           'Procesos claros y estandarizados en los que tu equipo puede confiar',
           'Mayor precisión y consistencia en las operaciones',
           'Un equipo que entiende cómo y por qué se deben hacer las cosas',
-          'Mejor uso de tus sistemas existentes — sin necesidad de reemplazarlos',
+          'Mejor uso de tus sistemas existentes; sin necesidad de reemplazarlos',
           'Una base operativa más sólida para soportar el crecimiento',
         ],
         ctaText: 'Fortalece tus operaciones',

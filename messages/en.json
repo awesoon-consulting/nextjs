@@ -27,7 +27,7 @@
     "headline1": "Your ops outgrew",
     "headlineAccent": "your tools.",
     "headline2": "We fix that.",
-    "subtext": "We partner with growing teams to fix broken systems and build ones that actually hold up — practical, independent, and built for real use, so your team can focus on what they do best.",
+    "subtext": "We partner with growing teams to fix broken systems and build ones that actually hold up; practical, independent, and built for real use, so your team can focus on what they do best.",
     "primaryCta": "Let's Talk",
     "secondaryCta": "See How We Work",
     "trustBadge": "Trusted by operations leaders across North America",
@@ -47,19 +47,19 @@
     "industries": {
       "manufacturing": {
         "title": "Manufacturing",
-        "description": "Production, inventory, and finance don't line up — and you're stuck stitching systems together just to keep things moving."
+        "description": "Production, inventory, and finance don't line up; and you're stuck stitching systems together just to keep things moving."
       },
       "distribution": {
         "title": "Distribution & Logistics",
-        "description": "Orders, warehouse ops, and carrier integrations are disconnected — creating constant workarounds and missed visibility."
+        "description": "Orders, warehouse ops, and carrier integrations are disconnected; creating constant workarounds and missed visibility."
       },
       "industrial": {
         "title": "Industrial Services",
-        "description": "Field teams are running on spreadsheets and disconnected tools — and it's starting to break as you scale."
+        "description": "Field teams are running on spreadsheets and disconnected tools; and it's starting to break as you scale."
       },
       "other": {
         "title": "Other Growing Operations",
-        "description": "Any growing business where systems haven't kept up — and your team is compensating with manual work, workarounds, or extra hires."
+        "description": "Any growing business where systems haven't kept up; and your team is compensating with manual work, workarounds, or extra hires."
       }
     }
   },
@@ -69,11 +69,11 @@
     "items": [
       {
         "title": "Work with operators, not consultants",
-        "description": "We've been responsible for how the business actually runs — across systems, workflows, and day-to-day operations. That's why we build systems that actually work in the real world."
+        "description": "We've been responsible for how the business actually runs; across systems, workflows, and day-to-day operations. That's why we build systems that actually work in the real world."
       },
       {
         "title": "Independent by design",
-        "description": "Technology should serve your operations, not the other way around. We're not tied to vendors or platforms — every recommendation is based on your business, not someone else's agenda."
+        "description": "Technology should serve your operations, not the other way around. We're not tied to vendors or platforms; every recommendation is based on your business, not someone else's agenda."
       },
       {
         "title": "Take the load off your team",
@@ -81,7 +81,7 @@
       },
       {
         "title": "Owner-led, start to finish",
-        "description": "You work directly with the owners from start to finish — no handoffs. We keep our client list small, so you get focused attention, faster decisions, and real accountability."
+        "description": "You work directly with the owners from start to finish; no handoffs. We keep our client list small, so you get focused attention, faster decisions, and real accountability."
       }
     ]
   },
@@ -101,17 +101,17 @@
       {
         "number": "02",
         "title": "Solution Design",
-        "description": "We work with you to translate what we found into a clear plan — defining requirements, selecting the right tools, working with software companies, and mapping the path to implementation."
+        "description": "We work with you to translate what we found into a clear plan; defining requirements, selecting the right tools, working with software companies, and mapping the path to implementation."
       },
       {
         "number": "03",
         "title": "Implementation",
-        "description": "We work with you to bring the plan to life — handling as much or as little as you need, from system configuration to integrations and project management."
+        "description": "We work with you to bring the plan to life; handling as much or as little as you need, from system configuration to integrations and project management."
       },
       {
         "number": "04",
         "title": "Support & Optimization",
-        "description": "We stick with you — staying involved as much as you need, providing support, making improvements, and helping your systems evolve as your business grows."
+        "description": "We stick with you; staying involved as much as you need, providing support, making improvements, and helping your systems evolve as your business grows."
       }
     ]
   },
@@ -142,7 +142,7 @@
       },
       "erpImplementation": {
         "title": "ERP Implementation",
-        "description": "Without a strong operational lens, ERP projects can miss the mark. That's where we come in — selecting, configuring, and implementing an ERP that actually fits your operations.",
+        "description": "Without a strong operational lens, ERP projects can miss the mark. That's where we come in; selecting, configuring, and implementing an ERP that actually fits your operations.",
         "slug": "erp-implementation"
       },
       "crmImplementation": {
@@ -182,12 +182,12 @@
       },
       "projectManagement": {
         "title": "Project Management",
-        "description": "Software projects often stall — not because of the technology, but because there's no internal resource to drive them. We step in to keep everything aligned, accountable, and moving forward.",
+        "description": "Software projects often stall; not because of the technology, but because there's no internal resource to drive them. We step in to keep everything aligned, accountable, and moving forward.",
         "slug": "project-management"
       },
       "processFoundations": {
         "title": "Operational Process & System Foundations",
-        "description": "Sometimes the issue isn't your system — it's how it's being used. We help you get the fundamentals right so your operations run the way they should.",
+        "description": "Sometimes the issue isn't your system; it's how it's being used. We help you get the fundamentals right so your operations run the way they should.",
         "slug": "operational-process-foundations"
       }
     }
@@ -233,11 +233,11 @@
     "title": "About Awesoon",
     "hero": {
       "headline": "We started this to do things differently.",
-      "subtext": "We've lived the challenges of growing a business with disconnected systems, limited resources, and solutions that didn't quite fit. We've also worked with consultants who brought rigid frameworks, pushed software, and overlooked how the business actually runs day to day. That's not how we work. We partner with businesses to build practical, flexible systems that support how they actually operate — without unnecessary complexity, cost, or rigid frameworks. We believe the best work happens through real partnership — which is why we choose to work with clients who value collaboration, transparency, and doing things the right way."
+      "subtext": "We've lived the challenges of growing a business with disconnected systems, limited resources, and solutions that didn't quite fit. We've also worked with consultants who brought rigid frameworks, pushed software, and overlooked how the business actually runs day to day. That's not how we work. We partner with businesses to build practical, flexible systems that support how they actually operate; without unnecessary complexity, cost, or rigid frameworks. We believe the best work happens through real partnership; which is why we choose to work with clients who value collaboration, transparency, and doing things the right way."
     },
     "mission": {
       "title": "Our Mission",
-      "text": "To make operations easy — not in a naive way, but in the way that comes from having the right systems, the right data, and the right processes working together. We give growing teams the connected infrastructure they need to grow without the chaos, without bloated consulting fees, and without cookie-cutter solutions that don't fit."
+      "text": "To make operations easy; not in a naive way, but in the way that comes from having the right systems, the right data, and the right processes working together. We give growing teams the connected infrastructure they need to grow without the chaos, without bloated consulting fees, and without cookie-cutter solutions that don't fit."
     },
     "values": {
       "title": "Our Values",
@@ -262,21 +262,21 @@
     },
     "team": {
       "title": "The Team",
-      "subtitle": "Two operators who've been in the weeds — and built systems to get out.",
+      "subtitle": "Two operators who've been in the weeds; and built systems to get out.",
       "members": {
         "ching": {
           "title": "Project Manager & ERP/CRM Consultant",
-          "bio": "Spent nearly a decade managing operations, supply chain, and IT across multiple locations and 50+ person teams before moving into ERP systems leadership. Brings real operational experience from the floor to the system — not just configuration knowledge, but an understanding of how businesses actually run day to day."
+          "bio": "Spent nearly a decade managing operations, supply chain, and IT across multiple locations and 50+ person teams before moving into ERP systems leadership. Brings real operational experience from the floor to the system; not just configuration knowledge, but an understanding of how businesses actually run day to day."
         },
         "ray": {
           "title": "Software Engineer & Solution Developer",
-          "bio": "Full-stack developer who has built and replaced entire platforms from the ground up — from e-commerce migrations and ERP integrations to AI-assisted data pipelines and internal automation tools. Owns everything from database design to cloud infrastructure, with a focus on eliminating manual workflows and giving operations teams systems they can actually rely on."
+          "bio": "Full-stack developer who has built and replaced entire platforms from the ground up; from e-commerce migrations and ERP integrations to AI-assisted data pipelines and internal automation tools. Owns everything from database design to cloud infrastructure, with a focus on eliminating manual workflows and giving operations teams systems they can actually rely on."
         }
       }
     },
     "cta": {
       "headline": "Operations should feel easy. Let's get you there.",
-      "subtext": "Start with a free systems health check. No pitch deck, no sales pressure — just a clear-eyed look at where your operations stand and what it would take to make them work the way they should.",
+      "subtext": "Start with a free systems health check. No pitch deck, no sales pressure; just a clear-eyed look at where your operations stand and what it would take to make them work the way they should.",
       "button": "Let's Talk"
     }
   },
