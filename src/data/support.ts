@@ -261,7 +261,7 @@ export const supportItems: SupportData[] = [
     problemHeadline: 'Your ERP is live, but the implementation pain never really ended',
     category: 'ERP Support',
     seoSummary:
-      'ERP support for NetSuite, Odoo, Microsoft Dynamics, Acumatica, and similar platforms needing stabilization, admin help, cleanup, and provider replacement.',
+      'ERP support for NetSuite, Odoo, Epicor, and similar platforms needing stabilization, admin help, cleanup, and provider replacement.',
     painPoints: [
       'Your ERP went live, but users still struggle with broken processes, unclear ownership, and recurring issues',
       'Your current ERP support provider only responds to tickets and does not improve the operation behind them',
@@ -279,7 +279,7 @@ export const supportItems: SupportData[] = [
     platformMentions: [
       'NetSuite support for post-launch cleanup, workflow changes, admin requests, and reporting fixes',
       'Odoo support for module stabilization, process changes, user support, and ongoing optimization',
-      'Microsoft Dynamics and Acumatica support for issue triage, role support, workflow tuning, and provider transition',
+      'Epicor support for issue triage, role support, workflow tuning, and provider transition',
     ],
     outcomes: [
       'A more stable ERP environment with fewer recurring operational issues',
@@ -299,7 +299,7 @@ export const supportItems: SupportData[] = [
           "Votre ERP est en production, mais la douleur de l'implémentation n'a jamais vraiment cessé",
         category: 'Support ERP',
         seoSummary:
-          'Support ERP pour NetSuite, Odoo, Microsoft Dynamics, Acumatica et plateformes similaires nécessitant stabilisation, support admin et reprise de prestataire.',
+          'Support ERP pour NetSuite, Odoo, Epicor et plateformes similaires nécessitant stabilisation, support admin et reprise de prestataire.',
         painPoints: [
           'Votre ERP est lancé, mais les utilisateurs vivent encore des problèmes récurrents',
           'Votre support ERP actuel répond aux tickets sans améliorer les opérations',
@@ -317,7 +317,7 @@ export const supportItems: SupportData[] = [
         platformMentions: [
           'Support NetSuite pour nettoyage post-lancement, changements de workflow et reporting',
           'Support Odoo pour stabilisation des modules, support utilisateurs et optimisation continue',
-          'Support Microsoft Dynamics et Acumatica pour triage, ajustement des workflows et transition de prestataire',
+          'Support Epicor pour triage, ajustement des workflows et transition de prestataire',
         ],
         outcomes: [
           'Un environnement ERP plus stable avec moins de problèmes récurrents',
@@ -336,7 +336,7 @@ export const supportItems: SupportData[] = [
           'Tu ERP está en vivo, pero el dolor de la implementación realmente nunca terminó',
         category: 'Soporte ERP',
         seoSummary:
-          'Soporte ERP para NetSuite, Odoo, Microsoft Dynamics, Acumatica y plataformas similares que necesitan estabilización, ayuda administrativa y cambio de proveedor.',
+          'Soporte ERP para NetSuite, Odoo, Epicor y plataformas similares que necesitan estabilización, ayuda administrativa y cambio de proveedor.',
         painPoints: [
           'Tu ERP salió en vivo, pero los usuarios siguen lidiando con problemas recurrentes',
           'Tu proveedor actual de soporte ERP solo responde tickets y no mejora la operación',
@@ -354,7 +354,7 @@ export const supportItems: SupportData[] = [
         platformMentions: [
           'Soporte NetSuite para limpieza post-lanzamiento, cambios de flujo y reportes',
           'Soporte Odoo para estabilización de módulos, soporte de usuarios y optimización continua',
-          'Soporte Microsoft Dynamics y Acumatica para triage, ajuste de flujos y transición de proveedor',
+          'Soporte Epicor para triage, ajuste de flujos y transición de proveedor',
         ],
         outcomes: [
           'Un entorno ERP más estable con menos problemas repetitivos',
