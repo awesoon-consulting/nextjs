@@ -117,8 +117,8 @@ export default async function SolutionPage({ params }: SolutionPageProps) {
                 <ol className="space-y-4" role="list">
                   {solution.whatWeDo.map((step, i) => (
                     <li key={i} className="flex items-start gap-4">
-                      <div className="flex-shrink-0 w-8 h-8 rounded-full bg-secondary/10 border-2 border-secondary/20 flex items-center justify-center mt-0.5">
-                        <span className="font-heading font-bold text-sm text-secondary">
+                      <div className="flex-shrink-0 w-8 h-8 rounded-full bg-secondary/10 dark:bg-white/10 border-2 border-secondary/20 dark:border-white/20 flex items-center justify-center mt-0.5">
+                        <span className="font-heading font-bold text-sm text-secondary dark:text-white">
                           {i + 1}
                         </span>
                       </div>
