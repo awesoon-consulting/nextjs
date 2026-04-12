@@ -147,27 +147,7 @@ export default async function SolutionPage({ params }: SolutionPageProps) {
                 </ul>
               </div>
 
-              {/* AI opportunities */}
-              <div>
-                <h2 className="font-heading font-bold text-2xl text-text-primary mb-6">
-                  {t('solutionPage.aiTitle')}
-                </h2>
-                <p className="mb-5 text-text-secondary">
-                  {t('solutionPage.aiSubtitle')}
-                </p>
-                <ul className="space-y-3" role="list">
-                  {solution.aiOpportunities.map((item, i) => (
-                    <li key={i} className="flex items-start gap-3">
-                      <div className="mt-0.5 flex h-6 w-6 flex-shrink-0 items-center justify-center rounded-full bg-secondary/10 border border-secondary/20">
-                        <svg className="h-3.5 w-3.5 text-secondary" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
-                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 4v16m8-8H4" />
-                        </svg>
-                      </div>
-                      <p className="text-text-secondary">{item}</p>
-                    </li>
-                  ))}
-                </ul>
-              </div>
+
             </div>
 
             {/* Sidebar CTA */}
