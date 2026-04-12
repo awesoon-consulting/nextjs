@@ -132,7 +132,7 @@ export const solutions: SolutionData[] = [
     titleKey: 'solutions.cards.opsOutgrown.title',
     descriptionKey: 'solutions.cards.opsOutgrown.description',
     problemHeadline: "Your systems can't keep up with your growth",
-    category: 'Operations Strategy',
+    category: 'Infrastructure',
     seoSummary:
       'Operations consulting for growing companies that have outgrown disconnected tools, manual workflows, and fragile reporting.',
     painPoints: [
@@ -167,7 +167,7 @@ export const solutions: SolutionData[] = [
     translations: {
       fr: {
         problemHeadline: 'Vos systèmes ne suivent plus votre croissance',
-        category: 'Stratégie opérationnelle',
+        category: 'Infrastructure',
         seoSummary:
           "Conseil en opérations pour les entreprises du marché intermédiaire qui ont dépassé des outils déconnectés, des workflows manuels et des rapports fragiles.",
         painPoints: [
@@ -200,7 +200,7 @@ export const solutions: SolutionData[] = [
       },
       es: {
         problemHeadline: 'Tus sistemas ya no pueden seguir el ritmo de tu crecimiento',
-        category: 'Estrategia operativa',
+        category: 'Infraestructura',
         seoSummary:
           'Consultoría operativa para empresas del mercado medio que han superado herramientas desconectadas, flujos manuales e informes frágiles.',
         painPoints: [
@@ -434,6 +434,7 @@ export const solutions: SolutionData[] = [
       'Migrate existing contact and deal data',
       'Build the reports and dashboards your leadership team actually needs',
       'Train your sales team and create adoption incentives',
+      'Integrate your CRM with your ERP so sales and operations share the same source of truth',
     ],
     aiOpportunities: [
       'Enable AI sales copilots that summarize accounts, surface next-best actions, and retrieve customer context from approved data sources',
@@ -537,10 +538,10 @@ export const solutions: SolutionData[] = [
     slug: 'vendor-management',
     titleKey: 'solutions.cards.vendorManagement.title',
     descriptionKey: 'solutions.cards.vendorManagement.description',
-    problemHeadline: 'Vendor selection is a black box',
+    problemHeadline: 'Software selection is a black box',
     category: 'Strategy',
     seoSummary:
-      'Software vendor selection and negotiation support for operations leaders making ERP, CRM, and systems decisions.',
+      'Software selection and negotiation support for operations leaders making ERP, CRM, and systems decisions.',
     painPoints: [
       `You're evaluating software and every vendor says they can do everything`,
       `You don't have internal expertise to evaluate technical claims objectively`,
@@ -572,7 +573,7 @@ export const solutions: SolutionData[] = [
     relatedInsightSlugs: ['vendor-selection-process', 'ai-operations-readiness'],
     translations: {
       fr: {
-        problemHeadline: 'La sélection fournisseur est une boîte noire',
+        problemHeadline: 'La sélection de logiciels est une boîte noire',
         category: 'Stratégie',
         seoSummary: 'Accompagnement de sélection et négociation logicielle pour les responsables opérations qui évaluent ERP, CRM et autres systèmes.',
         painPoints: ['Chaque fournisseur dit pouvoir tout faire', 'Vous manquez d’expertise interne pour valider les promesses techniques', 'Vous craignez un mauvais choix et un verrouillage', 'Vous avez déjà été déçus par un fournisseur', 'Vous ne savez pas comment structurer ou négocier les contrats'],
@@ -582,7 +583,7 @@ export const solutions: SolutionData[] = [
         ctaText: "Obtenir de l'aide pour la sélection fournisseur",
       },
       es: {
-        problemHeadline: 'La selección de proveedores es una caja negra',
+        problemHeadline: 'La selección de software es una caja negra',
         category: 'Estrategia',
         seoSummary: 'Apoyo en selección y negociación de software para líderes operativos que evalúan ERP, CRM y sistemas críticos.',
         painPoints: ['Cada proveedor dice que puede hacerlo todo', 'No tienes experiencia interna para validar promesas técnicas', 'Te preocupa elegir mal y quedar atrapado', 'Ya te ha fallado un proveedor que prometió de más', 'No sabes cómo estructurar o negociar contratos'],
