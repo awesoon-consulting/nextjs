@@ -57,7 +57,7 @@ export default async function ContactPage({
                   </svg>
                 </div>
                 <div>
-                  <h3 className="font-semibold text-text-primary mb-1">Free systems audit</h3>
+                  <h3 className="font-semibold text-text-primary mb-1">Free systems health check</h3>
                   <p className="text-sm text-text-secondary">
                     We map your current tech stack and workflows. You get a clear picture of where your operational complexity lives.
                   </p>

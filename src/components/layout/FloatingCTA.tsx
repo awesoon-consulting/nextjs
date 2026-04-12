@@ -7,7 +7,7 @@
  * Conversion design:
  * - Slides up from bottom after scroll threshold
  * - Shows on all pages except /contact (checked via pathname)
- * - "Get a Free Systems Audit" primary CTA
+ * - "Get a Free Systems Health Check" primary CTA
  * - Dismissible (session storage,  returns on next visit)
  * - Amber pulsing dot for attention without being annoying
  * - Respects reduced-motion preference
@@ -82,7 +82,7 @@ export default function FloatingCTA() {
   return (
     <div
       role="complementary"
-      aria-label="Free systems audit offer"
+      aria-label="Free systems health check offer"
       className={[
         'fixed bottom-6 left-1/2 -translate-x-1/2 z-50 w-full max-w-xl px-4',
         'transition-all duration-500',
