@@ -131,10 +131,9 @@ export default function Hero() {
           {/* ── Right: animated operations illustration ── */}
           <div
             className="animate-in anim-fade-in delay-300 w-full lg:flex-1 flex justify-center lg:justify-end"
-            aria-hidden="true"
           >
             <div className="relative w-[360px] h-[360px] sm:w-[460px] sm:h-[460px] lg:w-[540px] lg:h-[540px]">
-              <HeroIllustration />
+              <HeroIllustration locale={locale} />
             </div>
           </div>
 

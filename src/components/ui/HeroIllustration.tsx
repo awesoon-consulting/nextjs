@@ -8,7 +8,13 @@
  * @depends  React
  */
 
-export default function HeroIllustration() {
+interface HeroIllustrationProps {
+  locale: string
+}
+
+export default function HeroIllustration({ locale }: HeroIllustrationProps) {
+  const link = (path: string) => `/${locale}${path}`
+
   return (
     <svg
       viewBox="40 50 440 440"
@@ -91,7 +97,7 @@ export default function HeroIllustration() {
       <line x1="225" y1="295" x2="135" y2="375" stroke="#F59E0B" strokeWidth="0.8" opacity="0.08" />
 
       {/* ── Central hub; dashboard ── */}
-      <g className="hero-node hero-hub">
+      <a href={link('/solutions')}><g className="hero-node hero-hub">
         <rect x="220" y="220" width="80" height="80" rx="16" fill="#0F1D33" opacity="0.95">
           <animate attributeName="opacity" values="0.95;0.88;0.95" dur="3s" repeatCount="indefinite" />
         </rect>
@@ -125,10 +131,10 @@ export default function HeroIllustration() {
         <circle cx="246" cy="234" r="2" fill="#F59E0B" opacity="0.6" />
         <rect x="228" y="278" width="40" height="4" rx="2" fill="#ffffff" opacity="0.15" />
         <text className="node-label" x="260" y="290" textAnchor="middle" fill="#F59E0B" fontSize="7" fontFamily="system-ui" fontWeight="600" opacity="0.6">SOLUTIONS</text>
-      </g>
+      </g></a>
 
       {/* ── Node: ERP (top) ── */}
-      <g className="hero-node hero-node-erp">
+      <a href={link('/solutions/erp-implementation')}><g className="hero-node hero-node-erp">
         <rect x="230" y="80" width="60" height="50" rx="12" fill="#0F1D33" opacity="0.85">
           <animate attributeName="opacity" values="0.85;0.78;0.85" dur="4s" repeatCount="indefinite" />
         </rect>
@@ -137,10 +143,10 @@ export default function HeroIllustration() {
         <rect x="246" y="106" width="10" height="10" rx="2" fill="#F59E0B" opacity="0.5" />
         <rect x="260" y="106" width="10" height="10" rx="2" fill="#F59E0B" opacity="0.3" />
         <text className="node-label" x="260" y="126" textAnchor="middle" fill="#ffffff" fontSize="7" fontFamily="system-ui" fontWeight="600" opacity="0.5">ERP</text>
-      </g>
+      </g></a>
 
       {/* ── Node: CRM (right) ── */}
-      <g className="hero-node hero-node-crm">
+      <a href={link('/solutions/crm-implementation')}><g className="hero-node hero-node-crm">
         <rect x="390" y="230" width="60" height="50" rx="12" fill="#0F1D33" opacity="0.85">
           <animate attributeName="opacity" values="0.85;0.78;0.85" dur="3.5s" repeatCount="indefinite" />
         </rect>
@@ -150,10 +156,10 @@ export default function HeroIllustration() {
         <line x1="407" y1="262" x2="441" y2="262" stroke="#F59E0B" strokeWidth="1" opacity="0.3" />
         <line x1="407" y1="266" x2="432" y2="266" stroke="#F59E0B" strokeWidth="1" opacity="0.2" />
         <text className="node-label" x="420" y="276" textAnchor="middle" fill="#ffffff" fontSize="7" fontFamily="system-ui" fontWeight="600" opacity="0.5">CRM</text>
-      </g>
+      </g></a>
 
       {/* ── Node: Warehouse (bottom) ── */}
-      <g className="hero-node hero-node-wms">
+      <a href={link('/solutions/mobile-warehouse-barcoding')}><g className="hero-node hero-node-wms">
         <rect x="230" y="390" width="60" height="50" rx="12" fill="#0F1D33" opacity="0.85">
           <animate attributeName="opacity" values="0.85;0.78;0.85" dur="4.5s" repeatCount="indefinite" />
         </rect>
@@ -164,19 +170,19 @@ export default function HeroIllustration() {
         <line x1="279" y1="402" x2="279" y2="414" stroke="#F59E0B" strokeWidth="1" opacity="0.5" />
         <line x1="282" y1="402" x2="282" y2="414" stroke="#F59E0B" strokeWidth="1.5" opacity="0.3" />
         <text className="node-label" x="260" y="436" textAnchor="middle" fill="#ffffff" fontSize="7" fontFamily="system-ui" fontWeight="600" opacity="0.5">WMS</text>
-      </g>
+      </g></a>
 
       {/* ── Node: Integrations (left) ── */}
-      <g className="hero-node hero-node-api">
+      <a href={link('/solutions/api-integrations')}><g className="hero-node hero-node-api">
         <rect x="70" y="230" width="60" height="50" rx="12" fill="#0F1D33" opacity="0.85">
           <animate attributeName="opacity" values="0.85;0.78;0.85" dur="3.8s" repeatCount="indefinite" />
         </rect>
         <text x="100" y="260" textAnchor="middle" fill="#F59E0B" fontSize="22" fontFamily="monospace" opacity="0.5">{`{ }`}</text>
         <text className="node-label" x="100" y="276" textAnchor="middle" fill="#ffffff" fontSize="7" fontFamily="system-ui" fontWeight="600" opacity="0.5">API</text>
-      </g>
+      </g></a>
 
       {/* ── Node: Analytics (top-right) ── */}
-      <g className="hero-node hero-node-bi">
+      <a href={link('/solutions/systems-audit')}><g className="hero-node hero-node-bi">
         <rect x="380" y="100" width="56" height="46" rx="12" fill="#0F1D33" opacity="0.8">
           <animate attributeName="opacity" values="0.8;0.72;0.8" dur="5s" repeatCount="indefinite" />
         </rect>
@@ -185,10 +191,10 @@ export default function HeroIllustration() {
         </circle>
         <circle cx="408" cy="120" r="12" fill="none" stroke="#F59E0B" strokeWidth="3" opacity="0.6" strokeDasharray="45 75" strokeDashoffset="-25" />
         <text className="node-label" x="408" y="140" textAnchor="middle" fill="#ffffff" fontSize="6" fontFamily="system-ui" fontWeight="600" opacity="0.4">BI</text>
-      </g>
+      </g></a>
 
       {/* ── Node: Automation (bottom-left) ── */}
-      <g className="hero-node hero-node-ai">
+      <a href={link('/solutions/ai-operations')}><g className="hero-node hero-node-ai">
         <rect x="84" y="370" width="56" height="46" rx="12" fill="#0F1D33" opacity="0.8">
           <animate attributeName="opacity" values="0.8;0.72;0.8" dur="4.2s" repeatCount="indefinite" />
         </rect>
@@ -204,7 +210,7 @@ export default function HeroIllustration() {
           <rect x="121" y="388" width="4" height="4" rx="1" fill="#F59E0B" />
         </g>
         <text className="node-label" x="112" y="412" textAnchor="middle" fill="#ffffff" fontSize="6" fontFamily="system-ui" fontWeight="600" opacity="0.4">AI</text>
-      </g>
+      </g></a>
 
       {/* ── Animated data particles ── */}
       <circle r="3" fill="#F59E0B" filter="url(#glow-amber)" opacity="0.8">
