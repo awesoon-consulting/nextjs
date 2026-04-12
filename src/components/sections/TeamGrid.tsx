@@ -19,7 +19,7 @@ const team: TeamMember[] = [
   {
     name: 'Ray Rasouli',
     title: 'Software Engineer & Solution Developer',
-    bio: 'Builds the technical architecture behind every engagement. Designs and implements connected systems, custom integrations, and AI-enabled workflows that fit how operations actually run.',
+    bio: 'Full-stack developer who has built and replaced entire platforms from the ground up — from e-commerce migrations and ERP integrations to AI-assisted data pipelines and internal automation tools. Owns everything from database design to cloud infrastructure, with a focus on eliminating manual workflows and giving operations teams systems they can actually rely on.',
     initials: 'RR',
   },
 ]
