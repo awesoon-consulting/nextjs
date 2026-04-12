@@ -133,7 +133,7 @@ export default function Hero() {
             className="animate-in anim-fade-in delay-300 w-full lg:flex-1 flex justify-center lg:justify-end"
             aria-hidden="true"
           >
-            <div className="relative w-[320px] h-[320px] sm:w-[420px] sm:h-[420px] lg:w-[480px] lg:h-[480px]">
+            <div className="relative w-[360px] h-[360px] sm:w-[460px] sm:h-[460px] lg:w-[540px] lg:h-[540px]">
               <HeroIllustration />
             </div>
           </div>

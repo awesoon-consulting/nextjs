@@ -11,7 +11,7 @@
 export default function HeroIllustration() {
   return (
     <svg
-      viewBox="0 0 520 520"
+      viewBox="40 50 440 440"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
       className="w-full h-full"
