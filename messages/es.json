@@ -31,7 +31,16 @@
     "subtext": "Trabajamos con equipos en crecimiento para arreglar sistemas rotos y construir los que realmente funcionan — prácticos, independientes y diseñados para el uso real, para que tu equipo pueda enfocarse en lo que mejor sabe hacer.",
     "primaryCta": "Hablemos",
     "secondaryCta": "Ver cómo trabajamos",
-    "trustBadge": "Elegido por líderes operacionales en Norteamérica"
+    "trustBadge": "Elegido por líderes operacionales en Norteamérica",
+    "trustSignals": {
+      "auditTurnaround": "Tiempo promedio del diagnóstico",
+      "seniorDelivery": "Entrega por operador senior",
+      "noChatbots": "Chatbots. Nunca."
+    },
+    "teamLabels": {
+      "chingTitle": "Gerente de Proyecto & Consultora ERP/CRM",
+      "rayTitle": "Ingeniero de Software & Soluciones"
+    }
   },
   "whoWeHelp": {
     "title": "A quién ayudamos",
@@ -81,6 +90,7 @@
     "title": "Cómo trabajamos",
     "freeNoCommitment": "Gratis, sin compromiso",
     "deliveredIn48h": "Entregado en 48h",
+    "ctaNudge": "Sin presentación. Sin compromisos. Solo claridad.",
     "ctaButton": "Empieza con un diagnóstico gratuito",
     "subtitle": "Cuatro pasos. Empieza donde quieras. Te encontramos donde estés y te llevamos tan lejos como necesites.",
     "steps": [
@@ -253,7 +263,17 @@
     },
     "team": {
       "title": "El equipo",
-      "subtitle": "Dos operadores que han estado en las trincheras — y construyeron los sistemas para salir de ellas."
+      "subtitle": "Dos operadores que han estado en las trincheras — y construyeron los sistemas para salir de ellas.",
+      "members": {
+        "ching": {
+          "title": "Gerente de Proyecto & Consultora ERP/CRM",
+          "bio": "Pasó casi una década gestionando operaciones, cadena de suministro y TI en múltiples ubicaciones y equipos de más de 50 personas antes de pasar al liderazgo de sistemas ERP. Aporta experiencia operativa real del piso al sistema — no solo conocimiento de configuración, sino una comprensión de cómo realmente funcionan los negocios día a día."
+        },
+        "ray": {
+          "title": "Ingeniero de Software & Desarrollador de Soluciones",
+          "bio": "Desarrollador full-stack que ha construido y reemplazado plataformas enteras desde cero — desde migraciones de e-commerce e integraciones ERP hasta pipelines de datos asistidos por IA y herramientas de automatización internas. Maneja todo, desde diseño de bases de datos hasta infraestructura cloud, con un enfoque en eliminar flujos manuales y dar a los equipos operativos sistemas en los que realmente pueden confiar."
+        }
+      }
     },
     "cta": {
       "headline": "Las operaciones deberían ser fáciles. Vamos a lograrlo.",
@@ -473,7 +493,12 @@
     "learnMore": "Saber más",
     "getStarted": "Comenzar",
     "backToHome": "Volver al inicio",
-    "skipToContent": "Saltar al contenido principal"
+    "skipToContent": "Saltar al contenido principal",
+    "trustNoChatbots": "Sin chatbots",
+    "trustReply24h": "Respuesta en 24h",
+    "trustFree": "Completamente gratis",
+    "trustNamedContact": "Un contacto designado",
+    "minRead": "{time} min de lectura"
   },
   "sitemap": {
     "title": "Mapa del sitio"

@@ -4,24 +4,13 @@ import AnimateIn from '@/src/components/ui/AnimateIn'
 
 interface TeamMember {
   name: string
-  title: string
-  bio: string
+  key: string
   initials: string
 }
 
 const team: TeamMember[] = [
-  {
-    name: 'Ching Ho',
-    title: 'Project Manager & ERP/CRM Consultant',
-    bio: 'Spent nearly a decade managing operations, supply chain, and IT across multiple locations and 50+ person teams before moving into ERP systems leadership. Brings real operational experience from the floor to the system — not just configuration knowledge, but an understanding of how businesses actually run day to day.',
-    initials: 'CH',
-  },
-  {
-    name: 'Ray Rasouli',
-    title: 'Software Engineer & Solution Developer',
-    bio: 'Full-stack developer who has built and replaced entire platforms from the ground up — from e-commerce migrations and ERP integrations to AI-assisted data pipelines and internal automation tools. Owns everything from database design to cloud infrastructure, with a focus on eliminating manual workflows and giving operations teams systems they can actually rely on.',
-    initials: 'RR',
-  },
+  { name: 'Ching Ho', key: 'ching', initials: 'CH' },
+  { name: 'Ray Rasouli', key: 'ray', initials: 'RR' },
 ]
 
 export default function TeamGrid() {
@@ -54,8 +43,8 @@ export default function TeamGrid() {
                 <h3 className="font-heading font-semibold text-xl text-text-primary mb-1">
                   {member.name}
                 </h3>
-                <p className="text-sm font-medium text-accent dark:text-neutral-300 mb-3">{member.title}</p>
-                <p className="text-sm text-text-secondary leading-relaxed">{member.bio}</p>
+                <p className="text-sm font-medium text-accent dark:text-neutral-300 mb-3">{t(`members.${member.key}.title`)}</p>
+                <p className="text-sm text-text-secondary leading-relaxed">{t(`members.${member.key}.bio`)}</p>
               </Card>
             </AnimateIn>
           ))}

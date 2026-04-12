@@ -40,6 +40,15 @@ STEP 4: Commit changes
 STEP 5: Append ## Reasoning to task file, move to review/
 STEP 6: Create branch, write to push-queue.txt — confirm "Queued for pusher: [BRANCH]"
 
+### i18n rule (applied to every code and copy change before committing)
+Every user-facing string MUST come from the translation system (next-intl).
+- No hardcoded English in JSX — use useTranslations() or getTranslations()
+- When adding or changing copy, update ALL 3 locale files: messages/en.json, messages/fr.json, messages/es.json
+- When adding data with user-facing text to .ts files (solutions, support, insights), include translations.fr and translations.es
+- Dates must use the current locale for formatting, not hardcoded 'en-US'
+- Alt text, aria labels, trust signals, team bios, error messages — all must be translated
+- The only exceptions: proper nouns (brand names, person names), URLs, technical identifiers
+
 ### D000 test (applied to every piece of copy before committing)
 "Does this feel unmistakably like Awesoon, or could it be any operations consulting website?"
 

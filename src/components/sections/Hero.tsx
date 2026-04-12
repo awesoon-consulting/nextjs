@@ -112,9 +112,9 @@ export default function Hero() {
               aria-label="Trust signals"
             >
               {[
-                { stat: '48h', label: 'Average audit turnaround' },
-                { stat: '100%', label: 'Senior operator delivery' },
-                { stat: '0', label: 'Chatbots. Ever.' },
+                { stat: '48h', label: t('hero.trustSignals.auditTurnaround') },
+                { stat: '100%', label: t('hero.trustSignals.seniorDelivery') },
+                { stat: '0', label: t('hero.trustSignals.noChatbots') },
               ].map(({ stat, label }) => (
                 <div key={stat} className="flex items-center gap-3">
                   <span className="font-heading text-2xl font-bold text-text-primary dark:text-white">
@@ -152,7 +152,7 @@ export default function Hero() {
                 {/* Name label */}
                 <div className="absolute bottom-0 left-0 right-0 px-3 py-2 bg-gradient-to-t from-black/70 to-transparent">
                   <p className="text-white text-xs font-semibold leading-tight">Ching Ho</p>
-                  <p className="text-white/70 text-[10px]">PM & ERP/CRM Consultant</p>
+                  <p className="text-white/70 text-[10px]">{t('hero.teamLabels.chingTitle')}</p>
                 </div>
               </div>
 
@@ -172,7 +172,7 @@ export default function Hero() {
                 {/* Name label */}
                 <div className="absolute bottom-0 left-0 right-0 px-3 py-2 bg-gradient-to-t from-black/70 to-transparent">
                   <p className="text-white text-xs font-semibold leading-tight">Ray Rasouli</p>
-                  <p className="text-white/70 text-[10px]">Software Engineer & Solutions</p>
+                  <p className="text-white/70 text-[10px]">{t('hero.teamLabels.rayTitle')}</p>
                 </div>
               </div>
 

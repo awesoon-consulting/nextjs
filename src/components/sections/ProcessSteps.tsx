@@ -104,7 +104,7 @@ export default function ProcessSteps() {
               </Button>
             </Link>
             <p className="mt-3 text-xs text-text-muted dark:text-neutral-500">
-              No pitch deck. No commitments. Just clarity.
+              {t('ctaNudge')}
             </p>
           </div>
         </AnimateIn>

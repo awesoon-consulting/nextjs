@@ -30,7 +30,16 @@
     "subtext": "We partner with growing teams to fix broken systems and build ones that actually hold up — practical, independent, and built for real use, so your team can focus on what they do best.",
     "primaryCta": "Let's Talk",
     "secondaryCta": "See How We Work",
-    "trustBadge": "Trusted by operations leaders across North America"
+    "trustBadge": "Trusted by operations leaders across North America",
+    "trustSignals": {
+      "auditTurnaround": "Average health check turnaround",
+      "seniorDelivery": "Senior operator delivery",
+      "noChatbots": "Chatbots. Ever."
+    },
+    "teamLabels": {
+      "chingTitle": "PM & ERP/CRM Consultant",
+      "rayTitle": "Software Engineer & Solutions"
+    }
   },
   "whoWeHelp": {
     "title": "Who We Help",
@@ -80,6 +89,7 @@
     "title": "How We Work",
     "freeNoCommitment": "Free, no commitment",
     "deliveredIn48h": "Delivered in 48h",
+    "ctaNudge": "No pitch deck. No commitments. Just clarity.",
     "ctaButton": "Start with a Free Systems Health Check",
     "subtitle": "Four steps. Start anywhere. We'll meet you where you are and take you as far as you need.",
     "steps": [
@@ -252,7 +262,17 @@
     },
     "team": {
       "title": "The Team",
-      "subtitle": "Two operators who've been in the weeds — and built systems to get out."
+      "subtitle": "Two operators who've been in the weeds — and built systems to get out.",
+      "members": {
+        "ching": {
+          "title": "Project Manager & ERP/CRM Consultant",
+          "bio": "Spent nearly a decade managing operations, supply chain, and IT across multiple locations and 50+ person teams before moving into ERP systems leadership. Brings real operational experience from the floor to the system — not just configuration knowledge, but an understanding of how businesses actually run day to day."
+        },
+        "ray": {
+          "title": "Software Engineer & Solution Developer",
+          "bio": "Full-stack developer who has built and replaced entire platforms from the ground up — from e-commerce migrations and ERP integrations to AI-assisted data pipelines and internal automation tools. Owns everything from database design to cloud infrastructure, with a focus on eliminating manual workflows and giving operations teams systems they can actually rely on."
+        }
+      }
     },
     "cta": {
       "headline": "Operations should feel easy. Let's get you there.",
@@ -472,7 +492,12 @@
     "learnMore": "Learn more",
     "getStarted": "Get started",
     "backToHome": "Back to homepage",
-    "skipToContent": "Skip to main content"
+    "skipToContent": "Skip to main content",
+    "trustNoChatbots": "No chatbots",
+    "trustReply24h": "Reply within 24h",
+    "trustFree": "Completely free",
+    "trustNamedContact": "Named point of contact",
+    "minRead": "{time} min read"
   },
   "sitemap": {
     "title": "Sitemap"

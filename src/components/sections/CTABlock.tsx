@@ -29,12 +29,12 @@ interface CTABlockProps {
   showTrust?: boolean
 }
 
-const trustSignals = [
-  { icon: '⚪', text: 'No chatbots' },
-  { icon: '⚪', text: 'Reply within 24h' },
-  { icon: '⚪', text: 'Completely free' },
-  { icon: '⚪', text: 'Named point of contact' },
-]
+const trustSignalKeys = [
+  'common.trustNoChatbots',
+  'common.trustReply24h',
+  'common.trustFree',
+  'common.trustNamedContact',
+] as const
 
 export default function CTABlock({
   titleKey = 'about.cta.headline',
@@ -71,10 +71,10 @@ export default function CTABlock({
               </Link>
               {showTrust && (
                 <div className="mt-8 flex flex-wrap items-center justify-center gap-6">
-                  {trustSignals.map(({ icon, text }) => (
-                    <div key={text} className="flex items-center gap-2 text-primary/70">
-                      <span aria-hidden="true">{icon}</span>
-                      <span className="text-sm font-medium">{text}</span>
+                  {trustSignalKeys.map((key) => (
+                    <div key={key} className="flex items-center gap-2 text-primary/70">
+                      <span className="h-1.5 w-1.5 rounded-full bg-primary/40" aria-hidden="true" />
+                      <span className="text-sm font-medium">{t(key as Parameters<typeof t>[0])}</span>
                     </div>
                   ))}
                 </div>
@@ -112,13 +112,13 @@ export default function CTABlock({
               </Link>
               {showTrust && (
                 <div className="mt-8 flex flex-wrap items-center justify-center gap-6">
-                  {trustSignals.map(({ icon, text }) => (
+                  {trustSignalKeys.map((key) => (
                     <div
-                      key={text}
+                      key={key}
                       className="flex items-center gap-2 text-text-muted dark:text-neutral-500"
                     >
-                      <span aria-hidden="true">{icon}</span>
-                      <span className="text-sm">{text}</span>
+                      <span className="h-1.5 w-1.5 rounded-full bg-neutral-400" aria-hidden="true" />
+                      <span className="text-sm">{t(key as Parameters<typeof t>[0])}</span>
                     </div>
                   ))}
                 </div>
@@ -190,13 +190,13 @@ export default function CTABlock({
 
             {showTrust && (
               <div className="mt-8 flex flex-wrap items-center justify-center gap-6">
-                {trustSignals.map(({ icon, text }) => (
+                {trustSignalKeys.map((key) => (
                   <div
-                    key={text}
+                    key={key}
                     className="flex items-center gap-2 text-text-muted dark:text-neutral-500"
                   >
-                    <span aria-hidden="true">{icon}</span>
-                    <span className="text-sm">{text}</span>
+                    <span className="h-1.5 w-1.5 rounded-full bg-neutral-400" aria-hidden="true" />
+                    <span className="text-sm">{t(key as Parameters<typeof t>[0])}</span>
                   </div>
                 ))}
               </div>

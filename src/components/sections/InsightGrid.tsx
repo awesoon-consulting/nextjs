@@ -11,6 +11,7 @@ interface InsightGridProps {
 
 export default function InsightGrid({ limit }: InsightGridProps) {
   const t = useTranslations('insights')
+  const tCommon = useTranslations('common')
   const tEyebrow = useTranslations('eyebrow')
   const locale = useLocale()
 
@@ -60,7 +61,7 @@ export default function InsightGrid({ limit }: InsightGridProps) {
                     <Badge variant="default" size="sm">
                       {t(`categories.${post.category}` as Parameters<typeof t>[0])}
                     </Badge>
-                    <span className="text-xs text-text-muted">{post.readingTime} min read</span>
+                    <span className="text-xs text-text-muted">{tCommon('minRead', { time: post.readingTime })}</span>
                   </div>
                   <h3 className="font-heading font-semibold text-xl text-text-primary mb-3 leading-snug group-hover:text-secondary transition-colors">
                     {post.title}
@@ -71,7 +72,7 @@ export default function InsightGrid({ limit }: InsightGridProps) {
                       dateTime={post.publishedAt}
                       className="text-xs text-text-muted"
                     >
-                      {new Date(post.publishedAt).toLocaleDateString('en-US', {
+                      {new Date(post.publishedAt).toLocaleDateString(locale, {
                         year: 'numeric',
                         month: 'long',
                         day: 'numeric',
