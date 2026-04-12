@@ -28,7 +28,7 @@ export const solutions: SolutionData[] = [
     problemHeadline: 'You want AI to create leverage, not more operational chaos',
     category: 'AI & Automation',
     seoSummary:
-      'AI operations consulting for mid-market teams adopting RAG assistants, workflow agents, and AI copilots on top of real operational foundations.',
+      'AI operations consulting for growing teams adopting RAG assistants, workflow agents, and AI copilots on top of real operational foundations.',
     painPoints: [
       `You're getting pitched AI tools but no one can explain how they fit your actual workflows`,
       `Your data is spread across systems, files, and tribal knowledge, so AI outputs would be unreliable today`,
@@ -134,7 +134,7 @@ export const solutions: SolutionData[] = [
     problemHeadline: "Your systems can't keep up with your growth",
     category: 'Operations Strategy',
     seoSummary:
-      'Operations consulting for mid-market companies that have outgrown disconnected tools, manual workflows, and fragile reporting.',
+      'Operations consulting for growing companies that have outgrown disconnected tools, manual workflows, and fragile reporting.',
     painPoints: [
       `You're managing more SKUs, customers, and transactions than your current systems were designed for`,
       'Your team is filling gaps with spreadsheets, emails, and manual workarounds',
@@ -237,7 +237,7 @@ export const solutions: SolutionData[] = [
     slug: 'spreadsheet-operations',
     titleKey: 'solutions.cards.spreadsheetOps.title',
     descriptionKey: 'solutions.cards.spreadsheetOps.description',
-    problemHeadline: "You're running a mid-market company on spreadsheets",
+    problemHeadline: "You're running a growing company on spreadsheets",
     category: 'Operations Infrastructure',
     seoSummary:
       'Spreadsheet replacement consulting for operations teams that need scalable systems, cleaner data, and less manual risk.',
@@ -300,7 +300,7 @@ export const solutions: SolutionData[] = [
     problemHeadline: "Your systems don't talk to each other",
     category: 'Integration',
     seoSummary:
-      'System integration consulting to connect ERP, CRM, WMS, ecommerce, and finance platforms across mid-market operations.',
+      'System integration consulting to connect ERP, CRM, WMS, ecommerce, and finance platforms across growing operations.',
     painPoints: [
       `You have good software but it's all siloed,  ERP, CRM, WMS, and ecommerce don't share data`,
       'Your team re-keys the same data into 2–4 systems every day',
@@ -360,7 +360,7 @@ export const solutions: SolutionData[] = [
     problemHeadline: 'You need an ERP that actually fits your operations',
     category: 'ERP',
     seoSummary:
-      'ERP implementation support for mid-market operations teams that need objective selection, clean rollout, and strong adoption.',
+      'ERP implementation support for growing operations teams that need objective selection, clean rollout, and strong adoption.',
     painPoints: [
       `You bought an ERP and it was never fully implemented, or it's barely used`,
       `You're evaluating ERP options but don't know how to compare them objectively`,

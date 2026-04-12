@@ -3,7 +3,6 @@ import { getTranslations } from 'next-intl/server'
 import Hero from '@/src/components/sections/Hero'
 import WhoWeHelp from '@/src/components/sections/WhoWeHelp'
 import DifferentiatorCards from '@/src/components/sections/DifferentiatorCards'
-import ProblemSolutions from '@/src/components/sections/ProblemSolutions'
 import ProcessSteps from '@/src/components/sections/ProcessSteps'
 import SupportGrid from '@/src/components/sections/SupportGrid'
 import CTABlock from '@/src/components/sections/CTABlock'
@@ -29,7 +28,6 @@ export default function HomePage() {
       <Hero />
       <WhoWeHelp />
       <DifferentiatorCards />
-      <ProblemSolutions />
       <ProcessSteps />
       <SupportGrid variant="home" />
       <CTABlock />

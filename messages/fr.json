@@ -19,8 +19,8 @@
       "apiIntegrations": "Intégrations API",
       "erpImpl": "Implémentation ERP",
       "crmImpl": "Implémentation CRM",
-      "vendorMgmt": "Gestion des fournisseurs",
-      "systemsAudit": "Audit gratuit des systèmes"
+      "vendorMgmt": "Sélection de logiciels",
+      "systemsAudit": "Bilan gratuit des systèmes"
     }
   },
   "hero": {
@@ -28,60 +28,52 @@
     "headline1": "Vos opérations ont dépassé",
     "headlineAccent": "vos outils.",
     "headline2": "Nous réglons ça.",
-    "subtext": "Nous aidons les entreprises manufacturières, de distribution et industrielles à bâtir des systèmes connectés, une infrastructure évolutive et une clarté opérationnelle,  pour que vous puissiez croître sans le chaos.",
+    "subtext": "Nous travaillons avec des équipes en croissance pour réparer les systèmes défaillants et en construire qui tiennent la route — pratiques, indépendants et conçus pour le terrain, afin que votre équipe puisse se concentrer sur ce qu'elle fait de mieux.",
     "primaryCta": "Parlons-en",
     "secondaryCta": "Voir comment nous travaillons",
     "trustBadge": "Reconnu par les leaders opérationnels en Amérique du Nord"
   },
   "whoWeHelp": {
     "title": "Qui nous aidons",
-    "subtitle": "Nous nous spécialisons dans les opérations B2B pour les entreprises de 10 à 500 employés dans des secteurs complexes.",
+    "subtitle": "Nous travaillons avec des entreprises en croissance dont le fonctionnement a dépassé les systèmes qui le soutiennent.",
     "industries": {
       "manufacturing": {
         "title": "Fabrication",
-        "description": "Ateliers de travail, fabricants sous contrat et OEM qui ont besoin que leurs systèmes de production, d'inventaire et de finance fonctionnent comme un tout."
+        "description": "Production, inventaire et finance ne s'alignent pas — et vous êtes coincé à bricoler des systèmes ensemble pour que tout continue à tourner."
       },
       "distribution": {
         "title": "Distribution et logistique",
-        "description": "Distributeurs et 3PL aux prises avec des systèmes de gestion des commandes, des opérations d'entrepôt et des intégrations de transporteurs déconnectés."
+        "description": "Commandes, opérations d'entrepôt et intégrations transporteurs sont déconnectées — créant des solutions de contournement constantes et un manque de visibilité."
       },
       "industrial": {
         "title": "Services industriels",
-        "description": "Entrepreneurs en services sur le terrain, en maintenance et spécialisés qui ont dépassé les feuilles de calcul et ont besoin d'une véritable infrastructure opérationnelle."
+        "description": "Les équipes terrain fonctionnent avec des feuilles de calcul et des outils déconnectés — et ça commence à craquer à mesure que vous grandissez."
       },
       "other": {
-        "title": "Autres opérations B2B",
-        "description": "Toute entreprise B2B dont la complexité opérationnelle a dépassé sa boîte à outils actuelle."
+        "title": "Autres opérations en croissance",
+        "description": "Toute entreprise en croissance dont les systèmes n'ont pas suivi — et dont l'équipe compense avec du travail manuel, des solutions de contournement ou des embauches supplémentaires."
       }
     }
   },
   "differentiators": {
-    "title": "Pourquoi les leaders opérationnels choisissent Awesoon",
+    "title": "Pourquoi nous",
     "subtitle": "Nous ne sommes pas un cabinet de conseil. Nous sommes des opérateurs qui ont vécu le problème.",
     "items": [
       {
-        "title": "Independent by design",
-        "description": "We don't sell software — we design solutions. Our recommendations are driven by operational fit, not vendor partnerships or commissions."
+        "title": "Travaillez avec des opérateurs, pas des consultants",
+        "description": "Nous avons été responsables du fonctionnement réel de l'entreprise — systèmes, workflows et opérations quotidiennes. C'est pourquoi nous construisons des systèmes qui fonctionnent vraiment dans le monde réel."
       },
       {
-        "title": "Built from real operational experience",
-        "description": "We've worked inside growing businesses, not just around them — designing systems for real users, real constraints, and real scale."
+        "title": "Indépendants par conception",
+        "description": "La technologie doit servir vos opérations, pas l'inverse. Nous ne sommes liés à aucun fournisseur ni plateforme — chaque recommandation est basée sur votre entreprise, pas sur l'agenda de quelqu'un d'autre."
       },
       {
-        "title": "Practical scaling, not corporate bureaucracy",
-        "description": "We help businesses grow structure and capability without losing agility, culture, or speed."
+        "title": "Soulagez votre équipe",
+        "description": "Votre équipe ne devrait pas avoir à devenir experte en systèmes juste pour maintenir les choses en marche. Nous prenons en charge le gros du travail pour qu'elle puisse se concentrer sur l'entreprise."
       },
       {
-        "title": "End-user-first design",
-        "description": "Systems are only successful if people actually use them. We design for adoption, usability, and operational reality — not theoretical perfection."
-      },
-      {
-        "title": "High-touch, senior-led delivery",
-        "description": "You work with experienced operators, not layered teams or junior consultants. That means faster decisions, clearer communication, and real accountability."
-      },
-      {
-        "title": "Focus your team on what matters",
-        "description": "We remove the need to build internal delivery teams or hire FTE specialists — so you can stay focused on running and growing your business."
+        "title": "Dirigé par les fondateurs, du début à la fin",
+        "description": "Vous travaillez directement avec les fondateurs du début à la fin — pas de transferts. Nous gardons notre liste de clients réduite pour vous offrir une attention ciblée, des décisions plus rapides et une vraie responsabilité."
       }
     ]
   },
@@ -89,28 +81,28 @@
     "title": "Comment nous travaillons",
     "freeNoCommitment": "Gratuit, sans engagement",
     "deliveredIn48h": "Livré en 48h",
-    "ctaButton": "Commencer par un audit gratuit",
-    "subtitle": "Un modèle d'engagement éprouvé en quatre étapes pour passer du chaos à la clarté.",
+    "ctaButton": "Commencer par un bilan gratuit",
+    "subtitle": "Quatre étapes. Commencez n'importe où. Nous vous rejoignons là où vous êtes et vous emmenons aussi loin que nécessaire.",
     "steps": [
       {
         "number": "01",
-        "title": "Audit des systèmes",
-        "description": "Nous cartographions vos outils, intégrations, flux de données et flux de travail actuels. Vous obtiendrez une image complète de l'endroit où vit votre complexité opérationnelle."
+        "title": "Bilan des systèmes",
+        "description": "Nous comprenons rapidement comment votre équipe travaille, les outils que vous utilisez et où ça coince. Vous repartez avec des problèmes identifiés, des opportunités d'économies et un plan d'action."
       },
       {
         "number": "02",
         "title": "Conception de la solution",
-        "description": "Nous concevons une architecture de système connecté adaptée à vos opérations. Pas de manuels génériques,  chaque recommandation est spécifique à votre équipe, vos processus et votre budget."
+        "description": "Nous travaillons avec vous pour traduire nos constats en un plan clair — définir les besoins, sélectionner les bons outils, collaborer avec les éditeurs et tracer le chemin vers l'implémentation."
       },
       {
         "number": "03",
         "title": "Implémentation",
-        "description": "Nous gérons l'implémentation complète: sélection des fournisseurs, configuration, migration des données, intégrations et gestion du changement. Nous faisons le gros du travail."
+        "description": "Nous travaillons avec vous pour concrétiser le plan — en prenant en charge autant ou aussi peu que nécessaire, de la configuration système aux intégrations et à la gestion de projet."
       },
       {
         "number": "04",
-        "title": "Stabilisation et transfert",
-        "description": "Nous ne disparaissons pas au lancement. Nous restons pendant la stabilisation, formons votre équipe, documentons tout et nous assurons que votre équipe opérationnelle est confiante et capable."
+        "title": "Support et optimisation",
+        "description": "Nous restons à vos côtés — aussi impliqués que nécessaire, en assurant le support, en apportant des améliorations et en faisant évoluer vos systèmes avec votre entreprise."
       }
     ]
   },
@@ -121,7 +113,7 @@
     "cards": {
       "aiOperations": {
         "title": "Opérations IA et activation RAG",
-        "description": "Nous aidons les équipes du marché intermédiaire à déployer des assistants RAG, des agents de flux de travail et des copilotes IA sur des systèmes stables, des données gouvernées et de vrais cas d'usage opérationnels.",
+        "description": "Nous aidons les équipes en croissance à déployer des assistants RAG, des agents de flux de travail et des copilotes IA sur des systèmes stables, des données gouvernées et de vrais cas d'usage opérationnels.",
         "slug": "ai-operations"
       },
       "opsOutgrown": {
@@ -131,7 +123,7 @@
       },
       "spreadsheetOps": {
         "title": "Opérations sur feuilles de calcul",
-        "description": "Gérer une entreprise du marché intermédiaire sur Excel est un risque. Nous remplaçons les processus dépendants des feuilles de calcul par des systèmes fiables et évolutifs.",
+        "description": "Gérer votre entreprise sur Excel est un risque. Nous remplaçons les processus dépendants des feuilles de calcul par des systèmes fiables et évolutifs.",
         "slug": "spreadsheet-operations"
       },
       "systemIntegration": {
@@ -141,7 +133,7 @@
       },
       "erpImplementation": {
         "title": "Implémentation ERP",
-        "description": "Les projets ERP échouent quand ils sont dirigés par les fournisseurs. Nous sommes de votre côté,  sélectionnant, configurant et implémentant un ERP qui correspond réellement à vos opérations.",
+        "description": "Sans une vision opérationnelle solide, les projets ERP peuvent rater leur cible. C'est là que nous intervenons — sélection, configuration et implémentation d'un ERP adapté à vos opérations.",
         "slug": "erp-implementation"
       },
       "crmImplementation": {
@@ -165,13 +157,13 @@
         "slug": "ecommerce-development"
       },
       "vendorManagement": {
-        "title": "Gestion des fournisseurs",
-        "description": "Choisir le mauvais logiciel est coûteux. Nous effectuons un processus structuré de sélection des fournisseurs pour que vous choisissiez le bon outil pour vos opérations spécifiques.",
+        "title": "Sélection de logiciels",
+        "description": "Choisir le mauvais logiciel est coûteux. Nous effectuons un processus structuré de sélection pour que vous choisissiez le bon outil pour vos opérations spécifiques.",
         "slug": "vendor-management"
       },
       "systemsAudit": {
-        "title": "Audit des systèmes",
-        "description": "Vous ne savez pas par où commencer? Notre audit des systèmes vous donne une carte complète de votre stack technologique opérationnel, des lacunes et une feuille de route priorisée.",
+        "title": "Bilan des systèmes",
+        "description": "Vous ne savez pas par où commencer? Notre bilan des systèmes vous donne une carte complète de votre stack technologique opérationnel, des lacunes et une feuille de route priorisée.",
         "slug": "systems-audit"
       }
     }
@@ -221,7 +213,7 @@
     },
     "mission": {
       "title": "Notre mission",
-      "text": "Rendre les opérations faciles — pas naïvement, mais dans le sens qui vient d'avoir les bons systèmes, les bonnes données et les bons processus qui travaillent ensemble. Nous donnons aux équipes du marché intermédiaire l'infrastructure connectée dont elles ont besoin pour croître sans le chaos, sans honoraires de conseil excessifs, et sans solutions génériques inadaptées."
+      "text": "Rendre les opérations faciles — pas naïvement, mais dans le sens qui vient d'avoir les bons systèmes, les bonnes données et les bons processus qui travaillent ensemble. Nous donnons aux équipes en croissance l'infrastructure connectée dont elles ont besoin pour croître sans le chaos, sans honoraires de conseil excessifs, et sans solutions génériques inadaptées."
     },
     "values": {
       "title": "Nos valeurs",
@@ -250,8 +242,8 @@
     },
     "cta": {
       "headline": "Les opérations devraient être faciles. On vous y amène.",
-      "subtext": "Commençons par un audit des systèmes gratuit. Pas de présentation, pas de pression — juste un regard objectif sur vos opérations et un chemin clair pour les faire fonctionner comme elles le devraient.",
-      "button": "Réserver un audit gratuit"
+      "subtext": "Commençons par un bilan des systèmes gratuit. Pas de présentation, pas de pression — juste un regard objectif sur vos opérations et un chemin clair pour les faire fonctionner comme elles le devraient.",
+      "button": "Parlons-en"
     }
   },
   "contact": {
@@ -292,7 +284,7 @@
       "manufacturing": "Fabrication",
       "distribution": "Distribution et logistique",
       "industrial": "Services industriels",
-      "other": "Autres opérations B2B"
+      "other": "Autres opérations en croissance"
     },
     "companySizes": {
       "small": "10–50 employés",
@@ -339,7 +331,7 @@
     },
     "success": {
       "title": "Nous avons reçu votre demande!",
-      "message": "Merci de nous avoir contactés. Ching Ho, notre consultante ERP et CRM, vous contactera dans un délai d'un jour ouvrable pour planifier votre audit gratuit.",
+      "message": "Merci de nous avoir contactés. Ching Ho, notre consultante ERP et CRM, vous contactera dans un délai d'un jour ouvrable pour planifier votre bilan gratuit.",
       "responderName": "Ching Ho",
       "responderTitle": "Gestionnaire de projet & Consultante ERP/CRM, Awesoon"
     },
@@ -425,7 +417,7 @@
     "takeFirstStep": "Faites le premier pas"
   },
   "floatingCta": {
-    "message": "Votre audit des systèmes est gratuit.",
+    "message": "Votre bilan des systèmes est gratuit.",
     "subtext": "30 minutes. Un vrai opérateur. Pas de présentation.",
     "button": "Je le veux →"
   },
@@ -436,7 +428,7 @@
     "aiTitle": "Valeur ajoutée IA, RAG et agentique",
     "aiSubtitle": "Une fois la base opérationnelle stabilisée, cette solution ouvre aussi la voie à un déploiement IA utile.",
     "sidebarTitle": "Prêt à commencer?",
-    "sidebarText": "Commencez par un audit gratuit des systèmes. Aucun pitch, aucune pression.",
+    "sidebarText": "Commencez par un bilan gratuit des systèmes. Aucun pitch, aucune pression.",
     "relatedSolutions": "Solutions liées",
     "relatedInsights": "Articles liés"
   },

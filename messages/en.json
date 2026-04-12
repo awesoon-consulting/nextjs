@@ -18,8 +18,8 @@
       "apiIntegrations": "API Integrations",
       "erpImpl": "ERP Implementation",
       "crmImpl": "CRM Implementation",
-      "vendorMgmt": "Vendor Management",
-      "systemsAudit": "Free Systems Audit"
+      "vendorMgmt": "Software Selection",
+      "systemsAudit": "Free Systems Health Check"
     }
   },
   "hero": {
@@ -27,60 +27,52 @@
     "headline1": "Your ops outgrew",
     "headlineAccent": "your tools.",
     "headline2": "We fix that.",
-    "subtext": "We help mid-market manufacturing, distribution, and industrial companies build connected systems, scalable infrastructure, and operational clarity,  so you can grow without the chaos.",
+    "subtext": "We partner with growing teams to fix broken systems and build ones that actually hold up — practical, independent, and built for real use, so your team can focus on what they do best.",
     "primaryCta": "Let's Talk",
     "secondaryCta": "See How We Work",
     "trustBadge": "Trusted by operations leaders across North America"
   },
   "whoWeHelp": {
     "title": "Who We Help",
-    "subtitle": "We specialize in B2B operations for companies with 10–500 employees in complex, process-driven industries.",
+    "subtitle": "We work with growing companies where the way the business runs has outpaced the systems supporting it.",
     "industries": {
       "manufacturing": {
         "title": "Manufacturing",
-        "description": "Job shops, contract manufacturers, and OEMs who need their production, inventory, and finance systems to work as one."
+        "description": "Production, inventory, and finance don't line up — and you're stuck stitching systems together just to keep things moving."
       },
       "distribution": {
         "title": "Distribution & Logistics",
-        "description": "Distributors and 3PLs struggling with disconnected order management, warehouse ops, and carrier integrations."
+        "description": "Orders, warehouse ops, and carrier integrations are disconnected — creating constant workarounds and missed visibility."
       },
       "industrial": {
         "title": "Industrial Services",
-        "description": "Field service, maintenance, and specialty contractors who've outgrown spreadsheets and need real operational infrastructure."
+        "description": "Field teams are running on spreadsheets and disconnected tools — and it's starting to break as you scale."
       },
       "other": {
-        "title": "Other B2B Operations",
-        "description": "Any B2B business with operational complexity that has outpaced its current toolset."
+        "title": "Other Growing Operations",
+        "description": "Any growing business where systems haven't kept up — and your team is compensating with manual work, workarounds, or extra hires."
       }
     }
   },
   "differentiators": {
-    "title": "Why Operations Leaders Choose Awesoon",
+    "title": "Why Us",
     "subtitle": "We're not a big-four consulting firm. We're operators who've been in the weeds and built the systems to get out.",
     "items": [
       {
+        "title": "Work with operators, not consultants",
+        "description": "We've been responsible for how the business actually runs — across systems, workflows, and day-to-day operations. That's why we build systems that actually work in the real world."
+      },
+      {
         "title": "Independent by design",
-        "description": "We don't sell software — we design solutions. Our recommendations are driven by operational fit, not vendor partnerships or commissions."
+        "description": "Technology should serve your operations, not the other way around. We're not tied to vendors or platforms — every recommendation is based on your business, not someone else's agenda."
       },
       {
-        "title": "Built from real operational experience",
-        "description": "We've worked inside growing businesses, not just around them — designing systems for real users, real constraints, and real scale."
+        "title": "Take the load off your team",
+        "description": "Your team shouldn't have to become system experts just to keep things running. We handle the heavy lifting so they can stay focused on the business."
       },
       {
-        "title": "Practical scaling, not corporate bureaucracy",
-        "description": "We help businesses grow structure and capability without losing agility, culture, or speed."
-      },
-      {
-        "title": "End-user-first design",
-        "description": "Systems are only successful if people actually use them. We design for adoption, usability, and operational reality — not theoretical perfection."
-      },
-      {
-        "title": "High-touch, senior-led delivery",
-        "description": "You work with experienced operators, not layered teams or junior consultants. That means faster decisions, clearer communication, and real accountability."
-      },
-      {
-        "title": "Focus your team on what matters",
-        "description": "We remove the need to build internal delivery teams or hire FTE specialists — so you can stay focused on running and growing your business."
+        "title": "Owner-led, start to finish",
+        "description": "You work directly with the owners from start to finish — no handoffs. We keep our client list small, so you get focused attention, faster decisions, and real accountability."
       }
     ]
   },
@@ -88,28 +80,28 @@
     "title": "How We Work",
     "freeNoCommitment": "Free, no commitment",
     "deliveredIn48h": "Delivered in 48h",
-    "ctaButton": "Start with a Free Systems Audit",
-    "subtitle": "A proven four-step engagement model that gets you from chaos to clarity.",
+    "ctaButton": "Start with a Free Systems Health Check",
+    "subtitle": "Four steps. Start anywhere. We'll meet you where you are and take you as far as you need.",
     "steps": [
       {
         "number": "01",
-        "title": "Systems Audit",
-        "description": "We map your current tools, integrations, data flows, and workflows. You'll get a complete picture of where your operational complexity lives,  and what it's costing you."
+        "title": "Systems Health Check",
+        "description": "We quickly understand how your team works, the tools you use, and where things break down. You'll leave with clear issues, cost-saving opportunities, and a plan for what to fix first."
       },
       {
         "number": "02",
         "title": "Solution Design",
-        "description": "We design a connected system architecture tailored to your operations. No generic playbooks,  every recommendation is specific to your team, your processes, and your budget."
+        "description": "We work with you to translate what we found into a clear plan — defining requirements, selecting the right tools, working with software companies, and mapping the path to implementation."
       },
       {
         "number": "03",
         "title": "Implementation",
-        "description": "We manage the full implementation: vendor selection, configuration, data migration, integrations, and change management. We do the heavy lifting."
+        "description": "We work with you to bring the plan to life — handling as much or as little as you need, from system configuration to integrations and project management."
       },
       {
         "number": "04",
-        "title": "Stabilization & Handoff",
-        "description": "We don't disappear at go-live. We stay through stabilization, train your team, document everything, and make sure your ops team is confident and capable."
+        "title": "Support & Optimization",
+        "description": "We stick with you — staying involved as much as you need, providing support, making improvements, and helping your systems evolve as your business grows."
       }
     ]
   },
@@ -120,7 +112,7 @@
     "cards": {
       "aiOperations": {
         "title": "AI Operations & RAG Enablement",
-        "description": "We help mid-market teams deploy RAG assistants, workflow agents, and AI copilots on top of stable systems, governed data, and real operational use cases.",
+        "description": "We help growing teams deploy RAG assistants, workflow agents, and AI copilots on top of stable systems, governed data, and real operational use cases.",
         "slug": "ai-operations"
       },
       "opsOutgrown": {
@@ -130,7 +122,7 @@
       },
       "spreadsheetOps": {
         "title": "Spreadsheet Operations",
-        "description": "Running a mid-market company on Excel is a liability. We replace spreadsheet-dependent processes with reliable, scalable systems.",
+        "description": "Running your company on Excel is a liability. We replace spreadsheet-dependent processes with reliable, scalable systems.",
         "slug": "spreadsheet-operations"
       },
       "systemIntegration": {
@@ -140,7 +132,7 @@
       },
       "erpImplementation": {
         "title": "ERP Implementation",
-        "description": "ERP projects fail when led by vendors. We're on your side,  selecting, configuring, and implementing an ERP that actually fits your operations.",
+        "description": "Without a strong operational lens, ERP projects can miss the mark. That's where we come in — selecting, configuring, and implementing an ERP that actually fits your operations.",
         "slug": "erp-implementation"
       },
       "crmImplementation": {
@@ -164,13 +156,13 @@
         "slug": "ecommerce-development"
       },
       "vendorManagement": {
-        "title": "Vendor Management & Selection",
-        "description": "Choosing the wrong software is expensive. We run a structured vendor selection process so you choose the right tool for your specific operations.",
+        "title": "Software Selection",
+        "description": "Choosing the wrong software is expensive. We run a structured selection process so you choose the right tool for your specific operations.",
         "slug": "vendor-management"
       },
       "systemsAudit": {
-        "title": "Systems Audit",
-        "description": "Don't know where to start? Our systems audit gives you a complete map of your operational tech stack, gaps, and a prioritized roadmap for improvement.",
+        "title": "Systems Health Check",
+        "description": "Don't know where to start? Our systems health check gives you a complete map of your operational tech stack, gaps, and a prioritized roadmap for improvement.",
         "slug": "systems-audit"
       }
     }
@@ -220,7 +212,7 @@
     },
     "mission": {
       "title": "Our Mission",
-      "text": "To make operations easy — not in a naive way, but in the way that comes from having the right systems, the right data, and the right processes working together. We give mid-market teams the connected infrastructure they need to grow without the chaos, without bloated consulting fees, and without cookie-cutter solutions that don't fit."
+      "text": "To make operations easy — not in a naive way, but in the way that comes from having the right systems, the right data, and the right processes working together. We give growing teams the connected infrastructure they need to grow without the chaos, without bloated consulting fees, and without cookie-cutter solutions that don't fit."
     },
     "values": {
       "title": "Our Values",
@@ -249,7 +241,7 @@
     },
     "cta": {
       "headline": "Operations should feel easy. Let's get you there.",
-      "subtext": "Start with a free systems audit. No pitch deck, no sales pressure — just a clear-eyed look at where your operations stand and what it would take to make them work the way they should.",
+      "subtext": "Start with a free systems health check. No pitch deck, no sales pressure — just a clear-eyed look at where your operations stand and what it would take to make them work the way they should.",
       "button": "Let's Talk"
     }
   },
@@ -291,7 +283,7 @@
       "manufacturing": "Manufacturing",
       "distribution": "Distribution & Logistics",
       "industrial": "Industrial Services",
-      "other": "Other B2B Operations"
+      "other": "Other Growing Operations"
     },
     "companySizes": {
       "small": "10–50 employees",
@@ -338,7 +330,7 @@
     },
     "success": {
       "title": "We've received your request!",
-      "message": "Thank you for reaching out. Ching Ho, our ERP & CRM Consultant, will be in touch within 1 business day to schedule your free systems audit.",
+      "message": "Thank you for reaching out. Ching Ho, our ERP & CRM Consultant, will be in touch within 1 business day to schedule your free systems health check.",
       "responderName": "Ching Ho",
       "responderTitle": "Project Manager & ERP/CRM Consultant, Awesoon"
     },
@@ -424,7 +416,7 @@
     "takeFirstStep": "Take the first step"
   },
   "floatingCta": {
-    "message": "Your systems audit is free.",
+    "message": "Your systems health check is free.",
     "subtext": "30 minutes. A real operator. No pitch deck.",
     "button": "Claim It →"
   },
@@ -435,7 +427,7 @@
     "aiTitle": "AI, RAG, and Agentic Value Add",
     "aiSubtitle": "Once the operational foundation is stable, this solution also creates room for practical AI deployment.",
     "sidebarTitle": "Ready to get started?",
-    "sidebarText": "Start with a free systems audit. No pitch deck, no pressure.",
+    "sidebarText": "Start with a free systems health check. No pitch deck, no pressure.",
     "relatedSolutions": "Related Solutions",
     "relatedInsights": "Related Insights"
   },
@@ -471,7 +463,7 @@
     "title": "Sitemap"
   },
   "problemSolutions": {
-    "title": "Recognize Any of These?",
+    "title": "Common Problems We Solve",
     "subtitle": "If your operations look like this, we've built the playbook to fix it.",
     "items": [
       {
