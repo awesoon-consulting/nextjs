@@ -1,3 +1,4 @@
+import Image from 'next/image'
 import { useTranslations } from 'next-intl'
 import Card from '@/src/components/ui/Card'
 import AnimateIn from '@/src/components/ui/AnimateIn'
@@ -6,11 +7,12 @@ interface TeamMember {
   name: string
   key: string
   initials: string
+  photo: string
 }
 
 const team: TeamMember[] = [
-  { name: 'Ching Ho', key: 'ching', initials: 'CH' },
-  { name: 'Ray Rasouli', key: 'ray', initials: 'RR' },
+  { name: 'Ching Ho', key: 'ching', initials: 'CH', photo: '/images/about-us/ching-ho.jpeg' },
+  { name: 'Ray Rasouli', key: 'ray', initials: 'RR', photo: '/images/about-us/ray-rasouli.jpeg' },
 ]
 
 export default function TeamGrid() {
@@ -35,10 +37,14 @@ export default function TeamGrid() {
           {team.map((member, idx) => (
             <AnimateIn key={member.name} variant="slide-up" delay={idx * 90} threshold={0.04}>
               <Card variant="bordered" className="text-center">
-                <div className="w-20 h-20 rounded-full bg-secondary/10 border-2 border-secondary/20 flex items-center justify-center mx-auto mb-4">
-                  <span className="font-heading font-bold text-xl text-secondary">
-                    {member.initials}
-                  </span>
+                <div className="w-24 h-24 rounded-full overflow-hidden border-2 border-secondary/20 mx-auto mb-4">
+                  <Image
+                    src={member.photo}
+                    alt={member.name}
+                    width={96}
+                    height={96}
+                    className="object-cover w-full h-full"
+                  />
                 </div>
                 <h3 className="font-heading font-semibold text-xl text-text-primary mb-1">
                   {member.name}
