@@ -9,7 +9,8 @@ import Select from '@/src/components/ui/Select'
 import ChipSelect from '@/src/components/ui/ChipSelect'
 import ProgressBar from '@/src/components/ui/ProgressBar'
 import FormStep from './FormStep'
-import { trackFormStep, trackFormSubmit } from '@/src/lib/analytics'
+import { trackFormStep, trackLeadFormConversion } from '@/src/lib/analytics'
+import { getUtmParams } from '@/src/lib/utm'
 
 // ─── Step configuration ────────────────────────────────────────────────────────
 // Flip `multiSelect` per step to toggle between single- and multi-select chip UI.
@@ -140,6 +141,7 @@ export default function MultiStepForm() {
           locale,
           submittedAt: new Date().toISOString(),
           sourceUrl: pathname,
+          ...getUtmParams(),
         }),
       })
 
@@ -152,7 +154,7 @@ export default function MultiStepForm() {
         return
       }
 
-      trackFormSubmit('contact-form')
+      trackLeadFormConversion()
       setIsSuccess(true)
     } catch {
       setSubmitError(t('error.generic'))

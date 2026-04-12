@@ -93,6 +93,13 @@ export async function POST(request: NextRequest) {
     locale: body.locale ?? 'en',
     submittedAt: body.submittedAt ?? new Date().toISOString(),
     sourceUrl: body.sourceUrl ?? undefined,
+    utm_source: body.utm_source?.trim() || undefined,
+    utm_medium: body.utm_medium?.trim() || undefined,
+    utm_campaign: body.utm_campaign?.trim() || undefined,
+    utm_term: body.utm_term?.trim() || undefined,
+    utm_content: body.utm_content?.trim() || undefined,
+    landing_page: body.landing_page?.trim() || undefined,
+    referrer: body.referrer?.trim() || undefined,
   }
 
   // Append to Google Sheets

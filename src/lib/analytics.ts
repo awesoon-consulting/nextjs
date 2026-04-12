@@ -65,3 +65,31 @@ export function trackFormSubmit(formName: string): void {
 export function trackCTAClick(ctaName: string, location: string): void {
   trackEvent('cta_click', { cta_name: ctaName, location })
 }
+
+/**
+ * Fire a Google Ads conversion event.
+ * Requires NEXT_PUBLIC_GADS_CONVERSION_FORM_SUBMIT and/or
+ * NEXT_PUBLIC_GADS_CONVERSION_EMAIL_CLICK set as "AW-XXXXX/YYYYYY".
+ */
+function fireGadsConversion(conversionLabel: string | undefined): void {
+  if (!conversionLabel) return
+  if (typeof window === 'undefined') return
+  if (typeof window.gtag !== 'function') return
+  window.gtag('event', 'conversion', { send_to: conversionLabel })
+}
+
+/**
+ * Track lead form submission — fires GA4 event + Google Ads conversion.
+ */
+export function trackLeadFormConversion(): void {
+  trackFormSubmit('contact-form')
+  fireGadsConversion(process.env.NEXT_PUBLIC_GADS_CONVERSION_FORM_SUBMIT)
+}
+
+/**
+ * Track email link click — fires GA4 event + Google Ads conversion.
+ */
+export function trackEmailClick(): void {
+  trackEvent('email_click', { location: 'footer' })
+  fireGadsConversion(process.env.NEXT_PUBLIC_GADS_CONVERSION_EMAIL_CLICK)
+}

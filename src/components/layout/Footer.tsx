@@ -1,6 +1,7 @@
 import Link from 'next/link'
 import { useTranslations, useLocale } from 'next-intl'
 import { siteConfig } from '@/src/config/site'
+import TrackedEmailLink from '@/src/components/ui/TrackedEmailLink'
 
 /**
  * Footer,  premium footer with:
@@ -152,12 +153,10 @@ export default function Footer() {
             </h3>
             <ul className="space-y-2.5 text-sm text-text-secondary dark:text-neutral-400">
               <li>
-                <a
-                  href={`mailto:${siteConfig.contact.email}`}
+                <TrackedEmailLink
+                  email={siteConfig.contact.email}
                   className="transition-colors hover:text-text-primary focus:outline-none focus-visible:ring-2 focus-visible:ring-accent rounded dark:hover:text-white"
-                >
-                  {siteConfig.contact.email}
-                </a>
+                />
               </li>
               <li>{siteConfig.contact.address}</li>
               <li className="pt-2">

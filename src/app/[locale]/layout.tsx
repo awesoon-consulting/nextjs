@@ -9,6 +9,7 @@ import { ThemeProvider } from '@/src/components/layout/ThemeProvider'
 import Navbar from '@/src/components/layout/Navbar'
 import Footer from '@/src/components/layout/Footer'
 import FloatingCTA from '@/src/components/layout/FloatingCTA'
+import UtmCapture from '@/src/components/layout/UtmCapture'
 import { siteConfig } from '@/src/config/site'
 import '@/app/globals.css'
 
@@ -154,6 +155,7 @@ export default async function LocaleLayout({ children, params }: LocaleLayoutPro
 
               {/* Floating conversion CTA,  shows after scrolling past hero */}
               <FloatingCTA />
+              <UtmCapture />
             </ConsentManager>
           </ThemeProvider>
         </NextIntlClientProvider>

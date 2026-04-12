@@ -27,6 +27,13 @@ export interface LeadFormData {
   locale: string
   submittedAt: string
   sourceUrl?: string
+  utm_source?: string
+  utm_medium?: string
+  utm_campaign?: string
+  utm_term?: string
+  utm_content?: string
+  landing_page?: string
+  referrer?: string
 }
 
 function getAuthClient() {
@@ -50,7 +57,7 @@ function getAuthClient() {
 
 /**
  * Appends a lead form submission as a new row in the Google Sheet.
- * Column order: Timestamp | Name | Company | Email | Phone | Industry | Company Size | Problems | Other Problem | Timeline | Budget | Message | Locale | Source URL
+ * Column order: Timestamp | Name | Company | Email | Phone | Industry | Company Size | Problems | Other Problem | Timeline | Budget | Message | Locale | Source URL | UTM Source | UTM Medium | UTM Campaign | UTM Term | UTM Content | Landing Page | Referrer
  */
 export async function appendLeadRow(data: LeadFormData): Promise<void> {
   const spreadsheetId = process.env.GOOGLE_SHEETS_SPREADSHEET_ID
@@ -77,11 +84,18 @@ export async function appendLeadRow(data: LeadFormData): Promise<void> {
     data.message ?? '',
     data.locale,
     data.sourceUrl ?? '',
+    data.utm_source ?? '',
+    data.utm_medium ?? '',
+    data.utm_campaign ?? '',
+    data.utm_term ?? '',
+    data.utm_content ?? '',
+    data.landing_page ?? '',
+    data.referrer ?? '',
   ]
 
   await sheets.spreadsheets.values.append({
     spreadsheetId,
-    range: 'Sheet1!A1:N1',
+    range: 'Sheet1!A1:U1',
     valueInputOption: 'USER_ENTERED',
     insertDataOption: 'INSERT_ROWS',
     requestBody: {
@@ -103,7 +117,7 @@ export async function ensureHeaderRow(): Promise<void> {
   // Check if row 1 already has content
   const result = await sheets.spreadsheets.values.get({
     spreadsheetId,
-    range: 'Sheet1!A1:N1',
+    range: 'Sheet1!A1:U1',
   })
 
   const existing = result.data.values
@@ -124,11 +138,18 @@ export async function ensureHeaderRow(): Promise<void> {
     'Message',
     'Locale',
     'Source URL',
+    'UTM Source',
+    'UTM Medium',
+    'UTM Campaign',
+    'UTM Term',
+    'UTM Content',
+    'Landing Page',
+    'Referrer',
   ]
 
   await sheets.spreadsheets.values.update({
     spreadsheetId,
-    range: 'Sheet1!A1:N1',
+    range: 'Sheet1!A1:U1',
     valueInputOption: 'USER_ENTERED',
     requestBody: {
       values: [headers],
