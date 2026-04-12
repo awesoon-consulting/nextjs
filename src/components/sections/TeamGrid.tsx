@@ -13,7 +13,7 @@ const team: TeamMember[] = [
   {
     name: 'Ching Ho',
     title: 'Project Manager & ERP/CRM Consultant',
-    bio: 'Leads implementations from kickoff to stabilization. Deep expertise in ERP and CRM deployments, change management, and keeping complex projects on track without the chaos.',
+    bio: 'Spent nearly a decade managing operations, supply chain, and IT across multiple locations and 50+ person teams before moving into ERP systems leadership. Brings real operational experience from the floor to the system — not just configuration knowledge, but an understanding of how businesses actually run day to day.',
     initials: 'CH',
   },
   {
