@@ -1,12 +1,14 @@
 import type { Metadata } from 'next'
+import dynamic from 'next/dynamic'
 import { getTranslations } from 'next-intl/server'
 import Hero from '@/src/components/sections/Hero'
-import WhoWeHelp from '@/src/components/sections/WhoWeHelp'
-import DifferentiatorCards from '@/src/components/sections/DifferentiatorCards'
-import ProcessSteps from '@/src/components/sections/ProcessSteps'
-import SupportGrid from '@/src/components/sections/SupportGrid'
-import CTABlock from '@/src/components/sections/CTABlock'
 import { siteConfig } from '@/src/config/site'
+
+const WhoWeHelp = dynamic(() => import('@/src/components/sections/WhoWeHelp'))
+const DifferentiatorCards = dynamic(() => import('@/src/components/sections/DifferentiatorCards'))
+const ProcessSteps = dynamic(() => import('@/src/components/sections/ProcessSteps'))
+const SupportGrid = dynamic(() => import('@/src/components/sections/SupportGrid'))
+const CTABlock = dynamic(() => import('@/src/components/sections/CTABlock'))
 
 export async function generateMetadata({
   params,

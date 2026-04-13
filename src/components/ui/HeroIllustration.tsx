@@ -59,15 +59,6 @@ export default function HeroIllustration({ locale }: HeroIllustrationProps) {
       `}</style>
 
       <defs>
-        <filter id="glow-amber" x="-50%" y="-50%" width="200%" height="200%">
-          <feGaussianBlur stdDeviation="6" result="blur" />
-          <feComposite in="SourceGraphic" in2="blur" operator="over" />
-        </filter>
-        <filter id="glow-soft" x="-50%" y="-50%" width="200%" height="200%">
-          <feGaussianBlur stdDeviation="12" result="blur" />
-          <feComposite in="SourceGraphic" in2="blur" operator="over" />
-        </filter>
-
         <linearGradient id="flow-grad" x1="0%" y1="0%" x2="100%" y2="0%">
           <stop offset="0%" stopColor="#F59E0B" stopOpacity="0" />
           <stop offset="50%" stopColor="#F59E0B" stopOpacity="0.8" />
@@ -213,69 +204,41 @@ export default function HeroIllustration({ locale }: HeroIllustrationProps) {
       </g></a>
 
       {/* ── Animated data particles ── */}
-      <circle r="3" fill="#F59E0B" filter="url(#glow-amber)" opacity="0.8">
+      <circle r="3" fill="#F59E0B" opacity="0.8">
         <animateMotion dur="2.5s" repeatCount="indefinite" path="M260,220 L260,130" />
         <animate attributeName="opacity" values="0;0.8;0.8;0" dur="2.5s" repeatCount="indefinite" />
       </circle>
-      <circle r="3" fill="#F59E0B" filter="url(#glow-amber)" opacity="0.8">
+      <circle r="3" fill="#F59E0B" opacity="0.8">
         <animateMotion dur="3s" repeatCount="indefinite" path="M300,260 L390,255" />
         <animate attributeName="opacity" values="0;0.8;0.8;0" dur="3s" repeatCount="indefinite" />
       </circle>
-      <circle r="3" fill="#F59E0B" filter="url(#glow-amber)" opacity="0.8">
+      <circle r="3" fill="#F59E0B" opacity="0.8">
         <animateMotion dur="2.8s" repeatCount="indefinite" path="M260,300 L260,390" />
         <animate attributeName="opacity" values="0;0.8;0.8;0" dur="2.8s" repeatCount="indefinite" />
       </circle>
-      <circle r="3" fill="#F59E0B" filter="url(#glow-amber)" opacity="0.8">
+      <circle r="3" fill="#F59E0B" opacity="0.8">
         <animateMotion dur="2.2s" repeatCount="indefinite" path="M220,260 L130,255" />
         <animate attributeName="opacity" values="0;0.8;0.8;0" dur="2.2s" repeatCount="indefinite" />
       </circle>
-      <circle r="2.5" fill="#F59E0B" filter="url(#glow-amber)" opacity="0.6">
+      <circle r="2.5" fill="#F59E0B" opacity="0.6">
         <animateMotion dur="3.5s" repeatCount="indefinite" path="M295,225 L385,140" />
         <animate attributeName="opacity" values="0;0.6;0.6;0" dur="3.5s" repeatCount="indefinite" />
       </circle>
-      <circle r="2.5" fill="#F59E0B" filter="url(#glow-amber)" opacity="0.6">
+      <circle r="2.5" fill="#F59E0B" opacity="0.6">
         <animateMotion dur="4s" repeatCount="indefinite" path="M225,295 L135,375" />
         <animate attributeName="opacity" values="0;0.6;0.6;0" dur="4s" repeatCount="indefinite" />
       </circle>
 
-      {/* ── Return particles ── */}
-      <circle r="2" fill="#ffffff" opacity="0.3">
-        <animateMotion dur="3.5s" repeatCount="indefinite" path="M260,130 L260,220" begin="1.2s" />
-        <animate attributeName="opacity" values="0;0.3;0.3;0" dur="3.5s" repeatCount="indefinite" begin="1.2s" />
-      </circle>
-      <circle r="2" fill="#ffffff" opacity="0.3">
-        <animateMotion dur="4s" repeatCount="indefinite" path="M390,255 L300,260" begin="1.5s" />
-        <animate attributeName="opacity" values="0;0.3;0.3;0" dur="4s" repeatCount="indefinite" begin="1.5s" />
-      </circle>
-      <circle r="2" fill="#ffffff" opacity="0.3">
-        <animateMotion dur="3.8s" repeatCount="indefinite" path="M260,390 L260,300" begin="1s" />
-        <animate attributeName="opacity" values="0;0.3;0.3;0" dur="3.8s" repeatCount="indefinite" begin="1s" />
-      </circle>
-      <circle r="2" fill="#ffffff" opacity="0.3">
-        <animateMotion dur="3.2s" repeatCount="indefinite" path="M130,255 L220,260" begin="0.8s" />
-        <animate attributeName="opacity" values="0;0.3;0.3;0" dur="3.2s" repeatCount="indefinite" begin="0.8s" />
-      </circle>
 
       {/* ── Ambient floating dots ── */}
       <circle cx="180" cy="160" r="1.5" fill="#F59E0B" opacity="0.2">
         <animate attributeName="cy" values="160;150;160" dur="5s" repeatCount="indefinite" />
-        <animate attributeName="opacity" values="0.2;0.4;0.2" dur="5s" repeatCount="indefinite" />
       </circle>
       <circle cx="340" cy="340" r="1.5" fill="#F59E0B" opacity="0.15">
         <animate attributeName="cy" values="340;350;340" dur="6s" repeatCount="indefinite" />
-        <animate attributeName="opacity" values="0.15;0.3;0.15" dur="6s" repeatCount="indefinite" />
-      </circle>
-      <circle cx="150" cy="320" r="1" fill="#ffffff" opacity="0.1">
-        <animate attributeName="cx" values="150;155;150" dur="7s" repeatCount="indefinite" />
       </circle>
       <circle cx="370" cy="180" r="1" fill="#ffffff" opacity="0.1">
         <animate attributeName="cx" values="370;365;370" dur="6s" repeatCount="indefinite" />
-      </circle>
-      <circle cx="320" cy="420" r="1.5" fill="#F59E0B" opacity="0.12">
-        <animate attributeName="opacity" values="0.12;0.25;0.12" dur="4s" repeatCount="indefinite" />
-      </circle>
-      <circle cx="200" cy="420" r="1" fill="#ffffff" opacity="0.08">
-        <animate attributeName="cy" values="420;415;420" dur="5.5s" repeatCount="indefinite" />
       </circle>
     </svg>
   )
