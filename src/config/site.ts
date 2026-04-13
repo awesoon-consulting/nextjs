@@ -10,7 +10,7 @@ export const siteConfig = {
   logoPath: '/images/logo-placeholder.svg',
 
   contact: {
-    email: 'hello@awesoon.com',
+    email: 'ray.rasouli@awesoontechnologies.com',
     privacyEmail: 'privacy@awesoon.com',
     phone: '+1 (555) 000-0000', // PLACEHOLDER
     address: '4609-1480 Howe Street, Vancouver, BC, Canada',
