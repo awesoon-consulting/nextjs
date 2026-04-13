@@ -22,6 +22,7 @@
  * @see /src/hooks/useInView.ts
  */
 
+import { useState, useEffect } from 'react'
 import { useInView } from '@/src/hooks/useInView'
 import type { ReactNode, CSSProperties } from 'react'
 
@@ -65,12 +66,21 @@ export default function AnimateIn({
   threshold = 0.1,
 }: AnimateInProps) {
   const [ref, inView] = useInView({ threshold })
+  const [hydrated, setHydrated] = useState(false)
 
-  const style: CSSProperties = {
-    ...(inView ? visibleStyles : hiddenStyles[variant]),
-    transition: `opacity ${duration}ms ${easing} ${delay}ms, transform ${duration}ms ${easing} ${delay}ms`,
-    willChange: 'opacity, transform',
-  }
+  useEffect(() => {
+    setHydrated(true)
+  }, [])
+
+  // Before hydration: render fully visible (no flash of invisible content)
+  // After hydration: use IntersectionObserver for entrance animations
+  const style: CSSProperties = !hydrated
+    ? visibleStyles
+    : {
+        ...(inView ? visibleStyles : hiddenStyles[variant]),
+        transition: `opacity ${duration}ms ${easing} ${delay}ms, transform ${duration}ms ${easing} ${delay}ms`,
+        willChange: 'opacity, transform',
+      }
 
   return (
     <div ref={ref as React.RefObject<HTMLDivElement>} style={style} className={className}>

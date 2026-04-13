@@ -284,8 +284,16 @@ button {
 
 /* ─────────────────────────────────────────────────────────────
    ANIMATION UTILITY CLASSES
+   Content is visible by default. Animations only apply after
+   the page has loaded (via .loaded class on <html>). This
+   prevents the flash-of-invisible-content on slow devices.
    ───────────────────────────────────────────────────────────── */
-.animate-in {
+/* Animations only apply after JS confirms the page is ready.
+   Without .js-ready, content renders fully visible (no flash). */
+html:not(.js-ready) .animate-in {
+  animation: none !important;
+}
+html.js-ready .animate-in {
   animation-fill-mode: both;
   animation-duration: 600ms;
   animation-timing-function: cubic-bezier(0.16, 1, 0.3, 1);
