@@ -71,11 +71,19 @@ export function trackCTAClick(ctaName: string, location: string): void {
  * Requires NEXT_PUBLIC_GADS_CONVERSION_FORM_SUBMIT and/or
  * NEXT_PUBLIC_GADS_CONVERSION_EMAIL_CLICK set as "AW-XXXXX/YYYYYY".
  */
-function fireGadsConversion(conversionLabel: string | undefined): void {
+function fireGadsConversion(
+  conversionLabel: string | undefined,
+  value?: number,
+  currency?: string
+): void {
   if (!conversionLabel) return
   if (typeof window === 'undefined') return
   if (typeof window.gtag !== 'function') return
-  window.gtag('event', 'conversion', { send_to: conversionLabel })
+  window.gtag('event', 'conversion', {
+    send_to: conversionLabel,
+    ...(value !== undefined && { value }),
+    ...(currency && { currency }),
+  })
 }
 
 /**
@@ -83,7 +91,7 @@ function fireGadsConversion(conversionLabel: string | undefined): void {
  */
 export function trackLeadFormConversion(): void {
   trackFormSubmit('contact-form')
-  fireGadsConversion(process.env.NEXT_PUBLIC_GADS_CONVERSION_FORM_SUBMIT)
+  fireGadsConversion(process.env.NEXT_PUBLIC_GADS_CONVERSION_FORM_SUBMIT, 1.0, 'CAD')
 }
 
 /**
