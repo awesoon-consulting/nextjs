@@ -64,7 +64,7 @@ interface ConsentManagerProps {
 }
 
 export default function ConsentManager({ children }: ConsentManagerProps) {
-  const t = useTranslations()
+  const t = useTranslations('cookie')
   const [consent, setConsentState] = useState<ConsentCategories | null>(() => getConsent())
   const [isModalOpen, setIsModalOpen] = useState(false)
   const [draftConsent, setDraftConsent] = useState<ConsentCategories>({
@@ -130,7 +130,7 @@ export default function ConsentManager({ children }: ConsentManagerProps) {
       <Modal
         isOpen={isModalOpen}
         onClose={() => setIsModalOpen(false)}
-        title={t('cookie.manager.title')}
+        title={t('manager.title')}
         size="md"
       >
         <div className="space-y-6">
@@ -138,14 +138,14 @@ export default function ConsentManager({ children }: ConsentManagerProps) {
           <div className="flex items-center justify-between rounded-lg border border-neutral-200 bg-neutral-50 p-4 dark:border-white/10 dark:bg-secondary/45">
             <div>
               <p className="text-sm font-semibold text-text-primary">
-                {t('cookie.manager.categories.necessary.title')}
+                {t('manager.categories.necessary.title')}
               </p>
               <p className="text-sm text-text-muted mt-0.5">
-                {t('cookie.manager.categories.necessary.description')}
+                {t('manager.categories.necessary.description')}
               </p>
             </div>
             <span className="text-xs font-medium text-success bg-success-light px-2 py-1 rounded-full flex-shrink-0 ml-4">
-              {t('cookie.manager.categories.necessary.alwaysOn')}
+              {t('manager.categories.necessary.alwaysOn')}
             </span>
           </div>
 
@@ -154,10 +154,10 @@ export default function ConsentManager({ children }: ConsentManagerProps) {
             <div className="flex items-start justify-between gap-4">
               <div>
                 <p className="text-sm font-semibold text-text-primary">
-                  {t('cookie.manager.categories.analytics.title')}
+                  {t('manager.categories.analytics.title')}
                 </p>
                 <p className="text-sm text-text-muted mt-0.5">
-                  {t('cookie.manager.categories.analytics.description')}
+                  {t('manager.categories.analytics.description')}
                 </p>
               </div>
               <Checkbox
@@ -166,7 +166,7 @@ export default function ConsentManager({ children }: ConsentManagerProps) {
                 onChange={(e) =>
                   setDraftConsent((prev) => ({ ...prev, analytics: e.target.checked }))
                 }
-                aria-label={t('cookie.manager.categories.analytics.title')}
+                aria-label={t('manager.categories.analytics.title')}
                 className="flex-shrink-0 mt-0.5"
               />
             </div>
@@ -177,10 +177,10 @@ export default function ConsentManager({ children }: ConsentManagerProps) {
             <div className="flex items-start justify-between gap-4">
               <div>
                 <p className="text-sm font-semibold text-text-primary">
-                  {t('cookie.manager.categories.marketing.title')}
+                  {t('manager.categories.marketing.title')}
                 </p>
                 <p className="text-sm text-text-muted mt-0.5">
-                  {t('cookie.manager.categories.marketing.description')}
+                  {t('manager.categories.marketing.description')}
                 </p>
               </div>
               <Checkbox
@@ -189,14 +189,14 @@ export default function ConsentManager({ children }: ConsentManagerProps) {
                 onChange={(e) =>
                   setDraftConsent((prev) => ({ ...prev, marketing: e.target.checked }))
                 }
-                aria-label={t('cookie.manager.categories.marketing.title')}
+                aria-label={t('manager.categories.marketing.title')}
                 className="flex-shrink-0 mt-0.5"
               />
             </div>
           </div>
 
           <Button variant="primary" size="md" fullWidth onClick={savePreferences}>
-            {t('cookie.manager.save')}
+            {t('manager.save')}
           </Button>
         </div>
       </Modal>

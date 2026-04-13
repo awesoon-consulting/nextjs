@@ -9,7 +9,7 @@ import HeroIllustration from '@/src/components/ui/HeroIllustration'
  * Right column (top on mobile): staggered portrait pair with fade+slide animation.
  */
 export default function Hero() {
-  const t = useTranslations()
+  const t = useTranslations('hero')
   const locale = useLocale()
 
   return (
@@ -61,28 +61,28 @@ export default function Hero() {
             <div className="animate-in anim-hero-badge delay-0 inline-flex items-center gap-2 rounded-full px-4 py-1.5 mb-8 bg-white/94 border border-black/8 shadow-[0_16px_40px_-24px_rgba(10,10,10,0.35)] dark:bg-white/5 dark:border-white/10 dark:shadow-none">
               <span className="h-1.5 w-1.5 rounded-full bg-accent" aria-hidden="true" />
               <span className="text-sm font-medium tracking-wide text-text-secondary dark:text-white/60">
-                {t('hero.trustBadge')}
+                {t('trustBadge')}
               </span>
             </div>
 
             {/* Headline */}
             <h1 className="animate-in anim-slide-up delay-100 mb-6 font-heading text-5xl font-bold leading-[1.05] tracking-tight text-text-primary dark:text-white sm:text-6xl lg:text-6xl xl:text-7xl">
-              {t('hero.headline1')}{' '}
-              <span className="text-accent dark:text-white">{t('hero.headlineAccent')}</span>
+              {t('headline1')}{' '}
+              <span className="text-accent dark:text-white">{t('headlineAccent')}</span>
               <br />
-              {t('hero.headline2')}
+              {t('headline2')}
             </h1>
 
             {/* Subtext */}
             <p className="animate-in anim-slide-up delay-200 mb-10 max-w-xl text-lg leading-relaxed text-text-secondary dark:text-white/55 sm:text-xl">
-              {t('hero.subtext')}
+              {t('subtext')}
             </p>
 
             {/* CTAs */}
             <div className="animate-in anim-slide-up delay-300 flex flex-col sm:flex-row gap-4">
               <Link href={`/${locale}/contact`}>
                 <Button variant="primary" size="lg" className="group">
-                  {t('hero.primaryCta')}
+                  {t('primaryCta')}
                   <svg
                     className="w-5 h-5 transition-transform duration-200 group-hover:translate-x-1"
                     fill="none"
@@ -101,7 +101,7 @@ export default function Hero() {
               </Link>
               <Link href={`/${locale}/solutions`}>
                 <Button variant="outline" size="lg">
-                  {t('hero.secondaryCta')}
+                  {t('secondaryCta')}
                 </Button>
               </Link>
             </div>
@@ -112,9 +112,9 @@ export default function Hero() {
               aria-label="Trust signals"
             >
               {[
-                { stat: '48h', label: t('hero.trustSignals.auditTurnaround') },
-                { stat: '100%', label: t('hero.trustSignals.seniorDelivery') },
-                { stat: '0', label: t('hero.trustSignals.noChatbots') },
+                { stat: '48h', label: t('trustSignals.auditTurnaround') },
+                { stat: '100%', label: t('trustSignals.seniorDelivery') },
+                { stat: '0', label: t('trustSignals.noChatbots') },
               ].map(({ stat, label }) => (
                 <div key={stat} className="flex items-center gap-3">
                   <span className="font-heading text-2xl font-bold text-text-primary dark:text-white">

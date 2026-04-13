@@ -11,7 +11,7 @@ interface CookieBannerProps {
 }
 
 export default function CookieBanner({ onManage }: CookieBannerProps) {
-  const t = useTranslations()
+  const t = useTranslations('cookie')
   const locale = useLocale()
   const [isVisible, setIsVisible] = useState(false)
 
@@ -49,15 +49,15 @@ export default function CookieBanner({ onManage }: CookieBannerProps) {
         <div className="flex flex-col sm:flex-row sm:items-start gap-4">
           <div className="flex-1 min-w-0">
             <p className="mb-1 font-heading text-base font-semibold text-text-primary dark:text-text-inverse">
-              {t('cookie.banner.title')}
+              {t('banner.title')}
             </p>
             <p className="text-sm leading-relaxed text-text-secondary dark:text-neutral-400">
-              {t('cookie.banner.description')}{' '}
+              {t('banner.description')}{' '}
               <Link
                 href={`/${locale}/cookies`}
                 className="text-accent underline hover:no-underline focus:outline-none focus-visible:ring-2 focus-visible:ring-accent rounded"
               >
-                {t('cookie.banner.learnMore')}
+                {t('banner.learnMore')}
               </Link>
             </p>
           </div>
@@ -68,13 +68,13 @@ export default function CookieBanner({ onManage }: CookieBannerProps) {
               onClick={onManage}
               className="text-text-secondary hover:text-text-primary dark:text-neutral-300 dark:hover:text-text-inverse"
             >
-              {t('cookie.banner.manage')}
+              {t('banner.manage')}
             </Button>
             <Button variant="outline" size="sm" onClick={rejectAll}>
-              {t('cookie.banner.rejectAll')}
+              {t('banner.rejectAll')}
             </Button>
             <Button variant="primary" size="sm" onClick={acceptAll}>
-              {t('cookie.banner.acceptAll')}
+              {t('banner.acceptAll')}
             </Button>
           </div>
         </div>
