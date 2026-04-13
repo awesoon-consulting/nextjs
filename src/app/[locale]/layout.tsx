@@ -82,12 +82,21 @@ export async function generateMetadata({
         'Independent operations consulting for growing manufacturing, distribution, and industrial companies.',
       locale: locale,
       alternateLocale: siteConfig.locales.filter((l) => l !== locale),
+      images: [
+        {
+          url: '/images/og-image.png',
+          width: 1200,
+          height: 630,
+          alt: `${siteConfig.name} — ${siteConfig.tagline}`,
+        },
+      ],
     },
     twitter: {
       card: 'summary_large_image',
       title: `${siteConfig.name},  ${siteConfig.tagline}`,
       description:
         'Independent operations consulting for growing manufacturing, distribution, and industrial companies.',
+      images: ['/images/og-image.png'],
     },
     robots: {
       index: true,
