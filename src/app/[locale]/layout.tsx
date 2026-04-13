@@ -130,17 +130,6 @@ export default async function LocaleLayout({ children, params }: LocaleLayoutPro
             __html: `(function(){try{var d=document.documentElement;var t=localStorage.getItem('awesoon_theme');if(t==='dark'||(t!=='light'&&window.matchMedia('(prefers-color-scheme: dark)').matches)){d.classList.add('dark')}d.classList.add('js-ready')}catch(e){}})()`,
           }}
         />
-        {/* Single gtag loader for both Google Ads and GA4 */}
-        {(gadsId || gaMeasurementId) && (
-          <>
-            <script async src={`https://www.googletagmanager.com/gtag/js?id=${gadsId || gaMeasurementId}`} />
-            <script
-              dangerouslySetInnerHTML={{
-                __html: `window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());${gadsId ? `gtag('config','${gadsId}');` : ''}${gaMeasurementId ? `gtag('config','${gaMeasurementId}');` : ''}`,
-              }}
-            />
-          </>
-        )}
       </head>
       <body className="font-body bg-surface dark:bg-primary text-text-primary dark:text-white antialiased transition-colors duration-200">
         <NextIntlClientProvider messages={messages} locale={locale}>
@@ -169,6 +158,17 @@ export default async function LocaleLayout({ children, params }: LocaleLayoutPro
           </ThemeProvider>
         </NextIntlClientProvider>
 
+        {/* gtag loaded at end of body so it never blocks page render */}
+        {(gadsId || gaMeasurementId) && (
+          <>
+            <script async src={`https://www.googletagmanager.com/gtag/js?id=${gadsId || gaMeasurementId}`} />
+            <script
+              dangerouslySetInnerHTML={{
+                __html: `window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());${gadsId ? `gtag('config','${gadsId}');` : ''}${gaMeasurementId ? `gtag('config','${gaMeasurementId}');` : ''}`,
+              }}
+            />
+          </>
+        )}
       </body>
     </html>
   )
