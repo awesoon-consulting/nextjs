@@ -121,9 +121,6 @@ export default async function LocaleLayout({ children, params }: LocaleLayoutPro
   return (
     <html lang={locale} className={`${sora.variable} ${inter.variable}`} suppressHydrationWarning>
       <head>
-        {/* Preconnect to Google Fonts */}
-        <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
         {/* Anti-FOUC: apply stored theme class before first paint */}
         <script
           dangerouslySetInnerHTML={{
