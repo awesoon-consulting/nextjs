@@ -1,7 +1,7 @@
 import type { Metadata } from 'next'
 import { notFound } from 'next/navigation'
 import Link from 'next/link'
-import { getTranslations } from 'next-intl/server'
+import { getTranslations, setRequestLocale } from 'next-intl/server'
 import { getAllSolutionSlugs, getLocalizedSolutionBySlug } from '@/src/data/solutions'
 import { getInsightBySlug } from '@/src/data/insights'
 import { siteConfig } from '@/src/config/site'
@@ -35,6 +35,7 @@ export async function generateMetadata({ params }: SolutionPageProps): Promise<M
 
 export default async function SolutionPage({ params }: SolutionPageProps) {
   const { locale, slug } = await params
+  setRequestLocale(locale)
   const solution = getLocalizedSolutionBySlug(slug, locale)
 
   if (!solution) notFound()

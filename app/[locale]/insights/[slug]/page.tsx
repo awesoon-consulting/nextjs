@@ -1,4 +1,5 @@
 import type { Metadata } from 'next'
+import { setRequestLocale } from 'next-intl/server'
 import { notFound } from 'next/navigation'
 import Link from 'next/link'
 import { getInsightBySlug, getAllInsightSlugs } from '@/src/data/insights'
@@ -31,6 +32,7 @@ export async function generateMetadata({ params }: InsightPageProps): Promise<Me
 
 export default async function InsightPage({ params }: InsightPageProps) {
   const { locale, slug } = await params
+  setRequestLocale(locale)
   const post = getInsightBySlug(slug)
 
   if (!post) notFound()

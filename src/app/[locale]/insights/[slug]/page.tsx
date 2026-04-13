@@ -1,7 +1,7 @@
 import type { Metadata } from 'next'
 import { notFound } from 'next/navigation'
 import Link from 'next/link'
-import { getTranslations } from 'next-intl/server'
+import { getTranslations, setRequestLocale } from 'next-intl/server'
 import { getInsightBySlug, getAllInsightSlugs } from '@/src/data/insights'
 import { getSolutionBySlug } from '@/src/data/solutions'
 import { siteConfig } from '@/src/config/site'
@@ -35,6 +35,7 @@ export async function generateMetadata({ params }: InsightPageProps): Promise<Me
 
 export default async function InsightPage({ params }: InsightPageProps) {
   const { locale, slug } = await params
+  setRequestLocale(locale)
   const post = getInsightBySlug(slug)
   const tInsights = await getTranslations({ locale, namespace: 'insights' })
   const tPage = await getTranslations({ locale, namespace: 'insightPage' })

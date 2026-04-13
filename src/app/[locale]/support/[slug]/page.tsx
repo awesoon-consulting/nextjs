@@ -1,7 +1,7 @@
 import type { Metadata } from 'next'
 import { notFound } from 'next/navigation'
 import Link from 'next/link'
-import { getTranslations } from 'next-intl/server'
+import { getTranslations, setRequestLocale } from 'next-intl/server'
 import { siteConfig } from '@/src/config/site'
 import { getLocalizedSupportBySlug, getAllSupportSlugs } from '@/src/data/support'
 import { getLocalizedSolutionBySlug } from '@/src/data/solutions'
@@ -36,6 +36,7 @@ export async function generateMetadata({
 
 export default async function SupportDetailPage({ params }: SupportDetailPageProps) {
   const { locale, slug } = await params
+  setRequestLocale(locale)
   const supportItem = getLocalizedSupportBySlug(slug, locale)
 
   if (!supportItem) notFound()

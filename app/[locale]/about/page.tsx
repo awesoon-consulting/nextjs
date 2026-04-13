@@ -1,5 +1,5 @@
 import type { Metadata } from 'next'
-import { getTranslations } from 'next-intl/server'
+import { getTranslations, setRequestLocale } from 'next-intl/server'
 import TeamGrid from '@/src/components/sections/TeamGrid'
 import CTABlock from '@/src/components/sections/CTABlock'
 import AnimateIn from '@/src/components/ui/AnimateIn'
@@ -24,6 +24,7 @@ export default async function AboutPage({
   params: Promise<{ locale: string }>
 }) {
   const { locale } = await params
+  setRequestLocale(locale)
   const t = await getTranslations({ locale, namespace: 'about' })
 
   const values = [0, 1, 2, 3] as const

@@ -1,7 +1,7 @@
 import type { Metadata } from 'next'
 import { Sora, Inter } from 'next/font/google'
 import { NextIntlClientProvider } from 'next-intl'
-import { getMessages } from 'next-intl/server'
+import { getMessages, setRequestLocale } from 'next-intl/server'
 import ConsentManager from '@/src/components/layout/ConsentManager'
 import { ThemeProvider } from '@/src/components/layout/ThemeProvider'
 import Navbar from '@/src/components/layout/Navbar'
@@ -112,6 +112,9 @@ export async function generateMetadata({
   }
 }
 
+// Cache rendered pages for 1 hour, serve stale while revalidating
+export const revalidate = 3600
+
 export function generateStaticParams() {
   return siteConfig.locales.map((locale) => ({ locale }))
 }
@@ -123,6 +126,7 @@ interface LocaleLayoutProps {
 
 export default async function LocaleLayout({ children, params }: LocaleLayoutProps) {
   const { locale } = await params
+  setRequestLocale(locale)
   const messages = await getMessages()
   const gaMeasurementId = process.env.NEXT_PUBLIC_GA_MEASUREMENT_ID
   const gadsId = process.env.NEXT_PUBLIC_GADS_ID

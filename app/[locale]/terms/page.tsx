@@ -1,5 +1,5 @@
 import type { Metadata } from 'next'
-import { getTranslations } from 'next-intl/server'
+import { getTranslations, setRequestLocale } from 'next-intl/server'
 import { siteConfig } from '@/src/config/site'
 import AnimateIn from '@/src/components/ui/AnimateIn'
 
@@ -19,6 +19,7 @@ export async function generateMetadata({
 
 export default async function TermsPage({ params }: { params: Promise<{ locale: string }> }) {
   const { locale } = await params
+  setRequestLocale(locale)
   const t = await getTranslations({ locale, namespace: 'terms' })
   const sectionClass =
     'rounded-2xl border border-neutral-200 bg-white p-6 shadow-sm sm:p-8 dark:border-white/10 dark:bg-primary dark:shadow-none'
