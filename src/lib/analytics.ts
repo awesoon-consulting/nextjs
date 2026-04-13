@@ -91,7 +91,7 @@ function fireGadsConversion(
  */
 export function trackLeadFormConversion(): void {
   trackFormSubmit('contact-form')
-  fireGadsConversion(process.env.NEXT_PUBLIC_GADS_CONVERSION_FORM_SUBMIT, 1.0, 'CAD')
+  fireGadsConversion(process.env.NEXT_PUBLIC_GADS_CONVERSION_FORM_SUBMIT, 500, 'CAD')
 }
 
 /**
@@ -99,5 +99,5 @@ export function trackLeadFormConversion(): void {
  */
 export function trackEmailClick(): void {
   trackEvent('email_click', { location: 'footer' })
-  fireGadsConversion(process.env.NEXT_PUBLIC_GADS_CONVERSION_EMAIL_CLICK)
+  fireGadsConversion(process.env.NEXT_PUBLIC_GADS_CONVERSION_EMAIL_CLICK, 50, 'CAD')
 }
