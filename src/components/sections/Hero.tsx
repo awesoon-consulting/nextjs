@@ -58,7 +58,7 @@ export default function Hero() {
           {/* ── Left: copy ── */}
           <div className="w-full lg:max-w-[52%]">
             {/* Badge */}
-            <div className="animate-in anim-hero-badge delay-0 inline-flex items-center gap-2 rounded-full px-4 py-1.5 mb-8 bg-white/94 border border-black/8 shadow-[0_16px_40px_-24px_rgba(10,10,10,0.35)] dark:bg-white/5 dark:border-white/10 dark:shadow-none">
+            <div className="inline-flex items-center gap-2 rounded-full px-4 py-1.5 mb-8 bg-white/94 border border-black/8 shadow-[0_16px_40px_-24px_rgba(10,10,10,0.35)] dark:bg-white/5 dark:border-white/10 dark:shadow-none">
               <span className="h-1.5 w-1.5 rounded-full bg-accent" aria-hidden="true" />
               <span className="text-sm font-medium tracking-wide text-text-secondary dark:text-white/60">
                 {t('trustBadge')}
@@ -66,7 +66,7 @@ export default function Hero() {
             </div>
 
             {/* Headline */}
-            <h1 className="animate-in anim-slide-up delay-100 mb-6 font-heading text-5xl font-bold leading-[1.05] tracking-tight text-text-primary dark:text-white sm:text-6xl lg:text-6xl xl:text-7xl">
+            <h1 className="mb-6 font-heading text-5xl font-bold leading-[1.05] tracking-tight text-text-primary dark:text-white sm:text-6xl lg:text-6xl xl:text-7xl">
               {t('headline1')}{' '}
               <span className="text-accent dark:text-white">{t('headlineAccent')}</span>
               <br />
@@ -74,12 +74,12 @@ export default function Hero() {
             </h1>
 
             {/* Subtext */}
-            <p className="animate-in anim-slide-up delay-200 mb-10 max-w-xl text-lg leading-relaxed text-text-secondary dark:text-white/55 sm:text-xl">
+            <p className="mb-10 max-w-xl text-lg leading-relaxed text-text-secondary dark:text-white/55 sm:text-xl">
               {t('subtext')}
             </p>
 
             {/* CTAs */}
-            <div className="animate-in anim-slide-up delay-300 flex flex-col sm:flex-row gap-4">
+            <div className="flex flex-col sm:flex-row gap-4">
               <Link href={`/${locale}/contact`}>
                 <Button variant="primary" size="lg" className="group">
                   {t('primaryCta')}
@@ -108,7 +108,7 @@ export default function Hero() {
 
             {/* Trust signals */}
             <div
-              className="animate-in anim-fade-in delay-500 mt-12 flex flex-wrap gap-6 border-t border-neutral-200 pt-8 dark:border-white/10 sm:gap-10"
+              className="mt-12 flex flex-wrap gap-6 border-t border-neutral-200 pt-8 dark:border-white/10 sm:gap-10"
               aria-label="Trust signals"
             >
               {[
@@ -130,7 +130,7 @@ export default function Hero() {
 
           {/* ── Right: animated operations illustration ── */}
           <div
-            className="animate-in anim-fade-in delay-300 w-full lg:flex-1 flex justify-center lg:justify-end"
+            className="w-full lg:flex-1 flex justify-center lg:justify-end"
           >
             <div className="relative w-[360px] h-[360px] sm:w-[460px] sm:h-[460px] lg:w-[540px] lg:h-[540px]">
               <HeroIllustration locale={locale} />
