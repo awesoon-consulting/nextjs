@@ -119,6 +119,7 @@ export default async function LocaleLayout({ children, params }: LocaleLayoutPro
   const { locale } = await params
   const messages = await getMessages()
   const gaMeasurementId = process.env.NEXT_PUBLIC_GA_MEASUREMENT_ID
+  const gadsId = process.env.NEXT_PUBLIC_GADS_ID
 
   return (
     <html lang={locale} className={`${sora.variable} ${inter.variable}`} suppressHydrationWarning>
@@ -162,6 +163,18 @@ export default async function LocaleLayout({ children, params }: LocaleLayoutPro
 
         {/* GA4,  loaded after body, consent mode handled by ConsentManager */}
         {gaMeasurementId && <GoogleAnalytics gaId={gaMeasurementId} />}
+
+        {/* Google Ads tag */}
+        {gadsId && (
+          <>
+            <script async src={`https://www.googletagmanager.com/gtag/js?id=${gadsId}`} />
+            <script
+              dangerouslySetInnerHTML={{
+                __html: `window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','${gadsId}');`,
+              }}
+            />
+          </>
+        )}
       </body>
     </html>
   )
