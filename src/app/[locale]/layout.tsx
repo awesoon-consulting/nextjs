@@ -1,5 +1,4 @@
 import type { Metadata } from 'next'
-import Script from 'next/script'
 import { Sora, Inter } from 'next/font/google'
 import { NextIntlClientProvider } from 'next-intl'
 import { getMessages, setRequestLocale } from 'next-intl/server'
@@ -141,6 +140,12 @@ export default async function LocaleLayout({ children, params }: LocaleLayoutPro
             __html: `(function(){try{var d=document.documentElement;var t=localStorage.getItem('awesoon_theme');if(t==='dark'||(t!=='light'&&window.matchMedia('(prefers-color-scheme: dark)').matches)){d.classList.add('dark')}d.classList.add('js-ready')}catch(e){}})()`,
           }}
         />
+        {/* Contentsquare */}
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `(function(){var s=document.createElement('script');s.async=true;s.src='https://t.contentsquare.net/uxa/66f129fd9d3e4.js';document.head.appendChild(s);})();`,
+          }}
+        />
       </head>
       <body className="font-body bg-surface dark:bg-primary text-text-primary dark:text-white antialiased transition-colors duration-200">
         <NextIntlClientProvider messages={messages} locale={locale}>
@@ -168,11 +173,6 @@ export default async function LocaleLayout({ children, params }: LocaleLayoutPro
             </ConsentManager>
           </ThemeProvider>
         </NextIntlClientProvider>
-
-        <Script
-          src="https://t.contentsquare.net/uxa/66f129fd9d3e4.js"
-          strategy="afterInteractive"
-        />
 
         {/* gtag loaded at end of body so it never blocks page render */}
         {(gadsId || gaMeasurementId) && (
