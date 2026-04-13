@@ -1,8 +1,7 @@
 import type { Metadata } from 'next'
 import { Sora, Inter } from 'next/font/google'
-import { headers } from 'next/headers'
 import { NextIntlClientProvider } from 'next-intl'
-import { getMessages, getLocale } from 'next-intl/server'
+import { getMessages } from 'next-intl/server'
 import { GoogleAnalytics } from '@next/third-parties/google'
 import ConsentManager from '@/src/components/layout/ConsentManager'
 import { ThemeProvider } from '@/src/components/layout/ThemeProvider'
@@ -34,16 +33,13 @@ const inter = Inter({
   weight: ['400', '500', '600', '700'],
 })
 
-export async function generateMetadata(): Promise<Metadata> {
-  const locale = await getLocale()
-  const headersList = await headers()
-  const host = headersList.get('x-forwarded-host') ?? headersList.get('host')
-  const protocol =
-    headersList.get('x-forwarded-proto') ?? (host?.includes('localhost') ? 'http' : 'https')
-  const configuredBaseUrl = process.env.NEXT_PUBLIC_SITE_URL ?? siteConfig.url
-  const configuredHost = new URL(configuredBaseUrl).host
-  const requestBaseUrl = host ? `${protocol}://${host}` : configuredBaseUrl
-  const baseUrl = host && host !== configuredHost ? requestBaseUrl : configuredBaseUrl
+export async function generateMetadata({
+  params,
+}: {
+  params: Promise<{ locale: string }>
+}): Promise<Metadata> {
+  const { locale } = await params
+  const baseUrl = process.env.NEXT_PUBLIC_SITE_URL ?? siteConfig.url
 
   return {
     title: {
@@ -51,19 +47,21 @@ export async function generateMetadata(): Promise<Metadata> {
       template: `%s | ${siteConfig.name}`,
     },
     description:
-      'B2B operations consulting and support for mid-market manufacturing, distribution, and industrial companies. ERP, CRM, ecommerce, custom API development, system integrations, and post-launch support.',
+      'Independent operations consulting for growing manufacturing, distribution, and industrial companies. ERP, CRM, system integration, warehouse automation, and post-launch support.',
     keywords: [
-      'B2B operations consulting',
+      'operations consulting',
       'ERP implementation',
       'ERP support',
+      'CRM implementation',
       'CRM support',
       'system integration',
+      'warehouse automation',
       'custom API development',
       'ecommerce development',
       'post-launch support',
-      'mid-market operations',
       'manufacturing consulting',
       'distribution operations',
+      'Vancouver operations consulting',
     ],
     authors: [{ name: siteConfig.name }],
     creator: siteConfig.name,
@@ -82,7 +80,7 @@ export async function generateMetadata(): Promise<Metadata> {
       siteName: siteConfig.name,
       title: `${siteConfig.name},  ${siteConfig.tagline}`,
       description:
-        'B2B operations consulting and support for mid-market manufacturing and distribution companies.',
+        'Independent operations consulting for growing manufacturing, distribution, and industrial companies.',
       locale: locale,
       alternateLocale: siteConfig.locales.filter((l) => l !== locale),
     },
@@ -90,7 +88,7 @@ export async function generateMetadata(): Promise<Metadata> {
       card: 'summary_large_image',
       title: `${siteConfig.name},  ${siteConfig.tagline}`,
       description:
-        'B2B operations consulting and support for mid-market manufacturing and distribution companies.',
+        'Independent operations consulting for growing manufacturing, distribution, and industrial companies.',
     },
     robots: {
       index: true,
