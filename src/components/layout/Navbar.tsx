@@ -111,6 +111,7 @@ export default function Navbar() {
             className="flex items-center gap-2 rounded focus:outline-none focus-visible:ring-2 focus-visible:ring-accent"
             aria-label={`${siteConfig.name},  Home`}
           >
+            <img src="/images/retina-logo.png" alt="" width={25} height={25} className="flex-shrink-0" aria-hidden="true" />
             <span className="font-heading text-xl font-bold tracking-tight text-text-primary dark:text-white">
               {siteConfig.name}
             </span>
@@ -243,7 +244,8 @@ export default function Navbar() {
         >
           {/* Drawer header */}
           <div className="flex items-center justify-between border-b border-neutral-200/80 px-5 py-4 dark:border-white/10">
-            <span className="font-heading text-lg font-bold tracking-tight text-text-primary dark:text-white">
+            <span className="flex items-center gap-2 font-heading text-lg font-bold tracking-tight text-text-primary dark:text-white">
+              <img src="/images/retina-logo.png" alt="" width={22} height={22} aria-hidden="true" />
               {siteConfig.name}<span className="text-accent dark:text-white/50">.</span>
             </span>
             <button
