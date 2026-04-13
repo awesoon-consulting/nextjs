@@ -1,4 +1,5 @@
 import type { Metadata } from 'next'
+import Script from 'next/script'
 import { Sora, Inter } from 'next/font/google'
 import { NextIntlClientProvider } from 'next-intl'
 import { getMessages, setRequestLocale } from 'next-intl/server'
@@ -168,7 +169,10 @@ export default async function LocaleLayout({ children, params }: LocaleLayoutPro
           </ThemeProvider>
         </NextIntlClientProvider>
 
-        <script async src="https://t.contentsquare.net/uxa/66f129fd9d3e4.js" />
+        <Script
+          src="https://t.contentsquare.net/uxa/66f129fd9d3e4.js"
+          strategy="afterInteractive"
+        />
 
         {/* gtag loaded at end of body so it never blocks page render */}
         {(gadsId || gaMeasurementId) && (
