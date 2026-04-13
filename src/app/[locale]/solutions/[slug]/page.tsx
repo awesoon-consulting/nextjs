@@ -8,6 +8,7 @@ import { getPlatformsForSolution } from '@/src/data/platforms'
 import { siteConfig } from '@/src/config/site'
 import CTABlock from '@/src/components/sections/CTABlock'
 import PlatformStack from '@/src/components/sections/PlatformStack'
+import PlatformHeroChips from '@/src/components/sections/PlatformHeroChips'
 import Badge from '@/src/components/ui/Badge'
 import Button from '@/src/components/ui/Button'
 
@@ -85,6 +86,9 @@ export default async function SolutionPage({ params }: SolutionPageProps) {
               {solution.ctaText}
             </Button>
           </Link>
+          {platforms.length > 0 && (
+            <PlatformHeroChips platforms={platforms} scrollTargetId="platforms-section" />
+          )}
         </div>
       </section>
 
@@ -133,12 +137,14 @@ export default async function SolutionPage({ params }: SolutionPageProps) {
               </div>
 
               {platforms.length > 0 && (
-                <PlatformStack
-                  platforms={platforms}
-                  heading={t('solutionPage.platformsTitle')}
-                  subheading={t('solutionPage.platformsSubtitle')}
-                  tapHint={t('solutionPage.platformsTapHint')}
-                />
+                <div id="platforms-section" className="scroll-mt-24">
+                  <PlatformStack
+                    platforms={platforms}
+                    heading={t('solutionPage.platformsTitle')}
+                    subheading={t('solutionPage.platformsSubtitle')}
+                    tapHint={t('solutionPage.platformsTapHint')}
+                  />
+                </div>
               )}
 
               {/* Outcomes */}

@@ -287,6 +287,22 @@ button {
   100% { transform: translateX(-50%); }
 }
 
+/* Detail card content swap animation */
+@keyframes platform-detail-in {
+  0% {
+    opacity: 0;
+    transform: translateY(6px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.platform-detail-anim {
+  animation: platform-detail-in 350ms ease-out;
+}
+
 .animate-marquee {
   animation: marquee 40s linear infinite;
   will-change: transform;

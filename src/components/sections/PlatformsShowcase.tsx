@@ -144,12 +144,18 @@ export default function PlatformsShowcase() {
 
         {/* Detail strip */}
         <div
-          key={`${activeCat}-${activeIdx}`}
-          className="mb-5 rounded-2xl border border-neutral-200 bg-white p-6 shadow-md dark:border-white/10 dark:bg-white/[0.03]"
+          className="mb-5 rounded-2xl border border-neutral-200 bg-white shadow-md dark:border-white/10 dark:bg-white/[0.03] overflow-hidden"
           aria-live="polite"
         >
+          <div key={`${activeCat}-${activeIdx}`} className="p-6 platform-detail-anim">
           <div className="flex items-center gap-5 flex-wrap sm:flex-nowrap">
-            <div className="flex-shrink-0 flex h-20 w-20 items-center justify-center rounded-2xl bg-white border-2 border-neutral-200 shadow-sm dark:bg-white dark:border-white/20">
+            <a
+              href={platform.url}
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label={`Visit ${platform.name} website`}
+              className="flex-shrink-0 flex h-20 w-20 items-center justify-center rounded-2xl bg-white border-2 border-neutral-200 shadow-sm dark:bg-white dark:border-white/20 transition-all duration-300 hover:scale-105 hover:shadow-md"
+            >
               {/* eslint-disable-next-line @next/next/no-img-element */}
               <img
                 src={`/images/platforms/${platform.slug}.svg`}
@@ -157,7 +163,7 @@ export default function PlatformsShowcase() {
                 style={{ height: '44px', width: 'auto', maxWidth: '64px' }}
                 className="object-contain"
               />
-            </div>
+            </a>
             <div className="flex-1 min-w-0">
               <div className="flex items-center gap-3 mb-2 flex-wrap">
                 <h3 className="font-heading font-bold text-xl text-text-primary dark:text-white">
@@ -180,6 +186,7 @@ export default function PlatformsShowcase() {
               </p>
             </div>
           </div>
+          </div>
         </div>
 
         {/* Logo grid: 4 columns, prominent */}
@@ -190,12 +197,19 @@ export default function PlatformsShowcase() {
               <button
                 key={p.slug + i}
                 type="button"
-                onClick={() => setActiveIdx(i)}
+                onClick={() => {
+                  if (isActive) {
+                    window.open(p.url, '_blank', 'noopener,noreferrer')
+                  } else {
+                    setActiveIdx(i)
+                  }
+                }}
                 onMouseEnter={() => setActiveIdx(i)}
                 aria-pressed={isActive}
+                aria-label={isActive ? `Open ${p.name} website` : `Select ${p.name}`}
                 className={[
-                  'group relative flex flex-col items-center justify-center gap-3 py-7 px-3',
-                  'rounded-2xl border-2 transition-all duration-200',
+                  'group relative flex flex-col items-center justify-center gap-3 py-7 px-3 cursor-pointer',
+                  'rounded-2xl border-2 transition-all duration-300 ease-out',
                   'focus:outline-none focus-visible:ring-2 focus-visible:ring-accent',
                   isActive
                     ? 'border-accent bg-accent/[0.06] shadow-lg scale-[1.02] dark:border-accent dark:bg-accent/[0.08]'
