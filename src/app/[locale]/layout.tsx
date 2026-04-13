@@ -133,6 +133,17 @@ export default async function LocaleLayout({ children, params }: LocaleLayoutPro
             __html: `(function(){try{var t=localStorage.getItem('awesoon_theme');var d=document.documentElement;if(t==='dark'||(t!=='light'&&window.matchMedia('(prefers-color-scheme: dark)').matches)){d.classList.add('dark')}}catch(e){}})()`,
           }}
         />
+        {/* Google Ads tag - loaded in head so gtag is available for conversion events */}
+        {gadsId && (
+          <>
+            <script async src={`https://www.googletagmanager.com/gtag/js?id=${gadsId}`} />
+            <script
+              dangerouslySetInnerHTML={{
+                __html: `window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','${gadsId}');`,
+              }}
+            />
+          </>
+        )}
       </head>
       <body className="font-body bg-surface dark:bg-primary text-text-primary dark:text-white antialiased transition-colors duration-200">
         <NextIntlClientProvider messages={messages} locale={locale}>
@@ -163,18 +174,6 @@ export default async function LocaleLayout({ children, params }: LocaleLayoutPro
 
         {/* GA4,  loaded after body, consent mode handled by ConsentManager */}
         {gaMeasurementId && <GoogleAnalytics gaId={gaMeasurementId} />}
-
-        {/* Google Ads tag */}
-        {gadsId && (
-          <>
-            <script async src={`https://www.googletagmanager.com/gtag/js?id=${gadsId}`} />
-            <script
-              dangerouslySetInnerHTML={{
-                __html: `window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','${gadsId}');`,
-              }}
-            />
-          </>
-        )}
       </body>
     </html>
   )
