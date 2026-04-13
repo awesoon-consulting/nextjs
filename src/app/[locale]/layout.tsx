@@ -2,7 +2,6 @@ import type { Metadata } from 'next'
 import { Sora, Inter } from 'next/font/google'
 import { NextIntlClientProvider } from 'next-intl'
 import { getMessages } from 'next-intl/server'
-import { GoogleAnalytics } from '@next/third-parties/google'
 import ConsentManager from '@/src/components/layout/ConsentManager'
 import { ThemeProvider } from '@/src/components/layout/ThemeProvider'
 import Navbar from '@/src/components/layout/Navbar'
@@ -131,13 +130,13 @@ export default async function LocaleLayout({ children, params }: LocaleLayoutPro
             __html: `(function(){try{var t=localStorage.getItem('awesoon_theme');var d=document.documentElement;if(t==='dark'||(t!=='light'&&window.matchMedia('(prefers-color-scheme: dark)').matches)){d.classList.add('dark')}}catch(e){}})()`,
           }}
         />
-        {/* Google Ads tag - loaded in head so gtag is available for conversion events */}
-        {gadsId && (
+        {/* Single gtag loader for both Google Ads and GA4 */}
+        {(gadsId || gaMeasurementId) && (
           <>
-            <script async src={`https://www.googletagmanager.com/gtag/js?id=${gadsId}`} />
+            <script async src={`https://www.googletagmanager.com/gtag/js?id=${gadsId || gaMeasurementId}`} />
             <script
               dangerouslySetInnerHTML={{
-                __html: `window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','${gadsId}');`,
+                __html: `window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());${gadsId ? `gtag('config','${gadsId}');` : ''}${gaMeasurementId ? `gtag('config','${gaMeasurementId}');` : ''}`,
               }}
             />
           </>
@@ -170,8 +169,6 @@ export default async function LocaleLayout({ children, params }: LocaleLayoutPro
           </ThemeProvider>
         </NextIntlClientProvider>
 
-        {/* GA4,  loaded after body, consent mode handled by ConsentManager */}
-        {gaMeasurementId && <GoogleAnalytics gaId={gaMeasurementId} />}
       </body>
     </html>
   )
