@@ -1,6 +1,6 @@
 'use client'
 
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
 import { useTranslations, useLocale } from 'next-intl'
 import { usePathname } from 'next/navigation'
 import Image from 'next/image'
@@ -65,6 +65,33 @@ const initialData: FormData = {
   message: '',
 }
 
+// ─── Solution → challenge pre-selection map ────────────────────────────────────
+const SOLUTION_CHALLENGE_MAP: Record<string, string[]> = {
+  'erp-implementation': ['outgrown'],
+  'crm-implementation': ['disconnected'],
+  'spreadsheet-operations': ['spreadsheets'],
+  'mobile-warehouse-barcoding': ['manual'],
+  'system-integration': ['disconnected'],
+  'api-integrations': ['disconnected'],
+  'ops-outgrown-tools': ['outgrown', 'no-scalability'],
+  'vendor-management': ['outgrown'],
+  'operational-process-foundations': ['manual'],
+  'project-management': ['outgrown'],
+  'ai-operations': ['outgrown', 'manual'],
+}
+
+function getPreSelectedChallenges(): string[] {
+  if (typeof window === 'undefined') return []
+  const referrer = document.referrer
+  if (!referrer) return []
+  try {
+    const url = new URL(referrer)
+    const match = url.pathname.match(/\/solutions\/([^/]+)/)
+    if (match) return SOLUTION_CHALLENGE_MAP[match[1]] ?? []
+  } catch { /* ignore */ }
+  return []
+}
+
 // ─── Component ─────────────────────────────────────────────────────────────────
 export default function MultiStepForm() {
   const t = useTranslations('contact')
@@ -77,6 +104,14 @@ export default function MultiStepForm() {
   const [isSubmitting, setIsSubmitting] = useState(false)
   const [isSuccess, setIsSuccess] = useState(false)
   const [submitError, setSubmitError] = useState<string | null>(null)
+
+  // Pre-select challenges based on referring solution page
+  useEffect(() => {
+    const preSelected = getPreSelectedChallenges()
+    if (preSelected.length > 0) {
+      setData((prev) => ({ ...prev, problems: preSelected }))
+    }
+  }, [])
 
   const progress = ((step - 1) / TOTAL_STEPS) * 100
   // ─── Field helpers ──────────────────────────────────────────────────────────
@@ -96,7 +131,9 @@ export default function MultiStepForm() {
       if (!data.companySize) newErrors.companySize = t('validation.companySizeRequired')
     }
     if (currentStep === 2) {
-      if (data.problems.length === 0) newErrors.problems = t('validation.problemRequired')
+      if (data.problems.length === 0 && !data.otherProblem.trim()) {
+        newErrors.problems = t('validation.problemRequired')
+      }
     }
     if (currentStep === 3) {
       if (!data.timeline) newErrors.timeline = t('validation.timelineRequired')
@@ -303,7 +340,7 @@ export default function MultiStepForm() {
           multiSelect={STEP_CONFIG[1].multiSelect}
           label={t('fields.problems')}
           error={errors.problems}
-          required
+          required={data.problems.length === 0 && !data.otherProblem.trim()}
         />
         <div className="mt-6 flex flex-col gap-1">
           <label htmlFor="otherProblem" className="text-sm font-medium text-text-primary">

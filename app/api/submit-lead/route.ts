@@ -66,7 +66,7 @@ export async function POST(request: NextRequest) {
   if (!body.company?.trim()) validationErrors.push('company is required')
   if (!body.industry?.trim()) validationErrors.push('industry is required')
   if (!body.companySize?.trim()) validationErrors.push('companySize is required')
-  if (!body.problems || body.problems.length === 0) validationErrors.push('at least one problem is required')
+  if ((!body.problems || body.problems.length === 0) && !body.otherProblem?.trim()) validationErrors.push('at least one problem is required')
   if (!body.timeline?.trim()) validationErrors.push('timeline is required')
   if (!body.budget?.trim()) validationErrors.push('budget is required')
 
