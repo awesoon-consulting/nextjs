@@ -42,19 +42,21 @@ export async function generateMetadata(): Promise<Metadata> {
       template: `%s | ${siteConfig.name}`,
     },
     description:
-      'B2B operations consulting and support for mid-market manufacturing, distribution, and industrial companies. ERP, CRM, ecommerce, custom API development, system integrations, and post-launch support.',
+      'Independent operations consulting for growing manufacturing, distribution, and industrial companies. ERP, CRM, system integration, warehouse automation, and post-launch support.',
     keywords: [
-      'B2B operations consulting',
+      'operations consulting',
       'ERP implementation',
       'ERP support',
+      'CRM implementation',
       'CRM support',
       'system integration',
+      'warehouse automation',
       'custom API development',
       'ecommerce development',
       'post-launch support',
-      'mid-market operations',
       'manufacturing consulting',
       'distribution operations',
+      'Vancouver operations consulting',
     ],
     authors: [{ name: siteConfig.name }],
     creator: siteConfig.name,
@@ -73,15 +75,24 @@ export async function generateMetadata(): Promise<Metadata> {
       siteName: siteConfig.name,
       title: `${siteConfig.name},  ${siteConfig.tagline}`,
       description:
-        'B2B operations consulting and support for mid-market manufacturing and distribution companies.',
+        'Independent operations consulting for growing manufacturing, distribution, and industrial companies.',
       locale: locale,
       alternateLocale: siteConfig.locales.filter((l) => l !== locale),
+      images: [
+        {
+          url: '/images/og-image.png',
+          width: 1200,
+          height: 630,
+          alt: `${siteConfig.name} — ${siteConfig.tagline}`,
+        },
+      ],
     },
     twitter: {
       card: 'summary_large_image',
       title: `${siteConfig.name},  ${siteConfig.tagline}`,
       description:
-        'B2B operations consulting and support for mid-market manufacturing and distribution companies.',
+        'Independent operations consulting for growing manufacturing, distribution, and industrial companies.',
+      images: ['/images/og-image.png'],
     },
     robots: {
       index: true,

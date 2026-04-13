@@ -54,7 +54,7 @@ export default async function TermsPage({ params }: { params: Promise<{ locale: 
                 2. Services Description
               </h2>
               <p>
-                {siteConfig.name} provides B2B operations consulting services to mid-market
+                {siteConfig.name} provides independent operations consulting services to growing
                 manufacturing, distribution, and industrial companies. The Site serves as an
                 informational and lead generation platform. Actual consulting engagements are
                 governed by separate service agreements.
