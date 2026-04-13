@@ -168,6 +168,8 @@ export default async function LocaleLayout({ children, params }: LocaleLayoutPro
           </ThemeProvider>
         </NextIntlClientProvider>
 
+        <script async src="https://t.contentsquare.net/uxa/66f129fd9d3e4.js" />
+
         {/* gtag loaded at end of body so it never blocks page render */}
         {(gadsId || gaMeasurementId) && (
           <>
