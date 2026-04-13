@@ -129,6 +129,12 @@ export default async function LocaleLayout({ children, params }: LocaleLayoutPro
         {/* Preconnect to Google Fonts */}
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
+        {/* Contentsquare */}
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `(function(){var s=document.createElement('script');s.async=true;s.src='https://t.contentsquare.net/uxa/66f129fd9d3e4.js';document.head.appendChild(s);})();`,
+          }}
+        />
       </head>
       <body className="font-body bg-surface text-text-primary antialiased">
         <ThemeProvider>
