@@ -28,8 +28,23 @@ export const siteConfig = {
   },
 
   social: {
-    linkedin: 'https://linkedin.com/company/awesoon', // PLACEHOLDER
-    twitter: 'https://twitter.com/awesoon', // PLACEHOLDER
+    linkedin: 'https://linkedin.com/company/awesoon',
+    twitter: 'https://twitter.com/awesoon',
+  },
+
+  team: {
+    ching: {
+      name: 'Ching Ho',
+      linkedin: 'https://www.linkedin.com/in/ching-ho/',
+      photo: '/images/about-us/ching-ho.jpeg',
+      initials: 'CH',
+    },
+    ray: {
+      name: 'Ray Rasouli',
+      linkedin: 'https://www.linkedin.com/in/ray-rasouli/',
+      photo: '/images/about-us/ray-rasouli.jpeg',
+      initials: 'RR',
+    },
   },
 
   footer: {

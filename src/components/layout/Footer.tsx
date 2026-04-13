@@ -1,4 +1,5 @@
 import Link from 'next/link'
+import Image from 'next/image'
 import { useTranslations, useLocale } from 'next-intl'
 import { siteConfig } from '@/src/config/site'
 import TrackedEmailLink from '@/src/components/ui/TrackedEmailLink'
@@ -165,6 +166,33 @@ export default function Footer() {
                   <br />
                   {t('footer.noChatbots')}
                 </p>
+              </li>
+              <li className="pt-4">
+                <div className="flex items-center gap-3">
+                  {[siteConfig.team.ching, siteConfig.team.ray].map((member) => (
+                    <a
+                      key={member.name}
+                      href={member.linkedin}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      aria-label={`${member.name} on LinkedIn`}
+                      className="group relative"
+                    >
+                      <Image
+                        src={member.photo}
+                        alt={member.name}
+                        width={36}
+                        height={36}
+                        className="rounded-full border-2 border-neutral-200 dark:border-white/15 group-hover:border-accent dark:group-hover:border-white/40 transition-colors"
+                      />
+                      <div className="absolute -bottom-0.5 -right-0.5 w-4 h-4 bg-white dark:bg-primary rounded-full flex items-center justify-center border border-neutral-200 dark:border-white/15">
+                        <svg className="w-2.5 h-2.5 text-[#0A66C2]" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                          <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z" />
+                        </svg>
+                      </div>
+                    </a>
+                  ))}
+                </div>
               </li>
             </ul>
           </div>
