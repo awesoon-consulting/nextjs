@@ -19,6 +19,10 @@ export default function proxy(request: NextRequest) {
       'CDN-Cache-Control',
       'public, s-maxage=3600, stale-while-revalidate=86400'
     )
+    response.headers.set(
+      'Vercel-CDN-Cache-Control',
+      'public, s-maxage=3600, stale-while-revalidate=86400'
+    )
   }
 
   return response

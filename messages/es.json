@@ -373,6 +373,14 @@
     "error": {
       "generic": "Algo salió mal. Por favor intenta de nuevo o escríbenos directamente a hello@awesoon.com.",
       "rateLimit": "Demasiados envíos. Por favor espera un momento antes de intentar de nuevo."
+    },
+    "expect": {
+      "discoveryTitle": "Llamada de descubrimiento",
+      "discoveryText": "Empezamos con una llamada de 30 minutos para entender tus operaciones y desafíos actuales.",
+      "healthCheckTitle": "Diagnóstico de sistemas gratuito",
+      "healthCheckText": "Mapeamos tu stack tecnológico y flujos de trabajo. Obtienes una visión clara de dónde está tu complejidad operativa.",
+      "noObligationTitle": "Sin compromiso",
+      "noObligationText": "Sin presión de ventas, sin presentación. Compartimos nuestra evaluación honesta y solo avanzamos si encajamos de verdad."
     }
   },
   "footer": {
@@ -498,7 +506,8 @@
     "trustReply24h": "Respuesta en 24h",
     "trustFree": "Completamente gratis",
     "trustNamedContact": "Un contacto designado",
-    "minRead": "{time} min de lectura"
+    "minRead": "{time} min de lectura",
+    "connectLinkedIn": "Conectar en LinkedIn"
   },
   "sitemap": {
     "title": "Mapa del sitio"

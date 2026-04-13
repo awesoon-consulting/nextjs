@@ -51,9 +51,9 @@ export default async function ContactPage({
                     </svg>
                   </div>
                   <div>
-                    <h3 className="font-semibold text-text-primary mb-1">Discovery call</h3>
+                    <h3 className="font-semibold text-text-primary mb-1">{t('expect.discoveryTitle')}</h3>
                     <p className="text-sm text-text-secondary">
-                      We start with a 30-minute call to understand your operations and current challenges.
+                      {t('expect.discoveryText')}
                     </p>
                   </div>
                 </div>
@@ -66,9 +66,9 @@ export default async function ContactPage({
                     </svg>
                   </div>
                   <div>
-                    <h3 className="font-semibold text-text-primary mb-1">Free systems health check</h3>
+                    <h3 className="font-semibold text-text-primary mb-1">{t('expect.healthCheckTitle')}</h3>
                     <p className="text-sm text-text-secondary">
-                      We map your current tech stack and workflows. You get a clear picture of where your operational complexity lives.
+                      {t('expect.healthCheckText')}
                     </p>
                   </div>
                 </div>
@@ -81,9 +81,9 @@ export default async function ContactPage({
                     </svg>
                   </div>
                   <div>
-                    <h3 className="font-semibold text-text-primary mb-1">No obligation</h3>
+                    <h3 className="font-semibold text-text-primary mb-1">{t('expect.noObligationTitle')}</h3>
                     <p className="text-sm text-text-secondary">
-                      No sales pressure, no pitch deck. We share our honest assessment and only move forward if we&apos;re a genuine fit.
+                      {t('expect.noObligationText')}
                     </p>
                   </div>
                 </div>
