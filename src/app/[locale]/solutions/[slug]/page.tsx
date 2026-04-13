@@ -4,8 +4,10 @@ import Link from 'next/link'
 import { getTranslations, setRequestLocale } from 'next-intl/server'
 import { getAllSolutionSlugs, getLocalizedSolutionBySlug } from '@/src/data/solutions'
 import { getInsightBySlug } from '@/src/data/insights'
+import { getPlatformsForSolution } from '@/src/data/platforms'
 import { siteConfig } from '@/src/config/site'
 import CTABlock from '@/src/components/sections/CTABlock'
+import PlatformStack from '@/src/components/sections/PlatformStack'
 import Badge from '@/src/components/ui/Badge'
 import Button from '@/src/components/ui/Button'
 
@@ -41,6 +43,7 @@ export default async function SolutionPage({ params }: SolutionPageProps) {
   if (!solution) notFound()
 
   const t = await getTranslations({ locale })
+  const platforms = getPlatformsForSolution(slug)
 
   return (
     <>
@@ -128,6 +131,15 @@ export default async function SolutionPage({ params }: SolutionPageProps) {
                   ))}
                 </ol>
               </div>
+
+              {platforms.length > 0 && (
+                <PlatformStack
+                  platforms={platforms}
+                  heading={t('solutionPage.platformsTitle')}
+                  subheading={t('solutionPage.platformsSubtitle')}
+                  tapHint={t('solutionPage.platformsTapHint')}
+                />
+              )}
 
               {/* Outcomes */}
               <div>

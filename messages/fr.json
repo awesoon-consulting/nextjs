@@ -473,13 +473,17 @@
     "sidebarTitle": "Prêt à commencer?",
     "sidebarText": "Commencez par un bilan gratuit des systèmes. Aucun pitch, aucune pression.",
     "relatedSolutions": "Solutions liées",
-    "relatedInsights": "Articles liés"
+    "relatedInsights": "Articles liés",
+    "platformsTitle": "Plateformes que nous utilisons",
+    "platformsSubtitle": "Nous sommes polyvalents. Touchez un logo pour voir où il convient le mieux.",
+    "platformsTapHint": "Touchez une plateforme ci-dessus pour savoir quand elle convient."
   },
   "supportPage": {
     "painPointsTitle": "Ce qui déclenche généralement le support",
     "whatWeDoTitle": "Comment nous aidons",
     "platformsTitle": "Plateformes et environnements que nous supportons",
     "platformsSubtitle": "Nous supportons des environnements opérationnels réels, pas seulement des écrans logiciels isolés.",
+    "platformsTapHint": "Touchez une plateforme ci-dessus pour voir comment nous la supportons.",
     "outcomesTitle": "Ce que vous obtenez",
     "sidebarTitle": "Besoin d'un partenaire support plus solide ?",
     "sidebarText": "Faites-nous intervenir après livraison, après go-live ou quand votre prestataire actuel n'est plus au niveau.",

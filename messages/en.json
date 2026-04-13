@@ -472,13 +472,17 @@
     "sidebarTitle": "Ready to get started?",
     "sidebarText": "Start with a free systems health check. No pitch deck, no pressure.",
     "relatedSolutions": "Related Solutions",
-    "relatedInsights": "Related Insights"
+    "relatedInsights": "Related Insights",
+    "platformsTitle": "Platforms We Work With",
+    "platformsSubtitle": "We are platform-versatile. Tap any logo to see where it fits best.",
+    "platformsTapHint": "Tap a platform above to learn when it's the right fit."
   },
   "supportPage": {
     "painPointsTitle": "What Usually Triggers Support",
     "whatWeDoTitle": "How We Help",
     "platformsTitle": "Platforms And Environments We Support",
     "platformsSubtitle": "We support real operating environments, not just isolated software screens.",
+    "platformsTapHint": "Tap a platform above to see how we support it.",
     "outcomesTitle": "What You Get",
     "sidebarTitle": "Need a stronger support partner?",
     "sidebarText": "Bring us in after delivery, after go-live, or when your current provider is no longer cutting it.",

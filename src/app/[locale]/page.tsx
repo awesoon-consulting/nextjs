@@ -1,8 +1,10 @@
 import type { Metadata } from 'next'
 import { getTranslations, setRequestLocale } from 'next-intl/server'
 import Hero from '@/src/components/sections/Hero'
+import HeroMarquee from '@/src/components/sections/HeroMarquee'
 import WhoWeHelp from '@/src/components/sections/WhoWeHelp'
 import DifferentiatorCards from '@/src/components/sections/DifferentiatorCards'
+import PlatformsShowcase from '@/src/components/sections/PlatformsShowcase'
 import ProcessSteps from '@/src/components/sections/ProcessSteps'
 import SupportGrid from '@/src/components/sections/SupportGrid'
 import CTABlock from '@/src/components/sections/CTABlock'
@@ -29,8 +31,10 @@ export default async function HomePage({ params }: { params: Promise<{ locale: s
   return (
     <>
       <Hero />
+      <HeroMarquee />
       <WhoWeHelp />
       <DifferentiatorCards />
+      <PlatformsShowcase />
       <ProcessSteps />
       <SupportGrid variant="home" />
       <CTABlock />

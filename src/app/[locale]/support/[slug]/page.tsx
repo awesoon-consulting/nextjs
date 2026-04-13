@@ -5,7 +5,9 @@ import { getTranslations, setRequestLocale } from 'next-intl/server'
 import { siteConfig } from '@/src/config/site'
 import { getLocalizedSupportBySlug, getAllSupportSlugs } from '@/src/data/support'
 import { getLocalizedSolutionBySlug } from '@/src/data/solutions'
+import { getPlatformsForSupport } from '@/src/data/platforms'
 import CTABlock from '@/src/components/sections/CTABlock'
+import PlatformStack from '@/src/components/sections/PlatformStack'
 import Badge from '@/src/components/ui/Badge'
 import Button from '@/src/components/ui/Button'
 
@@ -42,6 +44,7 @@ export default async function SupportDetailPage({ params }: SupportDetailPagePro
   if (!supportItem) notFound()
 
   const t = await getTranslations({ locale })
+  const platforms = getPlatformsForSupport(slug)
 
   return (
     <>
@@ -123,24 +126,33 @@ export default async function SupportDetailPage({ params }: SupportDetailPagePro
                 </ol>
               </div>
 
-              <div>
-                <h2 className="font-heading font-bold text-2xl text-text-primary mb-6">
-                  {t('supportPage.platformsTitle')}
-                </h2>
-                <p className="mb-5 text-text-secondary">{t('supportPage.platformsSubtitle')}</p>
-                <ul className="space-y-3" role="list">
-                  {supportItem.platformMentions.map((item, index) => (
-                    <li key={index} className="flex items-start gap-3">
-                      <div className="mt-0.5 flex h-6 w-6 flex-shrink-0 items-center justify-center rounded-full bg-secondary/10 border border-secondary/20">
-                        <svg className="h-3.5 w-3.5 text-secondary" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
-                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 4v16m8-8H4" />
-                        </svg>
-                      </div>
-                      <p className="text-text-secondary">{item}</p>
-                    </li>
-                  ))}
-                </ul>
-              </div>
+              {platforms.length > 0 ? (
+                <PlatformStack
+                  platforms={platforms}
+                  heading={t('supportPage.platformsTitle')}
+                  subheading={t('supportPage.platformsSubtitle')}
+                  tapHint={t('supportPage.platformsTapHint')}
+                />
+              ) : (
+                <div>
+                  <h2 className="font-heading font-bold text-2xl text-text-primary mb-6">
+                    {t('supportPage.platformsTitle')}
+                  </h2>
+                  <p className="mb-5 text-text-secondary">{t('supportPage.platformsSubtitle')}</p>
+                  <ul className="space-y-3" role="list">
+                    {supportItem.platformMentions.map((item, index) => (
+                      <li key={index} className="flex items-start gap-3">
+                        <div className="mt-0.5 flex h-6 w-6 flex-shrink-0 items-center justify-center rounded-full bg-secondary/10 border border-secondary/20">
+                          <svg className="h-3.5 w-3.5 text-secondary" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 4v16m8-8H4" />
+                          </svg>
+                        </div>
+                        <p className="text-text-secondary">{item}</p>
+                      </li>
+                    ))}
+                  </ul>
+                </div>
+              )}
 
               <div>
                 <h2 className="font-heading font-bold text-2xl text-text-primary mb-6">

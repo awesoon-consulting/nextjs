@@ -14,7 +14,7 @@ export default function Hero() {
 
   return (
     <section
-      className="relative flex min-h-screen w-full items-center overflow-hidden bg-white dark:bg-primary"
+      className="relative flex min-h-[calc(100vh-88px)] w-full items-center overflow-hidden bg-white dark:bg-primary"
       aria-label="Hero"
     >
       {/* Subtle geometric grid and glows */}

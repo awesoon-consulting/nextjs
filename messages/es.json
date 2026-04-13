@@ -473,13 +473,17 @@
     "sidebarTitle": "¿Listo para empezar?",
     "sidebarText": "Empieza con un diagnóstico gratuito de sistemas. Sin presentación, sin presión.",
     "relatedSolutions": "Soluciones relacionadas",
-    "relatedInsights": "Artículos relacionados"
+    "relatedInsights": "Artículos relacionados",
+    "platformsTitle": "Plataformas con las que trabajamos",
+    "platformsSubtitle": "Somos versátiles. Toca cualquier logo para ver dónde encaja mejor.",
+    "platformsTapHint": "Toca una plataforma arriba para saber cuándo es la adecuada."
   },
   "supportPage": {
     "painPointsTitle": "Lo que normalmente dispara la necesidad de soporte",
     "whatWeDoTitle": "Cómo ayudamos",
     "platformsTitle": "Plataformas y entornos que soportamos",
     "platformsSubtitle": "Soportamos entornos operativos reales, no solo pantallas aisladas de software.",
+    "platformsTapHint": "Toca una plataforma arriba para ver cómo la soportamos.",
     "outcomesTitle": "Qué obtienes",
     "sidebarTitle": "¿Necesitas un partner de soporte más sólido?",
     "sidebarText": "Haznos entrar después de la entrega, después del go-live o cuando tu proveedor actual ya no esté dando la talla.",
