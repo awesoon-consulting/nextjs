@@ -1,5 +1,3 @@
-'use client'
-
 /**
  * @file     HeroMarquee.tsx
  * @layer    src > components > sections

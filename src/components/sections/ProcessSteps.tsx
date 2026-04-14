@@ -1,5 +1,3 @@
-'use client'
-
 /**
  * ProcessSteps,  4-step process with connecting line.
  * Full-width. Steps stagger in left-to-right via AnimateIn.

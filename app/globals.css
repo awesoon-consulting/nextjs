@@ -335,6 +335,40 @@ html.js-ready .animate-in {
   animation-timing-function: cubic-bezier(0.16, 1, 0.3, 1);
 }
 
+/* ─────────────────────────────────────────────────────────────
+   SCROLL REVEAL (AnimateIn component)
+   Replaces the prior per-element React IntersectionObserver with
+   a single page-level observer (ScrollRevealRoot). Elements with
+   `.reveal` start hidden; the observer adds `.in-view` when they
+   enter the viewport, triggering a one-shot CSS animation.
+
+   Without JS (no .js-ready), `.reveal` elements are fully visible
+   so non-JS crawlers and reduced-motion users see the content.
+   ───────────────────────────────────────────────────────────── */
+html.js-ready .reveal {
+  opacity: 0;
+}
+html.js-ready .reveal.in-view {
+  animation-fill-mode: both;
+  animation-duration: 600ms;
+  animation-timing-function: cubic-bezier(0.16, 1, 0.3, 1);
+}
+html.js-ready .reveal.in-view.anim-fade-in {
+  animation-name: fade-in;
+}
+html.js-ready .reveal.in-view.anim-slide-up {
+  animation-name: slide-up;
+}
+html.js-ready .reveal.in-view.anim-slide-left {
+  animation-name: slide-left;
+}
+html.js-ready .reveal.in-view.anim-slide-right {
+  animation-name: slide-right;
+}
+html.js-ready .reveal.in-view.anim-scale-in {
+  animation-name: scale-in;
+}
+
 .anim-fade-in {
   animation-name: fade-in;
 }
