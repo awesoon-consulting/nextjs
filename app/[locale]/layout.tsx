@@ -145,12 +145,13 @@ export default async function LocaleLayout({ children, params }: LocaleLayoutPro
           }}
         />
         {/*
-          Contentsquare — tracking script MUST be inline in <head> via
-          dangerouslySetInnerHTML, not next/script. See memory.
+          Contentsquare — deferred until after load + idle so it never
+          competes with initial paint/hydration. Mobile Safari was losing
+          ~120ms of main thread time to this script on first load.
         */}
         <script
           dangerouslySetInnerHTML={{
-            __html: `(function(){var s=document.createElement('script');s.async=true;s.src='https://t.contentsquare.net/uxa/66f129fd9d3e4.js';document.head.appendChild(s);})();`,
+            __html: `(function(){function load(){var s=document.createElement('script');s.async=true;s.src='https://t.contentsquare.net/uxa/66f129fd9d3e4.js';document.head.appendChild(s);}function schedule(){if('requestIdleCallback' in window){requestIdleCallback(load,{timeout:5000})}else{setTimeout(load,3000)}}if(document.readyState==='complete'){schedule()}else{window.addEventListener('load',schedule,{once:true})}})();`,
           }}
         />
       </head>
@@ -181,16 +182,20 @@ export default async function LocaleLayout({ children, params }: LocaleLayoutPro
           </ThemeProvider>
         </NextIntlClientProvider>
 
-        {/* gtag (GA4 + Ads) loaded at end of body so it never blocks paint */}
+        {/*
+          gtag.js (GA4 + Google Ads) is a 307KB script that costs ~225ms
+          of main thread time. Defer it until after window.load + idle
+          callback so it never blocks paint or input response. The
+          dataLayer array is created synchronously so any early gtag()
+          calls from consent manager queue up correctly; the real script
+          flushes them when it loads.
+        */}
         {(gadsId || gaMeasurementId) && (
-          <>
-            <script async src={`https://www.googletagmanager.com/gtag/js?id=${gadsId || gaMeasurementId}`} />
-            <script
-              dangerouslySetInnerHTML={{
-                __html: `window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());${gadsId ? `gtag('config','${gadsId}');` : ''}${gaMeasurementId ? `gtag('config','${gaMeasurementId}');` : ''}`,
-              }}
-            />
-          </>
+          <script
+            dangerouslySetInnerHTML={{
+              __html: `window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());${gadsId ? `gtag('config','${gadsId}',{send_page_view:false});` : ''}${gaMeasurementId ? `gtag('config','${gaMeasurementId}',{send_page_view:false});` : ''}(function(){function load(){var s=document.createElement('script');s.async=true;s.src='https://www.googletagmanager.com/gtag/js?id=${gadsId || gaMeasurementId}';document.head.appendChild(s);s.onload=function(){gtag('event','page_view')}}function schedule(){if('requestIdleCallback' in window){requestIdleCallback(load,{timeout:5000})}else{setTimeout(load,2500)}}if(document.readyState==='complete'){schedule()}else{window.addEventListener('load',schedule,{once:true})}})();`,
+            }}
+          />
         )}
       </body>
     </html>
