@@ -1,15 +1,22 @@
 import type { Metadata } from 'next'
 import { Sora, Inter } from 'next/font/google'
-import { headers } from 'next/headers'
 import { NextIntlClientProvider } from 'next-intl'
-import { getMessages, getLocale, getTranslations } from 'next-intl/server'
-import { GoogleAnalytics } from '@next/third-parties/google'
+import { getMessages, setRequestLocale, getTranslations } from 'next-intl/server'
 import ConsentManager from '@/src/components/layout/ConsentManager'
 import { ThemeProvider } from '@/src/components/layout/ThemeProvider'
 import Navbar from '@/src/components/layout/Navbar'
 import Footer from '@/src/components/layout/Footer'
+import FloatingCTA from '@/src/components/layout/FloatingCTA'
+import UtmCapture from '@/src/components/layout/UtmCapture'
 import { siteConfig } from '@/src/config/site'
 import '@/app/globals.css'
+
+/**
+ * Root locale layout (active).
+ * NOTE: This is the file Next.js actually uses. There is a dead copy at
+ * src/app/[locale]/layout.tsx that looks similar but never renders. All
+ * head/body/layout edits must happen HERE.
+ */
 
 const sora = Sora({
   subsets: ['latin'],
@@ -25,16 +32,13 @@ const inter = Inter({
   weight: ['400', '500', '600', '700'],
 })
 
-export async function generateMetadata(): Promise<Metadata> {
-  const locale = await getLocale()
-  const headersList = await headers()
-  const host = headersList.get('x-forwarded-host') ?? headersList.get('host')
-  const protocol =
-    headersList.get('x-forwarded-proto') ?? (host?.includes('localhost') ? 'http' : 'https')
-  const configuredBaseUrl = process.env.NEXT_PUBLIC_SITE_URL ?? siteConfig.url
-  const configuredHost = new URL(configuredBaseUrl).host
-  const requestBaseUrl = host ? `${protocol}://${host}` : configuredBaseUrl
-  const baseUrl = host && host !== configuredHost ? requestBaseUrl : configuredBaseUrl
+export async function generateMetadata({
+  params,
+}: {
+  params: Promise<{ locale: string }>
+}): Promise<Metadata> {
+  const { locale } = await params
+  const baseUrl = process.env.NEXT_PUBLIC_SITE_URL ?? siteConfig.url
 
   return {
     title: {
@@ -108,6 +112,9 @@ export async function generateMetadata(): Promise<Metadata> {
   }
 }
 
+// Cache rendered pages for 1 hour, serve stale while revalidating in background
+export const revalidate = 3600
+
 export function generateStaticParams() {
   return siteConfig.locales.map((locale) => ({ locale }))
 }
@@ -119,46 +126,72 @@ interface LocaleLayoutProps {
 
 export default async function LocaleLayout({ children, params }: LocaleLayoutProps) {
   const { locale } = await params
+  setRequestLocale(locale)
   const messages = await getMessages()
   const tCommon = await getTranslations('common')
   const gaMeasurementId = process.env.NEXT_PUBLIC_GA_MEASUREMENT_ID
+  const gadsId = process.env.NEXT_PUBLIC_GADS_ID
 
   return (
     <html lang={locale} className={`${sora.variable} ${inter.variable}`} suppressHydrationWarning>
       <head>
-        {/* Preconnect to Google Fonts */}
-        <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
-        {/* Contentsquare */}
+        {/*
+          Anti-FOUC script — applies stored theme class and marks the document
+          as JS-ready before first paint. MUST run synchronously in <head>.
+        */}
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `(function(){try{var d=document.documentElement;var t=localStorage.getItem('awesoon_theme');if(t==='dark'||(t!=='light'&&window.matchMedia('(prefers-color-scheme: dark)').matches)){d.classList.add('dark')}d.classList.add('js-ready')}catch(e){}})()`,
+          }}
+        />
+        {/*
+          Contentsquare — tracking script MUST be inline in <head> via
+          dangerouslySetInnerHTML, not next/script. See memory.
+        */}
         <script
           dangerouslySetInnerHTML={{
             __html: `(function(){var s=document.createElement('script');s.async=true;s.src='https://t.contentsquare.net/uxa/66f129fd9d3e4.js';document.head.appendChild(s);})();`,
           }}
         />
       </head>
-      <body className="font-body bg-surface text-text-primary antialiased">
-        <ThemeProvider>
-          <NextIntlClientProvider messages={messages} locale={locale}>
+      <body className="font-body bg-surface dark:bg-primary text-text-primary dark:text-white antialiased transition-colors duration-200">
+        <NextIntlClientProvider messages={messages} locale={locale}>
+          <ThemeProvider>
             <ConsentManager>
               {/* Skip to content link for accessibility */}
               <a
                 href="#main-content"
-                className="sr-only focus:not-sr-only focus:fixed focus:top-4 focus:left-4 focus:z-50 focus:bg-accent focus:text-text-inverse focus:px-4 focus:py-2 focus:rounded-lg focus:font-semibold"
+                className="sr-only focus:not-sr-only focus:fixed focus:top-4 focus:left-4 focus:z-50 focus:bg-accent focus:text-primary focus:px-4 focus:py-2 focus:rounded-lg focus:font-semibold"
               >
                 {tCommon('skipToContent')}
               </a>
 
               <Navbar />
+
               <main id="main-content" tabIndex={-1}>
                 {children}
               </main>
-              <Footer />
-            </ConsentManager>
-          </NextIntlClientProvider>
-        </ThemeProvider>
 
-        {/* GA4,  loaded after body, consent mode handled by ConsentManager */}
-        {gaMeasurementId && <GoogleAnalytics gaId={gaMeasurementId} />}
+              <Footer />
+
+              {/* Floating conversion CTA, shows after scrolling past hero */}
+              <FloatingCTA />
+              <UtmCapture />
+            </ConsentManager>
+          </ThemeProvider>
+        </NextIntlClientProvider>
+
+        {/* gtag (GA4 + Ads) loaded at end of body so it never blocks paint */}
+        {(gadsId || gaMeasurementId) && (
+          <>
+            <script async src={`https://www.googletagmanager.com/gtag/js?id=${gadsId || gaMeasurementId}`} />
+            <script
+              dangerouslySetInnerHTML={{
+                __html: `window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());${gadsId ? `gtag('config','${gadsId}');` : ''}${gaMeasurementId ? `gtag('config','${gaMeasurementId}');` : ''}`,
+              }}
+            />
+          </>
+        )}
       </body>
     </html>
   )
