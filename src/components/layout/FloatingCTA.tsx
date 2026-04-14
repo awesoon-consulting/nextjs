@@ -27,45 +27,61 @@ export default function FloatingCTA() {
   const locale = useLocale()
   const t = useTranslations('floatingCta')
   const pathname = usePathname()
-  const [visiblePath, setVisiblePath] = useState<string | null>(null)
+  const [isVisible, setIsVisible] = useState(false)
   const [dismissed, setDismissed] = useState(false)
   const [isReady, setIsReady] = useState(false)
-  const isVisible = visiblePath === pathname
+
+  // Reset visibility on route change (prevents stale "visible" state
+  // when navigating to a new page where the scroll position is at top).
+  useEffect(() => {
+    setIsVisible(false)
+  }, [pathname])
 
   useEffect(() => {
-    const frame = window.requestAnimationFrame(() => {
+    // Defer hydration work until after first paint so the hero has time
+    // to render without competing with this component's setup cost.
+    const idle = (cb: () => void) => {
+      const w = window as typeof window & {
+        requestIdleCallback?: (cb: () => void) => number
+      }
+      if (typeof w.requestIdleCallback === 'function') {
+        w.requestIdleCallback(cb)
+      } else {
+        setTimeout(cb, 200)
+      }
+    }
+    idle(() => {
       setIsReady(true)
       try {
-        if (sessionStorage.getItem(DISMISSED_KEY)) {
-          setDismissed(true)
-        }
+        if (sessionStorage.getItem(DISMISSED_KEY)) setDismissed(true)
       } catch {
-        // sessionStorage unavailable (e.g. incognito restrictions), show anyway
+        /* ignore */
       }
     })
-
-    return () => window.cancelAnimationFrame(frame)
   }, [])
 
   useEffect(() => {
     if (!isReady || dismissed) return
 
+    let ticking = false
     function handleScroll() {
-      setVisiblePath(window.scrollY > SCROLL_THRESHOLD ? pathname : null)
+      if (ticking) return
+      ticking = true
+      requestAnimationFrame(() => {
+        setIsVisible(window.scrollY > SCROLL_THRESHOLD)
+        ticking = false
+      })
     }
 
     window.addEventListener('scroll', handleScroll, { passive: true })
-    const frame = window.requestAnimationFrame(handleScroll)
+    handleScroll()
 
-    return () => {
-      window.cancelAnimationFrame(frame)
-      window.removeEventListener('scroll', handleScroll)
-    }
-  }, [dismissed, isReady, pathname])
+    return () => window.removeEventListener('scroll', handleScroll)
+  }, [dismissed, isReady])
 
   function dismiss() {
     setDismissed(true)
-    setVisiblePath(null)
+    setIsVisible(false)
     try {
       sessionStorage.setItem(DISMISSED_KEY, '1')
     } catch {
@@ -85,12 +101,11 @@ export default function FloatingCTA() {
       aria-label="Free systems health check offer"
       className={[
         'fixed bottom-6 left-1/2 -translate-x-1/2 z-50 w-full max-w-xl px-4',
-        'transition-all duration-500',
+        'transition-transform duration-300 ease-out',
         isVisible
           ? 'translate-y-0 opacity-100 pointer-events-auto'
           : 'translate-y-8 opacity-0 pointer-events-none',
       ].join(' ')}
-      style={{ willChange: 'transform, opacity' }}
     >
       <div className="relative flex items-center gap-4 rounded-2xl border border-neutral-200 bg-white px-5 py-4 shadow-[0_28px_80px_rgba(10,10,10,0.18)] dark:border-white/10 dark:bg-primary dark:shadow-2xl">
         {/* Pulse indicator */}
@@ -113,7 +128,7 @@ export default function FloatingCTA() {
         <Link
           href={contactHref}
           className="flex-shrink-0 whitespace-nowrap rounded-xl bg-primary px-4 py-2 text-sm font-semibold text-text-inverse transition-colors duration-150 hover:bg-secondary focus:outline-none focus-visible:ring-2 focus-visible:ring-secondary focus-visible:ring-offset-2 focus-visible:ring-offset-white dark:bg-secondary dark:hover:bg-secondary-light dark:focus-visible:ring-offset-primary"
-          onClick={() => setVisiblePath(null)}
+          onClick={() => setIsVisible(false)}
         >
           {t('button')}
         </Link>

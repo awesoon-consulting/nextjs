@@ -128,11 +128,14 @@ export default function Hero() {
             </div>
           </div>
 
-          {/* ── Right: animated operations illustration ── */}
-          <div
-            className="w-full lg:flex-1 flex justify-center lg:justify-end"
-          >
-            <div className="relative w-[360px] h-[360px] sm:w-[460px] sm:h-[460px] lg:w-[540px] lg:h-[540px]">
+          {/*
+            Right: animated operations illustration
+            Hidden on mobile — the SVG has 55 concurrent SMIL animations
+            which choke iPhone Safari's main thread. Desktop and tablet
+            handle it fine.
+          */}
+          <div className="hidden lg:flex w-full lg:flex-1 justify-center lg:justify-end">
+            <div className="relative lg:w-[540px] lg:h-[540px]">
               <HeroIllustration locale={locale} />
             </div>
           </div>
