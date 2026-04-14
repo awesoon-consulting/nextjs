@@ -144,16 +144,6 @@ export default async function LocaleLayout({ children, params }: LocaleLayoutPro
             __html: `(function(){try{var d=document.documentElement;var t=localStorage.getItem('awesoon_theme');if(t==='dark'||(t!=='light'&&window.matchMedia('(prefers-color-scheme: dark)').matches)){d.classList.add('dark')}d.classList.add('js-ready')}catch(e){}})()`,
           }}
         />
-        {/*
-          Contentsquare — deferred until after load + idle so it never
-          competes with initial paint/hydration. Mobile Safari was losing
-          ~120ms of main thread time to this script on first load.
-        */}
-        <script
-          dangerouslySetInnerHTML={{
-            __html: `(function(){function load(){var s=document.createElement('script');s.async=true;s.src='https://t.contentsquare.net/uxa/66f129fd9d3e4.js';document.head.appendChild(s);}function schedule(){if('requestIdleCallback' in window){requestIdleCallback(load,{timeout:5000})}else{setTimeout(load,3000)}}if(document.readyState==='complete'){schedule()}else{window.addEventListener('load',schedule,{once:true})}})();`,
-          }}
-        />
       </head>
       <body className="font-body bg-surface dark:bg-primary text-text-primary dark:text-white antialiased transition-colors duration-200">
         <NextIntlClientProvider messages={messages} locale={locale}>
