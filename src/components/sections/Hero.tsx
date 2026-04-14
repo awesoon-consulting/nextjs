@@ -1,7 +1,8 @@
 import Link from 'next/link'
 import { useTranslations, useLocale } from 'next-intl'
 import Button from '@/src/components/ui/Button'
-import HeroIllustration from '@/src/components/ui/HeroIllustration'
+import HeroIllustrationDesktop from '@/src/components/sections/HeroIllustrationDesktop'
+import HeroIllustrationStatic from '@/src/components/ui/HeroIllustrationStatic'
 
 /**
  * Hero, premium monochrome in light mode and deep navy in dark mode.
@@ -129,14 +130,21 @@ export default function Hero() {
           </div>
 
           {/*
-            Right: animated operations illustration
-            Hidden on mobile — the SVG has 55 concurrent SMIL animations
-            which choke iPhone Safari's main thread. Desktop and tablet
-            handle it fine.
+            Right: operations illustration.
+            - Mobile/tablet: static SVG (no SMIL animations, zero CPU cost)
+            - Desktop (lg+): animated version dynamically imported client-side
+              via HeroIllustrationDesktop. The animated SVG has 55 concurrent
+              SMIL animations that choke iPhone Safari's main thread even
+              when hidden with display:none, so we physically don't ship it.
           */}
-          <div className="hidden lg:flex w-full lg:flex-1 justify-center lg:justify-end">
-            <div className="relative lg:w-[540px] lg:h-[540px]">
-              <HeroIllustration locale={locale} />
+          <div className="w-full lg:flex-1 flex justify-center lg:justify-end">
+            {/* Mobile + tablet: static */}
+            <div className="lg:hidden relative w-[300px] h-[300px] sm:w-[400px] sm:h-[400px]">
+              <HeroIllustrationStatic />
+            </div>
+            {/* Desktop only: animated, client-side */}
+            <div className="hidden lg:block">
+              <HeroIllustrationDesktop locale={locale} />
             </div>
           </div>
 
