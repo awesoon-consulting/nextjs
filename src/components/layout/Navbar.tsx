@@ -64,15 +64,45 @@ export default function Navbar() {
   const { resolvedTheme, setTheme } = useTheme()
 
   const [isScrolled, setIsScrolled] = useState(false)
-  const [mobileMenuPath, setMobileMenuPath] = useState<string | null>(null)
-
-  const isMobileMenuOpen = mobileMenuPath === pathname
+  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false)
 
   useEffect(() => {
     const handler = () => setIsScrolled(window.scrollY > 16)
     window.addEventListener('scroll', handler, { passive: true })
     return () => window.removeEventListener('scroll', handler)
   }, [])
+
+  // Always close the mobile menu whenever the route changes.
+  // Previously the menu was keyed on "pathname equals mobileMenuPath" which
+  // had multiple race conditions: tapping a link to the current page would
+  // leave the menu stuck open, and client-side navigation timing caused
+  // the menu to appear stuck during slow page transitions.
+  useEffect(() => {
+    setIsMobileMenuOpen(false)
+  }, [pathname])
+
+  // Lock body scroll while the mobile drawer is open so the page behind
+  // can't scroll or capture touches that belong to the drawer.
+  useEffect(() => {
+    if (typeof document === 'undefined') return
+    if (isMobileMenuOpen) {
+      const prev = document.body.style.overflow
+      document.body.style.overflow = 'hidden'
+      return () => {
+        document.body.style.overflow = prev
+      }
+    }
+  }, [isMobileMenuOpen])
+
+  // Close drawer on Escape key
+  useEffect(() => {
+    if (!isMobileMenuOpen) return
+    const onKey = (e: KeyboardEvent) => {
+      if (e.key === 'Escape') setIsMobileMenuOpen(false)
+    }
+    window.addEventListener('keydown', onKey)
+    return () => window.removeEventListener('keydown', onKey)
+  }, [isMobileMenuOpen])
 
   function toggleTheme() {
     setTheme(resolvedTheme === 'dark' ? 'light' : 'dark')
@@ -177,7 +207,7 @@ export default function Navbar() {
               </span>
             </button>
             <button
-              onClick={() => setMobileMenuPath((current) => (current === pathname ? null : pathname))}
+              onClick={() => setIsMobileMenuOpen((open) => !open)}
               aria-expanded={isMobileMenuOpen}
               aria-label={isMobileMenuOpen ? t('nav.closeMenu') : t('nav.openMenu')}
               className="rounded-lg p-2 text-text-secondary transition-colors focus:outline-none focus-visible:ring-2 focus-visible:ring-accent hover:bg-neutral-100 hover:text-text-primary dark:text-neutral-300 dark:hover:bg-white/10 dark:hover:text-white"
@@ -224,7 +254,7 @@ export default function Navbar() {
       <div className="md:hidden" aria-hidden={!isMobileMenuOpen}>
         {/* Backdrop */}
         <div
-          onClick={() => setMobileMenuPath(null)}
+          onClick={() => setIsMobileMenuOpen(false)}
           className={[
             'fixed inset-0 z-40 bg-black/40 backdrop-blur-sm transition-opacity duration-300',
             isMobileMenuOpen ? 'opacity-100 pointer-events-auto' : 'opacity-0 pointer-events-none',
@@ -250,7 +280,7 @@ export default function Navbar() {
               {siteConfig.name}<span className="text-accent dark:text-white/50">.</span>
             </span>
             <button
-              onClick={() => setMobileMenuPath(null)}
+              onClick={() => setIsMobileMenuOpen(false)}
               aria-label={t('nav.closeMenu')}
               className="rounded-lg p-2 text-text-muted transition-colors hover:bg-neutral-100 hover:text-text-primary dark:text-neutral-400 dark:hover:bg-white/10 dark:hover:text-white focus:outline-none focus-visible:ring-2 focus-visible:ring-accent"
             >
@@ -266,7 +296,7 @@ export default function Navbar() {
               <Link
                 key={href}
                 href={localHref(href)}
-                onClick={() => setMobileMenuPath(null)}
+                onClick={() => setIsMobileMenuOpen(false)}
                 aria-current={isActive(href) ? 'page' : undefined}
                 className={[
                   'block rounded-lg px-4 py-3 text-base font-medium transition-colors focus:outline-none focus-visible:ring-2 focus-visible:ring-accent',
@@ -282,7 +312,7 @@ export default function Navbar() {
 
           {/* CTA pinned to bottom */}
           <div className="border-t border-neutral-200/80 px-4 py-4 dark:border-white/10">
-            <Link href={localHref(siteConfig.nav.cta.href)} onClick={() => setMobileMenuPath(null)}>
+            <Link href={localHref(siteConfig.nav.cta.href)} onClick={() => setIsMobileMenuOpen(false)}>
               <Button variant="primary" size="md" fullWidth>
                 {t(siteConfig.nav.cta.labelKey)}
               </Button>
