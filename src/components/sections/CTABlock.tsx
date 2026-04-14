@@ -1,5 +1,3 @@
-'use client'
-
 /**
  * CTABlock,  high-conversion inline CTA section.
  *

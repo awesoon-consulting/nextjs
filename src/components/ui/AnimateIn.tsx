@@ -1,29 +1,23 @@
-'use client'
-
 /**
- * AnimateIn,  wraps any content and applies a CSS entrance animation
- * once the element scrolls into the viewport.
+ * @file     AnimateIn.tsx
+ * @layer    src > components > ui
+ * @readme   ./README.md
+ * @purpose  Viewport-entry fade/slide wrapper. CSS-only: emits classes that
+ *           hook into the keyframes declared in app/globals.css. A single
+ *           page-level IntersectionObserver (mounted by ScrollRevealRoot in
+ *           the root layout) adds `.in-view` to elements as they scroll into
+ *           the viewport, at which point the CSS animation plays once.
  *
- * Uses useInView (IntersectionObserver) + pure CSS transforms,  no
- * external animation library required.
+ *           This component is a **server component** — no hooks, no client
+ *           boundary. It can be used inside server components without
+ *           forcing them into the client bundle.
  *
- * Variants:
- *   'fade'       ,  opacity 0 → 1
- *   'slide-up'   ,  translateY(32px) + fade
- *   'slide-left' ,  translateX(-32px) + fade  (content enters from left)
- *   'slide-right',  translateX(32px) + fade   (content enters from right)
- *   'scale'      ,  scale(0.92) + fade
- *
- * @example
- *   <AnimateIn variant="slide-up" delay={200}>
- *     <Card>...</Card>
- *   </AnimateIn>
- *
- * @see /src/hooks/useInView.ts
+ *           Replaces the prior React-based implementation which created one
+ *           IntersectionObserver + two useState/useEffect hooks per instance
+ *           (~20 instances on the homepage alone).
+ * @depends  app/globals.css keyframes, ScrollRevealRoot page-level observer
  */
 
-import { useState, useEffect } from 'react'
-import { useInView } from '@/src/hooks/useInView'
 import type { ReactNode, CSSProperties } from 'react'
 
 export type AnimateInVariant = 'fade' | 'slide-up' | 'slide-left' | 'slide-right' | 'scale'
@@ -31,29 +25,25 @@ export type AnimateInVariant = 'fade' | 'slide-up' | 'slide-left' | 'slide-right
 interface AnimateInProps {
   children: ReactNode
   variant?: AnimateInVariant
-  /** Delay in ms before animation starts once in view. Default: 0 */
+  /** Delay in ms before the animation starts. Rounded to the nearest 100ms. */
   delay?: number
-  /** Duration in ms. Default: 600 */
+  /** Duration in ms. Default 600. */
   duration?: number
-  /** Easing function. Default: cubic-bezier(0.16, 1, 0.3, 1),  snappy ease-out */
-  easing?: string
-  /** Pass extra className to the wrapper div */
+  /** Extra className. */
   className?: string
-  /** IntersectionObserver threshold. Default: 0.1 */
+  /**
+   * Unused (kept for API compatibility with the previous React-based
+   * component). Threshold is now controlled globally by ScrollRevealRoot.
+   */
   threshold?: number
 }
 
-const hiddenStyles: Record<AnimateInVariant, CSSProperties> = {
-  fade: { opacity: 0 },
-  'slide-up': { opacity: 0, transform: 'translateY(32px)' },
-  'slide-left': { opacity: 0, transform: 'translateX(-32px)' },
-  'slide-right': { opacity: 0, transform: 'translateX(32px)' },
-  scale: { opacity: 0, transform: 'scale(0.92)' },
-}
-
-const visibleStyles: CSSProperties = {
-  opacity: 1,
-  transform: 'none',
+const variantClass: Record<AnimateInVariant, string> = {
+  fade: 'anim-fade-in',
+  'slide-up': 'anim-slide-up',
+  'slide-left': 'anim-slide-left',
+  'slide-right': 'anim-slide-right',
+  scale: 'anim-scale-in',
 }
 
 export default function AnimateIn({
@@ -61,29 +51,18 @@ export default function AnimateIn({
   variant = 'slide-up',
   delay = 0,
   duration = 600,
-  easing = 'cubic-bezier(0.16, 1, 0.3, 1)',
   className = '',
-  threshold = 0.1,
 }: AnimateInProps) {
-  const [ref, inView] = useInView({ threshold })
-  const [hydrated, setHydrated] = useState(false)
-
-  useEffect(() => {
-    setHydrated(true)
-  }, [])
-
-  // Before hydration: render fully visible (no flash of invisible content)
-  // After hydration: use IntersectionObserver for entrance animations
-  const style: CSSProperties = !hydrated
-    ? visibleStyles
-    : {
-        ...(inView ? visibleStyles : hiddenStyles[variant]),
-        transition: `opacity ${duration}ms ${easing} ${delay}ms, transform ${duration}ms ${easing} ${delay}ms`,
-        willChange: 'opacity, transform',
-      }
+  const style: CSSProperties = {}
+  if (duration !== 600) style.animationDuration = `${duration}ms`
+  if (delay > 0) style.animationDelay = `${delay}ms`
 
   return (
-    <div ref={ref as React.RefObject<HTMLDivElement>} style={style} className={className}>
+    <div
+      data-animate
+      className={`reveal ${variantClass[variant]} ${className}`.trim()}
+      style={style}
+    >
       {children}
     </div>
   )

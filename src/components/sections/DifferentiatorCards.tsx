@@ -1,5 +1,3 @@
-'use client'
-
 /**
  * DifferentiatorCards,  4 differentiator cards on a dark bg.
  * Full-width section. Cards stagger in via AnimateIn.

@@ -8,6 +8,7 @@ import Navbar from '@/src/components/layout/Navbar'
 import Footer from '@/src/components/layout/Footer'
 import FloatingCTA from '@/src/components/layout/FloatingCTA'
 import UtmCapture from '@/src/components/layout/UtmCapture'
+import ScrollRevealRoot from '@/src/components/ui/ScrollRevealRoot'
 import { siteConfig } from '@/src/config/site'
 import '@/app/globals.css'
 
@@ -18,13 +19,18 @@ import '@/app/globals.css'
  * head/body/layout edits must happen HERE.
  */
 
+// Sora is only used for headings via `font-heading`. Grepping the codebase
+// (2026-04: see perf audit) shows it is only ever paired with `font-semibold`
+// (600) or `font-bold` (700). Dropping 400/500/800 saves ~45KB woff2 off the
+// critical path.
 const sora = Sora({
   subsets: ['latin'],
   variable: '--font-heading',
   display: 'swap',
-  weight: ['400', '500', '600', '700', '800'],
+  weight: ['600', '700'],
 })
 
+// Inter is the body font and is used at every weight 400-700.
 const inter = Inter({
   subsets: ['latin'],
   variable: '--font-body',
@@ -168,6 +174,11 @@ export default async function LocaleLayout({ children, params }: LocaleLayoutPro
               {/* Floating conversion CTA, shows after scrolling past hero */}
               <FloatingCTA />
               <UtmCapture />
+              {/* Single page-level IntersectionObserver that reveals any
+                  element with the `.reveal` class (emitted by AnimateIn).
+                  Replaces ~20 per-element observers previously created by
+                  the old React-based AnimateIn implementation. */}
+              <ScrollRevealRoot />
             </ConsentManager>
           </ThemeProvider>
         </NextIntlClientProvider>

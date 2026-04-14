@@ -1,5 +1,3 @@
-'use client'
-
 /**
  * WhoWeHelp,  industry tiles section.
  * Full-width section, staggered card entrance via AnimateIn.
