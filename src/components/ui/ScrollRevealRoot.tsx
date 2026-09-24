@@ -8,28 +8,37 @@
  *           `.reveal` element (emitted by the AnimateIn component) when it
  *           scrolls into view. Replaces ~20 per-element observers with one.
  *
- *           Elements above the fold at mount time animate immediately; below-
- *           fold elements animate when scrolled near. No content is hidden if
- *           JS is disabled — CSS gating (`html.js-ready .reveal { opacity: 0 }`)
- *           only hides content when the anti-FOUC script has marked the doc
- *           as JS-ready, and the observer runs right after mount.
- * @depends  globals.css .reveal/.in-view rules
+ *           Content is never hidden until this component has mounted: it
+ *           marks every `.reveal` already in the viewport as `.in-view` and
+ *           only then adds `html.reveal-ready`, which is what the CSS keys
+ *           `opacity: 0` off. Slow or failed hydration therefore degrades to
+ *           a fully visible page, never blank sections.
+ *
+ *           Also pauses any `.animate-marquee` while it is scrolled out of
+ *           view so the infinite transform animation costs nothing offscreen.
+ * @depends  globals.css .reveal/.in-view/.reveal-ready and .is-offscreen rules
  */
 
 import { useEffect } from 'react'
 
+const REVEAL_ROOT_MARGIN = '0px 0px -60px 0px'
+
+function isInViewport(el: Element) {
+  const r = el.getBoundingClientRect()
+  return r.bottom > 0 && r.top < window.innerHeight - 60 && r.right > 0 && r.left < window.innerWidth
+}
+
 export default function ScrollRevealRoot() {
   useEffect(() => {
-    if (typeof window === 'undefined') return
-
-    // Respect reduced-motion: reveal everything immediately, skip observer.
-    if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+    const html = document.documentElement
+    const revealAll = () =>
       document.querySelectorAll('.reveal').forEach((el) => el.classList.add('in-view'))
-      return
-    }
 
-    if (typeof IntersectionObserver === 'undefined') {
-      document.querySelectorAll('.reveal').forEach((el) => el.classList.add('in-view'))
+    if (
+      window.matchMedia('(prefers-reduced-motion: reduce)').matches ||
+      typeof IntersectionObserver === 'undefined'
+    ) {
+      revealAll()
       return
     }
 
@@ -42,23 +51,41 @@ export default function ScrollRevealRoot() {
           }
         }
       },
-      { rootMargin: '0px 0px -60px 0px', threshold: 0.08 }
+      { rootMargin: REVEAL_ROOT_MARGIN, threshold: 0.08 }
     )
 
-    const observe = () => {
-      document.querySelectorAll('.reveal:not(.in-view)').forEach((el) => observer.observe(el))
+    const observe = (root: ParentNode) => {
+      root.querySelectorAll('.reveal:not(.in-view)').forEach((el) => observer.observe(el))
     }
 
-    observe()
+    // Anything already on screen is revealed synchronously, in the same
+    // frame that hiding is switched on, so above-fold content never flashes.
+    document.querySelectorAll('.reveal').forEach((el) => {
+      if (isInViewport(el)) el.classList.add('in-view')
+    })
+    html.classList.add('reveal-ready')
+    observe(document)
 
-    // New `.reveal` elements may mount after initial paint (route changes,
-    // lazy hydration, etc). A lightweight MutationObserver picks them up.
+    const marqueeObserver = new IntersectionObserver((entries) => {
+      for (const entry of entries) {
+        entry.target.classList.toggle('is-offscreen', !entry.isIntersecting)
+      }
+    })
+    const observeMarquees = (root: ParentNode) => {
+      root.querySelectorAll('.animate-marquee').forEach((el) => marqueeObserver.observe(el))
+    }
+    observeMarquees(document)
+
+    // New elements may mount after initial paint (route changes, lazy
+    // hydration). A lightweight MutationObserver picks them up.
     const mo = new MutationObserver((mutations) => {
       for (const m of mutations) {
         m.addedNodes.forEach((node) => {
           if (!(node instanceof Element)) return
-          if (node.matches?.('.reveal:not(.in-view)')) observer.observe(node)
-          node.querySelectorAll?.('.reveal:not(.in-view)').forEach((el) => observer.observe(el))
+          if (node.matches('.reveal:not(.in-view)')) observer.observe(node)
+          if (node.matches('.animate-marquee')) marqueeObserver.observe(node)
+          observe(node)
+          observeMarquees(node)
         })
       }
     })
@@ -66,7 +93,9 @@ export default function ScrollRevealRoot() {
 
     return () => {
       observer.disconnect()
+      marqueeObserver.disconnect()
       mo.disconnect()
+      html.classList.remove('reveal-ready')
     }
   }, [])
 

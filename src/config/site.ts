@@ -33,12 +33,6 @@ export const siteConfig = {
   },
 
   team: {
-    ching: {
-      name: 'Ching Ho',
-      linkedin: 'https://www.linkedin.com/in/ching-ho/',
-      photo: '/images/about-us/ching-ho.jpeg',
-      initials: 'CH',
-    },
     ray: {
       name: 'Ray Rasouli',
       linkedin: 'https://www.linkedin.com/in/ray-rasouli/',

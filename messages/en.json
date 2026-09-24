@@ -37,7 +37,6 @@
       "noChatbots": "Chatbots. Ever."
     },
     "teamLabels": {
-      "chingTitle": "PM & ERP/CRM Consultant",
       "rayTitle": "Software Engineer & Solutions"
     }
   },
@@ -81,7 +80,7 @@
       },
       {
         "title": "Owner-led, start to finish",
-        "description": "You work directly with the owners from start to finish; no handoffs. We keep our client list small, so you get focused attention, faster decisions, and real accountability."
+        "description": "You work directly with the owner from start to finish; no handoffs. We keep our client list small, so you get focused attention, faster decisions, and real accountability."
       }
     ]
   },
@@ -262,12 +261,8 @@
     },
     "team": {
       "title": "The Team",
-      "subtitle": "Two operators who've been in the weeds; and built systems to get out.",
+      "subtitle": "An operator who's been in the weeds; and built systems to get out.",
       "members": {
-        "ching": {
-          "title": "Project Manager & ERP/CRM Consultant",
-          "bio": "Spent nearly a decade managing operations, supply chain, and IT across multiple locations and 50+ person teams before moving into ERP systems leadership. Brings real operational experience from the floor to the system; not just configuration knowledge, but an understanding of how businesses actually run day to day."
-        },
         "ray": {
           "title": "Software Engineer & Solution Developer",
           "bio": "Full-stack developer who has built and replaced entire platforms from the ground up; from e-commerce migrations and ERP integrations to AI-assisted data pipelines and internal automation tools. Owns everything from database design to cloud infrastructure, with a focus on eliminating manual workflows and giving operations teams systems they can actually rely on."
@@ -365,9 +360,9 @@
     },
     "success": {
       "title": "We've received your request!",
-      "message": "Thank you for reaching out. Ching Ho, our ERP & CRM Consultant, will be in touch within 1 business day to schedule your free systems health check.",
-      "responderName": "Ching Ho",
-      "responderTitle": "Project Manager & ERP/CRM Consultant, Awesoon"
+      "message": "Thank you for reaching out. Ray Rasouli, our Software Engineer & Solution Developer, will be in touch within 1 business day to schedule your free systems health check.",
+      "responderName": "Ray Rasouli",
+      "responderTitle": "Software Engineer & Solution Developer, Awesoon"
     },
     "error": {
       "generic": "Something went wrong. Please try again or email us directly at ray.rasouli@awesoontechnologies.com.",
@@ -540,5 +535,44 @@
         "slug": "ops-outgrown-tools"
       }
     ]
+  },
+  "gamesPrivacy": {
+    "title": "Privacy policy, Awesoon games",
+    "updated": "Last updated 23 September 2026",
+    "appliesTo": "Applies to all ten Awesoon games: Stack Snap, Loop Weaver, Tidy Tiles, Idle Bakery Empire, Quick Trivia Blitz, Dodge Rush, Word Chain Dash, Color Match Frenzy, Knot Untangle and Bounce Blitz.",
+    "lead": "These games do not collect any personal data.",
+    "onDevice": "Each game runs entirely on your device. There is no account, no sign-in and no server. Your progress, scores, statistics and settings are stored on the device itself, and they are never sent to us or to anyone else.",
+    "collectH": "What we collect",
+    "collectB": "Nothing. We do not collect your name, email address, contacts, location, photos, device identifiers or usage analytics. Nothing you do in a game leaves your phone.",
+    "adsH": "Advertising",
+    "adsB": "The current versions of these games show no advertising. If a future version does, this page is updated before that version is released, and the update names the advertising provider and what it collects.",
+    "deleteH": "Deleting your data",
+    "deleteB": "Because everything is stored on your device, deleting a game deletes all of it. Several of the games also have a reset option in Settings that clears progress without deleting the app.",
+    "childrenH": "Children",
+    "childrenB": "These games are not directed at children under 13, and because they collect nothing, they hold no data about anyone of any age.",
+    "changesH": "Changes",
+    "changesB": "If this policy changes, the new version is posted on this page with a new date above.",
+    "contactH": "Contact",
+    "contactB": "Questions about this policy:"
+  },
+  "gamesSupport": {
+    "title": "Support, Awesoon games",
+    "lead": "Write to us about any Awesoon game and a person reads it.",
+    "appliesTo": "Covers all ten Awesoon games: Stack Snap, Loop Weaver, Tidy Tiles, Idle Bakery Empire, Quick Trivia Blitz, Dodge Rush, Word Chain Dash, Color Match Frenzy, Knot Untangle and Bounce Blitz.",
+    "faqH": "Common questions",
+    "q1": "My progress disappeared.",
+    "a1": "Progress is stored on the device only. Deleting a game, or setting up a new phone without restoring a backup, clears it.",
+    "q2": "Do the games need an internet connection?",
+    "a2": "No. Every game plays fully offline, start to finish.",
+    "q3": "Is there an account?",
+    "a3": "No. There is no sign-in, nothing is uploaded and nothing is shared.",
+    "q4": "How do I reset a game?",
+    "a4": "Several games have a reset in Settings. Deleting and reinstalling clears everything.",
+    "q5": "Do the games show ads?",
+    "a5": "Not in the current versions. If that changes, the privacy policy is updated before the new version ships.",
+    "contactH": "Contact",
+    "contactB": "Questions, bugs or a game that will not start:",
+    "privacyH": "Privacy",
+    "privacyLink": "Read the privacy policy for these games"
   }
 }
