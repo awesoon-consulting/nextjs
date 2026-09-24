@@ -3,6 +3,7 @@ import { siteConfig } from '@/src/config/site'
 import { getAllSolutionSlugs } from '@/src/data/solutions'
 import { getAllSupportSlugs } from '@/src/data/support'
 import { getAllInsightSlugs } from '@/src/data/insights'
+import { getAllGameSlugs } from '@/src/data/games'
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const baseUrl = process.env.NEXT_PUBLIC_SITE_URL ?? siteConfig.url
@@ -10,11 +11,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
   const solutionSlugs = getAllSolutionSlugs()
   const supportSlugs = getAllSupportSlugs()
   const insightSlugs = getAllInsightSlugs()
+  const gameSlugs = getAllGameSlugs()
 
   const entries: MetadataRoute.Sitemap = []
 
   // Static pages per locale
-  const staticPaths = ['', '/solutions', '/support', '/insights', '/about', '/contact']
+  const staticPaths = ['', '/solutions', '/support', '/insights', '/about', '/contact', '/games']
 
   for (const locale of locales) {
     for (const path of staticPaths) {
@@ -56,6 +58,21 @@ export default function sitemap(): MetadataRoute.Sitemap {
         alternates: {
           languages: Object.fromEntries(
             locales.map((l) => [l, `${baseUrl}/${l}/support/${slug}`])
+          ),
+        },
+      })
+    }
+
+    // Game pages
+    for (const slug of gameSlugs) {
+      entries.push({
+        url: `${baseUrl}/${locale}/games/${slug}`,
+        lastModified: new Date(),
+        changeFrequency: 'monthly',
+        priority: 0.7,
+        alternates: {
+          languages: Object.fromEntries(
+            locales.map((l) => [l, `${baseUrl}/${l}/games/${slug}`])
           ),
         },
       })
