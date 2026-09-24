@@ -575,5 +575,31 @@
     "contactB": "Preguntas, errores o un juego que no arranca:",
     "privacyH": "Privacidad",
     "privacyLink": "Leer la política de privacidad de estos juegos"
+  },
+  "games": {
+    "title": "Juegos de Awesoon",
+    "subtitle": "Diez juegos pequeños para iPhone y Android. Todos funcionan sin conexión, no piden cuenta y son gratuitos.",
+    "intro": "Nos dedicamos a construir software de operaciones. Estos son los juegos breves que hacemos entremedias: una regla clara cada uno, sin temporizadores que te reclamen al día siguiente y sin nada que salga de tu teléfono.",
+    "allGames": "Todos los juegos",
+    "backToGames": "Todos los juegos",
+    "howToPlay": "Cómo se juega",
+    "features": "Qué incluye",
+    "whoFor": "Para quién es",
+    "faq": "Preguntas",
+    "screenshots": "Pantallas",
+    "details": "De un vistazo",
+    "category": "Categoría",
+    "ageRating": "Clasificación",
+    "ageRatingValue": "4+, apto para todos",
+    "players": "Jugadores",
+    "price": "Precio",
+    "session": "Una partida",
+    "platforms": "Plataformas",
+    "platformsValue": "iPhone y Android",
+    "comingSoon": "Próximamente en App Store y Google Play",
+    "privacyNote": "Sin cuenta, sin seguimiento y sin subir nada.",
+    "privacyLink": "Política de privacidad",
+    "supportLink": "Soporte",
+    "viewGame": "Ver el juego"
   }
 }

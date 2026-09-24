@@ -574,5 +574,31 @@
     "contactB": "Questions, bugs or a game that will not start:",
     "privacyH": "Privacy",
     "privacyLink": "Read the privacy policy for these games"
+  },
+  "games": {
+    "title": "Awesoon games",
+    "subtitle": "Ten small games for iPhone and Android. Every one plays offline, needs no account, and is free.",
+    "intro": "We build operations software for a living. These are the short games we make in between: one clear rule each, no timers nagging you tomorrow, nothing uploaded anywhere.",
+    "allGames": "All games",
+    "backToGames": "All games",
+    "howToPlay": "How to play",
+    "features": "What is in it",
+    "whoFor": "Who it is for",
+    "faq": "Questions",
+    "screenshots": "Screens",
+    "details": "At a glance",
+    "category": "Category",
+    "ageRating": "Age rating",
+    "ageRatingValue": "4+, suitable for everyone",
+    "players": "Players",
+    "price": "Price",
+    "session": "A session",
+    "platforms": "Platforms",
+    "platformsValue": "iPhone and Android",
+    "comingSoon": "Coming soon to the App Store and Google Play",
+    "privacyNote": "No account, no tracking, nothing uploaded.",
+    "privacyLink": "Privacy policy",
+    "supportLink": "Support",
+    "viewGame": "View game"
   }
 }
