@@ -6,13 +6,12 @@ import { siteConfig } from '@/src/config/site'
 
 interface TeamMember {
   name: string
-  key: 'ching' | 'ray'
+  key: 'ray'
   photo: string
   linkedin: string
 }
 
 const team: TeamMember[] = [
-  { name: 'Ching Ho', key: 'ching', photo: siteConfig.team.ching.photo, linkedin: siteConfig.team.ching.linkedin },
   { name: 'Ray Rasouli', key: 'ray', photo: siteConfig.team.ray.photo, linkedin: siteConfig.team.ray.linkedin },
 ]
 
@@ -35,7 +34,7 @@ export default function TeamGrid() {
           </div>
         </AnimateIn>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-3xl mx-auto">
+        <div className="grid grid-cols-1 gap-8 max-w-md mx-auto">
           {team.map((member, idx) => (
             <AnimateIn key={member.name} variant="slide-up" delay={idx * 90} threshold={0.04}>
               <Card variant="bordered" className="text-center">

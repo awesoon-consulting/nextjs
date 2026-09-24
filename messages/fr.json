@@ -38,7 +38,6 @@
       "noChatbots": "De chatbots. Jamais."
     },
     "teamLabels": {
-      "chingTitle": "Gestionnaire de projet & Consultante ERP/CRM",
       "rayTitle": "Ingénieur logiciel & Solutions"
     }
   },
@@ -81,8 +80,8 @@
         "description": "Votre équipe ne devrait pas avoir à devenir experte en systèmes juste pour maintenir les choses en marche. Nous prenons en charge le gros du travail pour qu'elle puisse se concentrer sur l'entreprise."
       },
       {
-        "title": "Dirigé par les fondateurs, du début à la fin",
-        "description": "Vous travaillez directement avec les fondateurs du début à la fin; pas de transferts. Nous gardons notre liste de clients réduite pour vous offrir une attention ciblée, des décisions plus rapides et une vraie responsabilité."
+        "title": "Dirigé par le fondateur, du début à la fin",
+        "description": "Vous travaillez directement avec le fondateur du début à la fin; pas de transferts. Nous gardons notre liste de clients réduite pour vous offrir une attention ciblée, des décisions plus rapides et une vraie responsabilité."
       }
     ]
   },
@@ -263,12 +262,8 @@
     },
     "team": {
       "title": "L'équipe",
-      "subtitle": "Deux opérateurs qui ont été dans les tranchées; et qui ont bâti les systèmes pour en sortir.",
+      "subtitle": "Un opérateur qui a été dans les tranchées; et qui a bâti les systèmes pour en sortir.",
       "members": {
-        "ching": {
-          "title": "Gestionnaire de projet & Consultante ERP/CRM",
-          "bio": "A passé près d'une décennie à gérer les opérations, la chaîne d'approvisionnement et l'informatique sur plusieurs sites et des équipes de plus de 50 personnes avant de passer au leadership des systèmes ERP. Apporte une vraie expérience opérationnelle du terrain au système; pas seulement des connaissances de configuration, mais une compréhension du fonctionnement réel des entreprises au quotidien."
-        },
         "ray": {
           "title": "Ingénieur logiciel & Développeur de solutions",
           "bio": "Développeur full-stack qui a construit et remplacé des plateformes entières de A à Z; des migrations e-commerce et intégrations ERP aux pipelines de données assistés par IA et outils d'automatisation internes. Maîtrise tout, de la conception de bases de données à l'infrastructure cloud, avec un focus sur l'élimination des workflows manuels et la création de systèmes fiables pour les équipes opérationnelles."
@@ -366,9 +361,9 @@
     },
     "success": {
       "title": "Nous avons reçu votre demande!",
-      "message": "Merci de nous avoir contactés. Ching Ho, notre consultante ERP et CRM, vous contactera dans un délai d'un jour ouvrable pour planifier votre bilan gratuit.",
-      "responderName": "Ching Ho",
-      "responderTitle": "Gestionnaire de projet & Consultante ERP/CRM, Awesoon"
+      "message": "Merci de nous avoir contactés. Ray Rasouli, notre ingénieur logiciel et développeur de solutions, vous contactera dans un délai d'un jour ouvrable pour planifier votre bilan gratuit.",
+      "responderName": "Ray Rasouli",
+      "responderTitle": "Ingénieur logiciel & Développeur de solutions, Awesoon"
     },
     "error": {
       "generic": "Une erreur s'est produite. Veuillez réessayer ou nous écrire directement à ray.rasouli@awesoontechnologies.com.",
@@ -541,5 +536,44 @@
         "slug": "ops-outgrown-tools"
       }
     ]
+  },
+  "gamesPrivacy": {
+    "title": "Politique de confidentialité, jeux Awesoon",
+    "updated": "Dernière mise à jour le 23 septembre 2026",
+    "appliesTo": "S'applique aux dix jeux Awesoon : Stack Snap, Loop Weaver, Tidy Tiles, Idle Bakery Empire, Quick Trivia Blitz, Dodge Rush, Word Chain Dash, Color Match Frenzy, Knot Untangle et Bounce Blitz.",
+    "lead": "Ces jeux ne collectent aucune donnée personnelle.",
+    "onDevice": "Chaque jeu fonctionne entièrement sur votre appareil. Il n'y a ni compte, ni connexion, ni serveur. Votre progression, vos scores, vos statistiques et vos réglages sont enregistrés sur l'appareil lui-même et ne nous sont jamais transmis, ni à quiconque.",
+    "collectH": "Ce que nous collectons",
+    "collectB": "Rien. Nous ne collectons ni votre nom, ni votre adresse courriel, ni vos contacts, ni votre position, ni vos photos, ni identifiant d'appareil, ni données d'utilisation. Rien de ce que vous faites dans un jeu ne quitte votre téléphone.",
+    "adsH": "Publicité",
+    "adsB": "Les versions actuelles de ces jeux n'affichent aucune publicité. Si une version future en affiche, cette page sera mise à jour avant sa sortie et précisera le fournisseur publicitaire ainsi que les données collectées.",
+    "deleteH": "Supprimer vos données",
+    "deleteB": "Comme tout est enregistré sur votre appareil, supprimer un jeu supprime l'ensemble de ses données. Plusieurs jeux offrent aussi une réinitialisation dans les réglages, qui efface la progression sans désinstaller l'application.",
+    "childrenH": "Enfants",
+    "childrenB": "Ces jeux ne s'adressent pas aux enfants de moins de 13 ans et, comme ils ne collectent rien, ils ne détiennent aucune donnée sur qui que ce soit.",
+    "changesH": "Modifications",
+    "changesB": "Si cette politique change, la nouvelle version est publiée sur cette page avec une nouvelle date ci-dessus.",
+    "contactH": "Nous joindre",
+    "contactB": "Questions au sujet de cette politique :"
+  },
+  "gamesSupport": {
+    "title": "Assistance, jeux Awesoon",
+    "lead": "Écrivez-nous au sujet de n'importe quel jeu Awesoon, une personne vous lit.",
+    "appliesTo": "Couvre les dix jeux Awesoon : Stack Snap, Loop Weaver, Tidy Tiles, Idle Bakery Empire, Quick Trivia Blitz, Dodge Rush, Word Chain Dash, Color Match Frenzy, Knot Untangle et Bounce Blitz.",
+    "faqH": "Questions fréquentes",
+    "q1": "Ma progression a disparu.",
+    "a1": "La progression est enregistrée uniquement sur l'appareil. Supprimer un jeu, ou configurer un nouveau téléphone sans restaurer une sauvegarde, l'efface.",
+    "q2": "Les jeux ont-ils besoin d'une connexion Internet ?",
+    "a2": "Non. Chaque jeu fonctionne entièrement hors ligne, du début à la fin.",
+    "q3": "Faut-il un compte ?",
+    "a3": "Non. Aucune connexion, rien n'est téléversé et rien n'est partagé.",
+    "q4": "Comment réinitialiser un jeu ?",
+    "a4": "Plusieurs jeux proposent une réinitialisation dans les réglages. Désinstaller puis réinstaller efface tout.",
+    "q5": "Les jeux affichent-ils des publicités ?",
+    "a5": "Pas dans les versions actuelles. Si cela change, la politique de confidentialité sera mise à jour avant la sortie de la nouvelle version.",
+    "contactH": "Nous joindre",
+    "contactB": "Questions, bogues ou un jeu qui refuse de démarrer :",
+    "privacyH": "Confidentialité",
+    "privacyLink": "Lire la politique de confidentialité de ces jeux"
   }
 }

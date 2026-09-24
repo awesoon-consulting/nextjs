@@ -216,15 +216,15 @@ export default function MultiStepForm() {
         </h2>
         <p className="text-text-secondary mb-8 max-w-md mx-auto">{t('success.message')}</p>
         <a
-          href={siteConfig.team.ching.linkedin}
+          href={siteConfig.team.ray.linkedin}
           target="_blank"
           rel="noopener noreferrer"
           className="mx-auto flex max-w-xs items-center gap-4 rounded-xl border border-neutral-200 bg-neutral-50 p-4 dark:border-white/10 dark:bg-secondary/45 hover:border-accent/40 dark:hover:border-white/20 transition-colors group"
         >
           <div className="relative flex-shrink-0">
             <Image
-              src={siteConfig.team.ching.photo}
-              alt={siteConfig.team.ching.name}
+              src={siteConfig.team.ray.photo}
+              alt={siteConfig.team.ray.name}
               width={48}
               height={48}
               className="rounded-full border-2 border-secondary/20"

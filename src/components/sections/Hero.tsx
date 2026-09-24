@@ -38,17 +38,23 @@ export default function Hero() {
           <rect width="100%" height="100%" fill="url(#hero-grid-dark)" className="hidden dark:block" />
         </svg>
 
+        {/*
+          Glows are radial gradients, not filter: blur(). A 140-180px blur on
+          a 400-600px element under a fixed backdrop-blur navbar forces iOS
+          Safari to re-rasterize huge layers on every scroll frame, which is
+          what stalled the homepage on iPhone.
+        */}
         <div
-          className="absolute left-[-10%] top-24 h-[420px] w-[420px] rounded-full blur-[140px]"
-          style={{ backgroundColor: 'rgba(245,158,11,0.10)' }}
+          className="absolute left-[-10%] top-24 h-[700px] w-[700px] -translate-x-[20%] -translate-y-[20%]"
+          style={{ background: 'radial-gradient(circle, rgba(245,158,11,0.10) 0%, rgba(245,158,11,0.04) 35%, transparent 65%)' }}
         />
         <div
-          className="absolute right-[-8%] top-1/2 h-[560px] w-[560px] -translate-y-1/2 rounded-full blur-[180px] dark:hidden"
-          style={{ backgroundColor: 'rgba(10,10,10,0.08)' }}
+          className="absolute right-[-8%] top-1/2 h-[920px] w-[920px] -translate-y-1/2 translate-x-[20%] dark:hidden"
+          style={{ background: 'radial-gradient(circle, rgba(10,10,10,0.08) 0%, rgba(10,10,10,0.03) 35%, transparent 65%)' }}
         />
         <div
-          className="absolute right-0 top-1/2 hidden h-[600px] w-[600px] -translate-y-1/2 rounded-full blur-[160px] dark:block"
-          style={{ backgroundColor: 'rgba(15,29,51,0.52)' }}
+          className="absolute right-0 top-1/2 hidden h-[960px] w-[960px] -translate-y-1/2 translate-x-[20%] dark:block"
+          style={{ background: 'radial-gradient(circle, rgba(15,29,51,0.52) 0%, rgba(15,29,51,0.20) 35%, transparent 65%)' }}
         />
       </div>
 

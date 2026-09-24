@@ -38,7 +38,6 @@
       "noChatbots": "Chatbots. Nunca."
     },
     "teamLabels": {
-      "chingTitle": "Gerente de Proyecto & Consultora ERP/CRM",
       "rayTitle": "Ingeniero de Software & Soluciones"
     }
   },
@@ -81,8 +80,8 @@
         "description": "Tu equipo no debería tener que convertirse en expertos en sistemas solo para mantener las cosas funcionando. Nosotros nos encargamos del trabajo pesado para que puedan enfocarse en el negocio."
       },
       {
-        "title": "Liderado por los fundadores, de principio a fin",
-        "description": "Trabajas directamente con los fundadores de principio a fin; sin traspasos. Mantenemos nuestra lista de clientes pequeña para darte atención enfocada, decisiones más rápidas y responsabilidad real."
+        "title": "Liderado por el fundador, de principio a fin",
+        "description": "Trabajas directamente con el fundador de principio a fin; sin traspasos. Mantenemos nuestra lista de clientes pequeña para darte atención enfocada, decisiones más rápidas y responsabilidad real."
       }
     ]
   },
@@ -263,12 +262,8 @@
     },
     "team": {
       "title": "El equipo",
-      "subtitle": "Dos operadores que han estado en las trincheras; y construyeron los sistemas para salir de ellas.",
+      "subtitle": "Un operador que ha estado en las trincheras; y construyó los sistemas para salir de ellas.",
       "members": {
-        "ching": {
-          "title": "Gerente de Proyecto & Consultora ERP/CRM",
-          "bio": "Pasó casi una década gestionando operaciones, cadena de suministro y TI en múltiples ubicaciones y equipos de más de 50 personas antes de pasar al liderazgo de sistemas ERP. Aporta experiencia operativa real del piso al sistema; no solo conocimiento de configuración, sino una comprensión de cómo realmente funcionan los negocios día a día."
-        },
         "ray": {
           "title": "Ingeniero de Software & Desarrollador de Soluciones",
           "bio": "Desarrollador full-stack que ha construido y reemplazado plataformas enteras desde cero; desde migraciones de e-commerce e integraciones ERP hasta pipelines de datos asistidos por IA y herramientas de automatización internas. Maneja todo, desde diseño de bases de datos hasta infraestructura cloud, con un enfoque en eliminar flujos manuales y dar a los equipos operativos sistemas en los que realmente pueden confiar."
@@ -366,9 +361,9 @@
     },
     "success": {
       "title": "¡Hemos recibido tu solicitud!",
-      "message": "Gracias por contactarnos. Ching Ho, nuestra consultora de ERP y CRM, estará en contacto dentro de 1 día hábil para programar tu diagnóstico gratuito.",
-      "responderName": "Ching Ho",
-      "responderTitle": "Gerente de Proyecto & Consultora ERP/CRM, Awesoon"
+      "message": "Gracias por contactarnos. Ray Rasouli, nuestro ingeniero de software y desarrollador de soluciones, estará en contacto dentro de 1 día hábil para programar tu diagnóstico gratuito.",
+      "responderName": "Ray Rasouli",
+      "responderTitle": "Ingeniero de Software & Desarrollador de Soluciones, Awesoon"
     },
     "error": {
       "generic": "Algo salió mal. Por favor intenta de nuevo o escríbenos directamente a ray.rasouli@awesoontechnologies.com.",
@@ -541,5 +536,44 @@
         "slug": "ops-outgrown-tools"
       }
     ]
+  },
+  "gamesPrivacy": {
+    "title": "Política de privacidad, juegos de Awesoon",
+    "updated": "Última actualización: 23 de septiembre de 2026",
+    "appliesTo": "Se aplica a los diez juegos de Awesoon: Stack Snap, Loop Weaver, Tidy Tiles, Idle Bakery Empire, Quick Trivia Blitz, Dodge Rush, Word Chain Dash, Color Match Frenzy, Knot Untangle y Bounce Blitz.",
+    "lead": "Estos juegos no recopilan ningún dato personal.",
+    "onDevice": "Cada juego funciona por completo en tu dispositivo. No hay cuenta, ni inicio de sesión, ni servidor. Tu progreso, tus puntuaciones, tus estadísticas y tus ajustes se guardan en el propio dispositivo y nunca se nos envían, ni a nadie más.",
+    "collectH": "Qué recopilamos",
+    "collectB": "Nada. No recopilamos tu nombre, correo electrónico, contactos, ubicación, fotos, identificadores del dispositivo ni datos de uso. Nada de lo que haces en un juego sale de tu teléfono.",
+    "adsH": "Publicidad",
+    "adsB": "Las versiones actuales de estos juegos no muestran publicidad. Si una versión futura la muestra, esta página se actualizará antes de publicarla e indicará el proveedor publicitario y qué datos recopila.",
+    "deleteH": "Eliminar tus datos",
+    "deleteB": "Como todo se guarda en tu dispositivo, borrar un juego borra todos sus datos. Varios juegos incluyen además un reinicio en los ajustes que borra el progreso sin desinstalar la aplicación.",
+    "childrenH": "Menores",
+    "childrenB": "Estos juegos no están dirigidos a menores de 13 años y, como no recopilan nada, no conservan datos de nadie, sea cual sea su edad.",
+    "changesH": "Cambios",
+    "changesB": "Si esta política cambia, la nueva versión se publica en esta página con una fecha nueva arriba.",
+    "contactH": "Contacto",
+    "contactB": "Preguntas sobre esta política:"
+  },
+  "gamesSupport": {
+    "title": "Soporte, juegos de Awesoon",
+    "lead": "Escríbenos sobre cualquier juego de Awesoon y una persona lo lee.",
+    "appliesTo": "Cubre los diez juegos de Awesoon: Stack Snap, Loop Weaver, Tidy Tiles, Idle Bakery Empire, Quick Trivia Blitz, Dodge Rush, Word Chain Dash, Color Match Frenzy, Knot Untangle y Bounce Blitz.",
+    "faqH": "Preguntas frecuentes",
+    "q1": "Mi progreso desapareció.",
+    "a1": "El progreso se guarda solo en el dispositivo. Borrar un juego, o configurar un teléfono nuevo sin restaurar una copia de seguridad, lo elimina.",
+    "q2": "¿Los juegos necesitan conexión a internet?",
+    "a2": "No. Todos los juegos funcionan completamente sin conexión, de principio a fin.",
+    "q3": "¿Hace falta una cuenta?",
+    "a3": "No. No hay inicio de sesión, no se sube nada y no se comparte nada.",
+    "q4": "¿Cómo reinicio un juego?",
+    "a4": "Varios juegos tienen un reinicio en los ajustes. Desinstalar y volver a instalar lo borra todo.",
+    "q5": "¿Los juegos muestran publicidad?",
+    "a5": "No en las versiones actuales. Si eso cambia, la política de privacidad se actualizará antes de publicar la nueva versión.",
+    "contactH": "Contacto",
+    "contactB": "Preguntas, errores o un juego que no arranca:",
+    "privacyH": "Privacidad",
+    "privacyLink": "Leer la política de privacidad de estos juegos"
   }
 }

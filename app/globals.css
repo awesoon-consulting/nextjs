@@ -283,8 +283,8 @@ button {
 }
 
 @keyframes marquee {
-  0% { transform: translateX(0); }
-  100% { transform: translateX(-50%); }
+  0% { transform: translate3d(0, 0, 0); }
+  100% { transform: translate3d(-50%, 0, 0); }
 }
 
 /* Detail card content swap animation */
@@ -305,11 +305,26 @@ button {
 
 .animate-marquee {
   animation: marquee 40s linear infinite;
-  will-change: transform;
 }
 
 .animate-marquee:hover {
   animation-play-state: paused;
+}
+
+/* Pause the marquee while it is scrolled out of view so it never costs a
+   frame it is not visible for. ScrollRevealRoot toggles this class. */
+.animate-marquee.is-offscreen {
+  animation-play-state: paused;
+}
+
+/* The edge fade mask makes the whole animated strip a masked layer that
+   iOS Safari re-rasterizes every frame at 3x DPR. Only apply it where the
+   GPU can afford it (tablet and up). */
+@media (min-width: 640px) {
+  .marquee-mask {
+    mask-image: linear-gradient(to right, transparent, black 6%, black 94%, transparent);
+    -webkit-mask-image: linear-gradient(to right, transparent, black 6%, black 94%, transparent);
+  }
 }
 
 @media (prefers-reduced-motion: reduce) {
@@ -342,30 +357,33 @@ html.js-ready .animate-in {
    `.reveal` start hidden; the observer adds `.in-view` when they
    enter the viewport, triggering a one-shot CSS animation.
 
-   Without JS (no .js-ready), `.reveal` elements are fully visible
-   so non-JS crawlers and reduced-motion users see the content.
+   `.reveal` elements are only hidden once `html.reveal-ready` is set,
+   which ScrollRevealRoot adds after hydration, in the same tick that it
+   marks every element already in the viewport as `.in-view`. If JS is
+   slow, blocked, or hydration fails, nothing is ever hidden: the page
+   degrades to fully visible content instead of blank sections.
    ───────────────────────────────────────────────────────────── */
-html.js-ready .reveal {
+html.reveal-ready .reveal {
   opacity: 0;
 }
-html.js-ready .reveal.in-view {
+html.reveal-ready .reveal.in-view {
   animation-fill-mode: both;
   animation-duration: 600ms;
   animation-timing-function: cubic-bezier(0.16, 1, 0.3, 1);
 }
-html.js-ready .reveal.in-view.anim-fade-in {
+html.reveal-ready .reveal.in-view.anim-fade-in {
   animation-name: fade-in;
 }
-html.js-ready .reveal.in-view.anim-slide-up {
+html.reveal-ready .reveal.in-view.anim-slide-up {
   animation-name: slide-up;
 }
-html.js-ready .reveal.in-view.anim-slide-left {
+html.reveal-ready .reveal.in-view.anim-slide-left {
   animation-name: slide-left;
 }
-html.js-ready .reveal.in-view.anim-slide-right {
+html.reveal-ready .reveal.in-view.anim-slide-right {
   animation-name: slide-right;
 }
-html.js-ready .reveal.in-view.anim-scale-in {
+html.reveal-ready .reveal.in-view.anim-scale-in {
   animation-name: scale-in;
 }
 

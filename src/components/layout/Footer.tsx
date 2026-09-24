@@ -169,7 +169,7 @@ export default function Footer() {
               </li>
               <li className="pt-4">
                 <div className="flex items-center gap-3">
-                  {[siteConfig.team.ching, siteConfig.team.ray].map((member) => (
+                  {[siteConfig.team.ray].map((member) => (
                     <a
                       key={member.name}
                       href={member.linkedin}

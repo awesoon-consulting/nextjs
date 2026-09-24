@@ -24,13 +24,7 @@ export default function HeroMarquee() {
         </p>
       </div>
 
-      <div
-        className="relative overflow-hidden"
-        style={{
-          maskImage: 'linear-gradient(to right, transparent, black 6%, black 94%, transparent)',
-          WebkitMaskImage: 'linear-gradient(to right, transparent, black 6%, black 94%, transparent)',
-        }}
-      >
+      <div className="relative overflow-hidden marquee-mask">
         <div className="flex gap-12 sm:gap-16 animate-marquee whitespace-nowrap py-2">
           {doubled.map((platform, i) => (
             <a
