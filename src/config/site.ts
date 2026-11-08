@@ -12,6 +12,7 @@ export const siteConfig = {
   contact: {
     email: 'ray.rasouli@awesoontechnologies.com',
     privacyEmail: 'privacy@awesoon.com',
+    gamesEmail: 'games@awesoontechnologies.com',
     phone: '+1 (555) 000-0000', // PLACEHOLDER
     address: '4609-1480 Howe Street, Vancouver, BC, Canada',
   },

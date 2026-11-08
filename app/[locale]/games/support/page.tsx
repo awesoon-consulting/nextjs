@@ -52,8 +52,8 @@ export default async function GamesSupportPage({
             </h2>
             <p>
               {t('contactB')}{' '}
-              <a href={`mailto:${siteConfig.contact.email}`} className="underline">
-                {siteConfig.contact.email}
+              <a href={`mailto:${siteConfig.contact.gamesEmail}`} className="underline">
+                {siteConfig.contact.gamesEmail}
               </a>
             </p>
           </section>
