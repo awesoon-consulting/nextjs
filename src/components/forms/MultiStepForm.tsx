@@ -428,7 +428,6 @@ export default function MultiStepForm() {
           type="tel"
           value={data.phone}
           onChange={(e) => updateField('phone', e.target.value)}
-          placeholder={t('placeholders.phone')}
           autoComplete="tel"
         />
       </FormStep>

@@ -119,7 +119,7 @@ export default function Hero() {
               aria-label="Trust signals"
             >
               {[
-                { stat: '48h', label: t('trustSignals.auditTurnaround') },
+                { stat: '2', label: t('trustSignals.auditTurnaround') },
                 { stat: '100%', label: t('trustSignals.seniorDelivery') },
                 { stat: '0', label: t('trustSignals.noChatbots') },
               ].map(({ stat, label }) => (

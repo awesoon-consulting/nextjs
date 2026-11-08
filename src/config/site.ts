@@ -28,11 +28,6 @@ export const siteConfig = {
     cta: { labelKey: 'nav.cta', href: '/contact' },
   },
 
-  social: {
-    linkedin: 'https://linkedin.com/company/awesoon',
-    twitter: 'https://twitter.com/awesoon',
-  },
-
   team: {
     ray: {
       name: 'Ray Rasouli',
