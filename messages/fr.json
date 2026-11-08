@@ -6,7 +6,7 @@
     "support": "Support",
     "insights": "Perspectives",
     "about": "À propos",
-    "cta": "Parlons-en",
+    "cta": "Bilan gratuit",
     "openMenu": "Ouvrir le menu de navigation",
     "closeMenu": "Fermer le menu de navigation",
     "megaMenu": {
@@ -28,8 +28,8 @@
     "headline1": "Vos opérations ont dépassé",
     "headlineAccent": "vos outils.",
     "headline2": "Nous réglons ça.",
-    "subtext": "Nous travaillons avec des équipes en croissance pour réparer les systèmes défaillants et en construire qui tiennent la route; pratiques, indépendants et conçus pour le terrain, afin que votre équipe puisse se concentrer sur ce qu'elle fait de mieux.",
-    "primaryCta": "Parlons-en",
+    "subtext": "Nous réparons les systèmes défaillants et en construisons qui tiennent la route. Commencez par un bilan gratuit, livré en 2 jours ouvrables, pour que votre équipe se concentre sur ce qu'elle fait de mieux.",
+    "primaryCta": "Obtenir mon bilan gratuit",
     "secondaryCta": "Voir comment nous travaillons",
     "trustBadge": "Bilan gratuit de vos systèmes. Réponse en 1 jour ouvrable.",
     "trustSignals": {
@@ -273,7 +273,7 @@
     "cta": {
       "headline": "Les opérations devraient être faciles. On vous y amène.",
       "subtext": "Commençons par un bilan des systèmes gratuit. Pas de présentation, pas de pression; juste un regard objectif sur vos opérations et un chemin clair pour les faire fonctionner comme elles le devraient.",
-      "button": "Parlons-en"
+      "button": "Obtenir mon bilan gratuit"
     }
   },
   "contact": {

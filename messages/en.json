@@ -5,7 +5,7 @@
     "support": "Support",
     "insights": "Insights",
     "about": "About",
-    "cta": "Let's Talk",
+    "cta": "Free Health Check",
     "openMenu": "Open navigation menu",
     "closeMenu": "Close navigation menu",
     "megaMenu": {
@@ -27,8 +27,8 @@
     "headline1": "Your ops outgrew",
     "headlineAccent": "your tools.",
     "headline2": "We fix that.",
-    "subtext": "We partner with growing teams to fix broken systems and build ones that actually hold up; practical, independent, and built for real use, so your team can focus on what they do best.",
-    "primaryCta": "Let's Talk",
+    "subtext": "We fix broken systems and build ones that hold up. Start with a free systems health check, delivered within 2 business days, so your team can get back to what it does best.",
+    "primaryCta": "Get My Free Health Check",
     "secondaryCta": "See How We Work",
     "trustBadge": "Free systems health check. Reply within 1 business day.",
     "trustSignals": {
@@ -272,7 +272,7 @@
     "cta": {
       "headline": "Operations should feel easy. Let's get you there.",
       "subtext": "Start with a free systems health check. No pitch deck, no sales pressure; just a clear-eyed look at where your operations stand and what it would take to make them work the way they should.",
-      "button": "Let's Talk"
+      "button": "Get My Free Health Check"
     }
   },
   "contact": {

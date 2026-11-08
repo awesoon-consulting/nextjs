@@ -6,7 +6,7 @@
     "support": "Soporte",
     "insights": "Perspectivas",
     "about": "Nosotros",
-    "cta": "Hablemos",
+    "cta": "Diagnóstico gratis",
     "openMenu": "Abrir menú de navegación",
     "closeMenu": "Cerrar menú de navegación",
     "megaMenu": {
@@ -28,8 +28,8 @@
     "headline1": "Tus operaciones superaron",
     "headlineAccent": "tus herramientas.",
     "headline2": "Nosotros lo arreglamos.",
-    "subtext": "Trabajamos con equipos en crecimiento para arreglar sistemas rotos y construir los que realmente funcionan; prácticos, independientes y diseñados para el uso real, para que tu equipo pueda enfocarse en lo que mejor sabe hacer.",
-    "primaryCta": "Hablemos",
+    "subtext": "Arreglamos sistemas rotos y construimos los que funcionan. Empieza con un diagnóstico gratuito, entregado en 2 días hábiles, para que tu equipo se enfoque en lo que mejor sabe hacer.",
+    "primaryCta": "Quiero mi diagnóstico gratis",
     "secondaryCta": "Ver cómo trabajamos",
     "trustBadge": "Diagnóstico gratuito de tus sistemas. Respuesta en 1 día hábil.",
     "trustSignals": {
@@ -273,7 +273,7 @@
     "cta": {
       "headline": "Las operaciones deberían ser fáciles. Vamos a lograrlo.",
       "subtext": "Empecemos con un diagnóstico de sistemas gratuito. Sin presentación, sin presión; solo una mirada objetiva a tus operaciones y un camino claro para que funcionen como deberían.",
-      "button": "Hablemos"
+      "button": "Quiero mi diagnóstico gratis"
     }
   },
   "contact": {
