@@ -1,0 +1,112 @@
+import { MetadataRoute } from 'next'
+import { siteConfig } from '@/src/config/site'
+import { getAllSolutionSlugs } from '@/src/data/solutions'
+import { getAllSupportSlugs } from '@/src/data/support'
+import { getAllInsightSlugs } from '@/src/data/insights'
+import { getAllGameSlugs } from '@/src/data/games'
+
+export default function sitemap(): MetadataRoute.Sitemap {
+  const baseUrl = process.env.NEXT_PUBLIC_SITE_URL ?? siteConfig.url
+  const locales = siteConfig.locales
+  const solutionSlugs = getAllSolutionSlugs()
+  const supportSlugs = getAllSupportSlugs()
+  const insightSlugs = getAllInsightSlugs()
+  const gameSlugs = getAllGameSlugs()
+
+  const entries: MetadataRoute.Sitemap = []
+
+  // Static pages per locale
+  const staticPaths = ['', '/solutions', '/support', '/insights', '/about', '/contact', '/games']
+
+  for (const locale of locales) {
+    for (const path of staticPaths) {
+      entries.push({
+        url: `${baseUrl}/${locale}${path}`,
+        lastModified: new Date(),
+        changeFrequency: path === '' ? 'weekly' : 'monthly',
+        priority: path === '' ? 1.0 : 0.8,
+        alternates: {
+          languages: Object.fromEntries(
+            locales.map((l) => [l, `${baseUrl}/${l}${path}`])
+          ),
+        },
+      })
+    }
+
+    // Solution pages
+    for (const slug of solutionSlugs) {
+      entries.push({
+        url: `${baseUrl}/${locale}/solutions/${slug}`,
+        lastModified: new Date(),
+        changeFrequency: 'monthly',
+        priority: 0.7,
+        alternates: {
+          languages: Object.fromEntries(
+            locales.map((l) => [l, `${baseUrl}/${l}/solutions/${slug}`])
+          ),
+        },
+      })
+    }
+
+    // Support pages
+    for (const slug of supportSlugs) {
+      entries.push({
+        url: `${baseUrl}/${locale}/support/${slug}`,
+        lastModified: new Date(),
+        changeFrequency: 'monthly',
+        priority: 0.7,
+        alternates: {
+          languages: Object.fromEntries(
+            locales.map((l) => [l, `${baseUrl}/${l}/support/${slug}`])
+          ),
+        },
+      })
+    }
+
+    // Game pages
+    for (const slug of gameSlugs) {
+      entries.push({
+        url: `${baseUrl}/${locale}/games/${slug}`,
+        lastModified: new Date(),
+        changeFrequency: 'monthly',
+        priority: 0.7,
+        alternates: {
+          languages: Object.fromEntries(
+            locales.map((l) => [l, `${baseUrl}/${l}/games/${slug}`])
+          ),
+        },
+      })
+    }
+
+    // Insight pages
+    for (const slug of insightSlugs) {
+      entries.push({
+        url: `${baseUrl}/${locale}/insights/${slug}`,
+        lastModified: new Date(),
+        changeFrequency: 'monthly',
+        priority: 0.6,
+        alternates: {
+          languages: Object.fromEntries(
+            locales.map((l) => [l, `${baseUrl}/${l}/insights/${slug}`])
+          ),
+        },
+      })
+    }
+  }
+
+  // AI-facing files
+  entries.push({
+    url: `${baseUrl}/llms.txt`,
+    lastModified: new Date(),
+    changeFrequency: 'monthly',
+    priority: 0.5,
+  })
+  entries.push({
+    url: `${baseUrl}/llms-full.txt`,
+    lastModified: new Date(),
+    changeFrequency: 'monthly',
+    priority: 0.5,
+  })
+
+  return entries
+}

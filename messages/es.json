@@ -1,0 +1,605 @@
+{
+  "_note": "TODO: Professional Spanish translation review required. These are machine-translated placeholders.",
+  "nav": {
+    "home": "Inicio",
+    "solutions": "Soluciones",
+    "support": "Soporte",
+    "insights": "Perspectivas",
+    "about": "Nosotros",
+    "cta": "Hablemos",
+    "openMenu": "Abrir menú de navegación",
+    "closeMenu": "Cerrar menú de navegación",
+    "megaMenu": {
+      "groupOps": "Operaciones e Integración",
+      "groupImplementation": "Implementación y Asesoría",
+      "aiOperations": "Operaciones con IA",
+      "opsOutgrown": "Operaciones superadas",
+      "spreadsheetOps": "Operaciones en hojas de cálculo",
+      "systemIntegration": "Integración de sistemas",
+      "apiIntegrations": "Integraciones API",
+      "erpImpl": "Implementación ERP",
+      "crmImpl": "Implementación CRM",
+      "vendorMgmt": "Selección de software",
+      "systemsAudit": "Diagnóstico gratuito de sistemas"
+    }
+  },
+  "hero": {
+    "headline": "Tus operaciones superaron tus herramientas. Nosotros lo arreglamos.",
+    "headline1": "Tus operaciones superaron",
+    "headlineAccent": "tus herramientas.",
+    "headline2": "Nosotros lo arreglamos.",
+    "subtext": "Trabajamos con equipos en crecimiento para arreglar sistemas rotos y construir los que realmente funcionan; prácticos, independientes y diseñados para el uso real, para que tu equipo pueda enfocarse en lo que mejor sabe hacer.",
+    "primaryCta": "Hablemos",
+    "secondaryCta": "Ver cómo trabajamos",
+    "trustBadge": "Elegido por líderes operacionales en Norteamérica",
+    "trustSignals": {
+      "auditTurnaround": "Tiempo promedio del diagnóstico",
+      "seniorDelivery": "Entrega por operador senior",
+      "noChatbots": "Chatbots. Nunca."
+    },
+    "teamLabels": {
+      "rayTitle": "Ingeniero de Software & Soluciones"
+    }
+  },
+  "whoWeHelp": {
+    "title": "A quién ayudamos",
+    "subtitle": "Trabajamos con empresas en crecimiento donde la forma de operar ha superado los sistemas que la sostienen.",
+    "industries": {
+      "manufacturing": {
+        "title": "Manufactura",
+        "description": "Producción, inventario y finanzas no están alineados; y estás atascado uniendo sistemas solo para mantener las cosas en marcha."
+      },
+      "distribution": {
+        "title": "Distribución y logística",
+        "description": "Pedidos, operaciones de almacén e integraciones de transportistas están desconectados; creando soluciones provisionales constantes y falta de visibilidad."
+      },
+      "industrial": {
+        "title": "Servicios industriales",
+        "description": "Los equipos de campo operan con hojas de cálculo y herramientas desconectadas; y eso empieza a fallar a medida que escalas."
+      },
+      "other": {
+        "title": "Otras operaciones en crecimiento",
+        "description": "Cualquier empresa en crecimiento donde los sistemas no han seguido el ritmo; y tu equipo compensa con trabajo manual, soluciones provisionales o contrataciones adicionales."
+      }
+    }
+  },
+  "differentiators": {
+    "title": "Por qué nosotros",
+    "subtitle": "No somos una firma de consultoría grande. Somos operadores que hemos vivido el problema.",
+    "items": [
+      {
+        "title": "Trabaja con operadores, no con consultores",
+        "description": "Hemos sido responsables de cómo funciona realmente el negocio; sistemas, flujos de trabajo y operaciones diarias. Por eso construimos sistemas que realmente funcionan en el mundo real."
+      },
+      {
+        "title": "Independientes por diseño",
+        "description": "La tecnología debe servir a tus operaciones, no al revés. No estamos atados a proveedores ni plataformas; cada recomendación se basa en tu negocio, no en la agenda de otro."
+      },
+      {
+        "title": "Quita la carga a tu equipo",
+        "description": "Tu equipo no debería tener que convertirse en expertos en sistemas solo para mantener las cosas funcionando. Nosotros nos encargamos del trabajo pesado para que puedan enfocarse en el negocio."
+      },
+      {
+        "title": "Liderado por el fundador, de principio a fin",
+        "description": "Trabajas directamente con el fundador de principio a fin; sin traspasos. Mantenemos nuestra lista de clientes pequeña para darte atención enfocada, decisiones más rápidas y responsabilidad real."
+      }
+    ]
+  },
+  "process": {
+    "title": "Cómo trabajamos",
+    "freeNoCommitment": "Gratis, sin compromiso",
+    "deliveredIn48h": "Entregado en 48h",
+    "ctaNudge": "Sin presentación. Sin compromisos. Solo claridad.",
+    "ctaButton": "Empieza con un diagnóstico gratuito",
+    "subtitle": "Cuatro pasos. Empieza donde quieras. Te encontramos donde estés y te llevamos tan lejos como necesites.",
+    "steps": [
+      {
+        "number": "01",
+        "title": "Diagnóstico de sistemas",
+        "description": "Entendemos rápidamente cómo trabaja tu equipo, las herramientas que usas y dónde fallan las cosas. Te vas con problemas claros, oportunidades de ahorro y un plan de acción."
+      },
+      {
+        "number": "02",
+        "title": "Diseño de solución",
+        "description": "Trabajamos contigo para traducir lo que encontramos en un plan claro; definir requisitos, seleccionar las herramientas correctas, trabajar con las empresas de software y trazar el camino hacia la implementación."
+      },
+      {
+        "number": "03",
+        "title": "Implementación",
+        "description": "Trabajamos contigo para hacer realidad el plan; manejando tanto o tan poco como necesites, desde la configuración del sistema hasta integraciones y gestión del proyecto."
+      },
+      {
+        "number": "04",
+        "title": "Soporte y optimización",
+        "description": "Nos quedamos contigo; tan involucrados como necesites, brindando soporte, haciendo mejoras y ayudando a que tus sistemas evolucionen con tu negocio."
+      }
+    ]
+  },
+  "solutions": {
+    "title": "Soluciones",
+    "subtitle": "Cada participación comienza con una comprensión profunda de tus operaciones.",
+    "learnMore": "Saber más",
+    "cards": {
+      "aiOperations": {
+        "title": "Operaciones con IA y habilitación RAG",
+        "description": "Ayudamos a equipos en crecimiento a desplegar asistentes RAG, agentes de flujo de trabajo y copilotos de IA sobre sistemas estables, datos gobernados y casos de uso operativos reales.",
+        "slug": "ai-operations"
+      },
+      "opsOutgrown": {
+        "title": "Operaciones superadas",
+        "description": "Tu negocio ha escalado pero tus sistemas no han seguido el ritmo. Diseñamos e implementamos la infraestructura que tu próxima etapa de crecimiento exige.",
+        "slug": "ops-outgrown-tools"
+      },
+      "spreadsheetOps": {
+        "title": "Operaciones en hojas de cálculo",
+        "description": "Gestionar tu empresa en Excel es un riesgo. Reemplazamos los procesos dependientes de hojas de cálculo con sistemas confiables y escalables.",
+        "slug": "spreadsheet-operations"
+      },
+      "systemIntegration": {
+        "title": "Integración de sistemas",
+        "description": "Los sistemas desconectados crean trabajo manual, errores y puntos ciegos. Conectamos tus herramientas para que los datos fluyan automáticamente.",
+        "slug": "system-integration"
+      },
+      "erpImplementation": {
+        "title": "Implementación de ERP",
+        "description": "Sin una visión operacional sólida, los proyectos ERP pueden fallar. Ahí es donde entramos nosotros; seleccionando, configurando e implementando un ERP que realmente se adapte a tus operaciones.",
+        "slug": "erp-implementation"
+      },
+      "crmImplementation": {
+        "title": "Implementación de CRM",
+        "description": "Tu equipo de ventas necesita más que una base de datos de contactos. Implementamos CRMs que dan a tu equipo visibilidad del pipeline y datos accionables.",
+        "slug": "crm-implementation"
+      },
+      "apiIntegrations": {
+        "title": "Integraciones API",
+        "description": "La transferencia manual de datos entre sistemas es un impuesto a la productividad. Construimos las integraciones que eliminan la reintroducción de datos y ahorran horas cada semana.",
+        "slug": "api-integrations"
+      },
+      "customApiDevelopment": {
+        "title": "Desarrollo API personalizado",
+        "description": "Cuando los conectores nativos no alcanzan, construimos middleware, endpoints y la lógica de integración que tu operación realmente necesita.",
+        "slug": "custom-api-development"
+      },
+      "ecommerceDevelopment": {
+        "title": "Desarrollo ecommerce",
+        "description": "Construimos sistemas ecommerce que conectan storefront, fulfillment, inventario, ERP, CRM y la realidad operativa detrás de ellos.",
+        "slug": "ecommerce-development"
+      },
+      "vendorManagement": {
+        "title": "Selección de software",
+        "description": "Elegir el software equivocado es costoso. Ejecutamos un proceso estructurado de selección para que elijas la herramienta correcta para tus operaciones específicas.",
+        "slug": "vendor-management"
+      },
+      "systemsAudit": {
+        "title": "Diagnóstico de sistemas",
+        "description": "¿No sabes por dónde empezar? Nuestro diagnóstico de sistemas te da un mapa completo de tu stack tecnológico operacional, brechas y una hoja de ruta priorizada.",
+        "slug": "systems-audit"
+      },
+      "mobileWarehouse": {
+        "title": "Almacén móvil y códigos de barras",
+        "description": "Procesos manuales, picking en papel y actualizaciones tardías crean errores de inventario y fricción operativa. Una solución de almacén móvil permite la captura de datos en tiempo real integrada con tu ERP.",
+        "slug": "mobile-warehouse-barcoding"
+      },
+      "projectManagement": {
+        "title": "Gestión de proyectos",
+        "description": "Los proyectos de software a menudo se estancan; no por la tecnología, sino porque no hay un recurso interno que los impulse. Nosotros intervenimos para mantener todo alineado y en movimiento.",
+        "slug": "project-management"
+      },
+      "processFoundations": {
+        "title": "Procesos operativos y fundamentos",
+        "description": "A veces el problema no es tu sistema; es cómo se está usando. Te ayudamos a corregir los fundamentos para que tus operaciones funcionen como deberían.",
+        "slug": "operational-process-foundations"
+      }
+    }
+  },
+  "supportHome": {
+    "title": "Soporte después del go-live",
+    "subtitle": "No solo entregamos proyectos. También damos soporte a sistemas en producción, reemplazamos proveedores débiles y ayudamos a los equipos a seguir mejorando después del lanzamiento."
+  },
+  "support": {
+    "title": "Soporte",
+    "subtitle": "Soporte post-lanzamiento liderado por operadores para los sistemas que ya sostienen tu negocio. Estabilización, mantenimiento, solicitudes de cambio, reemplazo de proveedor y mejora continua.",
+    "learnMore": "Saber más",
+    "cards": {
+      "systemsOperationsSupport": {
+        "title": "Soporte de sistemas y operaciones"
+      },
+      "crmSupport": {
+        "title": "Soporte CRM"
+      },
+      "erpSupport": {
+        "title": "Soporte ERP"
+      },
+      "ecommerceSupport": {
+        "title": "Soporte y mantenimiento ecommerce"
+      }
+    }
+  },
+  "insights": {
+    "title": "Perspectivas operacionales",
+    "subtitle": "Orientación práctica de operadores que han estado en las trincheras.",
+    "readMore": "Leer más",
+    "allPosts": "Todas las publicaciones",
+    "categories": {
+      "erp": "ERP",
+      "integration": "Integración",
+      "operations": "Operaciones",
+      "strategy": "Estrategia",
+      "technology": "Tecnología"
+    },
+    "noPosts": "Aún no hay publicaciones. Vuelve pronto."
+  },
+  "about": {
+    "title": "Sobre Awesoon",
+    "hero": {
+      "headline": "Creamos Awesoon para hacer las cosas de manera diferente.",
+      "subtext": "Hemos vivido los desafíos de hacer crecer un negocio con sistemas desconectados, recursos limitados y soluciones que no encajaban del todo. También hemos trabajado con consultores que traían marcos rígidos, empujaban software y pasaban por alto cómo realmente funciona el negocio en el día a día. Así no es como trabajamos. Nos asociamos con empresas para construir sistemas prácticos y flexibles que apoyen cómo realmente operan; sin complejidad innecesaria, costos excesivos ni marcos rígidos. Creemos que el mejor trabajo surge de una verdadera colaboración; por eso elegimos trabajar con clientes que valoran la colaboración, la transparencia y hacer las cosas bien."
+    },
+    "mission": {
+      "title": "Nuestra misión",
+      "text": "Hacer que las operaciones sean fáciles; no de forma ingenua, sino en el sentido que viene de tener los sistemas correctos, los datos correctos y los procesos correctos trabajando juntos. Damos a los equipos en crecimiento la infraestructura conectada que necesitan para crecer sin el caos, sin honorarios de consultoría inflados y sin soluciones genéricas que no encajan."
+    },
+    "values": {
+      "title": "Nuestros valores",
+      "items": [
+        {
+          "title": "Honestidad sobre el pulido",
+          "description": "Te diremos lo que realmente pensamos, no lo que suena bien en una presentación."
+        },
+        {
+          "title": "Implementación sobre consejos",
+          "description": "Las recomendaciones no valen nada si nunca se ejecutan. Construimos contigo."
+        },
+        {
+          "title": "Adecuado en lugar de mejor en su clase",
+          "description": "El mejor sistema para ti es el que tu equipo realmente usará."
+        },
+        {
+          "title": "Largo plazo sobre ganancias rápidas",
+          "description": "Diseñamos para donde va tu negocio, no solo para donde está hoy."
+        }
+      ]
+    },
+    "team": {
+      "title": "El equipo",
+      "subtitle": "Un operador que ha estado en las trincheras; y construyó los sistemas para salir de ellas.",
+      "members": {
+        "ray": {
+          "title": "Ingeniero de Software & Desarrollador de Soluciones",
+          "bio": "Desarrollador full-stack que ha construido y reemplazado plataformas enteras desde cero; desde migraciones de e-commerce e integraciones ERP hasta pipelines de datos asistidos por IA y herramientas de automatización internas. Maneja todo, desde diseño de bases de datos hasta infraestructura cloud, con un enfoque en eliminar flujos manuales y dar a los equipos operativos sistemas en los que realmente pueden confiar."
+        }
+      }
+    },
+    "cta": {
+      "headline": "Las operaciones deberían ser fáciles. Vamos a lograrlo.",
+      "subtext": "Empecemos con un diagnóstico de sistemas gratuito. Sin presentación, sin presión; solo una mirada objetiva a tus operaciones y un camino claro para que funcionen como deberían.",
+      "button": "Hablemos"
+    }
+  },
+  "contact": {
+    "title": "Hablemos",
+    "subtitle": "Cuéntanos qué se está rompiendo, qué está creciendo o qué se está atascando. Te ayudaremos a encontrar el siguiente paso correcto.",
+    "steps": {
+      "1": "Tu empresa",
+      "2": "Tus desafíos",
+      "3": "Cronograma y presupuesto",
+      "4": "Tus datos"
+    },
+    "fields": {
+      "industry": "Industria",
+      "companySize": "Tamaño de la empresa",
+      "problems": "¿Cuáles son tus mayores desafíos operacionales?",
+      "otherProblem": "Mi problema es diferente",
+      "timeline": "¿Cuándo quieres empezar?",
+      "budget": "Rango de presupuesto",
+      "name": "Nombre completo",
+      "company": "Nombre de la empresa",
+      "email": "Correo electrónico laboral",
+      "phone": "Teléfono (opcional)",
+      "message": "¿Algo más que quieras compartir?"
+    },
+    "placeholders": {
+      "name": "Juan García",
+      "company": "Manufactura Acme S.A.",
+      "email": "juan@acmemfg.com",
+      "phone": "+1 (555) 000-0000",
+      "otherProblem": "Cuéntanoslo...",
+      "message": "Cuéntanos más sobre tu situación...",
+      "selectIndustry": "Seleccionar industria",
+      "selectCompanySize": "Seleccionar tamaño",
+      "selectTimeline": "Seleccionar cronograma",
+      "selectBudget": "Seleccionar presupuesto"
+    },
+    "industries": {
+      "manufacturing": "Manufactura",
+      "distribution": "Distribución y logística",
+      "industrial": "Servicios industriales",
+      "other": "Otras operaciones en crecimiento"
+    },
+    "companySizes": {
+      "small": "10–50 empleados",
+      "medium": "51–200 empleados",
+      "large": "201–500 empleados",
+      "enterprise": "500+ empleados"
+    },
+    "problems": {
+      "outgrown": "Los sistemas no pueden seguir nuestro crecimiento",
+      "spreadsheets": "Procesos clave en hojas de cálculo",
+      "disconnected": "Los sistemas no se comunican entre sí",
+      "manual": "Demasiada entrada de datos manual y soluciones provisionales",
+      "noScalability": "Sin camino claro para escalar nuestras operaciones"
+    },
+    "timelines": {
+      "asap": "Lo antes posible",
+      "oneToThree": "1–3 meses",
+      "threeToSix": "3–6 meses",
+      "exploring": "Solo explorando opciones"
+    },
+    "budgets": {
+      "under25k": "Menos de $25,000",
+      "25kTo75k": "$25,000–$75,000",
+      "75kTo150k": "$75,000–$150,000",
+      "over150k": "$150,000+",
+      "preferNotToSay": "Prefiero no decir"
+    },
+    "buttons": {
+      "next": "Siguiente paso",
+      "back": "Atrás",
+      "submit": "Enviar solicitud",
+      "submitting": "Enviando..."
+    },
+    "validation": {
+      "nameRequired": "El nombre completo es obligatorio.",
+      "emailRequired": "El correo electrónico laboral es obligatorio.",
+      "emailInvalid": "Por favor ingresa una dirección de correo electrónico válida.",
+      "companyRequired": "El nombre de la empresa es obligatorio.",
+      "industryRequired": "Por favor selecciona tu industria.",
+      "companySizeRequired": "Por favor selecciona el tamaño de tu empresa.",
+      "problemRequired": "Por favor selecciona al menos un desafío.",
+      "timelineRequired": "Por favor selecciona un cronograma.",
+      "budgetRequired": "Por favor selecciona un rango de presupuesto."
+    },
+    "success": {
+      "title": "¡Hemos recibido tu solicitud!",
+      "message": "Gracias por contactarnos. Ray Rasouli, nuestro ingeniero de software y desarrollador de soluciones, estará en contacto dentro de 1 día hábil para programar tu diagnóstico gratuito.",
+      "responderName": "Ray Rasouli",
+      "responderTitle": "Ingeniero de Software & Desarrollador de Soluciones, Awesoon"
+    },
+    "error": {
+      "generic": "Algo salió mal. Por favor intenta de nuevo o escríbenos directamente a ray.rasouli@awesoontechnologies.com.",
+      "rateLimit": "Demasiados envíos. Por favor espera un momento antes de intentar de nuevo."
+    },
+    "expect": {
+      "discoveryTitle": "Llamada de descubrimiento",
+      "discoveryText": "Empezamos con una llamada de 30 minutos para entender tus operaciones y desafíos actuales.",
+      "healthCheckTitle": "Diagnóstico de sistemas gratuito",
+      "healthCheckText": "Mapeamos tu stack tecnológico y flujos de trabajo. Obtienes una visión clara de dónde está tu complejidad operativa.",
+      "noObligationTitle": "Sin compromiso",
+      "noObligationText": "Sin presión de ventas, sin presentación. Compartimos nuestra evaluación honesta y solo avanzamos si encajamos de verdad."
+    }
+  },
+  "footer": {
+    "tagline": "Awesoon significa fácil. Así deberían sentirse tus operaciones.",
+    "readyHeadline": "¿Listo para operaciones que realmente se sientan fáciles?",
+    "readySubtext": "Una llamada de 30 minutos. Sin presentación. Solo una mirada honesta a tus sistemas y un camino claro hacia adelante.",
+    "contactHeading": "Contacto",
+    "humanReplies": "Una persona real responde en 24 horas.",
+    "noChatbots": "Sin chatbots, sin respuestas automáticas.",
+    "solutions": "Soluciones",
+    "support": "Soporte",
+    "company": "Empresa",
+    "legal": "Legal",
+    "privacy": "Política de privacidad",
+    "terms": "Términos de servicio",
+    "cookies": "Política de cookies",
+    "copyright": "© {year} Awesoon Technologies. Todos los derechos reservados.",
+    "noTracking": "No se establecen cookies sin tu consentimiento.",
+    "madeWith": "Construido con cuidado en Vancouver."
+  },
+  "cookie": {
+    "banner": {
+      "title": "Usamos cookies",
+      "description": "Usamos cookies esenciales para que nuestro sitio funcione. Con tu permiso, también nos gustaría usar cookies analíticas para entender cómo usas nuestro sitio.",
+      "acceptAll": "Aceptar todo",
+      "rejectAll": "Rechazar todo",
+      "manage": "Gestionar preferencias",
+      "learnMore": "Más información sobre nuestra política de cookies"
+    },
+    "manager": {
+      "title": "Gestionar preferencias de cookies",
+      "save": "Guardar preferencias",
+      "categories": {
+        "necessary": {
+          "title": "Cookies necesarias",
+          "description": "Estas cookies son necesarias para que el sitio funcione. No se pueden deshabilitar.",
+          "alwaysOn": "Siempre activo"
+        },
+        "analytics": {
+          "title": "Cookies analíticas",
+          "description": "Estas cookies nos ayudan a entender cómo los visitantes usan nuestro sitio. Usamos Google Analytics 4."
+        },
+        "marketing": {
+          "title": "Cookies de marketing",
+          "description": "Estas cookies se usan para publicidad relevante. Actualmente no usamos cookies de marketing."
+        }
+      }
+    }
+  },
+  "privacy": {
+    "title": "Política de privacidad",
+    "lastUpdated": "Última actualización: 21 de marzo de 2026",
+    "effectiveDate": "Fecha de vigencia: 21 de marzo de 2026"
+  },
+  "terms": {
+    "title": "Términos de servicio",
+    "lastUpdated": "Última actualización: 21 de marzo de 2026"
+  },
+  "cookies": {
+    "title": "Política de cookies",
+    "lastUpdated": "Última actualización: 21 de marzo de 2026"
+  },
+  "notFound": {
+    "title": "Página no encontrada",
+    "headline": "No pudimos encontrar esa página.",
+    "message": "Puede haber sido movida o la URL podría ser incorrecta.",
+    "homeCta": "Ir al inicio",
+    "contactCta": "Contáctanos"
+  },
+  "eyebrow": {
+    "whyAwesoon": "Why Us",
+    "soundFamiliar": "¿Te suena familiar?",
+    "problemsWeSolve": "Problemas que resolvemos",
+    "support": "Sigue con soporte",
+    "howWeWork": "Cómo trabajamos",
+    "editorial": "Editorial",
+    "takeFirstStep": "Da el primer paso"
+  },
+  "floatingCta": {
+    "message": "Tu diagnóstico de sistemas es gratuito.",
+    "subtext": "30 minutos. Un operador real. Sin presentación.",
+    "button": "Reclamarlo →"
+  },
+  "solutionPage": {
+    "painPointsTitle": "¿Te resulta familiar?",
+    "whatWeDoTitle": "Qué hacemos",
+    "outcomesTitle": "Qué obtienes",
+    "aiTitle": "Valor agregado de IA, RAG y agentes",
+    "aiSubtitle": "Cuando la base operativa ya es estable, esta solución también abre espacio para un despliegue práctico de IA.",
+    "sidebarTitle": "¿Listo para empezar?",
+    "sidebarText": "Empieza con un diagnóstico gratuito de sistemas. Sin presentación, sin presión.",
+    "relatedSolutions": "Soluciones relacionadas",
+    "relatedInsights": "Artículos relacionados",
+    "platformsTitle": "Plataformas con las que trabajamos",
+    "platformsSubtitle": "Somos versátiles. Toca cualquier logo para ver dónde encaja mejor.",
+    "platformsTapHint": "Toca una plataforma arriba para saber cuándo es la adecuada."
+  },
+  "supportPage": {
+    "painPointsTitle": "Lo que normalmente dispara la necesidad de soporte",
+    "whatWeDoTitle": "Cómo ayudamos",
+    "platformsTitle": "Plataformas y entornos que soportamos",
+    "platformsSubtitle": "Soportamos entornos operativos reales, no solo pantallas aisladas de software.",
+    "platformsTapHint": "Toca una plataforma arriba para ver cómo la soportamos.",
+    "outcomesTitle": "Qué obtienes",
+    "sidebarTitle": "¿Necesitas un partner de soporte más sólido?",
+    "sidebarText": "Haznos entrar después de la entrega, después del go-live o cuando tu proveedor actual ya no esté dando la talla.",
+    "relatedSolutions": "Soluciones relacionadas"
+  },
+  "insightPage": {
+    "minRead": "min de lectura",
+    "relatedSolutions": "Soluciones relacionadas",
+    "keepReading": "Seguir leyendo",
+    "sources": "Fuentes"
+  },
+  "common": {
+    "loading": "Cargando...",
+    "step": "Paso",
+    "error": "Ocurrió un error. Por favor intenta de nuevo.",
+    "success": "¡Éxito!",
+    "required": "Obligatorio",
+    "optional": "Opcional",
+    "learnMore": "Saber más",
+    "getStarted": "Comenzar",
+    "backToHome": "Volver al inicio",
+    "skipToContent": "Saltar al contenido principal",
+    "trustNoChatbots": "Sin chatbots",
+    "trustReply24h": "Respuesta en 24h",
+    "trustFree": "Completamente gratis",
+    "trustNamedContact": "Un contacto designado",
+    "minRead": "{time} min de lectura",
+    "connectLinkedIn": "Conectar en LinkedIn"
+  },
+  "sitemap": {
+    "title": "Mapa del sitio"
+  },
+  "problemSolutions": {
+    "title": "¿Reconoces alguno de estos?",
+    "subtitle": "Si tus operaciones se parecen a esto, tenemos el manual para solucionarlo.",
+    "items": [
+      {
+        "problem": "\"Tenemos 4 sistemas y ninguno se comunica con los demás.\"",
+        "solution": "Integración de sistemas",
+        "slug": "system-integration"
+      },
+      {
+        "problem": "\"Todo nuestro proceso de pedidos vive en una hoja de cálculo.\"",
+        "solution": "Operaciones en hojas de cálculo",
+        "slug": "spreadsheet-operations"
+      },
+      {
+        "problem": "\"Compramos un ERP hace 2 años y todavía no está en vivo.\"",
+        "solution": "Implementación de ERP",
+        "slug": "erp-implementation"
+      },
+      {
+        "problem": "\"No sabemos qué hay en nuestro almacén hasta que lo contamos físicamente.\"",
+        "solution": "Infraestructura operacional",
+        "slug": "ops-outgrown-tools"
+      }
+    ]
+  },
+  "gamesPrivacy": {
+    "title": "Política de privacidad, juegos de Awesoon",
+    "updated": "Última actualización: 23 de septiembre de 2026",
+    "appliesTo": "Se aplica a los diez juegos de Awesoon: Stack Snap, Loop Weaver, Tidy Tiles, Idle Bakery Empire, Quick Trivia Blitz, Dodge Rush, Word Chain Dash, Color Match Frenzy, Knot Untangle y Bounce Blitz.",
+    "lead": "Estos juegos no recopilan ningún dato personal.",
+    "onDevice": "Cada juego funciona por completo en tu dispositivo. No hay cuenta, ni inicio de sesión, ni servidor. Tu progreso, tus puntuaciones, tus estadísticas y tus ajustes se guardan en el propio dispositivo y nunca se nos envían, ni a nadie más.",
+    "collectH": "Qué recopilamos",
+    "collectB": "Nada. No recopilamos tu nombre, correo electrónico, contactos, ubicación, fotos, identificadores del dispositivo ni datos de uso. Nada de lo que haces en un juego sale de tu teléfono.",
+    "adsH": "Publicidad",
+    "adsB": "Las versiones actuales de estos juegos no muestran publicidad. Si una versión futura la muestra, esta página se actualizará antes de publicarla e indicará el proveedor publicitario y qué datos recopila.",
+    "deleteH": "Eliminar tus datos",
+    "deleteB": "Como todo se guarda en tu dispositivo, borrar un juego borra todos sus datos. Varios juegos incluyen además un reinicio en los ajustes que borra el progreso sin desinstalar la aplicación.",
+    "childrenH": "Menores",
+    "childrenB": "Estos juegos no están dirigidos a menores de 13 años y, como no recopilan nada, no conservan datos de nadie, sea cual sea su edad.",
+    "changesH": "Cambios",
+    "changesB": "Si esta política cambia, la nueva versión se publica en esta página con una fecha nueva arriba.",
+    "contactH": "Contacto",
+    "contactB": "Preguntas sobre esta política:"
+  },
+  "gamesSupport": {
+    "title": "Soporte, juegos de Awesoon",
+    "lead": "Escríbenos sobre cualquier juego de Awesoon y una persona lo lee.",
+    "appliesTo": "Cubre los diez juegos de Awesoon: Stack Snap, Loop Weaver, Tidy Tiles, Idle Bakery Empire, Quick Trivia Blitz, Dodge Rush, Word Chain Dash, Color Match Frenzy, Knot Untangle y Bounce Blitz.",
+    "faqH": "Preguntas frecuentes",
+    "q1": "Mi progreso desapareció.",
+    "a1": "El progreso se guarda solo en el dispositivo. Borrar un juego, o configurar un teléfono nuevo sin restaurar una copia de seguridad, lo elimina.",
+    "q2": "¿Los juegos necesitan conexión a internet?",
+    "a2": "No. Todos los juegos funcionan completamente sin conexión, de principio a fin.",
+    "q3": "¿Hace falta una cuenta?",
+    "a3": "No. No hay inicio de sesión, no se sube nada y no se comparte nada.",
+    "q4": "¿Cómo reinicio un juego?",
+    "a4": "Varios juegos tienen un reinicio en los ajustes. Desinstalar y volver a instalar lo borra todo.",
+    "q5": "¿Los juegos muestran publicidad?",
+    "a5": "No en las versiones actuales. Si eso cambia, la política de privacidad se actualizará antes de publicar la nueva versión.",
+    "contactH": "Contacto",
+    "contactB": "Preguntas, errores o un juego que no arranca:",
+    "privacyH": "Privacidad",
+    "privacyLink": "Leer la política de privacidad de estos juegos"
+  },
+  "games": {
+    "title": "Juegos de Awesoon",
+    "subtitle": "Diez juegos pequeños para iPhone y Android. Todos funcionan sin conexión, no piden cuenta y son gratuitos.",
+    "intro": "Nos dedicamos a construir software de operaciones. Estos son los juegos breves que hacemos entremedias: una regla clara cada uno, sin temporizadores que te reclamen al día siguiente y sin nada que salga de tu teléfono.",
+    "allGames": "Todos los juegos",
+    "backToGames": "Todos los juegos",
+    "howToPlay": "Cómo se juega",
+    "features": "Qué incluye",
+    "whoFor": "Para quién es",
+    "faq": "Preguntas",
+    "screenshots": "Pantallas",
+    "details": "De un vistazo",
+    "category": "Categoría",
+    "ageRating": "Clasificación",
+    "ageRatingValue": "4+, apto para todos",
+    "players": "Jugadores",
+    "price": "Precio",
+    "session": "Una partida",
+    "platforms": "Plataformas",
+    "platformsValue": "iPhone y Android",
+    "comingSoon": "Próximamente en App Store y Google Play",
+    "privacyNote": "Sin cuenta, sin seguimiento y sin subir nada.",
+    "privacyLink": "Política de privacidad",
+    "supportLink": "Soporte",
+    "viewGame": "Ver el juego"
+  }
+}

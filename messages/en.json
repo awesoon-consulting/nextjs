@@ -1,0 +1,604 @@
+{
+  "nav": {
+    "home": "Home",
+    "solutions": "Solutions",
+    "support": "Support",
+    "insights": "Insights",
+    "about": "About",
+    "cta": "Let's Talk",
+    "openMenu": "Open navigation menu",
+    "closeMenu": "Close navigation menu",
+    "megaMenu": {
+      "groupOps": "Operations & Integration",
+      "groupImplementation": "Implementation & Advisory",
+      "aiOperations": "AI Operations",
+      "opsOutgrown": "Ops Outgrown Tools",
+      "spreadsheetOps": "Spreadsheet Operations",
+      "systemIntegration": "System Integration",
+      "apiIntegrations": "API Integrations",
+      "erpImpl": "ERP Implementation",
+      "crmImpl": "CRM Implementation",
+      "vendorMgmt": "Software Selection",
+      "systemsAudit": "Free Systems Health Check"
+    }
+  },
+  "hero": {
+    "headline": "Your ops outgrew your tools. We fix that.",
+    "headline1": "Your ops outgrew",
+    "headlineAccent": "your tools.",
+    "headline2": "We fix that.",
+    "subtext": "We partner with growing teams to fix broken systems and build ones that actually hold up; practical, independent, and built for real use, so your team can focus on what they do best.",
+    "primaryCta": "Let's Talk",
+    "secondaryCta": "See How We Work",
+    "trustBadge": "Trusted by operations leaders across North America",
+    "trustSignals": {
+      "auditTurnaround": "Average health check turnaround",
+      "seniorDelivery": "Senior operator delivery",
+      "noChatbots": "Chatbots. Ever."
+    },
+    "teamLabels": {
+      "rayTitle": "Software Engineer & Solutions"
+    }
+  },
+  "whoWeHelp": {
+    "title": "Who We Help",
+    "subtitle": "We work with growing companies where the way the business runs has outpaced the systems supporting it.",
+    "industries": {
+      "manufacturing": {
+        "title": "Manufacturing",
+        "description": "Production, inventory, and finance don't line up; and you're stuck stitching systems together just to keep things moving."
+      },
+      "distribution": {
+        "title": "Distribution & Logistics",
+        "description": "Orders, warehouse ops, and carrier integrations are disconnected; creating constant workarounds and missed visibility."
+      },
+      "industrial": {
+        "title": "Industrial Services",
+        "description": "Field teams are running on spreadsheets and disconnected tools; and it's starting to break as you scale."
+      },
+      "other": {
+        "title": "Other Growing Operations",
+        "description": "Any growing business where systems haven't kept up; and your team is compensating with manual work, workarounds, or extra hires."
+      }
+    }
+  },
+  "differentiators": {
+    "title": "Why Us",
+    "subtitle": "We're not a big-four consulting firm. We're operators who've been in the weeds and built the systems to get out.",
+    "items": [
+      {
+        "title": "Work with operators, not consultants",
+        "description": "We've been responsible for how the business actually runs; across systems, workflows, and day-to-day operations. That's why we build systems that actually work in the real world."
+      },
+      {
+        "title": "Independent by design",
+        "description": "Technology should serve your operations, not the other way around. We're not tied to vendors or platforms; every recommendation is based on your business, not someone else's agenda."
+      },
+      {
+        "title": "Take the load off your team",
+        "description": "Your team shouldn't have to become system experts just to keep things running. We handle the heavy lifting so they can stay focused on the business."
+      },
+      {
+        "title": "Owner-led, start to finish",
+        "description": "You work directly with the owner from start to finish; no handoffs. We keep our client list small, so you get focused attention, faster decisions, and real accountability."
+      }
+    ]
+  },
+  "process": {
+    "title": "How We Work",
+    "freeNoCommitment": "Free, no commitment",
+    "deliveredIn48h": "Delivered in 48h",
+    "ctaNudge": "No pitch deck. No commitments. Just clarity.",
+    "ctaButton": "Start with a Free Systems Health Check",
+    "subtitle": "Four steps. Start anywhere. We'll meet you where you are and take you as far as you need.",
+    "steps": [
+      {
+        "number": "01",
+        "title": "Systems Health Check",
+        "description": "We quickly understand how your team works, the tools you use, and where things break down. You'll leave with clear issues, cost-saving opportunities, and a plan for what to fix first."
+      },
+      {
+        "number": "02",
+        "title": "Solution Design",
+        "description": "We work with you to translate what we found into a clear plan; defining requirements, selecting the right tools, working with software companies, and mapping the path to implementation."
+      },
+      {
+        "number": "03",
+        "title": "Implementation",
+        "description": "We work with you to bring the plan to life; handling as much or as little as you need, from system configuration to integrations and project management."
+      },
+      {
+        "number": "04",
+        "title": "Support & Optimization",
+        "description": "We stick with you; staying involved as much as you need, providing support, making improvements, and helping your systems evolve as your business grows."
+      }
+    ]
+  },
+  "solutions": {
+    "title": "Solutions",
+    "subtitle": "Every engagement starts with a deep understanding of your operations. Here are the most common problems we solve.",
+    "learnMore": "Learn more",
+    "cards": {
+      "aiOperations": {
+        "title": "AI Operations & RAG Enablement",
+        "description": "We help growing teams deploy RAG assistants, workflow agents, and AI copilots on top of stable systems, governed data, and real operational use cases.",
+        "slug": "ai-operations"
+      },
+      "opsOutgrown": {
+        "title": "Ops Outgrown Your Tools",
+        "description": "Your business has scaled but your systems haven't kept up. We design and implement the infrastructure your next stage of growth demands.",
+        "slug": "ops-outgrown-tools"
+      },
+      "spreadsheetOps": {
+        "title": "Spreadsheet Operations",
+        "description": "Running your company on Excel is a liability. We replace spreadsheet-dependent processes with reliable, scalable systems.",
+        "slug": "spreadsheet-operations"
+      },
+      "systemIntegration": {
+        "title": "System Integration",
+        "description": "Disconnected systems create manual work, errors, and blind spots. We connect your tools so data flows automatically where it needs to go.",
+        "slug": "system-integration"
+      },
+      "erpImplementation": {
+        "title": "ERP Implementation",
+        "description": "Without a strong operational lens, ERP projects can miss the mark. That's where we come in; selecting, configuring, and implementing an ERP that actually fits your operations.",
+        "slug": "erp-implementation"
+      },
+      "crmImplementation": {
+        "title": "CRM Implementation",
+        "description": "Your sales team needs more than a contact database. We implement CRMs that give your team pipeline visibility, forecasting, and actionable data.",
+        "slug": "crm-implementation"
+      },
+      "apiIntegrations": {
+        "title": "API Integrations",
+        "description": "Manual data transfer between systems is a productivity tax. We build the integrations that eliminate re-keying, reduce errors, and save hours every week.",
+        "slug": "api-integrations"
+      },
+      "customApiDevelopment": {
+        "title": "Custom API Development",
+        "description": "When native connectors are not enough, we build the middleware, endpoints, and integration logic your operation actually needs.",
+        "slug": "custom-api-development"
+      },
+      "ecommerceDevelopment": {
+        "title": "Ecommerce Development",
+        "description": "We build ecommerce systems that work across storefront, fulfillment, inventory, ERP, CRM, and the operational realities behind them.",
+        "slug": "ecommerce-development"
+      },
+      "vendorManagement": {
+        "title": "Software Selection",
+        "description": "Choosing the wrong software is expensive. We run a structured selection process so you choose the right tool for your specific operations.",
+        "slug": "vendor-management"
+      },
+      "systemsAudit": {
+        "title": "Systems Health Check",
+        "description": "Don't know where to start? Our systems health check gives you a complete map of your operational tech stack, gaps, and a prioritized roadmap for improvement.",
+        "slug": "systems-audit"
+      },
+      "mobileWarehouse": {
+        "title": "Mobile Warehouse & Barcoding",
+        "description": "Manual processes, paper picking, and delayed updates create inventory inaccuracies and operational friction. A mobile warehouse solution enables real-time data capture integrated with your ERP.",
+        "slug": "mobile-warehouse-barcoding"
+      },
+      "projectManagement": {
+        "title": "Project Management",
+        "description": "Software projects often stall; not because of the technology, but because there's no internal resource to drive them. We step in to keep everything aligned, accountable, and moving forward.",
+        "slug": "project-management"
+      },
+      "processFoundations": {
+        "title": "Operational Process & System Foundations",
+        "description": "Sometimes the issue isn't your system; it's how it's being used. We help you get the fundamentals right so your operations run the way they should.",
+        "slug": "operational-process-foundations"
+      }
+    }
+  },
+  "supportHome": {
+    "title": "Support After Go-Live",
+    "subtitle": "We do not only deliver projects. We also support live systems, take over from weak providers, and help teams keep improving after launch."
+  },
+  "support": {
+    "title": "Support",
+    "subtitle": "Operator-led post-launch support for the systems already running your business. Stabilization, maintenance, change requests, provider replacement, and ongoing improvement.",
+    "learnMore": "Learn more",
+    "cards": {
+      "systemsOperationsSupport": {
+        "title": "Systems & Operations Support"
+      },
+      "crmSupport": {
+        "title": "CRM Support"
+      },
+      "erpSupport": {
+        "title": "ERP Support"
+      },
+      "ecommerceSupport": {
+        "title": "Ecommerce Support & Maintenance"
+      }
+    }
+  },
+  "insights": {
+    "title": "Operational Insights",
+    "subtitle": "Practical guidance from operators who've been in the weeds.",
+    "readMore": "Read more",
+    "allPosts": "All posts",
+    "categories": {
+      "erp": "ERP",
+      "integration": "Integration",
+      "operations": "Operations",
+      "strategy": "Strategy",
+      "technology": "Technology"
+    },
+    "noPosts": "No posts yet. Check back soon."
+  },
+  "about": {
+    "title": "About Awesoon",
+    "hero": {
+      "headline": "We started this to do things differently.",
+      "subtext": "We've lived the challenges of growing a business with disconnected systems, limited resources, and solutions that didn't quite fit. We've also worked with consultants who brought rigid frameworks, pushed software, and overlooked how the business actually runs day to day. That's not how we work. We partner with businesses to build practical, flexible systems that support how they actually operate; without unnecessary complexity, cost, or rigid frameworks. We believe the best work happens through real partnership; which is why we choose to work with clients who value collaboration, transparency, and doing things the right way."
+    },
+    "mission": {
+      "title": "Our Mission",
+      "text": "To make operations easy; not in a naive way, but in the way that comes from having the right systems, the right data, and the right processes working together. We give growing teams the connected infrastructure they need to grow without the chaos, without bloated consulting fees, and without cookie-cutter solutions that don't fit."
+    },
+    "values": {
+      "title": "Our Values",
+      "items": [
+        {
+          "title": "Honesty over polish",
+          "description": "We'll tell you what we actually think, not what sounds good in a slide deck."
+        },
+        {
+          "title": "Implementation over advice",
+          "description": "Recommendations are worth nothing if they're never executed. We build it with you."
+        },
+        {
+          "title": "Right-fit over best-in-class",
+          "description": "The best system for you is the one your team will actually use. We optimize for adoption."
+        },
+        {
+          "title": "Long-term over quick wins",
+          "description": "We design for where your business is going, not just where it is today."
+        }
+      ]
+    },
+    "team": {
+      "title": "The Team",
+      "subtitle": "An operator who's been in the weeds; and built systems to get out.",
+      "members": {
+        "ray": {
+          "title": "Software Engineer & Solution Developer",
+          "bio": "Full-stack developer who has built and replaced entire platforms from the ground up; from e-commerce migrations and ERP integrations to AI-assisted data pipelines and internal automation tools. Owns everything from database design to cloud infrastructure, with a focus on eliminating manual workflows and giving operations teams systems they can actually rely on."
+        }
+      }
+    },
+    "cta": {
+      "headline": "Operations should feel easy. Let's get you there.",
+      "subtext": "Start with a free systems health check. No pitch deck, no sales pressure; just a clear-eyed look at where your operations stand and what it would take to make them work the way they should.",
+      "button": "Let's Talk"
+    }
+  },
+  "contact": {
+    "title": "Let's Talk",
+    "subtitle": "Tell us what’s breaking, growing, or getting stuck. We’ll help you find the right next move.",
+    "steps": {
+      "1": "Your Business",
+      "2": "Your Challenges",
+      "3": "Timeline & Budget",
+      "4": "Your Details"
+    },
+    "fields": {
+      "industry": "Industry",
+      "companySize": "Company Size",
+      "problems": "What are your biggest operational challenges?",
+      "otherProblem": "My problem is different",
+      "timeline": "When are you looking to start?",
+      "budget": "Budget Range",
+      "name": "Full Name",
+      "company": "Company Name",
+      "email": "Work Email",
+      "phone": "Phone (optional)",
+      "message": "Anything else you'd like to share?"
+    },
+    "placeholders": {
+      "name": "Jane Smith",
+      "company": "Acme Manufacturing Inc.",
+      "email": "jane@acmemfg.com",
+      "phone": "+1 (555) 000-0000",
+      "otherProblem": "Tell us about it...",
+      "message": "Tell us more about your situation...",
+      "selectIndustry": "Select industry",
+      "selectCompanySize": "Select company size",
+      "selectTimeline": "Select timeline",
+      "selectBudget": "Select budget range"
+    },
+    "industries": {
+      "manufacturing": "Manufacturing",
+      "distribution": "Distribution & Logistics",
+      "industrial": "Industrial Services",
+      "other": "Other Growing Operations"
+    },
+    "companySizes": {
+      "small": "10–50 employees",
+      "medium": "51–200 employees",
+      "large": "201–500 employees",
+      "enterprise": "500+ employees"
+    },
+    "problems": {
+      "outgrown": "Systems can't keep up with our growth",
+      "spreadsheets": "Running key processes on spreadsheets",
+      "disconnected": "Systems don't talk to each other",
+      "manual": "Too much manual data entry and workarounds",
+      "noScalability": "No clear path to scale our operations"
+    },
+    "timelines": {
+      "asap": "As soon as possible",
+      "oneToThree": "1–3 months",
+      "threeToSix": "3–6 months",
+      "exploring": "Just exploring options"
+    },
+    "budgets": {
+      "under25k": "Under $25,000",
+      "25kTo75k": "$25,000–$75,000",
+      "75kTo150k": "$75,000–$150,000",
+      "over150k": "$150,000+",
+      "preferNotToSay": "Prefer not to say"
+    },
+    "buttons": {
+      "next": "Next Step",
+      "back": "Back",
+      "submit": "Submit Request",
+      "submitting": "Submitting..."
+    },
+    "validation": {
+      "nameRequired": "Full name is required.",
+      "emailRequired": "Work email is required.",
+      "emailInvalid": "Please enter a valid email address.",
+      "companyRequired": "Company name is required.",
+      "industryRequired": "Please select your industry.",
+      "companySizeRequired": "Please select your company size.",
+      "problemRequired": "Please select at least one challenge.",
+      "timelineRequired": "Please select a timeline.",
+      "budgetRequired": "Please select a budget range."
+    },
+    "success": {
+      "title": "We've received your request!",
+      "message": "Thank you for reaching out. Ray Rasouli, our Software Engineer & Solution Developer, will be in touch within 1 business day to schedule your free systems health check.",
+      "responderName": "Ray Rasouli",
+      "responderTitle": "Software Engineer & Solution Developer, Awesoon"
+    },
+    "error": {
+      "generic": "Something went wrong. Please try again or email us directly at ray.rasouli@awesoontechnologies.com.",
+      "rateLimit": "Too many submissions. Please wait a moment before trying again."
+    },
+    "expect": {
+      "discoveryTitle": "Discovery call",
+      "discoveryText": "We start with a 30-minute call to understand your operations and current challenges.",
+      "healthCheckTitle": "Free systems health check",
+      "healthCheckText": "We map your current tech stack and workflows. You get a clear picture of where your operational complexity lives.",
+      "noObligationTitle": "No obligation",
+      "noObligationText": "No sales pressure, no pitch deck. We share our honest assessment and only move forward if we're a genuine fit."
+    }
+  },
+  "footer": {
+    "tagline": "Awesoon means easy. That's what operations should feel like.",
+    "readyHeadline": "Ready for operations that actually feel easy?",
+    "readySubtext": "A 30-minute call. No pitch deck. Just an honest look at your systems and a clear path forward.",
+    "contactHeading": "Contact",
+    "humanReplies": "A real person replies within 24 hours.",
+    "noChatbots": "No chatbots, no auto-responders.",
+    "solutions": "Solutions",
+    "support": "Support",
+    "company": "Company",
+    "legal": "Legal",
+    "privacy": "Privacy Policy",
+    "terms": "Terms of Service",
+    "cookies": "Cookie Policy",
+    "copyright": "© {year} Awesoon Technologies. All rights reserved.",
+    "noTracking": "No cookies set without your consent.",
+    "madeWith": "Built with care in Vancouver."
+  },
+  "cookie": {
+    "banner": {
+      "title": "We use cookies",
+      "description": "We use essential cookies to make our site work. With your permission, we'd also like to use analytics cookies to understand how you use our site and improve your experience.",
+      "acceptAll": "Accept All",
+      "rejectAll": "Reject All",
+      "manage": "Manage Preferences",
+      "learnMore": "Learn more about our cookie policy"
+    },
+    "manager": {
+      "title": "Manage Cookie Preferences",
+      "save": "Save Preferences",
+      "categories": {
+        "necessary": {
+          "title": "Necessary Cookies",
+          "description": "These cookies are required for the site to function. They cannot be disabled.",
+          "alwaysOn": "Always On"
+        },
+        "analytics": {
+          "title": "Analytics Cookies",
+          "description": "These cookies help us understand how visitors use our site. We use Google Analytics 4. No personal data is sent without your consent."
+        },
+        "marketing": {
+          "title": "Marketing Cookies",
+          "description": "These cookies are used to deliver relevant ads and track campaign effectiveness. Currently, we do not use any marketing cookies."
+        }
+      }
+    }
+  },
+  "privacy": {
+    "title": "Privacy Policy",
+    "lastUpdated": "Last updated: March 21, 2026",
+    "effectiveDate": "Effective date: March 21, 2026"
+  },
+  "terms": {
+    "title": "Terms of Service",
+    "lastUpdated": "Last updated: March 21, 2026"
+  },
+  "cookies": {
+    "title": "Cookie Policy",
+    "lastUpdated": "Last updated: March 21, 2026"
+  },
+  "notFound": {
+    "title": "Page Not Found",
+    "headline": "We couldn't find that page.",
+    "message": "It may have been moved, or the URL might be incorrect.",
+    "homeCta": "Go to Homepage",
+    "contactCta": "Contact Us"
+  },
+  "eyebrow": {
+    "whyAwesoon": "Why Us",
+    "soundFamiliar": "Sound familiar?",
+    "problemsWeSolve": "Problems We Solve",
+    "support": "Stay Supported",
+    "howWeWork": "How We Work",
+    "editorial": "Editorial",
+    "takeFirstStep": "Take the first step"
+  },
+  "floatingCta": {
+    "message": "Your systems health check is free.",
+    "subtext": "30 minutes. A real operator. No pitch deck.",
+    "button": "Claim It →"
+  },
+  "solutionPage": {
+    "painPointsTitle": "Does This Sound Familiar?",
+    "whatWeDoTitle": "What We Do",
+    "outcomesTitle": "What You Get",
+    "aiTitle": "AI, RAG, and Agentic Value Add",
+    "aiSubtitle": "Once the operational foundation is stable, this solution also creates room for practical AI deployment.",
+    "sidebarTitle": "Ready to get started?",
+    "sidebarText": "Start with a free systems health check. No pitch deck, no pressure.",
+    "relatedSolutions": "Related Solutions",
+    "relatedInsights": "Related Insights",
+    "platformsTitle": "Platforms We Work With",
+    "platformsSubtitle": "We are platform-versatile. Tap any logo to see where it fits best.",
+    "platformsTapHint": "Tap a platform above to learn when it's the right fit."
+  },
+  "supportPage": {
+    "painPointsTitle": "What Usually Triggers Support",
+    "whatWeDoTitle": "How We Help",
+    "platformsTitle": "Platforms And Environments We Support",
+    "platformsSubtitle": "We support real operating environments, not just isolated software screens.",
+    "platformsTapHint": "Tap a platform above to see how we support it.",
+    "outcomesTitle": "What You Get",
+    "sidebarTitle": "Need a stronger support partner?",
+    "sidebarText": "Bring us in after delivery, after go-live, or when your current provider is no longer cutting it.",
+    "relatedSolutions": "Related Solutions"
+  },
+  "insightPage": {
+    "minRead": "min read",
+    "relatedSolutions": "Related Solutions",
+    "keepReading": "Keep Reading",
+    "sources": "Sources"
+  },
+  "common": {
+    "loading": "Loading...",
+    "step": "Step",
+    "error": "An error occurred. Please try again.",
+    "success": "Success!",
+    "required": "Required",
+    "optional": "Optional",
+    "learnMore": "Learn more",
+    "getStarted": "Get started",
+    "backToHome": "Back to homepage",
+    "skipToContent": "Skip to main content",
+    "trustNoChatbots": "No chatbots",
+    "trustReply24h": "Reply within 24h",
+    "trustFree": "Completely free",
+    "trustNamedContact": "Named point of contact",
+    "minRead": "{time} min read",
+    "connectLinkedIn": "Connect on LinkedIn"
+  },
+  "sitemap": {
+    "title": "Sitemap"
+  },
+  "problemSolutions": {
+    "title": "Common Problems We Solve",
+    "subtitle": "If your operations look like this, we've built the playbook to fix it.",
+    "items": [
+      {
+        "problem": "\"We have 4 systems and none of them talk to each other.\"",
+        "solution": "System Integration",
+        "slug": "system-integration"
+      },
+      {
+        "problem": "\"Our entire order process lives in a spreadsheet.\"",
+        "solution": "Spreadsheet Operations",
+        "slug": "spreadsheet-operations"
+      },
+      {
+        "problem": "\"We bought an ERP 2 years ago and we're still not live.\"",
+        "solution": "ERP Implementation",
+        "slug": "erp-implementation"
+      },
+      {
+        "problem": "\"We don't know what's in our warehouse until we physically count it.\"",
+        "solution": "Ops Infrastructure",
+        "slug": "ops-outgrown-tools"
+      }
+    ]
+  },
+  "gamesPrivacy": {
+    "title": "Privacy policy, Awesoon games",
+    "updated": "Last updated 23 September 2026",
+    "appliesTo": "Applies to all ten Awesoon games: Stack Snap, Loop Weaver, Tidy Tiles, Idle Bakery Empire, Quick Trivia Blitz, Dodge Rush, Word Chain Dash, Color Match Frenzy, Knot Untangle and Bounce Blitz.",
+    "lead": "These games do not collect any personal data.",
+    "onDevice": "Each game runs entirely on your device. There is no account, no sign-in and no server. Your progress, scores, statistics and settings are stored on the device itself, and they are never sent to us or to anyone else.",
+    "collectH": "What we collect",
+    "collectB": "Nothing. We do not collect your name, email address, contacts, location, photos, device identifiers or usage analytics. Nothing you do in a game leaves your phone.",
+    "adsH": "Advertising",
+    "adsB": "The current versions of these games show no advertising. If a future version does, this page is updated before that version is released, and the update names the advertising provider and what it collects.",
+    "deleteH": "Deleting your data",
+    "deleteB": "Because everything is stored on your device, deleting a game deletes all of it. Several of the games also have a reset option in Settings that clears progress without deleting the app.",
+    "childrenH": "Children",
+    "childrenB": "These games are not directed at children under 13, and because they collect nothing, they hold no data about anyone of any age.",
+    "changesH": "Changes",
+    "changesB": "If this policy changes, the new version is posted on this page with a new date above.",
+    "contactH": "Contact",
+    "contactB": "Questions about this policy:"
+  },
+  "gamesSupport": {
+    "title": "Support, Awesoon games",
+    "lead": "Write to us about any Awesoon game and a person reads it.",
+    "appliesTo": "Covers all ten Awesoon games: Stack Snap, Loop Weaver, Tidy Tiles, Idle Bakery Empire, Quick Trivia Blitz, Dodge Rush, Word Chain Dash, Color Match Frenzy, Knot Untangle and Bounce Blitz.",
+    "faqH": "Common questions",
+    "q1": "My progress disappeared.",
+    "a1": "Progress is stored on the device only. Deleting a game, or setting up a new phone without restoring a backup, clears it.",
+    "q2": "Do the games need an internet connection?",
+    "a2": "No. Every game plays fully offline, start to finish.",
+    "q3": "Is there an account?",
+    "a3": "No. There is no sign-in, nothing is uploaded and nothing is shared.",
+    "q4": "How do I reset a game?",
+    "a4": "Several games have a reset in Settings. Deleting and reinstalling clears everything.",
+    "q5": "Do the games show ads?",
+    "a5": "Not in the current versions. If that changes, the privacy policy is updated before the new version ships.",
+    "contactH": "Contact",
+    "contactB": "Questions, bugs or a game that will not start:",
+    "privacyH": "Privacy",
+    "privacyLink": "Read the privacy policy for these games"
+  },
+  "games": {
+    "title": "Awesoon games",
+    "subtitle": "Ten small games for iPhone and Android. Every one plays offline, needs no account, and is free.",
+    "intro": "We build operations software for a living. These are the short games we make in between: one clear rule each, no timers nagging you tomorrow, nothing uploaded anywhere.",
+    "allGames": "All games",
+    "backToGames": "All games",
+    "howToPlay": "How to play",
+    "features": "What is in it",
+    "whoFor": "Who it is for",
+    "faq": "Questions",
+    "screenshots": "Screens",
+    "details": "At a glance",
+    "category": "Category",
+    "ageRating": "Age rating",
+    "ageRatingValue": "4+, suitable for everyone",
+    "players": "Players",
+    "price": "Price",
+    "session": "A session",
+    "platforms": "Platforms",
+    "platformsValue": "iPhone and Android",
+    "comingSoon": "Coming soon to the App Store and Google Play",
+    "privacyNote": "No account, no tracking, nothing uploaded.",
+    "privacyLink": "Privacy policy",
+    "supportLink": "Support",
+    "viewGame": "View game"
+  }
+}
