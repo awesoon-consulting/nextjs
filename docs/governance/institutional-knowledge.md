@@ -20,9 +20,9 @@
 ## Git & GitHub Credentials
 
 - Repo: `https://github.com/awesoon-consulting/nextjs.git`
-- The remote URL has the `awesoon-consulting` token embedded directly to bypass macOS keychain (which defaults to `rasoulirealestate`)
-- Format: `https://awesoon-consulting:<token>@github.com/awesoon-consulting/nextjs.git`
-- To refresh the token if it expires: `gh auth token --hostname github.com --user awesoon-consulting` then `git remote set-url origin https://awesoon-consulting:<new-token>@github.com/awesoon-consulting/nextjs.git`
+- The remote is `https://awesoon-consulting@github.com/awesoon-consulting/nextjs.git` (username only, so git uses the `awesoon-consulting` login and not the keychain default `rasoulirealestate`)
+- Logins come from the GitHub CLI (`gh auth login`, `gh auth status`)
+- No token ever goes in a file or URL
 - Executors must never run `git push` — write branch name to `docs/task-queue/push-queue.txt` and let the Mac pusher handle it
 - Mac pusher script: `scripts/pusher.sh` (runs every 10 min via launchd, installed via `bash scripts/install-pusher.sh`)
 
