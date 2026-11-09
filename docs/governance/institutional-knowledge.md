@@ -23,6 +23,7 @@
 - The remote is `https://awesoon-consulting@github.com/awesoon-consulting/nextjs.git` (username only, so git uses the `awesoon-consulting` login and not the keychain default `rasoulirealestate`)
 - Logins come from the GitHub CLI (`gh auth login`, `gh auth status`)
 - No token ever goes in a file or URL
+- If `git remote -v` still shows a token in the URL, reset it with `git remote set-url origin https://awesoon-consulting@github.com/awesoon-consulting/nextjs.git` and revoke that token
 - Executors must never run `git push` — write branch name to `docs/task-queue/push-queue.txt` and let the Mac pusher handle it
 - Mac pusher script: `scripts/pusher.sh` (runs every 10 min via launchd, installed via `bash scripts/install-pusher.sh`)
 

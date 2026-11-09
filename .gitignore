@@ -27,7 +27,7 @@
 # service account key files
 *service-account*.json
 *serviceaccount*.json
-*-credentials.json
+*-firebase-adminsdk-*.json
 
 # debug
 npm-debug.log*
