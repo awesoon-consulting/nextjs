@@ -20,11 +20,12 @@
 ## Git & GitHub Credentials
 
 - Repo: `https://github.com/awesoon-consulting/nextjs.git`
-- The remote URL never contains a token. Do not embed credentials in `origin` or any URL, git config, or file that is committed
+- Agents never put a token in the remote URL, a URL, git config, or a committed file. If an existing clone's `origin` has one, run `git remote set-url origin https://github.com/awesoon-consulting/nextjs.git`
 - Authenticate with the `GITHUB_TOKEN` in `.env.local` (account `awesoon-consulting`), not the default macOS keychain login (`rasoulirealestate`)
 - For `gh`, set `GH_TOKEN` from `.env.local` for that one command only. Never print the token or switch the global gh account
 - For git, use a repo-local credential helper in `.git/` that reads `GITHUB_TOKEN` from `.env.local`
 - Executors must never run `git push` — write branch name to `docs/task-queue/push-queue.txt` and let the Mac pusher handle it
+- The pusher is the one exception: it reads its own token from `~/.awesoon-pusher.env` and swaps it into `origin` only while it runs
 - Mac pusher script: `scripts/pusher.sh` (runs every 10 min via launchd, installed via `bash scripts/install-pusher.sh`)
 
 ## What Has Been Tried and Failed
