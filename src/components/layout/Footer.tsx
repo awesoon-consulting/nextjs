@@ -6,7 +6,7 @@ import TrackedEmailLink from '@/src/components/ui/TrackedEmailLink'
 
 /**
  * Footer,  premium footer with:
- * - Brand column with tagline and LinkedIn link
+ * - Brand column with tagline
  * - Solutions, Support, Company, Contact link columns
  * - Inline CTA strip above the bottom bar ("Ready to fix your ops?")
  * - Bottom bar: copyright, legal links, no-tracking note

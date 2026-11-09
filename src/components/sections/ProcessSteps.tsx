@@ -70,7 +70,7 @@ export default function ProcessSteps() {
                   {/* Step 1 and 2 get inline nudge */}
                   {(idx === 0 || idx === 1) && (
                     <p className="mt-3 text-xs font-medium text-accent dark:text-neutral-300">
-                      {idx === 0 ? t('freeNoCommitment') : t('deliveredIn48h')}
+                      {idx === 0 ? t('freeNoCommitment') : t('deliveredHealthCheck')}
                     </p>
                   )}
                 </div>
