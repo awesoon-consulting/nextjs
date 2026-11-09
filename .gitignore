@@ -25,8 +25,7 @@
 *.pem
 
 # google service account keys
-*service-account*.json
-*service_account*.json
+*service[-_]account*.json
 google-credentials*.json
 
 # debug
