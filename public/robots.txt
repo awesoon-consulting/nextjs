@@ -5,7 +5,7 @@ Allow: /
 Disallow: /api/
 
 # Sitemap
-Sitemap: https://awesoon.com/sitemap.xml
+Sitemap: https://www.awesoontechnologies.com/sitemap.xml
 
 # AI/LLM context files
 # See https://llmstxt.org for the llms.txt standard
