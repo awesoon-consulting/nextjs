@@ -57,3 +57,9 @@ scripts/pusher.sh runs every 10 minutes via launchd on the Mac.
 It handles: git push, gh pr create, gh pr review submission.
 Executors never attempt git push — they only write to push-queue.txt.
 Install once: bash scripts/install-pusher.sh
+
+## Blueprint
+
+What this repo builds and the decisions it must follow, generated from the business blueprint. Engineering docs are in `docs/blueprint/`.
+
+@BLUEPRINT.md

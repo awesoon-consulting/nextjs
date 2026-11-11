@@ -539,22 +539,72 @@
   },
   "gamesPrivacy": {
     "title": "Politique de confidentialité, jeux Awesoon",
-    "updated": "Dernière mise à jour le 23 septembre 2026",
-    "appliesTo": "S'applique aux dix jeux Awesoon : Stack Snap, Loop Weaver, Tidy Tiles, Idle Bakery Empire, Quick Trivia Blitz, Dodge Rush, Word Chain Dash, Color Match Frenzy, Knot Untangle et Bounce Blitz.",
-    "lead": "Ces jeux ne collectent aucune donnée personnelle.",
-    "onDevice": "Chaque jeu fonctionne entièrement sur votre appareil. Il n'y a ni compte, ni connexion, ni serveur. Votre progression, vos scores, vos statistiques et vos réglages sont enregistrés sur l'appareil lui-même et ne nous sont jamais transmis, ni à quiconque.",
-    "collectH": "Ce que nous collectons",
-    "collectB": "Rien. Nous ne collectons ni votre nom, ni votre adresse courriel, ni vos contacts, ni votre position, ni vos photos, ni identifiant d'appareil, ni données d'utilisation. Rien de ce que vous faites dans un jeu ne quitte votre téléphone.",
-    "adsH": "Publicité",
-    "adsB": "Les versions actuelles de ces jeux n'affichent aucune publicité. Si une version future en affiche, cette page sera mise à jour avant sa sortie et précisera le fournisseur publicitaire ainsi que les données collectées.",
-    "deleteH": "Supprimer vos données",
-    "deleteB": "Comme tout est enregistré sur votre appareil, supprimer un jeu supprime l'ensemble de ses données. Plusieurs jeux offrent aussi une réinitialisation dans les réglages, qui efface la progression sans désinstaller l'application.",
-    "childrenH": "Enfants",
-    "childrenB": "Ces jeux ne s'adressent pas aux enfants de moins de 13 ans et, comme ils ne collectent rien, ils ne détiennent aucune donnée sur qui que ce soit.",
-    "changesH": "Modifications",
-    "changesB": "Si cette politique change, la nouvelle version est publiée sur cette page avec une nouvelle date ci-dessus.",
-    "contactH": "Nous joindre",
-    "contactB": "Questions au sujet de cette politique :"
+    "updated": "Dernière mise à jour le 10 novembre 2026. Version 2, pour les versions 1.1.0 et ultérieures des jeux. Les versions précédentes n'affichent aucune publicité et ne collectent rien.",
+    "lead": "Nos jeux fonctionnent sur votre appareil. Les seules données qui le quittent sont celles que collecte le logiciel publicitaire, et les choix vous appartiennent.",
+    "appliesTo": "S'applique aux dix jeux Awesoon : Stack Snap, Loop Weaver, Tidy Tiles, Idle Bakery Empire, Quick Trivia Blitz, Dodge Rush, Word Chain Dash, Color Match Frenzy, Knot Untangle et Bounce Blitz. Les jeux sont publiés par Awesoon Technologies Inc., une société de la Colombie-Britannique, au Canada.",
+    "sections": [
+      {
+        "id": "device",
+        "h": "Ce qui reste sur votre appareil",
+        "p": [
+          "Il n'y a pas de compte, pas de connexion et pas de serveur de notre part. Votre progression, vos scores, vos statistiques, vos réglages et la réponse à la question sur l'âge sont stockés sur l'appareil lui-même. Ils ne sont jamais envoyés à nous ni à personne d'autre."
+        ]
+      },
+      {
+        "id": "age",
+        "h": "La question sur l'âge",
+        "p": [
+          "À la première ouverture d'un jeu, il vous demande votre mois et votre année de naissance. Rien n'est prérempli. La réponse reste sur votre appareil, n'est jamais envoyée à nous ni à Google, et ne peut pas être modifiée en revenant en arrière. Elle détermine les publicités que vous voyez. Sur iPhone et iPad, si Apple indique au jeu que l'appareil appartient à une personne de moins de 13 ans, cette information l'emporte sur votre réponse. Sur Android, le jeu suit uniquement votre réponse."
+        ]
+      },
+      {
+        "id": "ads",
+        "h": "Publicité et données collectées par Google AdMob",
+        "p": [
+          "Les jeux affichent des publicités diffusées par Google AdMob. Son logiciel est intégré à chaque jeu. Il peut collecter votre identifiant publicitaire, votre adresse IP et des données sur l'appareil, comme le modèle, la version du système, la langue et la façon dont vous interagissez avec les publicités. Google s'en sert pour afficher et mesurer les publicités et pour prévenir la fraude. Les données vont à Google, selon la politique de confidentialité de Google (policies.google.com/privacy). Nous ne les recevons pas. Nous voyons seulement des rapports de revenus agrégés."
+        ]
+      },
+      {
+        "id": "choices",
+        "h": "Vos choix si vous avez 13 ans ou plus",
+        "p": [
+          "Sur iPhone et iPad, le jeu vous demande l'autorisation de vous suivre. Si vous refusez, vous voyez quand même des publicités, mais elles ne sont pas personnalisées. Dans l'Espace économique européen, au Royaume-Uni et en Suisse, le formulaire de consentement de Google s'affiche avant toute publicité personnalisée, et une ligne dans les réglages du jeu le rouvre pour que vous puissiez changer votre réponse. Sur Android, vous pouvez réinitialiser ou supprimer votre identifiant publicitaire dans les réglages de l'appareil."
+        ]
+      },
+      {
+        "id": "children",
+        "h": "Enfants",
+        "p": [
+          "Nos jeux s'adressent aux joueurs de tous âges. Nous demandons votre mois et votre année de naissance une seule fois, sur votre appareil uniquement. Si vous avez moins de 13 ans, les publicités sont limitées à un réglage adapté aux enfants et aucun identifiant publicitaire n'est utilisé. Les moins de 13 ans jouent quand même au jeu en entier. Nous ne collectons pas sciemment de renseignements personnels auprès d'enfants. Un parent ou un tuteur qui a une question peut nous écrire à l'adresse ci-dessous."
+        ]
+      },
+      {
+        "id": "retention",
+        "h": "Durée de conservation",
+        "p": [
+          "La progression et les réglages restent sur votre appareil jusqu'à ce que vous supprimiez le jeu ou le réinitialisiez. Les courriels que vous nous envoyez sont supprimés 12 mois après notre dernière réponse. Les données publicitaires sont conservées par Google selon ses propres règles. Nous n'en conservons aucune. Plusieurs jeux ont aussi une option de réinitialisation dans les réglages qui efface la progression sans supprimer l'application."
+        ]
+      },
+      {
+        "id": "rights",
+        "h": "Vos droits",
+        "p": [
+          "Nous ne détenons presque rien sur les joueurs : seulement les courriels que vous nous envoyez. Si vous vivez dans l'Espace économique européen ou au Royaume-Uni (RGPD et RGPD britannique), au Brésil (LGPD) ou en Californie (CCPA et CPRA), vous pouvez nous demander une copie de ce que nous détenons sur vous, demander que nous le corrigions ou le supprimions, vous opposer à son utilisation ou la restreindre, et retirer un consentement donné. Dans l'EEE, au Royaume-Uni et au Brésil, vous pouvez aussi déposer une plainte auprès de votre autorité de protection des données. Lorsque nous nous appuyons sur le consentement, ce qui est le cas des publicités personnalisées, vous pouvez le retirer à tout moment avec les choix ci-dessus.",
+          "Nous ne vendons pas de renseignements personnels. Les données publicitaires que Google collecte par son logiciel peuvent compter comme un partage à des fins publicitaires selon la loi californienne. Si vous avez 13 ans ou plus, vous pouvez vous y opposer en refusant la demande de suivi ou le formulaire de consentement, et avant 13 ans aucun identifiant publicitaire n'est utilisé. Nous ne vous traitons pas différemment parce que vous exercez ces droits. Écrivez-nous pour en exercer un. Nous répondons dans le délai fixé par votre droit local : un mois selon le RGPD et le RGPD britannique, 15 jours selon la loi brésilienne et 45 jours selon la loi californienne. Les demandes concernant les données publicitaires détenues par Google doivent aussi être adressées à Google."
+        ]
+      },
+      {
+        "id": "changes",
+        "h": "Modifications",
+        "p": [
+          "Si cette politique change, la nouvelle version est publiée sur cette page avec une nouvelle date en haut, avant la sortie de la version du jeu qui en a besoin. Les versions précédentes restent publiées, et la version 1 est liée ci-dessous."
+        ]
+      }
+    ],
+    "contactH": "Contact",
+    "contactB": "Questions sur cette politique, ou demande concernant vos données :",
+    "termsLink": "Lire les conditions d'utilisation de ces jeux",
+    "previousLink": "Lire la version 1, pour les versions des jeux antérieures à 1.1.0"
   },
   "gamesSupport": {
     "title": "Assistance, jeux Awesoon",
@@ -564,17 +614,19 @@
     "q1": "Ma progression a disparu.",
     "a1": "La progression est enregistrée uniquement sur l'appareil. Supprimer un jeu, ou configurer un nouveau téléphone sans restaurer une sauvegarde, l'efface.",
     "q2": "Les jeux ont-ils besoin d'une connexion Internet ?",
-    "a2": "Non. Chaque jeu fonctionne entièrement hors ligne, du début à la fin.",
+    "a2": "Non. Les jeux se jouent hors ligne, du début à la fin. Seules les publicités ont besoin d'une connexion.",
     "q3": "Faut-il un compte ?",
-    "a3": "Non. Aucune connexion, rien n'est téléversé et rien n'est partagé.",
+    "a3": "Non. Il n'y a pas de connexion et nous ne téléversons rien de vous. Le logiciel publicitaire de Google collecte des données publicitaires, comme l'explique la politique de confidentialité.",
     "q4": "Comment réinitialiser un jeu ?",
     "a4": "Plusieurs jeux proposent une réinitialisation dans les réglages. Désinstaller puis réinstaller efface tout.",
     "q5": "Les jeux affichent-ils des publicités ?",
-    "a5": "Pas dans les versions actuelles. Si cela change, la politique de confidentialité sera mise à jour avant la sortie de la nouvelle version.",
+    "a5": "Oui. Chaque jeu contient des publicités, diffusées par Google AdMob. La politique de confidentialité explique ce qui est collecté et comment modifier vos choix.",
     "contactH": "Nous joindre",
     "contactB": "Questions, bogues ou un jeu qui refuse de démarrer :",
     "privacyH": "Confidentialité",
-    "privacyLink": "Lire la politique de confidentialité de ces jeux"
+    "privacyLink": "Lire la politique de confidentialité de ces jeux",
+    "termsH": "Conditions",
+    "termsLink": "Lire les conditions d'utilisation de ces jeux"
   },
   "games": {
     "title": "Jeux Awesoon",
@@ -601,5 +653,128 @@
     "privacyLink": "Politique de confidentialité",
     "supportLink": "Assistance",
     "viewGame": "Voir le jeu"
+  },
+  "gamesTerms": {
+    "title": "Conditions d'utilisation, jeux Awesoon",
+    "updated": "Dernière mise à jour le 10 novembre 2026",
+    "lead": "La version courte, en cinq lignes. Les conditions complètes suivent.",
+    "appliesTo": "S'appliquent aux dix jeux Awesoon : Stack Snap, Loop Weaver, Tidy Tiles, Idle Bakery Empire, Quick Trivia Blitz, Dodge Rush, Word Chain Dash, Color Match Frenzy, Knot Untangle et Bounce Blitz.",
+    "short": [
+      "Les jeux se jouent hors ligne, du début à la fin. Seules les publicités ont besoin d'une connexion.",
+      "Il n'y a ni compte ni connexion.",
+      "Nous ne collectons rien nous-mêmes, sauf les courriels que vous nous envoyez. Le logiciel publicitaire de Google collecte des données publicitaires. La politique de confidentialité donne le détail et vos choix.",
+      "Les jeux sont fournis tels quels, sans garantie.",
+      "Écrivez-nous à l'adresse au bas de cette page. Une personne lit chaque message."
+    ],
+    "precedence": "Si ces cinq lignes et les conditions ci-dessous diffèrent, ce sont les conditions ci-dessous qui prévalent.",
+    "sections": [
+      {
+        "id": "who",
+        "h": "Qui nous sommes",
+        "p": [
+          "Les jeux sont publiés par Awesoon Technologies Inc., une société de la Colombie-Britannique, au Canada, exerçant sous le nom Awesoon Technologies. Dans ces conditions, « nous » désigne cette société."
+        ]
+      },
+      {
+        "id": "licence",
+        "h": "Votre licence",
+        "p": [
+          "Nous vous accordons une licence personnelle et non transférable pour utiliser chaque jeu sur vos propres appareils. Vous ne pouvez pas copier, vendre, redistribuer ou sous-licencier un jeu, ni le désassembler pour accéder à son code. Nous conservons tous les droits que nous ne vous accordons pas ici."
+        ]
+      },
+      {
+        "id": "ads",
+        "h": "Publicités",
+        "p": [
+          "Les jeux contiennent des publicités. Elles sont diffusées par Google AdMob. Ce qui est collecté, et comment le contrôler, figure dans la politique de confidentialité."
+        ]
+      },
+      {
+        "id": "asis",
+        "h": "Tels quels",
+        "p": [
+          "Chaque jeu est fourni « tel quel » et « selon disponibilité », sans garantie d'aucune sorte, dans toute la mesure permise par la loi. Vous l'utilisez à vos propres risques."
+        ]
+      },
+      {
+        "id": "liability",
+        "h": "Limite de responsabilité",
+        "p": [
+          "Dans toute la mesure permise par la loi, nous ne sommes pas responsables des blessures corporelles ni des dommages accessoires, spéciaux, indirects ou consécutifs découlant de votre utilisation d'un jeu. Rien dans ces conditions ne limite un droit que la loi ne permet pas de limiter."
+        ]
+      },
+      {
+        "id": "who-answers",
+        "h": "Qui répond de quoi",
+        "p": [
+          "Nous répondons des jeux, de l'assistance, des réclamations les concernant, de la propriété intellectuelle et de la confidentialité. Apple et Google répondent du paiement, des remboursements et de la distribution par leurs boutiques. Le contrat de licence standard d'Apple s'applique aussi aux jeux obtenus sur l'App Store."
+        ]
+      },
+      {
+        "id": "third",
+        "h": "Autres conditions",
+        "p": [
+          "En utilisant un jeu, vous respectez aussi les conditions des tiers dont il dépend, comme la boutique de votre appareil et Google AdMob."
+        ]
+      },
+      {
+        "id": "changes",
+        "h": "Modifications",
+        "p": [
+          "Si ces conditions changent, la nouvelle version est publiée sur cette page avec une nouvelle date en haut, et l'ancienne version reste publiée à sa propre adresse, avec un lien depuis cette page."
+        ]
+      }
+    ],
+    "contactH": "Contact",
+    "contactB": "Questions, plaintes ou réclamations au sujet des jeux :",
+    "privacyLink": "Lire la politique de confidentialité de ces jeux"
+  },
+  "gamesPrivacyV1": {
+    "title": "Politique de confidentialité, jeux Awesoon, version 1",
+    "updated": "Dernière mise à jour le 23 septembre 2026",
+    "lead": "Ces jeux ne collectent aucune donnée personnelle.",
+    "appliesTo": "S'applique aux dix jeux Awesoon : Stack Snap, Loop Weaver, Tidy Tiles, Idle Bakery Empire, Quick Trivia Blitz, Dodge Rush, Word Chain Dash, Color Match Frenzy, Knot Untangle et Bounce Blitz.",
+    "note": "Ceci est la version 1 de la politique. Elle s'appliquait aux versions des jeux antérieures à 1.1.0, qui n'affichent aucune publicité. La version 2 la remplace.",
+    "intro": "Chaque jeu fonctionne entièrement sur votre appareil. Il n'y a ni compte, ni connexion, ni serveur. Votre progression, vos scores, vos statistiques et vos réglages sont enregistrés sur l'appareil lui-même et ne nous sont jamais transmis, ni à quiconque.",
+    "sections": [
+      {
+        "id": "collect",
+        "h": "Ce que nous collectons",
+        "p": [
+          "Rien. Nous ne collectons ni votre nom, ni votre adresse courriel, ni vos contacts, ni votre position, ni vos photos, ni identifiant d'appareil, ni données d'utilisation. Rien de ce que vous faites dans un jeu ne quitte votre téléphone."
+        ]
+      },
+      {
+        "id": "ads",
+        "h": "Publicité",
+        "p": [
+          "Les versions actuelles de ces jeux n'affichent aucune publicité. Si une version future en affiche, cette page sera mise à jour avant sa sortie et précisera le fournisseur publicitaire ainsi que les données collectées."
+        ]
+      },
+      {
+        "id": "delete",
+        "h": "Supprimer vos données",
+        "p": [
+          "Comme tout est enregistré sur votre appareil, supprimer un jeu supprime l'ensemble de ses données. Plusieurs jeux offrent aussi une réinitialisation dans les réglages, qui efface la progression sans désinstaller l'application."
+        ]
+      },
+      {
+        "id": "children",
+        "h": "Enfants",
+        "p": [
+          "Ces jeux ne s'adressent pas aux enfants de moins de 13 ans et, comme ils ne collectent rien, ils ne détiennent aucune donnée sur qui que ce soit."
+        ]
+      },
+      {
+        "id": "changes",
+        "h": "Modifications",
+        "p": [
+          "Si cette politique change, la nouvelle version est publiée sur cette page avec une nouvelle date ci-dessus."
+        ]
+      }
+    ],
+    "contactH": "Nous joindre",
+    "contactB": "Questions au sujet de cette politique :",
+    "currentLink": "Lire la version 2, la politique en vigueur"
   }
 }

@@ -78,7 +78,7 @@ export default function Navbar() {
   // leave the menu stuck open, and client-side navigation timing caused
   // the menu to appear stuck during slow page transitions.
   const [prevPathname, setPrevPathname] = useState(pathname)
-  if (prevPathname !== pathname) {
+  if (pathname !== prevPathname) {
     setPrevPathname(pathname)
     setIsMobileMenuOpen(false)
   }
