@@ -77,9 +77,11 @@ export default function Navbar() {
   // had multiple race conditions: tapping a link to the current page would
   // leave the menu stuck open, and client-side navigation timing caused
   // the menu to appear stuck during slow page transitions.
-  useEffect(() => {
+  const [prevPathname, setPrevPathname] = useState(pathname)
+  if (prevPathname !== pathname) {
+    setPrevPathname(pathname)
     setIsMobileMenuOpen(false)
-  }, [pathname])
+  }
 
   // Lock body scroll while the mobile drawer is open so the page behind
   // can't scroll or capture touches that belong to the drawer.
