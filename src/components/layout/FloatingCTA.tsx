@@ -33,9 +33,11 @@ export default function FloatingCTA() {
 
   // Reset visibility on route change (prevents stale "visible" state
   // when navigating to a new page where the scroll position is at top).
-  useEffect(() => {
+  const [visiblePathname, setVisiblePathname] = useState(pathname)
+  if (visiblePathname !== pathname) {
+    setVisiblePathname(pathname)
     setIsVisible(false)
-  }, [pathname])
+  }
 
   useEffect(() => {
     // Defer hydration work until after first paint so the hero has time
