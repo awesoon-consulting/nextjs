@@ -191,7 +191,7 @@ export default async function LocaleLayout({ children, params }: LocaleLayoutPro
         {(gadsId || gaMeasurementId) && (
           <script
             dangerouslySetInnerHTML={{
-              __html: `window.loadGtag=function(){if(window.__gtagLoading)return;window.__gtagLoading=true;window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());${gadsId ? `gtag('config','${gadsId}',{send_page_view:false});` : ''}${gaMeasurementId ? `gtag('config','${gaMeasurementId}',{send_page_view:false});` : ''}var s=document.createElement('script');s.async=true;s.src='https://www.googletagmanager.com/gtag/js?id=${gadsId || gaMeasurementId}';s.onload=function(){gtag('event','page_view')};document.head.appendChild(s)};`,
+              __html: `window.loadGtag=function(){if(window.__gtagLoading)return;window.__gtagLoading=true;var gtag=window.gtag;gtag('js',new Date());${gadsId ? `gtag('config','${gadsId}',{send_page_view:false});` : ''}${gaMeasurementId ? `gtag('config','${gaMeasurementId}',{send_page_view:false});` : ''}var s=document.createElement('script');s.async=true;s.src='https://www.googletagmanager.com/gtag/js?id=${gadsId || gaMeasurementId}';s.onload=function(){gtag('event','page_view')};document.head.appendChild(s)};`,
             }}
           />
         )}
