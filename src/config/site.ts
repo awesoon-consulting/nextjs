@@ -17,6 +17,12 @@ export const siteConfig = {
     address: '4609-1480 Howe Street, Vancouver, BC, Canada',
   },
 
+  games: {
+    // Which policy /games/privacy serves. Switch to 'v2' when the first 1.1.0 build is submitted
+    // (privacy-v2-with-ads). v1 stays at /games/privacy/v1 either way.
+    privacyVersion: 'v1' as 'v1' | 'v2',
+  },
+
   nav: {
     main: [
       { labelKey: 'nav.home', href: '/' },
