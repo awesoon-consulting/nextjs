@@ -7,11 +7,7 @@
  * @depends  none
  */
 
-interface HeroIllustrationStaticProps {
-  locale?: string
-}
-
-export default function HeroIllustrationStatic(_props: HeroIllustrationStaticProps) {
+export default function HeroIllustrationStatic() {
   return (
     <svg
       viewBox="40 50 440 440"
