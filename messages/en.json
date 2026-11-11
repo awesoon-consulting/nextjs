@@ -538,22 +538,72 @@
   },
   "gamesPrivacy": {
     "title": "Privacy policy, Awesoon games",
-    "updated": "Last updated 23 September 2026",
-    "appliesTo": "Applies to all ten Awesoon games: Stack Snap, Loop Weaver, Tidy Tiles, Idle Bakery Empire, Quick Trivia Blitz, Dodge Rush, Word Chain Dash, Color Match Frenzy, Knot Untangle and Bounce Blitz.",
-    "lead": "These games do not collect any personal data.",
-    "onDevice": "Each game runs entirely on your device. There is no account, no sign-in and no server. Your progress, scores, statistics and settings are stored on the device itself, and they are never sent to us or to anyone else.",
-    "collectH": "What we collect",
-    "collectB": "Nothing. We do not collect your name, email address, contacts, location, photos, device identifiers or usage analytics. Nothing you do in a game leaves your phone.",
-    "adsH": "Advertising",
-    "adsB": "The current versions of these games show no advertising. If a future version does, this page is updated before that version is released, and the update names the advertising provider and what it collects.",
-    "deleteH": "Deleting your data",
-    "deleteB": "Because everything is stored on your device, deleting a game deletes all of it. Several of the games also have a reset option in Settings that clears progress without deleting the app.",
-    "childrenH": "Children",
-    "childrenB": "These games are not directed at children under 13, and because they collect nothing, they hold no data about anyone of any age.",
-    "changesH": "Changes",
-    "changesB": "If this policy changes, the new version is posted on this page with a new date above.",
+    "updated": "Last updated 10 November 2026. Version 2, for game versions 1.1.0 and later. Earlier versions show no ads and collect nothing.",
+    "lead": "Our games run on your device. The only data that leaves it is what the advertising software collects, and you make the choices.",
+    "appliesTo": "Applies to all ten Awesoon games: Stack Snap, Loop Weaver, Tidy Tiles, Idle Bakery Empire, Quick Trivia Blitz, Dodge Rush, Word Chain Dash, Color Match Frenzy, Knot Untangle and Bounce Blitz. The games are published by Awesoon Technologies Inc., a company in British Columbia, Canada.",
+    "sections": [
+      {
+        "id": "device",
+        "h": "What stays on your device",
+        "p": [
+          "There is no account, no sign-in and no server of ours. Your progress, scores, statistics, settings and the answer to the age question are stored on the device itself. They are never sent to us or to anyone else."
+        ]
+      },
+      {
+        "id": "age",
+        "h": "The age question",
+        "p": [
+          "The first time you open a game, it asks your birth month and year. Nothing is filled in beforehand. The answer stays on your device, is never sent to us or to Google, and cannot be changed by going back. It decides which ads you see. On iPhone and iPad, if Apple tells the game your device belongs to someone under 13, that overrides your answer. On Android, the game follows your answer alone."
+        ]
+      },
+      {
+        "id": "ads",
+        "h": "Advertising and what Google AdMob collects",
+        "p": [
+          "The games show ads served by Google AdMob. Its software is built into each game. It may collect your advertising ID, your IP address and device data such as the device model, system version, language and how you interact with ads. Google uses this to show and measure ads and to prevent fraud. The data goes to Google, under Google's own privacy policy at policies.google.com/privacy. We do not receive it. We see only aggregate earnings reports."
+        ]
+      },
+      {
+        "id": "choices",
+        "h": "Your choices if you are 13 or over",
+        "p": [
+          "On iPhone and iPad, the game asks for your permission to track you. If you decline, you still see ads, but they are not personalised. In the European Economic Area, the UK and Switzerland, Google's consent form runs before any personalised ads, and a row in the game's Settings reopens it so you can change your answer. On Android you can reset or delete your advertising ID in your device's settings."
+        ]
+      },
+      {
+        "id": "children",
+        "h": "Children",
+        "p": [
+          "Our games are for players of all ages. We ask your birth month and year once, on your device only. If you are under 13, ads are limited to a child-safe setting and no advertising ID is used. Players under 13 still play the whole game. We do not knowingly collect personal information from children. A parent or guardian who has a question can write to us at the address below."
+        ]
+      },
+      {
+        "id": "retention",
+        "h": "How long anything is kept",
+        "p": [
+          "Progress and settings stay on your device until you delete the game or reset it. Emails you send us are deleted 12 months after our last reply. Ad data is held by Google under its own policies. We hold none of it. Several games also have a reset option in Settings that clears progress without deleting the app."
+        ]
+      },
+      {
+        "id": "rights",
+        "h": "Your rights",
+        "p": [
+          "We hold almost nothing about players: only the emails you send us. If you live in the European Economic Area or the UK (GDPR and UK GDPR), in Brazil (LGPD) or in California (CCPA and CPRA), you can ask us for a copy of what we hold about you, ask us to correct or delete it, object to or restrict how it is used, and withdraw consent you gave. In the EEA, the UK and Brazil you can also complain to your data protection authority. Where we rely on consent, which is the case for personalised ads, you can withdraw it at any time using the choices above.",
+          "We do not sell personal information. Ad data that Google collects through its software can count as sharing for advertising under California law. If you are 13 or over you can opt out by declining the tracking prompt or the consent form, and under 13 no advertising ID is used. We do not treat you differently for using these rights. Write to us to use any of them. We reply within the time your local law sets: one month under GDPR and UK GDPR, 15 days under Brazilian law and 45 days under California law. Requests about ad data held by Google go to Google as well."
+        ]
+      },
+      {
+        "id": "changes",
+        "h": "Changes",
+        "p": [
+          "If this policy changes, the new version is posted on this page with a new date above, before the game version that needs it is released. Earlier versions stay posted, and version 1 is linked below."
+        ]
+      }
+    ],
     "contactH": "Contact",
-    "contactB": "Questions about this policy:"
+    "contactB": "Questions about this policy, or a request about your data:",
+    "termsLink": "Read the terms for these games",
+    "previousLink": "Read version 1, for game versions before 1.1.0"
   },
   "gamesSupport": {
     "title": "Support, Awesoon games",
@@ -563,17 +613,19 @@
     "q1": "My progress disappeared.",
     "a1": "Progress is stored on the device only. Deleting a game, or setting up a new phone without restoring a backup, clears it.",
     "q2": "Do the games need an internet connection?",
-    "a2": "No. Every game plays fully offline, start to finish.",
+    "a2": "No. The games play offline, start to finish. Only the ads need a connection.",
     "q3": "Is there an account?",
-    "a3": "No. There is no sign-in, nothing is uploaded and nothing is shared.",
+    "a3": "No. There is no sign-in and nothing of yours is uploaded by us. Google's ad software collects ad data, as the privacy policy explains.",
     "q4": "How do I reset a game?",
     "a4": "Several games have a reset in Settings. Deleting and reinstalling clears everything.",
     "q5": "Do the games show ads?",
-    "a5": "Not in the current versions. If that changes, the privacy policy is updated before the new version ships.",
+    "a5": "Yes. Every game contains ads, served by Google AdMob. The privacy policy explains what is collected and how to change your choices.",
     "contactH": "Contact",
     "contactB": "Questions, bugs or a game that will not start:",
     "privacyH": "Privacy",
-    "privacyLink": "Read the privacy policy for these games"
+    "privacyLink": "Read the privacy policy for these games",
+    "termsH": "Terms",
+    "termsLink": "Read the terms of use for these games"
   },
   "games": {
     "title": "Awesoon games",
@@ -600,5 +652,128 @@
     "privacyLink": "Privacy policy",
     "supportLink": "Support",
     "viewGame": "View game"
+  },
+  "gamesTerms": {
+    "title": "Terms of use, Awesoon games",
+    "updated": "Last updated 10 November 2026",
+    "lead": "The short version, in five lines. The full terms are below.",
+    "appliesTo": "Applies to all ten Awesoon games: Stack Snap, Loop Weaver, Tidy Tiles, Idle Bakery Empire, Quick Trivia Blitz, Dodge Rush, Word Chain Dash, Color Match Frenzy, Knot Untangle and Bounce Blitz.",
+    "short": [
+      "The games play offline, start to finish. Only the ads need a connection.",
+      "There is no account and no sign-in.",
+      "We collect nothing ourselves except the emails you send us. Google's ad software collects ad data. The privacy policy has the detail and your choices.",
+      "The games are provided as they are, with no warranty.",
+      "Write to us at the address at the bottom of this page. A person reads every message."
+    ],
+    "precedence": "If these five lines and the terms below differ, the terms below govern.",
+    "sections": [
+      {
+        "id": "who",
+        "h": "Who we are",
+        "p": [
+          "The games are published by Awesoon Technologies Inc., a company in British Columbia, Canada, trading as Awesoon Technologies. In these terms, \"we\" means that company."
+        ]
+      },
+      {
+        "id": "licence",
+        "h": "Your licence",
+        "p": [
+          "We give you a personal, non-transferable licence to use each game on your own devices. You may not copy, sell, redistribute or sublicense a game, or take it apart to get at its code. We keep every right we have not given you here."
+        ]
+      },
+      {
+        "id": "ads",
+        "h": "Ads",
+        "p": [
+          "The games contain ads. They are served by Google AdMob. What is collected, and how to control it, is in the privacy policy."
+        ]
+      },
+      {
+        "id": "asis",
+        "h": "As is",
+        "p": [
+          "Each game is provided \"as is\" and \"as available\", with no warranty of any kind, to the fullest extent the law allows. You use it at your own risk."
+        ]
+      },
+      {
+        "id": "liability",
+        "h": "Limit of liability",
+        "p": [
+          "To the fullest extent the law allows, we are not liable for personal injury or for any incidental, special, indirect or consequential damages arising from your use of a game. Nothing in these terms limits a right the law does not allow to be limited."
+        ]
+      },
+      {
+        "id": "who-answers",
+        "h": "Who answers for what",
+        "p": [
+          "We answer for the games, support, claims about them, intellectual property and privacy. Apple and Google answer for payment, refunds and distribution through their stores. Apple's standard licence agreement also applies to games you get from the App Store."
+        ]
+      },
+      {
+        "id": "third",
+        "h": "Other terms",
+        "p": [
+          "When you use a game you also follow the terms of the third parties it relies on, such as your device's store and Google AdMob."
+        ]
+      },
+      {
+        "id": "changes",
+        "h": "Changes",
+        "p": [
+          "If these terms change, the new version is posted on this page with a new date above, and the old version stays posted at its own address, linked from here."
+        ]
+      }
+    ],
+    "contactH": "Contact",
+    "contactB": "Questions, complaints or claims about the games:",
+    "privacyLink": "Read the privacy policy for these games"
+  },
+  "gamesPrivacyV1": {
+    "title": "Privacy policy, Awesoon games, version 1",
+    "updated": "Last updated 23 September 2026",
+    "lead": "These games do not collect any personal data.",
+    "appliesTo": "Applies to all ten Awesoon games: Stack Snap, Loop Weaver, Tidy Tiles, Idle Bakery Empire, Quick Trivia Blitz, Dodge Rush, Word Chain Dash, Color Match Frenzy, Knot Untangle and Bounce Blitz.",
+    "note": "This is version 1 of the policy. It applied to game versions before 1.1.0, which show no ads. Version 2 replaces it.",
+    "intro": "Each game runs entirely on your device. There is no account, no sign-in and no server. Your progress, scores, statistics and settings are stored on the device itself, and they are never sent to us or to anyone else.",
+    "sections": [
+      {
+        "id": "collect",
+        "h": "What we collect",
+        "p": [
+          "Nothing. We do not collect your name, email address, contacts, location, photos, device identifiers or usage analytics. Nothing you do in a game leaves your phone."
+        ]
+      },
+      {
+        "id": "ads",
+        "h": "Advertising",
+        "p": [
+          "The current versions of these games show no advertising. If a future version does, this page is updated before that version is released, and the update names the advertising provider and what it collects."
+        ]
+      },
+      {
+        "id": "delete",
+        "h": "Deleting your data",
+        "p": [
+          "Because everything is stored on your device, deleting a game deletes all of it. Several of the games also have a reset option in Settings that clears progress without deleting the app."
+        ]
+      },
+      {
+        "id": "children",
+        "h": "Children",
+        "p": [
+          "These games are not directed at children under 13, and because they collect nothing, they hold no data about anyone of any age."
+        ]
+      },
+      {
+        "id": "changes",
+        "h": "Changes",
+        "p": [
+          "If this policy changes, the new version is posted on this page with a new date above."
+        ]
+      }
+    ],
+    "contactH": "Contact",
+    "contactB": "Questions about this policy:",
+    "currentLink": "Read version 2, the current policy"
   }
 }
