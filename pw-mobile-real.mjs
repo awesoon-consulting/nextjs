@@ -1,4 +1,4 @@
-import { webkit, chromium, devices } from 'playwright'
+import { chromium, devices } from 'playwright'
 
 async function profile(name, browserType, deviceName, url) {
   const browser = await browserType.launch({ headless: true })
