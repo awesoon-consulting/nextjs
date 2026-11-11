@@ -184,17 +184,14 @@ export default async function LocaleLayout({ children, params }: LocaleLayoutPro
         </NextIntlClientProvider>
 
         {/*
-          gtag.js (GA4 + Google Ads) is a 307KB script that costs ~225ms
-          of main thread time. Defer it until after window.load + idle
-          callback so it never blocks paint or input response. The
-          dataLayer array is created synchronously so any early gtag()
-          calls from consent manager queue up correctly; the real script
-          flushes them when it loads.
+          gtag.js (GA4 + Google Ads) is not requested until the visitor
+          gives analytics consent. This script only defines window.loadGtag;
+          ConsentManager calls it after a yes. No page_view fires before that.
         */}
         {(gadsId || gaMeasurementId) && (
           <script
             dangerouslySetInnerHTML={{
-              __html: `window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());${gadsId ? `gtag('config','${gadsId}',{send_page_view:false});` : ''}${gaMeasurementId ? `gtag('config','${gaMeasurementId}',{send_page_view:false});` : ''}(function(){function load(){var s=document.createElement('script');s.async=true;s.src='https://www.googletagmanager.com/gtag/js?id=${gadsId || gaMeasurementId}';document.head.appendChild(s);s.onload=function(){gtag('event','page_view')}}function schedule(){if('requestIdleCallback' in window){requestIdleCallback(load,{timeout:5000})}else{setTimeout(load,2500)}}if(document.readyState==='complete'){schedule()}else{window.addEventListener('load',schedule,{once:true})}})();`,
+              __html: `window.loadGtag=function(){if(window.__gtagLoading)return;window.__gtagLoading=true;window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());${gadsId ? `gtag('config','${gadsId}',{send_page_view:false});` : ''}${gaMeasurementId ? `gtag('config','${gaMeasurementId}',{send_page_view:false});` : ''}var s=document.createElement('script');s.async=true;s.src='https://www.googletagmanager.com/gtag/js?id=${gadsId || gaMeasurementId}';s.onload=function(){gtag('event','page_view')};document.head.appendChild(s)};`,
             }}
           />
         )}
