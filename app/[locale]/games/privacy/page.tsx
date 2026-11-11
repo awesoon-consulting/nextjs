@@ -1,5 +1,7 @@
 import type { Metadata } from 'next'
+import Link from 'next/link'
 import { getTranslations, setRequestLocale } from 'next-intl/server'
+import { LegalSections, type LegalSection } from '../_components/LegalSections'
 import { siteConfig } from '@/src/config/site'
 
 export async function generateMetadata({
@@ -26,13 +28,7 @@ export default async function GamesPrivacyPage({
   setRequestLocale(locale)
   const t = await getTranslations({ locale, namespace: 'gamesPrivacy' })
 
-  const sections = [
-    { id: 'collect', heading: t('collectH'), body: t('collectB') },
-    { id: 'ads', heading: t('adsH'), body: t('adsB') },
-    { id: 'delete', heading: t('deleteH'), body: t('deleteB') },
-    { id: 'children', heading: t('childrenH'), body: t('childrenB') },
-    { id: 'changes', heading: t('changesH'), body: t('changesB') },
-  ]
+  const sections = t.raw('sections') as LegalSection[]
 
   return (
     <div className="min-h-screen bg-surface pt-16">
@@ -46,21 +42,10 @@ export default async function GamesPrivacyPage({
               {t('title')}
             </h2>
             <p className="text-lg text-text-primary font-semibold">{t('lead')}</p>
-            <p className="mt-3">{t('onDevice')}</p>
             <p className="mt-3 text-sm text-text-muted">{t('appliesTo')}</p>
           </section>
 
-          {sections.map((section) => (
-            <section key={section.id} aria-labelledby={`games-priv-${section.id}`}>
-              <h2
-                id={`games-priv-${section.id}`}
-                className="font-heading font-bold text-2xl text-text-primary mb-4"
-              >
-                {section.heading}
-              </h2>
-              <p>{section.body}</p>
-            </section>
-          ))}
+          <LegalSections sections={sections} idPrefix="games-priv" />
 
           <section aria-labelledby="games-priv-contact">
             <h2
@@ -74,6 +59,16 @@ export default async function GamesPrivacyPage({
               <a href={`mailto:${siteConfig.contact.gamesEmail}`} className="underline">
                 {siteConfig.contact.gamesEmail}
               </a>
+            </p>
+            <p className="mt-3">
+              <Link href={`/${locale}/games/privacy/v1`} className="underline">
+                {t('previousLink')}
+              </Link>
+            </p>
+            <p className="mt-3">
+              <Link href={`/${locale}/games/terms`} className="underline">
+                {t('termsLink')}
+              </Link>
             </p>
           </section>
         </div>

@@ -88,6 +88,20 @@ export default async function GamesSupportPage({
               </Link>
             </p>
           </section>
+
+          <section aria-labelledby="games-support-terms">
+            <h2
+              id="games-support-terms"
+              className="font-heading font-bold text-2xl text-text-primary mb-4"
+            >
+              {t('termsH')}
+            </h2>
+            <p>
+              <Link href={`/${locale}/games/terms`} className="underline">
+                {t('termsLink')}
+              </Link>
+            </p>
+          </section>
         </div>
       </div>
     </div>

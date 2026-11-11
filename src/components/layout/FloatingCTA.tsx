@@ -33,9 +33,9 @@ export default function FloatingCTA() {
 
   // Reset visibility on route change (prevents stale "visible" state
   // when navigating to a new page where the scroll position is at top).
-  const [visiblePathname, setVisiblePathname] = useState(pathname)
-  if (visiblePathname !== pathname) {
-    setVisiblePathname(pathname)
+  const [prevPathname, setPrevPathname] = useState(pathname)
+  if (pathname !== prevPathname) {
+    setPrevPathname(pathname)
     setIsVisible(false)
   }
 
