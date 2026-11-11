@@ -13,6 +13,7 @@ declare global {
   interface Window {
     gtag?: (...args: unknown[]) => void
     dataLayer?: unknown[]
+    loadGtag?: () => void
   }
 }
 
@@ -39,14 +40,17 @@ function applyGtagConsent(categories: ConsentCategories) {
     ad_user_data: categories.marketing ? 'granted' : 'denied',
     ad_personalization: categories.marketing ? 'granted' : 'denied',
   })
+  if (categories.analytics) window.loadGtag?.()
 }
 
 function initGtagConsentDefaults() {
   if (typeof window === 'undefined') return
   window.dataLayer = window.dataLayer || []
   if (typeof window.gtag !== 'function') {
-    window.gtag = function (...args: unknown[]) {
-      window.dataLayer?.push(args)
+    // gtag.js only reads Arguments objects from dataLayer, not arrays
+    window.gtag = function () {
+      // eslint-disable-next-line prefer-rest-params
+      window.dataLayer?.push(arguments)
     }
   }
   // Default all to denied,  GDPR compliant

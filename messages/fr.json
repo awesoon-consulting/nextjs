@@ -547,7 +547,7 @@
         "id": "device",
         "h": "Ce qui reste sur votre appareil",
         "p": [
-          "Il n'y a pas de compte, pas de connexion et pas de serveur de notre part. Votre progression, vos scores, vos statistiques, vos réglages et la réponse à la question sur l'âge sont stockés sur l'appareil lui-même. Ils ne sont jamais envoyés à nous ni à personne d'autre."
+          "Il n'y a pas de compte, pas de connexion et pas de serveur de notre part. Votre progression, vos scores, vos statistiques, vos réglages et la réponse à la question sur l'âge sont stockés sur l'appareil lui-même. Ils ne sont jamais envoyés à nous ni à personne d'autre. Les jeux ne collectent rien, et ce site web n'utilise des statistiques d'audience qu'avec votre consentement."
         ]
       },
       {
