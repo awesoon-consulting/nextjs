@@ -582,7 +582,7 @@
         "id": "retention",
         "h": "Cuánto tiempo se conserva",
         "p": [
-          "El progreso y los ajustes se quedan en tu dispositivo hasta que borres el juego o lo restablezcas. Los correos que nos envías se eliminan 12 meses después de nuestra última respuesta. Los datos publicitarios los conserva Google según sus propias políticas. Nosotros no conservamos ninguno."
+          "El progreso y los ajustes se quedan en tu dispositivo hasta que borres el juego o lo restablezcas. Los correos que nos envías se eliminan 12 meses después de nuestra última respuesta. Los datos publicitarios los conserva Google según sus propias políticas. Nosotros no conservamos ninguno. Varios juegos también tienen una opción de restablecer en los ajustes que borra el progreso sin eliminar la aplicación."
         ]
       },
       {
@@ -613,9 +613,9 @@
     "q1": "Mi progreso desapareció.",
     "a1": "El progreso se guarda solo en el dispositivo. Borrar un juego, o configurar un teléfono nuevo sin restaurar una copia de seguridad, lo elimina.",
     "q2": "¿Los juegos necesitan conexión a internet?",
-    "a2": "No. Todos los juegos funcionan completamente sin conexión, de principio a fin.",
+    "a2": "Sí. Los juegos se juegan sin conexión, de principio a fin. Solo los anuncios necesitan conexión.",
     "q3": "¿Hace falta una cuenta?",
-    "a3": "No. No hay inicio de sesión, no se sube nada y no se comparte nada.",
+    "a3": "No. No hay inicio de sesión y nosotros no subimos nada tuyo. El software publicitario de Google recopila datos de anuncios, como explica la política de privacidad.",
     "q4": "¿Cómo reinicio un juego?",
     "a4": "Varios juegos tienen un reinicio en los ajustes. Desinstalar y volver a instalar lo borra todo.",
     "q5": "¿Los juegos muestran publicidad?",
@@ -661,9 +661,9 @@
     "short": [
       "Los juegos se juegan sin conexión, de principio a fin. Solo los anuncios necesitan conexión.",
       "No hay cuenta ni inicio de sesión.",
-      "No recopilamos nada nosotros mismos. El software publicitario de Google recopila datos de anuncios, solo según tus decisiones. La política de privacidad da el detalle.",
+      "No recopilamos nada nosotros mismos, salvo los correos que nos envías. El software publicitario de Google recopila datos de anuncios. La política de privacidad da el detalle y tus opciones.",
       "Los juegos se ofrecen tal cual, sin garantía.",
-      "Escribe a games@awesoontechnologies.com. Una persona lee cada mensaje."
+      "Escríbenos a la dirección que aparece al final de esta página. Una persona lee cada mensaje."
     ],
     "precedence": "Si estas cinco líneas y las condiciones de abajo difieren, prevalecen las condiciones de abajo.",
     "sections": [

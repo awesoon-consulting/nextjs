@@ -582,7 +582,7 @@
         "id": "retention",
         "h": "Durée de conservation",
         "p": [
-          "La progression et les réglages restent sur votre appareil jusqu'à ce que vous supprimiez le jeu ou le réinitialisiez. Les courriels que vous nous envoyez sont supprimés 12 mois après notre dernière réponse. Les données publicitaires sont conservées par Google selon ses propres règles. Nous n'en conservons aucune."
+          "La progression et les réglages restent sur votre appareil jusqu'à ce que vous supprimiez le jeu ou le réinitialisiez. Les courriels que vous nous envoyez sont supprimés 12 mois après notre dernière réponse. Les données publicitaires sont conservées par Google selon ses propres règles. Nous n'en conservons aucune. Plusieurs jeux ont aussi une option de réinitialisation dans les réglages qui efface la progression sans supprimer l'application."
         ]
       },
       {
@@ -613,9 +613,9 @@
     "q1": "Ma progression a disparu.",
     "a1": "La progression est enregistrée uniquement sur l'appareil. Supprimer un jeu, ou configurer un nouveau téléphone sans restaurer une sauvegarde, l'efface.",
     "q2": "Les jeux ont-ils besoin d'une connexion Internet ?",
-    "a2": "Non. Chaque jeu fonctionne entièrement hors ligne, du début à la fin.",
+    "a2": "Oui. Les jeux se jouent hors ligne, du début à la fin. Seules les publicités ont besoin d'une connexion.",
     "q3": "Faut-il un compte ?",
-    "a3": "Non. Aucune connexion, rien n'est téléversé et rien n'est partagé.",
+    "a3": "Non. Il n'y a pas de connexion et nous ne téléversons rien de vous. Le logiciel publicitaire de Google collecte des données publicitaires, comme l'explique la politique de confidentialité.",
     "q4": "Comment réinitialiser un jeu ?",
     "a4": "Plusieurs jeux proposent une réinitialisation dans les réglages. Désinstaller puis réinstaller efface tout.",
     "q5": "Les jeux affichent-ils des publicités ?",
@@ -661,9 +661,9 @@
     "short": [
       "Les jeux se jouent hors ligne, du début à la fin. Seules les publicités ont besoin d'une connexion.",
       "Il n'y a ni compte ni connexion.",
-      "Nous ne collectons rien nous-mêmes. Le logiciel publicitaire de Google collecte des données publicitaires, seulement selon vos choix. La politique de confidentialité donne le détail.",
+      "Nous ne collectons rien nous-mêmes, sauf les courriels que vous nous envoyez. Le logiciel publicitaire de Google collecte des données publicitaires. La politique de confidentialité donne le détail et vos choix.",
       "Les jeux sont fournis tels quels, sans garantie.",
-      "Écrivez à games@awesoontechnologies.com. Une personne lit chaque message."
+      "Écrivez-nous à l'adresse au bas de cette page. Une personne lit chaque message."
     ],
     "precedence": "Si ces cinq lignes et les conditions ci-dessous diffèrent, ce sont les conditions ci-dessous qui prévalent.",
     "sections": [
