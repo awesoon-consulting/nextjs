@@ -613,7 +613,7 @@
     "q1": "My progress disappeared.",
     "a1": "Progress is stored on the device only. Deleting a game, or setting up a new phone without restoring a backup, clears it.",
     "q2": "Do the games need an internet connection?",
-    "a2": "Yes. The games play offline, start to finish. Only the ads need a connection.",
+    "a2": "No. The games play offline, start to finish. Only the ads need a connection.",
     "q3": "Is there an account?",
     "a3": "No. There is no sign-in and nothing of yours is uploaded by us. Google's ad software collects ad data, as the privacy policy explains.",
     "q4": "How do I reset a game?",

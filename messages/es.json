@@ -614,7 +614,7 @@
     "q1": "Mi progreso desapareció.",
     "a1": "El progreso se guarda solo en el dispositivo. Borrar un juego, o configurar un teléfono nuevo sin restaurar una copia de seguridad, lo elimina.",
     "q2": "¿Los juegos necesitan conexión a internet?",
-    "a2": "Sí. Los juegos se juegan sin conexión, de principio a fin. Solo los anuncios necesitan conexión.",
+    "a2": "No. Los juegos se juegan sin conexión, de principio a fin. Solo los anuncios necesitan conexión.",
     "q3": "¿Hace falta una cuenta?",
     "a3": "No. No hay inicio de sesión y nosotros no subimos nada tuyo. El software publicitario de Google recopila datos de anuncios, como explica la política de privacidad.",
     "q4": "¿Cómo reinicio un juego?",

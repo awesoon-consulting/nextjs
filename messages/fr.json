@@ -614,7 +614,7 @@
     "q1": "Ma progression a disparu.",
     "a1": "La progression est enregistrée uniquement sur l'appareil. Supprimer un jeu, ou configurer un nouveau téléphone sans restaurer une sauvegarde, l'efface.",
     "q2": "Les jeux ont-ils besoin d'une connexion Internet ?",
-    "a2": "Oui. Les jeux se jouent hors ligne, du début à la fin. Seules les publicités ont besoin d'une connexion.",
+    "a2": "Non. Les jeux se jouent hors ligne, du début à la fin. Seules les publicités ont besoin d'une connexion.",
     "q3": "Faut-il un compte ?",
     "a3": "Non. Il n'y a pas de connexion et nous ne téléversons rien de vous. Le logiciel publicitaire de Google collecte des données publicitaires, comme l'explique la politique de confidentialité.",
     "q4": "Comment réinitialiser un jeu ?",
