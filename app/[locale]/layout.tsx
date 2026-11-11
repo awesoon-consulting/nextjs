@@ -186,12 +186,13 @@ export default async function LocaleLayout({ children, params }: LocaleLayoutPro
         {/*
           gtag.js (GA4 + Google Ads) is not requested until the visitor
           gives analytics consent. This script only defines window.loadGtag;
-          ConsentManager calls it after a yes. No page_view fires before that.
+          ConsentManager calls it after a yes, and it defers the 307KB script
+          to idle time. No page_view fires before that.
         */}
         {(gadsId || gaMeasurementId) && (
           <script
             dangerouslySetInnerHTML={{
-              __html: `window.loadGtag=function(){if(window.__gtagLoading)return;window.__gtagLoading=true;var gtag=window.gtag;gtag('js',new Date());${gadsId ? `gtag('config','${gadsId}',{send_page_view:false});` : ''}${gaMeasurementId ? `gtag('config','${gaMeasurementId}',{send_page_view:false});` : ''}var s=document.createElement('script');s.async=true;s.src='https://www.googletagmanager.com/gtag/js?id=${gadsId || gaMeasurementId}';s.onload=function(){gtag('event','page_view')};document.head.appendChild(s)};`,
+              __html: `window.loadGtag=function(){if(window.__gtagLoading)return;window.__gtagLoading=true;function run(){window.dataLayer=window.dataLayer||[];var gtag=window.gtag||function(){dataLayer.push(arguments)};gtag('js',new Date());${gadsId ? `gtag('config','${gadsId}',{send_page_view:false});` : ''}${gaMeasurementId ? `gtag('config','${gaMeasurementId}',{send_page_view:false});` : ''}var s=document.createElement('script');s.async=true;s.src='https://www.googletagmanager.com/gtag/js?id=${gadsId || gaMeasurementId}';s.onload=function(){gtag('event','page_view')};s.onerror=function(){window.__gtagLoading=false};document.head.appendChild(s)}if('requestIdleCallback' in window){requestIdleCallback(run,{timeout:5000})}else{setTimeout(run,2500)}};`,
             }}
           />
         )}
