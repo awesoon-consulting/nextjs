@@ -6,7 +6,6 @@ import { LegalSections, type LegalSection } from './LegalSections'
 export async function PrivacyV1({ locale, isCurrent }: { locale: string; isCurrent: boolean }) {
   setRequestLocale(locale)
   const t = await getTranslations({ locale, namespace: 'gamesPrivacyV1' })
-  const tv2 = await getTranslations({ locale, namespace: 'gamesPrivacy' })
 
   const sections = t.raw('sections') as LegalSection[]
 
@@ -50,11 +49,6 @@ export async function PrivacyV1({ locale, isCurrent }: { locale: string; isCurre
               <a href={`mailto:${siteConfig.contact.gamesEmail}`} className="underline">
                 {siteConfig.contact.gamesEmail}
               </a>
-            </p>
-            <p className="mt-3">
-              <Link href={`/${locale}/games/terms`} className="underline">
-                {tv2('termsLink')}
-              </Link>
             </p>
           </section>
         </div>
