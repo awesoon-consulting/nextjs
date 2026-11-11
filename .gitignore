@@ -27,6 +27,7 @@
 # google service account keys
 *[Ss]ervice*[Aa]ccount*.json
 google-credentials*.json
+*-firebase-adminsdk-*.json
 
 # debug
 npm-debug.log*

@@ -25,7 +25,7 @@
 - For `gh`, set `GH_TOKEN` from `.env.local` for that one command only. Never print the token or switch the global gh account
 - For git, use a repo-local credential helper in `.git/` that reads `GITHUB_TOKEN` from `.env.local`
 - Executors must never run `git push` — write branch name to `docs/task-queue/push-queue.txt` and let the Mac pusher handle it
-- The pusher is the one exception: it reads its own token from `~/.awesoon-pusher.env` and swaps it into `origin` only while it runs
+- The pusher is the one exception: it reads its own token from `~/.awesoon-pusher.env` and swaps it into `origin` only while it runs (`scripts/pusher.sh:31-32`), then restores `https://github.com/awesoon-consulting/nextjs.git` on exit (`scripts/pusher.sh:42`, `121`). If a token shows in `git remote -v`, check whether it is the pusher's (a run in progress, or one that died before restoring) before revoking it
 - Mac pusher script: `scripts/pusher.sh` (runs every 10 min via launchd, installed via `bash scripts/install-pusher.sh`)
 
 ## What Has Been Tried and Failed
