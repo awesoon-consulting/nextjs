@@ -553,7 +553,7 @@
         "id": "age",
         "h": "The age question",
         "p": [
-          "The first time you open a game, it asks your birth month and year. Nothing is filled in beforehand. The answer stays on your device, is never sent to us or to Google, and cannot be changed by going back. It decides which ads you see. If the app store tells the game your device belongs to someone under 13, that overrides your answer."
+          "The first time you open a game, it asks your birth month and year. Nothing is filled in beforehand. The answer stays on your device, is never sent to us or to Google, and cannot be changed by going back. It decides which ads you see. On iPhone and iPad, if Apple tells the game your device belongs to someone under 13, that overrides your answer. On Android, the game follows your answer alone."
         ]
       },
       {
@@ -596,13 +596,14 @@
         "id": "changes",
         "h": "Changes",
         "p": [
-          "If this policy changes, the new version is posted on this page with a new date above, before the game version that needs it is released."
+          "If this policy changes, the new version is posted on this page with a new date above, before the game version that needs it is released. Earlier versions stay posted, and version 1 is linked below."
         ]
       }
     ],
     "contactH": "Contact",
     "contactB": "Questions about this policy, or a request about your data:",
-    "termsLink": "Read the terms for these games"
+    "termsLink": "Read the terms for these games",
+    "previousLink": "Read version 1, for game versions before 1.1.0"
   },
   "gamesSupport": {
     "title": "Support, Awesoon games",
@@ -719,12 +720,60 @@
         "id": "changes",
         "h": "Changes",
         "p": [
-          "If these terms change, the new version is posted on this page with a new date above. Past versions stay available on request."
+          "If these terms change, the new version is posted on this page with a new date above, and the old version stays posted at its own address, linked from here."
         ]
       }
     ],
     "contactH": "Contact",
     "contactB": "Questions, complaints or claims about the games:",
     "privacyLink": "Read the privacy policy for these games"
+  },
+  "gamesPrivacyV1": {
+    "title": "Privacy policy, Awesoon games, version 1",
+    "updated": "Last updated 23 September 2026",
+    "lead": "These games do not collect any personal data.",
+    "appliesTo": "Applies to all ten Awesoon games: Stack Snap, Loop Weaver, Tidy Tiles, Idle Bakery Empire, Quick Trivia Blitz, Dodge Rush, Word Chain Dash, Color Match Frenzy, Knot Untangle and Bounce Blitz.",
+    "note": "This is version 1 of the policy. It applied to game versions before 1.1.0, which show no ads. Version 2 replaces it.",
+    "intro": "Each game runs entirely on your device. There is no account, no sign-in and no server. Your progress, scores, statistics and settings are stored on the device itself, and they are never sent to us or to anyone else.",
+    "sections": [
+      {
+        "id": "collect",
+        "h": "What we collect",
+        "p": [
+          "Nothing. We do not collect your name, email address, contacts, location, photos, device identifiers or usage analytics. Nothing you do in a game leaves your phone."
+        ]
+      },
+      {
+        "id": "ads",
+        "h": "Advertising",
+        "p": [
+          "The current versions of these games show no advertising. If a future version does, this page is updated before that version is released, and the update names the advertising provider and what it collects."
+        ]
+      },
+      {
+        "id": "delete",
+        "h": "Deleting your data",
+        "p": [
+          "Because everything is stored on your device, deleting a game deletes all of it. Several of the games also have a reset option in Settings that clears progress without deleting the app."
+        ]
+      },
+      {
+        "id": "children",
+        "h": "Children",
+        "p": [
+          "These games are not directed at children under 13, and because they collect nothing, they hold no data about anyone of any age."
+        ]
+      },
+      {
+        "id": "changes",
+        "h": "Changes",
+        "p": [
+          "If this policy changes, the new version is posted on this page with a new date above."
+        ]
+      }
+    ],
+    "contactH": "Contact",
+    "contactB": "Questions about this policy:",
+    "currentLink": "Read version 2, the current policy"
   }
 }

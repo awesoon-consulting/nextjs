@@ -554,7 +554,7 @@
         "id": "age",
         "h": "La question sur l'âge",
         "p": [
-          "À la première ouverture d'un jeu, il vous demande votre mois et votre année de naissance. Rien n'est prérempli. La réponse reste sur votre appareil, n'est jamais envoyée à nous ni à Google, et ne peut pas être modifiée en revenant en arrière. Elle détermine les publicités que vous voyez. Si la boutique d'applications indique au jeu que l'appareil appartient à une personne de moins de 13 ans, cette information l'emporte sur votre réponse."
+          "À la première ouverture d'un jeu, il vous demande votre mois et votre année de naissance. Rien n'est prérempli. La réponse reste sur votre appareil, n'est jamais envoyée à nous ni à Google, et ne peut pas être modifiée en revenant en arrière. Elle détermine les publicités que vous voyez. Sur iPhone et iPad, si Apple indique au jeu que l'appareil appartient à une personne de moins de 13 ans, cette information l'emporte sur votre réponse. Sur Android, le jeu suit uniquement votre réponse."
         ]
       },
       {
@@ -597,13 +597,14 @@
         "id": "changes",
         "h": "Modifications",
         "p": [
-          "Si cette politique change, la nouvelle version est publiée sur cette page avec une nouvelle date en haut, avant la sortie de la version du jeu qui en a besoin."
+          "Si cette politique change, la nouvelle version est publiée sur cette page avec une nouvelle date en haut, avant la sortie de la version du jeu qui en a besoin. Les versions précédentes restent publiées, et la version 1 est liée ci-dessous."
         ]
       }
     ],
     "contactH": "Contact",
     "contactB": "Questions sur cette politique, ou demande concernant vos données :",
-    "termsLink": "Lire les conditions d'utilisation de ces jeux"
+    "termsLink": "Lire les conditions d'utilisation de ces jeux",
+    "previousLink": "Lire la version 1, pour les versions des jeux antérieures à 1.1.0"
   },
   "gamesSupport": {
     "title": "Assistance, jeux Awesoon",
@@ -720,12 +721,60 @@
         "id": "changes",
         "h": "Modifications",
         "p": [
-          "Si ces conditions changent, la nouvelle version est publiée sur cette page avec une nouvelle date en haut. Les versions passées restent disponibles sur demande."
+          "Si ces conditions changent, la nouvelle version est publiée sur cette page avec une nouvelle date en haut, et l'ancienne version reste publiée à sa propre adresse, avec un lien depuis cette page."
         ]
       }
     ],
     "contactH": "Contact",
     "contactB": "Questions, plaintes ou réclamations au sujet des jeux :",
     "privacyLink": "Lire la politique de confidentialité de ces jeux"
+  },
+  "gamesPrivacyV1": {
+    "title": "Politique de confidentialité, jeux Awesoon, version 1",
+    "updated": "Dernière mise à jour le 23 septembre 2026",
+    "lead": "Ces jeux ne collectent aucune donnée personnelle.",
+    "appliesTo": "S'applique aux dix jeux Awesoon : Stack Snap, Loop Weaver, Tidy Tiles, Idle Bakery Empire, Quick Trivia Blitz, Dodge Rush, Word Chain Dash, Color Match Frenzy, Knot Untangle et Bounce Blitz.",
+    "note": "Ceci est la version 1 de la politique. Elle s'appliquait aux versions des jeux antérieures à 1.1.0, qui n'affichent aucune publicité. La version 2 la remplace.",
+    "intro": "Chaque jeu fonctionne entièrement sur votre appareil. Il n'y a ni compte, ni connexion, ni serveur. Votre progression, vos scores, vos statistiques et vos réglages sont enregistrés sur l'appareil lui-même et ne nous sont jamais transmis, ni à quiconque.",
+    "sections": [
+      {
+        "id": "collect",
+        "h": "Ce que nous collectons",
+        "p": [
+          "Rien. Nous ne collectons ni votre nom, ni votre adresse courriel, ni vos contacts, ni votre position, ni vos photos, ni identifiant d'appareil, ni données d'utilisation. Rien de ce que vous faites dans un jeu ne quitte votre téléphone."
+        ]
+      },
+      {
+        "id": "ads",
+        "h": "Publicité",
+        "p": [
+          "Les versions actuelles de ces jeux n'affichent aucune publicité. Si une version future en affiche, cette page sera mise à jour avant sa sortie et précisera le fournisseur publicitaire ainsi que les données collectées."
+        ]
+      },
+      {
+        "id": "delete",
+        "h": "Supprimer vos données",
+        "p": [
+          "Comme tout est enregistré sur votre appareil, supprimer un jeu supprime l'ensemble de ses données. Plusieurs jeux offrent aussi une réinitialisation dans les réglages, qui efface la progression sans désinstaller l'application."
+        ]
+      },
+      {
+        "id": "children",
+        "h": "Enfants",
+        "p": [
+          "Ces jeux ne s'adressent pas aux enfants de moins de 13 ans et, comme ils ne collectent rien, ils ne détiennent aucune donnée sur qui que ce soit."
+        ]
+      },
+      {
+        "id": "changes",
+        "h": "Modifications",
+        "p": [
+          "Si cette politique change, la nouvelle version est publiée sur cette page avec une nouvelle date ci-dessus."
+        ]
+      }
+    ],
+    "contactH": "Nous joindre",
+    "contactB": "Questions au sujet de cette politique :",
+    "currentLink": "Lire la version 2, la politique en vigueur"
   }
 }

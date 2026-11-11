@@ -61,6 +61,11 @@ export default async function GamesPrivacyPage({
               </a>
             </p>
             <p className="mt-3">
+              <Link href={`/${locale}/games/privacy/v1`} className="underline">
+                {t('previousLink')}
+              </Link>
+            </p>
+            <p className="mt-3">
               <Link href={`/${locale}/games/terms`} className="underline">
                 {t('termsLink')}
               </Link>
