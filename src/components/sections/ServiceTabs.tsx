@@ -24,7 +24,7 @@ export default function ServiceTabs() {
   ].slice(0, 6)
 
   return (
-    <section className="w-full bg-white py-[88px] dark:bg-primary" aria-labelledby="services-title">
+    <section className="w-full bg-white py-24 dark:bg-primary" aria-labelledby="services-title">
       <div className="mx-auto max-w-6xl px-4 sm:px-6">
         <h2 id="services-title" className="max-w-2xl font-heading text-3xl font-bold tracking-tight text-text-primary sm:text-4xl dark:text-white">
           {t('serviceLines.title')}

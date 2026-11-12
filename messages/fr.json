@@ -39,8 +39,7 @@
     "language": "Langue",
     "healthCheckTitle": "Bilan gratuit de vos systèmes",
     "healthCheckText": "Une liste claire de ce qui bloque, de ce que cela coûte et de quoi régler en premier.",
-    "healthCheckCta": "Réserver un appel découverte de 30 minutes",
-    "healthCheckNote": "Suit votre appel découverte de 30 minutes"
+    "healthCheckCta": "Réserver un appel découverte de 30 minutes"
   },
   "hero": {
     "headline": "Vos opérations ont dépassé vos outils. Nous réglons ça.",
@@ -475,9 +474,7 @@
     "takeFirstStep": "Faites le premier pas"
   },
   "floatingCta": {
-    "message": "Réservez un appel découverte de 30 minutes",
-    "subtext": "Votre bilan gratuit des systèmes suit l’appel.",
-    "button": "Réserver un appel →"
+    "pill": "Réserver un appel de 30 minutes"
   },
   "solutionPage": {
     "painPointsTitle": "Cela vous semble familier?",
@@ -985,14 +982,21 @@
     "role": "Fondateur, ingénieur logiciel et responsable des systèmes. Vancouver (C.-B.).",
     "linkedin": "Rasoul sur LinkedIn",
     "photoAlt": "Rasoul Rasouli",
-    "quote": "Nous avons créé Awesoon pour faire les choses différemment.",
-    "bio": "Développeur full-stack qui a construit et remplacé des plateformes entières de A à Z."
+    "bio": "Développeur full-stack qui a construit et remplacé des plateformes entières de A à Z.",
+    "principleLabel": "Notre façon de travailler",
+    "principle": "Indépendants par conception. Aucune revente de logiciels, aucune commission d’éditeur. Nos recommandations reposent uniquement sur vos opérations."
   },
   "howWeWork": {
     "title": "Notre façon de travailler",
     "subtitle": "Quatre étapes. Commencez où vous voulez. Nous partons de là où vous en êtes.",
     "freeAfterCall": "Gratuit, après votre appel découverte",
     "supportToggle": "Voir les quatre volets de soutien",
-    "pathLabel": "Quatre étapes reliées, du bilan au soutien"
+    "pathLabel": "Quatre étapes reliées, du bilan au soutien",
+    "steps": [
+      "Nous apprenons comment votre équipe travaille et où cela bloque. Vous recevez une liste priorisée des correctifs.",
+      "Nous transformons ces constats en plan clair. Besoins, outils et étapes jusqu’au lancement, par écrit.",
+      "Nous réalisons le plan avec vous. Autant ou aussi peu du travail que vous le souhaitez.",
+      "Nous restons après le lancement. Soutien et améliorations à mesure que vous grandissez."
+    ]
   }
 }

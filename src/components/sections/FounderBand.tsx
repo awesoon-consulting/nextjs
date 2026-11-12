@@ -5,8 +5,8 @@ import { siteConfig } from '@/src/config/site'
 export default function FounderBand() {
   const t = useTranslations('founder')
   return (
-    <section className="w-full bg-white py-[88px] dark:bg-primary" aria-labelledby="founder-name">
-      <div className="mx-auto grid max-w-6xl items-center gap-10 px-4 sm:px-6 md:grid-cols-[280px_1fr]">
+    <section className="w-full bg-white py-24 dark:bg-primary" aria-labelledby="founder-name">
+      <div className="mx-auto grid max-w-6xl items-center gap-10 px-4 sm:px-6 md:grid-cols-[240px_1fr]">
         <Image
           src={siteConfig.team.ray.photo}
           alt={t('photoAlt')}
@@ -15,8 +15,9 @@ export default function FounderBand() {
           className="h-72 w-full max-w-[280px] rounded-3xl object-cover md:h-80"
         />
         <div>
-          <blockquote className="font-heading text-2xl leading-snug font-semibold text-text-primary sm:text-3xl dark:text-white">“{t('quote')}”</blockquote>
-          <p className="mt-4 max-w-2xl text-base leading-relaxed text-text-secondary dark:text-neutral-300">{t('bio')}</p>
+          <p className="text-sm font-semibold text-text-muted dark:text-neutral-400">{t('principleLabel')}</p>
+          <p className="mt-2 font-heading text-2xl leading-snug font-semibold text-text-primary sm:text-3xl dark:text-white">{t('principle')}</p>
+          <p className="mt-4 text-base leading-relaxed text-text-secondary dark:text-neutral-300">{t('bio')}</p>
           <p id="founder-name" className="mt-6 font-heading text-base font-semibold text-text-primary dark:text-white">{t('name')}</p>
           <p className="text-sm text-text-muted dark:text-neutral-400">{t('role')}</p>
           <a

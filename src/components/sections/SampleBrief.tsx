@@ -10,7 +10,7 @@ export default function SampleBrief() {
   ] as const
 
   return (
-    <section className="w-full bg-neutral-100 py-[88px] dark:bg-primary" aria-labelledby="sample-title">
+    <section className="w-full bg-neutral-100 py-24 dark:bg-[#0B1322]" aria-labelledby="sample-title">
       <div className="mx-auto max-w-3xl px-4 sm:px-6">
         <div className="text-center">
           <h2 id="sample-title" className=" font-heading text-3xl font-bold tracking-tight text-text-primary sm:text-4xl dark:text-white">

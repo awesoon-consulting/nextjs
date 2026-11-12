@@ -51,9 +51,6 @@ export const siteConfig = {
         { labelKey: 'serviceItems.applicationProgramming', href: '/solutions' },
         { labelKey: 'serviceItems.clientServer', href: '/solutions' },
         { labelKey: 'serviceItems.erpDatabaseApps', href: '/solutions' },
-        { labelKey: 'serviceItems.databaseDesign', href: '/solutions' },
-        { labelKey: 'serviceItems.databaseInterfaces', href: '/solutions' },
-        { labelKey: 'serviceItems.interfaceDevelopment', href: '/solutions' },
         { labelKey: 'serviceItems.gameMaintenance', href: '/solutions' },
       ],
     },
@@ -63,6 +60,8 @@ export const siteConfig = {
       solutions: ['ai-operations', 'spreadsheet-operations', 'system-integration', 'erp-implementation', 'crm-implementation', 'api-integrations'],
       extras: [
         { labelKey: 'serviceItems.dbaas', href: '/solutions' },
+        { labelKey: 'serviceItems.databaseDesign', href: '/solutions' },
+        { labelKey: 'serviceItems.databaseInterfaces', href: '/solutions' },
         { labelKey: 'serviceItems.crmSetup', href: '/solutions' },
       ],
     },
@@ -73,6 +72,7 @@ export const siteConfig = {
       extras: [
         { labelKey: 'serviceItems.artDesign', href: '/design' },
         { labelKey: 'serviceItems.uiDesign', href: '/design' },
+        { labelKey: 'serviceItems.interfaceDevelopment', href: '/design' },
         { labelKey: 'serviceItems.brandSystems', href: '/design' },
       ],
     },

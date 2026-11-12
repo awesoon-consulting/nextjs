@@ -27,6 +27,8 @@ function ThemeIcon() {
   )
 }
 
+const MEGA_COLUMNS = [['consultation'], ['programming'], ['automation'], ['design', 'advertising']] as const
+
 const megaLink =
   'text-sm text-text-secondary transition-colors hover:text-text-primary dark:text-neutral-300 dark:hover:text-white'
 
@@ -158,8 +160,10 @@ export default function Navbar() {
                   className="absolute left-0 right-0 top-16 max-h-[calc(100vh-4rem)] overflow-y-auto border-b border-neutral-200 bg-white shadow-xl dark:border-white/10 dark:bg-primary"
                 >
                   <div className="flex items-start gap-8 px-10 py-10 xl:px-16">
-                    <div className="grid flex-1 grid-cols-5 gap-6">
-                      {siteConfig.services.map((s) => (
+                    <div className="grid flex-1 grid-cols-4 gap-8">
+                      {MEGA_COLUMNS.map((col) => (
+                        <div key={col.join()} className="space-y-8">
+                      {siteConfig.services.filter((s) => (col as readonly string[]).includes(s.key)).map((s) => (
                         <div key={s.key}>
                           <Link href={localHref(s.href)} className="group flex items-center gap-3">
                             <ServiceIcon id={s.key} />
@@ -186,13 +190,14 @@ export default function Navbar() {
                           </ul>
                         </div>
                       ))}
+                        </div>
+                      ))}
                     </div>
                     <div className="h-fit w-72 flex-shrink-0 self-start rounded-3xl bg-accent p-6 text-white">
                       <div>
                         <span className="inline-block rounded-full bg-white px-3 py-1 text-xs font-semibold text-accent">{t('nav.free')}</span>
                         <p className="mt-4 font-heading text-xl font-semibold">{t('nav.healthCheckTitle')}</p>
                         <p className="mt-2 text-sm leading-relaxed text-white/75">{t('nav.healthCheckText')}</p>
-                        <p className="mt-3 text-sm font-medium text-white">{t('nav.healthCheckNote')}</p>
                       </div>
                       <Link
                         href={localHref('/contact')}

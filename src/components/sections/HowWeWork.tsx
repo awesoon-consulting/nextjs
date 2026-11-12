@@ -52,8 +52,8 @@ function IsoPath({ lit, label }: { lit: number; label: string }) {
 export default function HowWeWork() {
   const t = useTranslations()
   const locale = useLocale()
-  const messages = useMessages() as { process: { steps: { title: string; description: string }[] } }
-  const steps = messages.process.steps
+  const messages = useMessages() as { process: { steps: { title: string }[] }; howWeWork: { steps: string[] } }
+  const steps = messages.process.steps.map((s, i) => ({ title: s.title, description: messages.howWeWork.steps[i] }))
   const [lit, setLit] = useState(1)
   const refs = useRef<(HTMLLIElement | null)[]>([])
 
@@ -78,7 +78,7 @@ export default function HowWeWork() {
     'flex h-full flex-col rounded-3xl border border-neutral-200 bg-white p-6 transition-colors dark:border-white/[0.08] dark:bg-[#111827]'
 
   return (
-    <section className="w-full bg-neutral-100 py-[88px] dark:bg-primary" aria-labelledby="how-title">
+    <section className="w-full bg-neutral-100 py-24 dark:bg-[#0B1322]" aria-labelledby="how-title">
       <div className="mx-auto max-w-6xl px-4 sm:px-6">
         <h2 id="how-title" className="font-heading text-3xl font-bold tracking-tight text-text-primary sm:text-4xl dark:text-white">
           {t('howWeWork.title')}
@@ -87,7 +87,15 @@ export default function HowWeWork() {
         <div className="mt-10 hidden lg:block">
           <IsoPath lit={lit} label={t('howWeWork.pathLabel')} />
         </div>
-        <ol className="mt-6 grid items-stretch gap-4 sm:grid-cols-2 lg:grid-cols-4">
+        <div className="mt-6 flex justify-center">
+          <Link
+            href={`/${locale}/contact`}
+            className="inline-flex rounded-full bg-primary px-6 py-3 text-sm font-semibold text-white hover:bg-secondary dark:bg-white dark:text-primary"
+          >
+            {t('closing.cta')}
+          </Link>
+        </div>
+        <ol className="mt-8 grid items-stretch gap-4 sm:grid-cols-2 lg:grid-cols-4">
           {steps.map((s, i) => (
             <li
               key={i}
@@ -99,9 +107,10 @@ export default function HowWeWork() {
               <div className={`${card} ${i < lit ? 'border-[#0F1D33]/40 dark:border-white/20' : ''}`}>
                 <span className="font-heading text-sm font-semibold text-accent dark:text-[#00AEEF]">0{i + 1}</span>
                 <h3 className="mt-2 font-heading text-lg font-semibold text-text-primary dark:text-white">{s.title}</h3>
-                <p className="mt-2 flex-1 text-sm leading-relaxed text-text-secondary dark:text-neutral-300">{s.description}</p>
+                <p className="mt-2 text-sm leading-relaxed text-text-secondary dark:text-neutral-300">{s.description}</p>
+                <div className="mt-auto pt-4">
                 {i === 0 && (
-                  <div className="mt-4 flex flex-wrap gap-2">
+                  <div className="flex flex-wrap gap-2">
                     {[t('howWeWork.freeAfterCall'), t('process.deliveredIn48h')].map((c) => (
                       <span key={c} className="rounded-full bg-neutral-100 px-3 py-1 text-xs font-medium text-text-secondary dark:bg-white/10 dark:text-neutral-300">
                         {c}
@@ -110,7 +119,7 @@ export default function HowWeWork() {
                   </div>
                 )}
                 {i === 3 && (
-                  <details className="group mt-4">
+                  <details className="group">
                     <summary className="flex cursor-pointer list-none items-center justify-between text-sm font-semibold text-text-primary dark:text-white">
                       {t('howWeWork.supportToggle')}
                       <svg className="h-4 w-4 transition-transform group-open:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
@@ -129,16 +138,11 @@ export default function HowWeWork() {
                     </ul>
                   </details>
                 )}
+                </div>
               </div>
             </li>
           ))}
         </ol>
-        <Link
-          href={`/${locale}/contact`}
-          className="mt-10 inline-flex rounded-full bg-primary px-6 py-3 text-sm font-semibold text-white hover:bg-secondary dark:bg-white dark:text-primary"
-        >
-          {t('closing.cta')}
-        </Link>
       </div>
     </section>
   )

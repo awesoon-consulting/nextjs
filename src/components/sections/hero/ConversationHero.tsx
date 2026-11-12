@@ -34,7 +34,7 @@ function canRun3D() {
 
 function MiniFlow() {
   return (
-    <svg viewBox="0 0 300 44" className="h-9 w-full">
+    <svg viewBox="0 0 300 44" className="h-7 w-full">
       {[0, 1, 2].map((i) => (
         <g key={i} className="mini-env" style={{ animationDelay: `${i * 0.8}s` }}>
           <rect x={6} y={10} width={30} height={20} rx={3} fill="none" stroke="currentColor" strokeWidth={1.5} className="text-[#0F1D33] dark:text-[#6E8BB5]" />
@@ -193,6 +193,7 @@ export default function ConversationHero() {
         <p className="mx-auto mt-4 max-w-2xl text-center text-base leading-relaxed text-text-secondary sm:mt-5 sm:text-lg dark:text-neutral-300">
           {t('subtitle')}
         </p>
+        <p className="mx-auto mt-3 max-w-2xl text-center text-[15px] text-neutral-600 dark:text-neutral-300">{t('fitLine')}</p>
       </div>
 
       <div className="relative mt-8 sm:mt-10">
@@ -219,7 +220,7 @@ export default function ConversationHero() {
         />
         <div className="relative mx-auto w-full max-w-4xl px-4 sm:px-6 xl:max-w-3xl">
         <div className="scroll-mt-24 rounded-3xl border border-neutral-200 bg-white shadow-xl dark:border-white/[0.08] dark:bg-[#111827] dark:shadow-[0_30px_80px_-30px_rgba(15,29,51,0.9)]">
-          <div className="flex items-center justify-between border-b border-neutral-200 px-5 py-3 sm:hidden dark:border-white/10" aria-hidden="true">
+          <div className="flex h-10 items-center border-b border-neutral-200 px-5 sm:hidden dark:border-white/10" aria-hidden="true">
             <MiniFlow />
           </div>
           <div ref={logRef} className="max-h-[440px] space-y-5 overflow-y-auto p-5 sm:p-7" role="log" aria-live="polite">
@@ -353,7 +354,6 @@ export default function ConversationHero() {
             </li>
           ))}
         </ul>
-        <p className="max-w-2xl text-center text-sm text-text-muted dark:text-neutral-400">{t('fitLine')}</p>
       </div>
     </section>
   )

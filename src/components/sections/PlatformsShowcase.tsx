@@ -82,7 +82,7 @@ export default function PlatformsShowcase() {
   const category = categories[activeCat]
 
   return (
-    <section className="w-full bg-white py-[88px] dark:bg-primary" aria-labelledby="platforms-title">
+    <section className="w-full bg-white py-24 dark:bg-primary" aria-labelledby="platforms-title">
       <div className="mx-auto max-w-6xl px-4 sm:px-6">
         <div className="max-w-2xl">
           <h2 id="platforms-title" className="font-heading text-3xl font-bold tracking-tight text-text-primary sm:text-4xl dark:text-white">
@@ -136,7 +136,7 @@ export default function PlatformsShowcase() {
                   className={`max-h-7 max-w-full object-contain dark:brightness-0 dark:invert ${p.slug === 'epicor' ? 'scale-150' : ''}`}
                 />
               </span>
-              <span className="truncate text-sm font-semibold text-text-primary dark:text-white">{p.name}</span>
+              <span className="text-sm leading-tight font-semibold text-text-primary dark:text-white">{p.name}</span>
             </button>
           ))}
         </div>
@@ -144,8 +144,8 @@ export default function PlatformsShowcase() {
           <p className="text-sm leading-relaxed text-text-secondary dark:text-neutral-300">
             <span className="font-semibold text-text-primary dark:text-white">{category.platforms[activeIdx].name}. </span>
             {t(`fit.${category.platforms[activeIdx].slug}`)}{' '}
-            <a href={category.platforms[activeIdx].url} target="_blank" rel="noopener noreferrer" className="font-semibold text-text-primary underline underline-offset-4 dark:text-white">
-              {t('officialSite')}
+            <a href={category.platforms[activeIdx].url} target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-1 font-semibold whitespace-nowrap text-text-primary underline-offset-4 hover:underline dark:text-white">
+              {t('officialSite')} <span aria-hidden="true">→</span>
             </a>
           </p>
         </div>

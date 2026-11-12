@@ -38,8 +38,7 @@
     "language": "Language",
     "healthCheckTitle": "Free systems health check",
     "healthCheckText": "A clear list of what is broken, what it costs and what to fix first.",
-    "healthCheckCta": "Book a 30-minute discovery call",
-    "healthCheckNote": "Follows your 30-minute discovery call"
+    "healthCheckCta": "Book a 30-minute discovery call"
   },
   "hero": {
     "headline": "Your ops outgrew your tools. We fix that.",
@@ -474,9 +473,7 @@
     "takeFirstStep": "Take the first step"
   },
   "floatingCta": {
-    "message": "Book a 30-minute discovery call",
-    "subtext": "Your free systems health check follows the call.",
-    "button": "Book a call →"
+    "pill": "Book a 30-minute call"
   },
   "solutionPage": {
     "painPointsTitle": "Does This Sound Familiar?",
@@ -984,14 +981,21 @@
     "role": "Owner, software engineer and systems lead. Vancouver, BC.",
     "linkedin": "Rasoul on LinkedIn",
     "photoAlt": "Rasoul Rasouli",
-    "quote": "We started this to do things differently.",
-    "bio": "Full-stack developer who has built and replaced entire platforms from the ground up."
+    "bio": "Full-stack developer who has built and replaced entire platforms from the ground up.",
+    "principleLabel": "How we work",
+    "principle": "Independent by design. No software resale, no vendor commissions. Recommendations rest on your operations alone."
   },
   "howWeWork": {
     "title": "How we work",
     "subtitle": "Four steps. Start anywhere. We meet you where you are.",
     "freeAfterCall": "Free, after your discovery call",
     "supportToggle": "See the four support lines",
-    "pathLabel": "Four connected steps, from health check to support"
+    "pathLabel": "Four connected steps, from health check to support",
+    "steps": [
+      "We learn how your team works and where it breaks. You get a ranked list of what to fix first.",
+      "We turn the findings into a clear plan. Requirements, tools and the path to launch, written down.",
+      "We build the plan with you. As much or as little of the work as you need.",
+      "We stay on after launch. Support and improvements as your business grows."
+    ]
   }
 }

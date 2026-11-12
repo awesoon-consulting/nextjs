@@ -39,8 +39,7 @@
     "language": "Idioma",
     "healthCheckTitle": "Revisión gratuita de sus sistemas",
     "healthCheckText": "Una lista clara de qué falla, cuánto cuesta y qué arreglar primero.",
-    "healthCheckCta": "Reservar una llamada de descubrimiento de 30 minutos",
-    "healthCheckNote": "Sigue a su llamada de descubrimiento de 30 minutos"
+    "healthCheckCta": "Reservar una llamada de descubrimiento de 30 minutos"
   },
   "hero": {
     "headline": "Tus operaciones superaron tus herramientas. Nosotros lo arreglamos.",
@@ -475,9 +474,7 @@
     "takeFirstStep": "Da el primer paso"
   },
   "floatingCta": {
-    "message": "Reserve una llamada de descubrimiento de 30 minutos",
-    "subtext": "Su revisión gratuita de sistemas sigue a la llamada.",
-    "button": "Reservar una llamada →"
+    "pill": "Reservar una llamada de 30 minutos"
   },
   "solutionPage": {
     "painPointsTitle": "¿Te resulta familiar?",
@@ -985,14 +982,21 @@
     "role": "Fundador, ingeniero de software y responsable de sistemas. Vancouver, BC.",
     "linkedin": "Rasoul en LinkedIn",
     "photoAlt": "Rasoul Rasouli",
-    "quote": "Creamos Awesoon para hacer las cosas de manera diferente.",
-    "bio": "Desarrollador full-stack que ha construido y reemplazado plataformas enteras desde cero."
+    "bio": "Desarrollador full-stack que ha construido y reemplazado plataformas enteras desde cero.",
+    "principleLabel": "Cómo trabajamos",
+    "principle": "Independientes por diseño. Sin reventa de software ni comisiones de proveedores. Nuestras recomendaciones se basan solo en sus operaciones."
   },
   "howWeWork": {
     "title": "Cómo trabajamos",
     "subtitle": "Cuatro pasos. Empiece donde quiera. Partimos de donde usted está.",
     "freeAfterCall": "Gratis, después de su llamada de descubrimiento",
     "supportToggle": "Ver las cuatro líneas de soporte",
-    "pathLabel": "Cuatro pasos conectados, de la revisión al soporte"
+    "pathLabel": "Cuatro pasos conectados, de la revisión al soporte",
+    "steps": [
+      "Aprendemos cómo trabaja su equipo y dónde falla. Recibe una lista priorizada de qué arreglar primero.",
+      "Convertimos lo encontrado en un plan claro. Requisitos, herramientas y el camino al lanzamiento, por escrito.",
+      "Construimos el plan con usted. Tanto o tan poco del trabajo como necesite.",
+      "Seguimos después del lanzamiento. Soporte y mejoras a medida que su negocio crece."
+    ]
   }
 }
