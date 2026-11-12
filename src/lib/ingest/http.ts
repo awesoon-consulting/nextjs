@@ -31,12 +31,19 @@ export async function politeFetch(url: string, init: PoliteInit = {}): Promise<R
     const wait = (lastHit.get(host) ?? 0) + minGapMs - Date.now()
     if (wait > 0) await sleep(wait)
     lastHit.set(host, Date.now())
-    const res = await fetch(url, {
-      ...rest,
-      headers: { 'User-Agent': USER_AGENT, Accept: '*/*', ...(rest.headers ?? {}) },
-      signal: AbortSignal.timeout(timeoutMs),
-    })
-    if ((res.status === 429 || res.status === 503 || res.status === 502) && attempt < retries) {
+    let res: Response
+    try {
+      res = await fetch(url, {
+        ...rest,
+        headers: { 'User-Agent': USER_AGENT, Accept: '*/*', ...(rest.headers ?? {}) },
+        signal: AbortSignal.timeout(timeoutMs),
+      })
+    } catch (e) {
+      if (attempt >= retries) throw e
+      await sleep(2000 * 2 ** attempt)
+      continue
+    }
+    if ((res.status === 429 || res.status >= 500) && attempt < retries) {
       const retryAfter = Number(res.headers.get('retry-after'))
       const backoff = retryAfter > 0 ? retryAfter * 1000 : 2000 * 2 ** attempt
       await res.body?.cancel()
