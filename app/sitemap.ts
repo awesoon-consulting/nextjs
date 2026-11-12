@@ -16,7 +16,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
   const entries: MetadataRoute.Sitemap = []
 
   // Static pages per locale
-  const staticPaths = ['', '/solutions', '/support', '/insights', '/about', '/contact', '/games']
+  const staticPaths = ['', '/solutions', '/support', '/insights', '/about', '/contact', '/games', '/design']
 
   for (const locale of locales) {
     for (const path of staticPaths) {

@@ -1004,5 +1004,284 @@
       "We build the plan with you. As much or as little of the work as you need.",
       "We stay on after launch. Support and improvements as your business grows."
     ]
+  },
+  "designPage": {
+    "meta": {
+      "title": "Design services: brand, interface and design systems",
+      "description": "Brand systems, app and web interfaces, design systems and marketing graphics, delivered as tokens, components and templates your team keeps using. Led by Ray Rasouli."
+    },
+    "hero": {
+      "eyebrow": "Design",
+      "title": "Design your team keeps using.",
+      "subtitle": "Brand systems, app and web interfaces, design systems and marketing graphics. Each one is built as tokens, components and templates, so every new piece costs less and your team ships more.",
+      "cta": "Book a 30-minute discovery call",
+      "trust1": "Led by Ray Rasouli",
+      "trust2": "You own every file",
+      "trust3": "Reply within one business day"
+    },
+    "assistant": {
+      "label": "Design assistant",
+      "note": "Scripted helper. It drafts a brief and never quotes.",
+      "greeting": "What do you need designed?",
+      "chips": {
+        "brand": "Brand refresh",
+        "interface": "App or web interface",
+        "system": "Design system",
+        "graphics": "Marketing graphics"
+      },
+      "placeholder": "Or describe it in a few words",
+      "ack": {
+        "brand": "A brand refresh, done as a system: rules and templates your team actually uses.",
+        "interface": "An interface, designed screen by screen with every state, ready for developers.",
+        "system": "A design system: one kit of tokens and components that every screen draws from.",
+        "graphics": "Marketing graphics on templates, so the next post or ad is filled in, not redrawn.",
+        "generic": "Got it. Let us shape that into a brief."
+      },
+      "q1": "First, what exists today?",
+      "exist": {
+        "none": "Nothing yet",
+        "some": "A logo and some files",
+        "brand": "An established brand",
+        "product": "A live product or site"
+      },
+      "q2": "And who uses it most?",
+      "audience": {
+        "customers": "Our customers",
+        "team": "Our own team",
+        "both": "Both",
+        "public": "The public or government users"
+      },
+      "briefIntro": "Here is your design brief. It is yours to keep.",
+      "noPrice": "I do not give prices or quotes. Ray scopes that with you on a call, once he has seen what you have.",
+      "briefLabel": "Your design brief",
+      "need": "What you need",
+      "today": "What exists today",
+      "users": "Who uses it",
+      "build": "What we would build first",
+      "keep": "What your team keeps",
+      "buildText": {
+        "brand": "Brand rules for colour, type and voice, plus ready templates for the pieces you make most.",
+        "interface": "Key screens with every state, built from a small component set developers can use as is.",
+        "system": "Tokens, core components and usage guidelines, wired so one change updates everywhere.",
+        "graphics": "A template set for posts, ads and decks, locked to your brand so anyone can make the next one."
+      },
+      "keepText": "Source files, tokens, components and written guidelines. No lock-in.",
+      "copy": "Copy brief",
+      "copied": "Copied",
+      "consent": "Send this brief to Ray by email. Kept up to 3 years, never sold.",
+      "talk": "Talk it through with Ray",
+      "restart": "Start over",
+      "typing": "Assistant is typing",
+      "send": "Send",
+      "emailSubject": "Design brief from awesoon.com",
+      "priceWords": "price, cost, quote, how much, budget, rate"
+    },
+    "services": {
+      "title": "Four kinds of design, one way of working",
+      "subtitle": "Pick what you need. Each one ends with a system your team keeps, not a one-off file.",
+      "getLabel": "What you get",
+      "keepLabel": "What your team keeps",
+      "before": "Before",
+      "after": "After",
+      "start": "Start a brief for this",
+      "items": {
+        "brand": {
+          "name": "Brand systems",
+          "line": "Your brand turned into rules and ready files that anyone on the team can use correctly.",
+          "get": [
+            "Colour, type and voice rules",
+            "Logo usage and spacing",
+            "Templates for decks, documents and social"
+          ],
+          "keep": [
+            "Brand guidelines in plain language",
+            "Editable templates",
+            "A shared asset library"
+          ],
+          "beforeText": "Every deck looks a little different",
+          "afterText": "One look, set once, used everywhere"
+        },
+        "interface": {
+          "name": "Interface design",
+          "line": "App and web screens designed around how people work, with every state drawn before code.",
+          "get": [
+            "Key flows and screens",
+            "Empty, loading and error states",
+            "Responsive layouts for phone and desktop"
+          ],
+          "keep": [
+            "Annotated screens for developers",
+            "A component set the build reuses",
+            "Accessible colour and focus rules"
+          ],
+          "beforeText": "Screens built one by one",
+          "afterText": "Screens assembled from one kit"
+        },
+        "system": {
+          "name": "Design systems",
+          "line": "One kit of tokens and components that every page, screen and asset draws from.",
+          "get": [
+            "Design tokens for colour, type and spacing",
+            "Core components with usage notes",
+            "A token change that updates everything"
+          ],
+          "keep": [
+            "Token files your developers import",
+            "A documented component library",
+            "Rules for adding new pieces"
+          ],
+          "beforeText": "Fifty shades of almost the same blue",
+          "afterText": "One token, every screen in sync"
+        },
+        "art": {
+          "name": "Art and graphics",
+          "line": "Illustration, social, ad and print graphics, made on templates so the hundredth piece looks like the first.",
+          "get": [
+            "Illustration and icon sets",
+            "Social, ad and banner graphics",
+            "Print and event pieces"
+          ],
+          "keep": [
+            "Fill-in templates for each format",
+            "Source art in editable files",
+            "Size and export presets"
+          ],
+          "beforeText": "Each graphic drawn from scratch",
+          "afterText": "Templates anyone can fill"
+        }
+      }
+    },
+    "demo": {
+      "eyebrow": "Try it",
+      "title": "One system, every asset",
+      "subtitle": "Change one token and watch every piece follow. That is how a design system lowers the cost of each new asset.",
+      "colour": "Accent colour",
+      "type": "Typeface",
+      "corners": "Corners",
+      "colours": {
+        "navy": "Lifted navy",
+        "cyan": "Cyan",
+        "amber": "Amber",
+        "mint": "Mint"
+      },
+      "types": {
+        "sora": "Sora",
+        "inter": "Inter",
+        "serif": "Serif"
+      },
+      "cornerNames": {
+        "round": "Round",
+        "soft": "Soft",
+        "square": "Square"
+      },
+      "updated": "1 change, 4 assets updated",
+      "assetButton": "Button",
+      "assetCard": "Card",
+      "assetSocial": "Social post",
+      "assetApp": "App screen",
+      "buttonPrimary": "Get started",
+      "buttonSecondary": "Learn more",
+      "cardKicker": "Weekly report",
+      "cardTitle": "Orders are up",
+      "cardText": "Nothing was re-keyed this week.",
+      "cardAction": "Open report",
+      "socialKicker": "New",
+      "socialTitle": "Same brand, every post.",
+      "socialHandle": "@yourbrand",
+      "appTitle": "Today",
+      "appItem1": "Orders synced",
+      "appItem2": "Invoices sent",
+      "appItem3": "Stock checked",
+      "appAction": "Review"
+    },
+    "proof": {
+      "title": "Real work, no mockups",
+      "subtitle": "No invented clients. Here is design we run ourselves, in public.",
+      "siteTitle": "This website runs on one design system",
+      "siteText": "Every page here draws from one set of tokens. New pages are assembled, not redrawn, in three languages.",
+      "tokensLabel": "Live tokens",
+      "tokenGround": "Ground",
+      "tokenSurface": "Surface",
+      "tokenText": "Text",
+      "tokenAccent": "Accent",
+      "tokenBand": "Band",
+      "gamesTitle": "Ten mobile games, one design kit",
+      "gamesText": "We designed and shipped ten games on a shared kit of shapes, motion and colour rules.",
+      "gamesLink": "See the games"
+    },
+    "process": {
+      "title": "How it works",
+      "subtitle": "Four steps, from a first call to a system your team runs without us.",
+      "pathLabel": "Four steps from discovery call to handover",
+      "steps": [
+        {
+          "title": "Discovery call",
+          "text": "30 minutes with Ray. You show what exists and where design slows you down."
+        },
+        {
+          "title": "Design brief",
+          "text": "A written brief: what to build first, what to keep and what to retire."
+        },
+        {
+          "title": "System build",
+          "text": "Tokens, components and templates, built and tested on your real pages and assets."
+        },
+        {
+          "title": "Handover and support",
+          "text": "Files, guidelines and a walkthrough for your team, with support when you need it."
+        }
+      ]
+    },
+    "keep": {
+      "title": "What you keep",
+      "subtitle": "Everything is yours at handover. No lock-in, no licence to rent back.",
+      "items": [
+        {
+          "title": "Source files",
+          "text": "Every design in editable files your team can open and change."
+        },
+        {
+          "title": "Design tokens",
+          "text": "Colour, type and spacing as files your developers import."
+        },
+        {
+          "title": "Component library",
+          "text": "The buttons, cards and layouts every new piece is built from."
+        },
+        {
+          "title": "Guidelines",
+          "text": "Plain-language rules so new people get it right the first time."
+        }
+      ]
+    },
+    "faq": {
+      "title": "Questions",
+      "items": [
+        {
+          "q": "Can you work with our existing brand?",
+          "a": "Yes. Most projects start from what you have. We keep what works and turn it into rules and templates."
+        },
+        {
+          "q": "Who does the work?",
+          "a": "Ray Rasouli leads every project and is your contact from the discovery call to handover."
+        },
+        {
+          "q": "Do we need developers to use what you deliver?",
+          "a": "Not for brand files and templates. For app and web interfaces, developers get tokens and components they can build from without guessing."
+        },
+        {
+          "q": "Do we own everything?",
+          "a": "Yes. Source files, tokens, components and guidelines are yours at handover."
+        },
+        {
+          "q": "Can AI help make variants?",
+          "a": "Yes, inside the rules of your system. A person reviews everything before it ships."
+        },
+        {
+          "q": "Do you work with government buyers?",
+          "a": "Yes. Art and graphics and graphical user interface development are among the categories we bid on."
+        }
+      ]
+    }
   }
 }
