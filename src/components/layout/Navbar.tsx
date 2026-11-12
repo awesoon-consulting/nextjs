@@ -174,7 +174,7 @@ export default function Navbar() {
                   id="services-menu"
                   className="absolute left-0 right-0 top-16 max-h-[calc(100vh-4rem)] overflow-y-auto border-b border-neutral-200 bg-white shadow-xl dark:border-white/10 dark:bg-primary"
                 >
-                  <div className="flex gap-8 px-10 py-10 xl:px-16">
+                  <div className="flex items-start gap-8 px-10 py-10 xl:px-16">
                     <div className="grid flex-1 grid-cols-5 gap-6">
                       {siteConfig.services.map((s) => (
                         <div key={s.key}>
@@ -204,7 +204,7 @@ export default function Navbar() {
                         </div>
                       ))}
                     </div>
-                    <div className="flex w-72 flex-shrink-0 flex-col justify-between rounded-3xl bg-accent p-6 text-white">
+                    <div className="h-fit w-72 flex-shrink-0 self-start rounded-3xl bg-accent p-6 text-white">
                       <div>
                         <span className="inline-block rounded-full bg-white px-3 py-1 text-xs font-semibold text-accent">{t('nav.free')}</span>
                         <p className="mt-4 font-heading text-xl font-semibold">{t('nav.healthCheckTitle')}</p>

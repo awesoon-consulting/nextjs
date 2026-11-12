@@ -36,7 +36,7 @@ export default function WorkflowMap({ progress }: { progress: number }) {
 
   return (
     <>
-      <svg viewBox="0 0 320 420" className="absolute top-0 left-0 h-full w-[min(26vw,340px)] text-[#0F1D33] dark:text-[#6E8BB5]" aria-hidden="true">
+      <svg viewBox="0 0 320 420" className="absolute top-0 left-0 h-full w-[calc((100%-50rem)/2)] text-[#0F1D33] dark:text-[#6E8BB5]" aria-hidden="true">
         <g style={{ opacity: 1 - p * 0.55, transition: 'opacity 1.2s' }}>
           {MESSY_PATHS.map((d, i) => (
             <path key={i} d={d} fill="none" stroke="currentColor" strokeOpacity={0.35} strokeWidth={1.5} strokeDasharray="4 6" />
@@ -61,7 +61,7 @@ export default function WorkflowMap({ progress }: { progress: number }) {
           <path key={i} d={`M310 ${y} H 330`} stroke="currentColor" strokeOpacity={0.5} strokeWidth={1.5} style={clean(20)} />
         ))}
       </svg>
-      <svg viewBox="0 0 320 420" className="absolute top-0 right-0 h-full w-[min(26vw,340px)] text-[#0F1D33] dark:text-[#6E8BB5]" aria-hidden="true">
+      <svg viewBox="0 0 320 420" className="absolute top-0 right-0 h-full w-[calc((100%-50rem)/2)] text-[#0F1D33] dark:text-[#6E8BB5]" aria-hidden="true">
         {ROWS.map((y, r) => (
           <path key={r} d={`M0 ${200 + r * 30} C 60 ${200 + r * 30}, 70 ${y}, ${COLS[0]} ${y}`} fill="none" stroke="currentColor" strokeOpacity={0.5} strokeWidth={1.5} style={clean(160)} />
         ))}

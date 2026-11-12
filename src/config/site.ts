@@ -25,7 +25,7 @@ export const siteConfig = {
 
   nav: {
     main: [
-      { labelKey: 'nav.work', href: '/work' },
+      { labelKey: 'nav.work', href: '/solutions' },
       { labelKey: 'nav.publicSector', href: '/public-sector' },
       { labelKey: 'nav.insights', href: '/insights' },
       { labelKey: 'nav.about', href: '/about' },
@@ -39,8 +39,8 @@ export const siteConfig = {
       href: '/solutions',
       solutions: ['systems-audit', 'operational-process-foundations', 'ops-outgrown-tools', 'vendor-management', 'project-management'],
       extras: [
-        { labelKey: 'serviceItems.itExpert', href: '/work' },
-        { labelKey: 'serviceItems.permanentDevelopers', href: '/work' },
+        { labelKey: 'serviceItems.itExpert', href: '/solutions' },
+        { labelKey: 'serviceItems.permanentDevelopers', href: '/solutions' },
       ],
     },
     {
@@ -48,13 +48,13 @@ export const siteConfig = {
       href: '/solutions',
       solutions: ['custom-api-development', 'ecommerce-development', 'mobile-warehouse-barcoding'],
       extras: [
-        { labelKey: 'serviceItems.applicationProgramming', href: '/work' },
-        { labelKey: 'serviceItems.clientServer', href: '/work' },
-        { labelKey: 'serviceItems.erpDatabaseApps', href: '/work' },
-        { labelKey: 'serviceItems.databaseDesign', href: '/work' },
-        { labelKey: 'serviceItems.databaseInterfaces', href: '/work' },
-        { labelKey: 'serviceItems.interfaceDevelopment', href: '/work' },
-        { labelKey: 'serviceItems.gameMaintenance', href: '/work' },
+        { labelKey: 'serviceItems.applicationProgramming', href: '/solutions' },
+        { labelKey: 'serviceItems.clientServer', href: '/solutions' },
+        { labelKey: 'serviceItems.erpDatabaseApps', href: '/solutions' },
+        { labelKey: 'serviceItems.databaseDesign', href: '/solutions' },
+        { labelKey: 'serviceItems.databaseInterfaces', href: '/solutions' },
+        { labelKey: 'serviceItems.interfaceDevelopment', href: '/solutions' },
+        { labelKey: 'serviceItems.gameMaintenance', href: '/solutions' },
       ],
     },
     {
@@ -62,8 +62,8 @@ export const siteConfig = {
       href: '/solutions',
       solutions: ['ai-operations', 'spreadsheet-operations', 'system-integration', 'erp-implementation', 'crm-implementation', 'api-integrations'],
       extras: [
-        { labelKey: 'serviceItems.dbaas', href: '/work' },
-        { labelKey: 'serviceItems.crmSetup', href: '/work' },
+        { labelKey: 'serviceItems.dbaas', href: '/solutions' },
+        { labelKey: 'serviceItems.crmSetup', href: '/solutions' },
       ],
     },
     {
@@ -126,7 +126,7 @@ export const siteConfig = {
       { labelKey: 'support.cards.ecommerceSupport.title', href: '/support/ecommerce-support-maintenance' },
     ] as const,
     companyLinks: [
-      { labelKey: 'nav.work', href: '/work' },
+      { labelKey: 'nav.work', href: '/solutions' },
       { labelKey: 'nav.publicSector', href: '/public-sector' },
       { labelKey: 'nav.insights', href: '/insights' },
       { labelKey: 'nav.about', href: '/about' },

@@ -1,12 +1,16 @@
 'use client'
 
-import { useEffect, useRef, useState, type FormEvent } from 'react'
+import { useCallback, useEffect, useRef, useState, type FormEvent } from 'react'
+import dynamic from 'next/dynamic'
 import Link from 'next/link'
 import Image from 'next/image'
 import { useLocale, useTranslations } from 'next-intl'
 import { getAssistantReply, type AssistantReplyKind } from '@/src/lib/assistant'
 
 import WorkflowMap from './WorkflowMap'
+import { useTheme } from '@/src/components/layout/ThemeProvider'
+
+const WorkflowScene = dynamic(() => import('./WorkflowScene'), { ssr: false })
 
 interface Message {
   id: number
@@ -16,6 +20,17 @@ interface Message {
 }
 
 const STARTERS = ['orders', 'spreadsheets', 'tools', 'government'] as const
+
+function canRun3D() {
+  if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) return false
+  if (!window.matchMedia('(min-width: 1280px)').matches) return false
+  try {
+    const c = document.createElement('canvas')
+    return !!(c.getContext('webgl2') || c.getContext('webgl'))
+  } catch {
+    return false
+  }
+}
 
 const GHOSTS = ['ghost1', 'ghost2', 'ghost3'] as const
 
@@ -38,6 +53,20 @@ export default function ConversationHero() {
   const [touched, setTouched] = useState(false)
   const [showAll, setShowAll] = useState(false)
   const [ghost, setGhost] = useState('')
+  const [sceneOn, setSceneOn] = useState(false)
+  const [sceneReady, setSceneReady] = useState(false)
+  const { resolvedTheme } = useTheme()
+  const onSceneReady = useCallback(() => setSceneReady(true), [])
+
+  useEffect(() => {
+    if (!canRun3D()) return
+    const start = () => setSceneOn(true)
+    const w = window as Window & { requestIdleCallback?: (cb: () => void, o?: { timeout: number }) => number }
+    const go = () => (w.requestIdleCallback ? w.requestIdleCallback(start, { timeout: 2500 }) : window.setTimeout(start, 600))
+    if (document.readyState === 'complete') go()
+    else window.addEventListener('load', go, { once: true })
+    return () => window.removeEventListener('load', go)
+  }, [])
   const idRef = useRef(1)
   const timers = useRef<number[]>([])
   const logRef = useRef<HTMLDivElement>(null)
@@ -148,15 +177,28 @@ export default function ConversationHero() {
       </div>
 
       <div className="relative mt-8 sm:mt-10">
-        <div className="pointer-events-none absolute inset-0 hidden lg:block" role="img" aria-label={t('mapLabel')}>
-          <WorkflowMap progress={progress} />
+        <div className="pointer-events-none absolute inset-0 hidden xl:block" role="img" aria-label={t('mapLabel')}>
+          <div className={`absolute inset-0 transition-opacity duration-700 ${sceneReady ? 'opacity-0' : 'opacity-100'}`}>
+            <WorkflowMap progress={progress} />
+          </div>
+          {sceneOn && (
+            <div className={`absolute inset-0 transition-opacity duration-700 ${sceneReady ? 'opacity-100' : 'opacity-0'}`}>
+              <WorkflowScene
+                progress={progress}
+                energy={Math.min(draft.length, 30) / 30}
+                gap={800}
+                dark={resolvedTheme === 'dark'}
+                onReady={onSceneReady}
+              />
+            </div>
+          )}
         </div>
         <div
           className="pointer-events-none absolute top-1/2 left-1/2 h-[560px] w-[900px] max-w-[160vw] -translate-x-1/2 -translate-y-1/2 opacity-[0.08] dark:opacity-[0.14]"
           style={{ background: 'radial-gradient(closest-side, #0F1D33, #00AEEF 55%, transparent)' }}
           aria-hidden="true"
         />
-        <div className="relative mx-auto w-full max-w-4xl px-4 sm:px-6">
+        <div className="relative mx-auto w-full max-w-4xl px-4 sm:px-6 xl:max-w-3xl">
         <div className="rounded-3xl border border-neutral-200 bg-white shadow-xl dark:border-white/[0.08] dark:bg-[#111827] dark:shadow-[0_30px_80px_-30px_rgba(15,29,51,0.9)]">
           <div ref={logRef} className="max-h-[440px] space-y-5 overflow-y-auto p-5 sm:p-7" role="log" aria-live="polite">
             {messages.map((m) => (
@@ -276,7 +318,7 @@ export default function ConversationHero() {
         </div>
       </div>
 
-      <div className="relative mx-auto mt-8 grid w-full max-w-4xl gap-6 px-4 sm:grid-cols-[1fr_auto] sm:items-center sm:px-6">
+      <div className="relative mx-auto mt-8 grid w-full max-w-4xl gap-6 xl:max-w-3xl px-4 sm:grid-cols-[1fr_auto] sm:items-center sm:px-6">
         <div>
           <Link href={`/${locale}/contact`} className="group inline-flex items-center gap-2 text-base font-semibold text-text-primary underline-offset-4 hover:underline dark:text-white">
             {t('orBook')}
