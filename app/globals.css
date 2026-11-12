@@ -490,3 +490,12 @@ html.reveal-ready .reveal.in-view.anim-scale-in {
   background-color: #f59e0b;
   color: #0f1b2d;
 }
+
+@keyframes send-pulse {
+  0%, 100% { box-shadow: 0 0 0 0 rgb(15 29 51 / 0.35); }
+  50% { box-shadow: 0 0 0 8px rgb(15 29 51 / 0); }
+}
+.send-pulse { animation: send-pulse 2.4s ease-in-out infinite; }
+@media (prefers-reduced-motion: reduce) {
+  .send-pulse { animation: none; }
+}

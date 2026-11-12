@@ -34,7 +34,11 @@
     "vendorNeutral": "Vendor-neutral. Owner-led delivery.",
     "toggleTheme": "Toggle color theme",
     "mainNav": "Main navigation",
-    "mobileNav": "Mobile navigation"
+    "mobileNav": "Mobile navigation",
+    "language": "Language",
+    "healthCheckTitle": "Free systems health check",
+    "healthCheckText": "A 30-minute call, then a clear list of what is broken, what it costs and what to fix first.",
+    "healthCheckCta": "Start the health check"
   },
   "hero": {
     "headline": "Your ops outgrew your tools. We fix that.",
@@ -834,7 +838,6 @@
     "explore": "Explore {service}"
   },
   "assistant": {
-    "eyebrow": "Ask anything about your operations. A person handles what you agree to.",
     "title": "What should your business stop doing by hand?",
     "subtitle": "Tell us how a workflow runs today. Get a first read in a minute: what is broken, what it costs, and what to standardize and automate first.",
     "greeting": "Hi, I’m the Awesoon assistant. Describe a workflow that eats your team’s time, or pick a starter below. I’ll give you a first read, then a brief you can keep.",
@@ -868,14 +871,48 @@
     "keywordsOrders": "order,key,email",
     "keywordsSpreadsheets": "spreadsheet,sheet,excel",
     "keywordsGovernment": "government,rfp,procure,public",
-    "trust": "Vendor-neutral. No commissions. Owner-led delivery. No tracking before you agree.",
     "worksAcross": "Works across",
-    "sceneLabel": "Three layers assembling into the Awesoon mark"
+    "ghost1": "Our team copies orders from email into the ERP",
+    "ghost2": "We track inventory in three spreadsheets",
+    "ghost3": "Invoices get approved by forwarding emails",
+    "more": "More",
+    "orBook": "Or book a 30-minute discovery call",
+    "trust1": "Vendor-neutral, no commissions",
+    "trust2": "Owner-led delivery",
+    "trust3": "No tracking before you agree",
+    "trust4": "A real person replies",
+    "previewLabel": "The brief you keep",
+    "previewText": "Three ranked steps built from your answers.",
+    "mapLabel": "Manual steps joining into connected systems"
   },
   "placeholder": {
     "title": "This page is on its way",
     "text": "We are rebuilding this part of the site. In the meantime, Rasoul can walk you through it on a short call.",
     "cta": "Book a call",
     "back": "Back to home"
+  },
+  "platformsStrip": {
+    "title": "Platforms we work with every day",
+    "label": "Platforms we work with"
+  },
+  "serviceItems": {
+    "applicationProgramming": "Application programming",
+    "clientServer": "Client and server programming",
+    "erpDatabaseApps": "ERP and database applications programming",
+    "databaseDesign": "Database design",
+    "databaseInterfaces": "Database interfaces and query tools",
+    "interfaceDevelopment": "Interface development",
+    "gameMaintenance": "Game software maintenance",
+    "dbaas": "Database management as a service",
+    "crmSetup": "CRM software setup",
+    "itExpert": "IT expert services",
+    "permanentDevelopers": "Permanent developers through a vetted partner",
+    "artDesign": "Art design and graphics",
+    "uiDesign": "User interface design",
+    "brandSystems": "Brand systems",
+    "campaigns": "Advertising campaigns",
+    "production": "Advertising production",
+    "banner": "Banner advertising",
+    "playbooks": "Brand and advertising playbooks"
   }
 }

@@ -28,6 +28,7 @@
 *[Ss]ervice*[Aa]ccount*.json
 google-credentials*.json
 *-firebase-adminsdk-*.json
+iron-burner-*.json
 
 # debug
 npm-debug.log*

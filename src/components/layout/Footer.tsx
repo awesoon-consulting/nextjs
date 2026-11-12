@@ -9,7 +9,7 @@ const solutionLabel = new Map<string, string>(
   siteConfig.footer.solutionLinks.map((l) => [l.href.replace('/solutions/', ''), l.labelKey]),
 )
 
-const heading = 'mb-4 text-xs font-semibold uppercase tracking-widest text-text-muted dark:text-neutral-400'
+const heading = 'mb-4 text-sm font-semibold text-text-primary dark:text-white'
 const link =
   'rounded text-sm text-text-secondary transition-colors hover:text-text-primary focus:outline-none focus-visible:ring-2 focus-visible:ring-accent dark:text-neutral-400 dark:hover:text-white'
 
@@ -120,7 +120,7 @@ export default function Footer() {
               </Link>
             ))}
             <span className="sr-only">{t('footer.language')}</span>
-            <LanguageSwitcher />
+            <LanguageSwitcher direction="up" />
           </div>
         </div>
       </div>

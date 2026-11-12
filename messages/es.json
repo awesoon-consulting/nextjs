@@ -35,7 +35,11 @@
     "vendorNeutral": "Independientes de proveedores. Entrega a cargo del fundador.",
     "toggleTheme": "Cambiar tema",
     "mainNav": "Navegación principal",
-    "mobileNav": "Navegación móvil"
+    "mobileNav": "Navegación móvil",
+    "language": "Idioma",
+    "healthCheckTitle": "Revisión gratuita de sus sistemas",
+    "healthCheckText": "Una llamada de 30 minutos y luego una lista clara de qué falla, cuánto cuesta y qué arreglar primero.",
+    "healthCheckCta": "Empezar la revisión"
   },
   "hero": {
     "headline": "Tus operaciones superaron tus herramientas. Nosotros lo arreglamos.",
@@ -835,7 +839,6 @@
     "explore": "Ver {service}"
   },
   "assistant": {
-    "eyebrow": "Pregunte lo que quiera sobre sus operaciones. Una persona se encarga de lo que usted acepte.",
     "title": "¿Qué debería dejar de hacer a mano su empresa?",
     "subtitle": "Cuéntenos cómo funciona hoy un proceso. Reciba una primera lectura en un minuto: qué falla, cuánto cuesta y qué estandarizar y automatizar primero.",
     "greeting": "Hola, soy el asistente de Awesoon. Describa un proceso que le quita tiempo a su equipo, o elija un ejemplo abajo. Le doy una primera lectura y luego un resumen para guardar.",
@@ -869,14 +872,48 @@
     "keywordsOrders": "pedido,escrib,correo,email",
     "keywordsSpreadsheets": "hoja,excel,cálculo",
     "keywordsGovernment": "gobierno,público,licitación,compra",
-    "trust": "Independientes de proveedores. Sin comisiones. Entrega a cargo del fundador. Sin seguimiento antes de que acepte.",
     "worksAcross": "Funciona con",
-    "sceneLabel": "Tres capas que forman el logo de Awesoon"
+    "ghost1": "Nuestro equipo copia pedidos del correo al ERP",
+    "ghost2": "Llevamos el inventario en tres hojas de cálculo",
+    "ghost3": "Las facturas se aprueban reenviando correos",
+    "more": "Más",
+    "orBook": "O reserve una llamada de descubrimiento de 30 minutos",
+    "trust1": "Independientes, sin comisiones",
+    "trust2": "Entrega a cargo del fundador",
+    "trust3": "Sin seguimiento antes de que acepte",
+    "trust4": "Responde una persona real",
+    "previewLabel": "El resumen que guarda",
+    "previewText": "Tres pasos priorizados a partir de sus respuestas.",
+    "mapLabel": "Pasos manuales que se unen en sistemas conectados"
   },
   "placeholder": {
     "title": "Esta página llega pronto",
     "text": "Estamos rehaciendo esta parte del sitio. Mientras tanto, Rasoul se la puede explicar en una llamada corta.",
     "cta": "Reservar una llamada",
     "back": "Volver al inicio"
+  },
+  "platformsStrip": {
+    "title": "Plataformas con las que trabajamos cada día",
+    "label": "Plataformas con las que trabajamos"
+  },
+  "serviceItems": {
+    "applicationProgramming": "Programación de aplicaciones",
+    "clientServer": "Programación de cliente y servidor",
+    "erpDatabaseApps": "Programación de aplicaciones ERP y de bases de datos",
+    "databaseDesign": "Diseño de bases de datos",
+    "databaseInterfaces": "Interfaces de bases de datos y herramientas de consulta",
+    "interfaceDevelopment": "Desarrollo de interfaces",
+    "gameMaintenance": "Mantenimiento de software de juegos",
+    "dbaas": "Gestión de bases de datos como servicio",
+    "crmSetup": "Configuración de software CRM",
+    "itExpert": "Servicios de expertos en TI",
+    "permanentDevelopers": "Desarrolladores permanentes a través de un socio verificado",
+    "artDesign": "Diseño artístico y gráfico",
+    "uiDesign": "Diseño de interfaces de usuario",
+    "brandSystems": "Sistemas de marca",
+    "campaigns": "Campañas publicitarias",
+    "production": "Producción publicitaria",
+    "banner": "Publicidad en banners",
+    "playbooks": "Guías de marca y publicidad"
   }
 }

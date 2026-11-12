@@ -47,11 +47,11 @@ export default function ServiceTabs() {
             <p className="mt-3 text-lg leading-relaxed text-text-secondary dark:text-neutral-300">{t(`serviceLines.${svc.key}.line`)}</p>
             <div className="mt-6 grid gap-3 sm:grid-cols-2">
               <div className="rounded-2xl bg-neutral-100 p-4 dark:bg-white/5">
-                <p className="text-xs font-semibold tracking-wider text-text-muted uppercase dark:text-neutral-400">{t('serviceLines.before')}</p>
+                <p className="text-sm font-semibold text-text-muted dark:text-neutral-400">{t('serviceLines.before')}</p>
                 <p className="mt-1 text-sm text-text-secondary dark:text-neutral-300">{t(`serviceLines.${svc.key}.before`)}</p>
               </div>
               <div className="rounded-2xl bg-accent p-4 text-white">
-                <p className="text-xs font-semibold tracking-wider text-white/60 uppercase">{t('serviceLines.after')}</p>
+                <p className="text-sm font-semibold text-white/70">{t('serviceLines.after')}</p>
                 <p className="mt-1 text-sm">{t(`serviceLines.${svc.key}.after`)}</p>
               </div>
             </div>
@@ -65,6 +65,14 @@ export default function ServiceTabs() {
                     className="flex items-center justify-between py-3 text-base text-text-primary hover:underline dark:text-white"
                   >
                     {t(solutionLabel.get(slug) ?? '')}
+                    <span aria-hidden="true">→</span>
+                  </Link>
+                </li>
+              ))}
+              {svc.extras.map((x) => (
+                <li key={x.labelKey}>
+                  <Link href={`/${locale}${x.href}`} className="flex items-center justify-between py-3 text-base text-text-primary hover:underline dark:text-white">
+                    {t(x.labelKey)}
                     <span aria-hidden="true">→</span>
                   </Link>
                 </li>

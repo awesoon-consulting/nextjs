@@ -7,20 +7,22 @@
  * @depends  Platform data from /src/data/platforms.ts
  */
 
+import { useTranslations } from 'next-intl'
 import { flagshipPlatforms } from '@/src/data/platforms'
 
 export default function HeroMarquee() {
+  const t = useTranslations('platformsStrip')
   // Duplicate the list so the scroll animation loops seamlessly
   const doubled = [...flagshipPlatforms, ...flagshipPlatforms]
 
   return (
     <section
       className="w-full border-y border-neutral-200 bg-white py-8 dark:border-white/10 dark:bg-primary/60"
-      aria-label="Platforms we work with"
+      aria-label={t('label')}
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mb-5">
-        <p className="text-center text-xs font-semibold uppercase tracking-[0.22em] text-text-muted dark:text-white/50">
-          Platforms we work with every day
+        <p className="text-center text-sm font-medium text-text-muted dark:text-white/50">
+          {t('title')}
         </p>
       </div>
 

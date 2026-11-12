@@ -26,6 +26,27 @@ function ThemeIcon() {
   )
 }
 
+const ICONS: Record<string, string> = {
+  consultation: 'M9 11l3 3 8-8M20 12v6a2 2 0 01-2 2H6a2 2 0 01-2-2V6a2 2 0 012-2h9',
+  programming: 'M8 9l-4 3 4 3M16 9l4 3-4 3M13.5 6l-3 12',
+  automation: 'M5 7h4v4H5zM15 13h4v4h-4zM9 9h3a2 2 0 012 2v4h1',
+  design: 'M12 3a9 9 0 100 18c1 0 1.5-.7 1.5-1.5 0-.4-.2-.7-.4-1-.3-.3-.4-.6-.4-1 0-.8.7-1.5 1.5-1.5H16a5 5 0 005-5c0-4.4-4-8-9-8zM7.5 11.5h.01M10 7.5h.01M15 7.5h.01',
+  advertising: 'M4 10v4a1 1 0 001 1h2l5 4V5L7 9H5a1 1 0 00-1 1zM16 8a5 5 0 010 8',
+}
+
+function ServiceIcon({ id }: { id: string }) {
+  return (
+    <span className="flex h-9 w-9 flex-shrink-0 items-center justify-center rounded-xl bg-accent text-white dark:bg-white/10" aria-hidden="true">
+      <svg className="h-5 w-5" fill="none" stroke="currentColor" strokeWidth={1.75} strokeLinecap="round" strokeLinejoin="round" viewBox="0 0 24 24">
+        <path d={ICONS[id]} />
+      </svg>
+    </span>
+  )
+}
+
+const megaLink =
+  'text-sm text-text-secondary transition-colors hover:text-text-primary dark:text-neutral-300 dark:hover:text-white'
+
 function Chevron({ open }: { open: boolean }) {
   return (
     <svg className={`h-4 w-4 transition-transform duration-200 ${open ? 'rotate-180' : ''}`} fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
@@ -151,62 +172,67 @@ export default function Navbar() {
               {isMegaOpen && (
                 <div
                   id="services-menu"
-                  className="absolute left-0 right-0 top-16 border-b border-neutral-200 bg-white shadow-xl dark:border-white/10 dark:bg-primary"
+                  className="absolute left-0 right-0 top-16 max-h-[calc(100vh-4rem)] overflow-y-auto border-b border-neutral-200 bg-white shadow-xl dark:border-white/10 dark:bg-primary"
                 >
-                  <div className="grid grid-cols-5 gap-8 px-10 py-10 xl:px-16">
-                    {siteConfig.services.map((s) => (
-                      <div key={s.key}>
-                        <Link
-                          href={localHref(s.href)}
-                          className="font-heading text-base font-semibold text-text-primary hover:underline dark:text-white"
-                        >
-                          {t(`serviceLines.${s.key}.name`)}
-                        </Link>
-                        <p className="mt-1 text-sm leading-snug text-text-muted dark:text-neutral-400">
-                          {t(`serviceLines.${s.key}.short`)}
-                        </p>
-                        <ul className="mt-4 space-y-2">
-                          {s.solutions.map((slug) => (
-                            <li key={slug}>
-                              <Link
-                                href={localHref(`/solutions/${slug}`)}
-                                className="inline-flex items-center gap-2 text-sm text-text-secondary hover:text-text-primary dark:text-neutral-300 dark:hover:text-white"
-                              >
-                                {t(solutionLabel.get(slug) ?? '')}
-                                {slug === 'systems-audit' && (
-                                  <span className="rounded-full bg-neutral-100 px-2 py-0.5 text-xs font-medium text-text-primary dark:bg-white/10 dark:text-white">
-                                    {t('nav.free')}
-                                  </span>
-                                )}
-                              </Link>
-                            </li>
-                          ))}
-                        </ul>
+                  <div className="flex gap-8 px-10 py-10 xl:px-16">
+                    <div className="grid flex-1 grid-cols-5 gap-6">
+                      {siteConfig.services.map((s) => (
+                        <div key={s.key}>
+                          <Link href={localHref(s.href)} className="group flex items-center gap-3">
+                            <ServiceIcon id={s.key} />
+                            <span className="font-heading text-base font-semibold text-text-primary group-hover:underline dark:text-white">
+                              {t(`serviceLines.${s.key}.name`)}
+                            </span>
+                          </Link>
+                          <p className="mt-2 text-sm leading-snug text-text-muted dark:text-neutral-400">{t(`serviceLines.${s.key}.short`)}</p>
+                          <ul className="mt-4 space-y-2">
+                            {s.solutions.map((slug) => (
+                              <li key={slug}>
+                                <Link href={localHref(`/solutions/${slug}`)} className={megaLink}>
+                                  {t(solutionLabel.get(slug) ?? '')}
+                                </Link>
+                              </li>
+                            ))}
+                            {s.extras.map((x) => (
+                              <li key={x.labelKey}>
+                                <Link href={localHref(x.href)} className={megaLink}>
+                                  {t(x.labelKey)}
+                                </Link>
+                              </li>
+                            ))}
+                          </ul>
+                        </div>
+                      ))}
+                    </div>
+                    <div className="flex w-72 flex-shrink-0 flex-col justify-between rounded-3xl bg-accent p-6 text-white">
+                      <div>
+                        <span className="inline-block rounded-full bg-white px-3 py-1 text-xs font-semibold text-accent">{t('nav.free')}</span>
+                        <p className="mt-4 font-heading text-xl font-semibold">{t('nav.healthCheckTitle')}</p>
+                        <p className="mt-2 text-sm leading-relaxed text-white/75">{t('nav.healthCheckText')}</p>
                       </div>
-                    ))}
+                      <Link
+                        href={localHref('/solutions/systems-audit')}
+                        className="mt-6 inline-flex w-fit items-center gap-2 rounded-full bg-white px-5 py-2.5 text-sm font-semibold text-accent hover:bg-neutral-100"
+                      >
+                        {t('nav.healthCheckCta')} <span aria-hidden="true">→</span>
+                      </Link>
+                    </div>
                   </div>
-                  <div className="flex flex-wrap items-center justify-between gap-6 border-t border-neutral-200 px-10 py-6 dark:border-white/10 xl:px-16">
+                  <div className="flex flex-wrap items-center justify-between gap-6 border-t border-neutral-200 px-10 py-5 dark:border-white/10 xl:px-16">
                     <div className="flex flex-wrap items-center gap-x-5 gap-y-2">
-                      <span className="text-xs font-semibold tracking-wider text-text-muted uppercase dark:text-neutral-400">
-                        {t('nav.supportHeading')}
-                      </span>
+                      <span className="text-sm font-semibold text-text-primary dark:text-white">{t('nav.supportHeading')}</span>
                       {siteConfig.footer.supportLinks.map((l) => (
-                        <Link key={l.href} href={localHref(l.href)} className="text-sm text-text-secondary hover:text-text-primary dark:text-neutral-300 dark:hover:text-white">
+                        <Link key={l.href} href={localHref(l.href)} className={megaLink}>
                           {t(l.labelKey)}
                         </Link>
                       ))}
                     </div>
-                    <div className="flex items-center gap-5 text-sm">
-                      <span className="text-text-muted dark:text-neutral-400">
-                        {t('nav.notSure')}{' '}
-                        <Link href={localHref('/solutions/systems-audit')} className="font-medium text-text-primary underline underline-offset-4 dark:text-white">
-                          {t('nav.notSureLink')}
-                        </Link>
-                      </span>
-                      <Link href={localHref('/solutions')} className="font-semibold text-text-primary dark:text-white">
-                        {t('nav.allSolutions')}
-                      </Link>
-                    </div>
+                    <Link
+                      href={localHref('/solutions')}
+                      className="rounded-full border border-neutral-300 px-5 py-2 text-sm font-semibold text-text-primary hover:border-primary dark:border-white/20 dark:text-white dark:hover:border-white"
+                    >
+                      {t('nav.allSolutions')}
+                    </Link>
                   </div>
                 </div>
               )}
@@ -265,7 +291,7 @@ export default function Navbar() {
           </div>
 
           <div className="flex-1 overflow-y-auto px-5 py-4">
-            <p className="px-1 pb-2 text-xs font-semibold tracking-wider text-text-muted uppercase dark:text-neutral-400">{t('nav.services')}</p>
+            <p className="px-1 pb-2 text-sm font-semibold text-text-muted dark:text-neutral-400">{t('nav.services')}</p>
             {siteConfig.services.map((s) => (
               <details key={s.key} className="group border-b border-neutral-200 dark:border-white/10">
                 <summary className="flex cursor-pointer list-none items-center justify-between py-3 font-heading text-base font-semibold text-text-primary dark:text-white">
@@ -279,6 +305,13 @@ export default function Navbar() {
                     <li key={slug}>
                       <Link href={localHref(`/solutions/${slug}`)} onClick={() => setIsMobileMenuOpen(false)} className="block rounded-lg px-2 py-2 text-sm text-text-secondary dark:text-neutral-300">
                         {t(solutionLabel.get(slug) ?? '')}
+                      </Link>
+                    </li>
+                  ))}
+                  {s.extras.map((x) => (
+                    <li key={x.labelKey}>
+                      <Link href={localHref(x.href)} onClick={() => setIsMobileMenuOpen(false)} className="block rounded-lg px-2 py-2 text-sm text-text-secondary dark:text-neutral-300">
+                        {t(x.labelKey)}
                       </Link>
                     </li>
                   ))}
