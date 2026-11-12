@@ -174,13 +174,13 @@ export default function Navbar() {
                     </div>
                     <div className="h-fit w-72 flex-shrink-0 self-start rounded-3xl bg-accent p-6 text-white">
                       <div>
-                        <span className="inline-block rounded-full bg-white px-3 py-1 text-xs font-semibold text-accent">{t('nav.free')}</span>
+                        <span className="inline-block rounded-full bg-white px-3 py-1 text-xs font-semibold text-[#0A0A0A]">{t('nav.free')}</span>
                         <p className="mt-4 font-heading text-xl font-semibold">{t('nav.healthCheckTitle')}</p>
                         <p className="mt-2 text-sm leading-relaxed text-white/75">{t('nav.healthCheckText')}</p>
                       </div>
                       <Link
                         href={localHref('/contact')}
-                        className="mt-6 inline-flex w-fit items-center gap-2 rounded-full bg-white px-5 py-2.5 text-sm font-semibold whitespace-nowrap text-accent hover:bg-neutral-100"
+                        className="mt-6 inline-flex w-fit items-center gap-2 rounded-full bg-white px-5 py-2.5 text-sm font-semibold whitespace-nowrap text-[#0A0A0A] hover:bg-neutral-100"
                       >
                         {t('nav.healthCheckCta')} <span aria-hidden="true">→</span>
                       </Link>
