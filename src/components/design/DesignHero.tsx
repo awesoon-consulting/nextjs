@@ -6,6 +6,7 @@ import Link from 'next/link'
 import { useLocale, useTranslations } from 'next-intl'
 import { getDesignAssistantReply, matchDesignNeed, type DesignNeed } from '@/src/lib/assistant'
 import { siteConfig } from '@/src/config/site'
+import HeroArt from './HeroArt'
 
 interface Message {
   id: number
@@ -160,7 +161,7 @@ export default function DesignHero() {
   const last = messages[messages.length - 1]
 
   return (
-    <section className="design-hero relative w-full overflow-hidden bg-[#0A0A0A] pt-20 pb-16 sm:pt-32 sm:pb-20" aria-labelledby="design-title">
+    <section className="design-hero relative w-full overflow-hidden bg-[#0A0A0A] pt-20 pb-16 sm:pt-28 sm:pb-20" aria-labelledby="design-title">
       <div className="design-grid pointer-events-none absolute inset-0" aria-hidden="true" />
       <div
         className="pointer-events-none absolute top-[40%] right-[-10%] h-[620px] w-[820px] max-w-[160vw] opacity-[0.22]"
@@ -189,6 +190,9 @@ export default function DesignHero() {
               </li>
             ))}
           </ul>
+          <div className="mt-6 hidden max-w-[420px] sm:block">
+            <HeroArt label={t('hero.artLabel')} />
+          </div>
         </div>
 
         <div ref={cardRef} id="design-assistant" className="scroll-mt-24 rounded-3xl border border-white/[0.08] bg-[#111827] shadow-[0_30px_80px_-30px_rgba(15,29,51,0.9)]">

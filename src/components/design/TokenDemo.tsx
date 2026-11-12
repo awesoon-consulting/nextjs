@@ -81,9 +81,9 @@ export default function TokenDemo() {
   ]
 
   return (
-    <section className="relative w-full overflow-hidden bg-[#0A0A0A] py-24" aria-labelledby="demo-title">
+    <section id="token-demo" className="relative w-full overflow-hidden bg-[#0A0A0A] py-24" aria-labelledby="demo-title">
       <div className="mx-auto max-w-6xl px-4 sm:px-6">
-        <div className="grid gap-10 lg:grid-cols-[360px_1fr] lg:gap-14">
+        <div className="grid gap-10 lg:grid-cols-[360px_1fr] lg:items-center lg:gap-14">
           <div>
             <p className="text-sm font-semibold text-[#7D9CCB]">{t('eyebrow')}</p>
             <h2 id="demo-title" className="mt-2 font-heading text-3xl font-bold tracking-tight text-white sm:text-4xl">
@@ -168,13 +168,13 @@ export default function TokenDemo() {
                     <span key={i} className="tk-fill w-full" style={{ height: `${h}%`, opacity: 0.35 + i * 0.13, borderRadius: 'var(--tk-radius-sm) var(--tk-radius-sm) 2px 2px' }} />
                   ))}
                 </div>
-                <p className="mt-3 hidden text-xs text-neutral-300 sm:block">{t('cardText')}</p>
+                <p className="mt-2 hidden text-xs text-neutral-300 sm:block">{t('cardText')}</p>
                 <p className="tk-text mt-2 text-sm font-semibold">{t('cardAction')} →</p>
               </div>
 
               <div key={`s${pulse}`} className={`${asset} tk-pop`} style={{ borderRadius: 'var(--tk-radius)', animationDelay: '120ms' }}>
                 {tag(t('assetSocial'))}
-                <div className="tk-fill relative flex aspect-square flex-col justify-between p-3.5 text-[#0A0A0A] sm:p-5" style={{ borderRadius: 'var(--tk-radius-sm)' }}>
+                <div className="tk-fill relative flex aspect-square flex-col justify-between p-3.5 lg:aspect-[16/10] text-[#0A0A0A] sm:p-5" style={{ borderRadius: 'var(--tk-radius-sm)' }}>
                   <span className="self-start rounded-full bg-[#0A0A0A] px-2.5 py-1 text-[10px] font-semibold text-white">{t('socialKicker')}</span>
                   <p className="text-lg leading-[1.05] font-bold sm:text-3xl" style={{ fontFamily: 'var(--tk-font)' }}>
                     {t('socialTitle')}

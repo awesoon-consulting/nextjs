@@ -1018,7 +1018,8 @@
       "cta": "Reservar una llamada de descubrimiento de 30 minutos",
       "trust1": "Dirigido por Ray Rasouli",
       "trust2": "Todos los archivos son suyos",
-      "trust3": "Respuesta en un día hábil"
+      "trust3": "Respuesta en un día hábil",
+      "artLabel": "Un token de color que alimenta un botón, una tarjeta y una pantalla de app"
     },
     "assistant": {
       "label": "Asistente de diseño",

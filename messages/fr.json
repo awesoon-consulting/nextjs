@@ -1018,7 +1018,8 @@
       "cta": "Réserver un appel découverte de 30 minutes",
       "trust1": "Dirigé par Ray Rasouli",
       "trust2": "Tous les fichiers vous appartiennent",
-      "trust3": "Réponse en un jour ouvrable"
+      "trust3": "Réponse en un jour ouvrable",
+      "artLabel": "Un jeton de couleur qui alimente un bouton, une carte et un écran d’application"
     },
     "assistant": {
       "label": "Assistant design",
