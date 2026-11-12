@@ -134,7 +134,7 @@ export default function HeroIllustration({ locale }: HeroIllustrationProps) {
       </g></a>
 
       {/* ── Node: ERP (top) ── */}
-      <a href={link('/solutions/erp-implementation')}><g className="hero-node hero-node-erp">
+      <a href={link('/erp-crm/erp-implementation')}><g className="hero-node hero-node-erp">
         <rect x="230" y="80" width="60" height="50" rx="12" fill="#0F1D33" opacity="0.85">
           <animate attributeName="opacity" values="0.85;0.78;0.85" dur="4s" repeatCount="indefinite" />
         </rect>
@@ -146,7 +146,7 @@ export default function HeroIllustration({ locale }: HeroIllustrationProps) {
       </g></a>
 
       {/* ── Node: CRM (right) ── */}
-      <a href={link('/solutions/crm-implementation')}><g className="hero-node hero-node-crm">
+      <a href={link('/erp-crm/crm-implementation')}><g className="hero-node hero-node-crm">
         <rect x="390" y="230" width="60" height="50" rx="12" fill="#0F1D33" opacity="0.85">
           <animate attributeName="opacity" values="0.85;0.78;0.85" dur="3.5s" repeatCount="indefinite" />
         </rect>
@@ -159,7 +159,7 @@ export default function HeroIllustration({ locale }: HeroIllustrationProps) {
       </g></a>
 
       {/* ── Node: Warehouse (bottom) ── */}
-      <a href={link('/solutions/mobile-warehouse-barcoding')}><g className="hero-node hero-node-wms">
+      <a href={link('/automation/mobile-warehouse-barcoding')}><g className="hero-node hero-node-wms">
         <rect x="230" y="390" width="60" height="50" rx="12" fill="#0F1D33" opacity="0.85">
           <animate attributeName="opacity" values="0.85;0.78;0.85" dur="4.5s" repeatCount="indefinite" />
         </rect>
@@ -173,7 +173,7 @@ export default function HeroIllustration({ locale }: HeroIllustrationProps) {
       </g></a>
 
       {/* ── Node: Integrations (left) ── */}
-      <a href={link('/solutions/api-integrations')}><g className="hero-node hero-node-api">
+      <a href={link('/automation/api-integrations')}><g className="hero-node hero-node-api">
         <rect x="70" y="230" width="60" height="50" rx="12" fill="#0F1D33" opacity="0.85">
           <animate attributeName="opacity" values="0.85;0.78;0.85" dur="3.8s" repeatCount="indefinite" />
         </rect>
@@ -182,7 +182,7 @@ export default function HeroIllustration({ locale }: HeroIllustrationProps) {
       </g></a>
 
       {/* ── Node: Analytics (top-right) ── */}
-      <a href={link('/solutions/systems-audit')}><g className="hero-node hero-node-bi">
+      <a href={link('/consulting/systems-audit')}><g className="hero-node hero-node-bi">
         <rect x="380" y="100" width="56" height="46" rx="12" fill="#0F1D33" opacity="0.8">
           <animate attributeName="opacity" values="0.8;0.72;0.8" dur="5s" repeatCount="indefinite" />
         </rect>
@@ -194,7 +194,7 @@ export default function HeroIllustration({ locale }: HeroIllustrationProps) {
       </g></a>
 
       {/* ── Node: Automation (bottom-left) ── */}
-      <a href={link('/solutions/ai-operations')}><g className="hero-node hero-node-ai">
+      <a href={link('/automation/ai-operations')}><g className="hero-node hero-node-ai">
         <rect x="84" y="370" width="56" height="46" rx="12" fill="#0F1D33" opacity="0.8">
           <animate attributeName="opacity" values="0.8;0.72;0.8" dur="4.2s" repeatCount="indefinite" />
         </rect>

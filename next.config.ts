@@ -1,5 +1,6 @@
 import type { NextConfig } from 'next'
 import createNextIntlPlugin from 'next-intl/plugin'
+import { solutionRedirects } from './src/data/redirects'
 
 const withNextIntl = createNextIntlPlugin('./src/i18n/request.ts')
 
@@ -19,6 +20,9 @@ const nextConfig: NextConfig = {
         hostname: 'images.unsplash.com',
       },
     ],
+  },
+  async redirects() {
+    return solutionRedirects()
   },
   async headers() {
     return [

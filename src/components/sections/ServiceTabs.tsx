@@ -4,11 +4,12 @@ import { useState } from 'react'
 import Link from 'next/link'
 import { useLocale, useTranslations } from 'next-intl'
 import { siteConfig } from '@/src/config/site'
+import { spokePath } from '@/src/data/hub-map'
 import IsoNodes from '@/src/components/ui/IsoNodes'
 import ServiceIcon from '@/src/components/ui/ServiceIcon'
 
 const solutionLabel = new Map<string, string>(
-  siteConfig.footer.solutionLinks.map((l) => [l.href.replace('/solutions/', ''), l.labelKey]),
+  siteConfig.footer.solutionLinks.map((l) => [l.slug, l.labelKey]),
 )
 
 export default function ServiceTabs() {
@@ -19,7 +20,7 @@ export default function ServiceTabs() {
   const svc = siteConfig.services[active]
   const name = t(`serviceLines.${svc.key}.name`)
   const items = [
-    ...svc.solutions.map((slug) => ({ href: `/solutions/${slug}`, label: t(solutionLabel.get(slug) ?? '') })),
+    ...svc.solutions.map((slug) => ({ href: spokePath(slug), label: t(solutionLabel.get(slug) ?? '') })),
     ...svc.extras.map((x) => ({ href: x.href, label: t(x.labelKey) })),
   ].slice(0, 6)
 
