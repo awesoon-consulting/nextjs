@@ -69,10 +69,10 @@ export const siteConfig = {
       href: '/design',
       solutions: [],
       extras: [
-        { labelKey: 'serviceItems.artDesign', href: '/design' },
-        { labelKey: 'serviceItems.uiDesign', href: '/design' },
-        { labelKey: 'serviceItems.interfaceDevelopment', href: '/design' },
-        { labelKey: 'serviceItems.brandSystems', href: '/design' },
+        { labelKey: 'serviceItems.artDesign', href: '/design#art' },
+        { labelKey: 'serviceItems.uiDesign', href: '/design#interface' },
+        { labelKey: 'serviceItems.interfaceDevelopment', href: '/design#interface' },
+        { labelKey: 'serviceItems.brandSystems', href: '/design#brand' },
       ],
     },
     {
