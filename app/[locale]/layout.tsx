@@ -1,4 +1,4 @@
-import type { Metadata } from 'next'
+import type { Metadata, Viewport } from 'next'
 import { Sora, Inter } from 'next/font/google'
 import { NextIntlClientProvider } from 'next-intl'
 import { getMessages, setRequestLocale, getTranslations } from 'next-intl/server'
@@ -118,6 +118,11 @@ export async function generateMetadata({
   }
 }
 
+export const viewport: Viewport = {
+  themeColor: '#0A0A0A',
+  colorScheme: 'dark',
+}
+
 // Cache rendered pages for 1 hour, serve stale while revalidating in background
 export const revalidate = 3600
 
@@ -139,15 +144,12 @@ export default async function LocaleLayout({ children, params }: LocaleLayoutPro
   const gadsId = process.env.NEXT_PUBLIC_GADS_ID
 
   return (
-    <html lang={locale} className={`${sora.variable} ${inter.variable}`} suppressHydrationWarning>
+    <html lang={locale} className={`dark ${sora.variable} ${inter.variable}`} style={{ colorScheme: 'dark' }} suppressHydrationWarning>
       <head>
-        {/*
-          Anti-FOUC script, applies stored theme class and marks the document
-          as JS-ready before first paint. MUST run synchronously in <head>.
-        */}
+        {/* Marks the document as JS-ready before first paint. MUST run synchronously in <head>. */}
         <script
           dangerouslySetInnerHTML={{
-            __html: `(function(){try{var d=document.documentElement;var t=localStorage.getItem('awesoon_theme');if(t==='dark'||(t!=='light'&&window.matchMedia('(prefers-color-scheme: dark)').matches)){d.classList.add('dark')}d.classList.add('js-ready')}catch(e){}})()`,
+            __html: `document.documentElement.classList.add('js-ready')`,
           }}
         />
       </head>

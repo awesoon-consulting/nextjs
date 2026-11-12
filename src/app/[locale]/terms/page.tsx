@@ -139,7 +139,7 @@ export default async function TermsPage({ params }: { params: Promise<{ locale: 
               For questions about these Terms, contact us at{' '}
               <a
                 href={`mailto:${siteConfig.contact.email}`}
-                className="text-secondary underline hover:no-underline"
+                className="text-secondary dark:text-[#7D9CCB] underline hover:no-underline"
               >
                 {siteConfig.contact.email}
               </a>

@@ -7,25 +7,11 @@ import { useTranslations, useLocale } from 'next-intl'
 import { usePathname } from 'next/navigation'
 import { siteConfig } from '@/src/config/site'
 import LanguageSwitcher from './LanguageSwitcher'
-import { useTheme } from './ThemeProvider'
 import ServiceIcon from '@/src/components/ui/ServiceIcon'
 
 const solutionLabel = new Map<string, string>(
   siteConfig.footer.solutionLinks.map((l) => [l.href.replace('/solutions/', ''), l.labelKey]),
 )
-
-function ThemeIcon() {
-  return (
-    <>
-      <svg className="block h-5 w-5 dark:hidden" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
-        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.75} d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z" />
-      </svg>
-      <svg className="hidden h-5 w-5 dark:block" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
-        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.75} d="M12 3v2m0 14v2M3 12H1m4.22-6.36L3.86 4.22M18.36 5.64l1.42-1.42M21 12h2m-3.64 6.36 1.42 1.42M5.64 18.36l-1.42 1.42M12 8a4 4 0 100 8 4 4 0 000-8z" />
-      </svg>
-    </>
-  )
-}
 
 const MEGA_COLUMNS = [['consultation'], ['programming'], ['automation'], ['design', 'advertising']] as const
 
@@ -44,7 +30,6 @@ export default function Navbar() {
   const t = useTranslations()
   const locale = useLocale()
   const pathname = usePathname()
-  const { resolvedTheme, setTheme } = useTheme()
 
   const [isScrolled, setIsScrolled] = useState(false)
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false)
@@ -234,18 +219,12 @@ export default function Navbar() {
 
             <div className="hidden items-center gap-2 lg:flex">
               <LanguageSwitcher />
-              <button onClick={() => setTheme(resolvedTheme === 'dark' ? 'light' : 'dark')} aria-label={t('nav.toggleTheme')} className={iconBtn}>
-                <ThemeIcon />
-              </button>
               <Link href={localHref(siteConfig.nav.cta.href)} className={pill}>
                 {t(siteConfig.nav.cta.labelKey)}
               </Link>
             </div>
 
             <div className="flex items-center gap-1 lg:hidden">
-              <button onClick={() => setTheme(resolvedTheme === 'dark' ? 'light' : 'dark')} aria-label={t('nav.toggleTheme')} className={iconBtn}>
-                <ThemeIcon />
-              </button>
               <button
                 onClick={() => setIsMobileMenuOpen((o) => !o)}
                 aria-expanded={isMobileMenuOpen}

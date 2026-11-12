@@ -23,7 +23,7 @@ export default async function PrivacyPage({ params }: { params: Promise<{ locale
   const t = await getTranslations({ locale, namespace: 'privacy' })
   const sectionClass =
     'rounded-2xl border border-neutral-200 bg-white p-6 shadow-sm sm:p-8 dark:border-white/10 dark:bg-primary dark:shadow-none'
-  const linkClass = 'text-secondary underline hover:no-underline'
+  const linkClass = 'text-secondary dark:text-[#7D9CCB] underline hover:no-underline'
   const codeClass = 'rounded bg-neutral-100 px-1.5 py-0.5 text-sm dark:bg-white/10 dark:text-neutral-200'
 
   return (

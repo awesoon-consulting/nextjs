@@ -73,7 +73,7 @@ export default function Footer() {
               <li>
                 <TrackedEmailLink email={siteConfig.contact.email} className={`${link} whitespace-nowrap`} />
               </li>
-              <li className="text-xs text-text-muted dark:text-neutral-500">{t('footer.humanReplies')}</li>
+              <li className="text-xs text-text-muted dark:text-neutral-400">{t('footer.humanReplies')}</li>
               <li>
                 <a href={siteConfig.social.linkedin} target="_blank" rel="noopener noreferrer" className={link}>
                   {t('footer.linkedin')}
@@ -115,7 +115,7 @@ export default function Footer() {
       </div>
 
       <div className="border-t border-neutral-200 dark:border-white/10">
-        <div className="flex w-full flex-col gap-4 px-4 py-6 text-xs text-text-muted sm:px-6 md:flex-row md:items-center md:justify-between lg:px-10 xl:px-16 dark:text-neutral-500">
+        <div className="flex w-full flex-col gap-4 px-4 py-6 text-xs text-text-muted sm:px-6 md:flex-row md:items-center md:justify-between lg:px-10 xl:px-16 dark:text-neutral-400">
           <p>
             {t('footer.copyright', { year })} {t('footer.noTracking')}
           </p>

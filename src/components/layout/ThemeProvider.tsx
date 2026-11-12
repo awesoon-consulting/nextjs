@@ -1,11 +1,5 @@
 'use client'
 
-/**
- * ThemeProvider, shared theme controller for the app.
- * Uses next-themes so the correct class is applied before first paint,
- * defaults to the system preference, and persists explicit user overrides.
- */
-
 import {
   ThemeProvider as NextThemesProvider,
   useTheme as useNextTheme,
@@ -16,12 +10,13 @@ export function ThemeProvider({ children, ...props }: NextThemesProviderProps) {
   return (
     <NextThemesProvider
       attribute="class"
-      defaultTheme="system"
+      defaultTheme="dark"
+      forcedTheme="dark"
       disableTransitionOnChange
       enableColorScheme
-      enableSystem
+      enableSystem={false}
       storageKey="awesoon_theme"
-      themes={['light', 'dark']}
+      themes={['dark']}
       {...props}
     >
       {children}

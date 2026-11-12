@@ -24,7 +24,7 @@ export default function SupportGrid({ variant = 'page' }: SupportGridProps) {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <AnimateIn variant="slide-up" threshold={0.08}>
           <div className="mb-16 text-center">
-            <p className="mb-3 text-xs font-semibold uppercase tracking-[0.28em] text-text-muted dark:text-white/40">
+            <p className="mb-3 text-xs font-semibold uppercase tracking-[0.28em] text-text-muted dark:text-white/60">
               {t('eyebrow.support')}
             </p>
             <h2

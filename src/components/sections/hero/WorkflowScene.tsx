@@ -169,7 +169,7 @@ export default function WorkflowScene({ progress, energy, gap, dark, onReady, on
       const { progress: target, energy: e, dark: isDark } = live.current
       shown += (target - shown) * 0.04
       const k = ease(Math.max(0, Math.min(1, shown)))
-      const ink = isDark ? '#6E8BB5' : '#0F1D33'
+      const ink = isDark ? '#7D9CCB' : '#0F1D33'
       messyMat.color.set(ink)
       trailMat.color.set(ink)
       lineMat.color.set(ink)

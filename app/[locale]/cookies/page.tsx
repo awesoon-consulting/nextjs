@@ -169,7 +169,7 @@ export default function CookiesPage() {
                 For more information about how we handle your personal data, see our{' '}
                 <Link
                   href={`/${locale}/privacy`}
-                  className="text-secondary underline hover:no-underline"
+                  className="text-secondary dark:text-[#7D9CCB] underline hover:no-underline"
                 >
                   Privacy Policy
                 </Link>

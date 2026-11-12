@@ -24,7 +24,7 @@ export default function ProblemSolutions() {
       <div className="w-full px-4 sm:px-6 lg:px-10 xl:px-16">
         <AnimateIn variant="slide-up" threshold={0.1}>
           <div className="text-center mb-16">
-            <p className="text-text-muted dark:text-white/40 text-xs font-semibold uppercase tracking-widest mb-3">
+            <p className="text-text-muted dark:text-white/60 text-xs font-semibold uppercase tracking-widest mb-3">
               {tEyebrow('soundFamiliar')}
             </p>
             <h2

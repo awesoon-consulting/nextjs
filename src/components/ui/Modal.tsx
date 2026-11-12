@@ -92,7 +92,7 @@ export default function Modal({
           )}
           <button
             onClick={onClose}
-            className="ml-auto rounded-lg p-1 text-text-muted transition-colors hover:text-text-primary focus:outline-none focus-visible:ring-2 focus-visible:ring-secondary dark:text-neutral-500 dark:hover:text-text-inverse"
+            className="ml-auto rounded-lg p-1 text-text-muted transition-colors hover:text-text-primary focus:outline-none focus-visible:ring-2 focus-visible:ring-secondary dark:text-neutral-400 dark:hover:text-text-inverse"
             aria-label="Close modal"
           >
             <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">

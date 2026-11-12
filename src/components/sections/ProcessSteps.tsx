@@ -24,7 +24,7 @@ export default function ProcessSteps() {
       <div className="w-full px-4 sm:px-6 lg:px-10 xl:px-16">
         <AnimateIn variant="slide-up" threshold={0.1}>
           <div className="text-center mb-16">
-            <p className="text-text-muted dark:text-white/40 text-xs font-semibold uppercase tracking-widest mb-3">
+            <p className="text-text-muted dark:text-white/60 text-xs font-semibold uppercase tracking-widest mb-3">
               {tEyebrow('howWeWork')}
             </p>
             <h2
@@ -52,7 +52,7 @@ export default function ProcessSteps() {
                 <div className="relative flex flex-col items-center text-center group">
                   {/* Step number circle */}
                   <div className="relative z-10 w-24 h-24 rounded-full bg-white dark:bg-primary/80 border-2 border-neutral-200 dark:border-white/20 group-hover:border-accent dark:group-hover:border-white/20 flex flex-col items-center justify-center mb-6 transition-all duration-300 shadow-md group-hover:shadow-lg">
-                    <span className="text-xs font-medium text-text-muted dark:text-neutral-500 uppercase tracking-widest">
+                    <span className="text-xs font-medium text-text-muted dark:text-neutral-400 uppercase tracking-widest">
                       {tCommon('step')}
                     </span>
                     <span className="font-heading font-bold text-2xl text-secondary dark:text-white">
@@ -101,7 +101,7 @@ export default function ProcessSteps() {
                 </svg>
               </Button>
             </Link>
-            <p className="mt-3 text-xs text-text-muted dark:text-neutral-500">
+            <p className="mt-3 text-xs text-text-muted dark:text-neutral-400">
               {t('ctaNudge')}
             </p>
           </div>

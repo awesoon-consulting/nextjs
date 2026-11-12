@@ -55,7 +55,7 @@ export default function CookieBanner({ onManage }: CookieBannerProps) {
               {t('banner.description')}{' '}
               <Link
                 href={`/${locale}/cookies`}
-                className="text-accent underline hover:no-underline focus:outline-none focus-visible:ring-2 focus-visible:ring-accent rounded"
+                className="text-accent dark:text-[#7D9CCB] underline hover:no-underline focus:outline-none focus-visible:ring-2 focus-visible:ring-accent rounded"
               >
                 {t('banner.learnMore')}
               </Link>
