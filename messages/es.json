@@ -1825,7 +1825,9 @@
       "compareNone": "Ninguna región vecina tiene aún datos de salarios para este puesto.",
       "otherRegions": "Más regiones",
       "ctaTitle": "¿Quiere recuperar esas horas?",
-      "ctaText": "Ray Rasouli revisa en una llamada de 30 minutos cómo llegan hoy los pedidos a su sistema, y le dice con claridad si vale la pena automatizarlo."
+      "ctaText": "Ray Rasouli revisa en una llamada de 30 minutos cómo llegan hoy los pedidos a su sistema, y le dice con claridad si vale la pena automatizarlo.",
+      "chartTitle": "Costo anual con sus datos, por región",
+      "chartNote": "Mismo equipo, mismas horas, con el salario publicado de cada región para el puesto elegido."
     },
     "calc": {
       "title": "Su estimación",

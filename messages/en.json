@@ -1824,7 +1824,9 @@
       "compareNone": "No neighbouring region has wage data for this job yet.",
       "otherRegions": "More regions",
       "ctaTitle": "Want the hours back?",
-      "ctaText": "Ray Rasouli looks at how orders reach your system today on a 30-minute call, and tells you plainly whether automating it is worth it."
+      "ctaText": "Ray Rasouli looks at how orders reach your system today on a 30-minute call, and tells you plainly whether automating it is worth it.",
+      "chartTitle": "Yearly cost of your inputs, by region",
+      "chartNote": "Same team, same hours, each region’s published wage for the selected job."
     },
     "calc": {
       "title": "Your estimate",

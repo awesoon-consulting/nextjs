@@ -1825,7 +1825,9 @@
       "compareNone": "Aucune région voisine n’a encore de salaires pour cet emploi.",
       "otherRegions": "Plus de régions",
       "ctaTitle": "Envie de récupérer ces heures?",
-      "ctaText": "Ray Rasouli regarde comment les commandes arrivent dans votre système aujourd’hui lors d’un appel de 30 minutes, et vous dit franchement si l’automatiser en vaut la peine."
+      "ctaText": "Ray Rasouli regarde comment les commandes arrivent dans votre système aujourd’hui lors d’un appel de 30 minutes, et vous dit franchement si l’automatiser en vaut la peine.",
+      "chartTitle": "Coût annuel selon vos données, par région",
+      "chartNote": "Même équipe, mêmes heures, avec le salaire publié de chaque région pour le poste choisi."
     },
     "calc": {
       "title": "Votre estimation",

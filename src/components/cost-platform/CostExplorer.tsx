@@ -150,6 +150,28 @@ export default function CostExplorer({ locale, region, countryPath, currency, ro
             ) : (
               <p className="mt-5 text-neutral-400">{t('cost.compareNone')}</p>
             )}
+            {compare.length > 0 && (
+              <figure className="mt-8 rounded-2xl border border-white/10 bg-white/[0.02] p-5 sm:p-6">
+                <figcaption className="text-sm font-semibold text-neutral-300">{t('cost.chartTitle')}</figcaption>
+                <ul className="mt-4 space-y-3">
+                  {[{ slug: '_self', name: region, yearly, self: true }, ...compare.map((n) => ({ ...n, self: false }))]
+                    .sort((x, y) => y.yearly - x.yearly)
+                    .map((n) => {
+                      const max = Math.max(yearly, ...compare.map((c) => c.yearly)) || 1
+                      return (
+                        <li key={n.slug} className="grid grid-cols-[7.5rem_1fr_auto] items-center gap-3 text-sm sm:grid-cols-[9rem_1fr_auto]">
+                          <span className={`truncate ${n.self ? 'font-semibold text-white' : 'text-neutral-300'}`}>{n.name}</span>
+                          <span className="h-3 overflow-hidden rounded-full bg-white/[0.06]" aria-hidden="true">
+                            <span className={`block h-full rounded-full transition-[width] duration-300 ${n.self ? 'bg-[#9DB6DC]' : 'bg-white/30'}`} style={{ width: `${(n.yearly / max) * 100}%` }} />
+                          </span>
+                          <span className={`tabular-nums ${n.self ? 'font-semibold text-white' : 'text-neutral-300'}`}>{money.format(n.yearly)}</span>
+                        </li>
+                      )
+                    })}
+                </ul>
+                <p className="mt-4 text-xs text-neutral-400">{t('cost.chartNote')}</p>
+              </figure>
+            )}
           </div>
         </div>
 
