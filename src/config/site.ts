@@ -24,7 +24,7 @@ export const siteConfig = {
 
   nav: {
     main: [
-      { labelKey: 'nav.work', href: '/solutions' },
+      { labelKey: 'nav.work', href: '/work' },
       { labelKey: 'nav.publicSector', href: '/public-sector' },
       { labelKey: 'nav.insights', href: '/insights' },
       { labelKey: 'nav.about', href: '/about' },
@@ -126,7 +126,7 @@ export const siteConfig = {
       { labelKey: 'support.cards.ecommerceSupport.title', href: '/support/ecommerce-support-maintenance' },
     ] as const,
     companyLinks: [
-      { labelKey: 'nav.work', href: '/solutions' },
+      { labelKey: 'nav.work', href: '/work' },
       { labelKey: 'nav.publicSector', href: '/public-sector' },
       { labelKey: 'nav.insights', href: '/insights' },
       { labelKey: 'nav.about', href: '/about' },
