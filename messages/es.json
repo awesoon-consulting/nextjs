@@ -1006,6 +1006,286 @@
       "Seguimos después del lanzamiento. Soporte y mejoras a medida que su negocio crece."
     ]
   },
+  "designPage": {
+    "meta": {
+      "title": "Servicios de diseño: marca, interfaces y sistemas de diseño",
+      "description": "Sistemas de marca, interfaces web y móviles, sistemas de diseño y gráficos de marketing, entregados como tokens, componentes y plantillas que su equipo sigue usando. Dirigido por Ray Rasouli."
+    },
+    "hero": {
+      "eyebrow": "Diseño",
+      "title": "Diseño que su equipo sigue usando.",
+      "subtitle": "Sistemas de marca, interfaces web y móviles, sistemas de diseño y gráficos de marketing. Cada uno se construye con tokens, componentes y plantillas, así cada pieza nueva cuesta menos y su equipo entrega más.",
+      "cta": "Reservar una llamada de descubrimiento de 30 minutos",
+      "trust1": "Dirigido por Ray Rasouli",
+      "trust2": "Todos los archivos son suyos",
+      "trust3": "Respuesta en un día hábil",
+      "artLabel": "Un token de color que alimenta un botón, una tarjeta y una pantalla de app"
+    },
+    "assistant": {
+      "label": "Asistente de diseño",
+      "note": "Asistente con guion. Redacta un brief y nunca da precios.",
+      "greeting": "¿Qué necesita diseñar?",
+      "chips": {
+        "brand": "Renovar la marca",
+        "interface": "Interfaz web o de app",
+        "system": "Sistema de diseño",
+        "graphics": "Gráficos de marketing"
+      },
+      "placeholder": "O descríbalo en pocas palabras",
+      "ack": {
+        "brand": "Una renovación de marca hecha como sistema: reglas y plantillas que su equipo de verdad usa.",
+        "interface": "Una interfaz diseñada pantalla por pantalla, con cada estado, lista para desarrollo.",
+        "system": "Un sistema de diseño: un solo kit de tokens y componentes del que sale cada pantalla.",
+        "graphics": "Gráficos de marketing con plantillas, así la próxima publicación se completa, no se redibuja.",
+        "generic": "Entendido. Convirtámoslo en un brief."
+      },
+      "q1": "Primero, ¿qué existe hoy?",
+      "exist": {
+        "none": "Nada todavía",
+        "some": "Un logo y algunos archivos",
+        "brand": "Una marca establecida",
+        "product": "Un producto o sitio en línea"
+      },
+      "q2": "¿Y quién lo usa más?",
+      "audience": {
+        "customers": "Nuestros clientes",
+        "team": "Nuestro equipo",
+        "both": "Ambos",
+        "public": "El público o usuarios de gobierno"
+      },
+      "briefIntro": "Aquí está su brief de diseño. Es suyo.",
+      "noPrice": "No doy precios ni cotizaciones. Ray define el alcance con usted en una llamada, después de ver lo que tiene.",
+      "briefLabel": "Su brief de diseño",
+      "need": "Lo que necesita",
+      "today": "Lo que existe hoy",
+      "users": "Quién lo usa",
+      "build": "Lo que haríamos primero",
+      "keep": "Lo que su equipo conserva",
+      "buildText": {
+        "brand": "Reglas de color, tipografía y tono, con plantillas listas para las piezas que más hace.",
+        "interface": "Pantallas clave con cada estado, hechas con un pequeño set de componentes reutilizables.",
+        "system": "Tokens, componentes base y guías de uso, conectados para que un cambio se aplique en todo.",
+        "graphics": "Un set de plantillas para publicaciones, anuncios y presentaciones, fiel a su marca."
+      },
+      "keepText": "Archivos fuente, tokens, componentes y guías escritas. Sin dependencia.",
+      "copy": "Copiar brief",
+      "copied": "Copiado",
+      "consent": "Enviar este brief a Ray por correo. Se guarda hasta 3 años, nunca se vende.",
+      "talk": "Hablarlo con Ray",
+      "restart": "Empezar de nuevo",
+      "typing": "El asistente está escribiendo",
+      "send": "Enviar",
+      "emailSubject": "Brief de diseño desde awesoon.com",
+      "priceWords": "precio, costo, cotización, cuánto, presupuesto, tarifa"
+    },
+    "services": {
+      "title": "Cuatro tipos de diseño, una sola forma de trabajar",
+      "subtitle": "Elija lo que necesita. Cada uno termina en un sistema que su equipo conserva, no en un archivo suelto.",
+      "getLabel": "Lo que recibe",
+      "keepLabel": "Lo que su equipo conserva",
+      "before": "Antes",
+      "after": "Después",
+      "start": "Empezar un brief para esto",
+      "items": {
+        "brand": {
+          "name": "Sistemas de marca",
+          "line": "Su marca convertida en reglas y archivos listos que todo el equipo puede usar bien.",
+          "get": [
+            "Reglas de color, tipografía y tono",
+            "Uso y espaciado del logo",
+            "Plantillas para presentaciones, documentos y redes"
+          ],
+          "keep": [
+            "Guías de marca en lenguaje claro",
+            "Plantillas editables",
+            "Una biblioteca de recursos compartida"
+          ],
+          "beforeText": "Cada presentación se ve un poco distinta",
+          "afterText": "Un solo estilo, definido una vez, en todo"
+        },
+        "interface": {
+          "name": "Diseño de interfaces",
+          "line": "Pantallas web y de app diseñadas según cómo trabaja la gente, con cada estado dibujado antes del código.",
+          "get": [
+            "Flujos y pantallas clave",
+            "Estados vacíos, de carga y de error",
+            "Diseños para teléfono y escritorio"
+          ],
+          "keep": [
+            "Pantallas anotadas para desarrollo",
+            "Un set de componentes reutilizable",
+            "Reglas de color y foco accesibles"
+          ],
+          "beforeText": "Pantallas hechas una por una",
+          "afterText": "Pantallas armadas con un solo kit"
+        },
+        "system": {
+          "name": "Sistemas de diseño",
+          "line": "Un solo kit de tokens y componentes del que sale cada página, pantalla y pieza.",
+          "get": [
+            "Tokens de color, tipografía y espaciado",
+            "Componentes base con notas de uso",
+            "Un cambio de token que actualiza todo"
+          ],
+          "keep": [
+            "Archivos de tokens para importar",
+            "Una biblioteca de componentes documentada",
+            "Reglas para sumar piezas nuevas"
+          ],
+          "beforeText": "Cincuenta azules casi iguales",
+          "afterText": "Un token, todas las pantallas al día"
+        },
+        "art": {
+          "name": "Arte y gráficos",
+          "line": "Ilustración y gráficos para redes, anuncios e impresión, con plantillas para que la pieza cien se vea como la primera.",
+          "get": [
+            "Ilustraciones y sets de íconos",
+            "Gráficos para redes, anuncios y banners",
+            "Piezas impresas y para eventos"
+          ],
+          "keep": [
+            "Plantillas para completar en cada formato",
+            "Arte fuente en archivos editables",
+            "Ajustes de tamaño y exportación"
+          ],
+          "beforeText": "Cada gráfico empieza de cero",
+          "afterText": "Plantillas que cualquiera completa"
+        }
+      }
+    },
+    "demo": {
+      "eyebrow": "Pruébelo",
+      "title": "Un sistema, todas las piezas",
+      "subtitle": "Cambie un token y vea cómo cada pieza lo sigue. Así un sistema de diseño baja el costo de cada pieza nueva.",
+      "colour": "Color de acento",
+      "type": "Tipografía",
+      "corners": "Esquinas",
+      "colours": {
+        "navy": "Azul marino claro",
+        "cyan": "Cian",
+        "amber": "Ámbar",
+        "mint": "Menta"
+      },
+      "types": {
+        "sora": "Sora",
+        "inter": "Inter",
+        "serif": "Serif"
+      },
+      "cornerNames": {
+        "round": "Redondas",
+        "soft": "Suaves",
+        "square": "Rectas"
+      },
+      "updated": "1 cambio, 4 piezas actualizadas",
+      "assetButton": "Botón",
+      "assetCard": "Tarjeta",
+      "assetSocial": "Publicación social",
+      "assetApp": "Pantalla de app",
+      "buttonPrimary": "Empezar",
+      "buttonSecondary": "Saber más",
+      "cardKicker": "Informe semanal",
+      "cardTitle": "Los pedidos suben",
+      "cardText": "Esta semana no se volvió a teclear nada.",
+      "cardAction": "Abrir informe",
+      "socialKicker": "Nuevo",
+      "socialTitle": "La misma marca, cada publicación.",
+      "socialHandle": "@sumarca",
+      "appTitle": "Hoy",
+      "appItem1": "Pedidos sincronizados",
+      "appItem2": "Facturas enviadas",
+      "appItem3": "Inventario revisado",
+      "appAction": "Revisar"
+    },
+    "proof": {
+      "title": "Trabajo real, sin maquetas",
+      "subtitle": "Ningún cliente inventado. Este es el diseño que usamos nosotros mismos, a la vista.",
+      "siteTitle": "Este sitio funciona con un solo sistema de diseño",
+      "siteText": "Cada página sale de un solo conjunto de tokens. Las páginas nuevas se arman, no se redibujan, en tres idiomas.",
+      "tokensLabel": "Tokens en uso",
+      "tokenGround": "Fondo",
+      "tokenSurface": "Superficie",
+      "tokenText": "Texto",
+      "tokenAccent": "Acento",
+      "tokenBand": "Banda",
+      "gamesTitle": "Diez juegos móviles, un solo kit",
+      "gamesText": "Diseñamos y publicamos diez juegos con un kit común de formas, movimiento y reglas de color.",
+      "gamesLink": "Ver los juegos"
+    },
+    "process": {
+      "title": "Cómo funciona",
+      "subtitle": "Cuatro pasos, de una primera llamada a un sistema que su equipo maneja sin nosotros.",
+      "pathLabel": "Cuatro pasos de la llamada de descubrimiento a la entrega",
+      "steps": [
+        {
+          "title": "Llamada de descubrimiento",
+          "text": "30 minutos con Ray. Muestra lo que existe y dónde el diseño lo frena."
+        },
+        {
+          "title": "Brief de diseño",
+          "text": "Un brief escrito: qué construir primero, qué conservar y qué retirar."
+        },
+        {
+          "title": "Construcción del sistema",
+          "text": "Tokens, componentes y plantillas, hechos y probados en sus páginas y piezas reales."
+        },
+        {
+          "title": "Entrega y soporte",
+          "text": "Archivos, guías y un recorrido para su equipo, con soporte cuando lo necesite."
+        }
+      ]
+    },
+    "keep": {
+      "title": "Lo que conserva",
+      "subtitle": "Todo es suyo en la entrega. Sin dependencia ni licencias que alquilar.",
+      "items": [
+        {
+          "title": "Archivos fuente",
+          "text": "Cada diseño en archivos editables que su equipo puede abrir y cambiar."
+        },
+        {
+          "title": "Tokens de diseño",
+          "text": "Color, tipografía y espaciado en archivos que su equipo de desarrollo importa."
+        },
+        {
+          "title": "Biblioteca de componentes",
+          "text": "Los botones, tarjetas y diseños de los que sale cada pieza nueva."
+        },
+        {
+          "title": "Guías",
+          "text": "Reglas en lenguaje claro para que la gente nueva acierte a la primera."
+        }
+      ]
+    },
+    "faq": {
+      "title": "Preguntas",
+      "items": [
+        {
+          "q": "¿Pueden trabajar con nuestra marca actual?",
+          "a": "Sí. La mayoría de los proyectos parte de lo que ya tiene. Conservamos lo que funciona y lo convertimos en reglas y plantillas."
+        },
+        {
+          "q": "¿Quién hace el trabajo?",
+          "a": "Ray Rasouli dirige cada proyecto y es su contacto desde la llamada de descubrimiento hasta la entrega."
+        },
+        {
+          "q": "¿Necesitamos desarrolladores para usar lo que entregan?",
+          "a": "No para archivos de marca y plantillas. Para interfaces web y de app, el equipo de desarrollo recibe tokens y componentes claros."
+        },
+        {
+          "q": "¿Todo es nuestro?",
+          "a": "Sí. Archivos fuente, tokens, componentes y guías son suyos en la entrega."
+        },
+        {
+          "q": "¿La IA puede ayudar a crear variantes?",
+          "a": "Sí, dentro de las reglas de su sistema. Una persona revisa todo antes de publicarlo."
+        },
+        {
+          "q": "¿Trabajan con compradores de gobierno?",
+          "a": "Sí. Arte y gráficos y desarrollo de interfaces gráficas están entre las categorías en las que licitamos."
+        }
+      ]
+    }
+  },
   "publicSector": {
     "meta": {
       "title": "Sector público: servicios de TI, ERP y creativos para compradores públicos",

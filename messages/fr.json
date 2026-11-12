@@ -1006,6 +1006,286 @@
       "Nous restons après le lancement. Soutien et améliorations à mesure que vous grandissez."
     ]
   },
+  "designPage": {
+    "meta": {
+      "title": "Services de design : marque, interfaces et systèmes de design",
+      "description": "Systèmes de marque, interfaces web et mobiles, systèmes de design et graphisme marketing, livrés en jetons, composants et gabarits que votre équipe continue d’utiliser. Dirigé par Ray Rasouli."
+    },
+    "hero": {
+      "eyebrow": "Design",
+      "title": "Un design que votre équipe continue d’utiliser.",
+      "subtitle": "Systèmes de marque, interfaces web et mobiles, systèmes de design et graphisme marketing. Chacun est construit en jetons, composants et gabarits : chaque nouvelle pièce coûte moins cher et votre équipe livre davantage.",
+      "cta": "Réserver un appel découverte de 30 minutes",
+      "trust1": "Dirigé par Ray Rasouli",
+      "trust2": "Tous les fichiers vous appartiennent",
+      "trust3": "Réponse en un jour ouvrable",
+      "artLabel": "Un jeton de couleur qui alimente un bouton, une carte et un écran d’application"
+    },
+    "assistant": {
+      "label": "Assistant design",
+      "note": "Assistant scripté. Il rédige un brief et ne donne jamais de prix.",
+      "greeting": "Que voulez-vous faire concevoir ?",
+      "chips": {
+        "brand": "Refonte de marque",
+        "interface": "Interface web ou mobile",
+        "system": "Système de design",
+        "graphics": "Graphisme marketing"
+      },
+      "placeholder": "Ou décrivez-le en quelques mots",
+      "ack": {
+        "brand": "Une refonte de marque pensée comme un système : des règles et des gabarits que votre équipe utilise vraiment.",
+        "interface": "Une interface conçue écran par écran, avec chaque état, prête pour les développeurs.",
+        "system": "Un système de design : une seule trousse de jetons et de composants pour tous les écrans.",
+        "graphics": "Du graphisme marketing sur gabarits : la prochaine publication se remplit, elle ne se redessine pas.",
+        "generic": "Compris. Transformons cela en brief."
+      },
+      "q1": "D’abord, qu’est-ce qui existe aujourd’hui ?",
+      "exist": {
+        "none": "Rien pour l’instant",
+        "some": "Un logo et quelques fichiers",
+        "brand": "Une marque établie",
+        "product": "Un produit ou un site en ligne"
+      },
+      "q2": "Et qui l’utilise le plus ?",
+      "audience": {
+        "customers": "Nos clients",
+        "team": "Notre équipe",
+        "both": "Les deux",
+        "public": "Le public ou des usagers gouvernementaux"
+      },
+      "briefIntro": "Voici votre brief de design. Il est à vous.",
+      "noPrice": "Je ne donne ni prix ni devis. Ray établit la portée avec vous lors d’un appel, après avoir vu ce que vous avez.",
+      "briefLabel": "Votre brief de design",
+      "need": "Votre besoin",
+      "today": "Ce qui existe",
+      "users": "Qui l’utilise",
+      "build": "Ce que nous construirions d’abord",
+      "keep": "Ce que votre équipe garde",
+      "buildText": {
+        "brand": "Des règles de couleur, de typographie et de ton, avec des gabarits prêts pour vos pièces les plus fréquentes.",
+        "interface": "Les écrans clés avec chaque état, construits à partir d’un petit ensemble de composants réutilisables.",
+        "system": "Des jetons, des composants de base et des consignes d’usage, reliés pour qu’un changement s’applique partout.",
+        "graphics": "Un ensemble de gabarits pour publications, annonces et présentations, fidèles à votre marque."
+      },
+      "keepText": "Fichiers sources, jetons, composants et consignes écrites. Aucune dépendance.",
+      "copy": "Copier le brief",
+      "copied": "Copié",
+      "consent": "Envoyer ce brief à Ray par courriel. Conservé jusqu’à 3 ans, jamais vendu.",
+      "talk": "En parler avec Ray",
+      "restart": "Recommencer",
+      "typing": "L’assistant écrit",
+      "send": "Envoyer",
+      "emailSubject": "Brief de design depuis awesoon.com",
+      "priceWords": "prix, coût, devis, combien, budget, tarif"
+    },
+    "services": {
+      "title": "Quatre types de design, une seule méthode",
+      "subtitle": "Choisissez votre besoin. Chacun se termine par un système que votre équipe garde, pas par un fichier isolé.",
+      "getLabel": "Ce que vous obtenez",
+      "keepLabel": "Ce que votre équipe garde",
+      "before": "Avant",
+      "after": "Après",
+      "start": "Commencer un brief pour ceci",
+      "items": {
+        "brand": {
+          "name": "Systèmes de marque",
+          "line": "Votre marque transformée en règles et en fichiers prêts que toute l’équipe peut bien utiliser.",
+          "get": [
+            "Règles de couleur, de typographie et de ton",
+            "Usage et espacement du logo",
+            "Gabarits de présentations, documents et réseaux sociaux"
+          ],
+          "keep": [
+            "Des consignes de marque en langage clair",
+            "Des gabarits modifiables",
+            "Une bibliothèque de ressources partagée"
+          ],
+          "beforeText": "Chaque présentation est un peu différente",
+          "afterText": "Un seul style, défini une fois, partout"
+        },
+        "interface": {
+          "name": "Design d’interface",
+          "line": "Des écrans web et mobiles pensés selon la façon dont les gens travaillent, chaque état dessiné avant le code.",
+          "get": [
+            "Parcours et écrans clés",
+            "États vides, de chargement et d’erreur",
+            "Mises en page pour mobile et ordinateur"
+          ],
+          "keep": [
+            "Des écrans annotés pour les développeurs",
+            "Un ensemble de composants réutilisés",
+            "Des règles de couleur et de focus accessibles"
+          ],
+          "beforeText": "Des écrans faits un par un",
+          "afterText": "Des écrans assemblés à partir d’une trousse"
+        },
+        "system": {
+          "name": "Systèmes de design",
+          "line": "Une seule trousse de jetons et de composants pour chaque page, écran et ressource.",
+          "get": [
+            "Jetons de couleur, de typographie et d’espacement",
+            "Composants de base avec notes d’usage",
+            "Un changement de jeton qui met tout à jour"
+          ],
+          "keep": [
+            "Des fichiers de jetons à importer",
+            "Une bibliothèque de composants documentée",
+            "Des règles pour ajouter de nouvelles pièces"
+          ],
+          "beforeText": "Cinquante bleus presque identiques",
+          "afterText": "Un jeton, tous les écrans alignés"
+        },
+        "art": {
+          "name": "Art et graphisme",
+          "line": "Illustrations, graphismes sociaux, publicitaires et imprimés, sur gabarits pour que la centième pièce ressemble à la première.",
+          "get": [
+            "Illustrations et jeux d’icônes",
+            "Visuels sociaux, publicitaires et bannières",
+            "Pièces imprimées et événementielles"
+          ],
+          "keep": [
+            "Des gabarits à remplir pour chaque format",
+            "Les illustrations en fichiers modifiables",
+            "Des préréglages de taille et d’export"
+          ],
+          "beforeText": "Chaque visuel part de zéro",
+          "afterText": "Des gabarits que tous peuvent remplir"
+        }
+      }
+    },
+    "demo": {
+      "eyebrow": "Essayez",
+      "title": "Un système, toutes les ressources",
+      "subtitle": "Changez un jeton et regardez chaque pièce suivre. C’est ainsi qu’un système de design réduit le coût de chaque nouvelle ressource.",
+      "colour": "Couleur d’accent",
+      "type": "Police",
+      "corners": "Coins",
+      "colours": {
+        "navy": "Marine clair",
+        "cyan": "Cyan",
+        "amber": "Ambre",
+        "mint": "Menthe"
+      },
+      "types": {
+        "sora": "Sora",
+        "inter": "Inter",
+        "serif": "Serif"
+      },
+      "cornerNames": {
+        "round": "Ronds",
+        "soft": "Doux",
+        "square": "Carrés"
+      },
+      "updated": "1 changement, 4 ressources à jour",
+      "assetButton": "Bouton",
+      "assetCard": "Carte",
+      "assetSocial": "Publication sociale",
+      "assetApp": "Écran d’application",
+      "buttonPrimary": "Commencer",
+      "buttonSecondary": "En savoir plus",
+      "cardKicker": "Rapport hebdomadaire",
+      "cardTitle": "Les commandes montent",
+      "cardText": "Rien n’a été ressaisi cette semaine.",
+      "cardAction": "Ouvrir le rapport",
+      "socialKicker": "Nouveau",
+      "socialTitle": "Même marque, chaque publication.",
+      "socialHandle": "@votremarque",
+      "appTitle": "Aujourd’hui",
+      "appItem1": "Commandes synchronisées",
+      "appItem2": "Factures envoyées",
+      "appItem3": "Stock vérifié",
+      "appAction": "Vérifier"
+    },
+    "proof": {
+      "title": "Du vrai travail, pas de maquettes",
+      "subtitle": "Aucun client inventé. Voici le design que nous faisons tourner nous-mêmes, en public.",
+      "siteTitle": "Ce site repose sur un seul système de design",
+      "siteText": "Chaque page puise dans un seul ensemble de jetons. Les nouvelles pages s’assemblent au lieu d’être redessinées, en trois langues.",
+      "tokensLabel": "Jetons en direct",
+      "tokenGround": "Fond",
+      "tokenSurface": "Surface",
+      "tokenText": "Texte",
+      "tokenAccent": "Accent",
+      "tokenBand": "Bande",
+      "gamesTitle": "Dix jeux mobiles, une seule trousse",
+      "gamesText": "Nous avons conçu et publié dix jeux sur une trousse commune de formes, de mouvements et de règles de couleur.",
+      "gamesLink": "Voir les jeux"
+    },
+    "process": {
+      "title": "Comment ça marche",
+      "subtitle": "Quatre étapes, d’un premier appel à un système que votre équipe fait tourner sans nous.",
+      "pathLabel": "Quatre étapes de l’appel découverte à la remise",
+      "steps": [
+        {
+          "title": "Appel découverte",
+          "text": "30 minutes avec Ray. Vous montrez ce qui existe et où le design vous ralentit."
+        },
+        {
+          "title": "Brief de design",
+          "text": "Un brief écrit : quoi construire d’abord, quoi garder et quoi retirer."
+        },
+        {
+          "title": "Construction du système",
+          "text": "Jetons, composants et gabarits, construits et testés sur vos vraies pages et ressources."
+        },
+        {
+          "title": "Remise et soutien",
+          "text": "Fichiers, consignes et une présentation pour votre équipe, avec du soutien au besoin."
+        }
+      ]
+    },
+    "keep": {
+      "title": "Ce que vous gardez",
+      "subtitle": "Tout vous appartient à la remise. Aucune dépendance, aucune licence à louer.",
+      "items": [
+        {
+          "title": "Fichiers sources",
+          "text": "Chaque design en fichiers modifiables que votre équipe peut ouvrir et changer."
+        },
+        {
+          "title": "Jetons de design",
+          "text": "Couleur, typographie et espacement en fichiers que vos développeurs importent."
+        },
+        {
+          "title": "Bibliothèque de composants",
+          "text": "Les boutons, cartes et mises en page qui servent de base à chaque nouvelle pièce."
+        },
+        {
+          "title": "Consignes",
+          "text": "Des règles en langage clair pour que les nouveaux venus réussissent du premier coup."
+        }
+      ]
+    },
+    "faq": {
+      "title": "Questions",
+      "items": [
+        {
+          "q": "Pouvez-vous travailler avec notre marque actuelle ?",
+          "a": "Oui. La plupart des projets partent de ce que vous avez. Nous gardons ce qui fonctionne et le transformons en règles et en gabarits."
+        },
+        {
+          "q": "Qui fait le travail ?",
+          "a": "Ray Rasouli dirige chaque projet et reste votre contact de l’appel découverte jusqu’à la remise."
+        },
+        {
+          "q": "Faut-il des développeurs pour utiliser ce que vous livrez ?",
+          "a": "Pas pour les fichiers de marque et les gabarits. Pour les interfaces web et mobiles, les développeurs reçoivent des jetons et des composants clairs."
+        },
+        {
+          "q": "Est-ce que tout nous appartient ?",
+          "a": "Oui. Fichiers sources, jetons, composants et consignes sont à vous à la remise."
+        },
+        {
+          "q": "L’IA peut-elle aider à créer des variantes ?",
+          "a": "Oui, dans les règles de votre système. Une personne vérifie tout avant la mise en ligne."
+        },
+        {
+          "q": "Travaillez-vous avec des acheteurs publics ?",
+          "a": "Oui. L’art et le graphisme ainsi que le développement d’interfaces graphiques font partie des catégories sur lesquelles nous soumissionnons."
+        }
+      ]
+    }
+  },
   "publicSector": {
     "meta": {
       "title": "Secteur public : services TI, ERP et créatifs pour les acheteurs publics",
