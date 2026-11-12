@@ -314,6 +314,9 @@ export default function DesignHero() {
           </form>
           <p className="px-5 pb-4 text-xs text-neutral-400">{t('assistant.note')}</p>
         </div>
+        <div className="mx-auto w-full max-w-[340px] sm:hidden">
+          <HeroArt label={t('hero.artLabel')} />
+        </div>
       </div>
     </section>
   )

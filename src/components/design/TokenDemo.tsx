@@ -174,7 +174,7 @@ export default function TokenDemo() {
 
               <div key={`s${pulse}`} className={`${asset} tk-pop`} style={{ borderRadius: 'var(--tk-radius)', animationDelay: '120ms' }}>
                 {tag(t('assetSocial'))}
-                <div className="tk-fill relative flex aspect-square flex-col justify-between p-3.5 lg:aspect-[16/10] text-[#0A0A0A] sm:p-5" style={{ borderRadius: 'var(--tk-radius-sm)' }}>
+                <div className="tk-fill relative flex min-h-[150px] flex-1 flex-col justify-between p-3.5 sm:aspect-square sm:flex-none lg:aspect-[16/10] text-[#0A0A0A] sm:p-5" style={{ borderRadius: 'var(--tk-radius-sm)' }}>
                   <span className="self-start rounded-full bg-[#0A0A0A] px-2.5 py-1 text-[10px] font-semibold text-white">{t('socialKicker')}</span>
                   <p className="text-lg leading-[1.05] font-bold sm:text-3xl" style={{ fontFamily: 'var(--tk-font)' }}>
                     {t('socialTitle')}
