@@ -4,6 +4,7 @@ import { getAllSolutionSlugs } from '@/src/data/solutions'
 import { getAllSupportSlugs } from '@/src/data/support'
 import { getAllInsightSlugs } from '@/src/data/insights'
 import { getAllGameSlugs } from '@/src/data/games'
+import { getAllCaseStudies } from '@/src/data/work'
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const baseUrl = process.env.NEXT_PUBLIC_SITE_URL ?? siteConfig.url
@@ -16,7 +17,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
   const entries: MetadataRoute.Sitemap = []
 
   // Static pages per locale
-  const staticPaths = ['', '/solutions', '/support', '/insights', '/about', '/contact', '/games']
+  const staticPaths = ['', '/solutions', '/support', '/insights', '/about', '/contact', '/games', '/work']
 
   for (const locale of locales) {
     for (const path of staticPaths) {
@@ -73,6 +74,20 @@ export default function sitemap(): MetadataRoute.Sitemap {
         alternates: {
           languages: Object.fromEntries(
             locales.map((l) => [l, `${baseUrl}/${l}/games/${slug}`])
+          ),
+        },
+      })
+    }
+
+    for (const cs of getAllCaseStudies()) {
+      entries.push({
+        url: `${baseUrl}/${locale}/work/${cs.slug}`,
+        lastModified: new Date(),
+        changeFrequency: 'monthly',
+        priority: 0.7,
+        alternates: {
+          languages: Object.fromEntries(
+            locales.map((l) => [l, `${baseUrl}/${l}/work/${cs.slug}`])
           ),
         },
       })
