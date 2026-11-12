@@ -6,13 +6,14 @@ export default function FounderBand() {
   const t = useTranslations('founder')
   return (
     <section className="w-full bg-white py-24 dark:bg-primary" aria-labelledby="founder-name">
-      <div className="mx-auto grid max-w-6xl items-center gap-10 px-4 sm:px-6 md:grid-cols-[240px_1fr]">
+      <div className="mx-auto grid max-w-6xl items-center gap-10 px-4 sm:px-6 md:grid-cols-[320px_1fr]">
         <Image
-          src={siteConfig.team.ray.photo}
+          src={siteConfig.team.ray.portrait}
           alt={t('photoAlt')}
-          width={280}
-          height={320}
-          className="h-72 w-full max-w-[280px] rounded-3xl object-cover md:h-80"
+          width={833}
+          height={1200}
+          sizes="(min-width: 768px) 320px, 260px"
+          className="mx-auto h-auto w-full max-w-[260px] md:max-w-[320px]"
         />
         <div>
           <p className="text-sm font-semibold text-text-muted dark:text-neutral-400">{t('principleLabel')}</p>

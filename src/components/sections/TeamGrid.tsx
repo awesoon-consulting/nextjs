@@ -12,7 +12,7 @@ interface TeamMember {
 }
 
 const team: TeamMember[] = [
-  { name: 'Ray Rasouli', key: 'ray', photo: siteConfig.team.ray.photo, linkedin: siteConfig.team.ray.linkedin },
+  { name: 'Ray Rasouli', key: 'ray', photo: siteConfig.team.ray.portrait, linkedin: siteConfig.team.ray.linkedin },
 ]
 
 export default function TeamGrid() {
@@ -37,16 +37,15 @@ export default function TeamGrid() {
         <div className="grid grid-cols-1 gap-8 max-w-md mx-auto">
           {team.map((member, idx) => (
             <AnimateIn key={member.name} variant="slide-up" delay={idx * 90} threshold={0.04}>
+              <Image
+                src={member.photo}
+                alt={t('photoAlt')}
+                width={833}
+                height={1200}
+                sizes="300px"
+                className="mx-auto mb-2 h-auto w-full max-w-[300px]"
+              />
               <Card variant="bordered" className="text-center">
-                <div className="w-24 h-24 rounded-full overflow-hidden border-2 border-secondary/20 mx-auto mb-4">
-                  <Image
-                    src={member.photo}
-                    alt={member.name}
-                    width={96}
-                    height={96}
-                    className="object-cover w-full h-full"
-                  />
-                </div>
                 <h3 className="font-heading font-semibold text-xl text-text-primary mb-1">
                   {member.name}
                 </h3>
