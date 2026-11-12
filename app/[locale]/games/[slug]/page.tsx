@@ -235,11 +235,11 @@ export default async function GamePage({ params }: GamePageProps) {
             </dl>
             <p className="mt-6 text-sm text-text-muted">
               {t('privacyNote')}{' '}
-              <Link href={`/${locale}/games/privacy`} className="underline">
+              <Link href={`/${locale}/games/privacy`} className="text-[#7D9CCB] underline underline-offset-4 hover:text-[#FAFAFA]">
                 {t('privacyLink')}
               </Link>{' '}
               <span aria-hidden="true">·</span>{' '}
-              <Link href={`/${locale}/games/support`} className="underline">
+              <Link href={`/${locale}/games/support`} className="text-[#7D9CCB] underline underline-offset-4 hover:text-[#FAFAFA]">
                 {t('supportLink')}
               </Link>
             </p>

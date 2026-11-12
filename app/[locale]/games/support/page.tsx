@@ -52,7 +52,7 @@ export default async function GamesSupportPage({
             </h2>
             <p>
               {t('contactB')}{' '}
-              <a href={`mailto:${siteConfig.contact.gamesEmail}`} className="underline">
+              <a href={`mailto:${siteConfig.contact.gamesEmail}`} className="text-[#7D9CCB] underline underline-offset-4 hover:text-[#FAFAFA]">
                 {siteConfig.contact.gamesEmail}
               </a>
             </p>
@@ -83,7 +83,7 @@ export default async function GamesSupportPage({
               {t('privacyH')}
             </h2>
             <p>
-              <Link href={`/${locale}/games/privacy`} className="underline">
+              <Link href={`/${locale}/games/privacy`} className="text-[#7D9CCB] underline underline-offset-4 hover:text-[#FAFAFA]">
                 {t('privacyLink')}
               </Link>
             </p>
@@ -97,7 +97,7 @@ export default async function GamesSupportPage({
               {t('termsH')}
             </h2>
             <p>
-              <Link href={`/${locale}/games/terms`} className="underline">
+              <Link href={`/${locale}/games/terms`} className="text-[#7D9CCB] underline underline-offset-4 hover:text-[#FAFAFA]">
                 {t('termsLink')}
               </Link>
             </p>

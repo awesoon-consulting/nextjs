@@ -48,7 +48,7 @@ export default function FloatingCTA() {
       <Link
         href={`/${locale}/contact`}
         tabIndex={visible ? 0 : -1}
-        className="inline-flex h-12 items-center gap-2 rounded-full bg-[#0A0A0A] px-6 text-sm font-semibold whitespace-nowrap text-white shadow-[0_12px_32px_-12px_rgba(10,10,10,0.45)]"
+        className="inline-flex h-12 items-center gap-2 rounded-full bg-white px-6 text-sm font-semibold whitespace-nowrap text-[#0A0A0A] shadow-[0_12px_32px_-12px_rgba(0,0,0,0.6)] transition-colors hover:bg-[#E5E5E5]"
       >
         {t('pill')} <span aria-hidden="true">→</span>
       </Link>

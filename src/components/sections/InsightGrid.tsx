@@ -55,7 +55,7 @@ export default function InsightGrid({ limit }: InsightGridProps) {
                 <Card
                   variant="bordered"
                   hover
-                  className="h-full flex flex-col group-hover:border-secondary/40 transition-colors"
+                  className="h-full flex flex-col group-hover:border-white/[0.16] group-hover:bg-[#151C2B] transition-colors"
                 >
                   <div className="flex items-center justify-between mb-3">
                     <Badge variant="default" size="sm">
@@ -63,7 +63,7 @@ export default function InsightGrid({ limit }: InsightGridProps) {
                     </Badge>
                     <span className="text-xs text-text-muted">{tCommon('minRead', { time: post.readingTime })}</span>
                   </div>
-                  <h3 className="font-heading font-semibold text-xl text-text-primary mb-3 leading-snug group-hover:text-secondary transition-colors">
+                  <h3 className="font-heading font-semibold text-xl text-text-primary mb-3 leading-snug transition-colors">
                     {post.title}
                   </h3>
                   <p className="text-sm text-text-secondary leading-relaxed flex-1">{post.excerpt}</p>

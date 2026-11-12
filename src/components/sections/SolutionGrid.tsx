@@ -52,13 +52,13 @@ export default function SolutionGrid() {
                   <Card
                     variant="bordered"
                     hover
-                    className="flex h-full flex-col group-hover:border-secondary/40 transition-colors"
+                    className="flex h-full flex-col group-hover:border-white/[0.16] group-hover:bg-[#151C2B] transition-colors"
                   >
                     <div className="flex-1">
                       <Badge variant="default" size="sm" className="mb-3">
                         {category}
                       </Badge>
-                      <h3 className="font-heading font-semibold text-lg text-text-primary mb-2 group-hover:text-secondary transition-colors leading-snug">
+                      <h3 className="font-heading font-semibold text-lg text-text-primary mb-2 transition-colors leading-snug">
                         {t(`solutions.cards.${key}.title`)}
                       </h3>
                       <p className="text-sm text-text-secondary leading-relaxed">

@@ -40,7 +40,7 @@ export default function ServiceTabs() {
               className={`flex min-h-11 flex-shrink-0 items-center gap-2 rounded-full border py-1 pr-4 pl-1 text-sm font-medium whitespace-nowrap transition-colors ${
                 i === active
                   ? 'border-primary bg-primary text-white dark:border-white dark:bg-white dark:text-primary'
-                  : 'border-neutral-200 text-text-secondary hover:text-text-primary dark:border-white/10 dark:text-neutral-300 dark:hover:text-white'
+                  : 'border-neutral-200 text-text-secondary hover:text-text-primary dark:border-white/10 dark:text-neutral-300 dark:hover:bg-white/[0.08] dark:hover:text-white'
               }`}
             >
               <ServiceIcon id={s.key} className={`!h-8 !w-8 !rounded-full ${i === active ? 'dark:!bg-primary/10 dark:!text-primary' : ''}`} />
@@ -63,7 +63,7 @@ export default function ServiceTabs() {
                   aria-pressed={clean === v}
                   onClick={() => setClean(v)}
                   className={`rounded-full px-4 py-1.5 text-sm font-medium transition-colors ${
-                    clean === v ? 'bg-primary text-white dark:bg-white dark:text-primary' : 'text-text-secondary dark:text-neutral-300'
+                    clean === v ? 'bg-primary text-white dark:bg-white dark:text-primary' : 'text-text-secondary dark:text-neutral-300 dark:hover:bg-white/[0.08] dark:hover:text-white'
                   }`}
                 >
                   {t(v ? 'serviceLines.toggleAfter' : 'serviceLines.toggleBefore')}

@@ -295,7 +295,7 @@ export default function MultiStepForm() {
               className={[
                 'text-xs font-medium transition-colors',
                 s === step
-                  ? 'text-secondary'
+                  ? 'text-secondary dark:text-[#7D9CCB]'
                   : s < step
                   ? 'text-success'
                   : 'text-text-muted',

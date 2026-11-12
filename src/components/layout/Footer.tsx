@@ -11,7 +11,7 @@ const solutionLabel = new Map<string, string>(
 
 const heading = 'mb-4 text-sm font-semibold text-text-primary dark:text-white'
 const link =
-  'rounded text-sm text-text-secondary transition-colors hover:text-text-primary focus:outline-none focus-visible:ring-2 focus-visible:ring-accent dark:text-neutral-400 dark:hover:text-white'
+  'rounded text-sm text-text-secondary transition-colors hover:text-text-primary focus:outline-none focus-visible:ring-2 focus-visible:ring-accent underline-offset-4 hover:underline dark:text-neutral-400 dark:hover:text-[#FAFAFA]'
 
 const FOOTER_COLUMNS = [['consultation'], ['programming', 'design'], ['automation'], ['advertising']] as const
 
@@ -40,7 +40,7 @@ function Group({ title, titleHref, items }: { title: string; titleHref?: string;
         {list}
       </div>
       <details className="group border-b border-neutral-200 py-3 sm:hidden dark:border-white/10">
-        <summary className="flex cursor-pointer list-none items-center justify-between font-heading text-sm font-semibold text-text-primary dark:text-white">
+        <summary className="flex cursor-pointer list-none items-center justify-between font-heading text-sm font-semibold text-text-primary underline-offset-4 hover:underline dark:text-white">
           {title}
           <svg className="h-4 w-4 transition-transform group-open:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
@@ -109,7 +109,7 @@ export default function Footer() {
             </div>
           ))}
         </div>
-        <Link href={localHref('/solutions')} className="mt-8 inline-block rounded-full border border-neutral-300 px-5 py-2 text-sm font-semibold text-text-primary dark:border-white/20 dark:text-white">
+        <Link href={localHref('/solutions')} className="mt-8 inline-block rounded-full border border-neutral-300 px-5 py-2 text-sm font-semibold text-text-primary transition-colors dark:border-white/20 dark:text-white dark:hover:bg-white/[0.08] dark:hover:text-white">
           {t('nav.allSolutions')}
         </Link>
       </div>

@@ -16,7 +16,7 @@ const solutionLabel = new Map<string, string>(
 const MEGA_COLUMNS = [['consultation'], ['programming'], ['automation'], ['design', 'advertising']] as const
 
 const megaLink =
-  'text-sm text-text-secondary transition-colors hover:text-text-primary dark:text-neutral-300 dark:hover:text-white'
+  'text-sm text-text-secondary transition-colors hover:text-text-primary dark:text-neutral-300 dark:hover:text-[#FAFAFA]'
 
 function Chevron({ open }: { open: boolean }) {
   return (
@@ -96,7 +96,7 @@ export default function Navbar() {
   const iconBtn =
     'rounded-full p-2 text-text-muted transition-colors focus:outline-none focus-visible:ring-2 focus-visible:ring-accent hover:bg-neutral-100 hover:text-text-primary dark:text-neutral-400 dark:hover:bg-white/10 dark:hover:text-white'
   const pill =
-    'inline-flex items-center justify-center rounded-full bg-primary px-5 py-2.5 text-sm font-semibold text-white transition-colors hover:bg-secondary focus:outline-none focus-visible:ring-2 focus-visible:ring-accent focus-visible:ring-offset-2 dark:bg-white dark:text-primary dark:hover:bg-neutral-200'
+    'inline-flex items-center justify-center rounded-full bg-primary px-5 py-2.5 text-sm font-semibold text-white transition-colors hover:bg-secondary focus:outline-none focus-visible:ring-2 focus-visible:ring-accent focus-visible:ring-offset-2 dark:bg-white dark:text-primary dark:hover:bg-[#E5E5E5]'
 
   return (
     <>
@@ -180,7 +180,7 @@ export default function Navbar() {
                       </div>
                       <Link
                         href={localHref('/contact')}
-                        className="mt-6 inline-flex w-fit items-center gap-2 rounded-full bg-white px-5 py-2.5 text-sm font-semibold whitespace-nowrap text-[#0A0A0A] hover:bg-neutral-100"
+                        className="mt-6 inline-flex w-fit items-center gap-2 rounded-full bg-white px-5 py-2.5 text-sm font-semibold whitespace-nowrap text-[#0A0A0A] transition-colors hover:bg-[#E5E5E5]"
                       >
                         {t('nav.healthCheckCta')} <span aria-hidden="true">→</span>
                       </Link>
@@ -197,7 +197,7 @@ export default function Navbar() {
                     </div>
                     <Link
                       href={localHref('/solutions')}
-                      className="rounded-full border border-neutral-300 px-5 py-2 text-sm font-semibold text-text-primary hover:border-primary dark:border-white/20 dark:text-white dark:hover:border-white"
+                      className="rounded-full border border-neutral-300 px-5 py-2 text-sm font-semibold text-text-primary transition-colors dark:border-white/20 dark:text-white dark:hover:bg-white/[0.08] dark:hover:text-white"
                     >
                       {t('nav.allSolutions')}
                     </Link>
@@ -267,7 +267,7 @@ export default function Navbar() {
             <p className="px-1 pb-2 text-sm font-semibold text-text-muted dark:text-neutral-400">{t('nav.services')}</p>
             {siteConfig.services.map((s) => (
               <details key={s.key} className="group border-b border-neutral-200 dark:border-white/10">
-                <summary className="flex cursor-pointer list-none items-center justify-between py-3 font-heading text-base font-semibold text-text-primary dark:text-white">
+                <summary className="flex cursor-pointer list-none items-center justify-between py-3 font-heading text-base font-semibold text-text-primary underline-offset-4 hover:underline dark:text-white">
                   {t(`serviceLines.${s.key}.name`)}
                   <svg className="h-4 w-4 transition-transform group-open:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
@@ -297,7 +297,7 @@ export default function Navbar() {
               </details>
             ))}
             <details className="group border-b border-neutral-200 dark:border-white/10">
-              <summary className="flex cursor-pointer list-none items-center justify-between py-3 font-heading text-base font-semibold text-text-primary dark:text-white">
+              <summary className="flex cursor-pointer list-none items-center justify-between py-3 font-heading text-base font-semibold text-text-primary underline-offset-4 hover:underline dark:text-white">
                 {t('nav.supportHeading')}
                 <svg className="h-4 w-4 transition-transform group-open:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />

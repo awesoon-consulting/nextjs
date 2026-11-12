@@ -25,7 +25,7 @@ export default function FounderBand() {
             href={siteConfig.social.linkedin}
             target="_blank"
             rel="noopener noreferrer"
-            className="mt-5 inline-flex rounded-full border border-neutral-300 px-5 py-2.5 text-sm font-semibold text-text-primary hover:border-primary dark:border-white/20 dark:text-white"
+            className="mt-5 inline-flex rounded-full border border-neutral-300 px-5 py-2.5 text-sm font-semibold text-text-primary transition-colors dark:border-white/20 dark:text-white dark:hover:bg-white/[0.08] dark:hover:text-white"
           >
             {t('linkedin')}
           </a>

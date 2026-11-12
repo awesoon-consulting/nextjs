@@ -81,7 +81,7 @@ export default function PlatformStack({
                   href={activePlatform.url}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="inline-flex items-center gap-1 rounded-full bg-accent/10 px-2.5 py-1 text-[11px] font-semibold text-accent hover:bg-accent hover:text-white dark:bg-accent/20 dark:hover:bg-accent dark:hover:text-primary transition-all"
+                  className="inline-flex items-center gap-1 rounded-full bg-accent/10 px-2.5 py-1 text-[11px] font-semibold text-accent hover:bg-accent hover:text-white dark:bg-accent/20 dark:hover:bg-white/[0.08] dark:hover:text-white transition-all"
                 >
                   Visit site
                   <svg className="w-2.5 h-2.5" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
@@ -128,7 +128,7 @@ export default function PlatformStack({
               ].join(' ')}
             >
               {/* White tile for logo so brand colors always have contrast */}
-              <div className="pointer-events-none flex items-center justify-center h-12 w-20 rounded-lg bg-white border border-neutral-200 shadow-sm">
+              <div className="pointer-events-none flex items-center justify-center h-12 w-20 rounded-lg bg-white border border-white/[0.08] shadow-sm">
                 {/* eslint-disable-next-line @next/next/no-img-element */}
                 <img
                   src={`/images/platforms/${platform.slug}.svg`}

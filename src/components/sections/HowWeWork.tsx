@@ -112,7 +112,7 @@ export default function HowWeWork() {
                 )}
                 {i === 3 && (
                   <details className="group">
-                    <summary className="flex cursor-pointer list-none items-center justify-between text-sm font-semibold text-text-primary dark:text-white">
+                    <summary className="flex cursor-pointer list-none items-center justify-between text-sm font-semibold text-text-primary underline-offset-4 hover:underline dark:text-white">
                       {t('howWeWork.supportToggle')}
                       <svg className="h-4 w-4 transition-transform group-open:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
@@ -138,7 +138,7 @@ export default function HowWeWork() {
         <div className="mt-10 flex justify-center">
           <Link
             href={`/${locale}/contact`}
-            className="inline-flex rounded-full bg-primary px-6 py-3 text-sm font-semibold text-white hover:bg-secondary dark:bg-white dark:text-primary"
+            className="inline-flex rounded-full bg-primary px-6 py-3 text-sm font-semibold text-white hover:bg-secondary dark:bg-white dark:text-primary dark:hover:bg-[#E5E5E5]"
           >
             {t('closing.cta')}
           </Link>

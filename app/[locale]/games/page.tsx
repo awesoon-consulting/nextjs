@@ -61,7 +61,7 @@ export default async function GamesPage({ params }: GamesPageProps) {
               <li key={game.slug}>
                 <Link
                   href={`/${locale}/games/${game.slug}`}
-                  className="group flex gap-5 rounded-xl border border-neutral-200 bg-white p-5 transition-colors hover:border-accent focus:outline-none focus-visible:ring-2 focus-visible:ring-accent dark:border-neutral-800 dark:bg-secondary/20"
+                  className="group flex gap-5 rounded-xl border border-neutral-200 bg-white p-5 transition-colors focus:outline-none dark:border-white/[0.08] dark:bg-[#111827] dark:hover:border-white/[0.16] dark:hover:bg-[#151C2B]"
                 >
                   <Image
                     src={game.icon}
@@ -72,7 +72,7 @@ export default async function GamesPage({ params }: GamesPageProps) {
                     style={{ height: 72, width: 72 }}
                   />
                   <div className="min-w-0">
-                    <h2 className="font-heading font-bold text-xl text-text-primary group-hover:text-accent transition-colors">
+                    <h2 className="font-heading font-bold text-xl text-text-primary">
                       {game.name}
                     </h2>
                     <p className="text-sm text-text-secondary mt-1">{game.tagline}</p>
@@ -91,11 +91,11 @@ export default async function GamesPage({ params }: GamesPageProps) {
 
           <p className="mt-10 text-sm text-text-muted">
             {t('privacyNote')}{' '}
-            <Link href={`/${locale}/games/privacy`} className="underline">
+            <Link href={`/${locale}/games/privacy`} className="text-[#7D9CCB] underline underline-offset-4 hover:text-[#FAFAFA]">
               {t('privacyLink')}
             </Link>{' '}
             <span aria-hidden="true">·</span>{' '}
-            <Link href={`/${locale}/games/support`} className="underline">
+            <Link href={`/${locale}/games/support`} className="text-[#7D9CCB] underline underline-offset-4 hover:text-[#FAFAFA]">
               {t('supportLink')}
             </Link>
           </p>
