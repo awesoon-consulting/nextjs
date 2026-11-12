@@ -1500,5 +1500,257 @@
       "text": "Book 30 minutes. You leave knowing whether we fit your category and what we would send with a bid.",
       "cta": "Book a 30-minute discovery call"
     }
+  },
+  "advertisingPage": {
+    "meta": {
+      "title": "Advertising campaigns, production and banners run as a system",
+      "description": "Awesoon plans, makes and reports your advertising as one system: creative templates, automated variant production and reporting that updates itself. Vancouver, BC."
+    },
+    "hero": {
+      "eyebrow": "Advertising",
+      "title": "Advertising that runs as a system, not a scramble.",
+      "subtitle": "We plan your campaigns, build the creative templates, produce every size and format from one brief, and set up reporting that updates itself. Your team launches more with the same people.",
+      "chatLabel": "Campaign assistant",
+      "chatNote": "Scripted helper. A person reads every brief.",
+      "greeting": "What do you want your ads to do?",
+      "chips": {
+        "leads": "Bring in more leads",
+        "launch": "Launch something new",
+        "pipeline": "Fill a sales pipeline",
+        "government": "Reach government buyers"
+      },
+      "keywords": {
+        "leads": "lead, leads, enquir, inquir, calls, sign up, signup, form",
+        "launch": "launch, new product, release, open, opening, event",
+        "pipeline": "pipeline, sales, b2b, accounts, deals, prospects",
+        "government": "government, public sector, municipal, city, province, federal, agency"
+      },
+      "open": {
+        "leads": "Good goal. For leads we tie every ad to one clear form or call, so each result is counted.",
+        "launch": "Good goal. For a launch we build one creative set first, then produce every size from it, so the launch looks the same everywhere.",
+        "pipeline": "Good goal. For a pipeline we match ads to the stage a buyer is in, and report on the deals they start, not just clicks.",
+        "government": "Good goal. Public sector outreach is about being findable and clear, with plain language and accessible creative.",
+        "generic": "Thanks, that helps."
+      },
+      "q1": "Who should see these ads?",
+      "audience": {
+        "local": "Local customers",
+        "business": "Other businesses",
+        "consumers": "Shoppers across Canada",
+        "public": "Public sector teams"
+      },
+      "q2": "What do you run today?",
+      "today": {
+        "nothing": "Nothing yet",
+        "some": "A few ads, by hand",
+        "agency": "An agency or freelancer"
+      },
+      "briefIntro": "Here is a first campaign brief. Ray reads it before your call.",
+      "briefLabel": "Your campaign brief",
+      "goalLabel": "Goal",
+      "audienceLabel": "Who it is for",
+      "todayLabel": "Today",
+      "systemLabel": "Where we would start",
+      "system": {
+        "leads": "One lead form, a template set in every size and a weekly leads report.",
+        "launch": "A launch creative set, every size produced from it and a launch week report.",
+        "pipeline": "Ads by buyer stage, a template set and a report that follows deals.",
+        "government": "Plain, accessible creative, a template set and a reach report.",
+        "generic": "A short discovery call to pick the first system to set up."
+      },
+      "talkToRay": "Talk it through with Ray",
+      "consentLabel": "Send this brief to Ray with my booking. It is used only to prepare the call.",
+      "bookLabel": "30 minutes with Ray Rasouli",
+      "placeholder": "Type your answer",
+      "send": "Send",
+      "typing": "The assistant is typing",
+      "restart": "Start again",
+      "seeDemo": "See one brief become every format",
+      "trust": [
+        "A person approves every ad before it runs",
+        "Tracking only with consent",
+        "You own every file and account"
+      ]
+    },
+    "services": {
+      "title": "Four services, one system behind them",
+      "subtitle": "Pick where you are. Each one plugs into the same templates and the same reporting.",
+      "includesLabel": "What it includes",
+      "systemLabel": "The system part",
+      "tabs": {
+        "campaigns": {
+          "name": "Advertising campaigns",
+          "line": "Campaigns planned once, then repeated and improved, not rebuilt from zero each time.",
+          "includes": [
+            "Goal, audience and channel plan",
+            "Search, social and display set up in your accounts",
+            "A launch checklist your team can reuse"
+          ],
+          "system": "A campaign playbook: the next launch is a copy and an edit."
+        },
+        "production": {
+          "name": "Advertising production",
+          "line": "Ad copy, images and layouts made inside your brand rules, ready for every placement.",
+          "includes": [
+            "Creative templates for each channel",
+            "Copy and image variants to test",
+            "A person reviews every variant"
+          ],
+          "system": "Automated variant production: one approved idea becomes every version you need."
+        },
+        "banner": {
+          "name": "Banner advertising",
+          "line": "Display banners in every standard size, sharp and on brand, from one master design.",
+          "includes": [
+            "The common display sizes",
+            "Static and lightly animated versions",
+            "Files checked against each network's rules"
+          ],
+          "system": "One master design produces every size, so a change happens once."
+        },
+        "playbooks": {
+          "name": "Brand and advertising playbooks",
+          "line": "Your brand rules and campaign steps written down, so anyone on your team can run the next one.",
+          "includes": [
+            "Voice, colour, type and logo rules for ads",
+            "Do and avoid examples",
+            "Step by step campaign guides"
+          ],
+          "system": "A playbook that feeds the templates, so the rules are built in, not just written."
+        }
+      },
+      "comingNextLabel": "Coming next",
+      "comingNext": "Social media automation: scheduled posts built from the same templates."
+    },
+    "demo": {
+      "eyebrow": "Try it",
+      "title": "One brief, every format",
+      "subtitle": "Type a headline and pick an image. Watch the banners, the social post and the search ad follow along. This is how our templates work.",
+      "headlineLabel": "Headline",
+      "headline": "Spring service, booked in two minutes",
+      "ctaLabel": "Button text",
+      "cta": "Book now",
+      "imageLabel": "Image",
+      "images": {
+        "a": "Blue grid",
+        "b": "Warm sun",
+        "c": "Night city"
+      },
+      "brand": "Your brand",
+      "outputsLabel": "Formats produced",
+      "socialLabel": "Social post",
+      "searchLabel": "Search ad",
+      "sponsored": "Sponsored",
+      "searchUrl": "yourbrand.com",
+      "searchDesc": "Pick a time that suits you. Real people, clear prices, no surprises.",
+      "likes": "Like",
+      "note": "Preview only. Real campaigns use your brand kit, and a person approves every ad before it runs.",
+      "count": "{count} formats from one brief"
+    },
+    "reporting": {
+      "eyebrow": "Reporting",
+      "title": "Reporting that updates itself",
+      "subtitle": "Spend, leads and results pulled together on a schedule, with a plain summary on top. Your team reads results instead of copying numbers.",
+      "sampleBadge": "Sample data",
+      "sampleNote": "Sample numbers for illustration only. Not a client result.",
+      "updated": "Updates every Monday at 8:00",
+      "kpis": {
+        "spend": "Spend",
+        "leads": "Leads",
+        "cost": "Cost per lead",
+        "rate": "Click rate"
+      },
+      "chartLabel": "Leads per week, sample data",
+      "weeks": "Weeks 1 to 8",
+      "summaryLabel": "This week in plain words",
+      "summary": "Leads rose for the third week. The search ad with the price in the headline did best, so its budget moved up. Nothing needs your approval today.",
+      "points": [
+        "Pulls from your ad accounts and site analytics",
+        "Counts only what visitors agreed to share",
+        "A short summary written for people, not analysts"
+      ]
+    },
+    "how": {
+      "title": "How it works",
+      "subtitle": "Four steps. Start with a call, keep the system at the end.",
+      "pathLabel": "Four connected steps, from brief to reporting",
+      "steps": [
+        {
+          "title": "Brief",
+          "text": "A 30-minute call with Ray. We agree the goal, the audience and what success looks like."
+        },
+        {
+          "title": "Build the system",
+          "text": "Templates, brand rules, tracking with consent and the report, set up in your accounts."
+        },
+        {
+          "title": "Launch and produce",
+          "text": "Variants made from the templates, approved by a person, then launched."
+        },
+        {
+          "title": "Report and improve",
+          "text": "The report updates on its own. We change one thing at a time based on what it shows."
+        }
+      ]
+    },
+    "keep": {
+      "title": "What you keep",
+      "subtitle": "Everything we build is yours, during and after.",
+      "items": [
+        {
+          "title": "Ad accounts in your name",
+          "text": "Search, social and display accounts stay yours, with your billing."
+        },
+        {
+          "title": "Creative templates",
+          "text": "The master files and every size, ready for your next campaign."
+        },
+        {
+          "title": "Your playbook",
+          "text": "Brand rules and campaign steps your team can follow without us."
+        },
+        {
+          "title": "The reporting setup",
+          "text": "The dashboard and its data connections keep running."
+        },
+        {
+          "title": "Source files",
+          "text": "Every image, layout and line of copy, in formats your team can open."
+        }
+      ]
+    },
+    "faq": {
+      "title": "Questions people ask",
+      "items": [
+        {
+          "q": "Do you guarantee results?",
+          "a": "No. Nobody honest can promise a number before seeing your market. We promise a clear plan, careful work and reporting that shows exactly what happened."
+        },
+        {
+          "q": "How much does it cost?",
+          "a": "It depends on the channels, the number of formats and how much of the work you want us to do. After the discovery call you get a written scope and price before anything starts."
+        },
+        {
+          "q": "Do you use AI to make the ads?",
+          "a": "Templates and automation produce variants and assemble reports. A person approves every ad and every claim before it runs."
+        },
+        {
+          "q": "Which channels do you work with?",
+          "a": "Search, paid social and display banners. Which ones fit depends on where your customers are; we pick together on the call."
+        },
+        {
+          "q": "How do you handle tracking and privacy?",
+          "a": "Tracking runs only after a visitor agrees. We set up consent as part of the system, so your reports count only what people chose to share."
+        },
+        {
+          "q": "Can we start small?",
+          "a": "Yes. Many start with one service, such as a banner set or a playbook, and add the rest later. Everything plugs into the same system."
+        }
+      ]
+    },
+    "closing": {
+      "title": "Make your next campaign the easy one.",
+      "text": "Talk it through with Ray. You leave with a clear first step, whether or not we work together."
+    }
   }
 }

@@ -520,6 +520,17 @@ h1, h2, h3 { hyphens: manual; text-wrap: balance; }
   --tw-ring-offset-shadow: 0 0 #0000;
 }
 
+@keyframes ad-rise { from { opacity: 0; transform: translateY(8px); } to { opacity: 1; transform: none; } }
+@keyframes ad-draw { from { stroke-dashoffset: 1; } to { stroke-dashoffset: 0; } }
+@keyframes ad-pulse { 0%, 100% { opacity: 0.35; } 50% { opacity: 1; } }
+.ad-msg { animation: ad-rise 360ms ease both; }
+.ad-fade { animation: ad-rise 320ms ease both; }
+.ad-draw { stroke-dasharray: 1; animation: ad-draw 1.6s ease-out both; }
+.ad-pulse { animation: ad-pulse 2s ease-in-out infinite; }
+@media (prefers-reduced-motion: reduce) {
+  .ad-msg, .ad-fade, .ad-draw, .ad-pulse { animation: none; }
+}
+
 /* Public sector page */
 @keyframes ps-rise { from { opacity: 0; transform: translateY(10px); } to { opacity: 1; transform: none; } }
 @keyframes ps-ping { 75%, 100% { transform: scale(2.2); opacity: 0; } }

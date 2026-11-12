@@ -1501,5 +1501,257 @@
       "text": "Reserve 30 minutos. Sabrá si encajamos en su categoría y qué enviaríamos con una oferta.",
       "cta": "Reservar una llamada de 30 minutos"
     }
+  },
+  "advertisingPage": {
+    "meta": {
+      "title": "Campañas, producción y banners publicitarios gestionados como un sistema",
+      "description": "Awesoon planifica, produce y mide su publicidad como un solo sistema: plantillas creativas, producción automática de variantes e informes que se actualizan solos. Vancouver, BC."
+    },
+    "hero": {
+      "eyebrow": "Publicidad",
+      "title": "Publicidad que funciona como un sistema, no a las carreras.",
+      "subtitle": "Planificamos sus campañas, creamos las plantillas, producimos cada tamaño y formato desde un solo brief y configuramos informes que se actualizan solos. Su equipo lanza más con las mismas personas.",
+      "chatLabel": "Asistente de campañas",
+      "chatNote": "Asistente con guion. Una persona lee cada brief.",
+      "greeting": "¿Qué quiere que logren sus anuncios?",
+      "chips": {
+        "leads": "Conseguir más clientes potenciales",
+        "launch": "Lanzar algo nuevo",
+        "pipeline": "Llenar un embudo de ventas",
+        "government": "Llegar a compradores públicos"
+      },
+      "keywords": {
+        "leads": "cliente potencial, prospecto, consulta, llamada, registro, formulario, lead",
+        "launch": "lanzamiento, lanzar, nuevo producto, apertura, evento",
+        "pipeline": "embudo, pipeline, ventas, b2b, cuentas, negocios",
+        "government": "gobierno, sector público, municipal, ciudad, provincia, federal, agencia"
+      },
+      "open": {
+        "leads": "Buen objetivo. Para clientes potenciales, cada anuncio lleva a un formulario o una llamada clara, así cada resultado se cuenta.",
+        "launch": "Buen objetivo. Para un lanzamiento creamos primero un conjunto creativo y de él salen todos los tamaños, para que se vea igual en todas partes.",
+        "pipeline": "Buen objetivo. Para un embudo, los anuncios siguen la etapa del comprador y el informe sigue las ventas que inician, no solo los clics.",
+        "government": "Buen objetivo. Para el sector público hay que ser fácil de encontrar y claro, con lenguaje sencillo y piezas accesibles.",
+        "generic": "Gracias, eso ayuda."
+      },
+      "q1": "¿Quién debe ver estos anuncios?",
+      "audience": {
+        "local": "Clientes locales",
+        "business": "Otras empresas",
+        "consumers": "Compradores en todo Canadá",
+        "public": "Equipos del sector público"
+      },
+      "q2": "¿Qué hace hoy?",
+      "today": {
+        "nothing": "Nada todavía",
+        "some": "Algunos anuncios, a mano",
+        "agency": "Una agencia o un freelance"
+      },
+      "briefIntro": "Aquí tiene un primer brief de campaña. Ray lo lee antes de su llamada.",
+      "briefLabel": "Su brief de campaña",
+      "goalLabel": "Objetivo",
+      "audienceLabel": "Para quién",
+      "todayLabel": "Hoy",
+      "systemLabel": "Por dónde empezaríamos",
+      "system": {
+        "leads": "Un formulario de contacto, plantillas en todos los tamaños y un informe semanal de clientes potenciales.",
+        "launch": "Un conjunto creativo de lanzamiento, todos los tamaños a partir de él y un informe de la semana de lanzamiento.",
+        "pipeline": "Anuncios por etapa de compra, plantillas y un informe que sigue las ventas.",
+        "government": "Piezas sencillas y accesibles, plantillas y un informe de alcance.",
+        "generic": "Una breve llamada de descubrimiento para elegir el primer sistema."
+      },
+      "talkToRay": "Hablarlo con Ray",
+      "consentLabel": "Enviar este brief a Ray con mi reserva. Solo se usa para preparar la llamada.",
+      "bookLabel": "30 minutos con Ray Rasouli",
+      "placeholder": "Escriba su respuesta",
+      "send": "Enviar",
+      "typing": "El asistente está escribiendo",
+      "restart": "Empezar de nuevo",
+      "seeDemo": "Ver un brief convertirse en todos los formatos",
+      "trust": [
+        "Una persona aprueba cada anuncio antes de publicarse",
+        "Seguimiento solo con consentimiento",
+        "Usted es dueño de cada archivo y cuenta"
+      ]
+    },
+    "services": {
+      "title": "Cuatro servicios, un solo sistema detrás",
+      "subtitle": "Empiece donde esté. Cada uno usa las mismas plantillas y los mismos informes.",
+      "includesLabel": "Qué incluye",
+      "systemLabel": "La parte del sistema",
+      "tabs": {
+        "campaigns": {
+          "name": "Campañas publicitarias",
+          "line": "Campañas planificadas una vez, luego repetidas y mejoradas, sin empezar de cero cada vez.",
+          "includes": [
+            "Plan de objetivo, público y canales",
+            "Búsqueda, redes sociales y display configurados en sus cuentas",
+            "Una lista de lanzamiento reutilizable"
+          ],
+          "system": "Una guía de campaña: el próximo lanzamiento es copiar y ajustar."
+        },
+        "production": {
+          "name": "Producción publicitaria",
+          "line": "Textos, imágenes y diseños hechos dentro de sus reglas de marca, listos para cada ubicación.",
+          "includes": [
+            "Plantillas creativas para cada canal",
+            "Variantes de texto e imagen para probar",
+            "Una persona revisa cada variante"
+          ],
+          "system": "Producción automática de variantes: una idea aprobada se convierte en todas las versiones que necesita."
+        },
+        "banner": {
+          "name": "Banners publicitarios",
+          "line": "Banners en todos los tamaños estándar, nítidos y fieles a la marca, desde un diseño maestro.",
+          "includes": [
+            "Los tamaños de display más comunes",
+            "Versiones fijas y con animación ligera",
+            "Archivos revisados según las reglas de cada red"
+          ],
+          "system": "Un diseño maestro produce cada tamaño: un cambio se hace una sola vez."
+        },
+        "playbooks": {
+          "name": "Guías de marca y publicidad",
+          "line": "Sus reglas de marca y pasos de campaña por escrito, para que cualquiera del equipo lance la siguiente.",
+          "includes": [
+            "Reglas de tono, color, tipografía y logotipo",
+            "Ejemplos de qué hacer y qué evitar",
+            "Guías de campaña paso a paso"
+          ],
+          "system": "Una guía que alimenta las plantillas: las reglas van integradas, no solo escritas."
+        }
+      },
+      "comingNextLabel": "Próximamente",
+      "comingNext": "Automatización de redes sociales: publicaciones programadas con las mismas plantillas."
+    },
+    "demo": {
+      "eyebrow": "Pruébelo",
+      "title": "Un brief, todos los formatos",
+      "subtitle": "Escriba un título y elija una imagen. Los banners, la publicación social y el anuncio de búsqueda lo siguen. Así funcionan nuestras plantillas.",
+      "headlineLabel": "Título",
+      "headline": "Servicio de primavera, reservado en dos minutos",
+      "ctaLabel": "Texto del botón",
+      "cta": "Reservar",
+      "imageLabel": "Imagen",
+      "images": {
+        "a": "Cuadrícula azul",
+        "b": "Sol cálido",
+        "c": "Ciudad de noche"
+      },
+      "brand": "Su marca",
+      "outputsLabel": "Formatos producidos",
+      "socialLabel": "Publicación social",
+      "searchLabel": "Anuncio de búsqueda",
+      "sponsored": "Patrocinado",
+      "searchUrl": "sumarca.com",
+      "searchDesc": "Elija la hora que le convenga. Personas reales, precios claros, sin sorpresas.",
+      "likes": "Me gusta",
+      "note": "Solo una vista previa. Las campañas reales usan su kit de marca y una persona aprueba cada anuncio antes de publicarse.",
+      "count": "{count} formatos desde un brief"
+    },
+    "reporting": {
+      "eyebrow": "Informes",
+      "title": "Informes que se actualizan solos",
+      "subtitle": "Gasto, clientes potenciales y resultados reunidos según un horario, con un resumen claro arriba. Su equipo lee resultados en lugar de copiar números.",
+      "sampleBadge": "Datos de ejemplo",
+      "sampleNote": "Cifras de ejemplo solo para ilustrar. No es un resultado de un cliente.",
+      "updated": "Se actualiza cada lunes a las 8:00",
+      "kpis": {
+        "spend": "Gasto",
+        "leads": "Clientes potenciales",
+        "cost": "Costo por cliente",
+        "rate": "Tasa de clics"
+      },
+      "chartLabel": "Clientes potenciales por semana, datos de ejemplo",
+      "weeks": "Semanas 1 a 8",
+      "summaryLabel": "Esta semana, en palabras simples",
+      "summary": "Los clientes potenciales subieron por tercera semana. El anuncio con el precio en el título funcionó mejor, así que su presupuesto subió. Nada necesita su aprobación hoy.",
+      "points": [
+        "Toma datos de sus cuentas publicitarias y de la analítica del sitio",
+        "Cuenta solo lo que los visitantes aceptaron compartir",
+        "Un resumen corto escrito para personas, no para analistas"
+      ]
+    },
+    "how": {
+      "title": "Cómo funciona",
+      "subtitle": "Cuatro pasos. Empieza con una llamada y al final el sistema es suyo.",
+      "pathLabel": "Cuatro pasos conectados, del brief a los informes",
+      "steps": [
+        {
+          "title": "Brief",
+          "text": "Una llamada de 30 minutos con Ray. Acordamos el objetivo, el público y cómo se ve el éxito."
+        },
+        {
+          "title": "Construir el sistema",
+          "text": "Plantillas, reglas de marca, seguimiento con consentimiento y el informe, configurados en sus cuentas."
+        },
+        {
+          "title": "Lanzar y producir",
+          "text": "Variantes hechas con las plantillas, aprobadas por una persona y luego lanzadas."
+        },
+        {
+          "title": "Medir y mejorar",
+          "text": "El informe se actualiza solo. Cambiamos una cosa a la vez según lo que muestra."
+        }
+      ]
+    },
+    "keep": {
+      "title": "Lo que usted conserva",
+      "subtitle": "Todo lo que construimos es suyo, durante y después.",
+      "items": [
+        {
+          "title": "Cuentas publicitarias a su nombre",
+          "text": "Las cuentas de búsqueda, redes y display siguen siendo suyas, con su facturación."
+        },
+        {
+          "title": "Plantillas creativas",
+          "text": "Los archivos maestros y cada tamaño, listos para su próxima campaña."
+        },
+        {
+          "title": "Su guía",
+          "text": "Reglas de marca y pasos de campaña que su equipo sigue sin nosotros."
+        },
+        {
+          "title": "La configuración de informes",
+          "text": "El panel y sus conexiones de datos siguen funcionando."
+        },
+        {
+          "title": "Archivos fuente",
+          "text": "Cada imagen, diseño y texto, en formatos que su equipo puede abrir."
+        }
+      ]
+    },
+    "faq": {
+      "title": "Preguntas frecuentes",
+      "items": [
+        {
+          "q": "¿Garantizan resultados?",
+          "a": "No. Nadie honesto puede prometer una cifra antes de conocer su mercado. Prometemos un plan claro, trabajo cuidadoso e informes que muestran exactamente lo que pasó."
+        },
+        {
+          "q": "¿Cuánto cuesta?",
+          "a": "Depende de los canales, la cantidad de formatos y cuánto del trabajo quiera que hagamos. Después de la llamada de descubrimiento recibe un alcance y un precio por escrito antes de empezar."
+        },
+        {
+          "q": "¿Usan IA para hacer los anuncios?",
+          "a": "Las plantillas y la automatización producen variantes y arman los informes. Una persona aprueba cada anuncio y cada afirmación antes de publicarse."
+        },
+        {
+          "q": "¿Con qué canales trabajan?",
+          "a": "Búsqueda, redes sociales pagadas y banners de display. Cuáles convienen depende de dónde están sus clientes; lo elegimos juntos en la llamada."
+        },
+        {
+          "q": "¿Cómo manejan el seguimiento y la privacidad?",
+          "a": "El seguimiento empieza solo cuando el visitante acepta. El consentimiento es parte del sistema, así sus informes cuentan solo lo que las personas eligieron compartir."
+        },
+        {
+          "q": "¿Podemos empezar en pequeño?",
+          "a": "Sí. Muchos empiezan con un servicio, como un conjunto de banners o una guía, y suman el resto después. Todo se conecta al mismo sistema."
+        }
+      ]
+    },
+    "closing": {
+      "title": "Haga que su próxima campaña sea la fácil.",
+      "text": "Hable con Ray. Sale con un primer paso claro, trabajemos juntos o no."
+    }
   }
 }
