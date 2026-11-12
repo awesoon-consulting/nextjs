@@ -1005,5 +1005,221 @@
       "Construimos el plan con usted. Tanto o tan poco del trabajo como necesite.",
       "Seguimos después del lanzamiento. Soporte y mejoras a medida que su negocio crece."
     ]
+  },
+  "publicSector": {
+    "meta": {
+      "title": "Sector público: servicios de TI, ERP y creativos para compradores públicos",
+      "description": "Awesoon Technologies Inc. licita contratos públicos de TI, ERP y servicios creativos en Canadá, Estados Unidos, Reino Unido y Australia. Sistemas estándar y documentados que son de su equipo."
+    },
+    "hero": {
+      "eyebrow": "Para compradores públicos",
+      "title": "Sistemas estándar y documentados para programas públicos",
+      "subtitle": "Estandarizamos y automatizamos procesos, desarrollamos software a medida y entregamos diseño y publicidad como sistemas repetibles. Cada proyecto termina con documentación que es de su equipo.",
+      "ctaPdf": "Descargar declaración de capacidades",
+      "ctaPdfMeta": "PDF, 1 página",
+      "ctaCall": "Reservar una llamada de 30 minutos",
+      "fact1": "Vancouver, BC",
+      "fact2": "Canadá, EE. UU., Reino Unido y Australia",
+      "fact3": "{count} categorías de portal"
+    },
+    "assistant": {
+      "label": "Asistente de compras públicas",
+      "greeting": "Indique su categoría o pegue una línea de su licitación. La relaciono con las categorías en las que licitamos y le ofrezco una declaración de capacidades adaptada.",
+      "placeholder": "Su categoría o licitación",
+      "send": "Enviar",
+      "typing": "El asistente está escribiendo",
+      "countryLabel": "País del comprador",
+      "countries": {
+        "all": "Todos",
+        "ca": "Canadá",
+        "us": "Estados Unidos",
+        "uk": "Reino Unido",
+        "au": "Australia"
+      },
+      "startersLabel": "Solicitudes frecuentes",
+      "starters": {
+        "erp": "Programación ERP o de bases de datos",
+        "it": "Servicios de expertos en TI",
+        "crm": "Software CRM",
+        "staff": "Desarrolladores de TI permanentes",
+        "creative": "Campaña publicitaria"
+      },
+      "matchIntro": "Eso corresponde a estas categorías en las que licitamos:",
+      "noMatch": "Todavía no encontré una categoría para eso. La mayoría de los compradores empieza por servicios de expertos en TI. Ray puede confirmar el encaje en una llamada corta.",
+      "schemes": "Los portales de {country} clasifican estos avisos con {schemes}. Códigos de categoría a solicitud.",
+      "statementCta": "Obtener una declaración de capacidades adaptada",
+      "callCta": "Reservar una llamada de 30 minutos",
+      "reset": "Empezar de nuevo",
+      "privacy": "Funciona en su navegador. Nada de lo que escribe se envía ni se guarda."
+    },
+    "categories": {
+      "title": "Categorías en las que licitamos",
+      "subtitle": "Los nombres de categoría de los portales, para que nos relacione con su aviso. TI y ERP primero.",
+      "searchLabel": "Buscar una categoría",
+      "searchPlaceholder": "Buscar, por ejemplo ERP",
+      "groupLabel": "Tipo",
+      "groups": {
+        "all": "Todas",
+        "it": "TI y ERP",
+        "creative": "Creativo",
+        "staffing": "Personal"
+      },
+      "countryLabel": "Ver sistemas de códigos de",
+      "colCategory": "Categoría del portal",
+      "colService": "Lo que entregamos",
+      "colCodes": "Códigos",
+      "codesOnRequest": "Códigos de categoría a solicitud",
+      "count": "{shown} de {total} categorías",
+      "empty": "Ninguna categoría coincide. Ray puede decirle si su aviso encaja.",
+      "lead": "Principal",
+      "items": {
+        "it-expert-services": {
+          "name": "Servicios de expertos en TI",
+          "service": "Revisión de sistemas, mapeo de procesos y gestión de proveedores",
+          "keywords": "experto,consult,asesor,evaluación,revisión,auditoría,proceso,proveedor,estrategia,modernización,digital"
+        },
+        "erp-database-programming": {
+          "name": "Servicios de programación de aplicaciones ERP o de bases de datos",
+          "service": "Implementación, configuración y migración de datos ERP",
+          "keywords": "erp,sap,oracle,netsuite,dynamics,odoo,finanzas,inventario,migración"
+        },
+        "crm-software": {
+          "name": "Software CRM",
+          "service": "Puesta en marcha, configuración y soporte de CRM",
+          "keywords": "crm,salesforce,hubspot,gestión de casos,cliente"
+        },
+        "application-programming": {
+          "name": "Servicios de programación de aplicaciones",
+          "service": "Aplicaciones a medida y herramientas internas",
+          "keywords": "aplicación,app,software,desarrollo,a medida,web,portal,móvil,herramienta"
+        },
+        "client-server-programming": {
+          "name": "Servicios de programación cliente o servidor",
+          "service": "API, integraciones y servicios de back-end",
+          "keywords": "api,integración,interfaz,servidor,backend,back-end,middleware"
+        },
+        "database-design-management": {
+          "name": "Diseño y gestión de bases de datos",
+          "service": "Diseño, limpieza e informes de bases de datos",
+          "keywords": "base de datos,datos,sql,informe,tablero,registros"
+        },
+        "gui-development": {
+          "name": "Desarrollo de interfaces gráficas de usuario",
+          "service": "Diseño de interfaces y desarrollo front-end",
+          "keywords": "ui,ux,interfaz,front-end,usabilidad,accesibilidad,wcag"
+        },
+        "game-software-maintenance": {
+          "name": "Mantenimiento de software de juegos y entretenimiento",
+          "service": "Operación continua y mantenimiento de juegos",
+          "keywords": "juego,videojuego,entretenimiento"
+        },
+        "permanent-it-developers": {
+          "name": "Desarrolladores de TI permanentes (mediante un socio de personal verificado)",
+          "service": "Desarrolladores verificados, con Ray responsable de cada asignación",
+          "keywords": "personal,desarrollador,recurso,colocación,permanente,contratación"
+        },
+        "advertising-campaign-production": {
+          "name": "Servicios de campañas y producción publicitaria",
+          "service": "Planificación y producción de campañas como sistema repetible",
+          "keywords": "publicidad,campaña,anuncio,medios,producción,video,difusión"
+        },
+        "brand-marketing-materials": {
+          "name": "Materiales de marketing de marca",
+          "service": "Guías de marca, manuales y plantillas",
+          "keywords": "marca,marketing,material,guía,manual,plantilla"
+        },
+        "art-and-graphics": {
+          "name": "Arte y gráficos",
+          "service": "Dirección de arte, ilustración y gráficos",
+          "keywords": "arte,gráfic,diseño,ilustración,visual"
+        },
+        "banner-advertising": {
+          "name": "Publicidad en banners",
+          "service": "Conjuntos de banners y anuncios display",
+          "keywords": "banner,display,anuncio digital,señalización"
+        }
+      }
+    },
+    "statement": {
+      "title": "Declaración de capacidades",
+      "text": "Una página con nuestras categorías, servicios, datos de la empresa y contacto. Hecha con los datos de esta página.",
+      "item1": "Capacidades principales, TI y ERP primero",
+      "item2": "Todas las categorías de portal en las que licitamos",
+      "item3": "Datos de la empresa y forma de trabajo",
+      "item4": "Códigos, registros y seguros a solicitud",
+      "download": "Descargar declaración de capacidades",
+      "tailored": "Adaptarla a su categoría",
+      "print": "Imprimir o guardar como PDF",
+      "back": "Volver a sector público",
+      "matched": "Corresponde a su solicitud",
+      "who": "Quiénes somos",
+      "whoText": "Awesoon Technologies Inc. es una firma de sistemas dirigida por su dueño en Vancouver, BC. Estandarizamos y automatizamos procesos, desarrollamos software a medida y entregamos diseño y publicidad como sistemas repetibles. Cada proyecto termina con documentación que es del equipo del comprador.",
+      "core": "Capacidades principales",
+      "core1": "Implementación, configuración y soporte de ERP y CRM",
+      "core2": "Aplicaciones a medida, API e integraciones",
+      "core3": "Mapeo de procesos, revisión de sistemas y gestión de proveedores",
+      "core4": "Diseño y publicidad entregados como sistemas repetibles",
+      "company": "Datos de la empresa",
+      "how": "Forma de trabajo",
+      "contact": "Contacto",
+      "footnote": "Los códigos de categoría, registros de proveedor, seguros y referencias se comparten a solicitud."
+    },
+    "facts": {
+      "title": "Datos de la empresa",
+      "legalName": "Razón social",
+      "based": "Sede",
+      "basedValue": "Vancouver, Columbia Británica, Canadá",
+      "serves": "Atiende",
+      "servesValue": "Canadá, Estados Unidos, Reino Unido y Australia",
+      "languages": "Idiomas",
+      "languagesValue": "Inglés, francés y español",
+      "owner": "Dueño",
+      "ownerValue": "Ray Rasouli",
+      "registrations": "Registros de proveedor",
+      "insurance": "Seguros",
+      "references": "Referencias",
+      "onRequest": "Se comparte a solicitud",
+      "referencesValue": "Se comparten a solicitud cuando el comprador acepta ser nombrado"
+    },
+    "how": {
+      "title": "Cómo trabajamos con compradores",
+      "subtitle": "Tres formas de empezar. Todas terminan con documentación que es de su equipo.",
+      "item1Title": "Subcontrato con su contratista principal",
+      "item1Text": "Nos sumamos al equipo de un contratista principal registrado para el alcance de TI, ERP o creativo, bajo su contrato y sus informes.",
+      "item2Title": "Licitaciones pequeñas directas",
+      "item2Text": "Para un alcance acotado de servicios de expertos en TI, ERP o CRM, licitamos directamente y el dueño dirige el trabajo.",
+      "item3Title": "Documentación que es suya",
+      "item3Text": "Mapas de procesos, notas de configuración y manuales operativos se entregan con el trabajo, para que su personal continúe sin nosotros."
+    },
+    "faq": {
+      "title": "Preguntas de los responsables de compras",
+      "q1": "¿En qué categorías licitan?",
+      "a1": "{count} categorías de portal, encabezadas por servicios de expertos en TI, programación de aplicaciones ERP o de bases de datos, y software CRM. La lista completa está en la tabla de arriba.",
+      "q2": "¿Puedo obtener sus códigos de categoría?",
+      "a2": "Sí. Los códigos se confirman por portal y se envían a solicitud con la declaración de capacidades, normalmente en 1 día hábil.",
+      "q3": "¿Están registrados en nuestro portal?",
+      "a3": "Los registros de proveedor se comparten a solicitud. Díganos el portal y confirmamos el estado del registro por escrito.",
+      "q4": "¿Trabajan como subcontratistas?",
+      "a4": "Sí. Subcontratar con un contratista principal registrado es nuestra vía preferida, y también licitamos contratos pequeños directamente.",
+      "q5": "¿Dónde entregan?",
+      "a5": "Estamos en Vancouver, BC y atendemos compradores en Canadá, Estados Unidos, Reino Unido y Australia. La mayor parte del trabajo es remoto, con visitas presenciales según el contrato.",
+      "q6": "¿Cómo ofrecen desarrolladores de TI permanentes?",
+      "a6": "Mediante un socio de personal verificado. Ray revisa a cada candidato y responde por la asignación.",
+      "q7": "¿Con quién trabajaremos?",
+      "a7": "Ray Rasouli, el dueño, dirige cada proyecto. No hay traspaso a un equipo de ventas."
+    },
+    "contact": {
+      "title": "Hable con quien hace el trabajo",
+      "text": "Envíe su aviso, licitación o categoría. Recibe una respuesta clara sobre el encaje y una declaración de capacidades para su expediente.",
+      "reply": "Una persona real responde en 1 día hábil",
+      "name": "Ray Rasouli",
+      "role": "Dueño, Awesoon Technologies Inc.",
+      "emailLabel": "Escribir a Ray"
+    },
+    "closing": {
+      "title": "¿Tiene un aviso abierto ahora?",
+      "text": "Reserve 30 minutos. Sabrá si encajamos en su categoría y qué enviaríamos con una oferta.",
+      "cta": "Reservar una llamada de 30 minutos"
+    }
   }
 }
