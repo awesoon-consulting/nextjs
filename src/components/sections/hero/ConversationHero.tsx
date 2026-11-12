@@ -77,7 +77,7 @@ export default function ConversationHero() {
   }, [])
 
   useEffect(() => {
-    if (touched) return
+    if (touched || !window.matchMedia('(min-width: 640px)').matches) return
     const reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches
     const phrases = GHOSTS.map((k) => t(k))
     if (reduce) return
@@ -297,7 +297,7 @@ export default function ConversationHero() {
                   setDraft(e.target.value)
                   setTouched(true)
                 }}
-                placeholder={touched ? t('placeholder') : ghost || t('ghost1')}
+                placeholder={touched ? t('placeholder') : ghost || t('placeholder')}
                 autoComplete="off"
                 style={{ outline: 'none' }}
                 className="min-w-0 flex-1 bg-transparent py-2 text-base text-text-primary placeholder:text-text-muted focus:outline-none focus-visible:outline-none dark:text-white"
@@ -318,33 +318,19 @@ export default function ConversationHero() {
         </div>
       </div>
 
-      <div className="relative mx-auto mt-8 grid w-full max-w-4xl gap-6 xl:max-w-3xl px-4 sm:grid-cols-[1fr_auto] sm:items-center sm:px-6">
-        <div>
-          <Link href={`/${locale}/contact`} className="group inline-flex items-center gap-2 text-base font-semibold text-text-primary underline-offset-4 hover:underline dark:text-white">
-            {t('orBook')}
-            <span aria-hidden="true" className="transition-transform group-hover:translate-x-1">→</span>
-          </Link>
-          <ul className="mt-4 grid grid-cols-1 gap-2 sm:grid-cols-2">
-            {(['trust1', 'trust2', 'trust3', 'trust4'] as const).map((k) => (
-              <li key={k} className="flex items-center gap-2 text-sm text-text-secondary dark:text-neutral-300">
-                <Check />
-                {t(k)}
-              </li>
-            ))}
-          </ul>
-        </div>
-        <div className="w-full rounded-2xl border border-neutral-200 bg-white p-4 shadow-md sm:w-60 dark:border-white/[0.08] dark:bg-[#111827]" aria-label={t('previewLabel')}>
-          <p className="text-xs font-semibold text-text-primary dark:text-white">{t('previewLabel')}</p>
-          <ol className="mt-3 space-y-2" aria-hidden="true">
-            {briefItems.map((b) => (
-              <li key={b.n} className="flex items-center gap-2">
-                <span className="font-heading text-[10px] font-semibold text-text-muted">{b.n}</span>
-                <span className="truncate text-[11px] text-text-secondary dark:text-neutral-300">{b.title}</span>
-              </li>
-            ))}
-          </ol>
-          <p className="mt-3 text-[11px] text-text-muted dark:text-neutral-400">{t('previewText')}</p>
-        </div>
+      <div className="relative mx-auto mt-8 flex w-full max-w-5xl flex-col items-center gap-5 px-4 sm:px-6">
+        <Link href={`/${locale}/contact`} className="group inline-flex items-center gap-2 text-base font-semibold text-text-primary underline-offset-4 hover:underline dark:text-white">
+          {t('orBook')}
+          <span aria-hidden="true" className="transition-transform group-hover:translate-x-1">→</span>
+        </Link>
+        <ul className="grid grid-cols-2 gap-x-6 gap-y-2 lg:flex lg:flex-nowrap lg:gap-8">
+          {(['trust1', 'trust2', 'trust3', 'trust4'] as const).map((k) => (
+            <li key={k} className="flex items-center gap-2 text-sm text-text-secondary lg:whitespace-nowrap dark:text-neutral-300">
+              <Check />
+              {t(k)}
+            </li>
+          ))}
+        </ul>
       </div>
     </section>
   )

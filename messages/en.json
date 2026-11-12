@@ -38,7 +38,8 @@
     "language": "Language",
     "healthCheckTitle": "Free systems health check",
     "healthCheckText": "A 30-minute call, then a clear list of what is broken, what it costs and what to fix first.",
-    "healthCheckCta": "Start the health check"
+    "healthCheckCta": "Start the health check",
+    "healthCheckNote": "Starts with a 30-minute call"
   },
   "hero": {
     "headline": "Your ops outgrew your tools. We fix that.",
@@ -111,12 +112,12 @@
     "steps": [
       {
         "number": "01",
-        "title": "Systems Health Check",
+        "title": "Systems health check",
         "description": "We quickly understand how your team works, the tools you use, and where things break down. You'll leave with clear issues, cost-saving opportunities, and a plan for what to fix first."
       },
       {
         "number": "02",
-        "title": "Solution Design",
+        "title": "Solution design",
         "description": "We work with you to translate what we found into a clear plan; defining requirements, selecting the right tools, working with software companies, and mapping the path to implementation."
       },
       {
@@ -126,7 +127,7 @@
       },
       {
         "number": "04",
-        "title": "Support & Optimization",
+        "title": "Support & optimization",
         "description": "We stick with you; staying involved as much as you need, providing support, making improvements, and helping your systems evolve as your business grows."
       }
     ]
@@ -801,41 +802,50 @@
       "short": "Find what is broken and write down how work should run.",
       "line": "We find what is broken, what it costs, and write down how the work should run.",
       "before": "Steps live in people’s heads.",
-      "after": "Written standard workflows and a ranked fix list."
+      "after": "Written standard workflows and a ranked fix list.",
+      "menuName": "Consultation"
     },
     "programming": {
       "name": "Programming",
       "short": "Build the part that makes your tools fit.",
       "line": "When off-the-shelf tools almost fit, we build the part that makes them fit.",
       "before": "People fill gaps between tools by hand.",
-      "after": "Custom software and APIs built to your process."
+      "after": "Custom software and APIs built to your process.",
+      "menuName": "Programming"
     },
     "automation": {
       "name": "Automation and integration",
-      "short": "Systems hand work to each other.",
+      "short": "Automation and integration. Systems hand work to each other.",
       "line": "Your systems hand work to each other. People step in only where judgment is needed.",
       "before": "The same data typed into three systems.",
-      "after": "Connected systems, one owner per piece of data."
+      "after": "Connected systems, one owner per piece of data.",
+      "menuName": "Automation"
     },
     "design": {
       "name": "Design",
       "short": "Brand and interface design run as a system.",
       "line": "Design run as a system, so every new piece starts consistent.",
       "before": "Every page and deck starts from scratch.",
-      "after": "Brand rules, templates and reusable components."
+      "after": "Brand rules, templates and reusable components.",
+      "menuName": "Design"
     },
     "advertising": {
       "name": "Advertising",
       "short": "Campaigns you can repeat and measure.",
       "line": "Campaigns you can repeat, measure and hand over.",
       "before": "One-off pushes nobody can repeat.",
-      "after": "Repeatable campaigns, tracked only with consent."
+      "after": "Repeatable campaigns, tracked only with consent.",
+      "menuName": "Advertising"
     },
     "title": "Five services. One goal: systems that run themselves.",
     "before": "Before",
     "after": "After",
     "ask": "Ask the assistant about {service}",
-    "explore": "Explore {service}"
+    "explore": "Explore {service}",
+    "toggleBefore": "Before",
+    "toggleAfter": "After",
+    "toggleLabel": "Show before or after",
+    "artLabel": "Messy hand-offs becoming connected systems"
   },
   "assistant": {
     "title": "What should your business stop doing by hand?",
@@ -881,8 +891,6 @@
     "trust2": "Owner-led delivery",
     "trust3": "No tracking before you agree",
     "trust4": "A real person replies",
-    "previewLabel": "The brief you keep",
-    "previewText": "Three ranked steps built from your answers.",
     "mapLabel": "Manual steps joining into connected systems"
   },
   "placeholder": {
@@ -902,7 +910,7 @@
     "databaseDesign": "Database design",
     "databaseInterfaces": "Database interfaces and query tools",
     "interfaceDevelopment": "Interface development",
-    "gameMaintenance": "Game software maintenance",
+    "gameMaintenance": "Game and app maintenance",
     "dbaas": "Database management as a service",
     "crmSetup": "CRM software setup",
     "itExpert": "IT expert services",
@@ -914,5 +922,61 @@
     "production": "Advertising production",
     "banner": "Banner advertising",
     "playbooks": "Brand and advertising playbooks"
+  },
+  "closing": {
+    "title": "Ready to stop doing it by hand?",
+    "text": "Talk it through with Rasoul. You leave with a clear first step, whether or not we work together.",
+    "cta": "Book a 30-minute discovery call"
+  },
+  "sampleBrief": {
+    "eyebrow": "Example brief",
+    "title": "What you leave with",
+    "text": "This is an example of the brief the assistant builds. It is not a real client.",
+    "badge": "Example, not a real client",
+    "workflowLabel": "The workflow you described",
+    "workflow": "Orders arrive by email. Someone types each one into the ERP, then again into the warehouse system.",
+    "heardLabel": "What we heard",
+    "heard": "The same order is entered twice by hand, and nobody owns which system is right when they disagree.",
+    "stepsLabel": "What to fix first, in order",
+    "manualLabel": "What stays with people",
+    "manual": "Approving unusual orders and talking to customers. Judgment stays human.",
+    "nextLabel": "Next step",
+    "next": "A 30-minute call with Rasoul to check the brief against how the work really runs."
+  },
+  "platforms": {
+    "title": "The platforms we actually know",
+    "text": "We are vendor-neutral. We pick what fits your operations, not what pays a commission.",
+    "categories": "Platform categories",
+    "officialSite": "Official site",
+    "more": "And many more",
+    "cat": {
+      "erp": "ERP",
+      "crm": "CRM",
+      "ecom": "Ecommerce",
+      "integration": "Integration",
+      "ai": "AI and data"
+    },
+    "fit": {
+      "netsuite": "Cloud-first ERP for multi-entity businesses with strong finance and reporting needs. A strong pick for companies that outgrew QuickBooks.",
+      "odoo": "All-in-one suite: ERP, CRM, inventory, ecommerce. Ideal when you want one connected stack without per-module lock-in.",
+      "epicor": "Deep manufacturing and distribution ERP with complex production workflows, BOMs and shop floor control.",
+      "sap": "SAP-grade financial controls and audit trails without the overhead of a full S/4HANA deployment.",
+      "salesforce": "Sales-led teams with complex pipelines, custom objects and high forecast accuracy needs.",
+      "hubspot": "Marketing-driven teams that want fast adoption, inbound workflows and tight sales and marketing alignment.",
+      "zoho": "A full CRM suite without enterprise pricing. Good for lean teams that need breadth without complexity.",
+      "pipedrive": "Simple pipeline visibility for small sales teams that want speed over configuration depth.",
+      "shopify": "Our default for B2C and mid-complexity B2B. Fast to launch, easy to run, huge app ecosystem.",
+      "magento": "Complex catalogs, tiered B2B pricing and deep customization, for when Shopify is not enough.",
+      "woocommerce": "Content-driven stores on WordPress with full ownership of hosting and plugins.",
+      "bigcommerce": "Hybrid SaaS and headless, with stronger native B2B features than Shopify Basic.",
+      "celigo": "Integration platform built for NetSuite and ecommerce, with connectors for the stack we see most.",
+      "boomi": "Enterprise integration with strong data transformation, governance and error handling.",
+      "zapier": "Fast app-to-app automation when speed matters more than depth. Good for non-critical workflows.",
+      "make": "Visual workflow builder with deeper logic than Zapier, for complex multi-step flows.",
+      "openai": "GPT-based copilots, reasoning and document intelligence.",
+      "anthropic": "Claude for long-context analysis, production agents and safer tool use.",
+      "langchain": "Framework for building RAG pipelines, agents and multi-step AI workflows.",
+      "postgresql": "Our default database, with pgvector for AI embeddings and no separate vector store."
+    }
   }
 }

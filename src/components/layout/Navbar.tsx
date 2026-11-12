@@ -8,6 +8,7 @@ import { usePathname } from 'next/navigation'
 import { siteConfig } from '@/src/config/site'
 import LanguageSwitcher from './LanguageSwitcher'
 import { useTheme } from './ThemeProvider'
+import ServiceIcon from '@/src/components/ui/ServiceIcon'
 
 const solutionLabel = new Map<string, string>(
   siteConfig.footer.solutionLinks.map((l) => [l.href.replace('/solutions/', ''), l.labelKey]),
@@ -23,24 +24,6 @@ function ThemeIcon() {
         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.75} d="M12 3v2m0 14v2M3 12H1m4.22-6.36L3.86 4.22M18.36 5.64l1.42-1.42M21 12h2m-3.64 6.36 1.42 1.42M5.64 18.36l-1.42 1.42M12 8a4 4 0 100 8 4 4 0 000-8z" />
       </svg>
     </>
-  )
-}
-
-const ICONS: Record<string, string> = {
-  consultation: 'M9 11l3 3 8-8M20 12v6a2 2 0 01-2 2H6a2 2 0 01-2-2V6a2 2 0 012-2h9',
-  programming: 'M8 9l-4 3 4 3M16 9l4 3-4 3M13.5 6l-3 12',
-  automation: 'M5 7h4v4H5zM15 13h4v4h-4zM9 9h3a2 2 0 012 2v4h1',
-  design: 'M12 3a9 9 0 100 18c1 0 1.5-.7 1.5-1.5 0-.4-.2-.7-.4-1-.3-.3-.4-.6-.4-1 0-.8.7-1.5 1.5-1.5H16a5 5 0 005-5c0-4.4-4-8-9-8zM7.5 11.5h.01M10 7.5h.01M15 7.5h.01',
-  advertising: 'M4 10v4a1 1 0 001 1h2l5 4V5L7 9H5a1 1 0 00-1 1zM16 8a5 5 0 010 8',
-}
-
-function ServiceIcon({ id }: { id: string }) {
-  return (
-    <span className="flex h-9 w-9 flex-shrink-0 items-center justify-center rounded-xl bg-accent text-white dark:bg-white/10" aria-hidden="true">
-      <svg className="h-5 w-5" fill="none" stroke="currentColor" strokeWidth={1.75} strokeLinecap="round" strokeLinejoin="round" viewBox="0 0 24 24">
-        <path d={ICONS[id]} />
-      </svg>
-    </span>
   )
 }
 
@@ -181,7 +164,7 @@ export default function Navbar() {
                           <Link href={localHref(s.href)} className="group flex items-center gap-3">
                             <ServiceIcon id={s.key} />
                             <span className="font-heading text-base font-semibold text-text-primary group-hover:underline dark:text-white">
-                              {t(`serviceLines.${s.key}.name`)}
+                              {t(`serviceLines.${s.key}.menuName`)}
                             </span>
                           </Link>
                           <p className="mt-2 text-sm leading-snug text-text-muted dark:text-neutral-400">{t(`serviceLines.${s.key}.short`)}</p>
@@ -209,6 +192,7 @@ export default function Navbar() {
                         <span className="inline-block rounded-full bg-white px-3 py-1 text-xs font-semibold text-accent">{t('nav.free')}</span>
                         <p className="mt-4 font-heading text-xl font-semibold">{t('nav.healthCheckTitle')}</p>
                         <p className="mt-2 text-sm leading-relaxed text-white/75">{t('nav.healthCheckText')}</p>
+                        <p className="mt-3 text-sm font-medium text-white">{t('nav.healthCheckNote')}</p>
                       </div>
                       <Link
                         href={localHref('/solutions/systems-audit')}

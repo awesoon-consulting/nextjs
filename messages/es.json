@@ -39,7 +39,8 @@
     "language": "Idioma",
     "healthCheckTitle": "Revisión gratuita de sus sistemas",
     "healthCheckText": "Una llamada de 30 minutos y luego una lista clara de qué falla, cuánto cuesta y qué arreglar primero.",
-    "healthCheckCta": "Empezar la revisión"
+    "healthCheckCta": "Empezar la revisión",
+    "healthCheckNote": "Empieza con una llamada de 30 minutos"
   },
   "hero": {
     "headline": "Tus operaciones superaron tus herramientas. Nosotros lo arreglamos.",
@@ -802,41 +803,50 @@
       "short": "Encontrar lo que falla y escribir cómo debe hacerse el trabajo.",
       "line": "Encontramos lo que falla, lo que cuesta, y escribimos cómo debe hacerse el trabajo.",
       "before": "Los pasos viven en la cabeza de la gente.",
-      "after": "Procesos estándar por escrito y una lista de mejoras priorizada."
+      "after": "Procesos estándar por escrito y una lista de mejoras priorizada.",
+      "menuName": "Consultoría"
     },
     "programming": {
       "name": "Programación",
       "short": "Construir la pieza que hace encajar sus herramientas.",
       "line": "Cuando las herramientas comerciales casi encajan, construimos la pieza que falta.",
       "before": "La gente cubre a mano los huecos entre herramientas.",
-      "after": "Software y API a medida, hechos para su proceso."
+      "after": "Software y API a medida, hechos para su proceso.",
+      "menuName": "Programación"
     },
     "automation": {
       "name": "Automatización e integración",
-      "short": "Sus sistemas se pasan el trabajo.",
+      "short": "Automatización e integración. Sus sistemas se pasan el trabajo.",
       "line": "Sus sistemas se pasan el trabajo. Las personas intervienen solo donde hace falta criterio.",
       "before": "Los mismos datos escritos en tres sistemas.",
-      "after": "Sistemas conectados, un solo responsable por cada dato."
+      "after": "Sistemas conectados, un solo responsable por cada dato.",
+      "menuName": "Automatización"
     },
     "design": {
       "name": "Diseño",
       "short": "Diseño de marca e interfaz gestionado como un sistema.",
       "line": "El diseño gestionado como un sistema, para que cada pieza nueva empiece coherente.",
       "before": "Cada página y cada presentación empieza de cero.",
-      "after": "Reglas de marca, plantillas y componentes reutilizables."
+      "after": "Reglas de marca, plantillas y componentes reutilizables.",
+      "menuName": "Diseño"
     },
     "advertising": {
       "name": "Publicidad",
       "short": "Campañas que se pueden repetir y medir.",
       "line": "Campañas que puede repetir, medir y entregar a su equipo.",
       "before": "Acciones sueltas que nadie puede repetir.",
-      "after": "Campañas repetibles, medidas solo con consentimiento."
+      "after": "Campañas repetibles, medidas solo con consentimiento.",
+      "menuName": "Publicidad"
     },
     "title": "Cinco servicios. Un objetivo: sistemas que funcionan solos.",
     "before": "Antes",
     "after": "Después",
     "ask": "Preguntar al asistente sobre {service}",
-    "explore": "Ver {service}"
+    "explore": "Ver {service}",
+    "toggleBefore": "Antes",
+    "toggleAfter": "Después",
+    "toggleLabel": "Mostrar antes o después",
+    "artLabel": "Traspasos desordenados que se convierten en sistemas conectados"
   },
   "assistant": {
     "title": "¿Qué debería dejar de hacer a mano su empresa?",
@@ -882,8 +892,6 @@
     "trust2": "Entrega a cargo del fundador",
     "trust3": "Sin seguimiento antes de que acepte",
     "trust4": "Responde una persona real",
-    "previewLabel": "El resumen que guarda",
-    "previewText": "Tres pasos priorizados a partir de sus respuestas.",
     "mapLabel": "Pasos manuales que se unen en sistemas conectados"
   },
   "placeholder": {
@@ -903,7 +911,7 @@
     "databaseDesign": "Diseño de bases de datos",
     "databaseInterfaces": "Interfaces de bases de datos y herramientas de consulta",
     "interfaceDevelopment": "Desarrollo de interfaces",
-    "gameMaintenance": "Mantenimiento de software de juegos",
+    "gameMaintenance": "Mantenimiento de juegos y apps",
     "dbaas": "Gestión de bases de datos como servicio",
     "crmSetup": "Configuración de software CRM",
     "itExpert": "Servicios de expertos en TI",
@@ -915,5 +923,61 @@
     "production": "Producción publicitaria",
     "banner": "Publicidad en banners",
     "playbooks": "Guías de marca y publicidad"
+  },
+  "closing": {
+    "title": "¿Listo para dejar de hacerlo a mano?",
+    "text": "Háblelo con Rasoul. Sale con un primer paso claro, trabajemos juntos o no.",
+    "cta": "Reservar una llamada de descubrimiento de 30 minutos"
+  },
+  "sampleBrief": {
+    "eyebrow": "Resumen de ejemplo",
+    "title": "Lo que se lleva",
+    "text": "Este es un ejemplo del resumen que prepara el asistente. No es un cliente real.",
+    "badge": "Ejemplo, no es un cliente real",
+    "workflowLabel": "El proceso que describió",
+    "workflow": "Los pedidos llegan por correo. Alguien los escribe en el ERP y luego otra vez en el sistema de almacén.",
+    "heardLabel": "Lo que entendimos",
+    "heard": "El mismo pedido se escribe dos veces a mano, y nadie decide qué sistema manda cuando no coinciden.",
+    "stepsLabel": "Qué arreglar primero, en orden",
+    "manualLabel": "Lo que queda en manos de personas",
+    "manual": "Aprobar pedidos poco comunes y hablar con clientes. El criterio sigue siendo humano.",
+    "nextLabel": "Siguiente paso",
+    "next": "Una llamada de 30 minutos con Rasoul para contrastar el resumen con cómo funciona el trabajo."
+  },
+  "platforms": {
+    "title": "Las plataformas que conocemos de verdad",
+    "text": "Somos independientes de proveedores. Elegimos lo que encaja con sus operaciones, no lo que paga una comisión.",
+    "categories": "Categorías de plataformas",
+    "officialSite": "Sitio oficial",
+    "more": "Y muchas más",
+    "cat": {
+      "erp": "ERP",
+      "crm": "CRM",
+      "ecom": "Comercio electrónico",
+      "integration": "Integración",
+      "ai": "IA y datos"
+    },
+    "fit": {
+      "netsuite": "ERP en la nube para empresas con varias entidades y fuertes necesidades financieras y de informes. Buena opción tras QuickBooks.",
+      "odoo": "Suite todo en uno: ERP, CRM, inventario, comercio electrónico. Ideal para una pila conectada sin ataduras por módulo.",
+      "epicor": "ERP de fabricación y distribución para flujos de producción complejos, listas de materiales y planta.",
+      "sap": "Controles financieros y auditoría de nivel SAP sin el peso de un despliegue completo de S/4HANA.",
+      "salesforce": "Equipos de ventas con pipelines complejos, objetos personalizados y previsiones exigentes.",
+      "hubspot": "Equipos orientados al marketing que buscan adopción rápida y ventas alineadas con marketing.",
+      "zoho": "Una suite CRM completa sin precios de empresa. Buena para equipos pequeños.",
+      "pipedrive": "Visibilidad simple del pipeline para equipos de ventas pequeños que quieren rapidez.",
+      "shopify": "Nuestra opción por defecto para B2C y B2B de complejidad media. Rápido de lanzar y fácil de operar.",
+      "magento": "Catálogos complejos, precios B2B escalonados y mucha personalización, cuando Shopify no basta.",
+      "woocommerce": "Tiendas sobre WordPress con control total del alojamiento y los plugins.",
+      "bigcommerce": "SaaS híbrido y headless, con mejores funciones B2B nativas que Shopify Basic.",
+      "celigo": "Plataforma de integración pensada para NetSuite y comercio electrónico.",
+      "boomi": "Integración empresarial con transformación de datos, gobierno y manejo de errores.",
+      "zapier": "Automatización rápida entre apps cuando importa más la velocidad que la profundidad.",
+      "make": "Constructor visual de flujos con más lógica que Zapier, para flujos de varios pasos.",
+      "openai": "Copilotos GPT, razonamiento y análisis de documentos.",
+      "anthropic": "Claude para análisis de contexto largo, agentes en producción y uso de herramientas más seguro.",
+      "langchain": "Marco para crear pipelines RAG, agentes y flujos de IA de varios pasos.",
+      "postgresql": "Nuestra base de datos por defecto, con pgvector para vectores de IA."
+    }
   }
 }

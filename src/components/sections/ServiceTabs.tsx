@@ -4,6 +4,8 @@ import { useState } from 'react'
 import Link from 'next/link'
 import { useLocale, useTranslations } from 'next-intl'
 import { siteConfig } from '@/src/config/site'
+import IsoNodes from '@/src/components/ui/IsoNodes'
+import ServiceIcon from '@/src/components/ui/ServiceIcon'
 
 const solutionLabel = new Map<string, string>(
   siteConfig.footer.solutionLinks.map((l) => [l.href.replace('/solutions/', ''), l.labelKey]),
@@ -13,8 +15,13 @@ export default function ServiceTabs() {
   const t = useTranslations()
   const locale = useLocale()
   const [active, setActive] = useState(0)
+  const [clean, setClean] = useState(true)
   const svc = siteConfig.services[active]
   const name = t(`serviceLines.${svc.key}.name`)
+  const items = [
+    ...svc.solutions.map((slug) => ({ href: `/solutions/${slug}`, label: t(solutionLabel.get(slug) ?? '') })),
+    ...svc.extras.map((x) => ({ href: x.href, label: t(x.labelKey) })),
+  ].slice(0, 6)
 
   return (
     <section className="w-full bg-white py-20 sm:py-24 dark:bg-primary" aria-labelledby="services-title">
@@ -22,7 +29,7 @@ export default function ServiceTabs() {
         <h2 id="services-title" className="max-w-2xl font-heading text-3xl font-bold tracking-tight text-text-primary sm:text-4xl dark:text-white">
           {t('serviceLines.title')}
         </h2>
-        <div className="mt-8 flex gap-1 overflow-x-auto rounded-full border border-neutral-200 p-1 sm:w-fit dark:border-white/10" role="tablist">
+        <div className="mt-8 flex gap-2 overflow-x-auto pb-1" role="tablist">
           {siteConfig.services.map((s, i) => (
             <button
               key={s.key}
@@ -30,49 +37,54 @@ export default function ServiceTabs() {
               aria-selected={i === active}
               aria-controls="service-panel"
               onClick={() => setActive(i)}
-              className={`min-h-10 flex-shrink-0 rounded-full px-4 py-2 text-sm font-medium whitespace-nowrap transition-colors ${
+              className={`flex min-h-11 flex-shrink-0 items-center gap-2 rounded-full border py-1 pr-4 pl-1 text-sm font-medium whitespace-nowrap transition-colors ${
                 i === active
-                  ? 'bg-primary text-white dark:bg-white dark:text-primary'
-                  : 'text-text-secondary hover:text-text-primary dark:text-neutral-300 dark:hover:text-white'
+                  ? 'border-primary bg-primary text-white dark:border-white dark:bg-white dark:text-primary'
+                  : 'border-neutral-200 text-text-secondary hover:text-text-primary dark:border-white/10 dark:text-neutral-300 dark:hover:text-white'
               }`}
             >
-              {t(`serviceLines.${s.key}.name`)}
+              <ServiceIcon id={s.key} className={`!h-8 !w-8 !rounded-full ${i === active ? 'dark:!bg-primary/10 dark:!text-primary' : ''}`} />
+              {t(`serviceLines.${s.key}.menuName`)}
             </button>
           ))}
         </div>
 
-        <div id="service-panel" role="tabpanel" className="mt-8 grid gap-6 rounded-3xl border border-neutral-200 p-6 sm:p-10 lg:grid-cols-2 dark:border-white/10">
-          <div>
+        <div
+          id="service-panel"
+          role="tabpanel"
+          className="mt-8 grid overflow-hidden rounded-3xl border border-neutral-200 lg:grid-cols-2 dark:border-white/[0.08] dark:bg-[#111827]"
+        >
+          <div className="relative bg-neutral-100 p-6 sm:p-8 dark:bg-white/[0.03]">
+            <div className="inline-flex rounded-full border border-neutral-200 bg-white p-1 dark:border-white/10 dark:bg-[#111827]" role="group" aria-label={t('serviceLines.toggleLabel')}>
+              {[false, true].map((v) => (
+                <button
+                  key={String(v)}
+                  type="button"
+                  aria-pressed={clean === v}
+                  onClick={() => setClean(v)}
+                  className={`rounded-full px-4 py-1.5 text-sm font-medium transition-colors ${
+                    clean === v ? 'bg-primary text-white dark:bg-white dark:text-primary' : 'text-text-secondary dark:text-neutral-300'
+                  }`}
+                >
+                  {t(v ? 'serviceLines.toggleAfter' : 'serviceLines.toggleBefore')}
+                </button>
+              ))}
+            </div>
+            <div className="mx-auto mt-4 aspect-[400/340] w-full max-w-md">
+              <IsoNodes clean={clean} label={t('serviceLines.artLabel')} />
+            </div>
+            <p className="mt-2 text-center text-sm text-text-secondary dark:text-neutral-300">
+              {t(`serviceLines.${svc.key}.${clean ? 'after' : 'before'}`)}
+            </p>
+          </div>
+          <div className="flex flex-col p-6 sm:p-10">
             <h3 className="font-heading text-2xl font-semibold text-text-primary dark:text-white">{name}</h3>
             <p className="mt-3 text-lg leading-relaxed text-text-secondary dark:text-neutral-300">{t(`serviceLines.${svc.key}.line`)}</p>
-            <div className="mt-6 grid gap-3 sm:grid-cols-2">
-              <div className="rounded-2xl bg-neutral-100 p-4 dark:bg-white/5">
-                <p className="text-sm font-semibold text-text-muted dark:text-neutral-400">{t('serviceLines.before')}</p>
-                <p className="mt-1 text-sm text-text-secondary dark:text-neutral-300">{t(`serviceLines.${svc.key}.before`)}</p>
-              </div>
-              <div className="rounded-2xl bg-accent p-4 text-white">
-                <p className="text-sm font-semibold text-white/70">{t('serviceLines.after')}</p>
-                <p className="mt-1 text-sm">{t(`serviceLines.${svc.key}.after`)}</p>
-              </div>
-            </div>
-          </div>
-          <div className="flex flex-col justify-between gap-6">
-            <ul className="divide-y divide-neutral-200 dark:divide-white/10">
-              {svc.solutions.map((slug) => (
-                <li key={slug}>
-                  <Link
-                    href={`/${locale}/solutions/${slug}`}
-                    className="flex items-center justify-between py-3 text-base text-text-primary hover:underline dark:text-white"
-                  >
-                    {t(solutionLabel.get(slug) ?? '')}
-                    <span aria-hidden="true">→</span>
-                  </Link>
-                </li>
-              ))}
-              {svc.extras.map((x) => (
-                <li key={x.labelKey}>
+            <ul className="mt-6 divide-y divide-neutral-200 dark:divide-white/10">
+              {items.map((x) => (
+                <li key={x.href + x.label}>
                   <Link href={`/${locale}${x.href}`} className="flex items-center justify-between py-3 text-base text-text-primary hover:underline dark:text-white">
-                    {t(x.labelKey)}
+                    {x.label}
                     <span aria-hidden="true">→</span>
                   </Link>
                 </li>
@@ -80,9 +92,9 @@ export default function ServiceTabs() {
             </ul>
             <Link
               href={`/${locale}${svc.href}`}
-              className="w-fit rounded-full border border-primary px-5 py-2.5 text-sm font-semibold text-text-primary hover:bg-primary hover:text-white dark:border-white dark:text-white dark:hover:bg-white dark:hover:text-primary"
+              className="mt-8 w-fit rounded-full bg-primary px-6 py-3 text-sm font-semibold text-white hover:bg-secondary dark:bg-white dark:text-primary dark:hover:bg-neutral-200"
             >
-              {t('serviceLines.explore', { service: name })}
+              {t('serviceLines.explore', { service: t(`serviceLines.${svc.key}.menuName`).toLowerCase() })}
             </Link>
           </div>
         </div>

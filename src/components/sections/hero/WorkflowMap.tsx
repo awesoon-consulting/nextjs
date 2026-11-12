@@ -37,25 +37,28 @@ export default function WorkflowMap({ progress }: { progress: number }) {
   return (
     <>
       <svg viewBox="0 0 320 420" className="absolute top-0 left-0 h-full w-[calc((100%-50rem)/2)] text-[#0F1D33] dark:text-[#6E8BB5]" aria-hidden="true">
-        <g style={{ opacity: 1 - p * 0.55, transition: 'opacity 1.2s' }}>
+        <g>
           {MESSY_PATHS.map((d, i) => (
             <path key={i} d={d} fill="none" stroke="currentColor" strokeOpacity={0.35} strokeWidth={1.5} strokeDasharray="4 6" />
           ))}
-          {MESSY.map((m, i) => (
-            <rect
-              key={i}
-              x={m.x}
-              y={m.y}
-              width={56}
-              height={30}
-              rx={6}
-              fill="none"
-              stroke="currentColor"
-              strokeOpacity={0.4}
-              strokeWidth={1.5}
-              transform={`rotate(${m.r} ${m.x + 28} ${m.y + 15})`}
-            />
-          ))}
+          {MESSY.map((m, i) => {
+            const fly = Math.max(0, Math.min(1, (p - (i / MESSY.length) * 0.7) * 3))
+            return (
+              <g
+                key={i}
+                style={{
+                  transform: `translate(${(320 - m.x) * fly}px, 0px)`,
+                  opacity: 1 - fly,
+                  transition: 'transform 1.2s ease-out, opacity 1.2s',
+                }}
+              >
+                <g transform={`rotate(${m.r} ${m.x + 28} ${m.y + 15})`} fill="none" stroke="currentColor" strokeOpacity={0.55} strokeWidth={1.5}>
+                  <rect x={m.x} y={m.y} width={56} height={34} rx={4} />
+                  <path d={`M${m.x} ${m.y} L${m.x + 28} ${m.y + 18} L${m.x + 56} ${m.y}`} />
+                </g>
+              </g>
+            )
+          })}
         </g>
         {[200, 230, 260].map((y, i) => (
           <path key={i} d={`M310 ${y} H 330`} stroke="currentColor" strokeOpacity={0.5} strokeWidth={1.5} style={clean(20)} />
@@ -81,7 +84,7 @@ export default function WorkflowMap({ progress }: { progress: number }) {
               height={22}
               rx={6}
               fill={LAYERS[r]}
-              style={{ opacity: p > (r * 3 + c) / 12 ? 0.9 : 0, transition: 'opacity 0.6s' }}
+              style={{ opacity: p > (r * 3 + c) / 12 ? 0.95 : 0.22, transition: 'opacity 0.6s' }}
             />
           )),
         )}

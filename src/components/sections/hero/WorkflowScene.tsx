@@ -60,10 +60,22 @@ export default function WorkflowScene({ progress, energy, gap, dark, onReady }: 
     const right = new Group()
     scene.add(left, right)
 
-    const box = new BoxGeometry(0.9, 0.5, 0.12)
-    const messyMat = new MeshBasicMaterial({ color: '#0F1D33', transparent: true, opacity: 0.35, wireframe: true })
-    const messy = new InstancedMesh(box, messyMat, MESSY_COUNT)
-    left.add(messy)
+    const env = new BufferGeometry()
+    const W = 0.5
+    const H = 0.32
+    env.setAttribute(
+      'position',
+      new BufferAttribute(
+        new Float32Array([-W, -H, 0, W, -H, 0, W, -H, 0, W, H, 0, W, H, 0, -W, H, 0, -W, H, 0, -W, -H, 0, -W, H, 0, 0, -0.02, 0, 0, -0.02, 0, W, H, 0]),
+        3,
+      ),
+    )
+    const messyMat = new LineBasicMaterial({ color: '#0F1D33', transparent: true, opacity: 0.6 })
+    const envelopes = Array.from({ length: MESSY_COUNT }, () => {
+      const l = new LineSegments(env, messyMat)
+      left.add(l)
+      return l
+    })
     const messyHome = Array.from({ length: MESSY_COUNT }, () => ({
       p: new Vector3((Math.random() - 0.5) * 5, (Math.random() - 0.5) * 7, (Math.random() - 0.5) * 2),
       r: (Math.random() - 0.5) * 0.6,
@@ -72,17 +84,18 @@ export default function WorkflowScene({ progress, energy, gap, dark, onReady }: 
 
     const nodeGeo = new BoxGeometry(0.55, 0.18, 0.55)
     const nodeMat = new MeshBasicMaterial({ transparent: true, opacity: 0.95 })
+    const dim = new Color('#9AA6B8')
+    const tmp = new Color()
+    const layerColors = LAYER_COLORS.map((c) => new Color(c))
     const count = GRID * GRID * 3
     const nodes = new InstancedMesh(nodeGeo, nodeMat, count)
     right.add(nodes)
     const nodeHome: Vector3[] = []
-    const nodeFrom: Vector3[] = []
     for (let L = 0; L < 3; L++)
       for (let x = 0; x < GRID; x++)
         for (let z = 0; z < GRID; z++) {
           nodeHome.push(new Vector3((x - 1) * 1.1, (1 - L) * 1.5, (z - 1) * 1.1))
-          nodeFrom.push(new Vector3(-6 - Math.random() * 4, (Math.random() - 0.5) * 7, (Math.random() - 0.5) * 3))
-          nodes.setColorAt(nodeHome.length - 1, new Color(LAYER_COLORS[L]))
+          nodes.setColorAt(nodeHome.length - 1, dim)
         }
 
     const pairs: number[] = []
@@ -100,6 +113,7 @@ export default function WorkflowScene({ progress, energy, gap, dark, onReady }: 
     const dummy = new Object3D()
     const cur: Vector3[] = nodeHome.map(() => new Vector3())
     let shown = 0
+    let flyX = 6
     let mx = 0
     let my = 0
     const onMove = (e: PointerEvent) => {
@@ -123,6 +137,7 @@ export default function WorkflowScene({ progress, energy, gap, dark, onReady }: 
       right.position.set(-cx, 0, 0)
       const scale = Math.min(1, ((side / w) * visW) / 6.5)
       left.scale.setScalar(scale)
+      flyX = ((side / 2 + 24) / w) * visW / Math.max(scale, 0.01)
       right.scale.setScalar(scale)
     }
     layout()
@@ -139,30 +154,35 @@ export default function WorkflowScene({ progress, energy, gap, dark, onReady }: 
       const ink = isDark ? '#6E8BB5' : '#0F1D33'
       messyMat.color.set(ink)
       lineMat.color.set(ink)
-      messyMat.opacity = 0.4 - k * 0.22
+      dim.set(isDark ? '#3A4A63' : '#B7C1CF')
 
       for (let i = 0; i < MESSY_COUNT; i++) {
         const m = messyHome[i]
-        const wob = 0.15 + e * 0.5
-        dummy.position.set(m.p.x + Math.sin(t / 900 + m.s) * wob, m.p.y + Math.cos(t / 1100 + m.s) * wob, m.p.z)
-        dummy.rotation.set(0, 0, m.r + Math.sin(t / 1500 + m.s) * 0.2)
-        dummy.scale.setScalar(1)
-        dummy.updateMatrix()
-        messy.setMatrixAt(i, dummy.matrix)
+        const fly = ease(Math.max(0, Math.min(1, (k - (i / MESSY_COUNT) * 0.7) * 3)))
+        const wob = (0.15 + e * 0.5) * (1 - fly)
+        const env = envelopes[i]
+        env.position.set(
+          m.p.x + (flyX - m.p.x) * fly + Math.sin(t / 900 + m.s) * wob,
+          m.p.y * (1 - fly * 0.7) + Math.cos(t / 1100 + m.s) * wob,
+          m.p.z,
+        )
+        env.rotation.set(0, 0, (m.r + Math.sin(t / 1500 + m.s) * 0.2) * (1 - fly))
+        env.scale.setScalar(Math.max(0.001, 1 - fly * 0.8))
       }
-      messy.instanceMatrix.needsUpdate = true
 
       for (let i = 0; i < count; i++) {
-        const local = Math.max(0, Math.min(1, k * 1.6 - (i / count) * 0.6))
-        const a = ease(local)
-        cur[i].lerpVectors(nodeFrom[i], nodeHome[i], a)
+        const lit = Math.max(0, Math.min(1, (k - (i / count) * 0.8) * 4))
+        cur[i].copy(nodeHome[i])
         dummy.position.copy(cur[i])
+        dummy.position.y += Math.sin(t / 1200 + i) * 0.04 * (1 - lit)
         dummy.rotation.set(0, 0, 0)
-        dummy.scale.setScalar(Math.max(0.001, a))
+        dummy.scale.setScalar(1)
         dummy.updateMatrix()
         nodes.setMatrixAt(i, dummy.matrix)
+        nodes.setColorAt(i, tmp.copy(dim).lerp(layerColors[Math.floor(i / (GRID * GRID))], lit))
       }
       nodes.instanceMatrix.needsUpdate = true
+      if (nodes.instanceColor) nodes.instanceColor.needsUpdate = true
 
       for (let p = 0; p < pairs.length; p++) {
         const v = cur[pairs[p]]
@@ -171,7 +191,7 @@ export default function WorkflowScene({ progress, energy, gap, dark, onReady }: 
         lpos[p * 3 + 2] = v.z
       }
       lineGeo.attributes.position.needsUpdate = true
-      lineMat.opacity = Math.max(0, k - 0.3) * 0.6
+      lineMat.opacity = 0.15 + k * 0.45
 
       right.rotation.y += (0.6 + mx * 0.5 + Math.sin(t / 4000) * 0.15 - right.rotation.y) * 0.05
       right.rotation.x += (0.45 + my * 0.3 - right.rotation.x) * 0.05
@@ -190,7 +210,7 @@ export default function WorkflowScene({ progress, energy, gap, dark, onReady }: 
       cancelAnimationFrame(raf)
       ro.disconnect()
       window.removeEventListener('pointermove', onMove)
-      box.dispose()
+      env.dispose()
       nodeGeo.dispose()
       lineGeo.dispose()
       messyMat.dispose()

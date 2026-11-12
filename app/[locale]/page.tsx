@@ -2,13 +2,11 @@ import type { Metadata } from 'next'
 import { getTranslations, setRequestLocale } from 'next-intl/server'
 import ConversationHero from '@/src/components/sections/hero/ConversationHero'
 import ServiceTabs from '@/src/components/sections/ServiceTabs'
-import HeroMarquee from '@/src/components/sections/HeroMarquee'
-import WhoWeHelp from '@/src/components/sections/WhoWeHelp'
-import DifferentiatorCards from '@/src/components/sections/DifferentiatorCards'
+import SampleBrief from '@/src/components/sections/SampleBrief'
+import ClosingBand from '@/src/components/sections/ClosingBand'
 import PlatformsShowcase from '@/src/components/sections/PlatformsShowcase'
 import ProcessSteps from '@/src/components/sections/ProcessSteps'
 import SupportGrid from '@/src/components/sections/SupportGrid'
-import CTABlock from '@/src/components/sections/CTABlock'
 import { siteConfig } from '@/src/config/site'
 
 export async function generateMetadata({
@@ -32,14 +30,12 @@ export default async function HomePage({ params }: { params: Promise<{ locale: s
   return (
     <>
       <ConversationHero />
-      <HeroMarquee />
       <ServiceTabs />
-      <WhoWeHelp />
-      <DifferentiatorCards />
+      <SampleBrief />
       <PlatformsShowcase />
       <ProcessSteps />
       <SupportGrid variant="home" />
-      <CTABlock />
+      <ClosingBand />
     </>
   )
 }

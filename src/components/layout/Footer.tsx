@@ -23,7 +23,7 @@ export default function Footer() {
     <footer className="w-full border-t border-neutral-200 bg-white text-text-primary dark:border-white/10 dark:bg-primary dark:text-white">
       <div className="w-full px-4 py-16 sm:px-6 lg:px-10 xl:px-16">
         <div className="grid grid-cols-1 gap-12 md:grid-cols-2 lg:grid-cols-12">
-          <div className="lg:col-span-3">
+          <div className="lg:col-span-5">
             <Link href={localHref('')} className="inline-flex items-center gap-2 rounded-full focus:outline-none focus-visible:ring-2 focus-visible:ring-accent">
               <Image src="/images/retina-logo.png" alt="" width={26} height={26} />
               <span className="font-heading text-xl font-bold lowercase">{siteConfig.name}</span>
@@ -32,7 +32,7 @@ export default function Footer() {
             <h3 className={`${heading} mt-8`}>{t('footer.contactHeading')}</h3>
             <ul className="space-y-2.5 text-sm text-text-secondary dark:text-neutral-400">
               <li>
-                <TrackedEmailLink email={siteConfig.contact.email} className={`${link} break-all`} />
+                <TrackedEmailLink email={siteConfig.contact.email} className={`${link} whitespace-nowrap`} />
               </li>
               <li className="text-xs text-text-muted dark:text-neutral-500">{t('footer.humanReplies')}</li>
               <li>
@@ -43,43 +43,7 @@ export default function Footer() {
             </ul>
           </div>
 
-          <div className="lg:col-span-6">
-            <h3 className={heading}>{t('footer.services')}</h3>
-            <div className="grid grid-cols-1 gap-8 sm:grid-cols-3">
-              {siteConfig.services
-                .filter((s) => s.solutions.length > 0)
-                .map((s) => (
-                  <div key={s.key}>
-                    <Link href={localHref(s.href)} className="font-heading text-sm font-semibold text-text-primary hover:underline dark:text-white">
-                      {t(`serviceLines.${s.key}.name`)}
-                    </Link>
-                    <ul className="mt-3 space-y-2">
-                      {s.solutions.map((slug) => (
-                        <li key={slug}>
-                          <Link href={localHref(`/solutions/${slug}`)} className={link}>
-                            {t(solutionLabel.get(slug) ?? '')}
-                          </Link>
-                        </li>
-                      ))}
-                    </ul>
-                  </div>
-                ))}
-            </div>
-            <div className="mt-6 flex flex-wrap gap-x-6 gap-y-2">
-              {siteConfig.services
-                .filter((s) => s.solutions.length === 0)
-                .map((s) => (
-                  <Link key={s.key} href={localHref(s.href)} className="font-heading text-sm font-semibold text-text-primary hover:underline dark:text-white">
-                    {t(`serviceLines.${s.key}.name`)}
-                  </Link>
-                ))}
-              <Link href={localHref('/solutions')} className="text-sm font-semibold text-text-primary underline underline-offset-4 dark:text-white">
-                {t('nav.allSolutions')}
-              </Link>
-            </div>
-          </div>
-
-          <div className="grid grid-cols-2 gap-8 lg:col-span-3">
+          <div className="grid grid-cols-2 gap-8 lg:col-span-6 lg:col-start-7">
             <div>
               <h3 className={heading}>{t('footer.support')}</h3>
               <ul className="space-y-2">
@@ -106,6 +70,37 @@ export default function Footer() {
             </div>
           </div>
         </div>
+
+        <h3 className={`${heading} mt-14`}>{t('footer.services')}</h3>
+        <div className="grid grid-cols-2 gap-8 sm:grid-cols-3 lg:grid-cols-5">
+          {siteConfig.services.map((s) => (
+            <div key={s.key}>
+              <Link href={localHref(s.href)} className="font-heading text-sm font-semibold text-text-primary hover:underline dark:text-white">
+                {t(`serviceLines.${s.key}.menuName`)}
+              </Link>
+              <ul className="mt-3 space-y-2">
+                {s.solutions.length > 0
+                  ? s.solutions.map((slug) => (
+                      <li key={slug}>
+                        <Link href={localHref(`/solutions/${slug}`)} className={link}>
+                          {t(solutionLabel.get(slug) ?? '')}
+                        </Link>
+                      </li>
+                    ))
+                  : s.extras.map((x) => (
+                      <li key={x.labelKey}>
+                        <Link href={localHref(x.href)} className={link}>
+                          {t(x.labelKey)}
+                        </Link>
+                      </li>
+                    ))}
+              </ul>
+            </div>
+          ))}
+        </div>
+        <Link href={localHref('/solutions')} className="mt-8 inline-block rounded-full border border-neutral-300 px-5 py-2 text-sm font-semibold text-text-primary dark:border-white/20 dark:text-white">
+          {t('nav.allSolutions')}
+        </Link>
       </div>
 
       <div className="border-t border-neutral-200 dark:border-white/10">
