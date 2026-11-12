@@ -25,18 +25,72 @@ export const siteConfig = {
 
   nav: {
     main: [
-      { labelKey: 'nav.home', href: '/' },
-      { labelKey: 'nav.solutions', href: '/solutions' },
-      { labelKey: 'nav.support', href: '/support' },
+      { labelKey: 'nav.work', href: '/solutions' },
+      { labelKey: 'nav.publicSector', href: '/public-sector' },
       { labelKey: 'nav.insights', href: '/insights' },
       { labelKey: 'nav.about', href: '/about' },
     ] as const,
-    cta: { labelKey: 'nav.cta', href: '/contact' },
+    cta: { labelKey: 'nav.bookCall', href: '/contact' },
   },
 
+  services: [
+    {
+      key: 'consultation',
+      href: '/solutions',
+      solutions: ['systems-audit', 'operational-process-foundations', 'ops-outgrown-tools', 'vendor-management', 'project-management'],
+      extras: [
+        { labelKey: 'serviceItems.itExpert', href: '/solutions' },
+        { labelKey: 'serviceItems.permanentDevelopers', href: '/solutions' },
+      ],
+    },
+    {
+      key: 'programming',
+      href: '/solutions',
+      solutions: ['custom-api-development', 'ecommerce-development', 'mobile-warehouse-barcoding'],
+      extras: [
+        { labelKey: 'serviceItems.applicationProgramming', href: '/solutions' },
+        { labelKey: 'serviceItems.clientServer', href: '/solutions' },
+        { labelKey: 'serviceItems.erpDatabaseApps', href: '/solutions' },
+        { labelKey: 'serviceItems.gameMaintenance', href: '/solutions' },
+      ],
+    },
+    {
+      key: 'automation',
+      href: '/solutions',
+      solutions: ['ai-operations', 'spreadsheet-operations', 'system-integration', 'erp-implementation', 'crm-implementation', 'api-integrations'],
+      extras: [
+        { labelKey: 'serviceItems.dbaas', href: '/solutions' },
+        { labelKey: 'serviceItems.databaseDesign', href: '/solutions' },
+        { labelKey: 'serviceItems.databaseInterfaces', href: '/solutions' },
+        { labelKey: 'serviceItems.crmSetup', href: '/solutions' },
+      ],
+    },
+    {
+      key: 'design',
+      href: '/design',
+      solutions: [],
+      extras: [
+        { labelKey: 'serviceItems.artDesign', href: '/design' },
+        { labelKey: 'serviceItems.uiDesign', href: '/design' },
+        { labelKey: 'serviceItems.interfaceDevelopment', href: '/design' },
+        { labelKey: 'serviceItems.brandSystems', href: '/design' },
+      ],
+    },
+    {
+      key: 'advertising',
+      href: '/advertising',
+      solutions: [],
+      extras: [
+        { labelKey: 'serviceItems.campaigns', href: '/advertising' },
+        { labelKey: 'serviceItems.production', href: '/advertising' },
+        { labelKey: 'serviceItems.banner', href: '/advertising' },
+        { labelKey: 'serviceItems.playbooks', href: '/advertising' },
+      ],
+    },
+  ] as const,
+
   social: {
-    linkedin: 'https://linkedin.com/company/awesoon',
-    twitter: 'https://twitter.com/awesoon',
+    linkedin: 'https://www.linkedin.com/in/ray-rasouli/',
   },
 
   team: {
@@ -72,10 +126,12 @@ export const siteConfig = {
       { labelKey: 'support.cards.ecommerceSupport.title', href: '/support/ecommerce-support-maintenance' },
     ] as const,
     companyLinks: [
+      { labelKey: 'nav.work', href: '/solutions' },
+      { labelKey: 'nav.publicSector', href: '/public-sector' },
+      { labelKey: 'nav.insights', href: '/insights' },
       { labelKey: 'nav.about', href: '/about' },
       { labelKey: 'nav.support', href: '/support' },
-      { labelKey: 'nav.insights', href: '/insights' },
-      { labelKey: 'nav.cta', href: '/contact' },
+      { labelKey: 'nav.contact', href: '/contact' },
     ] as const,
     legalLinks: [
       { labelKey: 'footer.privacy', href: '/privacy' },

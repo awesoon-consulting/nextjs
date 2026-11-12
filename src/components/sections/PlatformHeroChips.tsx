@@ -47,7 +47,7 @@ export default function PlatformHeroChips({
             key={platform.slug}
             type="button"
             onClick={handleClick}
-            aria-label={`See how we implement ${platform.name} — scroll to platforms section`}
+            aria-label={`See how we implement ${platform.name}, scroll to platforms section`}
             className="group flex items-center gap-2 h-10 pl-2 pr-3.5 rounded-full bg-white border border-neutral-200 shadow-sm hover:border-accent hover:shadow-md hover:-translate-y-0.5 transition-all duration-200 focus:outline-none focus-visible:ring-2 focus-visible:ring-accent dark:border-white/25 dark:hover:border-accent"
           >
             <span className="flex items-center justify-center h-6 w-8 rounded-md bg-white flex-shrink-0">

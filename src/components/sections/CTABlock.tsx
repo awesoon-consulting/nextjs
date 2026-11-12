@@ -7,7 +7,7 @@
  *   'light'  ,  light surface bg, secondary styled (used mid-page)
  *
  * Full-width section. AnimateIn on content block.
- * Trust signals (no chatbot, 24h reply, free) are always shown.
+ * Trust signals (real person, 24h reply, free) are always shown.
  *
  * @see /src/components/README.md
  */
@@ -28,7 +28,7 @@ interface CTABlockProps {
 }
 
 const trustSignalKeys = [
-  'common.trustNoChatbots',
+  'common.trustRealPerson',
   'common.trustReply24h',
   'common.trustFree',
   'common.trustNamedContact',

@@ -1,13 +1,12 @@
 import type { Metadata } from 'next'
 import { getTranslations, setRequestLocale } from 'next-intl/server'
-import Hero from '@/src/components/sections/Hero'
-import HeroMarquee from '@/src/components/sections/HeroMarquee'
-import WhoWeHelp from '@/src/components/sections/WhoWeHelp'
-import DifferentiatorCards from '@/src/components/sections/DifferentiatorCards'
+import ConversationHero from '@/src/components/sections/hero/ConversationHero'
+import ServiceTabs from '@/src/components/sections/ServiceTabs'
+import SampleBrief from '@/src/components/sections/SampleBrief'
+import HowWeWork from '@/src/components/sections/HowWeWork'
+import FounderBand from '@/src/components/sections/FounderBand'
+import ClosingBand from '@/src/components/sections/ClosingBand'
 import PlatformsShowcase from '@/src/components/sections/PlatformsShowcase'
-import ProcessSteps from '@/src/components/sections/ProcessSteps'
-import SupportGrid from '@/src/components/sections/SupportGrid'
-import CTABlock from '@/src/components/sections/CTABlock'
 import { siteConfig } from '@/src/config/site'
 
 export async function generateMetadata({
@@ -16,11 +15,11 @@ export async function generateMetadata({
   params: Promise<{ locale: string }>
 }): Promise<Metadata> {
   const { locale } = await params
-  const t = await getTranslations({ locale, namespace: 'hero' })
+  const t = await getTranslations({ locale, namespace: 'assistant' })
 
   return {
     title: `${siteConfig.name},  ${siteConfig.tagline}`,
-    description: t('subtext'),
+    description: t('subtitle'),
   }
 }
 
@@ -30,14 +29,13 @@ export default async function HomePage({ params }: { params: Promise<{ locale: s
 
   return (
     <>
-      <Hero />
-      <HeroMarquee />
-      <WhoWeHelp />
-      <DifferentiatorCards />
+      <ConversationHero />
+      <ServiceTabs />
+      <SampleBrief />
       <PlatformsShowcase />
-      <ProcessSteps />
-      <SupportGrid variant="home" />
-      <CTABlock />
+      <HowWeWork />
+      <FounderBand />
+      <ClosingBand />
     </>
   )
 }

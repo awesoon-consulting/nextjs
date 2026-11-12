@@ -1,0 +1,94 @@
+
+const LAYERS = ['#0E6A9E', '#00AEEF', '#193C57']
+
+export const MESSY = [
+  { x: 40, y: 70, r: -8 },
+  { x: 150, y: 30, r: 6 },
+  { x: 90, y: 170, r: 4 },
+  { x: 200, y: 130, r: -5 },
+  { x: 30, y: 270, r: 7 },
+  { x: 170, y: 250, r: -6 },
+  { x: 110, y: 360, r: 5 },
+  { x: 220, y: 340, r: -3 },
+]
+
+const MESSY_PATHS = [
+  'M70 85 C 140 140, 60 160, 120 185',
+  'M180 45 C 120 90, 260 100, 225 145',
+  'M120 185 C 200 200, 90 250, 60 285',
+  'M225 145 C 160 210, 260 230, 195 265',
+  'M60 285 C 140 300, 70 350, 140 375',
+  'M195 265 C 280 300, 180 330, 250 355',
+  'M250 355 C 290 300, 300 220, 310 200',
+  'M140 375 C 230 420, 290 300, 310 260',
+]
+
+const ROWS = [130, 210, 290]
+const COLS = [130, 195, 260]
+
+export default function WorkflowMap({ progress }: { progress: number }) {
+  const p = Math.max(0, Math.min(1, progress))
+  const clean = (len: number) => ({
+    strokeDasharray: len,
+    strokeDashoffset: len * (1 - p),
+    transition: 'stroke-dashoffset 1.4s ease-out',
+  })
+
+  return (
+    <>
+      <svg viewBox="15 20 285 380" className="absolute top-1/2 left-[calc((100%-50rem)/4)] h-[293px] w-[220px] -translate-x-1/2 -translate-y-1/2 overflow-visible text-[#0F1D33] dark:text-[#6E8BB5]" aria-hidden="true">
+        <g>
+          {MESSY_PATHS.map((d, i) => (
+            <path key={i} d={d} fill="none" stroke="currentColor" strokeOpacity={0.35} strokeWidth={1.5} strokeDasharray="4 6" />
+          ))}
+          {MESSY.map((m, i) => {
+            const fly = Math.max(0, Math.min(1, (p - (i / MESSY.length) * 0.7) * 3))
+            return (
+              <g
+                key={i}
+                style={{
+                  transform: `translate(${(320 - m.x) * fly}px, 0px)`,
+                  opacity: 1 - fly,
+                  transition: 'transform 1.2s ease-out, opacity 1.2s',
+                }}
+              >
+                <g transform={`rotate(${m.r} ${m.x + 28} ${m.y + 15})`} fill="none" stroke="currentColor" strokeOpacity={0.55} strokeWidth={1.5}>
+                  <rect x={m.x - 8} y={m.y - 5} width={72} height={44} rx={5} />
+                  <path d={`M${m.x - 8} ${m.y - 5} L${m.x + 28} ${m.y + 20} L${m.x + 64} ${m.y - 5}`} />
+                </g>
+              </g>
+            )
+          })}
+        </g>
+        {[200, 230, 260].map((y, i) => (
+          <path key={i} d={`M310 ${y} H 330`} stroke="currentColor" strokeOpacity={0.5} strokeWidth={1.5} style={clean(20)} />
+        ))}
+      </svg>
+      <svg viewBox="117 117 156 196" className="absolute top-1/2 right-[calc((100%-50rem)/4)] h-[214px] w-[170px] translate-x-1/2 -translate-y-1/2 text-[#0F1D33] dark:text-[#6E8BB5]" aria-hidden="true">
+        {ROWS.map((y, r) => (
+          <path key={r} d={`M0 ${200 + r * 30} C 60 ${200 + r * 30}, 70 ${y}, ${COLS[0]} ${y}`} fill="none" stroke="currentColor" strokeOpacity={0.5} strokeWidth={1.5} style={clean(160)} />
+        ))}
+        {ROWS.map((y, r) => (
+          <path key={`h${r}`} d={`M${COLS[0]} ${y} H ${COLS[2]}`} fill="none" stroke={LAYERS[r]} strokeWidth={2} style={clean(130)} />
+        ))}
+        {COLS.map((x, c) => (
+          <path key={`v${c}`} d={`M${x} ${ROWS[0]} V ${ROWS[2]}`} fill="none" stroke="currentColor" strokeOpacity={0.35} strokeWidth={1.5} style={clean(160)} />
+        ))}
+        {ROWS.map((y, r) =>
+          COLS.map((x, c) => (
+            <rect
+              key={`${r}-${c}`}
+              x={x - 11}
+              y={y - 11}
+              width={22}
+              height={22}
+              rx={6}
+              fill={LAYERS[r]}
+              style={{ opacity: p > (r * 3 + c) / 12 ? 1 : 0.85, transition: 'opacity 0.6s' }}
+            />
+          )),
+        )}
+      </svg>
+    </>
+  )
+}

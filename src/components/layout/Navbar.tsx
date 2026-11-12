@@ -1,58 +1,41 @@
 'use client'
 
-/**
- * Navbar, sticky top nav with:
- * - Full-width mega menu for Solutions (8 solution cards in a grid)
- * - Dark/light mode toggle
- * - Mobile hamburger menu with full menu
- * - Language switcher
- * - Conversion CTA
- */
-
-import { useEffect, useState } from 'react'
+import { useEffect, useRef, useState } from 'react'
 import Link from 'next/link'
 import Image from 'next/image'
 import { useTranslations, useLocale } from 'next-intl'
 import { usePathname } from 'next/navigation'
 import { siteConfig } from '@/src/config/site'
-import Button from '@/src/components/ui/Button'
 import LanguageSwitcher from './LanguageSwitcher'
 import { useTheme } from './ThemeProvider'
+import ServiceIcon from '@/src/components/ui/ServiceIcon'
 
-function SunIcon() {
+const solutionLabel = new Map<string, string>(
+  siteConfig.footer.solutionLinks.map((l) => [l.href.replace('/solutions/', ''), l.labelKey]),
+)
+
+function ThemeIcon() {
   return (
-    <svg
-      className="h-5 w-5"
-      fill="none"
-      stroke="currentColor"
-      viewBox="0 0 24 24"
-      aria-hidden="true"
-    >
-      <path
-        strokeLinecap="round"
-        strokeLinejoin="round"
-        strokeWidth={1.75}
-        d="M12 3v2m0 14v2M3 12H1m4.22-6.36L3.86 4.22M18.36 5.64l1.42-1.42M21 12h2m-3.64 6.36 1.42 1.42M5.64 18.36l-1.42 1.42M12 8a4 4 0 100 8 4 4 0 000-8z"
-      />
-    </svg>
+    <>
+      <svg className="block h-5 w-5 dark:hidden" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.75} d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z" />
+      </svg>
+      <svg className="hidden h-5 w-5 dark:block" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.75} d="M12 3v2m0 14v2M3 12H1m4.22-6.36L3.86 4.22M18.36 5.64l1.42-1.42M21 12h2m-3.64 6.36 1.42 1.42M5.64 18.36l-1.42 1.42M12 8a4 4 0 100 8 4 4 0 000-8z" />
+      </svg>
+    </>
   )
 }
 
-function MoonIcon() {
+const MEGA_COLUMNS = [['consultation'], ['programming'], ['automation'], ['design', 'advertising']] as const
+
+const megaLink =
+  'text-sm text-text-secondary transition-colors hover:text-text-primary dark:text-neutral-300 dark:hover:text-white'
+
+function Chevron({ open }: { open: boolean }) {
   return (
-    <svg
-      className="h-5 w-5"
-      fill="none"
-      stroke="currentColor"
-      viewBox="0 0 24 24"
-      aria-hidden="true"
-    >
-      <path
-        strokeLinecap="round"
-        strokeLinejoin="round"
-        strokeWidth={1.75}
-        d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z"
-      />
+    <svg className={`h-4 w-4 transition-transform duration-200 ${open ? 'rotate-180' : ''}`} fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
     </svg>
   )
 }
@@ -65,6 +48,9 @@ export default function Navbar() {
 
   const [isScrolled, setIsScrolled] = useState(false)
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false)
+  const [isMegaOpen, setIsMegaOpen] = useState(false)
+  const megaRef = useRef<HTMLDivElement>(null)
+  const megaButtonRef = useRef<HTMLButtonElement>(null)
 
   useEffect(() => {
     const handler = () => setIsScrolled(window.scrollY > 16)
@@ -72,252 +58,301 @@ export default function Navbar() {
     return () => window.removeEventListener('scroll', handler)
   }, [])
 
-  // Always close the mobile menu whenever the route changes.
-  // Previously the menu was keyed on "pathname equals mobileMenuPath" which
-  // had multiple race conditions: tapping a link to the current page would
-  // leave the menu stuck open, and client-side navigation timing caused
-  // the menu to appear stuck during slow page transitions.
   const [prevPathname, setPrevPathname] = useState(pathname)
   if (pathname !== prevPathname) {
     setPrevPathname(pathname)
     setIsMobileMenuOpen(false)
+    setIsMegaOpen(false)
   }
 
-  // Lock body scroll while the mobile drawer is open so the page behind
-  // can't scroll or capture touches that belong to the drawer.
-  useEffect(() => {
-    if (typeof document === 'undefined') return
-    if (isMobileMenuOpen) {
-      const prev = document.body.style.overflow
-      document.body.style.overflow = 'hidden'
-      return () => {
-        document.body.style.overflow = prev
-      }
-    }
-  }, [isMobileMenuOpen])
-
-  // Close drawer on Escape key
   useEffect(() => {
     if (!isMobileMenuOpen) return
-    const onKey = (e: KeyboardEvent) => {
-      if (e.key === 'Escape') setIsMobileMenuOpen(false)
+    const prev = document.body.style.overflow
+    document.body.style.overflow = 'hidden'
+    return () => {
+      document.body.style.overflow = prev
     }
-    window.addEventListener('keydown', onKey)
-    return () => window.removeEventListener('keydown', onKey)
   }, [isMobileMenuOpen])
 
-  function toggleTheme() {
-    setTheme(resolvedTheme === 'dark' ? 'light' : 'dark')
-  }
+  useEffect(() => {
+    if (!isMobileMenuOpen && !isMegaOpen) return
+    const onKey = (e: KeyboardEvent) => {
+      if (e.key === 'Escape') {
+        setIsMobileMenuOpen(false)
+        setIsMegaOpen((open) => {
+          if (open) megaButtonRef.current?.focus()
+          return false
+        })
+      }
+    }
+    const onClick = (e: MouseEvent) => {
+      if (megaRef.current && !megaRef.current.contains(e.target as Node)) setIsMegaOpen(false)
+    }
+    window.addEventListener('keydown', onKey)
+    document.addEventListener('mousedown', onClick)
+    return () => {
+      window.removeEventListener('keydown', onKey)
+      document.removeEventListener('mousedown', onClick)
+    }
+  }, [isMobileMenuOpen, isMegaOpen])
 
   function localHref(href: string) {
     return `/${locale}${href === '/' ? '' : href}`
   }
 
   function isActive(href: string) {
-    const target = localHref(href)
-    if (href === '/') return pathname === target
-    return pathname.startsWith(target)
+    return pathname.startsWith(localHref(href))
   }
 
-  const navLinkBase =
-    'rounded-lg px-4 py-2 text-sm font-medium transition-colors duration-150 focus:outline-none focus-visible:ring-2 focus-visible:ring-accent'
+  const linkBase =
+    'rounded-full px-4 py-2 text-sm font-medium transition-colors duration-150 focus:outline-none focus-visible:ring-2 focus-visible:ring-accent'
+  const linkIdle =
+    'text-text-secondary hover:bg-neutral-100 hover:text-text-primary dark:text-neutral-300 dark:hover:bg-white/10 dark:hover:text-white'
+  const iconBtn =
+    'rounded-full p-2 text-text-muted transition-colors focus:outline-none focus-visible:ring-2 focus-visible:ring-accent hover:bg-neutral-100 hover:text-text-primary dark:text-neutral-400 dark:hover:bg-white/10 dark:hover:text-white'
+  const pill =
+    'inline-flex items-center justify-center rounded-full bg-primary px-5 py-2.5 text-sm font-semibold text-white transition-colors hover:bg-secondary focus:outline-none focus-visible:ring-2 focus-visible:ring-accent focus-visible:ring-offset-2 dark:bg-white dark:text-primary dark:hover:bg-neutral-200'
 
   return (
     <>
-    <header
-      className={[
-        'fixed top-0 left-0 right-0 z-50 border-b transition-all duration-300',
-        isScrolled
-          ? 'border-neutral-200/80 bg-white/96 shadow-lg backdrop-blur-xl dark:border-white/10 dark:bg-primary/98'
-          : 'border-neutral-200/60 bg-white/82 shadow-md backdrop-blur-xl dark:border-white/5 dark:bg-primary/90',
-      ].join(' ')}
-    >
-      <nav
-        className="w-full px-4 sm:px-6 lg:px-10 xl:px-16"
-        role="navigation"
-        aria-label="Main navigation"
+      <header
+        className={[
+          'fixed top-0 left-0 right-0 z-50 border-b transition-all duration-300',
+          isScrolled || isMegaOpen
+            ? 'border-neutral-200/80 bg-white/96 backdrop-blur-xl dark:border-white/10 dark:bg-primary/98'
+            : 'border-transparent bg-white/80 backdrop-blur-xl dark:bg-primary/80',
+        ].join(' ')}
       >
-        <div className="flex h-16 items-center justify-between">
-          <Link
-            href={localHref('/')}
-            className="flex items-center gap-2 rounded focus:outline-none focus-visible:ring-2 focus-visible:ring-accent"
-            aria-label={`${siteConfig.name},  Home`}
-          >
-            <Image src="/images/retina-logo.png" alt="" width={25} height={25} className="flex-shrink-0" aria-hidden="true" />
-            <span className="font-heading text-xl font-bold tracking-tight text-text-primary dark:text-white">
-              {siteConfig.name}
-            </span>
-            <span className="hidden text-xl font-bold text-accent dark:text-white/50 sm:inline-block">.</span>
-          </Link>
+        <nav className="w-full px-4 sm:px-6 lg:px-10 xl:px-16" aria-label={t('nav.mainNav')}>
+          <div className="flex h-16 items-center justify-between gap-4">
+            <Link
+              href={localHref('/')}
+              className="flex items-center gap-2 rounded-full focus:outline-none focus-visible:ring-2 focus-visible:ring-accent"
+              aria-label={t('nav.home')}
+            >
+              <Image src="/images/retina-logo.png" alt="" width={26} height={26} className="flex-shrink-0" priority />
+              <span className="font-heading text-xl font-bold tracking-tight text-text-primary lowercase dark:text-white">
+                {siteConfig.name}
+              </span>
+            </Link>
 
-          <div className="hidden items-center gap-1 md:flex">
-            {siteConfig.nav.main.map(({ labelKey, href }) => {
-              return (
+            <div className="hidden items-center gap-1 lg:flex" ref={megaRef}>
+              <button
+                ref={megaButtonRef}
+                type="button"
+                onClick={() => setIsMegaOpen((o) => !o)}
+                aria-expanded={isMegaOpen}
+                aria-controls="services-menu"
+                className={`${linkBase} inline-flex items-center gap-1 ${isMegaOpen ? 'bg-neutral-100 text-text-primary dark:bg-white/10 dark:text-white' : linkIdle}`}
+              >
+                {t('nav.services')}
+                <Chevron open={isMegaOpen} />
+              </button>
+              {isMegaOpen && (
+                <div
+                  id="services-menu"
+                  className="absolute left-0 right-0 top-16 max-h-[calc(100vh-4rem)] overflow-y-auto border-b border-neutral-200 bg-white shadow-xl dark:border-white/10 dark:bg-primary"
+                >
+                  <div className="flex items-start gap-8 px-10 py-10 xl:px-16">
+                    <div className="grid flex-1 grid-cols-4 gap-8">
+                      {MEGA_COLUMNS.map((col) => (
+                        <div key={col.join()} className="space-y-8">
+                      {siteConfig.services.filter((s) => (col as readonly string[]).includes(s.key)).map((s) => (
+                        <div key={s.key}>
+                          <Link href={localHref(s.href)} className="group flex items-center gap-3">
+                            <ServiceIcon id={s.key} />
+                            <span className="font-heading text-base font-semibold text-text-primary group-hover:underline dark:text-white">
+                              {t(`serviceLines.${s.key}.menuName`)}
+                            </span>
+                          </Link>
+                          <p className="mt-2 text-sm leading-snug text-text-muted dark:text-neutral-400">{t(`serviceLines.${s.key}.short`)}</p>
+                          <ul className="mt-4 space-y-2">
+                            {s.solutions.map((slug) => (
+                              <li key={slug}>
+                                <Link href={localHref(`/solutions/${slug}`)} className={megaLink}>
+                                  {t(solutionLabel.get(slug) ?? '')}
+                                </Link>
+                              </li>
+                            ))}
+                            {s.extras.map((x) => (
+                              <li key={x.labelKey}>
+                                <Link href={localHref(x.href)} className={megaLink}>
+                                  {t(x.labelKey)}
+                                </Link>
+                              </li>
+                            ))}
+                          </ul>
+                        </div>
+                      ))}
+                        </div>
+                      ))}
+                    </div>
+                    <div className="h-fit w-72 flex-shrink-0 self-start rounded-3xl bg-accent p-6 text-white">
+                      <div>
+                        <span className="inline-block rounded-full bg-white px-3 py-1 text-xs font-semibold text-accent">{t('nav.free')}</span>
+                        <p className="mt-4 font-heading text-xl font-semibold">{t('nav.healthCheckTitle')}</p>
+                        <p className="mt-2 text-sm leading-relaxed text-white/75">{t('nav.healthCheckText')}</p>
+                      </div>
+                      <Link
+                        href={localHref('/contact')}
+                        className="mt-6 inline-flex w-fit items-center gap-2 rounded-full bg-white px-5 py-2.5 text-sm font-semibold whitespace-nowrap text-accent hover:bg-neutral-100"
+                      >
+                        {t('nav.healthCheckCta')} <span aria-hidden="true">→</span>
+                      </Link>
+                    </div>
+                  </div>
+                  <div className="flex flex-wrap items-center justify-between gap-6 border-t border-neutral-200 px-10 py-5 dark:border-white/10 xl:px-16">
+                    <div className="flex flex-wrap items-center gap-x-5 gap-y-2">
+                      <span className="text-sm font-semibold text-text-primary dark:text-white">{t('nav.supportHeading')}</span>
+                      {siteConfig.footer.supportLinks.map((l) => (
+                        <Link key={l.href} href={localHref(l.href)} className={megaLink}>
+                          {t(l.labelKey)}
+                        </Link>
+                      ))}
+                    </div>
+                    <Link
+                      href={localHref('/solutions')}
+                      className="rounded-full border border-neutral-300 px-5 py-2 text-sm font-semibold text-text-primary hover:border-primary dark:border-white/20 dark:text-white dark:hover:border-white"
+                    >
+                      {t('nav.allSolutions')}
+                    </Link>
+                  </div>
+                </div>
+              )}
+              {siteConfig.nav.main.map(({ labelKey, href }) => (
                 <Link
                   key={href}
                   href={localHref(href)}
                   aria-current={isActive(href) ? 'page' : undefined}
-                  className={[
-                    navLinkBase,
-                    isActive(href)
-                      ? 'text-accent dark:text-white'
-                      : 'text-text-secondary hover:bg-neutral-100 hover:text-text-primary dark:text-neutral-300 dark:hover:bg-white/10 dark:hover:text-white',
-                  ].join(' ')}
+                  className={`${linkBase} ${isActive(href) ? 'text-text-primary dark:text-white' : linkIdle}`}
                 >
                   {t(labelKey)}
                 </Link>
-              )
-            })}
-          </div>
+              ))}
 
-          <div className="hidden items-center gap-2 md:flex">
-            <LanguageSwitcher />
-            <button
-              onClick={toggleTheme}
-              aria-label="Toggle color theme"
-              title="Toggle color theme"
-              className="rounded-lg p-2 text-text-muted transition-colors focus:outline-none focus-visible:ring-2 focus-visible:ring-accent hover:bg-neutral-100 hover:text-text-primary dark:text-neutral-400 dark:hover:bg-white/10 dark:hover:text-white"
-            >
-              <span className="block dark:hidden" aria-hidden="true">
-                <MoonIcon />
-              </span>
-              <span className="hidden dark:block" aria-hidden="true">
-                <SunIcon />
-              </span>
-            </button>
-            <Link href={localHref(siteConfig.nav.cta.href)}>
-              <Button variant="primary" size="sm">
+            </div>
+
+            <div className="hidden items-center gap-2 lg:flex">
+              <LanguageSwitcher />
+              <button onClick={() => setTheme(resolvedTheme === 'dark' ? 'light' : 'dark')} aria-label={t('nav.toggleTheme')} className={iconBtn}>
+                <ThemeIcon />
+              </button>
+              <Link href={localHref(siteConfig.nav.cta.href)} className={pill}>
                 {t(siteConfig.nav.cta.labelKey)}
-              </Button>
-            </Link>
-          </div>
+              </Link>
+            </div>
 
-          <div className="flex items-center gap-1 md:hidden">
-            <LanguageSwitcher />
-            <button
-              onClick={toggleTheme}
-              aria-label="Toggle color theme"
-              title="Toggle color theme"
-              className="rounded-lg p-2 text-text-muted transition-colors focus:outline-none focus-visible:ring-2 focus-visible:ring-accent hover:bg-neutral-100 hover:text-text-primary dark:text-neutral-400 dark:hover:bg-white/10 dark:hover:text-white"
-            >
-              <span className="block dark:hidden" aria-hidden="true">
-                <MoonIcon />
-              </span>
-              <span className="hidden dark:block" aria-hidden="true">
-                <SunIcon />
-              </span>
-            </button>
-            <button
-              onClick={() => setIsMobileMenuOpen((open) => !open)}
-              aria-expanded={isMobileMenuOpen}
-              aria-label={isMobileMenuOpen ? t('nav.closeMenu') : t('nav.openMenu')}
-              className="rounded-lg p-2 text-text-secondary transition-colors focus:outline-none focus-visible:ring-2 focus-visible:ring-accent hover:bg-neutral-100 hover:text-text-primary dark:text-neutral-300 dark:hover:bg-white/10 dark:hover:text-white"
-            >
-              {isMobileMenuOpen ? (
-                <svg
-                  className="h-6 w-6"
-                  fill="none"
-                  stroke="currentColor"
-                  viewBox="0 0 24 24"
-                  aria-hidden="true"
-                >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth={2}
-                    d="M6 18L18 6M6 6l12 12"
-                  />
+            <div className="flex items-center gap-1 lg:hidden">
+              <button onClick={() => setTheme(resolvedTheme === 'dark' ? 'light' : 'dark')} aria-label={t('nav.toggleTheme')} className={iconBtn}>
+                <ThemeIcon />
+              </button>
+              <button
+                onClick={() => setIsMobileMenuOpen((o) => !o)}
+                aria-expanded={isMobileMenuOpen}
+                aria-label={isMobileMenuOpen ? t('nav.closeMenu') : t('nav.openMenu')}
+                className={iconBtn}
+              >
+                <svg className="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d={isMobileMenuOpen ? 'M6 18L18 6M6 6l12 12' : 'M4 7h16M4 12h16M4 17h16'} />
                 </svg>
-              ) : (
-                <svg
-                  className="h-6 w-6"
-                  fill="none"
-                  stroke="currentColor"
-                  viewBox="0 0 24 24"
-                  aria-hidden="true"
-                >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth={2}
-                    d="M4 6h16M4 12h16M4 18h16"
-                  />
-                </svg>
-              )}
-            </button>
+              </button>
+            </div>
           </div>
-        </div>
-      </nav>
+        </nav>
+      </header>
 
-    </header>
-
-      {/* Mobile drawer; rendered outside header so it can be full-height */}
-      <div className="md:hidden" aria-hidden={!isMobileMenuOpen}>
-        {/* Backdrop */}
+      <div className="lg:hidden" aria-hidden={!isMobileMenuOpen} inert={!isMobileMenuOpen}>
         <div
           onClick={() => setIsMobileMenuOpen(false)}
-          className={[
-            'fixed inset-0 z-40 bg-black/40 backdrop-blur-sm transition-opacity duration-300',
-            isMobileMenuOpen ? 'opacity-100 pointer-events-auto' : 'opacity-0 pointer-events-none',
-          ].join(' ')}
-          aria-hidden="true"
+          className={`fixed inset-0 z-40 bg-black/40 transition-opacity duration-300 ${isMobileMenuOpen ? 'opacity-100' : 'pointer-events-none opacity-0'}`}
         />
-
-        {/* Drawer */}
         <div
-          className={[
-            'fixed top-0 right-0 z-50 h-full w-72 bg-white shadow-2xl dark:bg-primary',
-            'flex flex-col transition-transform duration-300 ease-in-out',
-            isMobileMenuOpen ? 'translate-x-0' : 'translate-x-full',
-          ].join(' ')}
+          className={`fixed top-0 right-0 z-50 flex h-full w-full max-w-sm flex-col bg-white shadow-2xl transition-transform duration-300 ease-in-out dark:bg-primary ${isMobileMenuOpen ? 'translate-x-0' : 'translate-x-full'}`}
           role="dialog"
           aria-modal="true"
-          aria-label="Mobile navigation"
+          aria-label={t('nav.mobileNav')}
         >
-          {/* Drawer header */}
-          <div className="flex items-center justify-between border-b border-neutral-200/80 px-5 py-4 dark:border-white/10">
-            <span className="flex items-center gap-2 font-heading text-lg font-bold tracking-tight text-text-primary dark:text-white">
-              <Image src="/images/retina-logo.png" alt="" width={22} height={22} aria-hidden="true" />
-              {siteConfig.name}<span className="text-accent dark:text-white/50">.</span>
+          <div className="flex items-center justify-between border-b border-neutral-200 px-5 py-4 dark:border-white/10">
+            <span className="flex items-center gap-2 font-heading text-lg font-bold lowercase text-text-primary dark:text-white">
+              <Image src="/images/retina-logo.png" alt="" width={22} height={22} />
+              {siteConfig.name}
             </span>
-            <button
-              onClick={() => setIsMobileMenuOpen(false)}
-              aria-label={t('nav.closeMenu')}
-              className="rounded-lg p-2 text-text-muted transition-colors hover:bg-neutral-100 hover:text-text-primary dark:text-neutral-400 dark:hover:bg-white/10 dark:hover:text-white focus:outline-none focus-visible:ring-2 focus-visible:ring-accent"
-            >
+            <button onClick={() => setIsMobileMenuOpen(false)} aria-label={t('nav.closeMenu')} className={iconBtn}>
               <svg className="h-5 w-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
               </svg>
             </button>
           </div>
 
-          {/* Nav links */}
-          <nav className="flex-1 overflow-y-auto px-4 py-4 space-y-1">
-            {siteConfig.nav.main.map(({ labelKey, href }) => (
-              <Link
-                key={href}
-                href={localHref(href)}
-                onClick={() => setIsMobileMenuOpen(false)}
-                aria-current={isActive(href) ? 'page' : undefined}
-                className={[
-                  'block rounded-lg px-4 py-3 text-base font-medium transition-colors focus:outline-none focus-visible:ring-2 focus-visible:ring-accent',
-                  isActive(href)
-                    ? 'bg-accent/10 text-accent dark:bg-white/10 dark:text-white'
-                    : 'text-text-secondary hover:bg-neutral-100 hover:text-text-primary dark:text-neutral-300 dark:hover:bg-white/10 dark:hover:text-white',
-                ].join(' ')}
-              >
-                {t(labelKey)}
-              </Link>
+          <div className="flex-1 overflow-y-auto px-5 py-4">
+            <p className="px-1 pb-2 text-sm font-semibold text-text-muted dark:text-neutral-400">{t('nav.services')}</p>
+            {siteConfig.services.map((s) => (
+              <details key={s.key} className="group border-b border-neutral-200 dark:border-white/10">
+                <summary className="flex cursor-pointer list-none items-center justify-between py-3 font-heading text-base font-semibold text-text-primary dark:text-white">
+                  {t(`serviceLines.${s.key}.name`)}
+                  <svg className="h-4 w-4 transition-transform group-open:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
+                  </svg>
+                </summary>
+                <ul className="space-y-1 pb-3">
+                  {s.solutions.map((slug) => (
+                    <li key={slug}>
+                      <Link href={localHref(`/solutions/${slug}`)} onClick={() => setIsMobileMenuOpen(false)} className="block rounded-lg px-2 py-2 text-sm text-text-secondary dark:text-neutral-300">
+                        {t(solutionLabel.get(slug) ?? '')}
+                      </Link>
+                    </li>
+                  ))}
+                  {s.extras.map((x) => (
+                    <li key={x.labelKey}>
+                      <Link href={localHref(x.href)} onClick={() => setIsMobileMenuOpen(false)} className="block rounded-lg px-2 py-2 text-sm text-text-secondary dark:text-neutral-300">
+                        {t(x.labelKey)}
+                      </Link>
+                    </li>
+                  ))}
+                  <li>
+                    <Link href={localHref(s.href)} onClick={() => setIsMobileMenuOpen(false)} className="block rounded-lg px-2 py-2 text-sm font-semibold text-text-primary dark:text-white">
+                      {t('serviceLines.explore', { service: t(`serviceLines.${s.key}.name`) })}
+                    </Link>
+                  </li>
+                </ul>
+              </details>
             ))}
-          </nav>
+            <details className="group border-b border-neutral-200 dark:border-white/10">
+              <summary className="flex cursor-pointer list-none items-center justify-between py-3 font-heading text-base font-semibold text-text-primary dark:text-white">
+                {t('nav.supportHeading')}
+                <svg className="h-4 w-4 transition-transform group-open:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
+                </svg>
+              </summary>
+              <ul className="space-y-1 pb-3">
+                {siteConfig.footer.supportLinks.map((l) => (
+                  <li key={l.href}>
+                    <Link href={localHref(l.href)} onClick={() => setIsMobileMenuOpen(false)} className="block rounded-lg px-2 py-2 text-sm text-text-secondary dark:text-neutral-300">
+                      {t(l.labelKey)}
+                    </Link>
+                  </li>
+                ))}
+              </ul>
+            </details>
+            <nav className="mt-4 space-y-1" aria-label={t('nav.mainNav')}>
+              {siteConfig.nav.main.map(({ labelKey, href }) => (
+                <Link
+                  key={href}
+                  href={localHref(href)}
+                  onClick={() => setIsMobileMenuOpen(false)}
+                  aria-current={isActive(href) ? 'page' : undefined}
+                  className="block rounded-lg px-1 py-3 font-heading text-base font-semibold text-text-primary dark:text-white"
+                >
+                  {t(labelKey)}
+                </Link>
+              ))}
+            </nav>
+            <LanguageSwitcher className="mt-4" />
+          </div>
 
-          {/* CTA pinned to bottom */}
-          <div className="border-t border-neutral-200/80 px-4 py-4 dark:border-white/10">
-            <Link href={localHref(siteConfig.nav.cta.href)} onClick={() => setIsMobileMenuOpen(false)}>
-              <Button variant="primary" size="md" fullWidth>
-                {t(siteConfig.nav.cta.labelKey)}
-              </Button>
+          <div className="border-t border-neutral-200 px-5 py-4 dark:border-white/10">
+            <Link href={localHref(siteConfig.nav.cta.href)} onClick={() => setIsMobileMenuOpen(false)} className={`${pill} w-full py-3 text-base`}>
+              {t(siteConfig.nav.cta.labelKey)}
             </Link>
           </div>
         </div>

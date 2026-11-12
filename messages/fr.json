@@ -1,7 +1,7 @@
 {
   "_note": "TODO: Professional French translation review required. These are machine-translated placeholders.",
   "nav": {
-    "home": "Accueil",
+    "home": "Accueil Awesoon",
     "solutions": "Solutions",
     "support": "Support",
     "insights": "Perspectives",
@@ -21,7 +21,25 @@
       "crmImpl": "Implémentation CRM",
       "vendorMgmt": "Sélection de logiciels",
       "systemsAudit": "Bilan gratuit des systèmes"
-    }
+    },
+    "services": "Services",
+    "work": "Réalisations",
+    "publicSector": "Secteur public",
+    "bookCall": "Réserver un appel",
+    "contact": "Contact",
+    "allSolutions": "Toutes les solutions",
+    "supportHeading": "Soutien",
+    "free": "Gratuit",
+    "notSure": "Vous ne savez pas par où commencer ?",
+    "notSureLink": "Commencez par le bilan gratuit de vos systèmes.",
+    "vendorNeutral": "Indépendants des éditeurs. Livraison par le fondateur.",
+    "toggleTheme": "Changer de thème",
+    "mainNav": "Navigation principale",
+    "mobileNav": "Navigation mobile",
+    "language": "Langue",
+    "healthCheckTitle": "Bilan gratuit de vos systèmes",
+    "healthCheckText": "Une liste claire de ce qui bloque, de ce que cela coûte et de quoi régler en premier.",
+    "healthCheckCta": "Réserver un appel de 30 min"
   },
   "hero": {
     "headline": "Vos opérations ont dépassé vos outils. Nous réglons ça.",
@@ -34,8 +52,7 @@
     "trustBadge": "Reconnu par les leaders opérationnels en Amérique du Nord",
     "trustSignals": {
       "auditTurnaround": "Délai moyen du bilan",
-      "seniorDelivery": "Livraison par un opérateur senior",
-      "noChatbots": "De chatbots. Jamais."
+      "seniorDelivery": "Livraison par un opérateur senior"
     },
     "teamLabels": {
       "rayTitle": "Ingénieur logiciel & Solutions"
@@ -379,22 +396,24 @@
     }
   },
   "footer": {
-    "tagline": "Awesoon signifie facile. C'est ce que vos opérations devraient ressentir.",
+    "tagline": "Awesoon veut dire facile. Vancouver (C.-B.). Au service de l’Amérique du Nord.",
     "readyHeadline": "Prêt pour des opérations qui se sentent vraiment faciles?",
     "readySubtext": "Un appel de 30 minutes. Pas de présentation. Juste un regard honnête sur vos systèmes et un chemin clair vers l'avant.",
     "contactHeading": "Contact",
-    "humanReplies": "Une vraie personne répond dans les 24 heures.",
-    "noChatbots": "Pas de chatbots, pas de répondeurs automatiques.",
+    "humanReplies": "Une vraie personne répond en un jour ouvrable",
     "solutions": "Solutions",
     "support": "Support",
     "company": "Entreprise",
     "legal": "Légal",
-    "privacy": "Politique de confidentialité",
-    "terms": "Conditions d'utilisation",
-    "cookies": "Politique des témoins",
-    "copyright": "© {year} Awesoon Technologies. Tous droits réservés.",
-    "noTracking": "Aucun témoin défini sans votre consentement.",
-    "madeWith": "Construit avec soin à Vancouver."
+    "privacy": "Confidentialité",
+    "terms": "Conditions",
+    "cookies": "Témoins",
+    "copyright": "© {year} Awesoon Technologies Inc.",
+    "noTracking": "Aucun suivi avant votre accord.",
+    "madeWith": "Construit avec soin à Vancouver.",
+    "linkedin": "Ray sur LinkedIn",
+    "language": "Langue",
+    "services": "Services"
   },
   "cookie": {
     "banner": {
@@ -455,9 +474,7 @@
     "takeFirstStep": "Faites le premier pas"
   },
   "floatingCta": {
-    "message": "Votre bilan des systèmes est gratuit.",
-    "subtext": "30 minutes. Un vrai opérateur. Pas de présentation.",
-    "button": "Je le veux →"
+    "pill": "Réserver un appel de 30 minutes"
   },
   "solutionPage": {
     "painPointsTitle": "Cela vous semble familier?",
@@ -501,12 +518,12 @@
     "getStarted": "Commencer",
     "backToHome": "Retour à l'accueil",
     "skipToContent": "Aller au contenu principal",
-    "trustNoChatbots": "Pas de chatbots",
     "trustReply24h": "Réponse sous 24h",
     "trustFree": "Entièrement gratuit",
     "trustNamedContact": "Un interlocuteur dédié",
     "minRead": "{time} min de lecture",
-    "connectLinkedIn": "Se connecter sur LinkedIn"
+    "connectLinkedIn": "Se connecter sur LinkedIn",
+    "trustRealPerson": "Une vraie personne répond"
   },
   "sitemap": {
     "title": "Plan du site"
@@ -776,5 +793,211 @@
     "contactH": "Nous joindre",
     "contactB": "Questions au sujet de cette politique :",
     "currentLink": "Lire la version 2, la politique en vigueur"
+  },
+  "serviceLines": {
+    "consultation": {
+      "name": "Conseil",
+      "short": "Trouver ce qui bloque et décrire comment le travail doit se faire.",
+      "line": "Nous trouvons ce qui bloque, ce que cela coûte, et nous décrivons comment le travail doit se faire.",
+      "before": "Les étapes vivent dans la tête des gens.",
+      "after": "Des processus standard écrits et une liste de correctifs priorisée.",
+      "menuName": "Conseil"
+    },
+    "programming": {
+      "name": "Programmation",
+      "short": "Construire la pièce qui ajuste vos outils.",
+      "line": "Quand les outils du marché conviennent presque, nous construisons la pièce qui manque.",
+      "before": "Les équipes comblent à la main les trous entre les outils.",
+      "after": "Des logiciels et des API sur mesure, faits pour votre processus.",
+      "menuName": "Programmation"
+    },
+    "automation": {
+      "name": "Automatisation et intégration",
+      "short": "Automatisation et intégration. Vos systèmes se passent le travail.",
+      "line": "Vos systèmes se passent le travail. Les gens n’interviennent que là où il faut du jugement.",
+      "before": "Les mêmes données saisies dans trois systèmes.",
+      "after": "Des systèmes connectés, un seul responsable par donnée.",
+      "menuName": "Automatisation"
+    },
+    "design": {
+      "name": "Design",
+      "short": "Design de marque et d’interface géré comme un système.",
+      "line": "Le design géré comme un système, pour que chaque nouvelle pièce parte cohérente.",
+      "before": "Chaque page et chaque présentation part de zéro.",
+      "after": "Des règles de marque, des gabarits et des composants réutilisables.",
+      "menuName": "Design"
+    },
+    "advertising": {
+      "name": "Publicité",
+      "short": "Des campagnes reproductibles et mesurables.",
+      "line": "Des campagnes que vous pouvez reproduire, mesurer et transmettre.",
+      "before": "Des actions ponctuelles que personne ne peut refaire.",
+      "after": "Des campagnes reproductibles, mesurées seulement avec consentement.",
+      "menuName": "Publicité"
+    },
+    "title": "Cinq services. Un objectif : des systèmes qui tournent seuls.",
+    "before": "Avant",
+    "after": "Après",
+    "ask": "Questionner l’assistant sur : {service}",
+    "explore": "Découvrir : {service}",
+    "toggleBefore": "Avant",
+    "toggleAfter": "Après",
+    "toggleLabel": "Afficher avant ou après",
+    "artLabel": "Des transferts désordonnés qui deviennent des systèmes connectés"
+  },
+  "assistant": {
+    "title": "Qu’est-ce que votre entreprise devrait arrêter de faire à la main ?",
+    "subtitle": "Décrivez comment un processus fonctionne aujourd’hui. Obtenez une première lecture en une minute : ce qui bloque, ce que cela coûte, et quoi standardiser et automatiser en premier.",
+    "greeting": "Bonjour, je suis l’assistant Awesoon. Décrivez un processus qui prend trop de temps à votre équipe, ou choisissez un exemple ci-dessous. Je vous donne une première lecture, puis un résumé à garder.",
+    "starters": {
+      "orders": "Nous ressaisissons les commandes entre les courriels et deux systèmes",
+      "spreadsheets": "Nos horaires tournent sur des tableurs",
+      "tools": "Nos outils ne communiquent pas entre eux",
+      "government": "J’achète pour le secteur public"
+    },
+    "placeholder": "Décrivez un processus",
+    "send": "Envoyer",
+    "typing": "L’assistant écrit",
+    "openGeneric": "Cela ressemble à un problème de transfert : le même travail passe à la main entre les personnes et les outils.",
+    "openOrders": "La ressaisie des commandes est l’un des problèmes les plus courants, et l’un des plus faciles à régler.",
+    "openSpreadsheets": "Quand un tableur fait tourner un processus clé, une seule formule cassée peut arrêter l’entreprise.",
+    "openGovernment": "Pour les programmes publics, nous standardisons le processus, l’automatisons et remettons une documentation complète.",
+    "followUp": "Deux petites questions pour ajuster le résumé : combien de personnes touchent à ce travail chaque semaine, et combien de systèmes sont en jeu ?",
+    "briefIntro": "Merci. Voici votre première lecture. Elle repose sur ce que vous m’avez dit, ce n’est ni un devis ni un mandat.",
+    "handOff": "Bonne question. Ray pourra y répondre correctement lors d’un appel, avec votre résumé sous les yeux. Voulez-vous choisir un moment ?",
+    "briefLabel": "Votre résumé, à garder",
+    "brief1Title": "Un seul responsable par donnée",
+    "brief1Text": "Décidez quel système fait foi pour les commandes, les clients et les articles.",
+    "brief2Title": "Écrire les étapes standard",
+    "brief2Text": "Une seule façon convenue, écrite, avant d’automatiser quoi que ce soit.",
+    "brief3Title": "Automatiser le transfert le plus chargé",
+    "brief3Text": "Connectez d’abord les deux systèmes qui portent le plus de volume.",
+    "talkToRay": "En parler avec Ray",
+    "bookLabel": "30 minutes avec Ray",
+    "bookText": "Choisissez un moment à la page suivante. Ray lit votre résumé avant l’appel.",
+    "bookCta": "Réserver un appel découverte de 30 minutes",
+    "keywordsOrders": "commande,saisi,courriel,email",
+    "keywordsSpreadsheets": "tableur,excel,feuille",
+    "keywordsGovernment": "gouvernement,public,appel d’offres,marché",
+    "worksAcross": "Compatible avec",
+    "ghost1": "Notre équipe copie les commandes des courriels vers l’ERP",
+    "ghost2": "Nous suivons l’inventaire dans trois tableurs",
+    "ghost3": "Les factures sont approuvées en transférant des courriels",
+    "more": "Plus",
+    "orBook": "Ou réservez un appel découverte de 30 minutes",
+    "trust1": "Indépendants, aucune commission",
+    "trust2": "Livraison par le fondateur",
+    "trust3": "Aucun suivi avant votre accord",
+    "trust4": "Une vraie personne répond",
+    "mapLabel": "Des étapes manuelles qui deviennent des systèmes connectés",
+    "fitLine": "Pour les équipes d’opérations en fabrication, distribution, services industriels et secteur public.",
+    "fitLineShort": "Pour les équipes de fabrication, de distribution et du secteur public."
+  },
+  "placeholder": {
+    "title": "Cette page arrive bientôt",
+    "text": "Nous refaisons cette partie du site. En attendant, Ray peut vous la présenter lors d’un court appel.",
+    "cta": "Réserver un appel",
+    "back": "Retour à l’accueil"
+  },
+  "platformsStrip": {
+    "title": "Les plateformes que nous utilisons chaque jour",
+    "label": "Plateformes utilisées"
+  },
+  "serviceItems": {
+    "applicationProgramming": "Programmation d’applications",
+    "clientServer": "Programmation client et serveur",
+    "erpDatabaseApps": "Programmation d’applications ERP et de bases de données",
+    "databaseDesign": "Conception de bases de données",
+    "databaseInterfaces": "Interfaces de bases de données et outils de requête",
+    "interfaceDevelopment": "Développement d’interfaces",
+    "gameMaintenance": "Maintenance de jeux et d’applications",
+    "dbaas": "Gestion de bases de données en service",
+    "crmSetup": "Configuration de logiciels CRM",
+    "itExpert": "Services d’experts TI",
+    "permanentDevelopers": "Développeurs permanents via un partenaire vérifié",
+    "artDesign": "Design artistique et graphisme",
+    "uiDesign": "Design d’interfaces utilisateur",
+    "brandSystems": "Systèmes de marque",
+    "campaigns": "Campagnes publicitaires",
+    "production": "Production publicitaire",
+    "banner": "Publicité par bannières",
+    "playbooks": "Guides de marque et de publicité"
+  },
+  "closing": {
+    "title": "Prêt à arrêter de tout faire à la main ?",
+    "text": "Parlez-en avec Ray. Vous repartez avec une première étape claire, que nous travaillions ensemble ou non.",
+    "cta": "Réserver un appel découverte de 30 minutes"
+  },
+  "sampleBrief": {
+    "title": "Ce que vous obtenez",
+    "text": "Voici un exemple du résumé que l’assistant prépare. Il ne s’agit pas d’un vrai client.",
+    "badge": "Exemple, pas un vrai client",
+    "workflowLabel": "Le processus décrit",
+    "workflow": "Les commandes arrivent par courriel. Quelqu’un les saisit dans l’ERP, puis de nouveau dans le système d’entrepôt.",
+    "heardLabel": "Ce que nous avons compris",
+    "heard": "La même commande est saisie deux fois à la main, et personne ne sait quel système fait foi en cas d’écart.",
+    "stepsLabel": "Quoi régler en premier, dans l’ordre",
+    "manualLabel": "Ce qui reste aux personnes",
+    "manual": "Approuver les commandes inhabituelles et parler aux clients. Le jugement reste humain.",
+    "nextLabel": "Prochaine étape",
+    "next": "Un appel de 30 minutes avec Ray pour confronter le résumé à la réalité du travail."
+  },
+  "platforms": {
+    "title": "Les plateformes que nous connaissons vraiment",
+    "text": "Nous sommes indépendants des éditeurs. Nous choisissons ce qui convient à vos opérations, pas ce qui rapporte une commission.",
+    "categories": "Catégories de plateformes",
+    "officialSite": "Site officiel",
+    "more": "Et bien d’autres",
+    "cat": {
+      "erp": "ERP",
+      "crm": "CRM",
+      "ecom": "Commerce en ligne",
+      "integration": "Intégration",
+      "ai": "IA et données"
+    },
+    "fit": {
+      "netsuite": "ERP infonuagique pour les entreprises multi-entités aux besoins financiers et de rapports élevés. Un bon choix après QuickBooks.",
+      "odoo": "Suite tout-en-un : ERP, CRM, inventaire, commerce en ligne. Idéal pour une pile connectée sans dépendance module par module.",
+      "epicor": "ERP de fabrication et de distribution pour des flux de production complexes, nomenclatures et atelier.",
+      "sap": "Des contrôles financiers et des pistes d’audit de niveau SAP, sans la lourdeur d’un déploiement S/4HANA complet.",
+      "salesforce": "Équipes de vente aux pipelines complexes, objets personnalisés et prévisions exigeantes.",
+      "hubspot": "Équipes axées marketing qui veulent une adoption rapide et des ventes alignées sur le marketing.",
+      "zoho": "Une suite CRM complète sans prix d’entreprise. Bien pour les petites équipes.",
+      "pipedrive": "Une vue simple du pipeline pour les petites équipes de vente qui veulent aller vite.",
+      "shopify": "Notre choix par défaut en B2C et en B2B de complexité moyenne. Rapide à lancer, simple à gérer.",
+      "magento": "Catalogues complexes, prix B2B par paliers et personnalisation poussée, quand Shopify ne suffit plus.",
+      "woocommerce": "Boutiques sur WordPress, avec la maîtrise complète de l’hébergement et des extensions.",
+      "bigcommerce": "SaaS hybride et headless, avec de meilleures fonctions B2B natives que Shopify Basic.",
+      "celigo": "Plateforme d’intégration pensée pour NetSuite et le commerce en ligne.",
+      "boomi": "Intégration d’entreprise avec transformation de données, gouvernance et gestion des erreurs.",
+      "zapier": "Automatisation rapide entre applications quand la vitesse compte plus que la profondeur.",
+      "make": "Outil visuel de flux avec une logique plus riche que Zapier, pour les flux en plusieurs étapes.",
+      "openai": "Copilotes GPT, raisonnement et analyse de documents.",
+      "anthropic": "Claude pour l’analyse de longs contextes, les agents en production et un usage d’outils plus sûr.",
+      "langchain": "Cadre pour bâtir des pipelines RAG, des agents et des flux d’IA en plusieurs étapes.",
+      "postgresql": "Notre base de données par défaut, avec pgvector pour les vecteurs d’IA."
+    }
+  },
+  "founder": {
+    "name": "Ray Rasouli",
+    "role": "Fondateur, ingénieur logiciel et responsable des systèmes. Vancouver (C.-B.).",
+    "linkedin": "Ray sur LinkedIn",
+    "photoAlt": "Ray Rasouli",
+    "bio": "Développeur full-stack qui a construit et remplacé des plateformes entières de A à Z.",
+    "principleLabel": "Avec qui vous travaillez",
+    "principle": "Aucune revente. Aucune commission. Seulement vos opérations."
+  },
+  "howWeWork": {
+    "title": "Notre façon de travailler",
+    "subtitle": "Quatre étapes. Commencez où vous voulez. Nous partons de là où vous en êtes.",
+    "freeAfterCall": "Gratuit, après votre appel découverte",
+    "supportToggle": "Voir les quatre volets de soutien",
+    "pathLabel": "Quatre étapes reliées, du bilan au soutien",
+    "steps": [
+      "Nous apprenons comment votre équipe travaille et où cela bloque. Vous recevez une liste priorisée des correctifs.",
+      "Nous transformons ces constats en plan clair. Besoins, outils et étapes jusqu’au lancement, par écrit.",
+      "Nous réalisons le plan avec vous. Autant ou aussi peu du travail que vous le souhaitez.",
+      "Nous restons après le lancement. Soutien et améliorations à mesure que vous grandissez."
+    ]
   }
 }

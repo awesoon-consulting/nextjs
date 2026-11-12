@@ -1,7 +1,7 @@
 {
   "_note": "TODO: Professional Spanish translation review required. These are machine-translated placeholders.",
   "nav": {
-    "home": "Inicio",
+    "home": "Inicio de Awesoon",
     "solutions": "Soluciones",
     "support": "Soporte",
     "insights": "Perspectivas",
@@ -21,7 +21,25 @@
       "crmImpl": "Implementación CRM",
       "vendorMgmt": "Selección de software",
       "systemsAudit": "Diagnóstico gratuito de sistemas"
-    }
+    },
+    "services": "Servicios",
+    "work": "Proyectos",
+    "publicSector": "Sector público",
+    "bookCall": "Reservar una llamada",
+    "contact": "Contacto",
+    "allSolutions": "Todas las soluciones",
+    "supportHeading": "Soporte",
+    "free": "Gratis",
+    "notSure": "¿No sabe por dónde empezar?",
+    "notSureLink": "Empiece con la revisión gratuita de sus sistemas.",
+    "vendorNeutral": "Independientes de proveedores. Entrega a cargo del fundador.",
+    "toggleTheme": "Cambiar tema",
+    "mainNav": "Navegación principal",
+    "mobileNav": "Navegación móvil",
+    "language": "Idioma",
+    "healthCheckTitle": "Revisión gratuita de sus sistemas",
+    "healthCheckText": "Una lista clara de qué falla, cuánto cuesta y qué arreglar primero.",
+    "healthCheckCta": "Reservar llamada de 30 min"
   },
   "hero": {
     "headline": "Tus operaciones superaron tus herramientas. Nosotros lo arreglamos.",
@@ -34,8 +52,7 @@
     "trustBadge": "Elegido por líderes operacionales en Norteamérica",
     "trustSignals": {
       "auditTurnaround": "Tiempo promedio del diagnóstico",
-      "seniorDelivery": "Entrega por operador senior",
-      "noChatbots": "Chatbots. Nunca."
+      "seniorDelivery": "Entrega por operador senior"
     },
     "teamLabels": {
       "rayTitle": "Ingeniero de Software & Soluciones"
@@ -379,22 +396,24 @@
     }
   },
   "footer": {
-    "tagline": "Awesoon significa fácil. Así deberían sentirse tus operaciones.",
+    "tagline": "Awesoon significa fácil. Vancouver, BC. Al servicio de Norteamérica.",
     "readyHeadline": "¿Listo para operaciones que realmente se sientan fáciles?",
     "readySubtext": "Una llamada de 30 minutos. Sin presentación. Solo una mirada honesta a tus sistemas y un camino claro hacia adelante.",
     "contactHeading": "Contacto",
-    "humanReplies": "Una persona real responde en 24 horas.",
-    "noChatbots": "Sin chatbots, sin respuestas automáticas.",
+    "humanReplies": "Una persona real responde en un día hábil",
     "solutions": "Soluciones",
     "support": "Soporte",
     "company": "Empresa",
     "legal": "Legal",
-    "privacy": "Política de privacidad",
-    "terms": "Términos de servicio",
-    "cookies": "Política de cookies",
-    "copyright": "© {year} Awesoon Technologies. Todos los derechos reservados.",
-    "noTracking": "No se establecen cookies sin tu consentimiento.",
-    "madeWith": "Construido con cuidado en Vancouver."
+    "privacy": "Privacidad",
+    "terms": "Términos",
+    "cookies": "Cookies",
+    "copyright": "© {year} Awesoon Technologies Inc.",
+    "noTracking": "Sin seguimiento antes de que acepte.",
+    "madeWith": "Construido con cuidado en Vancouver.",
+    "linkedin": "Ray en LinkedIn",
+    "language": "Idioma",
+    "services": "Servicios"
   },
   "cookie": {
     "banner": {
@@ -455,9 +474,7 @@
     "takeFirstStep": "Da el primer paso"
   },
   "floatingCta": {
-    "message": "Tu diagnóstico de sistemas es gratuito.",
-    "subtext": "30 minutos. Un operador real. Sin presentación.",
-    "button": "Reclamarlo →"
+    "pill": "Reservar una llamada de 30 minutos"
   },
   "solutionPage": {
     "painPointsTitle": "¿Te resulta familiar?",
@@ -501,12 +518,12 @@
     "getStarted": "Comenzar",
     "backToHome": "Volver al inicio",
     "skipToContent": "Saltar al contenido principal",
-    "trustNoChatbots": "Sin chatbots",
     "trustReply24h": "Respuesta en 24h",
     "trustFree": "Completamente gratis",
     "trustNamedContact": "Un contacto designado",
     "minRead": "{time} min de lectura",
-    "connectLinkedIn": "Conectar en LinkedIn"
+    "connectLinkedIn": "Conectar en LinkedIn",
+    "trustRealPerson": "Responde una persona real"
   },
   "sitemap": {
     "title": "Mapa del sitio"
@@ -776,5 +793,211 @@
     "contactH": "Contacto",
     "contactB": "Preguntas sobre esta política:",
     "currentLink": "Leer la versión 2, la política vigente"
+  },
+  "serviceLines": {
+    "consultation": {
+      "name": "Consultoría",
+      "short": "Encontrar lo que falla y escribir cómo debe hacerse el trabajo.",
+      "line": "Encontramos lo que falla, lo que cuesta, y escribimos cómo debe hacerse el trabajo.",
+      "before": "Los pasos viven en la cabeza de la gente.",
+      "after": "Procesos estándar por escrito y una lista de mejoras priorizada.",
+      "menuName": "Consultoría"
+    },
+    "programming": {
+      "name": "Programación",
+      "short": "Construir la pieza que hace encajar sus herramientas.",
+      "line": "Cuando las herramientas comerciales casi encajan, construimos la pieza que falta.",
+      "before": "La gente cubre a mano los huecos entre herramientas.",
+      "after": "Software y API a medida, hechos para su proceso.",
+      "menuName": "Programación"
+    },
+    "automation": {
+      "name": "Automatización e integración",
+      "short": "Automatización e integración. Sus sistemas se pasan el trabajo.",
+      "line": "Sus sistemas se pasan el trabajo. Las personas intervienen solo donde hace falta criterio.",
+      "before": "Los mismos datos escritos en tres sistemas.",
+      "after": "Sistemas conectados, un solo responsable por cada dato.",
+      "menuName": "Automatización"
+    },
+    "design": {
+      "name": "Diseño",
+      "short": "Diseño de marca e interfaz gestionado como un sistema.",
+      "line": "El diseño gestionado como un sistema, para que cada pieza nueva empiece coherente.",
+      "before": "Cada página y cada presentación empieza de cero.",
+      "after": "Reglas de marca, plantillas y componentes reutilizables.",
+      "menuName": "Diseño"
+    },
+    "advertising": {
+      "name": "Publicidad",
+      "short": "Campañas que se pueden repetir y medir.",
+      "line": "Campañas que puede repetir, medir y entregar a su equipo.",
+      "before": "Acciones sueltas que nadie puede repetir.",
+      "after": "Campañas repetibles, medidas solo con consentimiento.",
+      "menuName": "Publicidad"
+    },
+    "title": "Cinco servicios. Un objetivo: sistemas que funcionan solos.",
+    "before": "Antes",
+    "after": "Después",
+    "ask": "Preguntar al asistente sobre {service}",
+    "explore": "Ver {service}",
+    "toggleBefore": "Antes",
+    "toggleAfter": "Después",
+    "toggleLabel": "Mostrar antes o después",
+    "artLabel": "Traspasos desordenados que se convierten en sistemas conectados"
+  },
+  "assistant": {
+    "title": "¿Qué debería dejar de hacer a mano su empresa?",
+    "subtitle": "Cuéntenos cómo funciona hoy un proceso. Reciba una primera lectura en un minuto: qué falla, cuánto cuesta y qué estandarizar y automatizar primero.",
+    "greeting": "Hola, soy el asistente de Awesoon. Describa un proceso que le quita tiempo a su equipo, o elija un ejemplo abajo. Le doy una primera lectura y luego un resumen para guardar.",
+    "starters": {
+      "orders": "Volvemos a escribir pedidos entre el correo y dos sistemas",
+      "spreadsheets": "Nuestros horarios dependen de hojas de cálculo",
+      "tools": "Nuestras herramientas no se comunican",
+      "government": "Compro para el sector público"
+    },
+    "placeholder": "Describa un proceso",
+    "send": "Enviar",
+    "typing": "El asistente está escribiendo",
+    "openGeneric": "Parece un problema de traspaso: el mismo trabajo pasa a mano entre personas y herramientas.",
+    "openOrders": "Volver a escribir pedidos es uno de los problemas más comunes, y de los más fáciles de resolver.",
+    "openSpreadsheets": "Cuando una hoja de cálculo sostiene un proceso clave, una sola fórmula rota puede detener el negocio.",
+    "openGovernment": "En programas públicos estandarizamos el proceso, lo automatizamos y entregamos la documentación completa.",
+    "followUp": "Dos preguntas rápidas para ajustar el resumen: ¿cuántas personas tocan este trabajo cada semana y cuántos sistemas intervienen?",
+    "briefIntro": "Gracias. Aquí tiene su primera lectura. Se basa en lo que me contó; no es una cotización ni un alcance.",
+    "handOff": "Buena pregunta. Ray puede responderla bien en una llamada, con su resumen delante. ¿Quiere elegir un horario?",
+    "briefLabel": "Su resumen, para guardar",
+    "brief1Title": "Un responsable por cada dato",
+    "brief1Text": "Decida qué sistema manda para pedidos, clientes y artículos.",
+    "brief2Title": "Escribir los pasos estándar",
+    "brief2Text": "Una forma acordada, por escrito, antes de automatizar nada.",
+    "brief3Title": "Automatizar el traspaso con más volumen",
+    "brief3Text": "Conecte primero los dos sistemas que mueven más volumen.",
+    "talkToRay": "Hablarlo con Ray",
+    "bookLabel": "30 minutos con Ray",
+    "bookText": "Elija un horario en la página siguiente. Ray lee su resumen antes de la llamada.",
+    "bookCta": "Reservar una llamada de descubrimiento de 30 minutos",
+    "keywordsOrders": "pedido,escrib,correo,email",
+    "keywordsSpreadsheets": "hoja,excel,cálculo",
+    "keywordsGovernment": "gobierno,público,licitación,compra",
+    "worksAcross": "Funciona con",
+    "ghost1": "Nuestro equipo copia pedidos del correo al ERP",
+    "ghost2": "Llevamos el inventario en tres hojas de cálculo",
+    "ghost3": "Las facturas se aprueban reenviando correos",
+    "more": "Más",
+    "orBook": "O reserve una llamada de descubrimiento de 30 minutos",
+    "trust1": "Independientes, sin comisiones",
+    "trust2": "Entrega a cargo del fundador",
+    "trust3": "Sin seguimiento antes de que acepte",
+    "trust4": "Responde una persona real",
+    "mapLabel": "Pasos manuales que se unen en sistemas conectados",
+    "fitLine": "Para equipos de operaciones en fabricación, distribución, servicios industriales y sector público.",
+    "fitLineShort": "Para equipos de fabricación, distribución y sector público."
+  },
+  "placeholder": {
+    "title": "Esta página llega pronto",
+    "text": "Estamos rehaciendo esta parte del sitio. Mientras tanto, Ray se la puede explicar en una llamada corta.",
+    "cta": "Reservar una llamada",
+    "back": "Volver al inicio"
+  },
+  "platformsStrip": {
+    "title": "Plataformas con las que trabajamos cada día",
+    "label": "Plataformas con las que trabajamos"
+  },
+  "serviceItems": {
+    "applicationProgramming": "Programación de aplicaciones",
+    "clientServer": "Programación de cliente y servidor",
+    "erpDatabaseApps": "Programación de aplicaciones ERP y de bases de datos",
+    "databaseDesign": "Diseño de bases de datos",
+    "databaseInterfaces": "Interfaces de bases de datos y herramientas de consulta",
+    "interfaceDevelopment": "Desarrollo de interfaces",
+    "gameMaintenance": "Mantenimiento de juegos y apps",
+    "dbaas": "Gestión de bases de datos como servicio",
+    "crmSetup": "Configuración de software CRM",
+    "itExpert": "Servicios de expertos en TI",
+    "permanentDevelopers": "Desarrolladores permanentes a través de un socio verificado",
+    "artDesign": "Diseño artístico y gráfico",
+    "uiDesign": "Diseño de interfaces de usuario",
+    "brandSystems": "Sistemas de marca",
+    "campaigns": "Campañas publicitarias",
+    "production": "Producción publicitaria",
+    "banner": "Publicidad en banners",
+    "playbooks": "Guías de marca y publicidad"
+  },
+  "closing": {
+    "title": "¿Listo para dejar de hacerlo a mano?",
+    "text": "Háblelo con Ray. Sale con un primer paso claro, trabajemos juntos o no.",
+    "cta": "Reservar una llamada de descubrimiento de 30 minutos"
+  },
+  "sampleBrief": {
+    "title": "Lo que se lleva",
+    "text": "Este es un ejemplo del resumen que prepara el asistente. No es un cliente real.",
+    "badge": "Ejemplo, no es un cliente real",
+    "workflowLabel": "El proceso que describió",
+    "workflow": "Los pedidos llegan por correo. Alguien los escribe en el ERP y luego otra vez en el sistema de almacén.",
+    "heardLabel": "Lo que entendimos",
+    "heard": "El mismo pedido se escribe dos veces a mano, y nadie decide qué sistema manda cuando no coinciden.",
+    "stepsLabel": "Qué arreglar primero, en orden",
+    "manualLabel": "Lo que queda en manos de personas",
+    "manual": "Aprobar pedidos poco comunes y hablar con clientes. El criterio sigue siendo humano.",
+    "nextLabel": "Siguiente paso",
+    "next": "Una llamada de 30 minutos con Ray para contrastar el resumen con cómo funciona el trabajo."
+  },
+  "platforms": {
+    "title": "Las plataformas que conocemos de verdad",
+    "text": "Somos independientes de proveedores. Elegimos lo que encaja con sus operaciones, no lo que paga una comisión.",
+    "categories": "Categorías de plataformas",
+    "officialSite": "Sitio oficial",
+    "more": "Y muchas más",
+    "cat": {
+      "erp": "ERP",
+      "crm": "CRM",
+      "ecom": "Comercio electrónico",
+      "integration": "Integración",
+      "ai": "IA y datos"
+    },
+    "fit": {
+      "netsuite": "ERP en la nube para empresas con varias entidades y fuertes necesidades financieras y de informes. Buena opción tras QuickBooks.",
+      "odoo": "Suite todo en uno: ERP, CRM, inventario, comercio electrónico. Ideal para una pila conectada sin ataduras por módulo.",
+      "epicor": "ERP de fabricación y distribución para flujos de producción complejos, listas de materiales y planta.",
+      "sap": "Controles financieros y auditoría de nivel SAP sin el peso de un despliegue completo de S/4HANA.",
+      "salesforce": "Equipos de ventas con pipelines complejos, objetos personalizados y previsiones exigentes.",
+      "hubspot": "Equipos orientados al marketing que buscan adopción rápida y ventas alineadas con marketing.",
+      "zoho": "Una suite CRM completa sin precios de empresa. Buena para equipos pequeños.",
+      "pipedrive": "Visibilidad simple del pipeline para equipos de ventas pequeños que quieren rapidez.",
+      "shopify": "Nuestra opción por defecto para B2C y B2B de complejidad media. Rápido de lanzar y fácil de operar.",
+      "magento": "Catálogos complejos, precios B2B escalonados y mucha personalización, cuando Shopify no basta.",
+      "woocommerce": "Tiendas sobre WordPress con control total del alojamiento y los plugins.",
+      "bigcommerce": "SaaS híbrido y headless, con mejores funciones B2B nativas que Shopify Basic.",
+      "celigo": "Plataforma de integración pensada para NetSuite y comercio electrónico.",
+      "boomi": "Integración empresarial con transformación de datos, gobierno y manejo de errores.",
+      "zapier": "Automatización rápida entre apps cuando importa más la velocidad que la profundidad.",
+      "make": "Constructor visual de flujos con más lógica que Zapier, para flujos de varios pasos.",
+      "openai": "Copilotos GPT, razonamiento y análisis de documentos.",
+      "anthropic": "Claude para análisis de contexto largo, agentes en producción y uso de herramientas más seguro.",
+      "langchain": "Marco para crear pipelines RAG, agentes y flujos de IA de varios pasos.",
+      "postgresql": "Nuestra base de datos por defecto, con pgvector para vectores de IA."
+    }
+  },
+  "founder": {
+    "name": "Ray Rasouli",
+    "role": "Fundador, ingeniero de software y responsable de sistemas. Vancouver, BC.",
+    "linkedin": "Ray en LinkedIn",
+    "photoAlt": "Ray Rasouli",
+    "bio": "Desarrollador full-stack que ha construido y reemplazado plataformas enteras desde cero.",
+    "principleLabel": "Con quién trabaja",
+    "principle": "Sin reventa. Sin comisiones. Solo sus operaciones."
+  },
+  "howWeWork": {
+    "title": "Cómo trabajamos",
+    "subtitle": "Cuatro pasos. Empiece donde quiera. Partimos de donde usted está.",
+    "freeAfterCall": "Gratis, después de su llamada de descubrimiento",
+    "supportToggle": "Ver las cuatro líneas de soporte",
+    "pathLabel": "Cuatro pasos conectados, de la revisión al soporte",
+    "steps": [
+      "Aprendemos cómo trabaja su equipo y dónde falla. Recibe una lista priorizada de qué arreglar primero.",
+      "Convertimos lo encontrado en un plan claro. Requisitos, herramientas y el camino al lanzamiento, por escrito.",
+      "Construimos el plan con usted. Tanto o tan poco del trabajo como necesite.",
+      "Seguimos después del lanzamiento. Soporte y mejoras a medida que su negocio crece."
+    ]
   }
 }

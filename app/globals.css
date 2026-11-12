@@ -364,27 +364,15 @@ html.js-ready .animate-in {
    degrades to fully visible content instead of blank sections.
    ───────────────────────────────────────────────────────────── */
 html.reveal-ready .reveal {
-  opacity: 0;
+  transition: transform 600ms cubic-bezier(0.16, 1, 0.3, 1);
 }
-html.reveal-ready .reveal.in-view {
-  animation-fill-mode: both;
-  animation-duration: 600ms;
-  animation-timing-function: cubic-bezier(0.16, 1, 0.3, 1);
+html.reveal-ready .reveal:not(.in-view) {
+  transform: translateY(16px);
 }
-html.reveal-ready .reveal.in-view.anim-fade-in {
-  animation-name: fade-in;
-}
-html.reveal-ready .reveal.in-view.anim-slide-up {
-  animation-name: slide-up;
-}
-html.reveal-ready .reveal.in-view.anim-slide-left {
-  animation-name: slide-left;
-}
-html.reveal-ready .reveal.in-view.anim-slide-right {
-  animation-name: slide-right;
-}
-html.reveal-ready .reveal.in-view.anim-scale-in {
-  animation-name: scale-in;
+@media (prefers-reduced-motion: reduce) {
+  html.reveal-ready .reveal:not(.in-view) {
+    transform: none;
+  }
 }
 
 .anim-fade-in {
@@ -490,3 +478,23 @@ html.reveal-ready .reveal.in-view.anim-scale-in {
   background-color: #f59e0b;
   color: #0f1b2d;
 }
+
+@keyframes send-pulse {
+  0%, 100% { box-shadow: 0 0 0 0 rgb(15 29 51 / 0.35); }
+  50% { box-shadow: 0 0 0 8px rgb(15 29 51 / 0); }
+}
+.send-pulse { animation: send-pulse 2.4s ease-in-out infinite; }
+@media (prefers-reduced-motion: reduce) {
+  .send-pulse { animation: none; }
+}
+
+@keyframes mini-env {
+  0% { transform: translateX(0); opacity: 1; }
+  80% { transform: translateX(210px); opacity: 0.2; }
+  100% { transform: translateX(220px); opacity: 0; }
+}
+.mini-env { animation: mini-env 2.4s ease-in infinite; }
+@media (prefers-reduced-motion: reduce) {
+  .mini-env { animation: none; }
+}
+h1, h2, h3 { hyphens: manual; text-wrap: balance; }

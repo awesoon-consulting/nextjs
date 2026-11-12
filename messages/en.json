@@ -1,26 +1,44 @@
 {
   "nav": {
-    "home": "Home",
+    "home": "Awesoon home",
     "solutions": "Solutions",
     "support": "Support",
     "insights": "Insights",
     "about": "About",
-    "cta": "Let's Talk",
+    "cta": "Let's talk",
     "openMenu": "Open navigation menu",
     "closeMenu": "Close navigation menu",
     "megaMenu": {
-      "groupOps": "Operations & Integration",
-      "groupImplementation": "Implementation & Advisory",
-      "aiOperations": "AI Operations",
-      "opsOutgrown": "Ops Outgrown Tools",
-      "spreadsheetOps": "Spreadsheet Operations",
-      "systemIntegration": "System Integration",
-      "apiIntegrations": "API Integrations",
-      "erpImpl": "ERP Implementation",
-      "crmImpl": "CRM Implementation",
-      "vendorMgmt": "Software Selection",
-      "systemsAudit": "Free Systems Health Check"
-    }
+      "groupOps": "Operations and integration",
+      "groupImplementation": "Implementation and advisory",
+      "aiOperations": "AI operations",
+      "opsOutgrown": "Ops outgrown tools",
+      "spreadsheetOps": "Spreadsheet operations",
+      "systemIntegration": "System integration",
+      "apiIntegrations": "API integrations",
+      "erpImpl": "ERP implementation",
+      "crmImpl": "CRM implementation",
+      "vendorMgmt": "Software selection",
+      "systemsAudit": "Free systems health check"
+    },
+    "services": "Services",
+    "work": "Work",
+    "publicSector": "Public sector",
+    "bookCall": "Book a call",
+    "contact": "Contact",
+    "allSolutions": "All solutions",
+    "supportHeading": "Support",
+    "free": "Free",
+    "notSure": "Not sure where to start?",
+    "notSureLink": "Begin with the free systems health check.",
+    "vendorNeutral": "Vendor-neutral. Owner-led delivery.",
+    "toggleTheme": "Toggle color theme",
+    "mainNav": "Main navigation",
+    "mobileNav": "Mobile navigation",
+    "language": "Language",
+    "healthCheckTitle": "Free systems health check",
+    "healthCheckText": "A clear list of what is broken, what it costs and what to fix first.",
+    "healthCheckCta": "Book a 30-minute call"
   },
   "hero": {
     "headline": "Your ops outgrew your tools. We fix that.",
@@ -28,20 +46,19 @@
     "headlineAccent": "your tools.",
     "headline2": "We fix that.",
     "subtext": "We partner with growing teams to fix broken systems and build ones that actually hold up; practical, independent, and built for real use, so your team can focus on what they do best.",
-    "primaryCta": "Let's Talk",
-    "secondaryCta": "See How We Work",
+    "primaryCta": "Let's talk",
+    "secondaryCta": "See how we work",
     "trustBadge": "Trusted by operations leaders across North America",
     "trustSignals": {
       "auditTurnaround": "Average health check turnaround",
-      "seniorDelivery": "Senior operator delivery",
-      "noChatbots": "Chatbots. Ever."
+      "seniorDelivery": "Senior operator delivery"
     },
     "teamLabels": {
-      "rayTitle": "Software Engineer & Solutions"
+      "rayTitle": "Software engineer and solutions"
     }
   },
   "whoWeHelp": {
-    "title": "Who We Help",
+    "title": "Who we help",
     "subtitle": "We work with growing companies where the way the business runs has outpaced the systems supporting it.",
     "industries": {
       "manufacturing": {
@@ -49,21 +66,21 @@
         "description": "Production, inventory, and finance don't line up; and you're stuck stitching systems together just to keep things moving."
       },
       "distribution": {
-        "title": "Distribution & Logistics",
+        "title": "Distribution and logistics",
         "description": "Orders, warehouse ops, and carrier integrations are disconnected; creating constant workarounds and missed visibility."
       },
       "industrial": {
-        "title": "Industrial Services",
+        "title": "Industrial services",
         "description": "Field teams are running on spreadsheets and disconnected tools; and it's starting to break as you scale."
       },
       "other": {
-        "title": "Other Growing Operations",
+        "title": "Other growing operations",
         "description": "Any growing business where systems haven't kept up; and your team is compensating with manual work, workarounds, or extra hires."
       }
     }
   },
   "differentiators": {
-    "title": "Why Us",
+    "title": "Why us",
     "subtitle": "We're not a big-four consulting firm. We're operators who've been in the weeds and built the systems to get out.",
     "items": [
       {
@@ -85,21 +102,21 @@
     ]
   },
   "process": {
-    "title": "How We Work",
+    "title": "How we work",
     "freeNoCommitment": "Free, no commitment",
     "deliveredIn48h": "Delivered in 48h",
     "ctaNudge": "No pitch deck. No commitments. Just clarity.",
-    "ctaButton": "Start with a Free Systems Health Check",
+    "ctaButton": "Start with a free systems health check",
     "subtitle": "Four steps. Start anywhere. We'll meet you where you are and take you as far as you need.",
     "steps": [
       {
         "number": "01",
-        "title": "Systems Health Check",
+        "title": "Systems health check",
         "description": "We quickly understand how your team works, the tools you use, and where things break down. You'll leave with clear issues, cost-saving opportunities, and a plan for what to fix first."
       },
       {
         "number": "02",
-        "title": "Solution Design",
+        "title": "Solution design",
         "description": "We work with you to translate what we found into a clear plan; defining requirements, selecting the right tools, working with software companies, and mapping the path to implementation."
       },
       {
@@ -109,7 +126,7 @@
       },
       {
         "number": "04",
-        "title": "Support & Optimization",
+        "title": "Support and optimization",
         "description": "We stick with you; staying involved as much as you need, providing support, making improvements, and helping your systems evolve as your business grows."
       }
     ]
@@ -120,79 +137,79 @@
     "learnMore": "Learn more",
     "cards": {
       "aiOperations": {
-        "title": "AI Operations & RAG Enablement",
+        "title": "AI operations and RAG enablement",
         "description": "We help growing teams deploy RAG assistants, workflow agents, and AI copilots on top of stable systems, governed data, and real operational use cases.",
         "slug": "ai-operations"
       },
       "opsOutgrown": {
-        "title": "Ops Outgrown Your Tools",
+        "title": "Ops outgrown your tools",
         "description": "Your business has scaled but your systems haven't kept up. We design and implement the infrastructure your next stage of growth demands.",
         "slug": "ops-outgrown-tools"
       },
       "spreadsheetOps": {
-        "title": "Spreadsheet Operations",
+        "title": "Spreadsheet operations",
         "description": "Running your company on Excel is a liability. We replace spreadsheet-dependent processes with reliable, scalable systems.",
         "slug": "spreadsheet-operations"
       },
       "systemIntegration": {
-        "title": "System Integration",
+        "title": "System integration",
         "description": "Disconnected systems create manual work, errors, and blind spots. We connect your tools so data flows automatically where it needs to go.",
         "slug": "system-integration"
       },
       "erpImplementation": {
-        "title": "ERP Implementation",
+        "title": "ERP implementation",
         "description": "Without a strong operational lens, ERP projects can miss the mark. That's where we come in; selecting, configuring, and implementing an ERP that actually fits your operations.",
         "slug": "erp-implementation"
       },
       "crmImplementation": {
-        "title": "CRM Implementation",
+        "title": "CRM implementation",
         "description": "Your sales team needs more than a contact database. We implement CRMs that give your team pipeline visibility, forecasting, and actionable data.",
         "slug": "crm-implementation"
       },
       "apiIntegrations": {
-        "title": "API Integrations",
+        "title": "API integrations",
         "description": "Manual data transfer between systems is a productivity tax. We build the integrations that eliminate re-keying, reduce errors, and save hours every week.",
         "slug": "api-integrations"
       },
       "customApiDevelopment": {
-        "title": "Custom API Development",
+        "title": "Custom API development",
         "description": "When native connectors are not enough, we build the middleware, endpoints, and integration logic your operation actually needs.",
         "slug": "custom-api-development"
       },
       "ecommerceDevelopment": {
-        "title": "Ecommerce Development",
+        "title": "Ecommerce development",
         "description": "We build ecommerce systems that work across storefront, fulfillment, inventory, ERP, CRM, and the operational realities behind them.",
         "slug": "ecommerce-development"
       },
       "vendorManagement": {
-        "title": "Software Selection",
+        "title": "Software selection",
         "description": "Choosing the wrong software is expensive. We run a structured selection process so you choose the right tool for your specific operations.",
         "slug": "vendor-management"
       },
       "systemsAudit": {
-        "title": "Systems Health Check",
+        "title": "Systems health check",
         "description": "Don't know where to start? Our systems health check gives you a complete map of your operational tech stack, gaps, and a prioritized roadmap for improvement.",
         "slug": "systems-audit"
       },
       "mobileWarehouse": {
-        "title": "Mobile Warehouse & Barcoding",
+        "title": "Mobile warehouse and barcoding",
         "description": "Manual processes, paper picking, and delayed updates create inventory inaccuracies and operational friction. A mobile warehouse solution enables real-time data capture integrated with your ERP.",
         "slug": "mobile-warehouse-barcoding"
       },
       "projectManagement": {
-        "title": "Project Management",
+        "title": "Project management",
         "description": "Software projects often stall; not because of the technology, but because there's no internal resource to drive them. We step in to keep everything aligned, accountable, and moving forward.",
         "slug": "project-management"
       },
       "processFoundations": {
-        "title": "Operational Process & System Foundations",
+        "title": "Operational process and system foundations",
         "description": "Sometimes the issue isn't your system; it's how it's being used. We help you get the fundamentals right so your operations run the way they should.",
         "slug": "operational-process-foundations"
       }
     }
   },
   "supportHome": {
-    "title": "Support After Go-Live",
+    "title": "Support after go-live",
     "subtitle": "We do not only deliver projects. We also support live systems, take over from weak providers, and help teams keep improving after launch."
   },
   "support": {
@@ -201,16 +218,16 @@
     "learnMore": "Learn more",
     "cards": {
       "systemsOperationsSupport": {
-        "title": "Systems & Operations Support"
+        "title": "Systems and operations support"
       },
       "crmSupport": {
-        "title": "CRM Support"
+        "title": "CRM support"
       },
       "erpSupport": {
-        "title": "ERP Support"
+        "title": "ERP support"
       },
       "ecommerceSupport": {
-        "title": "Ecommerce Support & Maintenance"
+        "title": "Ecommerce support and maintenance"
       }
     }
   },
@@ -235,11 +252,11 @@
       "subtext": "We've lived the challenges of growing a business with disconnected systems, limited resources, and solutions that didn't quite fit. We've also worked with consultants who brought rigid frameworks, pushed software, and overlooked how the business actually runs day to day. That's not how we work. We partner with businesses to build practical, flexible systems that support how they actually operate; without unnecessary complexity, cost, or rigid frameworks. We believe the best work happens through real partnership; which is why we choose to work with clients who value collaboration, transparency, and doing things the right way."
     },
     "mission": {
-      "title": "Our Mission",
+      "title": "Our mission",
       "text": "To make operations easy; not in a naive way, but in the way that comes from having the right systems, the right data, and the right processes working together. We give growing teams the connected infrastructure they need to grow without the chaos, without bloated consulting fees, and without cookie-cutter solutions that don't fit."
     },
     "values": {
-      "title": "Our Values",
+      "title": "Our values",
       "items": [
         {
           "title": "Honesty over polish",
@@ -260,11 +277,11 @@
       ]
     },
     "team": {
-      "title": "The Team",
+      "title": "The team",
       "subtitle": "An operator who's been in the weeds; and built systems to get out.",
       "members": {
         "ray": {
-          "title": "Software Engineer & Solution Developer",
+          "title": "Software engineer and solution developer",
           "bio": "Full-stack developer who has built and replaced entire platforms from the ground up; from e-commerce migrations and ERP integrations to AI-assisted data pipelines and internal automation tools. Owns everything from database design to cloud infrastructure, with a focus on eliminating manual workflows and giving operations teams systems they can actually rely on."
         }
       }
@@ -272,7 +289,7 @@
     "cta": {
       "headline": "Operations should feel easy. Let's get you there.",
       "subtext": "Start with a free systems health check. No pitch deck, no sales pressure; just a clear-eyed look at where your operations stand and what it would take to make them work the way they should.",
-      "button": "Let's Talk"
+      "button": "Let's talk"
     }
   },
   "contact": {
@@ -281,7 +298,7 @@
     "steps": {
       "1": "Your Business",
       "2": "Your Challenges",
-      "3": "Timeline & Budget",
+      "3": "Timeline and Budget",
       "4": "Your Details"
     },
     "fields": {
@@ -311,7 +328,7 @@
     },
     "industries": {
       "manufacturing": "Manufacturing",
-      "distribution": "Distribution & Logistics",
+      "distribution": "Distribution and Logistics",
       "industrial": "Industrial Services",
       "other": "Other Growing Operations"
     },
@@ -360,9 +377,9 @@
     },
     "success": {
       "title": "We've received your request!",
-      "message": "Thank you for reaching out. Ray Rasouli, our Software Engineer & Solution Developer, will be in touch within 1 business day to schedule your free systems health check.",
+      "message": "Thank you for reaching out. Ray Rasouli, our Software Engineer and Solution Developer, will be in touch within 1 business day to schedule your free systems health check.",
       "responderName": "Ray Rasouli",
-      "responderTitle": "Software Engineer & Solution Developer, Awesoon"
+      "responderTitle": "Software Engineer and Solution Developer, Awesoon"
     },
     "error": {
       "generic": "Something went wrong. Please try again or email us directly at ray.rasouli@awesoontechnologies.com.",
@@ -378,47 +395,49 @@
     }
   },
   "footer": {
-    "tagline": "Awesoon means easy. That's what operations should feel like.",
+    "tagline": "Awesoon means easy. Vancouver, BC. Serving North America.",
     "readyHeadline": "Ready for operations that actually feel easy?",
     "readySubtext": "A 30-minute call. No pitch deck. Just an honest look at your systems and a clear path forward.",
     "contactHeading": "Contact",
-    "humanReplies": "A real person replies within 24 hours.",
-    "noChatbots": "No chatbots, no auto-responders.",
+    "humanReplies": "A real person replies within one business day",
     "solutions": "Solutions",
     "support": "Support",
     "company": "Company",
     "legal": "Legal",
-    "privacy": "Privacy Policy",
-    "terms": "Terms of Service",
-    "cookies": "Cookie Policy",
-    "copyright": "© {year} Awesoon Technologies. All rights reserved.",
-    "noTracking": "No cookies set without your consent.",
-    "madeWith": "Built with care in Vancouver."
+    "privacy": "Privacy",
+    "terms": "Terms",
+    "cookies": "Cookies",
+    "copyright": "© {year} Awesoon Technologies Inc.",
+    "noTracking": "No tracking before you agree.",
+    "madeWith": "Built with care in Vancouver.",
+    "linkedin": "Ray on LinkedIn",
+    "language": "Language",
+    "services": "Services"
   },
   "cookie": {
     "banner": {
       "title": "We use cookies",
       "description": "We use essential cookies to make our site work. With your permission, we'd also like to use analytics cookies to understand how you use our site and improve your experience.",
-      "acceptAll": "Accept All",
-      "rejectAll": "Reject All",
-      "manage": "Manage Preferences",
+      "acceptAll": "Accept all",
+      "rejectAll": "Reject all",
+      "manage": "Manage preferences",
       "learnMore": "Learn more about our cookie policy"
     },
     "manager": {
-      "title": "Manage Cookie Preferences",
-      "save": "Save Preferences",
+      "title": "Manage cookie preferences",
+      "save": "Save preferences",
       "categories": {
         "necessary": {
-          "title": "Necessary Cookies",
+          "title": "Necessary cookies",
           "description": "These cookies are required for the site to function. They cannot be disabled.",
-          "alwaysOn": "Always On"
+          "alwaysOn": "Always on"
         },
         "analytics": {
-          "title": "Analytics Cookies",
+          "title": "Analytics cookies",
           "description": "These cookies help us understand how visitors use our site. We use Google Analytics 4. No personal data is sent without your consent."
         },
         "marketing": {
-          "title": "Marketing Cookies",
+          "title": "Marketing cookies",
           "description": "These cookies are used to deliver relevant ads and track campaign effectiveness. Currently, we do not use any marketing cookies."
         }
       }
@@ -445,18 +464,16 @@
     "contactCta": "Contact Us"
   },
   "eyebrow": {
-    "whyAwesoon": "Why Us",
+    "whyAwesoon": "Why us",
     "soundFamiliar": "Sound familiar?",
-    "problemsWeSolve": "Problems We Solve",
-    "support": "Stay Supported",
-    "howWeWork": "How We Work",
+    "problemsWeSolve": "Problems we solve",
+    "support": "Stay supported",
+    "howWeWork": "How we work",
     "editorial": "Editorial",
     "takeFirstStep": "Take the first step"
   },
   "floatingCta": {
-    "message": "Your systems health check is free.",
-    "subtext": "30 minutes. A real operator. No pitch deck.",
-    "button": "Claim It →"
+    "pill": "Book a 30-minute call"
   },
   "solutionPage": {
     "painPointsTitle": "Does This Sound Familiar?",
@@ -500,12 +517,12 @@
     "getStarted": "Get started",
     "backToHome": "Back to homepage",
     "skipToContent": "Skip to main content",
-    "trustNoChatbots": "No chatbots",
     "trustReply24h": "Reply within 24h",
     "trustFree": "Completely free",
     "trustNamedContact": "Named point of contact",
     "minRead": "{time} min read",
-    "connectLinkedIn": "Connect on LinkedIn"
+    "connectLinkedIn": "Connect on LinkedIn",
+    "trustRealPerson": "A real person replies"
   },
   "sitemap": {
     "title": "Sitemap"
@@ -775,5 +792,211 @@
     "contactH": "Contact",
     "contactB": "Questions about this policy:",
     "currentLink": "Read version 2, the current policy"
+  },
+  "serviceLines": {
+    "consultation": {
+      "name": "Consultation",
+      "short": "Find what is broken and write down how work should run.",
+      "line": "We find what is broken, what it costs, and write down how the work should run.",
+      "before": "Steps live in people’s heads.",
+      "after": "Written standard workflows and a ranked fix list.",
+      "menuName": "Consultation"
+    },
+    "programming": {
+      "name": "Programming",
+      "short": "Build the part that makes your tools fit.",
+      "line": "When off-the-shelf tools almost fit, we build the part that makes them fit.",
+      "before": "People fill gaps between tools by hand.",
+      "after": "Custom software and APIs built to your process.",
+      "menuName": "Programming"
+    },
+    "automation": {
+      "name": "Automation and integration",
+      "short": "Automation and integration. Systems hand work to each other.",
+      "line": "Your systems hand work to each other. People step in only where judgment is needed.",
+      "before": "The same data typed into three systems.",
+      "after": "Connected systems, one owner per piece of data.",
+      "menuName": "Automation"
+    },
+    "design": {
+      "name": "Design",
+      "short": "Brand and interface design run as a system.",
+      "line": "Design run as a system, so every new piece starts consistent.",
+      "before": "Every page and deck starts from scratch.",
+      "after": "Brand rules, templates and reusable components.",
+      "menuName": "Design"
+    },
+    "advertising": {
+      "name": "Advertising",
+      "short": "Campaigns you can repeat and measure.",
+      "line": "Campaigns you can repeat, measure and hand over.",
+      "before": "One-off pushes nobody can repeat.",
+      "after": "Repeatable campaigns, tracked only with consent.",
+      "menuName": "Advertising"
+    },
+    "title": "Five services. One goal: systems that run themselves.",
+    "before": "Before",
+    "after": "After",
+    "ask": "Ask the assistant about {service}",
+    "explore": "Explore {service}",
+    "toggleBefore": "Before",
+    "toggleAfter": "After",
+    "toggleLabel": "Show before or after",
+    "artLabel": "Messy hand-offs becoming connected systems"
+  },
+  "assistant": {
+    "title": "What should your business stop doing by hand?",
+    "subtitle": "Tell us how a workflow runs today. Get a first read in a minute: what is broken, what it costs, and what to standardize and automate first.",
+    "greeting": "Hi, I’m the Awesoon assistant. Describe a workflow that eats your team’s time, or pick a starter below. I’ll give you a first read, then a brief you can keep.",
+    "starters": {
+      "orders": "We re-key orders between email and two systems",
+      "spreadsheets": "Spreadsheets run our scheduling",
+      "tools": "Our tools do not talk to each other",
+      "government": "I buy for government"
+    },
+    "placeholder": "Describe a workflow",
+    "send": "Send",
+    "typing": "The assistant is typing",
+    "openGeneric": "That sounds like a hand-off problem: the same work moves between people and tools by hand.",
+    "openOrders": "Re-keying orders is one of the most common and most fixable problems we see.",
+    "openSpreadsheets": "When spreadsheets run a key process, one broken formula can stop the business.",
+    "openGovernment": "For public programs we standardize the workflow, automate it and hand over full documentation.",
+    "followUp": "Two quick questions so the brief fits: roughly how many people touch this each week, and how many systems are involved?",
+    "briefIntro": "Thanks. Here is your first read. It is built from what you told me, not a quote or a scope.",
+    "handOff": "Good question. Ray can answer that properly on a call, with your brief in front of him. Want to pick a time?",
+    "briefLabel": "Your brief, yours to keep",
+    "brief1Title": "Pick one owner per piece of data",
+    "brief1Text": "Decide which system is the source for orders, customers and items.",
+    "brief2Title": "Write the standard steps",
+    "brief2Text": "One agreed way, written down, before anything is automated.",
+    "brief3Title": "Automate the busiest hand-off",
+    "brief3Text": "Connect the two systems that carry the most volume first.",
+    "talkToRay": "Talk it through with Ray",
+    "bookLabel": "30 minutes with Ray",
+    "bookText": "Pick a time on the next page. Ray reads your brief before the call.",
+    "bookCta": "Book a 30-minute discovery call",
+    "keywordsOrders": "order,key,email",
+    "keywordsSpreadsheets": "spreadsheet,sheet,excel",
+    "keywordsGovernment": "government,rfp,procure,public",
+    "worksAcross": "Works across",
+    "ghost1": "Our team copies orders from email into the ERP",
+    "ghost2": "We track inventory in three spreadsheets",
+    "ghost3": "Invoices get approved by forwarding emails",
+    "more": "More",
+    "orBook": "Or book a 30-minute discovery call",
+    "trust1": "Vendor-neutral, no commissions",
+    "trust2": "Owner-led delivery",
+    "trust3": "No tracking before you agree",
+    "trust4": "A real person replies",
+    "mapLabel": "Manual steps joining into connected systems",
+    "fitLine": "For operations teams in manufacturing, distribution, industrial services and public sector.",
+    "fitLineShort": "For manufacturing, distribution and public sector."
+  },
+  "placeholder": {
+    "title": "This page is on its way",
+    "text": "We are rebuilding this part of the site. In the meantime, Ray can walk you through it on a short call.",
+    "cta": "Book a call",
+    "back": "Back to home"
+  },
+  "platformsStrip": {
+    "title": "Platforms we work with every day",
+    "label": "Platforms we work with"
+  },
+  "serviceItems": {
+    "applicationProgramming": "Application programming",
+    "clientServer": "Client and server programming",
+    "erpDatabaseApps": "ERP and database applications programming",
+    "databaseDesign": "Database design",
+    "databaseInterfaces": "Database interfaces and query tools",
+    "interfaceDevelopment": "Interface development",
+    "gameMaintenance": "Game and app maintenance",
+    "dbaas": "Database management as a service",
+    "crmSetup": "CRM software setup",
+    "itExpert": "IT expert services",
+    "permanentDevelopers": "Permanent developers through a vetted partner",
+    "artDesign": "Art design and graphics",
+    "uiDesign": "User interface design",
+    "brandSystems": "Brand systems",
+    "campaigns": "Advertising campaigns",
+    "production": "Advertising production",
+    "banner": "Banner advertising",
+    "playbooks": "Brand and advertising playbooks"
+  },
+  "closing": {
+    "title": "Ready to stop doing it by hand?",
+    "text": "Talk it through with Ray. You leave with a clear first step, whether or not we work together.",
+    "cta": "Book a 30-minute discovery call"
+  },
+  "sampleBrief": {
+    "title": "What you leave with",
+    "text": "This is an example of the brief the assistant builds. It is not a real client.",
+    "badge": "Example, not a real client",
+    "workflowLabel": "The workflow you described",
+    "workflow": "Orders arrive by email. Someone types each one into the ERP, then again into the warehouse system.",
+    "heardLabel": "What we heard",
+    "heard": "The same order is entered twice by hand, and nobody owns which system is right when they disagree.",
+    "stepsLabel": "What to fix first, in order",
+    "manualLabel": "What stays with people",
+    "manual": "Approving unusual orders and talking to customers. Judgment stays human.",
+    "nextLabel": "Next step",
+    "next": "A 30-minute call with Ray to check the brief against how the work really runs."
+  },
+  "platforms": {
+    "title": "The platforms we actually know",
+    "text": "We are vendor-neutral. We pick what fits your operations, not what pays a commission.",
+    "categories": "Platform categories",
+    "officialSite": "Official site",
+    "more": "And many more",
+    "cat": {
+      "erp": "ERP",
+      "crm": "CRM",
+      "ecom": "Ecommerce",
+      "integration": "Integration",
+      "ai": "AI and data"
+    },
+    "fit": {
+      "netsuite": "Cloud-first ERP for multi-entity businesses with strong finance and reporting needs. A strong pick for companies that outgrew QuickBooks.",
+      "odoo": "All-in-one suite: ERP, CRM, inventory, ecommerce. Ideal when you want one connected stack without per-module lock-in.",
+      "epicor": "Deep manufacturing and distribution ERP with complex production workflows, BOMs and shop floor control.",
+      "sap": "SAP-grade financial controls and audit trails without the overhead of a full S/4HANA deployment.",
+      "salesforce": "Sales-led teams with complex pipelines, custom objects and high forecast accuracy needs.",
+      "hubspot": "Marketing-driven teams that want fast adoption, inbound workflows and tight sales and marketing alignment.",
+      "zoho": "A full CRM suite without enterprise pricing. Good for lean teams that need breadth without complexity.",
+      "pipedrive": "Simple pipeline visibility for small sales teams that want speed over configuration depth.",
+      "shopify": "Our default for B2C and mid-complexity B2B. Fast to launch, easy to run, huge app ecosystem.",
+      "magento": "Complex catalogs, tiered B2B pricing and deep customization, for when Shopify is not enough.",
+      "woocommerce": "Content-driven stores on WordPress with full ownership of hosting and plugins.",
+      "bigcommerce": "Hybrid SaaS and headless, with stronger native B2B features than Shopify Basic.",
+      "celigo": "Integration platform built for NetSuite and ecommerce, with connectors for the stack we see most.",
+      "boomi": "Enterprise integration with strong data transformation, governance and error handling.",
+      "zapier": "Fast app-to-app automation when speed matters more than depth. Good for non-critical workflows.",
+      "make": "Visual workflow builder with deeper logic than Zapier, for complex multi-step flows.",
+      "openai": "GPT-based copilots, reasoning and document intelligence.",
+      "anthropic": "Claude for long-context analysis, production agents and safer tool use.",
+      "langchain": "Framework for building RAG pipelines, agents and multi-step AI workflows.",
+      "postgresql": "Our default database, with pgvector for AI embeddings and no separate vector store."
+    }
+  },
+  "founder": {
+    "name": "Ray Rasouli",
+    "role": "Owner, software engineer and systems lead. Vancouver, BC.",
+    "linkedin": "Ray on LinkedIn",
+    "photoAlt": "Ray Rasouli",
+    "bio": "Full-stack developer who has built and replaced entire platforms from the ground up.",
+    "principleLabel": "Who you work with",
+    "principle": "No resale. No commissions. Just your operations."
+  },
+  "howWeWork": {
+    "title": "How we work",
+    "subtitle": "Four steps. Start anywhere. We meet you where you are.",
+    "freeAfterCall": "Free, after your discovery call",
+    "supportToggle": "See the four support lines",
+    "pathLabel": "Four connected steps, from health check to support",
+    "steps": [
+      "We learn how your team works and where it breaks. You get a ranked list of what to fix first.",
+      "We turn the findings into a clear plan. Requirements, tools and the path to launch, written down.",
+      "We build the plan with you. As much or as little of the work as you need.",
+      "We stay on after launch. Support and improvements as your business grows."
+    ]
   }
 }
