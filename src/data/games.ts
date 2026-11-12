@@ -694,7 +694,7 @@ export const games: GameData[] = [
   },
   {
     slug: 'idle-bakery',
-    name: 'Idle Bakery Empire',
+    name: 'Penny Loaf',
     bundleId: 'com.awesoontechnologies.idlebakery',
     accent: '#6E1A20',
     icon: '/images/games/idle-bakery/icon.webp',
@@ -746,7 +746,7 @@ export const games: GameData[] = [
       },
     ],
     seoSummary:
-      'Idle Bakery Empire is a free 3D idle bakery tycoon: build a town, take market share, buy out rival bakeries and open new districts. Plays offline, no account, contains ads.',
+      'Penny Loaf is a free 3D idle bakery tycoon: build a town, take market share, buy out rival bakeries and open new districts. Plays offline, no account, contains ads.',
     keywords: [
       'idle game',
       'bakery tycoon',
@@ -820,7 +820,7 @@ export const games: GameData[] = [
           },
         ],
         seoSummary:
-          'Idle Bakery Empire est un jeu de gestion idle gratuit en 3D : bâtissez une ville, gagnez des parts de marché, rachetez les boulangeries rivales et ouvrez de nouveaux quartiers. Hors ligne, sans compte, contient des publicités.',
+          'Penny Loaf est un jeu de gestion idle gratuit en 3D : bâtissez une ville, gagnez des parts de marché, rachetez les boulangeries rivales et ouvrez de nouveaux quartiers. Hors ligne, sans compte, contient des publicités.',
         screenshots: [
           {
             src: '/images/games/idle-bakery/01-counter.webp',
@@ -886,7 +886,7 @@ export const games: GameData[] = [
           },
         ],
         seoSummary:
-          'Idle Bakery Empire es un juego idle gratuito de panadería en 3D: construye una ciudad, gana cuota de mercado, compra panaderías rivales y abre nuevos barrios. Sin conexión, sin cuenta, contiene anuncios.',
+          'Penny Loaf es un juego idle gratuito de panadería en 3D: construye una ciudad, gana cuota de mercado, compra panaderías rivales y abre nuevos barrios. Sin conexión, sin cuenta, contiene anuncios.',
         screenshots: [
           {
             src: '/images/games/idle-bakery/01-counter.webp',
