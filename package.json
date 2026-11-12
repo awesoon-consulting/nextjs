@@ -7,6 +7,8 @@
     "build": "next build",
     "start": "next start",
     "lint": "eslint",
+    "test:tools": "tsx --test scripts/tests/tools.test.ts",
+    "tools:data": "tsx scripts/build-tools-data.ts",
     "ingest": "tsx scripts/ingest.ts",
     "db:generate": "drizzle-kit generate",
     "db:migrate": "drizzle-kit migrate",

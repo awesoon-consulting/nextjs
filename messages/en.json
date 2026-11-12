@@ -526,6 +526,282 @@
   "sitemap": {
     "title": "Sitemap"
   },
+  "tools": {
+    "crumb": "Free tools",
+    "hub": {
+      "meta": {
+        "title": "Free tools for operations and public sector bids",
+        "description": "Free tools from Awesoon that each answer one question: what repeat manual work costs your team, and which procurement codes you bid under. No sign-up."
+      },
+      "eyebrow": "Free. No sign-up. Your inputs stay in your browser.",
+      "title": "Free tools that each answer one question.",
+      "text": "What repeat work costs you, which codes you bid under, and more on the way. Each result is yours to keep and share.",
+      "filterLabel": "Filter tools by area",
+      "filters": {
+        "all": "All",
+        "automation": "Automation",
+        "procurement": "Procurement",
+        "erpCrm": "ERP and CRM",
+        "consulting": "Consulting",
+        "design": "Design",
+        "advertising": "Advertising"
+      },
+      "live": "Live",
+      "soon": "Coming next",
+      "open": "Open the tool",
+      "soonNote": "In the works. Ask Ray if you need it sooner.",
+      "previewLabel": "Real example from the data",
+      "calcPreview": "{hours} hours a week of data entry in {region} costs about {cost} a year in wages.",
+      "finderPreview": "Graphic design is {code} in UNSPSC.",
+      "tools": {
+        "calculator": {
+          "name": "Manual work cost calculator",
+          "outcome": "See what repeat data entry, order and billing work costs your team each year, from public wage data for your region."
+        },
+        "finder": {
+          "name": "Procurement code finder",
+          "outcome": "Type a service and get its UNSPSC, GSIN, PSC and CPV codes, with a plain note on where each one is used."
+        },
+        "erp": {
+          "name": "ERP readiness check",
+          "outcome": "A short self-check on whether your team is ready for an ERP, and what to fix first."
+        },
+        "health": {
+          "name": "Systems health check self-score",
+          "outcome": "Score how well your tools, data and handoffs fit together today."
+        },
+        "capability": {
+          "name": "Capability statement builder",
+          "outcome": "Build the one-page capability statement buyers ask for, ready to print."
+        },
+        "rfp": {
+          "name": "RFP response checklist",
+          "outcome": "Turn a tender into a checklist of everything your response needs."
+        },
+        "integration": {
+          "name": "Integration map builder",
+          "outcome": "Draw your systems and see where data is typed twice."
+        },
+        "brand": {
+          "name": "Brand guideline starter",
+          "outcome": "Pick a palette and type pair and get a starter guideline page."
+        },
+        "adSpecs": {
+          "name": "Ad size and spec sheet",
+          "outcome": "Every major platform's current ad sizes and specs on one page."
+        },
+        "processMaps": {
+          "name": "Process map templates",
+          "outcome": "Free, ungated templates for mapping how work moves today."
+        }
+      },
+      "helpTitle": "Not sure which tool fits?",
+      "helpText": "Pick what you are trying to work out. If no tool fits yet, a 30-minute call with Ray Rasouli will.",
+      "helpCost": "What our manual work costs",
+      "helpCodes": "Which codes we bid under",
+      "helpOther": "Something else",
+      "helpOtherReply": "That tool is not live yet. Ray can work through it with you on a free 30-minute call.",
+      "faqTitle": "Questions about the free tools",
+      "faq": [
+        {
+          "q": "Are the tools really free?",
+          "a": "Yes. There is no sign-up and no paywall. Your inputs stay in your browser and nothing is stored."
+        },
+        {
+          "q": "Where does the data come from?",
+          "a": "Each tool names its sources on the page: Statistics Canada, the U.S. Bureau of Labor Statistics and the Australian Bureau of Statistics for wages, and the official code lists from Public Services and Procurement Canada, the U.S. General Services Administration and the European Union for codes."
+        },
+        {
+          "q": "Will a tool tell me what Awesoon charges?",
+          "a": "No. Each result is about your own work, like your own labour cost. Pricing only comes after a call about your scope."
+        }
+      ]
+    },
+    "result": {
+      "label": "What next",
+      "share": "Share this result",
+      "copied": "Link copied",
+      "ask": "Ask the assistant about this result",
+      "book": "Book a 30-minute discovery call",
+      "assistantLabel": "Assistant",
+      "close": "Close",
+      "askPlaceholder": "Ask about this result",
+      "send": "Send",
+      "typing": "Assistant is typing",
+      "email": "Email me this",
+      "optional": "(optional)",
+      "emailLabel": "Your email",
+      "consent": "Open an email to myself with this result. Nothing is stored or sent to Awesoon.",
+      "emailCta": "Open the email",
+      "emailSubject": "My result from Awesoon: {tool}"
+    },
+    "calc": {
+      "meta": {
+        "title": "Manual work cost calculator: what repeat admin work costs you",
+        "description": "Free calculator that turns hours of manual data entry, order and billing work into a yearly labour cost, using official wage data for Canadian provinces, U.S. states and Australian states."
+      },
+      "title": "What does manual work cost your team each year?",
+      "text": "Pick your region and the roles doing repeat work. The wages come from public data for your region, so the number is yours. No sign-up.",
+      "country": "Country",
+      "countries": {
+        "CA": "Canada",
+        "US": "United States",
+        "AU": "Australia",
+        "UK": "United Kingdom"
+      },
+      "regionWord": {
+        "CA": "Province or territory",
+        "US": "State",
+        "AU": "State or territory",
+        "UK": "Region"
+      },
+      "ukShort": "Wage data coming soon",
+      "ukSoon": "UK wage data coming soon. We will add regional earnings from the Office for National Statistics as soon as we can read it reliably.",
+      "roles": "Roles doing the manual work",
+      "roleNames": {
+        "dataEntry": "Data entry",
+        "orderClerk": "Order clerk",
+        "billingClerk": "Billing clerk",
+        "bookkeeping": "Bookkeeping clerk"
+      },
+      "perHour": "{wage} an hour",
+      "noWage": "No published wage",
+      "people": "People doing it",
+      "hours": "Hours each, per week",
+      "privacy": "Your inputs stay in your browser.",
+      "estimate": "Your estimate",
+      "liveData": "Official wage data",
+      "perYear": "a year in wages spent on manual work",
+      "hoursYear": "hours a year",
+      "fullTime": "full-time people",
+      "avgHour": "average wage per hour",
+      "pickRole": "Pick at least one role to see your cost.",
+      "basis": "52 weeks a year, wages only. Benefits, payroll taxes and overhead come on top, so your real cost is higher. Hours are split evenly across the roles you picked. This is your own labour cost, not an Awesoon price.",
+      "basisFte": "Full-time means {hours} hours a week.",
+      "sourceTitle": "Where the wages come from",
+      "sourceLine": "Source: {source}.",
+      "period": "Period: {period}.",
+      "licence": "Licence: {licence}",
+      "fetched": "Snapshot taken {date}.",
+      "usNote": "Median annual wage for each occupation (SOC {codes}), turned into an hourly rate at 2,080 hours a year, the way BLS does.",
+      "caNote": "Median hourly wage for {occupation} ({code}). Statistics Canada does not publish these four roles separately, so the same broad figure is used for each role.",
+      "auNote": "{occupation}. This is not role specific and includes part-time staff, so it is a rough guide; it is turned into an hourly rate at 38 hours a week, the full-time week in the National Employment Standards.",
+      "auPeriod": "{year}, first half",
+      "summary": "{region}: {hours} hours a week, {people} people, about {cost} a year in wages.",
+      "faqTitle": "Questions about the calculator",
+      "faq": [
+        {
+          "q": "How is the cost worked out?",
+          "a": "Hours per week times people times 52 weeks gives your yearly hours. Each role's share of those hours is multiplied by the published wage for your region. Nothing is added for benefits or overhead, so the real figure is higher."
+        },
+        {
+          "q": "Why is the Canadian wage the same for every role?",
+          "a": "Statistics Canada publishes wages for the broad group these roles belong to, administrative and financial support occupations, not for each clerk role. We show that figure rather than guess."
+        },
+        {
+          "q": "Why is the UK not available?",
+          "a": "The regional earnings tables from the Office for National Statistics could not be read reliably when this snapshot was taken. UK regions will appear once they can."
+        },
+        {
+          "q": "Is this what automation would save?",
+          "a": "No. It is what the manual work costs today. How much of it can be removed depends on your systems, and that is what a discovery call works out."
+        }
+      ]
+    },
+    "finder": {
+      "meta": {
+        "title": "Procurement code finder: UNSPSC, GSIN, PSC and CPV codes",
+        "description": "Free tool that finds the UNSPSC, GSIN, PSC and CPV procurement codes for IT, software, data, design and advertising services, from the official code lists."
+      },
+      "title": "Find the procurement codes for what you sell.",
+      "text": "Type a service. Get its UNSPSC, GSIN, PSC and CPV codes, with a plain note on where each one is used. No sign-up.",
+      "inputLabel": "Type a service",
+      "placeholder": "For example, database design",
+      "clear": "Clear",
+      "tryLabel": "Try one",
+      "tries": [
+        "Database design",
+        "Graphic design",
+        "Software maintenance",
+        "Website design",
+        "Advertising"
+      ],
+      "loading": "Loading the code lists",
+      "results": "Codes for \"{query}\"",
+      "none": "No match in the IT, software, data, design and advertising codes yet. Try software, database, website, graphic design or advertising.",
+      "noneScheme": "No close match in this list.",
+      "copy": "Copy",
+      "copiedCode": "Copied {code}",
+      "copyAll": "Copy all codes",
+      "copiedAll": "All codes copied",
+      "linked": "Linked UNSPSC in the official crosswalk: {codes}",
+      "linkedGsin": "Linked GSIN in the official crosswalk: {codes}",
+      "cardLabel": "Your codes",
+      "check": "Check each code in the official list before you bid. Buyers may use more than one.",
+      "scope": "This finder covers IT, software, data, design and advertising codes only.",
+      "naics": "NAICS codes are not in this finder yet. We will add them once the list is loaded.",
+      "schemes": {
+        "UNSPSC": {
+          "name": "UNSPSC",
+          "where": "Canada and many buyers worldwide",
+          "explain": "The United Nations Standard Products and Services Code. Canadian federal buyers and many others tag tenders with it."
+        },
+        "GSIN": {
+          "name": "GSIN",
+          "where": "Government of Canada",
+          "explain": "Goods and Services Identification Number. Older Canadian federal notices still use it, so it is worth listing."
+        },
+        "PSC": {
+          "name": "PSC",
+          "where": "U.S. federal government",
+          "explain": "Product and Service Code. U.S. federal contracts record what was bought with it."
+        },
+        "CPV": {
+          "name": "CPV",
+          "where": "European Union and United Kingdom",
+          "explain": "Common Procurement Vocabulary. EU and UK public notices are classified with it."
+        }
+      },
+      "sourceTitle": "Where the codes come from",
+      "sources": {
+        "UNSPSC": "UNSPSC and GSIN copy and the GSIN to UNSPSC crosswalk: contains information licensed under the Open Government Licence - Canada (Public Services and Procurement Canada).",
+        "PSC": "PSC: Product and Service Codes from the U.S. General Services Administration, served by USAspending.gov. U.S. Government work, public domain.",
+        "CPV": "CPV: Publications Office of the European Union, Common Procurement Vocabulary, licensed under CC BY 4.0. Reused with attribution; the EU does not endorse this tool."
+      },
+      "fetched": "Snapshot taken {date}.",
+      "summary": "Codes for {query}",
+      "faqTitle": "Questions about procurement codes",
+      "faq": [
+        {
+          "q": "Which code should I use?",
+          "a": "Use the scheme the buyer uses. Canadian federal tenders use UNSPSC and sometimes GSIN, U.S. federal contracts use PSC and NAICS, and EU and UK notices use CPV. Listing several close codes helps buyers find you."
+        },
+        {
+          "q": "Are these codes official?",
+          "a": "Yes. They come from the official lists published by Public Services and Procurement Canada, the U.S. General Services Administration and the Publications Office of the European Union. Always check the code in the official list before you bid."
+        },
+        {
+          "q": "Why can I not find NAICS?",
+          "a": "NAICS is not loaded into this finder yet. It will be added once the list is in."
+        },
+        {
+          "q": "Why only IT, design and advertising codes?",
+          "a": "This finder is built for the services Awesoon works in, which keeps it small and fast. Other families may come later."
+        }
+      ]
+    },
+    "closing": {
+      "title": "Want help acting on this result?",
+      "text": "Book a free 30-minute discovery call with Ray Rasouli. You leave with a clear next step, whether or not we work together."
+    },
+    "assistant": {
+      "calc": "Your result is your team's own yearly wage cost for this work, from official wage data. I cannot quote what Awesoon would charge. What would you like to know?",
+      "finder": "These codes come from the official lists. Use the scheme your buyer uses, and list a few close codes. What would you like to know?",
+      "reply": "Good question. The quickest way to an answer for your team is a free 30-minute call with Ray Rasouli, who reads your result before the call.",
+      "price": "I cannot quote prices. Pricing only comes after a call about your scope. Ray can walk you through it on a free 30-minute call.",
+      "priceWords": "price,cost you,charge,quote,how much do you"
+    }
+  },
   "problemSolutions": {
     "title": "Common Problems We Solve",
     "subtitle": "If your operations look like this, we've built the playbook to fix it.",
