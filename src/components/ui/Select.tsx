@@ -64,7 +64,7 @@ const Select = forwardRef<HTMLSelectElement, SelectProps>(function Select(
             </option>
           ))}
         </select>
-        <div className="pointer-events-none absolute right-3 top-1/2 -translate-y-1/2 text-text-muted dark:text-neutral-500">
+        <div className="pointer-events-none absolute right-3 top-1/2 -translate-y-1/2 text-text-muted dark:text-neutral-400">
           <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
           </svg>

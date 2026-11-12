@@ -113,7 +113,7 @@ export default function CTABlock({
                   {trustSignalKeys.map((key) => (
                     <div
                       key={key}
-                      className="flex items-center gap-2 text-text-muted dark:text-neutral-500"
+                      className="flex items-center gap-2 text-text-muted dark:text-neutral-400"
                     >
                       <span className="h-1.5 w-1.5 rounded-full bg-neutral-400" aria-hidden="true" />
                       <span className="text-sm">{t(key as Parameters<typeof t>[0])}</span>
@@ -154,7 +154,7 @@ export default function CTABlock({
       <div className="relative w-full px-4 sm:px-6 lg:px-10 xl:px-16">
         <AnimateIn variant="slide-up" threshold={0.1}>
           <div className="max-w-3xl mx-auto text-center">
-            <p className="mb-4 text-xs font-semibold uppercase tracking-widest text-text-muted dark:text-white/40">
+            <p className="mb-4 text-xs font-semibold uppercase tracking-widest text-text-muted dark:text-white/60">
               {t('eyebrow.takeFirstStep')}
             </p>
             <h2
@@ -191,7 +191,7 @@ export default function CTABlock({
                 {trustSignalKeys.map((key) => (
                   <div
                     key={key}
-                    className="flex items-center gap-2 text-text-muted dark:text-neutral-500"
+                    className="flex items-center gap-2 text-text-muted dark:text-neutral-400"
                   >
                     <span className="h-1.5 w-1.5 rounded-full bg-neutral-400" aria-hidden="true" />
                     <span className="text-sm">{t(key as Parameters<typeof t>[0])}</span>

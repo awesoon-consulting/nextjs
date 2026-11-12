@@ -105,19 +105,23 @@
 }
 
 .dark {
-  --color-primary: #050914;
-  --color-primary-light: #0c1321;
-  --color-primary-dark: #02050b;
+  color-scheme: dark;
+  --color-primary: #0a0a0a;
+  --color-primary-light: #111827;
+  --color-primary-dark: #050505;
   --color-secondary: #0f1d33;
   --color-secondary-light: #17304f;
   --color-secondary-dark: #09111d;
-  --color-surface: #050914;
-  --color-surface-elevated: #0d1524;
-  --color-text-primary: #ffffff;
-  --color-text-secondary: #cfd6e2;
-  --color-text-muted: #7e889a;
-  --card-bg: rgba(255, 255, 255, 0.04);
-  --card-bg-subtle: rgba(255, 255, 255, 0.07);
+  --color-surface: #0a0a0a;
+  --color-surface-elevated: #111827;
+  --color-surface-dark: #0f1d33;
+  --color-text-primary: #fafafa;
+  --color-text-secondary: #d4d4d4;
+  --color-text-muted: #a3a3a3;
+  --color-link: #7d9ccb;
+  --card-bg: #111827;
+  --card-bg-subtle: #111827;
+  --card-border: rgba(255, 255, 255, 0.08);
 }
 
 /* ─────────────────────────────────────────────────────────────
@@ -498,3 +502,9 @@ html.reveal-ready .reveal:not(.in-view) {
   .mini-env { animation: none; }
 }
 h1, h2, h3 { hyphens: manual; text-wrap: balance; }
+
+/* Navy text is unreadable on the dark ground; lift it for links and labels. */
+.dark .text-accent,
+.dark .hover\:text-accent:hover {
+  color: var(--color-link);
+}

@@ -196,7 +196,7 @@ export default async function PrivacyPage({ params }: { params: Promise<{ locale
               To exercise any of these rights, email us at{' '}
               <a
                 href={`mailto:${siteConfig.contact.privacyEmail}`}
-                className="text-secondary underline hover:no-underline"
+                className="text-secondary dark:text-[#7D9CCB] underline hover:no-underline"
               >
                 {siteConfig.contact.privacyEmail}
               </a>
@@ -217,7 +217,7 @@ export default async function PrivacyPage({ params }: { params: Promise<{ locale
               See our{' '}
               <a
                 href={`/${locale}/cookies`}
-                className="text-secondary underline hover:no-underline"
+                className="text-secondary dark:text-[#7D9CCB] underline hover:no-underline"
               >
                 Cookie Policy
               </a>{' '}
@@ -240,7 +240,7 @@ export default async function PrivacyPage({ params }: { params: Promise<{ locale
                   href="https://policies.google.com/privacy"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="text-secondary underline hover:no-underline"
+                  className="text-secondary dark:text-[#7D9CCB] underline hover:no-underline"
                 >
                   Google&apos;s Privacy Policy
                 </a>
@@ -252,7 +252,7 @@ export default async function PrivacyPage({ params }: { params: Promise<{ locale
                   href="https://policies.google.com/privacy"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="text-secondary underline hover:no-underline"
+                  className="text-secondary dark:text-[#7D9CCB] underline hover:no-underline"
                 >
                   Google&apos;s Privacy Policy
                 </a>
@@ -264,7 +264,7 @@ export default async function PrivacyPage({ params }: { params: Promise<{ locale
                   href="https://vercel.com/legal/privacy-policy"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="text-secondary underline hover:no-underline"
+                  className="text-secondary dark:text-[#7D9CCB] underline hover:no-underline"
                 >
                   Vercel&apos;s Privacy Policy
                 </a>
@@ -289,7 +289,7 @@ export default async function PrivacyPage({ params }: { params: Promise<{ locale
               <p className="text-text-secondary">{siteConfig.contact.address}</p>
               <a
                 href={`mailto:${siteConfig.contact.privacyEmail}`}
-                className="text-secondary underline hover:no-underline"
+                className="text-secondary dark:text-[#7D9CCB] underline hover:no-underline"
               >
                 {siteConfig.contact.privacyEmail}
               </a>

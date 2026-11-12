@@ -8,7 +8,6 @@ import { useLocale, useTranslations } from 'next-intl'
 import { getAssistantReply, type AssistantReplyKind } from '@/src/lib/assistant'
 
 import WorkflowMap from './WorkflowMap'
-import { useTheme } from '@/src/components/layout/ThemeProvider'
 
 const WorkflowScene = dynamic(() => import('./WorkflowScene'), { ssr: false })
 
@@ -37,11 +36,11 @@ function MiniFlow() {
     <svg viewBox="0 0 300 44" className="h-7 w-full">
       {[0, 1, 2].map((i) => (
         <g key={i} className="mini-env" style={{ animationDelay: `${i * 0.8}s` }}>
-          <rect x={6} y={10} width={30} height={20} rx={3} fill="none" stroke="currentColor" strokeWidth={1.5} className="text-[#0F1D33] dark:text-[#6E8BB5]" />
-          <path d="M6 10 L21 21 L36 10" fill="none" stroke="currentColor" strokeWidth={1.5} className="text-[#0F1D33] dark:text-[#6E8BB5]" />
+          <rect x={6} y={10} width={30} height={20} rx={3} fill="none" stroke="currentColor" strokeWidth={1.5} className="text-[#0F1D33] dark:text-[#7D9CCB]" />
+          <path d="M6 10 L21 21 L36 10" fill="none" stroke="currentColor" strokeWidth={1.5} className="text-[#0F1D33] dark:text-[#7D9CCB]" />
         </g>
       ))}
-      <path d="M60 22 H 220" stroke="currentColor" strokeDasharray="3 5" strokeWidth={1.5} className="text-[#0F1D33]/40 dark:text-white/30" />
+      <path d="M60 22 H 220" stroke="currentColor" strokeDasharray="3 5" strokeWidth={1.5} className="text-[#0F1D33]/40 dark:text-white/60" />
       {[0, 1, 2].map((l) => (
         <g key={l} transform={`translate(258 ${10 + l * 11})`}>
           <path d="M0 -6 L16 0 L0 6 L-16 0 Z" fill={['#0E6A9E', '#00AEEF', '#193C57'][l]} />
@@ -74,7 +73,6 @@ export default function ConversationHero() {
   const [ghost, setGhost] = useState('')
   const [sceneOn, setSceneOn] = useState(false)
   const [sceneReady, setSceneReady] = useState(false)
-  const { resolvedTheme } = useTheme()
   const onSceneReady = useCallback(() => setSceneReady(true), [])
   const onSceneLost = useCallback(() => {
     setSceneReady(false)
@@ -214,7 +212,7 @@ export default function ConversationHero() {
                 progress={progress}
                 energy={Math.min(draft.length, 30) / 30}
                 gap={800}
-                dark={resolvedTheme === 'dark'}
+                dark
                 onReady={onSceneReady}
                 onLost={onSceneLost}
               />

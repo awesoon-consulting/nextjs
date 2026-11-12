@@ -59,7 +59,7 @@ export default async function InsightPage({ params }: InsightPageProps) {
               <Badge variant="accent" size="sm">
                 {post.category.charAt(0).toUpperCase() + post.category.slice(1)}
               </Badge>
-              <span className="text-sm text-text-muted dark:text-neutral-500">
+              <span className="text-sm text-text-muted dark:text-neutral-400">
                 {post.readingTime} min read
               </span>
             </div>
@@ -68,7 +68,7 @@ export default async function InsightPage({ params }: InsightPageProps) {
             </h1>
             <p className="mb-6 text-lg text-text-secondary dark:text-neutral-400">{post.excerpt}</p>
             <div className="flex items-center gap-3">
-              <div className="w-10 h-10 rounded-full bg-secondary/20 border border-secondary/30 flex items-center justify-center">
+              <div className="w-10 h-10 rounded-full bg-secondary/20 border border-secondary/30 dark:bg-white/10 dark:border-white/15 dark:text-white flex items-center justify-center">
                 <span className="font-heading font-bold text-xs text-secondary">
                   {post.author.split(' ').map((n) => n[0]).join('')}
                 </span>
@@ -79,7 +79,7 @@ export default async function InsightPage({ params }: InsightPageProps) {
                 </p>
                 <time
                   dateTime={post.publishedAt}
-                  className="text-xs text-text-muted dark:text-neutral-500"
+                  className="text-xs text-text-muted dark:text-neutral-400"
                 >
                   {new Date(post.publishedAt).toLocaleDateString('en-US', {
                     year: 'numeric',
