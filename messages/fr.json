@@ -1285,5 +1285,221 @@
         }
       ]
     }
+  },
+  "publicSector": {
+    "meta": {
+      "title": "Secteur public : services TI, ERP et créatifs pour les acheteurs publics",
+      "description": "Awesoon Technologies Inc. soumissionne aux contrats publics en TI, ERP et création au Canada, aux États-Unis, au Royaume-Uni et en Australie. Des systèmes standard et documentés dont votre équipe est propriétaire."
+    },
+    "hero": {
+      "eyebrow": "Pour les acheteurs publics",
+      "title": "Des systèmes standard et documentés pour les programmes publics",
+      "subtitle": "Nous standardisons et automatisons les processus, développons des logiciels sur mesure et livrons le design et la publicité comme des systèmes reproductibles. Chaque mandat se termine par une documentation qui appartient à votre équipe.",
+      "ctaPdf": "Télécharger l'énoncé de capacités",
+      "ctaPdfMeta": "PDF, 1 page",
+      "ctaCall": "Réserver un appel découverte de 30 minutes",
+      "fact1": "Vancouver (C.-B.)",
+      "fact2": "Canada, É.-U., R.-U. et Australie",
+      "fact3": "{count} catégories de portail"
+    },
+    "assistant": {
+      "label": "Assistant d'approvisionnement",
+      "greeting": "Indiquez votre catégorie ou collez une ligne de votre appel d'offres. Je la relie aux catégories sous lesquelles nous soumissionnons et vous propose un énoncé de capacités adapté.",
+      "placeholder": "Votre catégorie ou appel d'offres",
+      "send": "Envoyer",
+      "typing": "L'assistant écrit",
+      "countryLabel": "Pays de l'acheteur",
+      "countries": {
+        "all": "Tous",
+        "ca": "Canada",
+        "us": "États-Unis",
+        "uk": "Royaume-Uni",
+        "au": "Australie"
+      },
+      "startersLabel": "Demandes fréquentes",
+      "starters": {
+        "erp": "Programmation ERP ou de bases de données",
+        "it": "Services d'experts en TI",
+        "crm": "Logiciel CRM",
+        "staff": "Développeurs TI permanents",
+        "creative": "Campagne publicitaire"
+      },
+      "matchIntro": "Cela correspond aux catégories suivantes :",
+      "noMatch": "Je n'ai pas encore trouvé de catégorie correspondante. La plupart des acheteurs commencent par les services d'experts en TI. Ray peut confirmer l'adéquation lors d'un court appel.",
+      "schemes": "Les portails au {country} classent ces avis selon {schemes}. Codes de catégorie sur demande.",
+      "statementCta": "Obtenir un énoncé de capacités adapté",
+      "callCta": "Réserver un appel découverte de 30 minutes",
+      "reset": "Recommencer",
+      "privacy": "Fonctionne dans votre navigateur. Rien de ce que vous tapez n'est envoyé ni conservé."
+    },
+    "categories": {
+      "title": "Catégories sous lesquelles nous soumissionnons",
+      "subtitle": "Les noms de catégories des portails, pour nous associer à votre avis. Les TI et l'ERP en tête.",
+      "searchLabel": "Trouver une catégorie",
+      "searchPlaceholder": "Rechercher, par exemple ERP",
+      "groupLabel": "Type",
+      "groups": {
+        "all": "Toutes",
+        "it": "TI et ERP",
+        "creative": "Création",
+        "staffing": "Dotation"
+      },
+      "countryLabel": "Afficher les systèmes de codes pour",
+      "colCategory": "Catégorie du portail",
+      "colService": "Ce que nous livrons",
+      "colCodes": "Codes",
+      "codesOnRequest": "Codes de catégorie sur demande",
+      "count": "{shown} sur {total} catégories",
+      "empty": "Aucune catégorie ne correspond. Ray peut vous dire si votre avis convient.",
+      "lead": "En tête",
+      "items": {
+        "it-expert-services": {
+          "name": "Services d'experts en TI",
+          "service": "Examen des systèmes, cartographie des processus et gestion des fournisseurs",
+          "keywords": "expert,conseil,évaluation,examen,audit,processus,fournisseur,stratégie,modernisation,numérique"
+        },
+        "erp-database-programming": {
+          "name": "Services de programmation d'applications ERP ou de bases de données",
+          "service": "Mise en œuvre, configuration et migration de données ERP",
+          "keywords": "erp,pgi,sap,oracle,netsuite,dynamics,odoo,finances,inventaire,migration"
+        },
+        "crm-software": {
+          "name": "Logiciel CRM",
+          "service": "Mise en place, configuration et soutien CRM",
+          "keywords": "crm,grc,salesforce,hubspot,gestion des dossiers,client"
+        },
+        "application-programming": {
+          "name": "Services de programmation d'applications",
+          "service": "Applications sur mesure et outils internes",
+          "keywords": "application,logiciel,développement,sur mesure,web,portail,mobile,outil"
+        },
+        "client-server-programming": {
+          "name": "Services de programmation client ou serveur",
+          "service": "API, intégrations et services dorsaux",
+          "keywords": "api,intégration,interface,serveur,dorsal,intergiciel"
+        },
+        "database-design-management": {
+          "name": "Conception et gestion de bases de données",
+          "service": "Conception, nettoyage et rapports de bases de données",
+          "keywords": "base de données,données,sql,rapport,tableau de bord,dossiers"
+        },
+        "gui-development": {
+          "name": "Développement d'interfaces utilisateur graphiques",
+          "service": "Conception d'interfaces et développement frontal",
+          "keywords": "ui,ux,interface,frontal,ergonomie,accessibilité,wcag"
+        },
+        "game-software-maintenance": {
+          "name": "Maintenance de logiciels de jeux et de divertissement",
+          "service": "Exploitation continue et maintenance de jeux",
+          "keywords": "jeu,jeux,divertissement"
+        },
+        "permanent-it-developers": {
+          "name": "Développeurs TI permanents (par un partenaire de dotation vérifié)",
+          "service": "Développeurs vérifiés, Ray répond de chaque jumelage",
+          "keywords": "dotation,développeur,ressource,placement,permanent,embauche,personnel"
+        },
+        "advertising-campaign-production": {
+          "name": "Services de campagnes et de production publicitaires",
+          "service": "Planification et production de campagnes comme système reproductible",
+          "keywords": "publicité,campagne,pub,média,production,vidéo,sensibilisation"
+        },
+        "brand-marketing-materials": {
+          "name": "Matériel de marketing de marque",
+          "service": "Guides de marque, manuels et gabarits",
+          "keywords": "marque,marketing,matériel,guide,manuel,gabarit"
+        },
+        "art-and-graphics": {
+          "name": "Art et graphisme",
+          "service": "Direction artistique, illustration et graphisme",
+          "keywords": "art,graphi,design,illustration,visuel"
+        },
+        "banner-advertising": {
+          "name": "Publicité par bannières",
+          "service": "Ensembles de bannières et d'annonces display",
+          "keywords": "bannière,display,annonce numérique,affichage"
+        }
+      }
+    },
+    "statement": {
+      "title": "Énoncé de capacités",
+      "text": "Une page avec nos catégories, nos services, nos données d'entreprise et nos coordonnées. Bâtie à partir des faits de cette page.",
+      "item1": "Capacités principales, TI et ERP d'abord",
+      "item2": "Toutes nos catégories de portail",
+      "item3": "Données d'entreprise et façon de travailler",
+      "item4": "Codes, inscriptions et assurance sur demande",
+      "download": "Télécharger l'énoncé de capacités",
+      "tailored": "L'adapter à votre catégorie",
+      "print": "Imprimer ou enregistrer en PDF",
+      "back": "Retour au secteur public",
+      "matched": "Correspond à votre demande",
+      "who": "Qui nous sommes",
+      "whoText": "Awesoon Technologies Inc. est une entreprise de systèmes dirigée par son propriétaire, à Vancouver (C.-B.). Nous standardisons et automatisons les processus, développons des logiciels sur mesure et livrons le design et la publicité comme des systèmes reproductibles. Chaque mandat se termine par une documentation qui appartient à l'équipe de l'acheteur.",
+      "core": "Capacités principales",
+      "core1": "Mise en œuvre, configuration et soutien ERP et CRM",
+      "core2": "Applications sur mesure, API et intégrations",
+      "core3": "Cartographie des processus, examen des systèmes et gestion des fournisseurs",
+      "core4": "Design et publicité livrés comme systèmes reproductibles",
+      "company": "Données d'entreprise",
+      "how": "Façon de travailler",
+      "contact": "Coordonnées",
+      "footnote": "Les codes de catégorie, inscriptions de fournisseur, assurances et références sont communiqués sur demande."
+    },
+    "facts": {
+      "title": "Faits sur l'entreprise",
+      "legalName": "Raison sociale",
+      "based": "Siège",
+      "basedValue": "Vancouver, Colombie-Britannique, Canada",
+      "serves": "Marchés servis",
+      "servesValue": "Canada, États-Unis, Royaume-Uni et Australie",
+      "languages": "Langues",
+      "languagesValue": "Anglais, français et espagnol",
+      "owner": "Propriétaire",
+      "ownerValue": "Ray Rasouli",
+      "registrations": "Inscriptions de fournisseur",
+      "insurance": "Assurance",
+      "references": "Références",
+      "onRequest": "Communiqué sur demande",
+      "referencesValue": "Communiquées sur demande, une fois que l'acheteur accepte d'être nommé"
+    },
+    "how": {
+      "title": "Comment nous travaillons avec les acheteurs",
+      "subtitle": "Trois façons de commencer. Chacune se termine par une documentation qui appartient à votre équipe.",
+      "item1Title": "Sous-traitance pour votre maître d'œuvre",
+      "item1Text": "Nous rejoignons l'équipe d'un maître d'œuvre inscrit pour la portée TI, ERP ou création, sous son contrat et ses rapports.",
+      "item2Title": "Petites soumissions directes",
+      "item2Text": "Pour une portée limitée en services d'experts en TI, ERP ou CRM, nous soumissionnons directement et le propriétaire dirige le travail.",
+      "item3Title": "Une documentation qui vous appartient",
+      "item3Text": "Cartes de processus, notes de configuration et guides d'exploitation sont livrés avec le travail, pour que votre personnel prenne le relais."
+    },
+    "faq": {
+      "title": "Questions des agents d'approvisionnement",
+      "q1": "Sous quelles catégories soumissionnez-vous?",
+      "a1": "{count} catégories de portail, avec en tête les services d'experts en TI, la programmation d'applications ERP ou de bases de données, et les logiciels CRM. La liste complète figure dans le tableau ci-dessus.",
+      "q2": "Puis-je obtenir vos codes de catégorie?",
+      "a2": "Oui. Les codes sont confirmés par portail et envoyés sur demande avec l'énoncé de capacités, habituellement en 1 jour ouvrable.",
+      "q3": "Êtes-vous inscrits sur notre portail?",
+      "a3": "Les inscriptions de fournisseur sont communiquées sur demande. Indiquez-nous le portail et nous confirmons le statut par écrit.",
+      "q4": "Travaillez-vous en sous-traitance?",
+      "a4": "Oui. La sous-traitance pour un maître d'œuvre inscrit est notre approche privilégiée, et nous soumissionnons aussi directement aux petits contrats.",
+      "q5": "Où livrez-vous?",
+      "a5": "Nous sommes établis à Vancouver (C.-B.) et servons des acheteurs au Canada, aux États-Unis, au Royaume-Uni et en Australie. Le travail se fait surtout à distance, avec des visites sur place selon le contrat.",
+      "q6": "Comment fournissez-vous des développeurs TI permanents?",
+      "a6": "Par un partenaire de dotation vérifié. Ray examine chaque candidat et répond du jumelage.",
+      "q7": "Avec qui travaillerons-nous?",
+      "a7": "Ray Rasouli, le propriétaire, dirige chaque mandat. Aucun transfert à une équipe de vente."
+    },
+    "contact": {
+      "title": "Parlez à la personne qui fait le travail",
+      "text": "Envoyez votre avis, appel d'offres ou catégorie. Vous recevez une réponse claire sur l'adéquation et un énoncé de capacités pour votre dossier.",
+      "reply": "Une vraie personne répond en 1 jour ouvrable",
+      "name": "Ray Rasouli",
+      "role": "Propriétaire, Awesoon Technologies Inc.",
+      "emailLabel": "Écrire à Ray"
+    },
+    "closing": {
+      "title": "Un avis est ouvert en ce moment?",
+      "text": "Réservez 30 minutes. Vous saurez si nous correspondons à votre catégorie et ce que nous joindrions à une soumission.",
+      "cta": "Réserver un appel découverte de 30 minutes"
+    }
   }
 }

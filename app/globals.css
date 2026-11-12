@@ -520,6 +520,16 @@ h1, h2, h3 { hyphens: manual; text-wrap: balance; }
   --tw-ring-offset-shadow: 0 0 #0000;
 }
 
+/* Public sector page */
+@keyframes ps-rise { from { opacity: 0; transform: translateY(10px); } to { opacity: 1; transform: none; } }
+@keyframes ps-ping { 75%, 100% { transform: scale(2.2); opacity: 0; } }
+.ps-rise { animation: ps-rise 520ms cubic-bezier(.2,.7,.2,1) both; }
+.ps-msg { animation: ps-rise 360ms ease both; }
+.ps-ping { animation: ps-ping 1.6s cubic-bezier(0,0,.2,1) infinite; }
+@media (prefers-reduced-motion: reduce) {
+  .ps-rise, .ps-msg, .ps-ping { animation: none; }
+}
+
 /* Design page */
 .design-page :focus-visible { outline-color: #7d9ccb; }
 .design-grid {
