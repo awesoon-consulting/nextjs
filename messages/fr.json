@@ -1,7 +1,7 @@
 {
   "_note": "TODO: Professional French translation review required. These are machine-translated placeholders.",
   "nav": {
-    "home": "Accueil",
+    "home": "Accueil Awesoon",
     "solutions": "Solutions",
     "support": "Support",
     "insights": "Perspectives",
@@ -21,7 +21,21 @@
       "crmImpl": "Implémentation CRM",
       "vendorMgmt": "Sélection de logiciels",
       "systemsAudit": "Bilan gratuit des systèmes"
-    }
+    },
+    "services": "Services",
+    "work": "Réalisations",
+    "publicSector": "Secteur public",
+    "bookCall": "Réserver un appel",
+    "contact": "Contact",
+    "allSolutions": "Toutes les solutions",
+    "supportHeading": "Soutien",
+    "free": "Gratuit",
+    "notSure": "Vous ne savez pas par où commencer ?",
+    "notSureLink": "Commencez par le bilan gratuit de vos systèmes.",
+    "vendorNeutral": "Indépendants des éditeurs. Livraison par le fondateur.",
+    "toggleTheme": "Changer de thème",
+    "mainNav": "Navigation principale",
+    "mobileNav": "Navigation mobile"
   },
   "hero": {
     "headline": "Vos opérations ont dépassé vos outils. Nous réglons ça.",
@@ -34,8 +48,7 @@
     "trustBadge": "Reconnu par les leaders opérationnels en Amérique du Nord",
     "trustSignals": {
       "auditTurnaround": "Délai moyen du bilan",
-      "seniorDelivery": "Livraison par un opérateur senior",
-      "noChatbots": "De chatbots. Jamais."
+      "seniorDelivery": "Livraison par un opérateur senior"
     },
     "teamLabels": {
       "rayTitle": "Ingénieur logiciel & Solutions"
@@ -379,22 +392,24 @@
     }
   },
   "footer": {
-    "tagline": "Awesoon signifie facile. C'est ce que vos opérations devraient ressentir.",
+    "tagline": "Awesoon veut dire facile. Vancouver (C.-B.). Au service de l’Amérique du Nord.",
     "readyHeadline": "Prêt pour des opérations qui se sentent vraiment faciles?",
     "readySubtext": "Un appel de 30 minutes. Pas de présentation. Juste un regard honnête sur vos systèmes et un chemin clair vers l'avant.",
     "contactHeading": "Contact",
-    "humanReplies": "Une vraie personne répond dans les 24 heures.",
-    "noChatbots": "Pas de chatbots, pas de répondeurs automatiques.",
+    "humanReplies": "Une vraie personne répond en un jour ouvrable",
     "solutions": "Solutions",
     "support": "Support",
     "company": "Entreprise",
     "legal": "Légal",
-    "privacy": "Politique de confidentialité",
-    "terms": "Conditions d'utilisation",
-    "cookies": "Politique des témoins",
-    "copyright": "© {year} Awesoon Technologies. Tous droits réservés.",
-    "noTracking": "Aucun témoin défini sans votre consentement.",
-    "madeWith": "Construit avec soin à Vancouver."
+    "privacy": "Confidentialité",
+    "terms": "Conditions",
+    "cookies": "Témoins",
+    "copyright": "© {year} Awesoon Technologies Inc.",
+    "noTracking": "Aucun suivi avant votre accord.",
+    "madeWith": "Construit avec soin à Vancouver.",
+    "linkedin": "Rasoul sur LinkedIn",
+    "language": "Langue",
+    "services": "Services"
   },
   "cookie": {
     "banner": {
@@ -501,12 +516,12 @@
     "getStarted": "Commencer",
     "backToHome": "Retour à l'accueil",
     "skipToContent": "Aller au contenu principal",
-    "trustNoChatbots": "Pas de chatbots",
     "trustReply24h": "Réponse sous 24h",
     "trustFree": "Entièrement gratuit",
     "trustNamedContact": "Un interlocuteur dédié",
     "minRead": "{time} min de lecture",
-    "connectLinkedIn": "Se connecter sur LinkedIn"
+    "connectLinkedIn": "Se connecter sur LinkedIn",
+    "trustRealPerson": "Une vraie personne répond"
   },
   "sitemap": {
     "title": "Plan du site"
@@ -776,5 +791,92 @@
     "contactH": "Nous joindre",
     "contactB": "Questions au sujet de cette politique :",
     "currentLink": "Lire la version 2, la politique en vigueur"
+  },
+  "serviceLines": {
+    "consultation": {
+      "name": "Conseil",
+      "short": "Trouver ce qui bloque et décrire comment le travail doit se faire.",
+      "line": "Nous trouvons ce qui bloque, ce que cela coûte, et nous décrivons comment le travail doit se faire.",
+      "before": "Les étapes vivent dans la tête des gens.",
+      "after": "Des processus standard écrits et une liste de correctifs priorisée."
+    },
+    "programming": {
+      "name": "Programmation",
+      "short": "Construire la pièce qui ajuste vos outils.",
+      "line": "Quand les outils du marché conviennent presque, nous construisons la pièce qui manque.",
+      "before": "Les équipes comblent à la main les trous entre les outils.",
+      "after": "Des logiciels et des API sur mesure, faits pour votre processus."
+    },
+    "automation": {
+      "name": "Automatisation et intégration",
+      "short": "Vos systèmes se passent le travail.",
+      "line": "Vos systèmes se passent le travail. Les gens n’interviennent que là où il faut du jugement.",
+      "before": "Les mêmes données saisies dans trois systèmes.",
+      "after": "Des systèmes connectés, un seul responsable par donnée."
+    },
+    "design": {
+      "name": "Design",
+      "short": "Design de marque et d’interface géré comme un système.",
+      "line": "Le design géré comme un système, pour que chaque nouvelle pièce parte cohérente.",
+      "before": "Chaque page et chaque présentation part de zéro.",
+      "after": "Des règles de marque, des gabarits et des composants réutilisables."
+    },
+    "advertising": {
+      "name": "Publicité",
+      "short": "Des campagnes reproductibles et mesurables.",
+      "line": "Des campagnes que vous pouvez reproduire, mesurer et transmettre.",
+      "before": "Des actions ponctuelles que personne ne peut refaire.",
+      "after": "Des campagnes reproductibles, mesurées seulement avec consentement."
+    },
+    "title": "Cinq services. Un objectif : des systèmes qui tournent seuls.",
+    "before": "Avant",
+    "after": "Après",
+    "ask": "Questionner l’assistant sur : {service}",
+    "explore": "Découvrir : {service}"
+  },
+  "assistant": {
+    "eyebrow": "Posez toutes vos questions sur vos opérations. Une personne s’occupe de ce que vous acceptez.",
+    "title": "Qu’est-ce que votre entreprise devrait arrêter de faire à la main ?",
+    "subtitle": "Décrivez comment un processus fonctionne aujourd’hui. Obtenez une première lecture en une minute : ce qui bloque, ce que cela coûte, et quoi standardiser et automatiser en premier.",
+    "greeting": "Bonjour, je suis l’assistant Awesoon. Décrivez un processus qui prend trop de temps à votre équipe, ou choisissez un exemple ci-dessous. Je vous donne une première lecture, puis un résumé à garder.",
+    "starters": {
+      "orders": "Nous ressaisissons les commandes entre les courriels et deux systèmes",
+      "spreadsheets": "Nos horaires tournent sur des tableurs",
+      "tools": "Nos outils ne communiquent pas entre eux",
+      "government": "J’achète pour le secteur public"
+    },
+    "placeholder": "Décrivez un processus",
+    "send": "Envoyer",
+    "typing": "L’assistant écrit",
+    "openGeneric": "Cela ressemble à un problème de transfert : le même travail passe à la main entre les personnes et les outils.",
+    "openOrders": "La ressaisie des commandes est l’un des problèmes les plus courants, et l’un des plus faciles à régler.",
+    "openSpreadsheets": "Quand un tableur fait tourner un processus clé, une seule formule cassée peut arrêter l’entreprise.",
+    "openGovernment": "Pour les programmes publics, nous standardisons le processus, l’automatisons et remettons une documentation complète.",
+    "followUp": "Deux petites questions pour ajuster le résumé : combien de personnes touchent à ce travail chaque semaine, et combien de systèmes sont en jeu ?",
+    "briefIntro": "Merci. Voici votre première lecture. Elle repose sur ce que vous m’avez dit, ce n’est ni un devis ni un mandat.",
+    "handOff": "Bonne question. Rasoul pourra y répondre correctement lors d’un appel, avec votre résumé sous les yeux. Voulez-vous choisir un moment ?",
+    "briefLabel": "Votre résumé, à garder",
+    "brief1Title": "Un seul responsable par donnée",
+    "brief1Text": "Décidez quel système fait foi pour les commandes, les clients et les articles.",
+    "brief2Title": "Écrire les étapes standard",
+    "brief2Text": "Une seule façon convenue, écrite, avant d’automatiser quoi que ce soit.",
+    "brief3Title": "Automatiser le transfert le plus chargé",
+    "brief3Text": "Connectez d’abord les deux systèmes qui portent le plus de volume.",
+    "talkToRasoul": "En parler avec Rasoul",
+    "bookLabel": "30 minutes avec Rasoul",
+    "bookText": "Choisissez un moment à la page suivante. Rasoul lit votre résumé avant l’appel.",
+    "bookCta": "Choisir un moment",
+    "keywordsOrders": "commande,saisi,courriel,email",
+    "keywordsSpreadsheets": "tableur,excel,feuille",
+    "keywordsGovernment": "gouvernement,public,appel d’offres,marché",
+    "trust": "Indépendants des éditeurs. Aucune commission. Livraison par le fondateur. Aucun suivi avant votre accord.",
+    "worksAcross": "Compatible avec",
+    "sceneLabel": "Trois couches qui forment le logo Awesoon"
+  },
+  "placeholder": {
+    "title": "Cette page arrive bientôt",
+    "text": "Nous refaisons cette partie du site. En attendant, Rasoul peut vous la présenter lors d’un court appel.",
+    "cta": "Réserver un appel",
+    "back": "Retour à l’accueil"
   }
 }

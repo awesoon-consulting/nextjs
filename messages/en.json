@@ -1,6 +1,6 @@
 {
   "nav": {
-    "home": "Home",
+    "home": "Awesoon home",
     "solutions": "Solutions",
     "support": "Support",
     "insights": "Insights",
@@ -20,7 +20,21 @@
       "crmImpl": "CRM Implementation",
       "vendorMgmt": "Software Selection",
       "systemsAudit": "Free Systems Health Check"
-    }
+    },
+    "services": "Services",
+    "work": "Work",
+    "publicSector": "Public sector",
+    "bookCall": "Book a call",
+    "contact": "Contact",
+    "allSolutions": "All solutions",
+    "supportHeading": "Support",
+    "free": "Free",
+    "notSure": "Not sure where to start?",
+    "notSureLink": "Begin with the free systems health check.",
+    "vendorNeutral": "Vendor-neutral. Owner-led delivery.",
+    "toggleTheme": "Toggle color theme",
+    "mainNav": "Main navigation",
+    "mobileNav": "Mobile navigation"
   },
   "hero": {
     "headline": "Your ops outgrew your tools. We fix that.",
@@ -33,8 +47,7 @@
     "trustBadge": "Trusted by operations leaders across North America",
     "trustSignals": {
       "auditTurnaround": "Average health check turnaround",
-      "seniorDelivery": "Senior operator delivery",
-      "noChatbots": "Chatbots. Ever."
+      "seniorDelivery": "Senior operator delivery"
     },
     "teamLabels": {
       "rayTitle": "Software Engineer & Solutions"
@@ -378,22 +391,24 @@
     }
   },
   "footer": {
-    "tagline": "Awesoon means easy. That's what operations should feel like.",
+    "tagline": "Awesoon means easy. Vancouver, BC. Serving North America.",
     "readyHeadline": "Ready for operations that actually feel easy?",
     "readySubtext": "A 30-minute call. No pitch deck. Just an honest look at your systems and a clear path forward.",
     "contactHeading": "Contact",
-    "humanReplies": "A real person replies within 24 hours.",
-    "noChatbots": "No chatbots, no auto-responders.",
+    "humanReplies": "A real person replies within one business day",
     "solutions": "Solutions",
     "support": "Support",
     "company": "Company",
     "legal": "Legal",
-    "privacy": "Privacy Policy",
-    "terms": "Terms of Service",
-    "cookies": "Cookie Policy",
-    "copyright": "© {year} Awesoon Technologies. All rights reserved.",
-    "noTracking": "No cookies set without your consent.",
-    "madeWith": "Built with care in Vancouver."
+    "privacy": "Privacy",
+    "terms": "Terms",
+    "cookies": "Cookies",
+    "copyright": "© {year} Awesoon Technologies Inc.",
+    "noTracking": "No tracking before you agree.",
+    "madeWith": "Built with care in Vancouver.",
+    "linkedin": "Rasoul on LinkedIn",
+    "language": "Language",
+    "services": "Services"
   },
   "cookie": {
     "banner": {
@@ -500,12 +515,12 @@
     "getStarted": "Get started",
     "backToHome": "Back to homepage",
     "skipToContent": "Skip to main content",
-    "trustNoChatbots": "No chatbots",
     "trustReply24h": "Reply within 24h",
     "trustFree": "Completely free",
     "trustNamedContact": "Named point of contact",
     "minRead": "{time} min read",
-    "connectLinkedIn": "Connect on LinkedIn"
+    "connectLinkedIn": "Connect on LinkedIn",
+    "trustRealPerson": "A real person replies"
   },
   "sitemap": {
     "title": "Sitemap"
@@ -775,5 +790,92 @@
     "contactH": "Contact",
     "contactB": "Questions about this policy:",
     "currentLink": "Read version 2, the current policy"
+  },
+  "serviceLines": {
+    "consultation": {
+      "name": "Consultation",
+      "short": "Find what is broken and write down how work should run.",
+      "line": "We find what is broken, what it costs, and write down how the work should run.",
+      "before": "Steps live in people’s heads.",
+      "after": "Written standard workflows and a ranked fix list."
+    },
+    "programming": {
+      "name": "Programming",
+      "short": "Build the part that makes your tools fit.",
+      "line": "When off-the-shelf tools almost fit, we build the part that makes them fit.",
+      "before": "People fill gaps between tools by hand.",
+      "after": "Custom software and APIs built to your process."
+    },
+    "automation": {
+      "name": "Automation and integration",
+      "short": "Systems hand work to each other.",
+      "line": "Your systems hand work to each other. People step in only where judgment is needed.",
+      "before": "The same data typed into three systems.",
+      "after": "Connected systems, one owner per piece of data."
+    },
+    "design": {
+      "name": "Design",
+      "short": "Brand and interface design run as a system.",
+      "line": "Design run as a system, so every new piece starts consistent.",
+      "before": "Every page and deck starts from scratch.",
+      "after": "Brand rules, templates and reusable components."
+    },
+    "advertising": {
+      "name": "Advertising",
+      "short": "Campaigns you can repeat and measure.",
+      "line": "Campaigns you can repeat, measure and hand over.",
+      "before": "One-off pushes nobody can repeat.",
+      "after": "Repeatable campaigns, tracked only with consent."
+    },
+    "title": "Five services. One goal: systems that run themselves.",
+    "before": "Before",
+    "after": "After",
+    "ask": "Ask the assistant about {service}",
+    "explore": "Explore {service}"
+  },
+  "assistant": {
+    "eyebrow": "Ask anything about your operations. A person handles what you agree to.",
+    "title": "What should your business stop doing by hand?",
+    "subtitle": "Tell us how a workflow runs today. Get a first read in a minute: what is broken, what it costs, and what to standardize and automate first.",
+    "greeting": "Hi, I’m the Awesoon assistant. Describe a workflow that eats your team’s time, or pick a starter below. I’ll give you a first read, then a brief you can keep.",
+    "starters": {
+      "orders": "We re-key orders between email and two systems",
+      "spreadsheets": "Spreadsheets run our scheduling",
+      "tools": "Our tools do not talk to each other",
+      "government": "I buy for government"
+    },
+    "placeholder": "Describe a workflow",
+    "send": "Send",
+    "typing": "The assistant is typing",
+    "openGeneric": "That sounds like a hand-off problem: the same work moves between people and tools by hand.",
+    "openOrders": "Re-keying orders is one of the most common and most fixable problems we see.",
+    "openSpreadsheets": "When spreadsheets run a key process, one broken formula can stop the business.",
+    "openGovernment": "For public programs we standardize the workflow, automate it and hand over full documentation.",
+    "followUp": "Two quick questions so the brief fits: roughly how many people touch this each week, and how many systems are involved?",
+    "briefIntro": "Thanks. Here is your first read. It is built from what you told me, not a quote or a scope.",
+    "handOff": "Good question. Rasoul can answer that properly on a call, with your brief in front of him. Want to pick a time?",
+    "briefLabel": "Your brief, yours to keep",
+    "brief1Title": "Pick one owner per piece of data",
+    "brief1Text": "Decide which system is the source for orders, customers and items.",
+    "brief2Title": "Write the standard steps",
+    "brief2Text": "One agreed way, written down, before anything is automated.",
+    "brief3Title": "Automate the busiest hand-off",
+    "brief3Text": "Connect the two systems that carry the most volume first.",
+    "talkToRasoul": "Talk it through with Rasoul",
+    "bookLabel": "30 minutes with Rasoul",
+    "bookText": "Pick a time on the next page. Rasoul reads your brief before the call.",
+    "bookCta": "Choose a time",
+    "keywordsOrders": "order,key,email",
+    "keywordsSpreadsheets": "spreadsheet,sheet,excel",
+    "keywordsGovernment": "government,rfp,procure,public",
+    "trust": "Vendor-neutral. No commissions. Owner-led delivery. No tracking before you agree.",
+    "worksAcross": "Works across",
+    "sceneLabel": "Three layers assembling into the Awesoon mark"
+  },
+  "placeholder": {
+    "title": "This page is on its way",
+    "text": "We are rebuilding this part of the site. In the meantime, Rasoul can walk you through it on a short call.",
+    "cta": "Book a call",
+    "back": "Back to home"
   }
 }

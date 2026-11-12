@@ -87,7 +87,7 @@ function fireGadsConversion(
 }
 
 /**
- * Track lead form submission — fires GA4 event + Google Ads conversion.
+ * Track lead form submission, fires GA4 event + Google Ads conversion.
  */
 export function trackLeadFormConversion(): void {
   trackFormSubmit('contact-form')
@@ -95,7 +95,7 @@ export function trackLeadFormConversion(): void {
 }
 
 /**
- * Track email link click — fires GA4 event + Google Ads conversion.
+ * Track email link click, fires GA4 event + Google Ads conversion.
  */
 export function trackEmailClick(): void {
   trackEvent('email_click', { location: 'footer' })

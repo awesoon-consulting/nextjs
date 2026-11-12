@@ -1,6 +1,7 @@
 import type { Metadata } from 'next'
 import { getTranslations, setRequestLocale } from 'next-intl/server'
-import Hero from '@/src/components/sections/Hero'
+import ConversationHero from '@/src/components/sections/hero/ConversationHero'
+import ServiceTabs from '@/src/components/sections/ServiceTabs'
 import HeroMarquee from '@/src/components/sections/HeroMarquee'
 import WhoWeHelp from '@/src/components/sections/WhoWeHelp'
 import DifferentiatorCards from '@/src/components/sections/DifferentiatorCards'
@@ -16,11 +17,11 @@ export async function generateMetadata({
   params: Promise<{ locale: string }>
 }): Promise<Metadata> {
   const { locale } = await params
-  const t = await getTranslations({ locale, namespace: 'hero' })
+  const t = await getTranslations({ locale, namespace: 'assistant' })
 
   return {
     title: `${siteConfig.name},  ${siteConfig.tagline}`,
-    description: t('subtext'),
+    description: t('subtitle'),
   }
 }
 
@@ -30,8 +31,9 @@ export default async function HomePage({ params }: { params: Promise<{ locale: s
 
   return (
     <>
-      <Hero />
+      <ConversationHero />
       <HeroMarquee />
+      <ServiceTabs />
       <WhoWeHelp />
       <DifferentiatorCards />
       <PlatformsShowcase />

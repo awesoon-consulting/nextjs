@@ -8,7 +8,7 @@
  *           the root layout) adds `.in-view` to elements as they scroll into
  *           the viewport, at which point the CSS animation plays once.
  *
- *           This component is a **server component** — no hooks, no client
+ *           This component is a **server component**, no hooks, no client
  *           boundary. It can be used inside server components without
  *           forcing them into the client bundle.
  *

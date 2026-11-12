@@ -93,7 +93,7 @@ export async function generateMetadata({
           url: '/images/og-image.png',
           width: 1200,
           height: 630,
-          alt: `${siteConfig.name} — ${siteConfig.tagline}`,
+          alt: `${siteConfig.name}, ${siteConfig.tagline}`,
         },
       ],
     },
@@ -142,7 +142,7 @@ export default async function LocaleLayout({ children, params }: LocaleLayoutPro
     <html lang={locale} className={`${sora.variable} ${inter.variable}`} suppressHydrationWarning>
       <head>
         {/*
-          Anti-FOUC script — applies stored theme class and marks the document
+          Anti-FOUC script, applies stored theme class and marks the document
           as JS-ready before first paint. MUST run synchronously in <head>.
         */}
         <script

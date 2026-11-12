@@ -32,7 +32,7 @@ export default function HeroMarquee() {
               href={platform.url}
               target="_blank"
               rel="noopener noreferrer"
-              aria-label={`${platform.name} — ${platform.fit}`}
+              aria-label={`${platform.name}, ${platform.fit}`}
               className="flex-shrink-0 flex items-center gap-3 px-2 group transition-all duration-200 hover:scale-110"
             >
               {/* White tile for consistent contrast across light/dark modes */}

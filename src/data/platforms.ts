@@ -517,7 +517,7 @@ export function getPlatformsForSupport(slug: string): Platform[] {
 
 /**
  * Flagship platforms shown in the homepage hero and platforms section.
- * Curated to show ERP, CRM, ecommerce, warehouse, AI, integration — one from each
+ * Curated to show ERP, CRM, ecommerce, warehouse, AI, integration, one from each
  * category so visitors see the full breadth without being overwhelmed.
  */
 export const flagshipPlatforms: Platform[] = [

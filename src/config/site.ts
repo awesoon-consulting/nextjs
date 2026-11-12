@@ -25,18 +25,36 @@ export const siteConfig = {
 
   nav: {
     main: [
-      { labelKey: 'nav.home', href: '/' },
-      { labelKey: 'nav.solutions', href: '/solutions' },
-      { labelKey: 'nav.support', href: '/support' },
+      { labelKey: 'nav.work', href: '/work' },
+      { labelKey: 'nav.publicSector', href: '/public-sector' },
       { labelKey: 'nav.insights', href: '/insights' },
       { labelKey: 'nav.about', href: '/about' },
     ] as const,
-    cta: { labelKey: 'nav.cta', href: '/contact' },
+    cta: { labelKey: 'nav.bookCall', href: '/contact' },
   },
 
+  services: [
+    {
+      key: 'consultation',
+      href: '/solutions',
+      solutions: ['systems-audit', 'operational-process-foundations', 'ops-outgrown-tools', 'vendor-management', 'project-management'],
+    },
+    {
+      key: 'programming',
+      href: '/solutions',
+      solutions: ['custom-api-development', 'ecommerce-development', 'mobile-warehouse-barcoding'],
+    },
+    {
+      key: 'automation',
+      href: '/solutions',
+      solutions: ['ai-operations', 'spreadsheet-operations', 'system-integration', 'erp-implementation', 'crm-implementation', 'api-integrations'],
+    },
+    { key: 'design', href: '/design', solutions: [] },
+    { key: 'advertising', href: '/advertising', solutions: [] },
+  ] as const,
+
   social: {
-    linkedin: 'https://linkedin.com/company/awesoon',
-    twitter: 'https://twitter.com/awesoon',
+    linkedin: 'https://www.linkedin.com/in/ray-rasouli/',
   },
 
   team: {
@@ -72,10 +90,12 @@ export const siteConfig = {
       { labelKey: 'support.cards.ecommerceSupport.title', href: '/support/ecommerce-support-maintenance' },
     ] as const,
     companyLinks: [
+      { labelKey: 'nav.work', href: '/work' },
+      { labelKey: 'nav.publicSector', href: '/public-sector' },
+      { labelKey: 'nav.insights', href: '/insights' },
       { labelKey: 'nav.about', href: '/about' },
       { labelKey: 'nav.support', href: '/support' },
-      { labelKey: 'nav.insights', href: '/insights' },
-      { labelKey: 'nav.cta', href: '/contact' },
+      { labelKey: 'nav.contact', href: '/contact' },
     ] as const,
     legalLinks: [
       { labelKey: 'footer.privacy', href: '/privacy' },
