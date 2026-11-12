@@ -103,7 +103,7 @@ export default function HowWeWork() {
                 <div className="mt-auto pt-4">
                 {i === 0 && (
                   <div className="flex flex-wrap gap-2">
-                    {[t('howWeWork.freeAfterCall'), t('process.deliveredIn48h')].map((c) => (
+                    {[t('howWeWork.freeAfterCall'), t('process.deliveredHealthCheck')].map((c) => (
                       <span key={c} className="rounded-full bg-neutral-100 px-3 py-1 text-xs font-medium text-text-secondary dark:bg-white/10 dark:text-neutral-300">
                         {c}
                       </span>
