@@ -557,7 +557,7 @@
     "title": "Política de privacidad, juegos de Awesoon",
     "updated": "Última actualización: 10 de noviembre de 2026. Versión 2, para las versiones 1.1.0 y posteriores de los juegos. Las versiones anteriores no muestran anuncios ni recopilan nada.",
     "lead": "Nuestros juegos funcionan en tu dispositivo. Los únicos datos que salen de él son los que recopila el software publicitario, y las decisiones son tuyas.",
-    "appliesTo": "Se aplica a los diez juegos de Awesoon: Stack Snap, Loop Weaver, Tidy Tiles, Idle Bakery Empire, Quick Trivia Blitz, Dodge Rush, Word Chain Dash, Color Match Frenzy, Knot Untangle y Bounce Blitz. Los juegos los publica Awesoon Technologies Inc., una empresa de Columbia Británica, Canadá.",
+    "appliesTo": "Se aplica a los diez juegos de Awesoon: Stack Snap, Loop Weaver, Tidy Tiles, Penny Loaf, Quick Trivia Blitz, Dodge Rush, Word Chain Dash, Color Match Frenzy, Knot Untangle y Bounce Blitz. Los juegos los publica Awesoon Technologies Inc., una empresa de Columbia Británica, Canadá.",
     "sections": [
       {
         "id": "device",
@@ -585,6 +585,13 @@
         "h": "Tus opciones si tienes 13 años o más",
         "p": [
           "En iPhone y iPad, el juego te pide permiso para rastrearte. Si lo rechazas, sigues viendo anuncios, pero no personalizados. En el Espacio Económico Europeo, el Reino Unido y Suiza, el formulario de consentimiento de Google se muestra antes de cualquier anuncio personalizado, y una fila en los ajustes del juego lo vuelve a abrir para que cambies tu respuesta. En Android puedes restablecer o eliminar tu identificador de publicidad en los ajustes del dispositivo."
+        ]
+      },
+      {
+        "id": "penny-loaf",
+        "h": "Penny Loaf: qué anuncios muestra",
+        "p": [
+          "Penny Loaf muestra anuncios con recompensa que eliges ver a cambio de un bonus, como diez minutos de hora punta, ganancias de ausencia dobles, un vistazo gratis a un rival o un barrio que se abre antes. Una recompensa ganada siempre se entrega. Puede aparecer un anuncio a pantalla completa al cerrar una escena de compra, nunca durante una celebración ni en las primeras sesiones tras instalar. No muestra banners ni anuncios al abrir la aplicación. En Ajustes, la fila Opciones de anuncios vuelve a abrir el formulario de consentimiento de Google."
         ]
       },
       {
@@ -625,7 +632,7 @@
   "gamesSupport": {
     "title": "Soporte, juegos de Awesoon",
     "lead": "Escríbenos sobre cualquier juego de Awesoon y una persona lo lee.",
-    "appliesTo": "Cubre los diez juegos de Awesoon: Stack Snap, Loop Weaver, Tidy Tiles, Idle Bakery Empire, Quick Trivia Blitz, Dodge Rush, Word Chain Dash, Color Match Frenzy, Knot Untangle y Bounce Blitz.",
+    "appliesTo": "Cubre los diez juegos de Awesoon: Stack Snap, Loop Weaver, Tidy Tiles, Penny Loaf, Quick Trivia Blitz, Dodge Rush, Word Chain Dash, Color Match Frenzy, Knot Untangle y Bounce Blitz.",
     "faqH": "Preguntas frecuentes",
     "q1": "Mi progreso desapareció.",
     "a1": "El progreso se guarda solo en el dispositivo. Borrar un juego, o configurar un teléfono nuevo sin restaurar una copia de seguridad, lo elimina.",
@@ -674,7 +681,7 @@
     "title": "Condiciones de uso, juegos de Awesoon",
     "updated": "Última actualización: 10 de noviembre de 2026",
     "lead": "La versión corta, en cinco líneas. Las condiciones completas van debajo.",
-    "appliesTo": "Se aplican a los diez juegos de Awesoon: Stack Snap, Loop Weaver, Tidy Tiles, Idle Bakery Empire, Quick Trivia Blitz, Dodge Rush, Word Chain Dash, Color Match Frenzy, Knot Untangle y Bounce Blitz.",
+    "appliesTo": "Se aplican a los diez juegos de Awesoon: Stack Snap, Loop Weaver, Tidy Tiles, Penny Loaf, Quick Trivia Blitz, Dodge Rush, Word Chain Dash, Color Match Frenzy, Knot Untangle y Bounce Blitz.",
     "short": [
       "Los juegos se juegan sin conexión, de principio a fin. Solo los anuncios necesitan conexión.",
       "No hay cuenta ni inicio de sesión.",
@@ -749,7 +756,7 @@
     "title": "Política de privacidad, juegos de Awesoon, versión 1",
     "updated": "Última actualización: 23 de septiembre de 2026",
     "lead": "Estos juegos no recopilan ningún dato personal.",
-    "appliesTo": "Se aplica a los diez juegos de Awesoon: Stack Snap, Loop Weaver, Tidy Tiles, Idle Bakery Empire, Quick Trivia Blitz, Dodge Rush, Word Chain Dash, Color Match Frenzy, Knot Untangle y Bounce Blitz.",
+    "appliesTo": "Se aplica a los diez juegos de Awesoon: Stack Snap, Loop Weaver, Tidy Tiles, Penny Loaf, Quick Trivia Blitz, Dodge Rush, Word Chain Dash, Color Match Frenzy, Knot Untangle y Bounce Blitz.",
     "note": "Esta es la versión 1 de la política. Se aplicaba a las versiones de los juegos anteriores a 1.1.0, que no muestran anuncios. La versión 2 la sustituye.",
     "intro": "Cada juego funciona por completo en tu dispositivo. No hay cuenta, ni inicio de sesión, ni servidor. Tu progreso, tus puntuaciones, tus estadísticas y tus ajustes se guardan en el propio dispositivo y nunca se nos envían, ni a nadie más.",
     "sections": [

@@ -556,7 +556,7 @@
     "title": "Privacy policy, Awesoon games",
     "updated": "Last updated 10 November 2026. Version 2, for game versions 1.1.0 and later. Earlier versions show no ads and collect nothing.",
     "lead": "Our games run on your device. The only data that leaves it is what the advertising software collects, and you make the choices.",
-    "appliesTo": "Applies to all ten Awesoon games: Stack Snap, Loop Weaver, Tidy Tiles, Idle Bakery Empire, Quick Trivia Blitz, Dodge Rush, Word Chain Dash, Color Match Frenzy, Knot Untangle and Bounce Blitz. The games are published by Awesoon Technologies Inc., a company in British Columbia, Canada.",
+    "appliesTo": "Applies to all ten Awesoon games: Stack Snap, Loop Weaver, Tidy Tiles, Penny Loaf, Quick Trivia Blitz, Dodge Rush, Word Chain Dash, Color Match Frenzy, Knot Untangle and Bounce Blitz. The games are published by Awesoon Technologies Inc., a company in British Columbia, Canada.",
     "sections": [
       {
         "id": "device",
@@ -584,6 +584,13 @@
         "h": "Your choices if you are 13 or over",
         "p": [
           "On iPhone and iPad, the game asks for your permission to track you. If you decline, you still see ads, but they are not personalised. In the European Economic Area, the UK and Switzerland, Google's consent form runs before any personalised ads, and a row in the game's Settings reopens it so you can change your answer. On Android you can reset or delete your advertising ID in your device's settings."
+        ]
+      },
+      {
+        "id": "penny-loaf",
+        "h": "Penny Loaf: which ads it shows",
+        "p": [
+          "Penny Loaf shows rewarded ads that you choose to watch for a bonus, such as a ten minute rush, doubled away earnings, a free look at a rival or a district opening sooner. A reward you earn is always given. One full-screen ad may show after a buyout scene closes, never during a celebration and not in the first sessions after install. It shows no banner ads and no ads when the app opens. In Settings, the Ad choices row reopens Google's consent form."
         ]
       },
       {
@@ -624,7 +631,7 @@
   "gamesSupport": {
     "title": "Support, Awesoon games",
     "lead": "Write to us about any Awesoon game and a person reads it.",
-    "appliesTo": "Covers all ten Awesoon games: Stack Snap, Loop Weaver, Tidy Tiles, Idle Bakery Empire, Quick Trivia Blitz, Dodge Rush, Word Chain Dash, Color Match Frenzy, Knot Untangle and Bounce Blitz.",
+    "appliesTo": "Covers all ten Awesoon games: Stack Snap, Loop Weaver, Tidy Tiles, Penny Loaf, Quick Trivia Blitz, Dodge Rush, Word Chain Dash, Color Match Frenzy, Knot Untangle and Bounce Blitz.",
     "faqH": "Common questions",
     "q1": "My progress disappeared.",
     "a1": "Progress is stored on the device only. Deleting a game, or setting up a new phone without restoring a backup, clears it.",
@@ -673,7 +680,7 @@
     "title": "Terms of use, Awesoon games",
     "updated": "Last updated 10 November 2026",
     "lead": "The short version, in five lines. The full terms are below.",
-    "appliesTo": "Applies to all ten Awesoon games: Stack Snap, Loop Weaver, Tidy Tiles, Idle Bakery Empire, Quick Trivia Blitz, Dodge Rush, Word Chain Dash, Color Match Frenzy, Knot Untangle and Bounce Blitz.",
+    "appliesTo": "Applies to all ten Awesoon games: Stack Snap, Loop Weaver, Tidy Tiles, Penny Loaf, Quick Trivia Blitz, Dodge Rush, Word Chain Dash, Color Match Frenzy, Knot Untangle and Bounce Blitz.",
     "short": [
       "The games play offline, start to finish. Only the ads need a connection.",
       "There is no account and no sign-in.",
@@ -748,7 +755,7 @@
     "title": "Privacy policy, Awesoon games, version 1",
     "updated": "Last updated 23 September 2026",
     "lead": "These games do not collect any personal data.",
-    "appliesTo": "Applies to all ten Awesoon games: Stack Snap, Loop Weaver, Tidy Tiles, Idle Bakery Empire, Quick Trivia Blitz, Dodge Rush, Word Chain Dash, Color Match Frenzy, Knot Untangle and Bounce Blitz.",
+    "appliesTo": "Applies to all ten Awesoon games: Stack Snap, Loop Weaver, Tidy Tiles, Penny Loaf, Quick Trivia Blitz, Dodge Rush, Word Chain Dash, Color Match Frenzy, Knot Untangle and Bounce Blitz.",
     "note": "This is version 1 of the policy. It applied to game versions before 1.1.0, which show no ads. Version 2 replaces it.",
     "intro": "Each game runs entirely on your device. There is no account, no sign-in and no server. Your progress, scores, statistics and settings are stored on the device itself, and they are never sent to us or to anyone else.",
     "sections": [
