@@ -279,6 +279,7 @@
     "team": {
       "title": "L'équipe",
       "subtitle": "Un opérateur qui a été dans les tranchées; et qui a bâti les systèmes pour en sortir.",
+      "photoAlt": "Ray Rasouli",
       "members": {
         "ray": {
           "title": "Ingénieur logiciel & Développeur de solutions",

@@ -279,6 +279,7 @@
     "team": {
       "title": "El equipo",
       "subtitle": "Un operador que ha estado en las trincheras; y construyó los sistemas para salir de ellas.",
+      "photoAlt": "Ray Rasouli",
       "members": {
         "ray": {
           "title": "Ingeniero de Software & Desarrollador de Soluciones",

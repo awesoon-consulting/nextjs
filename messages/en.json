@@ -278,6 +278,7 @@
     "team": {
       "title": "The team",
       "subtitle": "An operator who's been in the weeds; and built systems to get out.",
+      "photoAlt": "Ray Rasouli",
       "members": {
         "ray": {
           "title": "Software engineer and solution developer",

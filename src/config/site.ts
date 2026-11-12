@@ -97,6 +97,7 @@ export const siteConfig = {
       name: 'Ray Rasouli',
       linkedin: 'https://www.linkedin.com/in/ray-rasouli/',
       photo: '/images/about-us/ray-rasouli.jpeg',
+      portrait: '/images/about-us/ray-rasouli-portrait.png',
       initials: 'RR',
     },
   },
