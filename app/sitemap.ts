@@ -5,6 +5,8 @@ import { getAllSupportSlugs } from '@/src/data/support'
 import { getAllInsightSlugs } from '@/src/data/insights'
 import { getAllGameSlugs } from '@/src/data/games'
 import { getAllCaseStudies } from '@/src/data/work'
+import { getAllTermSlugs } from '@/src/data/glossary'
+import { getAllComparisonSlugs } from '@/src/data/compare'
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const baseUrl = process.env.NEXT_PUBLIC_SITE_URL ?? siteConfig.url
@@ -17,7 +19,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
   const entries: MetadataRoute.Sitemap = []
 
   // Static pages per locale
-  const staticPaths = ['', '/solutions', '/support', '/insights', '/about', '/contact', '/games', '/design', '/work', '/public-sector', '/advertising']
+  const staticPaths = ['', '/solutions', '/support', '/insights', '/about', '/contact', '/games', '/design', '/work', '/public-sector', '/advertising', '/glossary', '/compare']
 
   for (const locale of locales) {
     for (const path of staticPaths) {
@@ -31,6 +33,16 @@ export default function sitemap(): MetadataRoute.Sitemap {
             locales.map((l) => [l, `${baseUrl}/${l}${path}`])
           ),
         },
+      })
+    }
+
+    for (const path of [...getAllTermSlugs().map((s) => `/glossary/${s}`), ...getAllComparisonSlugs().map((s) => `/compare/${s}`)]) {
+      entries.push({
+        url: `${baseUrl}/${locale}${path}`,
+        lastModified: new Date(),
+        changeFrequency: 'monthly',
+        priority: 0.6,
+        alternates: { languages: Object.fromEntries(locales.map((l) => [l, `${baseUrl}/${l}${path}`])) },
       })
     }
 
