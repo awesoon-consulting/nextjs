@@ -42,13 +42,13 @@ export default function NotFound() {
               <div className="flex flex-col justify-center gap-4 sm:flex-row">
                 <Link
                   href="/en"
-                  className="inline-flex items-center justify-center rounded-full bg-primary px-6 py-3 font-semibold text-text-inverse transition-colors hover:bg-secondary focus:outline-none focus-visible:ring-2 focus-visible:ring-secondary focus-visible:ring-offset-2 focus-visible:ring-offset-white dark:bg-white dark:text-[#0A0A0A] dark:hover:bg-neutral-200 dark:focus-visible:ring-offset-primary"
+                  className="inline-flex items-center justify-center rounded-full bg-primary px-6 py-3 font-semibold text-text-inverse transition-colors hover:bg-secondary focus:outline-none focus-visible:ring-2 focus-visible:ring-secondary focus-visible:ring-offset-2 focus-visible:ring-offset-white dark:bg-white dark:text-[#0A0A0A] dark:hover:bg-[#E5E5E5] dark:focus-visible:ring-offset-primary"
                 >
                   Go to Homepage
                 </Link>
                 <Link
                   href="/en/contact"
-                  className="inline-flex items-center justify-center rounded-full border-2 border-accent dark:border-white/20 dark:text-white px-6 py-3 font-semibold text-accent transition-colors hover:bg-accent hover:text-text-inverse focus:outline-none focus-visible:ring-2 focus-visible:ring-accent focus-visible:ring-offset-2 focus-visible:ring-offset-white dark:focus-visible:ring-offset-primary"
+                  className="inline-flex items-center justify-center rounded-full border-2 border-accent dark:border-white/20 dark:text-white px-6 py-3 font-semibold text-accent transition-colors dark:hover:bg-white/[0.08] dark:hover:text-white focus:outline-none focus-visible:ring-2 focus-visible:ring-accent focus-visible:ring-offset-2 focus-visible:ring-offset-white dark:focus-visible:ring-offset-primary"
                 >
                   Contact Us
                 </Link>

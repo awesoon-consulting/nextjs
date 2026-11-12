@@ -19,7 +19,7 @@ export default function ClosingBand() {
           </div>
           <Link
             href={`/${locale}/contact`}
-            className="relative rounded-full bg-white px-7 py-4 text-base font-semibold text-[#0F1D33] transition-colors hover:bg-neutral-100 focus:outline-none focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-offset-2 focus-visible:ring-offset-[#0F1D33]"
+            className="relative rounded-full bg-white px-7 py-4 text-base font-semibold text-[#0A0A0A] transition-colors hover:bg-[#E5E5E5] focus:outline-none focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-offset-2 focus-visible:ring-offset-[#0F1D33]"
           >
             {t('cta')}
           </Link>

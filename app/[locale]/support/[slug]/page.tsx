@@ -202,7 +202,7 @@ export default async function SupportDetailPage({ params }: SupportDetailPagePro
                           <Link
                             key={relSlug}
                             href={`/${locale}/solutions/${relSlug}`}
-                            className="block p-3 rounded-lg border border-neutral-200 hover:border-secondary/40 transition-colors text-sm font-medium text-text-secondary hover:text-secondary focus:outline-none focus-visible:ring-2 focus-visible:ring-secondary"
+                            className="block p-3 rounded-lg border border-white/[0.08] hover:border-white/[0.16] hover:bg-[#151C2B] transition-colors text-sm font-medium text-text-secondary hover:text-[#FAFAFA] focus:outline-none focus-visible:ring-2 focus-visible:ring-secondary"
                           >
                             {t(related.titleKey as Parameters<typeof t>[0])}
                           </Link>

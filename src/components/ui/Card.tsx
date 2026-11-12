@@ -35,7 +35,7 @@ export default function Card({
         variantClasses[variant],
         paddingClasses[padding],
         hover
-          ? 'transition-shadow duration-200 hover:shadow-xl cursor-pointer'
+          ? 'transition-colors duration-200 cursor-pointer dark:border dark:border-white/[0.08] dark:hover:border-white/[0.16] dark:hover:bg-[#151C2B]'
           : '',
         className,
       ]

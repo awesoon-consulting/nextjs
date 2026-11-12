@@ -122,6 +122,9 @@
   --card-bg: #111827;
   --card-bg-subtle: #111827;
   --card-border: rgba(255, 255, 255, 0.08);
+  --color-error: #f87171;
+  --color-success: #4ade80;
+  --color-success-light: rgba(74, 222, 128, 0.14);
 }
 
 /* ─────────────────────────────────────────────────────────────
@@ -507,4 +510,12 @@ h1, h2, h3 { hyphens: manual; text-wrap: balance; }
 .dark .text-accent,
 .dark .hover\:text-accent:hover {
   color: var(--color-link);
+}
+
+/* One focus ring for every control. Unlayered so it wins over ring and outline utilities. */
+:focus-visible {
+  outline: 2px solid #7d9ccb !important;
+  outline-offset: 2px;
+  --tw-ring-shadow: 0 0 #0000;
+  --tw-ring-offset-shadow: 0 0 #0000;
 }

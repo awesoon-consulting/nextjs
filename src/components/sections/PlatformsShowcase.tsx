@@ -104,7 +104,7 @@ export default function PlatformsShowcase() {
               className={`inline-flex min-h-10 items-center gap-2 rounded-full border px-4 py-2 text-sm font-medium transition-colors ${
                 activeCat === i
                   ? 'border-primary bg-primary text-white dark:border-white dark:bg-white dark:text-primary'
-                  : 'border-neutral-200 text-text-secondary hover:text-text-primary dark:border-white/10 dark:text-neutral-300'
+                  : 'border-neutral-200 text-text-secondary hover:text-text-primary dark:border-white/10 dark:text-neutral-300 dark:hover:bg-white/[0.08] dark:hover:text-white'
               }`}
             >
               <svg className="h-4 w-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true" strokeWidth={2}>
@@ -125,7 +125,7 @@ export default function PlatformsShowcase() {
               className={`flex h-16 items-center gap-3 rounded-2xl border px-4 text-left transition-colors ${
                 activeIdx === i
                   ? 'border-primary bg-white dark:border-white/40 dark:bg-[#111827]'
-                  : 'border-neutral-200 bg-white hover:border-neutral-400 dark:border-white/[0.08] dark:bg-[#111827] dark:hover:border-white/20'
+                  : 'border-neutral-200 bg-white hover:border-neutral-400 dark:border-white/[0.08] dark:bg-[#111827] dark:hover:border-white/[0.16] dark:hover:bg-[#151C2B]'
               }`}
             >
               <span className="flex h-8 w-14 flex-shrink-0 items-center justify-center">

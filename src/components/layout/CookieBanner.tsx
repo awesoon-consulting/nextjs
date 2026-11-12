@@ -55,7 +55,7 @@ export default function CookieBanner({ onManage }: CookieBannerProps) {
               {t('banner.description')}{' '}
               <Link
                 href={`/${locale}/cookies`}
-                className="text-accent dark:text-[#7D9CCB] underline hover:no-underline focus:outline-none focus-visible:ring-2 focus-visible:ring-accent rounded"
+                className="text-accent dark:text-[#7D9CCB] underline hover:text-[#FAFAFA] focus:outline-none focus-visible:ring-2 focus-visible:ring-accent rounded"
               >
                 {t('banner.learnMore')}
               </Link>
@@ -66,7 +66,7 @@ export default function CookieBanner({ onManage }: CookieBannerProps) {
               variant="ghost"
               size="sm"
               onClick={onManage}
-              className="text-text-secondary hover:text-text-primary dark:text-neutral-300 dark:hover:text-text-inverse"
+              className="text-text-secondary hover:text-text-primary underline-offset-4 hover:underline dark:text-neutral-300 dark:hover:text-[#FAFAFA]"
             >
               {t('banner.manage')}
             </Button>

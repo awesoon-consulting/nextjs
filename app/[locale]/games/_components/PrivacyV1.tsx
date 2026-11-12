@@ -27,7 +27,7 @@ export async function PrivacyV1({ locale, isCurrent }: { locale: string; isCurre
               <>
                 <p className="mt-3 text-sm text-text-muted">{t('note')}</p>
                 <p className="mt-3">
-                  <Link href={`/${locale}/games/privacy`} className="underline">
+                  <Link href={`/${locale}/games/privacy`} className="text-[#7D9CCB] underline underline-offset-4 hover:text-[#FAFAFA]">
                     {t('currentLink')}
                   </Link>
                 </p>
@@ -46,7 +46,7 @@ export async function PrivacyV1({ locale, isCurrent }: { locale: string; isCurre
             </h2>
             <p>
               {t('contactB')}{' '}
-              <a href={`mailto:${siteConfig.contact.gamesEmail}`} className="underline">
+              <a href={`mailto:${siteConfig.contact.gamesEmail}`} className="text-[#7D9CCB] underline underline-offset-4 hover:text-[#FAFAFA]">
                 {siteConfig.contact.gamesEmail}
               </a>
             </p>

@@ -48,7 +48,7 @@ export default function PlatformHeroChips({
             type="button"
             onClick={handleClick}
             aria-label={`See how we implement ${platform.name}, scroll to platforms section`}
-            className="group flex items-center gap-2 h-10 pl-2 pr-3.5 rounded-full bg-white border border-neutral-200 shadow-sm hover:border-accent hover:shadow-md hover:-translate-y-0.5 transition-all duration-200 focus:outline-none focus-visible:ring-2 focus-visible:ring-accent dark:border-white/25 dark:hover:border-accent"
+            className="group flex items-center gap-2 h-10 pl-2 pr-3.5 rounded-full border border-white/[0.08] bg-[#111827] text-[#FAFAFA] hover:-translate-y-0.5 hover:border-white/[0.16] hover:bg-[#151C2B] transition-all duration-200"
           >
             <span className="flex items-center justify-center h-6 w-8 rounded-md bg-white flex-shrink-0">
               {/* eslint-disable-next-line @next/next/no-img-element */}
@@ -59,7 +59,7 @@ export default function PlatformHeroChips({
                 className="object-contain"
               />
             </span>
-            <span className="text-xs font-semibold text-neutral-900 group-hover:text-accent transition-colors whitespace-nowrap">
+            <span className="text-xs font-semibold text-[#FAFAFA] whitespace-nowrap">
               {platform.name}
             </span>
           </button>
@@ -68,7 +68,7 @@ export default function PlatformHeroChips({
           <button
             type="button"
             onClick={handleClick}
-            className="inline-flex items-center gap-1 h-10 px-4 rounded-full bg-accent/10 text-xs font-semibold text-accent hover:bg-accent hover:text-white transition-all duration-200 focus:outline-none focus-visible:ring-2 focus-visible:ring-accent dark:bg-accent/20 dark:hover:bg-accent dark:hover:text-primary"
+            className="inline-flex items-center gap-1 h-10 px-4 rounded-full bg-accent/10 text-xs font-semibold text-accent hover:bg-accent hover:text-white transition-all duration-200 focus:outline-none focus-visible:ring-2 focus-visible:ring-accent dark:bg-accent/20 dark:hover:bg-white/[0.08] dark:hover:text-white"
             aria-label="See all platforms"
           >
             +{extra} more

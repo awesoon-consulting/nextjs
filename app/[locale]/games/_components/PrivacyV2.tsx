@@ -35,17 +35,17 @@ export async function PrivacyV2({ locale }: { locale: string }) {
             </h2>
             <p>
               {t('contactB')}{' '}
-              <a href={`mailto:${siteConfig.contact.gamesEmail}`} className="underline">
+              <a href={`mailto:${siteConfig.contact.gamesEmail}`} className="text-[#7D9CCB] underline underline-offset-4 hover:text-[#FAFAFA]">
                 {siteConfig.contact.gamesEmail}
               </a>
             </p>
             <p className="mt-3">
-              <Link href={`/${locale}/games/privacy/v1`} className="underline">
+              <Link href={`/${locale}/games/privacy/v1`} className="text-[#7D9CCB] underline underline-offset-4 hover:text-[#FAFAFA]">
                 {t('previousLink')}
               </Link>
             </p>
             <p className="mt-3">
-              <Link href={`/${locale}/games/terms`} className="underline">
+              <Link href={`/${locale}/games/terms`} className="text-[#7D9CCB] underline underline-offset-4 hover:text-[#FAFAFA]">
                 {t('termsLink')}
               </Link>
             </p>

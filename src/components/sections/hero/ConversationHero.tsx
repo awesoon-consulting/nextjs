@@ -183,7 +183,7 @@ export default function ConversationHero() {
   }
 
   const chip =
-    'min-h-10 items-center rounded-full border border-neutral-200 bg-white px-3.5 py-2 text-left text-sm text-text-secondary transition-colors hover:border-primary hover:text-text-primary dark:border-white/10 dark:bg-white/5 dark:text-neutral-300 dark:hover:border-white dark:hover:text-white'
+    'min-h-10 items-center rounded-full border border-neutral-200 bg-white px-3.5 py-2 text-left text-sm text-text-secondary transition-colors hover:text-text-primary dark:border-white/10 dark:bg-white/5 dark:text-neutral-300 dark:hover:border-white/[0.16] dark:hover:bg-white/[0.08] dark:hover:text-white'
   const briefItems = [1, 2, 3].map((n) => ({ n: `0${n}`, title: t(`brief${n}Title`), text: t(`brief${n}Text`) }))
 
   return (
@@ -260,7 +260,7 @@ export default function ConversationHero() {
                       <button
                         type="button"
                         onClick={talkToRay}
-                        className="mt-4 rounded-full bg-primary px-5 py-2.5 text-sm font-semibold text-white hover:bg-secondary dark:bg-white dark:text-primary"
+                        className="mt-4 rounded-full bg-primary px-5 py-2.5 text-sm font-semibold text-white hover:bg-secondary dark:bg-white dark:text-primary dark:hover:bg-[#E5E5E5]"
                       >
                         {t('talkToRay')}
                       </button>
@@ -271,7 +271,7 @@ export default function ConversationHero() {
                       <p className="text-sm font-semibold text-text-muted dark:text-neutral-400">{t('bookLabel')}</p>
                       <Link
                         href={`/${locale}/contact`}
-                        className="rounded-full bg-primary px-5 py-2.5 text-sm font-semibold text-white hover:bg-secondary dark:bg-white dark:text-primary"
+                        className="rounded-full bg-primary px-5 py-2.5 text-sm font-semibold text-white hover:bg-secondary dark:bg-white dark:text-primary dark:hover:bg-[#E5E5E5]"
                       >
                         {t('bookCta')}
                       </Link>
@@ -314,7 +314,7 @@ export default function ConversationHero() {
             )}
             <form
               onSubmit={onSubmit}
-              className="order-1 flex items-center gap-2 rounded-full border border-neutral-200 bg-neutral-50 py-1.5 pr-1.5 pl-5 focus-within:border-primary focus-within:ring-2 focus-within:ring-primary/25 sm:order-2 dark:border-white/10 dark:bg-white/5 dark:focus-within:border-white dark:focus-within:ring-white/30"
+              className="order-1 flex items-center gap-2 rounded-full border border-neutral-200 bg-neutral-50 py-1.5 pr-1.5 pl-5 focus-within:border-white/[0.16] focus-within:outline-2 focus-within:outline-offset-2 focus-within:outline-[#7D9CCB] sm:order-2 dark:border-white/10 dark:bg-white/5 dark:focus-within:border-white dark:focus-within:ring-white/30"
             >
               <label htmlFor="assistant-input" className="sr-only">
                 {t('placeholder')}
@@ -328,8 +328,7 @@ export default function ConversationHero() {
                 }}
                 placeholder={touched ? t('placeholder') : ghost || t('placeholder')}
                 autoComplete="off"
-                style={{ outline: 'none' }}
-                className="min-w-0 flex-1 bg-transparent py-2 text-base text-text-primary placeholder:text-text-muted focus:outline-none focus-visible:outline-none dark:text-white"
+                className="min-w-0 flex-1 bg-transparent py-2 text-base text-text-primary placeholder:text-text-muted focus-visible:outline-none! dark:text-white"
               />
               <button
                 type="submit"
