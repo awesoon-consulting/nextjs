@@ -13,6 +13,8 @@ const heading = 'mb-4 text-sm font-semibold text-text-primary dark:text-white'
 const link =
   'rounded text-sm text-text-secondary transition-colors hover:text-text-primary focus:outline-none focus-visible:ring-2 focus-visible:ring-accent dark:text-neutral-400 dark:hover:text-white'
 
+const FOOTER_COLUMNS = [['consultation'], ['programming', 'design'], ['automation'], ['advertising']] as const
+
 function Group({ title, titleHref, items }: { title: string; titleHref?: string; items: { href: string; label: string }[] }) {
   const list = (
     <ul className="mt-3 space-y-2">
@@ -87,18 +89,24 @@ export default function Footer() {
         </div>
 
         <h3 className={`${heading} mt-14`}>{t('footer.services')}</h3>
-        <div className="grid gap-0 sm:grid-cols-3 sm:gap-8 lg:grid-cols-5">
-          {siteConfig.services.map((s) => (
-            <Group
-              key={s.key}
-              title={t(`serviceLines.${s.key}.menuName`)}
-              titleHref={localHref(s.href)}
-              items={
-                s.solutions.length > 0
-                  ? s.solutions.map((slug) => ({ href: localHref(`/solutions/${slug}`), label: t(solutionLabel.get(slug) ?? '') }))
-                  : s.extras.map((x) => ({ href: localHref(x.href), label: t(x.labelKey) }))
-              }
-            />
+        <div className="grid gap-0 sm:grid-cols-2 sm:gap-8 lg:grid-cols-4">
+          {FOOTER_COLUMNS.map((col) => (
+            <div key={col.join()} className="sm:space-y-8">
+              {siteConfig.services
+                .filter((s) => (col as readonly string[]).includes(s.key))
+                .map((s) => (
+                  <Group
+                    key={s.key}
+                    title={t(`serviceLines.${s.key}.menuName`)}
+                    titleHref={localHref(s.href)}
+                    items={
+                      s.solutions.length > 0
+                        ? s.solutions.map((slug) => ({ href: localHref(`/solutions/${slug}`), label: t(solutionLabel.get(slug) ?? '') }))
+                        : s.extras.map((x) => ({ href: localHref(x.href), label: t(x.labelKey) }))
+                    }
+                  />
+                ))}
+            </div>
           ))}
         </div>
         <Link href={localHref('/solutions')} className="mt-8 inline-block rounded-full border border-neutral-300 px-5 py-2 text-sm font-semibold text-text-primary dark:border-white/20 dark:text-white">

@@ -5,7 +5,6 @@ import Link from 'next/link'
 import { usePathname } from 'next/navigation'
 import { useLocale, useTranslations } from 'next-intl'
 
-const SCROLL_THRESHOLD = 400
 const HIDE_WHEN_VISIBLE = ['#assistant-input', '#closing-title']
 
 export default function FloatingCTA() {
@@ -16,7 +15,10 @@ export default function FloatingCTA() {
   const [blocked, setBlocked] = useState(0)
 
   useEffect(() => {
-    const onScroll = () => setScrolled(window.scrollY > SCROLL_THRESHOLD)
+    const onScroll = () => {
+      const input = document.querySelector('#assistant-input')
+      setScrolled(input ? input.getBoundingClientRect().bottom < 0 : window.scrollY > 400)
+    }
     onScroll()
     window.addEventListener('scroll', onScroll, { passive: true })
     const seen = new Set<Element>()
@@ -46,7 +48,7 @@ export default function FloatingCTA() {
       <Link
         href={`/${locale}/contact`}
         tabIndex={visible ? 0 : -1}
-        className="inline-flex h-12 items-center gap-2 rounded-full bg-[#0A0A0A] px-6 text-sm font-semibold whitespace-nowrap text-white shadow-[0_16px_40px_-12px_rgba(10,10,10,0.5)] dark:bg-white dark:text-[#0A0A0A]"
+        className="inline-flex h-12 items-center gap-2 rounded-full bg-[#0A0A0A] px-6 text-sm font-semibold whitespace-nowrap text-white shadow-[0_12px_32px_-12px_rgba(10,10,10,0.45)]"
       >
         {t('pill')} <span aria-hidden="true">→</span>
       </Link>

@@ -411,7 +411,7 @@
     "copyright": "© {year} Awesoon Technologies Inc.",
     "noTracking": "Aucun suivi avant votre accord.",
     "madeWith": "Construit avec soin à Vancouver.",
-    "linkedin": "Rasoul sur LinkedIn",
+    "linkedin": "Ray sur LinkedIn",
     "language": "Langue",
     "services": "Services"
   },
@@ -864,7 +864,7 @@
     "openGovernment": "Pour les programmes publics, nous standardisons le processus, l’automatisons et remettons une documentation complète.",
     "followUp": "Deux petites questions pour ajuster le résumé : combien de personnes touchent à ce travail chaque semaine, et combien de systèmes sont en jeu ?",
     "briefIntro": "Merci. Voici votre première lecture. Elle repose sur ce que vous m’avez dit, ce n’est ni un devis ni un mandat.",
-    "handOff": "Bonne question. Rasoul pourra y répondre correctement lors d’un appel, avec votre résumé sous les yeux. Voulez-vous choisir un moment ?",
+    "handOff": "Bonne question. Ray pourra y répondre correctement lors d’un appel, avec votre résumé sous les yeux. Voulez-vous choisir un moment ?",
     "briefLabel": "Votre résumé, à garder",
     "brief1Title": "Un seul responsable par donnée",
     "brief1Text": "Décidez quel système fait foi pour les commandes, les clients et les articles.",
@@ -872,9 +872,9 @@
     "brief2Text": "Une seule façon convenue, écrite, avant d’automatiser quoi que ce soit.",
     "brief3Title": "Automatiser le transfert le plus chargé",
     "brief3Text": "Connectez d’abord les deux systèmes qui portent le plus de volume.",
-    "talkToRasoul": "En parler avec Rasoul",
-    "bookLabel": "30 minutes avec Rasoul",
-    "bookText": "Choisissez un moment à la page suivante. Rasoul lit votre résumé avant l’appel.",
+    "talkToRay": "En parler avec Ray",
+    "bookLabel": "30 minutes avec Ray",
+    "bookText": "Choisissez un moment à la page suivante. Ray lit votre résumé avant l’appel.",
     "bookCta": "Réserver un appel découverte de 30 minutes",
     "keywordsOrders": "commande,saisi,courriel,email",
     "keywordsSpreadsheets": "tableur,excel,feuille",
@@ -895,7 +895,7 @@
   },
   "placeholder": {
     "title": "Cette page arrive bientôt",
-    "text": "Nous refaisons cette partie du site. En attendant, Rasoul peut vous la présenter lors d’un court appel.",
+    "text": "Nous refaisons cette partie du site. En attendant, Ray peut vous la présenter lors d’un court appel.",
     "cta": "Réserver un appel",
     "back": "Retour à l’accueil"
   },
@@ -925,7 +925,7 @@
   },
   "closing": {
     "title": "Prêt à arrêter de tout faire à la main ?",
-    "text": "Parlez-en avec Rasoul. Vous repartez avec une première étape claire, que nous travaillions ensemble ou non.",
+    "text": "Parlez-en avec Ray. Vous repartez avec une première étape claire, que nous travaillions ensemble ou non.",
     "cta": "Réserver un appel découverte de 30 minutes"
   },
   "sampleBrief": {
@@ -940,7 +940,7 @@
     "manualLabel": "Ce qui reste aux personnes",
     "manual": "Approuver les commandes inhabituelles et parler aux clients. Le jugement reste humain.",
     "nextLabel": "Prochaine étape",
-    "next": "Un appel de 30 minutes avec Rasoul pour confronter le résumé à la réalité du travail."
+    "next": "Un appel de 30 minutes avec Ray pour confronter le résumé à la réalité du travail."
   },
   "platforms": {
     "title": "Les plateformes que nous connaissons vraiment",
@@ -979,10 +979,10 @@
     }
   },
   "founder": {
-    "name": "Rasoul Rasouli",
+    "name": "Ray Rasouli",
     "role": "Fondateur, ingénieur logiciel et responsable des systèmes. Vancouver (C.-B.).",
-    "linkedin": "Rasoul sur LinkedIn",
-    "photoAlt": "Rasoul Rasouli",
+    "linkedin": "Ray sur LinkedIn",
+    "photoAlt": "Ray Rasouli",
     "bio": "Développeur full-stack qui a construit et remplacé des plateformes entières de A à Z.",
     "principleLabel": "Avec qui vous travaillez",
     "principle": "Aucune revente. Aucune commission. Seulement vos opérations."

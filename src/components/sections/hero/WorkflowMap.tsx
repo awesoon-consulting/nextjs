@@ -36,7 +36,7 @@ export default function WorkflowMap({ progress }: { progress: number }) {
 
   return (
     <>
-      <svg viewBox="15 20 285 380" className="absolute top-1/2 left-[calc((100%-50rem)/4)] h-[293px] w-[220px] -translate-x-1/2 -translate-y-1/2 text-[#0F1D33] dark:text-[#6E8BB5]" aria-hidden="true">
+      <svg viewBox="15 20 285 380" className="absolute top-1/2 left-[calc((100%-50rem)/4)] h-[293px] w-[220px] -translate-x-1/2 -translate-y-1/2 overflow-visible text-[#0F1D33] dark:text-[#6E8BB5]" aria-hidden="true">
         <g>
           {MESSY_PATHS.map((d, i) => (
             <path key={i} d={d} fill="none" stroke="currentColor" strokeOpacity={0.35} strokeWidth={1.5} strokeDasharray="4 6" />

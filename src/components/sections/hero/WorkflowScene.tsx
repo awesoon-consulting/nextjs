@@ -21,6 +21,7 @@ import {
 import { MESSY } from './WorkflowMap'
 
 interface WorkflowSceneProps {
+  onLost: () => void
   progress: number
   energy: number
   gap: number
@@ -34,7 +35,7 @@ const U = 6 / 285
 const RIGHT_UNITS = 5.6
 const GRID = 3
 
-export default function WorkflowScene({ progress, energy, gap, dark, onReady }: WorkflowSceneProps) {
+export default function WorkflowScene({ progress, energy, gap, dark, onReady, onLost }: WorkflowSceneProps) {
   const stageRef = useRef<HTMLDivElement>(null)
   const live = useRef({ progress, energy, gap, dark })
 
@@ -55,6 +56,13 @@ export default function WorkflowScene({ progress, energy, gap, dark, onReady }: 
     renderer.domElement.style.width = '100%'
     renderer.domElement.style.height = '100%'
     el.appendChild(renderer.domElement)
+    let raf = 0
+    const onContextLost = (e: Event) => {
+      e.preventDefault()
+      cancelAnimationFrame(raf)
+      onLost()
+    }
+    renderer.domElement.addEventListener('webglcontextlost', onContextLost)
 
     const scene = new Scene()
     const cam = new PerspectiveCamera(30, 1, 0.1, 100)
@@ -143,10 +151,10 @@ export default function WorkflowScene({ progress, energy, gap, dark, onReady }: 
       const visW = visH * cam.aspect
       const side = Math.max(0, (w - live.current.gap) / 2)
       const cx = ((side / 2) / w - 0.5) * visW
+      const px = visW / w
       left.position.set(cx, 0, 0)
       right.position.set(-cx, 0, 0)
-      const px = visW / w
-      const scale = (220 * px) / 5.7
+      const scale = Math.min(220 / 5.7, (h - 24) / 8) * px
       left.scale.setScalar(scale)
       flyX = ((side / 2 + 24) / w) * visW / Math.max(scale, 0.01)
       right.scale.setScalar((170 * px) / RIGHT_UNITS)
@@ -156,7 +164,6 @@ export default function WorkflowScene({ progress, energy, gap, dark, onReady }: 
     ro.observe(el)
 
     const ease = (t: number) => t * t * (3 - 2 * t)
-    let raf = 0
     let ready = false
     const tick = (t: number) => {
       const { progress: target, energy: e, dark: isDark } = live.current
@@ -229,6 +236,7 @@ export default function WorkflowScene({ progress, energy, gap, dark, onReady }: 
 
     return () => {
       cancelAnimationFrame(raf)
+      renderer.domElement.removeEventListener('webglcontextlost', onContextLost)
       ro.disconnect()
       window.removeEventListener('pointermove', onMove)
       env.dispose()
@@ -242,7 +250,7 @@ export default function WorkflowScene({ progress, energy, gap, dark, onReady }: 
       renderer.dispose()
       renderer.domElement.remove()
     }
-  }, [onReady])
+  }, [onReady, onLost])
 
   return <div ref={stageRef} className="absolute inset-0" />
 }

@@ -50,6 +50,7 @@ export default function Navbar() {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false)
   const [isMegaOpen, setIsMegaOpen] = useState(false)
   const megaRef = useRef<HTMLDivElement>(null)
+  const megaButtonRef = useRef<HTMLButtonElement>(null)
 
   useEffect(() => {
     const handler = () => setIsScrolled(window.scrollY > 16)
@@ -78,7 +79,10 @@ export default function Navbar() {
     const onKey = (e: KeyboardEvent) => {
       if (e.key === 'Escape') {
         setIsMobileMenuOpen(false)
-        setIsMegaOpen(false)
+        setIsMegaOpen((open) => {
+          if (open) megaButtonRef.current?.focus()
+          return false
+        })
       }
     }
     const onClick = (e: MouseEvent) => {
@@ -134,6 +138,7 @@ export default function Navbar() {
 
             <div className="hidden items-center gap-1 lg:flex" ref={megaRef}>
               <button
+                ref={megaButtonRef}
                 type="button"
                 onClick={() => setIsMegaOpen((o) => !o)}
                 aria-expanded={isMegaOpen}
@@ -143,17 +148,6 @@ export default function Navbar() {
                 {t('nav.services')}
                 <Chevron open={isMegaOpen} />
               </button>
-              {siteConfig.nav.main.map(({ labelKey, href }) => (
-                <Link
-                  key={href}
-                  href={localHref(href)}
-                  aria-current={isActive(href) ? 'page' : undefined}
-                  className={`${linkBase} ${isActive(href) ? 'text-text-primary dark:text-white' : linkIdle}`}
-                >
-                  {t(labelKey)}
-                </Link>
-              ))}
-
               {isMegaOpen && (
                 <div
                   id="services-menu"
@@ -225,6 +219,17 @@ export default function Navbar() {
                   </div>
                 </div>
               )}
+              {siteConfig.nav.main.map(({ labelKey, href }) => (
+                <Link
+                  key={href}
+                  href={localHref(href)}
+                  aria-current={isActive(href) ? 'page' : undefined}
+                  className={`${linkBase} ${isActive(href) ? 'text-text-primary dark:text-white' : linkIdle}`}
+                >
+                  {t(labelKey)}
+                </Link>
+              ))}
+
             </div>
 
             <div className="hidden items-center gap-2 lg:flex">

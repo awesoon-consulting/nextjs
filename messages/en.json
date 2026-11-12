@@ -410,7 +410,7 @@
     "copyright": "© {year} Awesoon Technologies Inc.",
     "noTracking": "No tracking before you agree.",
     "madeWith": "Built with care in Vancouver.",
-    "linkedin": "Rasoul on LinkedIn",
+    "linkedin": "Ray on LinkedIn",
     "language": "Language",
     "services": "Services"
   },
@@ -863,7 +863,7 @@
     "openGovernment": "For public programs we standardize the workflow, automate it and hand over full documentation.",
     "followUp": "Two quick questions so the brief fits: roughly how many people touch this each week, and how many systems are involved?",
     "briefIntro": "Thanks. Here is your first read. It is built from what you told me, not a quote or a scope.",
-    "handOff": "Good question. Rasoul can answer that properly on a call, with your brief in front of him. Want to pick a time?",
+    "handOff": "Good question. Ray can answer that properly on a call, with your brief in front of him. Want to pick a time?",
     "briefLabel": "Your brief, yours to keep",
     "brief1Title": "Pick one owner per piece of data",
     "brief1Text": "Decide which system is the source for orders, customers and items.",
@@ -871,9 +871,9 @@
     "brief2Text": "One agreed way, written down, before anything is automated.",
     "brief3Title": "Automate the busiest hand-off",
     "brief3Text": "Connect the two systems that carry the most volume first.",
-    "talkToRasoul": "Talk it through with Rasoul",
-    "bookLabel": "30 minutes with Rasoul",
-    "bookText": "Pick a time on the next page. Rasoul reads your brief before the call.",
+    "talkToRay": "Talk it through with Ray",
+    "bookLabel": "30 minutes with Ray",
+    "bookText": "Pick a time on the next page. Ray reads your brief before the call.",
     "bookCta": "Book a 30-minute discovery call",
     "keywordsOrders": "order,key,email",
     "keywordsSpreadsheets": "spreadsheet,sheet,excel",
@@ -890,11 +890,11 @@
     "trust4": "A real person replies",
     "mapLabel": "Manual steps joining into connected systems",
     "fitLine": "For operations teams in manufacturing, distribution, industrial services and public sector.",
-    "fitLineShort": "For manufacturing, distribution and public sector teams."
+    "fitLineShort": "For manufacturing, distribution and public sector."
   },
   "placeholder": {
     "title": "This page is on its way",
-    "text": "We are rebuilding this part of the site. In the meantime, Rasoul can walk you through it on a short call.",
+    "text": "We are rebuilding this part of the site. In the meantime, Ray can walk you through it on a short call.",
     "cta": "Book a call",
     "back": "Back to home"
   },
@@ -924,7 +924,7 @@
   },
   "closing": {
     "title": "Ready to stop doing it by hand?",
-    "text": "Talk it through with Rasoul. You leave with a clear first step, whether or not we work together.",
+    "text": "Talk it through with Ray. You leave with a clear first step, whether or not we work together.",
     "cta": "Book a 30-minute discovery call"
   },
   "sampleBrief": {
@@ -939,7 +939,7 @@
     "manualLabel": "What stays with people",
     "manual": "Approving unusual orders and talking to customers. Judgment stays human.",
     "nextLabel": "Next step",
-    "next": "A 30-minute call with Rasoul to check the brief against how the work really runs."
+    "next": "A 30-minute call with Ray to check the brief against how the work really runs."
   },
   "platforms": {
     "title": "The platforms we actually know",
@@ -978,10 +978,10 @@
     }
   },
   "founder": {
-    "name": "Rasoul Rasouli",
+    "name": "Ray Rasouli",
     "role": "Owner, software engineer and systems lead. Vancouver, BC.",
-    "linkedin": "Rasoul on LinkedIn",
-    "photoAlt": "Rasoul Rasouli",
+    "linkedin": "Ray on LinkedIn",
+    "photoAlt": "Ray Rasouli",
     "bio": "Full-stack developer who has built and replaced entire platforms from the ground up.",
     "principleLabel": "Who you work with",
     "principle": "No resale. No commissions. Just your operations."

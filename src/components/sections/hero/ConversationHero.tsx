@@ -76,6 +76,10 @@ export default function ConversationHero() {
   const [sceneReady, setSceneReady] = useState(false)
   const { resolvedTheme } = useTheme()
   const onSceneReady = useCallback(() => setSceneReady(true), [])
+  const onSceneLost = useCallback(() => {
+    setSceneReady(false)
+    setSceneOn(false)
+  }, [])
 
   useEffect(() => {
     if (!canRun3D()) return
@@ -173,9 +177,9 @@ export default function ConversationHero() {
     ask(draft)
   }
 
-  function talkToRasoul() {
+  function talkToRay() {
     if (typing) return
-    setMessages((m) => [...m, { id: idRef.current++, bot: false, text: t('talkToRasoul') }])
+    setMessages((m) => [...m, { id: idRef.current++, bot: false, text: t('talkToRay') }])
     setTyping(true)
     timers.current.push(window.setTimeout(() => typeOut(t('bookText'), 'book'), 700))
   }
@@ -212,6 +216,7 @@ export default function ConversationHero() {
                 gap={800}
                 dark={resolvedTheme === 'dark'}
                 onReady={onSceneReady}
+                onLost={onSceneLost}
               />
             </div>
           )}
@@ -256,10 +261,10 @@ export default function ConversationHero() {
                       </ol>
                       <button
                         type="button"
-                        onClick={talkToRasoul}
+                        onClick={talkToRay}
                         className="mt-4 rounded-full bg-primary px-5 py-2.5 text-sm font-semibold text-white hover:bg-secondary dark:bg-white dark:text-primary"
                       >
-                        {t('talkToRasoul')}
+                        {t('talkToRay')}
                       </button>
                     </div>
                   )}
@@ -278,7 +283,7 @@ export default function ConversationHero() {
               </div>
             ))}
             {typing && (
-              <div className="flex items-center gap-3" aria-label={t('typing')}>
+              <div className="flex items-center gap-3" role="status" aria-label={t('typing')}>
                 <Image src="/images/retina-logo.png" alt="" width={28} height={28} />
                 <span className="flex gap-1">
                   {[0, 1, 2].map((i) => (

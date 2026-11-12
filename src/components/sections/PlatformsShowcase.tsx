@@ -19,7 +19,7 @@ const MORE = ['Docker', 'AWS', 'Google Cloud', 'Airtable', 'Notion', 'Jira', 'Li
 interface Category {
   key: 'erp' | 'crm' | 'ecom' | 'integration' | 'ai'
   icon: string
-  platforms: Pick<Platform, 'name' | 'slug' | 'url'>[]
+  platforms: (Pick<Platform, 'name' | 'slug' | 'url'> & { short?: string })[]
 }
 
 const categories: Category[] = [
@@ -30,7 +30,7 @@ const categories: Category[] = [
       { name: 'NetSuite', slug: 'netsuite', url: 'https://www.netsuite.com/' },
       { name: 'Odoo', slug: 'odoo', url: 'https://www.odoo.com/' },
       { name: 'Epicor', slug: 'epicor', url: 'https://www.epicor.com/' },
-      { name: 'SAP Business One', slug: 'sap', url: 'https://www.sap.com/products/erp/business-one.html' },
+      { name: 'SAP Business One', short: 'SAP B1', slug: 'sap', url: 'https://www.sap.com/products/erp/business-one.html' },
     ],
   },
   {
@@ -136,7 +136,16 @@ export default function PlatformsShowcase() {
                   className={`max-h-7 max-w-full object-contain dark:brightness-0 dark:invert ${p.slug === 'epicor' ? 'scale-150' : ''}`}
                 />
               </span>
-              <span className="text-sm leading-tight font-semibold text-text-primary dark:text-white">{p.name}</span>
+              <span className="text-sm leading-tight font-semibold text-text-primary dark:text-white">
+                {p.short ? (
+                  <>
+                    <span className="sm:hidden">{p.short}</span>
+                    <span className="hidden sm:inline">{p.name}</span>
+                  </>
+                ) : (
+                  p.name
+                )}
+              </span>
             </button>
           ))}
         </div>

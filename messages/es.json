@@ -411,7 +411,7 @@
     "copyright": "© {year} Awesoon Technologies Inc.",
     "noTracking": "Sin seguimiento antes de que acepte.",
     "madeWith": "Construido con cuidado en Vancouver.",
-    "linkedin": "Rasoul en LinkedIn",
+    "linkedin": "Ray en LinkedIn",
     "language": "Idioma",
     "services": "Servicios"
   },
@@ -864,7 +864,7 @@
     "openGovernment": "En programas públicos estandarizamos el proceso, lo automatizamos y entregamos la documentación completa.",
     "followUp": "Dos preguntas rápidas para ajustar el resumen: ¿cuántas personas tocan este trabajo cada semana y cuántos sistemas intervienen?",
     "briefIntro": "Gracias. Aquí tiene su primera lectura. Se basa en lo que me contó; no es una cotización ni un alcance.",
-    "handOff": "Buena pregunta. Rasoul puede responderla bien en una llamada, con su resumen delante. ¿Quiere elegir un horario?",
+    "handOff": "Buena pregunta. Ray puede responderla bien en una llamada, con su resumen delante. ¿Quiere elegir un horario?",
     "briefLabel": "Su resumen, para guardar",
     "brief1Title": "Un responsable por cada dato",
     "brief1Text": "Decida qué sistema manda para pedidos, clientes y artículos.",
@@ -872,9 +872,9 @@
     "brief2Text": "Una forma acordada, por escrito, antes de automatizar nada.",
     "brief3Title": "Automatizar el traspaso con más volumen",
     "brief3Text": "Conecte primero los dos sistemas que mueven más volumen.",
-    "talkToRasoul": "Hablarlo con Rasoul",
-    "bookLabel": "30 minutos con Rasoul",
-    "bookText": "Elija un horario en la página siguiente. Rasoul lee su resumen antes de la llamada.",
+    "talkToRay": "Hablarlo con Ray",
+    "bookLabel": "30 minutos con Ray",
+    "bookText": "Elija un horario en la página siguiente. Ray lee su resumen antes de la llamada.",
     "bookCta": "Reservar una llamada de descubrimiento de 30 minutos",
     "keywordsOrders": "pedido,escrib,correo,email",
     "keywordsSpreadsheets": "hoja,excel,cálculo",
@@ -895,7 +895,7 @@
   },
   "placeholder": {
     "title": "Esta página llega pronto",
-    "text": "Estamos rehaciendo esta parte del sitio. Mientras tanto, Rasoul se la puede explicar en una llamada corta.",
+    "text": "Estamos rehaciendo esta parte del sitio. Mientras tanto, Ray se la puede explicar en una llamada corta.",
     "cta": "Reservar una llamada",
     "back": "Volver al inicio"
   },
@@ -925,7 +925,7 @@
   },
   "closing": {
     "title": "¿Listo para dejar de hacerlo a mano?",
-    "text": "Háblelo con Rasoul. Sale con un primer paso claro, trabajemos juntos o no.",
+    "text": "Háblelo con Ray. Sale con un primer paso claro, trabajemos juntos o no.",
     "cta": "Reservar una llamada de descubrimiento de 30 minutos"
   },
   "sampleBrief": {
@@ -940,7 +940,7 @@
     "manualLabel": "Lo que queda en manos de personas",
     "manual": "Aprobar pedidos poco comunes y hablar con clientes. El criterio sigue siendo humano.",
     "nextLabel": "Siguiente paso",
-    "next": "Una llamada de 30 minutos con Rasoul para contrastar el resumen con cómo funciona el trabajo."
+    "next": "Una llamada de 30 minutos con Ray para contrastar el resumen con cómo funciona el trabajo."
   },
   "platforms": {
     "title": "Las plataformas que conocemos de verdad",
@@ -979,10 +979,10 @@
     }
   },
   "founder": {
-    "name": "Rasoul Rasouli",
+    "name": "Ray Rasouli",
     "role": "Fundador, ingeniero de software y responsable de sistemas. Vancouver, BC.",
-    "linkedin": "Rasoul en LinkedIn",
-    "photoAlt": "Rasoul Rasouli",
+    "linkedin": "Ray en LinkedIn",
+    "photoAlt": "Ray Rasouli",
     "bio": "Desarrollador full-stack que ha construido y reemplazado plataformas enteras desde cero.",
     "principleLabel": "Con quién trabaja",
     "principle": "Sin reventa. Sin comisiones. Solo sus operaciones."
