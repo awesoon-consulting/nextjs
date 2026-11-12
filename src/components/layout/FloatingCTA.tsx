@@ -5,7 +5,7 @@ import Link from 'next/link'
 import { usePathname } from 'next/navigation'
 import { useLocale, useTranslations } from 'next-intl'
 
-const HIDE_WHEN_VISIBLE = ['#assistant-input', '#closing-title']
+const HIDE_WHEN_VISIBLE = ['#assistant-input', '#design-input', '#token-demo', '#closing-title']
 
 export default function FloatingCTA() {
   const locale = useLocale()
