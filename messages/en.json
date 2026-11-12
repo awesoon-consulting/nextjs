@@ -1285,6 +1285,222 @@
       ]
     }
   },
+  "publicSector": {
+    "meta": {
+      "title": "Public sector: IT, ERP and creative services for government buyers",
+      "description": "Awesoon Technologies Inc. bids on government IT, ERP and creative contracts in Canada, the United States, the United Kingdom and Australia. Standard, documented systems your team owns."
+    },
+    "hero": {
+      "eyebrow": "For government buyers",
+      "title": "Standard, documented systems for public programs",
+      "subtitle": "We standardize and automate workflows, build custom software, and deliver design and advertising as repeatable systems. Every engagement ends with documentation your team owns.",
+      "ctaPdf": "Download capability statement",
+      "ctaPdfMeta": "PDF, 1 page",
+      "ctaCall": "Book a 30-minute discovery call",
+      "fact1": "Vancouver, BC",
+      "fact2": "Canada, US, UK and Australia",
+      "fact3": "{count} portal categories"
+    },
+    "assistant": {
+      "label": "Procurement assistant",
+      "greeting": "Tell me your category or paste a line from your RFP. I will map it to the categories we bid under and offer a capability statement tailored to it.",
+      "placeholder": "Tell me your category or RFP",
+      "send": "Send",
+      "typing": "Assistant is typing",
+      "countryLabel": "Buyer country",
+      "countries": {
+        "all": "All",
+        "ca": "Canada",
+        "us": "United States",
+        "uk": "United Kingdom",
+        "au": "Australia"
+      },
+      "startersLabel": "Common requests",
+      "starters": {
+        "erp": "ERP or database programming",
+        "it": "IT expert services",
+        "crm": "CRM software",
+        "staff": "Permanent IT developers",
+        "creative": "Advertising campaign"
+      },
+      "matchIntro": "That maps to these categories we bid under:",
+      "noMatch": "I could not match that to a category yet. Most buyers start with IT expert services. Ray can confirm the fit on a short call.",
+      "schemes": "Portals in {country} list these under {schemes}. Category codes on request.",
+      "statementCta": "Get a tailored capability statement",
+      "callCta": "Book a 30-minute discovery call",
+      "reset": "Start over",
+      "privacy": "Runs in your browser. Nothing you type is sent or stored."
+    },
+    "categories": {
+      "title": "Categories we bid under",
+      "subtitle": "The portals' own category names, so you can match us to your notice. IT and ERP lead.",
+      "searchLabel": "Find a category",
+      "searchPlaceholder": "Search, for example ERP",
+      "groupLabel": "Type",
+      "groups": {
+        "all": "All",
+        "it": "IT and ERP",
+        "creative": "Creative",
+        "staffing": "Staffing"
+      },
+      "countryLabel": "Show code schemes for",
+      "colCategory": "Portal category",
+      "colService": "What we deliver",
+      "colCodes": "Codes",
+      "codesOnRequest": "Category codes on request",
+      "count": "{shown} of {total} categories",
+      "empty": "No category matches that search. Ray can tell you if your notice fits.",
+      "lead": "Lead",
+      "items": {
+        "it-expert-services": {
+          "name": "IT expert services",
+          "service": "Systems review, process mapping and vendor management",
+          "keywords": "it expert,consult,advis,assessment,review,audit,process,vendor,strategy,modernization,modernisation,digital"
+        },
+        "erp-database-programming": {
+          "name": "ERP or database applications programming services",
+          "service": "ERP implementation, configuration and data migration",
+          "keywords": "erp,sap,oracle,netsuite,dynamics,odoo,finance system,inventory,procurement system,migration"
+        },
+        "crm-software": {
+          "name": "CRM software",
+          "service": "CRM setup, configuration and support",
+          "keywords": "crm,salesforce,hubspot,case management,contact management,customer"
+        },
+        "application-programming": {
+          "name": "Application programming services",
+          "service": "Custom applications and internal tools",
+          "keywords": "application,app,software development,custom software,web,portal,mobile,tool"
+        },
+        "client-server-programming": {
+          "name": "Client or server programming services",
+          "service": "APIs, integrations and back-end services",
+          "keywords": "api,integration,interface,server,backend,back-end,middleware"
+        },
+        "database-design-management": {
+          "name": "Database design and management",
+          "service": "Database design, cleanup and reporting",
+          "keywords": "database,data,sql,reporting,dashboard,records"
+        },
+        "gui-development": {
+          "name": "Graphical user interface development",
+          "service": "Interface design and front-end build",
+          "keywords": "ui,ux,interface,front-end,frontend,usability,accessibility,wcag"
+        },
+        "game-software-maintenance": {
+          "name": "Game and entertainment software maintenance",
+          "service": "Live operations and maintenance for games",
+          "keywords": "game,gaming,entertainment,live ops"
+        },
+        "permanent-it-developers": {
+          "name": "Permanent IT developers (through a vetted staffing partner)",
+          "service": "Vetted developers, with Ray accountable for the match",
+          "keywords": "staff,staffing,developer,resource,placement,permanent,hire,augmentation"
+        },
+        "advertising-campaign-production": {
+          "name": "Advertising campaign and production services",
+          "service": "Campaign planning and production as a repeatable system",
+          "keywords": "advertising,campaign,ad,media,production,video,awareness,outreach"
+        },
+        "brand-marketing-materials": {
+          "name": "Brand marketing materials",
+          "service": "Brand guides, playbooks and templates",
+          "keywords": "brand,marketing,material,guide,playbook,template,collateral"
+        },
+        "art-and-graphics": {
+          "name": "Art and graphics",
+          "service": "Art direction, illustration and graphics",
+          "keywords": "art,graphic,design,illustration,visual"
+        },
+        "banner-advertising": {
+          "name": "Banner advertising",
+          "service": "Display and banner ad sets",
+          "keywords": "banner,display,digital ad,signage"
+        }
+      }
+    },
+    "statement": {
+      "title": "Capability statement",
+      "text": "One page with our categories, services, company data and contact. Built from the facts on this page.",
+      "item1": "Core capabilities, IT and ERP first",
+      "item2": "All portal categories we bid under",
+      "item3": "Company data and how we work",
+      "item4": "Codes, registrations and insurance on request",
+      "download": "Download capability statement",
+      "tailored": "Tailor it to your category",
+      "print": "Print or save as PDF",
+      "back": "Back to public sector",
+      "matched": "Matched to your request",
+      "who": "Who we are",
+      "whoText": "Awesoon Technologies Inc. is an owner-led systems firm in Vancouver, BC. We standardize and automate workflows, build custom software, and deliver design and advertising as repeatable systems. Every engagement ends with documentation the buyer's team owns.",
+      "core": "Core capabilities",
+      "core1": "ERP and CRM implementation, configuration and support",
+      "core2": "Custom applications, APIs and integrations",
+      "core3": "Process mapping, systems review and vendor management",
+      "core4": "Design and advertising delivered as repeatable systems",
+      "company": "Company data",
+      "how": "How we work",
+      "contact": "Contact",
+      "footnote": "Category codes, supplier registrations, insurance and references are shared on request."
+    },
+    "facts": {
+      "title": "Company facts",
+      "legalName": "Legal name",
+      "based": "Based in",
+      "basedValue": "Vancouver, British Columbia, Canada",
+      "serves": "Serves",
+      "servesValue": "Canada, the United States, the United Kingdom and Australia",
+      "languages": "Languages",
+      "languagesValue": "English, French and Spanish",
+      "owner": "Owner",
+      "ownerValue": "Ray Rasouli",
+      "registrations": "Supplier registrations",
+      "insurance": "Insurance",
+      "references": "References",
+      "onRequest": "Shared on request",
+      "referencesValue": "Shared on request once a buyer agrees to be named"
+    },
+    "how": {
+      "title": "How we work with buyers",
+      "subtitle": "Three ways in. Each one ends with documentation your team owns.",
+      "item1Title": "Subcontract to your prime",
+      "item1Text": "We join a registered prime's team for the IT, ERP or creative scope, under their contract and reporting.",
+      "item2Title": "Direct small bids",
+      "item2Text": "For a contained IT expert services or ERP and CRM scope, we bid directly and the owner runs the work.",
+      "item3Title": "Documentation your team owns",
+      "item3Text": "Process maps, configuration notes and runbooks are delivered with the work, so your staff can run it after we leave."
+    },
+    "faq": {
+      "title": "Questions procurement officers ask",
+      "q1": "Which categories do you bid under?",
+      "a1": "{count} portal categories, led by IT expert services, ERP or database applications programming, and CRM software. The full list is in the table above.",
+      "q2": "Can I get your category codes?",
+      "a2": "Yes. Codes are confirmed per portal and sent on request, with the capability statement, usually within 1 business day.",
+      "q3": "Are you registered on our portal?",
+      "a3": "Supplier registrations are shared on request. Tell us the portal and we confirm the registration status in writing.",
+      "q4": "Do you work as a subcontractor?",
+      "a4": "Yes. Subcontracting to a registered prime is our preferred way in, and we also bid small contracts directly.",
+      "q5": "Where do you deliver?",
+      "a5": "We are based in Vancouver, BC and serve buyers in Canada, the United States, the United Kingdom and Australia. Most work is remote, with on-site visits as the contract needs.",
+      "q6": "How do you provide permanent IT developers?",
+      "a6": "Through a vetted staffing partner. Ray reviews each candidate and stays accountable for the match.",
+      "q7": "Who will we work with?",
+      "a7": "Ray Rasouli, the owner, leads every engagement. There is no hand-off to a sales team."
+    },
+    "contact": {
+      "title": "Talk to the person who does the work",
+      "text": "Send your notice, RFP or category. You get a straight answer on fit and a capability statement for your file.",
+      "reply": "A real person replies within 1 business day",
+      "name": "Ray Rasouli",
+      "role": "Owner, Awesoon Technologies Inc.",
+      "emailLabel": "Email Ray"
+    },
+    "closing": {
+      "title": "Have a notice open right now?",
+      "text": "Book 30 minutes. You leave knowing whether we fit your category and what we would send with a bid.",
+      "cta": "Book a 30-minute discovery call"
+    }
+  },
   "advertisingPage": {
     "meta": {
       "title": "Advertising campaigns, production and banners run as a system",
