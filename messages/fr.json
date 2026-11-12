@@ -589,6 +589,13 @@
         ]
       },
       {
+        "id": "idle-bakery-empire",
+        "h": "Idle Bakery Empire : les publicités affichées",
+        "p": [
+          "Idle Bakery Empire affiche des publicités récompensées que vous choisissez de regarder pour un bonus, comme dix minutes d'affluence, des gains d'absence doublés, un coup d'œil gratuit à un rival ou un quartier ouvert plus tôt. Une récompense gagnée est toujours accordée. Une publicité plein écran peut s'afficher après la fin d'une scène de rachat, jamais pendant une célébration ni lors des premières sessions après l'installation. Le jeu n'affiche ni bannière ni publicité à l'ouverture. Dans les Réglages, la ligne Choix publicitaires rouvre le formulaire de consentement de Google."
+        ]
+      },
+      {
         "id": "children",
         "h": "Enfants",
         "p": [

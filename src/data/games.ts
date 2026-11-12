@@ -702,54 +702,55 @@ export const games: GameData[] = [
     ageRating: '4+',
     players: 'One player',
     price: 'Free',
-    sessionLength: 'Thirty second visits, earns while closed',
-    tagline: 'Tap, bake, franchise, repeat',
+    sessionLength: 'Short visits, earns while closed',
+    tagline: 'Bake, build, buy the town',
     heroBlurb:
-      'A 1920s enamel-sign bakery you run in short visits and leave running in between. Customers queue for loaves, pastries and cakes, and the shop keeps earning while the app is closed.',
+      'A 3D town of rival bakeries. Bake in your own shop, build on empty lots, win market share and buy rivals out, then open new districts across the canal.',
     howToPlay: [
       {
-        title: 'Serve the counter',
-        body: 'Customers arrive asking for a loaf, a pastry or a cake, each with a patience bar. Press the matching station to bake it.',
+        title: 'Bake in your shop',
+        body: 'Tap to bake in your hero bakery. Each upgrade adds a floor and raises what you earn every second.',
       },
       {
-        title: 'Bank the tips',
-        body: 'Serve quickly for a tip and a growing streak. Let someone wait too long and they walk out, and the streak resets.',
+        title: 'Take the town',
+        body: 'Build on empty lots, grow your share of the market, and buy rival bakeries out one by one.',
       },
       {
-        title: 'Grow the shop',
-        body: 'Hire help, build better ovens, and move from a market stall to a Grand Patisserie. Then franchise for a permanent multiplier.',
+        title: 'Open the next district',
+        body: 'Win a district and the bridge across the canal unlocks a new neighbourhood. Then franchise for a permanent multiplier.',
       },
     ],
     features: [
-      'Customer orders with tips and a streak multiplier, not just a number going up',
-      'Six kinds of help, five oven tiers and three storefront upgrades',
-      'Earns at half rate for up to eight hours while closed, with a Welcome Back summary',
-      'The Books keeps a lifetime ledger, including orders served and your best streak',
+      'A living 3D town where computer-run rival bakeries grow on their own',
+      'Market share you can see, with buyouts that turn rival shops into yours',
+      'New districts that open across the canal as you win the last one',
+      'Earns while closed, with a chest of coins waiting when you return',
     ],
     whoFor: [
-      'Idle and clicker players who want something to do when they check in',
-      'Anyone who likes watching numbers compound over a week',
-      'People who want a tycoon game with no energy timers and no paywall',
+      'Idle and tycoon players who want a town to grow, not just a number',
+      'Anyone who likes beating their own best a little more each visit',
+      'People who want a calm game that plays offline with no account',
     ],
     faq: [
       {
         q: 'Does it keep earning when closed?',
-        a: 'Yes, at half rate for up to eight hours. You are shown exactly what came in.',
+        a: 'Yes, for up to eight hours. A chest shows exactly what came in when you return.',
       },
       {
         q: 'What does franchising do?',
-        a: 'It restarts the shop with a permanent multiplier, so each run is faster than the last.',
+        a: 'It restarts the town with a permanent multiplier, so each run is faster than the last.',
       },
       {
-        q: 'Are there in-app purchases?',
-        a: 'No. There is nothing to buy.',
+        q: 'Does it have ads?',
+        a: 'Yes. Most ads are optional rewarded ads you choose to watch for a bonus. One ad may show after a buyout scene closes. There are no banner ads.',
       },
     ],
     seoSummary:
-      'Idle Bakery Empire is a free idle bakery tycoon with customer orders, tips and streaks, offline earnings and franchising. No in-app purchases, plays offline.',
+      'Idle Bakery Empire is a free 3D idle bakery tycoon: build a town, take market share, buy out rival bakeries and open new districts. Plays offline, no account, contains ads.',
     keywords: [
       'idle game',
       'bakery tycoon',
+      'town builder',
       'clicker game',
       'offline earnings',
       'incremental game',
@@ -774,52 +775,52 @@ export const games: GameData[] = [
     ],
     translations: {
       fr: {
-        tagline: 'Touchez, cuisez, franchisez, recommencez',
+        tagline: 'Cuisez, bâtissez, rachetez la ville',
         category: 'Simulation idle',
-        sessionLength: 'Des visites de trente secondes, gagne même fermé',
+        sessionLength: 'Courtes visites, gagne même fermé',
         heroBlurb:
-          "Une boulangerie en émail des années 1920 que l'on gère par courtes visites et qui tourne entre-temps. Les clients font la file pour des pains, des viennoiseries et des gâteaux, et la boutique continue de gagner pendant que l'application est fermée.",
+          "Une ville en 3D de boulangeries rivales. Cuisez dans votre boutique, bâtissez sur les terrains libres, gagnez des parts de marché et rachetez vos rivaux, puis ouvrez de nouveaux quartiers de l'autre côté du canal.",
         howToPlay: [
           {
-            title: 'Servez le comptoir',
-            body: 'Les clients arrivent pour un pain, une viennoiserie ou un gâteau, chacun avec une barre de patience. Appuyez sur le poste correspondant pour cuire.',
+            title: 'Cuisez dans votre boutique',
+            body: 'Touchez pour cuire dans votre boulangerie. Chaque amélioration ajoute un étage et augmente vos gains par seconde.',
           },
           {
-            title: 'Encaissez les pourboires',
-            body: "Servez vite pour un pourboire et une série croissante. Faites trop attendre quelqu'un et il repart, la série retombe.",
+            title: 'Prenez la ville',
+            body: 'Bâtissez sur les terrains libres, augmentez votre part de marché et rachetez les boulangeries rivales une à une.',
           },
           {
-            title: 'Agrandissez la boutique',
-            body: "Embauchez, installez de meilleurs fours et passez de l'étal à la grande pâtisserie. Puis franchisez pour un multiplicateur permanent.",
+            title: 'Ouvrez le quartier suivant',
+            body: 'Gagnez un quartier et le pont sur le canal ouvre un nouveau voisinage. Puis franchisez pour un multiplicateur permanent.',
           },
         ],
         features: [
-          'Des commandes clients avec pourboires et multiplicateur de série, pas seulement un chiffre qui monte',
-          "Six types d'aide, cinq niveaux de four et trois agrandissements de boutique",
-          "Des gains à demi-tarif jusqu'à huit heures hors ligne, avec un récapitulatif au retour",
-          'Les Livres tiennent le registre complet, commandes servies et meilleure série comprises',
+          "Une ville 3D vivante où des boulangeries rivales gérées par l'ordinateur grandissent seules",
+          'Des parts de marché visibles, et des rachats qui font des boutiques rivales les vôtres',
+          "De nouveaux quartiers qui ouvrent de l'autre côté du canal",
+          'Gagne même fermé, avec un coffre de pièces à votre retour',
         ],
         whoFor: [
-          'Les amateurs de jeux idle qui veulent quelque chose à faire en se connectant',
-          'Ceux qui aiment voir les chiffres composer sur une semaine',
-          "Ceux qui veulent un jeu de gestion sans minuteur d'énergie ni mur payant",
+          'Les amateurs de jeux idle et de gestion qui veulent faire grandir une ville',
+          'Ceux qui aiment battre leur propre record à chaque visite',
+          'Ceux qui veulent un jeu calme, hors ligne et sans compte',
         ],
         faq: [
           {
             q: 'La boutique gagne-t-elle pendant la fermeture ?',
-            a: "Oui, à demi-tarif jusqu'à huit heures. Le montant exact vous est présenté.",
+            a: "Oui, jusqu'à huit heures. Un coffre montre le montant exact à votre retour.",
           },
           {
             q: 'À quoi sert la franchise ?',
-            a: 'Elle relance la boutique avec un multiplicateur permanent : chaque partie va plus vite que la précédente.',
+            a: 'Elle relance la ville avec un multiplicateur permanent : chaque partie va plus vite que la précédente.',
           },
           {
-            q: 'Y a-t-il des achats intégrés ?',
-            a: "Non. Il n'y a rien à acheter.",
+            q: 'Y a-t-il des publicités ?',
+            a: "Oui. La plupart sont des publicités récompensées, facultatives, que vous choisissez de regarder pour un bonus. Une publicité peut s'afficher après la scène de rachat. Pas de bannières.",
           },
         ],
         seoSummary:
-          'Idle Bakery Empire est un jeu de gestion idle gratuit avec commandes clients, pourboires, séries, gains hors ligne et franchises. Sans achats intégrés, fonctionne hors ligne.',
+          'Idle Bakery Empire est un jeu de gestion idle gratuit en 3D : bâtissez une ville, gagnez des parts de marché, rachetez les boulangeries rivales et ouvrez de nouveaux quartiers. Hors ligne, sans compte, contient des publicités.',
         screenshots: [
           {
             src: '/images/games/idle-bakery/01-counter.webp',
@@ -840,52 +841,52 @@ export const games: GameData[] = [
         ],
       },
       es: {
-        tagline: 'Toca, hornea, franquicia, repite',
+        tagline: 'Hornea, construye, compra la ciudad',
         category: 'Simulación idle',
-        sessionLength: 'Visitas de treinta segundos, gana incluso cerrado',
+        sessionLength: 'Visitas cortas, gana incluso cerrado',
         heroBlurb:
-          'Una panadería de los años veinte con rótulos esmaltados que se lleva en visitas cortas y sigue funcionando entre ellas. Los clientes hacen cola por panes, bollos y pasteles, y la tienda sigue ganando con la aplicación cerrada.',
+          'Una ciudad en 3D de panaderías rivales. Hornea en tu tienda, construye en solares vacíos, gana cuota de mercado y compra a tus rivales, y abre nuevos barrios al otro lado del canal.',
         howToPlay: [
           {
-            title: 'Atiende el mostrador',
-            body: 'Llegan clientes pidiendo pan, bollo o pastel, cada uno con una barra de paciencia. Pulsa la estación correspondiente para hornear.',
+            title: 'Hornea en tu tienda',
+            body: 'Toca para hornear en tu panadería. Cada mejora añade una planta y sube lo que ganas por segundo.',
           },
           {
-            title: 'Cobra las propinas',
-            body: 'Atiende rápido para conseguir propina y una racha creciente. Si alguien espera demasiado, se va y la racha se pierde.',
+            title: 'Conquista la ciudad',
+            body: 'Construye en solares vacíos, aumenta tu cuota de mercado y compra las panaderías rivales una a una.',
           },
           {
-            title: 'Haz crecer la tienda',
-            body: 'Contrata ayuda, instala mejores hornos y pasa del puesto de mercado a una gran pastelería. Después franquicia para un multiplicador permanente.',
+            title: 'Abre el siguiente barrio',
+            body: 'Gana un barrio y el puente sobre el canal abre un nuevo vecindario. Después franquicia para un multiplicador permanente.',
           },
         ],
         features: [
-          'Pedidos de clientes con propinas y multiplicador de racha, no solo un número que sube',
-          'Seis tipos de ayuda, cinco niveles de horno y tres mejoras de local',
-          'Gana a mitad de ritmo hasta ocho horas sin conexión, con un resumen al volver',
-          'Los Libros guardan el registro completo, incluidos pedidos servidos y mejor racha',
+          'Una ciudad 3D viva donde panaderías rivales controladas por el ordenador crecen solas',
+          'Cuota de mercado visible, con compras que convierten tiendas rivales en tuyas',
+          'Nuevos barrios que se abren al otro lado del canal',
+          'Gana incluso cerrado, con un cofre de monedas al volver',
         ],
         whoFor: [
-          'Aficionados a los juegos idle que quieren algo que hacer al entrar',
-          'Quien disfruta viendo los números componerse a lo largo de una semana',
-          'Quien quiere un juego de gestión sin temporizadores de energía ni muros de pago',
+          'Aficionados a los juegos idle y de gestión que quieren hacer crecer una ciudad',
+          'Quien disfruta superando su propio récord en cada visita',
+          'Quien quiere un juego tranquilo, sin conexión y sin cuenta',
         ],
         faq: [
           {
             q: '¿Sigue ganando con la aplicación cerrada?',
-            a: 'Sí, a mitad de ritmo hasta ocho horas. Se te muestra exactamente lo que entró.',
+            a: 'Sí, hasta ocho horas. Un cofre muestra exactamente lo que entró al volver.',
           },
           {
             q: '¿Para qué sirve franquiciar?',
-            a: 'Reinicia la tienda con un multiplicador permanente, así cada partida va más rápido que la anterior.',
+            a: 'Reinicia la ciudad con un multiplicador permanente, así cada partida va más rápido que la anterior.',
           },
           {
-            q: '¿Hay compras dentro de la aplicación?',
-            a: 'No. No hay nada que comprar.',
+            q: '¿Tiene anuncios?',
+            a: 'Sí. La mayoría son anuncios con recompensa, opcionales, que eliges ver a cambio de un bonus. Puede aparecer un anuncio al cerrar la escena de compra. No hay banners.',
           },
         ],
         seoSummary:
-          'Idle Bakery Empire es un juego idle gratuito de panadería con pedidos de clientes, propinas, rachas, ganancias sin conexión y franquicias. Sin compras integradas y sin conexión.',
+          'Idle Bakery Empire es un juego idle gratuito de panadería en 3D: construye una ciudad, gana cuota de mercado, compra panaderías rivales y abre nuevos barrios. Sin conexión, sin cuenta, contiene anuncios.',
         screenshots: [
           {
             src: '/images/games/idle-bakery/01-counter.webp',

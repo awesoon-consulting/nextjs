@@ -589,6 +589,13 @@
         ]
       },
       {
+        "id": "idle-bakery-empire",
+        "h": "Idle Bakery Empire: qué anuncios muestra",
+        "p": [
+          "Idle Bakery Empire muestra anuncios con recompensa que eliges ver a cambio de un bonus, como diez minutos de hora punta, ganancias de ausencia dobles, un vistazo gratis a un rival o un barrio que se abre antes. Una recompensa ganada siempre se entrega. Puede aparecer un anuncio a pantalla completa al cerrar una escena de compra, nunca durante una celebración ni en las primeras sesiones tras instalar. No muestra banners ni anuncios al abrir la aplicación. En Ajustes, la fila Opciones de anuncios vuelve a abrir el formulario de consentimiento de Google."
+        ]
+      },
+      {
         "id": "children",
         "h": "Menores",
         "p": [

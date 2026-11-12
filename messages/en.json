@@ -588,6 +588,13 @@
         ]
       },
       {
+        "id": "idle-bakery-empire",
+        "h": "Idle Bakery Empire: which ads it shows",
+        "p": [
+          "Idle Bakery Empire shows rewarded ads that you choose to watch for a bonus, such as a ten minute rush, doubled away earnings, a free look at a rival or a district opening sooner. A reward you earn is always given. One full-screen ad may show after a buyout scene closes, never during a celebration and not in the first sessions after install. It shows no banner ads and no ads when the app opens. In Settings, the Ad choices row reopens Google's consent form."
+        ]
+      },
+      {
         "id": "children",
         "h": "Children",
         "p": [
