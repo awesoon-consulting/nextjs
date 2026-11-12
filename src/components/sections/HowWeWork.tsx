@@ -87,15 +87,7 @@ export default function HowWeWork() {
         <div className="mt-10 hidden lg:block">
           <IsoPath lit={lit} label={t('howWeWork.pathLabel')} />
         </div>
-        <div className="mt-6 flex justify-center">
-          <Link
-            href={`/${locale}/contact`}
-            className="inline-flex rounded-full bg-primary px-6 py-3 text-sm font-semibold text-white hover:bg-secondary dark:bg-white dark:text-primary"
-          >
-            {t('closing.cta')}
-          </Link>
-        </div>
-        <ol className="mt-8 grid items-stretch gap-4 sm:grid-cols-2 lg:grid-cols-4">
+        <ol className="mt-6 grid items-stretch gap-4 sm:grid-cols-2 lg:grid-cols-4">
           {steps.map((s, i) => (
             <li
               key={i}
@@ -143,6 +135,14 @@ export default function HowWeWork() {
             </li>
           ))}
         </ol>
+        <div className="mt-10 flex justify-center">
+          <Link
+            href={`/${locale}/contact`}
+            className="inline-flex rounded-full bg-primary px-6 py-3 text-sm font-semibold text-white hover:bg-secondary dark:bg-white dark:text-primary"
+          >
+            {t('closing.cta')}
+          </Link>
+        </div>
       </div>
     </section>
   )

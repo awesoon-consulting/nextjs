@@ -38,7 +38,7 @@
     "language": "Language",
     "healthCheckTitle": "Free systems health check",
     "healthCheckText": "A clear list of what is broken, what it costs and what to fix first.",
-    "healthCheckCta": "Book a 30-minute discovery call"
+    "healthCheckCta": "Book a 30-minute call"
   },
   "hero": {
     "headline": "Your ops outgrew your tools. We fix that.",
@@ -889,7 +889,8 @@
     "trust3": "No tracking before you agree",
     "trust4": "A real person replies",
     "mapLabel": "Manual steps joining into connected systems",
-    "fitLine": "For growing operations teams in manufacturing, distribution, industrial services and the public sector."
+    "fitLine": "For operations teams in manufacturing, distribution, industrial services and public sector.",
+    "fitLineShort": "For manufacturing, distribution and public sector teams."
   },
   "placeholder": {
     "title": "This page is on its way",
@@ -982,8 +983,8 @@
     "linkedin": "Rasoul on LinkedIn",
     "photoAlt": "Rasoul Rasouli",
     "bio": "Full-stack developer who has built and replaced entire platforms from the ground up.",
-    "principleLabel": "How we work",
-    "principle": "Independent by design. No software resale, no vendor commissions. Recommendations rest on your operations alone."
+    "principleLabel": "Who you work with",
+    "principle": "No resale. No commissions. Just your operations."
   },
   "howWeWork": {
     "title": "How we work",

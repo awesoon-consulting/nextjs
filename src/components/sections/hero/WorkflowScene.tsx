@@ -18,6 +18,7 @@ import {
   Vector3,
   WebGLRenderer,
 } from 'three'
+import { MESSY } from './WorkflowMap'
 
 interface WorkflowSceneProps {
   progress: number
@@ -28,7 +29,9 @@ interface WorkflowSceneProps {
 }
 
 const LAYER_COLORS = ['#0E6A9E', '#00AEEF', '#193C57']
-const MESSY_COUNT = 14
+const MESSY_COUNT = MESSY.length
+const U = 6 / 285
+const RIGHT_UNITS = 5.6
 const GRID = 3
 
 export default function WorkflowScene({ progress, energy, gap, dark, onReady }: WorkflowSceneProps) {
@@ -83,10 +86,10 @@ export default function WorkflowScene({ progress, energy, gap, dark, onReady }: 
       left.add(l)
       return l
     })
-    const messyHome = Array.from({ length: MESSY_COUNT }, () => ({
-      p: new Vector3((Math.random() - 0.5) * 5, (Math.random() - 0.5) * 7, (Math.random() - 0.5) * 2),
-      r: (Math.random() - 0.5) * 0.6,
-      s: Math.random() * Math.PI * 2,
+    const messyHome = MESSY.map((m, i) => ({
+      p: new Vector3((m.x + 28 - 157.5) * U, -(m.y + 17 - 210) * U, 0),
+      r: (-m.r * Math.PI) / 180,
+      s: i * 1.7,
     }))
 
     const nodeGeo = new BoxGeometry(0.55, 0.18, 0.55)
@@ -142,10 +145,11 @@ export default function WorkflowScene({ progress, energy, gap, dark, onReady }: 
       const cx = ((side / 2) / w - 0.5) * visW
       left.position.set(cx, 0, 0)
       right.position.set(-cx, 0, 0)
-      const scale = Math.min(1, ((side / w) * visW) / 6.5)
+      const px = visW / w
+      const scale = (220 * px) / 5.7
       left.scale.setScalar(scale)
       flyX = ((side / 2 + 24) / w) * visW / Math.max(scale, 0.01)
-      right.scale.setScalar(scale)
+      right.scale.setScalar((170 * px) / RIGHT_UNITS)
     }
     layout()
     const ro = new ResizeObserver(layout)

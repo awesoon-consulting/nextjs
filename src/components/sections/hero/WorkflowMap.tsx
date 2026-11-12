@@ -1,7 +1,7 @@
 
 const LAYERS = ['#0E6A9E', '#00AEEF', '#193C57']
 
-const MESSY = [
+export const MESSY = [
   { x: 40, y: 70, r: -8 },
   { x: 150, y: 30, r: 6 },
   { x: 90, y: 170, r: 4 },
@@ -36,7 +36,7 @@ export default function WorkflowMap({ progress }: { progress: number }) {
 
   return (
     <>
-      <svg viewBox="0 0 320 420" className="absolute top-1/2 left-[calc((100%-50rem)/4)] h-[290px] w-[220px] -translate-x-1/2 -translate-y-1/2 text-[#0F1D33] dark:text-[#6E8BB5]" aria-hidden="true">
+      <svg viewBox="15 20 285 380" className="absolute top-1/2 left-[calc((100%-50rem)/4)] h-[293px] w-[220px] -translate-x-1/2 -translate-y-1/2 text-[#0F1D33] dark:text-[#6E8BB5]" aria-hidden="true">
         <g>
           {MESSY_PATHS.map((d, i) => (
             <path key={i} d={d} fill="none" stroke="currentColor" strokeOpacity={0.35} strokeWidth={1.5} strokeDasharray="4 6" />
@@ -64,7 +64,7 @@ export default function WorkflowMap({ progress }: { progress: number }) {
           <path key={i} d={`M310 ${y} H 330`} stroke="currentColor" strokeOpacity={0.5} strokeWidth={1.5} style={clean(20)} />
         ))}
       </svg>
-      <svg viewBox="95 100 200 230" className="absolute top-1/2 right-[calc((100%-50rem)/4)] h-[230px] w-[170px] translate-x-1/2 -translate-y-1/2 text-[#0F1D33] dark:text-[#6E8BB5]" aria-hidden="true">
+      <svg viewBox="117 117 156 196" className="absolute top-1/2 right-[calc((100%-50rem)/4)] h-[214px] w-[170px] translate-x-1/2 -translate-y-1/2 text-[#0F1D33] dark:text-[#6E8BB5]" aria-hidden="true">
         {ROWS.map((y, r) => (
           <path key={r} d={`M0 ${200 + r * 30} C 60 ${200 + r * 30}, 70 ${y}, ${COLS[0]} ${y}`} fill="none" stroke="currentColor" strokeOpacity={0.5} strokeWidth={1.5} style={clean(160)} />
         ))}

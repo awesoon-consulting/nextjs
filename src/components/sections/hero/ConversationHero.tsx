@@ -193,7 +193,10 @@ export default function ConversationHero() {
         <p className="mx-auto mt-4 max-w-2xl text-center text-base leading-relaxed text-text-secondary sm:mt-5 sm:text-lg dark:text-neutral-300">
           {t('subtitle')}
         </p>
-        <p className="mx-auto mt-3 max-w-2xl text-center text-[15px] text-neutral-600 dark:text-neutral-300">{t('fitLine')}</p>
+        <p className="mx-auto mt-3 text-center text-[15px] text-neutral-600 dark:text-neutral-300">
+          <span className="hidden sm:inline">{t('fitLine')}</span>
+          <span className="sm:hidden">{t('fitLineShort')}</span>
+        </p>
       </div>
 
       <div className="relative mt-8 sm:mt-10">

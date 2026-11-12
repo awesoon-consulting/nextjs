@@ -39,7 +39,7 @@
     "language": "Idioma",
     "healthCheckTitle": "Revisión gratuita de sus sistemas",
     "healthCheckText": "Una lista clara de qué falla, cuánto cuesta y qué arreglar primero.",
-    "healthCheckCta": "Reservar una llamada de descubrimiento de 30 minutos"
+    "healthCheckCta": "Reservar llamada de 30 min"
   },
   "hero": {
     "headline": "Tus operaciones superaron tus herramientas. Nosotros lo arreglamos.",
@@ -890,7 +890,8 @@
     "trust3": "Sin seguimiento antes de que acepte",
     "trust4": "Responde una persona real",
     "mapLabel": "Pasos manuales que se unen en sistemas conectados",
-    "fitLine": "Para equipos de operaciones en crecimiento en fabricación, distribución, servicios industriales y el sector público."
+    "fitLine": "Para equipos de operaciones en fabricación, distribución, servicios industriales y sector público.",
+    "fitLineShort": "Para equipos de fabricación, distribución y sector público."
   },
   "placeholder": {
     "title": "Esta página llega pronto",
@@ -983,8 +984,8 @@
     "linkedin": "Rasoul en LinkedIn",
     "photoAlt": "Rasoul Rasouli",
     "bio": "Desarrollador full-stack que ha construido y reemplazado plataformas enteras desde cero.",
-    "principleLabel": "Cómo trabajamos",
-    "principle": "Independientes por diseño. Sin reventa de software ni comisiones de proveedores. Nuestras recomendaciones se basan solo en sus operaciones."
+    "principleLabel": "Con quién trabaja",
+    "principle": "Sin reventa. Sin comisiones. Solo sus operaciones."
   },
   "howWeWork": {
     "title": "Cómo trabajamos",

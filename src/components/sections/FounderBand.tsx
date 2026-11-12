@@ -16,7 +16,7 @@ export default function FounderBand() {
         />
         <div>
           <p className="text-sm font-semibold text-text-muted dark:text-neutral-400">{t('principleLabel')}</p>
-          <p className="mt-2 font-heading text-2xl leading-snug font-semibold text-text-primary sm:text-3xl dark:text-white">{t('principle')}</p>
+          <h2 className="mt-2 font-heading text-3xl font-bold tracking-tight text-text-primary sm:text-4xl lg:whitespace-nowrap dark:text-white">{t('principle')}</h2>
           <p className="mt-4 text-base leading-relaxed text-text-secondary dark:text-neutral-300">{t('bio')}</p>
           <p id="founder-name" className="mt-6 font-heading text-base font-semibold text-text-primary dark:text-white">{t('name')}</p>
           <p className="text-sm text-text-muted dark:text-neutral-400">{t('role')}</p>
