@@ -47,6 +47,7 @@ export async function getGuidedReply(text: string, turn: number, goals: Record<s
   }
   if (turn === 1) return { step: 'q2' }
   return { step: 'brief' }
+}
 
 export type DesignNeed = 'brand' | 'interface' | 'system' | 'graphics'
 
