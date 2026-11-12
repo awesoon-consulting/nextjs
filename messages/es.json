@@ -1753,5 +1753,211 @@
       "title": "Haga que su próxima campaña sea la fácil.",
       "text": "Hable con Ray. Sale con un primer paso claro, trabajemos juntos o no."
     }
+  },
+  "costPlatform": {
+    "common": {
+      "home": "Inicio",
+      "soonTitle": "Datos disponibles pronto",
+      "soonText": "Esta página lee datos públicos que se actualizan todos los días. El almacén de datos se está conectando ahora mismo, así que las cifras todavía no están aquí. Vuelva pronto, o hable con Ray Rasouli sobre sus propias cifras.",
+      "bookCall": "Reservar una llamada de descubrimiento de 30 minutos",
+      "source": "Fuente",
+      "licence": "Licencia",
+      "lastUpdated": "Última actualización",
+      "period": "Período de referencia",
+      "notYet": "aún no registrado",
+      "fromSpec": "De la especificación pública",
+      "founderLine": "Ray Rasouli, fundador de Awesoon, lee cada mensaje él mismo."
+    },
+    "costIndex": {
+      "metaTitle": "El costo real del trabajo manual, por región",
+      "metaDescription": "Datos públicos de salarios por región y ocupación, con una calculadora que muestra su propio costo anual de la captura manual de pedidos. Fuentes y licencias en cada página.",
+      "breadcrumb": "Costo del trabajo manual",
+      "eyebrow": "Costo del trabajo manual",
+      "title": "El costo real del trabajo manual, por región",
+      "intro": "La mayoría de los equipos nunca suma las horas que pasan volviendo a escribir pedidos que llegan por correo, PDF y llamadas. Cada página de abajo usa datos oficiales de salarios del lugar donde usted trabaja, para que la estimación refleje el pago local y no una suposición nacional.",
+      "framing1": "Elija su región para ver el salario mediano de los puestos que suelen encargarse de la captura de pedidos, la facturación y la contabilidad, con una calculadora ya llena con esos salarios. Usted cambia el tamaño del equipo y las horas para que coincidan con su propia semana, y la página muestra lo que le cuesta ese trabajo manual cada año. La cifra es su propio costo de mano de obra. Nunca es un precio de Awesoon, y nadie aquí le dará uno en estas páginas.",
+      "framing2": "Cada cifra viene de una oficina nacional de estadística: el Bureau of Labor Statistics en Estados Unidos, Statistics Canada, el Australian Bureau of Statistics y la Office for National Statistics en el Reino Unido. Cada página de región nombra su fuente, su licencia y su período de referencia. Una región solo aparece en las búsquedas cuando tiene salarios de al menos dos ocupaciones, así que las páginas con pocos datos se quedan aparte hasta que los datos se completen.",
+      "regions": "{count, plural, one {# región} other {# regiones}}",
+      "occupations": "{count, plural, =0 {salarios en camino} one {# ocupación} other {# ocupaciones}}",
+      "indexedCount": "{count, plural, one {# página de región tiene datos suficientes para aparecer en las búsquedas.} other {# páginas de región tienen datos suficientes para aparecer en las búsquedas.}}",
+      "countries": {
+        "ca": "Canadá",
+        "us": "Estados Unidos",
+        "gb": "Reino Unido",
+        "au": "Australia"
+      }
+    },
+    "cost": {
+      "metaTitle": "El costo real de la captura manual de pedidos en {region}",
+      "metaDescription": "Salarios de {region} para captura de pedidos, facturación y contabilidad, con una calculadora de su propio costo anual. Fuente: {source}.",
+      "title": "El costo real de la captura manual de pedidos en {region}",
+      "intro": "La mayoría de los equipos nunca suma las horas que pasan volviendo a escribir pedidos que llegan por correo, PDF y llamadas. Esta página usa datos de salarios de {region} para los puestos que suelen hacer ese trabajo, para que la estimación refleje el pago local y no un promedio nacional. Cambie los valores para que coincidan con su equipo. La cifra es su propio costo de mano de obra. No es un precio de Awesoon.",
+      "comingTitle": "Datos de salarios en camino para {region}",
+      "comingText": "Usamos la encuesta de ingresos de la Office for National Statistics para las regiones del Reino Unido. Esa fuente todavía no carga, así que esta página no tiene salarios que mostrar. Se queda fuera de las búsquedas hasta que cargue. La calculadora funciona igual si escribe su propio salario por hora.",
+      "thinNote": "Esta región solo tiene salarios de una ocupación por ahora, así que esta página todavía no aparece en las búsquedas. Las cifras mostradas son reales.",
+      "tableTitle": "Salarios de {region} para el trabajo de captura de pedidos",
+      "tableHint": "Elija una fila para usarla en su estimación.",
+      "colOccupation": "Ocupación",
+      "colCode": "Código",
+      "colMedian": "Mediana",
+      "colMean": "Media",
+      "use": "Usar",
+      "inUse": "En uso",
+      "unit": {
+        "hourly": "por hora",
+        "weekly": "por semana",
+        "annual": "por año"
+      },
+      "method": {
+        "title": "Método y fuente",
+        "formulaTitle": "La fórmula",
+        "formula": "Personas × horas por semana × semanas de trabajo × salario por hora × (1 + costos del empleador).",
+        "wageTitle": "El salario",
+        "wage": "El salario mediano de la ocupación en {region} según la última publicación, o la media cuando solo se publica una media. Las cifras anuales y semanales se convierten a cifras por hora con las horas de tiempo completo que usted indique.",
+        "oncostTitle": "Costos del empleador",
+        "oncost": "Impuestos de nómina, beneficios y licencias pagadas además del salario. 20 % es un punto de partida; use sus propias cifras.",
+        "leavesOutTitle": "Lo que deja fuera",
+        "leavesOut": "Corregir errores, pedidos tardíos, horas extra y el costo de un cliente que se va después de un envío equivocado. El costo real suele ser más alto que esta cifra."
+      },
+      "framing": "La captura manual de pedidos se esconde a plena vista. Se reparte entre unas pocas personas, unas pocas horas cada una, y nunca aparece como una sola línea en el presupuesto. Sumarla es el primer paso para decidir si vale la pena arreglarla. Algunos equipos descubren que la cifra es pequeña y siguen adelante. Otros descubren que paga una integración en menos de un año. Las dos respuestas sirven, y las dos salen de sus propios valores en esta página, no de un discurso de ventas.",
+      "compareTitle": "El mismo equipo en regiones vecinas",
+      "compareHint": "Sus valores, con el salario de cada región para el mismo puesto.",
+      "compareNone": "Ninguna región vecina tiene aún datos de salarios para este puesto.",
+      "otherRegions": "Más regiones",
+      "ctaTitle": "¿Quiere recuperar esas horas?",
+      "ctaText": "Ray Rasouli revisa en una llamada de 30 minutos cómo llegan hoy los pedidos a su sistema, y le dice con claridad si vale la pena automatizarlo."
+    },
+    "calc": {
+      "title": "Su estimación",
+      "occupation": "Puesto que hace el trabajo",
+      "people": "Personas que capturan pedidos",
+      "hours": "Horas cada una, por semana",
+      "weeks": "Semanas de trabajo al año",
+      "oncost": "Costos del empleador además del salario",
+      "fullTime": "Horas de tiempo completo por semana",
+      "wage": "Salario por hora",
+      "yearly": "Su captura manual de pedidos, por año",
+      "monthly": "Por mes",
+      "hoursYear": "Horas al año",
+      "fte": "Personas de tiempo completo",
+      "basis": "Con la {stat} de {region} de {rate} por hora para {occupation}.",
+      "basisOwn": "Con el salario por hora que usted escribió.",
+      "median": "mediana",
+      "mean": "media",
+      "note": "Este es su propio costo de mano de obra. Awesoon no da precios aquí."
+    },
+    "integrationsIndex": {
+      "metaTitle": "Integraciones de plataformas, lado a lado",
+      "metaDescription": "Conecte dos plataformas de negocio: autenticación, webhooks y datos de API de cada especificación pública, lo que suele fallar y un flujo de ejemplo.",
+      "breadcrumb": "Integraciones",
+      "eyebrow": "Integraciones",
+      "title": "Integraciones de plataformas, lado a lado",
+      "intro": "Elija dos herramientas que quiera que se hablen entre sí. Cada página pone las dos especificaciones públicas de API una junto a la otra, enumera lo que suele fallar entre herramientas de ese tipo y esboza un flujo limpio.",
+      "framing1": "Solo creamos una página cuando las dos plataformas tienen una especificación OpenAPI pública en el directorio de APIs.guru que realmente es de ese producto, y cuando la plataforma es una con la que ya trabajamos. Esa regla mantiene los datos honestos: cada método de autenticación y cada línea de webhook de una página de pareja se lee de la propia especificación y se marca así. Cuando una especificación no dice nada, la página lo dice en lugar de adivinar.",
+      "framing2": "No ganamos comisiones de ninguna plataforma y no clasificamos herramientas. Las páginas existen para ayudarle a planear una sincronización antes de construirla, o a entender por qué una que ya tiene sigue fallando. Si quiere una segunda opinión, Ray Rasouli revisará su configuración en una llamada corta.",
+      "qualify": "{pairs, plural, one {# pareja califica} other {# parejas califican}} de {platforms, plural, one {# plataforma} other {# plataformas}} con una especificación pública que coincide, de {specs} especificaciones revisadas.",
+      "facts": "Datos de ambos lados"
+    },
+    "integration": {
+      "metaTitle": "Conectar {a} con {b}",
+      "metaDescription": "Datos de API de {a} y {b} de cada especificación pública, lado a lado: autenticación y webhooks, lo que suele fallar y un flujo de ejemplo.",
+      "title": "Conectar {a} con {b}",
+      "intro": "Abajo están los datos públicos de ambas API lado a lado, lo que suele fallar entre {catA} y {catB}, y cómo se ve un flujo limpio. Los datos vienen de la especificación OpenAPI publicada por cada proveedor en el directorio de APIs.guru y se revisan en cada actualización. No ganamos comisiones de ninguna de las dos plataformas y no clasificamos herramientas.",
+      "tableTitle": "Las dos API, lado a lado",
+      "fact": "Dato",
+      "auth": "Autenticación",
+      "webhooks": "Webhooks",
+      "webhooksYes": "Declarados en la especificación",
+      "webhooksNo": "Ninguno declarado en la especificación",
+      "authNone": "Ninguna declarada en la especificación",
+      "objects": "Objetos",
+      "limits": "Límites de uso",
+      "readSpec": "Lea la especificación para ver sus objetos",
+      "limitsNote": "No está en la especificación; vea la documentación del proveedor",
+      "version": "Versión de la especificación",
+      "spec": "Archivo de especificación",
+      "open": "Abrir",
+      "authNames": {
+        "oauth2": "OAuth 2.0",
+        "apiKey": "Clave de API",
+        "http-basic": "HTTP básico",
+        "http-bearer": "Token de portador",
+        "openIdConnect": "OpenID Connect"
+      },
+      "categories": {
+        "ai": "API de modelo de IA",
+        "automation": "plataforma de automatización",
+        "spreadsheet": "hoja de cálculo",
+        "workManagement": "herramienta de gestión de trabajo"
+      },
+      "flowTitle": "Flujo de ejemplo",
+      "flowLayer": "Capa de integración",
+      "flowLayerSub": "Relaciona campos, registra cada dato, avisa si algo falla",
+      "flowRetry": "Reintenta con espera creciente cuando se llega a los límites",
+      "flowNote": "Flujo ilustrativo, no una construcción concreta. Sus campos y sus reglas deciden el flujo real.",
+      "breaksTitle": "Lo que suele fallar",
+      "breaksIntro": "Estos son los fallos que aparecen con más frecuencia en cada tipo de herramienta. Están escritos por categoría, no afirmados sobre {a} o {b} en particular.",
+      "breaks": {
+        "ai": [
+          "Las respuestas cambian de una ejecución a otra, así que todo lo que se escribe de vuelta necesita una revisión o un formato fijo.",
+          "Las entradas largas llegan al límite de tamaño del modelo y se cortan sin un error evidente.",
+          "El uso se cobra por llamada, así que un ciclo que reintenta sin parar se convierte en una factura sorpresa."
+        ],
+        "automation": [
+          "Un paso falla en silencio y el resto de la ejecución sigue con campos vacíos.",
+          "Los límites de tareas o ejecuciones del plan detienen el flujo a mitad de un día ocupado.",
+          "Nadie es dueño del flujo, así que un campo renombrado lo rompe durante semanas antes de que alguien lo note."
+        ],
+        "spreadsheet": [
+          "Alguien inserta una columna o renombra una pestaña y todas las relaciones que siguen se corren de lugar.",
+          "Dos personas editan las mismas filas mientras una sincronización escribe en ellas, y se pierden cambios.",
+          "Las fechas, las monedas y los ceros a la izquierda cambian de formato al entrar o al salir."
+        ],
+        "workManagement": [
+          "Los campos personalizados difieren entre proyectos, así que una relación que funciona en uno falla en otro.",
+          "Los nombres de estado cambian cuando un equipo edita su flujo de trabajo, y los elementos sincronizados se quedan atascados.",
+          "Los comentarios y los archivos adjuntos se sincronizan dos veces, o ninguna, después de una edición en cualquiera de los lados."
+        ]
+      },
+      "promptTitle": "Pregunte a su asistente sobre su configuración",
+      "promptHint": "Copie esto en el asistente de IA que ya usa. Nunca da un precio; Ray hace el alcance del trabajo él mismo.",
+      "prompt": "Quiero conectar {a} con {b}. {a} es {catA} y {b} es {catB}. Según sus especificaciones públicas de API, {a} admite {authA} y {b} admite {authB}. Pregúntame qué registros deben moverse, en qué dirección, con qué frecuencia y quién corrige un registro fallido. Luego enumera los campos que debo relacionar, dónde podrían aparecer duplicados y qué debo registrar para que los fallos sean fáciles de encontrar.",
+      "copy": "Copiar instrucción",
+      "copied": "Copiado",
+      "relatedTitle": "Parejas relacionadas",
+      "ctaTitle": "¿Ya tiene esta sincronización y falla?",
+      "ctaText": "Ray Rasouli revisa su configuración actual en una llamada de 30 minutos y le dice dónde falla.",
+      "introSame": "Aquí están los datos públicos de ambas API lado a lado, lo que suele fallar entre dos herramientas de este tipo ({catA}) y cómo se ve un flujo limpio. Los datos vienen de la especificación OpenAPI publicada por cada proveedor, a través del directorio APIs.guru, y se revisan en cada actualización. No cobramos comisiones ni clasificamos herramientas."
+    },
+    "calendar": {
+      "metaTitle": "Calendario de cambios de API",
+      "metaDescription": "Cambios de API recientes y próximos e incidentes de estado de las plataformas principales, cada uno con su fecha, un resumen y un enlace al aviso del propio proveedor.",
+      "breadcrumb": "Calendario de cambios de API",
+      "eyebrow": "Soporte",
+      "title": "Calendario de cambios de API",
+      "intro": "Las plataformas cambian sus API y tienen caídas según su propio calendario. Cuando llega un cambio, las integraciones hechas sobre el comportamiento anterior pueden dejar de funcionar. Este calendario enumera cambios recientes y próximos tomados de los registros de cambios y los canales de estado de los proveedores, cada uno con su fecha, un resumen y un enlace al aviso del propio proveedor.",
+      "framing1": "Las entradas del registro de cambios le dicen qué lanzó, dejó de recomendar o planea retirar un proveedor. Las entradas de estado le dicen cuándo un servicio tuvo un incidente, lo que ayuda a explicar una sincronización que falló en un día concreto. Citamos el título de cada proveedor y enlazamos al original, para que pueda leer el aviso completo antes de actuar. Nada aquí se reescribe ni se califica.",
+      "framing2": "La lista se actualiza todos los días desde canales públicos. Algunas plataformas no publican ningún canal que podamos leer, y se dejan fuera en lugar de llenarlas a mano. Si un cambio de esta lista toca un sistema del que usted depende y no está seguro de qué significa para usted, Ray Rasouli puede revisarlo con usted en una llamada corta.",
+      "filter": "Filtrar por plataforma",
+      "all": "Todas las plataformas",
+      "upcoming": "Próximos",
+      "upcomingNone": "No hay cambios próximos con fecha en los canales por ahora. Los retiros aparecen aquí en cuanto un proveedor publica uno con fecha.",
+      "recent": "Últimos {days} días",
+      "kind": {
+        "status": "Estado",
+        "changelog": "Registro de cambios"
+      },
+      "read": "Leer el aviso",
+      "count": "{count, plural, one {# cambio} other {# cambios}}",
+      "subTitle": "Reciba alertas de cambios",
+      "subText": "Un correo corto cuando una plataforma que usted elija publique un cambio. Hasta que nuestro registro de suscripciones esté activo, esto abre un correo a Ray con su solicitud.",
+      "subConsent": "Sí, envíenme alertas de cambios de API por correo. Puedo darme de baja cuando quiera. Vea el",
+      "privacy": "aviso de privacidad",
+      "subButton": "Pedir alertas por correo",
+      "subNeedConsent": "Marque la casilla para continuar.",
+      "mailSubject": "Alertas de cambios de API",
+      "mailBody": "Por favor envíenme alertas de cambios de API para: {platforms}",
+      "more": "Mostrar {count} más"
+    }
   }
 }

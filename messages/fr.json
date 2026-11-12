@@ -1753,5 +1753,211 @@
       "title": "Faites de votre prochaine campagne la plus simple.",
       "text": "Parlez-en avec Ray. Vous repartez avec une première étape claire, que nous travaillions ensemble ou non."
     }
+  },
+  "costPlatform": {
+    "common": {
+      "home": "Accueil",
+      "soonTitle": "Données bientôt disponibles",
+      "soonText": "Cette page lit des données publiques mises à jour chaque jour. Le stockage des données est en cours de connexion, donc les chiffres ne sont pas encore là. Revenez bientôt, ou parlez à Ray Rasouli de vos propres chiffres.",
+      "bookCall": "Réserver un appel de découverte de 30 minutes",
+      "source": "Source",
+      "licence": "Licence",
+      "lastUpdated": "Dernière mise à jour",
+      "period": "Période de référence",
+      "notYet": "pas encore enregistré",
+      "fromSpec": "Tiré de la spécification publique",
+      "founderLine": "Ray Rasouli, fondateur d’Awesoon, lit lui-même chaque message."
+    },
+    "costIndex": {
+      "metaTitle": "Le vrai coût du travail manuel, par région",
+      "metaDescription": "Des données salariales publiques par région et par profession, avec un calculateur qui montre votre propre coût annuel de saisie manuelle des commandes. Sources et licences sur chaque page.",
+      "breadcrumb": "Coût du travail manuel",
+      "eyebrow": "Coût du travail manuel",
+      "title": "Le vrai coût du travail manuel, par région",
+      "intro": "La plupart des équipes n’additionnent jamais les heures passées à retaper des commandes reçues par courriel, en PDF et par téléphone. Chaque page ci-dessous utilise les données salariales officielles de l’endroit où vous travaillez, pour que l’estimation reflète la paie locale et non une devinette nationale.",
+      "framing1": "Choisissez votre région pour voir le salaire médian des emplois qui font habituellement la saisie de commandes, la facturation et la tenue de livres, avec un calculateur déjà rempli de ces salaires. Vous changez la taille de l’équipe et les heures selon votre propre semaine, et la page montre ce que ce travail manuel vous coûte chaque année. Ce chiffre est votre propre coût de main-d’œuvre. Ce n’est jamais un prix d’Awesoon, et personne ici ne vous en donnera un sur ces pages.",
+      "framing2": "Chaque chiffre vient d’un bureau national de statistiques : le Bureau of Labor Statistics aux États-Unis, Statistics Canada, l’Australian Bureau of Statistics, et l’Office for National Statistics au Royaume-Uni. Chaque page de région indique sa source, sa licence et sa période de référence. Une région n’apparaît dans les recherches que lorsqu’elle a des salaires pour au moins deux professions, donc les pages minces restent à l’écart jusqu’à ce que les données se complètent.",
+      "regions": "{count, plural, one {# région} other {# régions}}",
+      "occupations": "{count, plural, =0 {salaires à venir} one {# profession} other {# professions}}",
+      "indexedCount": "{count, plural, one {# page de région a assez de données pour apparaître dans les recherches.} other {# pages de région ont assez de données pour apparaître dans les recherches.}}",
+      "countries": {
+        "ca": "Canada",
+        "us": "États-Unis",
+        "gb": "Royaume-Uni",
+        "au": "Australie"
+      }
+    },
+    "cost": {
+      "metaTitle": "Le vrai coût de la saisie manuelle des commandes : {region}",
+      "metaDescription": "Salaires de {region} pour la saisie de commandes, la facturation et la tenue de livres, avec un calculateur de votre propre coût annuel. Source : {source}.",
+      "title": "Le vrai coût de la saisie manuelle des commandes : {region}",
+      "intro": "La plupart des équipes n’additionnent jamais les heures passées à retaper des commandes reçues par courriel, en PDF et par téléphone. Cette page utilise les données salariales de {region} pour les emplois qui font habituellement ce travail, pour que l’estimation reflète la paie locale et non une moyenne nationale. Changez les valeurs selon votre équipe. Ce chiffre est votre propre coût de main-d’œuvre. Ce n’est pas un prix d’Awesoon.",
+      "comingTitle": "Données salariales à venir pour {region}",
+      "comingText": "Nous utilisons l’enquête sur les gains de l’Office for National Statistics pour les régions du Royaume-Uni. Cette source ne se charge pas encore, donc cette page n’a pas de salaires à montrer. Elle reste hors des recherches tant que ce n’est pas réglé. Le calculateur fonctionne quand même si vous entrez votre propre salaire horaire.",
+      "thinNote": "Cette région n’a des salaires que pour une profession pour l’instant, donc cette page n’apparaît pas encore dans les recherches. Les chiffres montrés sont réels.",
+      "tableTitle": "Salaires de {region} pour le travail de saisie de commandes",
+      "tableHint": "Choisissez une ligne pour l’utiliser dans votre estimation.",
+      "colOccupation": "Profession",
+      "colCode": "Code",
+      "colMedian": "Médiane",
+      "colMean": "Moyenne",
+      "use": "Utiliser",
+      "inUse": "Utilisé",
+      "unit": {
+        "hourly": "de l’heure",
+        "weekly": "par semaine",
+        "annual": "par année"
+      },
+      "method": {
+        "title": "Méthode et source",
+        "formulaTitle": "La formule",
+        "formula": "Personnes × heures par semaine × semaines travaillées × salaire horaire × (1 + coûts de l’employeur).",
+        "wageTitle": "Le salaire",
+        "wage": "Le salaire médian de la profession à {region} selon la dernière publication, ou la moyenne lorsque seule une moyenne est publiée. Les chiffres annuels et hebdomadaires deviennent horaires selon les heures à temps plein que vous indiquez.",
+        "oncostTitle": "Coûts de l’employeur",
+        "oncost": "Charges sociales, avantages et congés payés en plus du salaire. 20 % est un point de départ; utilisez vos propres chiffres.",
+        "leavesOutTitle": "Ce qui n’est pas compté",
+        "leavesOut": "La correction des erreurs, les commandes en retard, les heures supplémentaires et le coût d’un client qui part après une mauvaise livraison. Le vrai coût est souvent plus élevé que ce chiffre."
+      },
+      "framing": "La saisie manuelle des commandes se cache à la vue de tous. Elle est répartie entre quelques personnes, quelques heures chacune, et n’apparaît jamais comme une seule ligne du budget. Faire le total est la première étape pour décider si cela vaut la peine d’y remédier. Certaines équipes trouvent que le chiffre est petit et passent à autre chose. D’autres découvrent qu’il paie une intégration en moins d’un an. Les deux réponses sont utiles, et les deux viennent de vos propres valeurs sur cette page, pas d’un argumentaire de vente.",
+      "compareTitle": "La même équipe dans les régions voisines",
+      "compareHint": "Vos valeurs, avec le salaire de chaque région pour le même emploi.",
+      "compareNone": "Aucune région voisine n’a encore de salaires pour cet emploi.",
+      "otherRegions": "Plus de régions",
+      "ctaTitle": "Envie de récupérer ces heures?",
+      "ctaText": "Ray Rasouli regarde comment les commandes arrivent dans votre système aujourd’hui lors d’un appel de 30 minutes, et vous dit franchement si l’automatiser en vaut la peine."
+    },
+    "calc": {
+      "title": "Votre estimation",
+      "occupation": "Emploi qui fait le travail",
+      "people": "Personnes qui font la saisie de commandes",
+      "hours": "Heures chacune, par semaine",
+      "weeks": "Semaines travaillées par année",
+      "oncost": "Coûts de l’employeur en plus du salaire",
+      "fullTime": "Heures à temps plein par semaine",
+      "wage": "Salaire horaire",
+      "yearly": "Votre saisie manuelle de commandes, par année",
+      "monthly": "Par mois",
+      "hoursYear": "Heures par année",
+      "fte": "Personnes à temps plein",
+      "basis": "Au {stat} de {region} de {rate} de l’heure pour {occupation}.",
+      "basisOwn": "Au salaire horaire que vous avez entré.",
+      "median": "médian",
+      "mean": "moyen",
+      "note": "Ceci est votre propre coût de main-d’œuvre. Awesoon ne donne pas de prix ici."
+    },
+    "integrationsIndex": {
+      "metaTitle": "Intégrations de plateformes, côte à côte",
+      "metaDescription": "Reliez deux plateformes d’affaires : authentification, webhooks et faits d’API tirés de chaque spécification publique, ce qui casse habituellement, et un exemple de flux.",
+      "breadcrumb": "Intégrations",
+      "eyebrow": "Intégrations",
+      "title": "Intégrations de plateformes, côte à côte",
+      "intro": "Choisissez deux outils que vous voulez faire communiquer. Chaque page place les deux spécifications d’API publiques côte à côte, énumère ce qui casse habituellement entre des outils de ce genre, et esquisse un flux propre.",
+      "framing1": "Nous ne créons une page que lorsque les deux plateformes ont une spécification OpenAPI publique dans le répertoire APIs.guru qui correspond vraiment à ce produit, et que la plateforme est une de celles avec lesquelles nous travaillons déjà. Cette règle garde les faits honnêtes : chaque méthode d’authentification et chaque ligne de webhook d’une page de paire est lue dans la spécification elle-même, et est indiquée comme telle. Quand une spécification ne dit rien, la page le dit au lieu de deviner.",
+      "framing2": "Nous ne touchons aucune commission d’aucune plateforme et ne classons aucun outil. Les pages servent à planifier une synchronisation avant de la construire, ou à comprendre pourquoi celle que vous avez continue d’échouer. Si vous voulez un deuxième avis, Ray Rasouli regardera votre configuration lors d’un court appel.",
+      "qualify": "{pairs, plural, one {# paire est admissible} other {# paires sont admissibles}} parmi {platforms, plural, one {# plateforme} other {# plateformes}} avec une spécification publique correspondante, sur {specs} spécifications vérifiées.",
+      "facts": "Faits pour les deux côtés"
+    },
+    "integration": {
+      "metaTitle": "Relier {a} à {b}",
+      "metaDescription": "Faits d’API de {a} et de {b} tirés de chaque spécification publique, côte à côte : authentification et webhooks, ce qui casse habituellement, et un exemple de flux.",
+      "title": "Relier {a} à {b}",
+      "intro": "Voici les faits publics des deux API côte à côte, ce qui casse habituellement entre {catA} et {catB}, et à quoi ressemble un flux propre. Les faits viennent de la spécification OpenAPI publiée par chaque fournisseur dans le répertoire APIs.guru et sont vérifiés à chaque mise à jour. Nous ne touchons aucune commission d’aucune des deux plateformes et ne classons aucun outil.",
+      "tableTitle": "Les deux API, côte à côte",
+      "fact": "Fait",
+      "auth": "Authentification",
+      "webhooks": "Webhooks",
+      "webhooksYes": "Déclarés dans la spécification",
+      "webhooksNo": "Aucun déclaré dans la spécification",
+      "authNone": "Aucune déclarée dans la spécification",
+      "objects": "Objets",
+      "limits": "Limites de débit",
+      "readSpec": "Lire la spécification pour voir ses objets",
+      "limitsNote": "Pas dans la spécification; voir la documentation du fournisseur",
+      "version": "Version de la spécification",
+      "spec": "Fichier de spécification",
+      "open": "Ouvrir",
+      "authNames": {
+        "oauth2": "OAuth 2.0",
+        "apiKey": "Clé API",
+        "http-basic": "HTTP de base",
+        "http-bearer": "Jeton porteur",
+        "openIdConnect": "OpenID Connect"
+      },
+      "categories": {
+        "ai": "API de modèle d’IA",
+        "automation": "plateforme d’automatisation",
+        "spreadsheet": "chiffrier",
+        "workManagement": "outil de gestion du travail"
+      },
+      "flowTitle": "Exemple de flux",
+      "flowLayer": "Couche d’intégration",
+      "flowLayerSub": "Associe les champs, consigne chaque enregistrement, alerte en cas d’échec",
+      "flowRetry": "Nouvel essai avec délai croissant quand les limites sont atteintes",
+      "flowNote": "Flux donné à titre d’exemple, pas une réalisation précise. Vos champs et vos règles décident du vrai flux.",
+      "breaksTitle": "Ce qui casse habituellement",
+      "breaksIntro": "Ce sont les échecs les plus fréquents avec chaque type d’outil. Ils sont écrits par catégorie, et non affirmés à propos de {a} ou de {b} en particulier.",
+      "breaks": {
+        "ai": [
+          "Les réponses varient d’une exécution à l’autre, donc tout ce qui est réécrit a besoin d’une vérification ou d’un format fixe.",
+          "Les longues entrées dépassent la limite de taille du modèle et sont coupées sans erreur évidente.",
+          "L’usage est facturé à chaque appel, donc une boucle qui réessaie sans fin devient une mauvaise surprise sur la facture."
+        ],
+        "automation": [
+          "Une étape échoue en silence et le reste de l’exécution continue avec des champs vides.",
+          "Les limites de tâches ou d’exécutions du forfait arrêtent le flux en plein milieu d’une journée chargée.",
+          "Personne n’est responsable du flux, donc un champ renommé le brise pendant des semaines avant que quelqu’un s’en aperçoive."
+        ],
+        "spreadsheet": [
+          "Quelqu’un insère une colonne ou renomme un onglet et toutes les associations qui suivent se décalent.",
+          "Deux personnes modifient les mêmes lignes pendant qu’une synchronisation y écrit, et des changements sont perdus.",
+          "Les dates, les devises et les zéros de tête changent de format à l’entrée ou à la sortie."
+        ],
+        "workManagement": [
+          "Les champs personnalisés diffèrent d’un projet à l’autre, donc une association qui fonctionne dans l’un échoue dans l’autre.",
+          "Les noms de statut changent quand une équipe modifie son flux de travail, et les éléments synchronisés restent coincés.",
+          "Les commentaires et les pièces jointes se synchronisent deux fois, ou pas du tout, après une modification d’un côté ou de l’autre."
+        ]
+      },
+      "promptTitle": "Interrogez votre assistant sur votre configuration",
+      "promptHint": "Copiez ceci dans l’assistant d’IA que vous utilisez déjà. Il ne donne jamais de prix; Ray fait lui-même l’évaluation du travail.",
+      "prompt": "Je veux relier {a} à {b}. {a} est {catA} et {b} est {catB}. Selon leurs spécifications d’API publiques, {a} prend en charge {authA} et {b} prend en charge {authB}. Demande-moi quels enregistrements doivent circuler, dans quel sens, à quelle fréquence, et qui corrige un enregistrement en échec. Ensuite, énumère les champs à associer, les endroits où des doublons pourraient apparaître, et ce que je devrais consigner pour que les échecs soient faciles à trouver.",
+      "copy": "Copier la requête",
+      "copied": "Copié",
+      "relatedTitle": "Paires liées",
+      "ctaTitle": "Vous avez déjà cette synchronisation, et elle échoue?",
+      "ctaText": "Ray Rasouli regarde votre configuration actuelle lors d’un appel de 30 minutes et vous dit où elle échoue.",
+      "introSame": "Voici les faits publics des deux API côte à côte, ce qui casse souvent entre deux outils de ce type ({catA}), et à quoi ressemble un flux propre. Les faits viennent de la spécification OpenAPI publiée par chaque éditeur, via le répertoire APIs.guru, et sont vérifiés à chaque mise à jour. Nous ne touchons aucune commission et ne classons aucun outil."
+    },
+    "calendar": {
+      "metaTitle": "Calendrier des changements d’API",
+      "metaDescription": "Les changements d’API récents et à venir et les incidents de service des grandes plateformes, chacun avec sa date, un résumé et un lien vers l’avis du fournisseur.",
+      "breadcrumb": "Calendrier des changements d’API",
+      "eyebrow": "Soutien",
+      "title": "Calendrier des changements d’API",
+      "intro": "Les plateformes changent leurs API et ont des pannes selon leur propre calendrier. Quand un changement arrive, les intégrations bâties sur l’ancien comportement peuvent cesser de fonctionner. Ce calendrier énumère les changements récents et à venir tirés des journaux de modifications et des fils d’état des fournisseurs, chacun avec sa date, un résumé et un lien vers l’avis du fournisseur.",
+      "framing1": "Les entrées de journal de modifications vous disent ce qu’un fournisseur a livré, déprécié ou prévoit de retirer. Les entrées d’état vous disent quand un service a eu un incident, ce qui aide à expliquer une synchronisation qui a échoué un jour donné. Nous citons le titre de chaque fournisseur et renvoyons à l’original, pour que vous puissiez lire l’avis complet avant d’agir. Rien ici n’est réécrit ni noté.",
+      "framing2": "La liste est mise à jour chaque jour à partir de fils publics. Certaines plateformes ne publient aucun fil que nous pouvons lire, et elles sont laissées de côté plutôt que remplies à la main. Si un changement de cette liste touche un système sur lequel vous comptez et que vous ne savez pas ce qu’il signifie pour vous, Ray Rasouli peut l’examiner avec vous lors d’un court appel.",
+      "filter": "Filtrer par plateforme",
+      "all": "Toutes les plateformes",
+      "upcoming": "À venir",
+      "upcomingNone": "Aucun changement à venir avec une date dans les fils pour le moment. Les retraits apparaissent ici dès qu’un fournisseur en publie un avec une date.",
+      "recent": "Les {days} derniers jours",
+      "kind": {
+        "status": "État",
+        "changelog": "Journal de modifications"
+      },
+      "read": "Lire l’avis",
+      "count": "{count, plural, one {# changement} other {# changements}}",
+      "subTitle": "Recevoir des alertes de changement",
+      "subText": "Un court courriel quand une plateforme que vous choisissez publie un changement. D’ici à ce que notre registre d’inscription soit en ligne, ceci ouvre un courriel à Ray avec votre demande.",
+      "subConsent": "Oui, envoyez-moi des alertes de changement d’API par courriel. Je peux me désabonner en tout temps. Voir l’",
+      "privacy": "avis de confidentialité",
+      "subButton": "Demander des alertes par courriel",
+      "subNeedConsent": "Cochez la case pour continuer.",
+      "mailSubject": "Alertes de changement d’API",
+      "mailBody": "Veuillez m’envoyer des alertes de changement d’API pour : {platforms}",
+      "more": "Afficher {count} de plus"
+    }
   }
 }
