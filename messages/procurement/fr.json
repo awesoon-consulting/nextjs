@@ -1,0 +1,204 @@
+{
+  "countries": {
+    "ca": "Canada",
+    "us": "États-Unis",
+    "uk": "Royaume-Uni",
+    "au": "Australie"
+  },
+  "countryIn": {
+    "ca": "au Canada",
+    "us": "aux États-Unis",
+    "uk": "au Royaume-Uni",
+    "au": "en Australie"
+  },
+  "crumb": "Données d'approvisionnement",
+  "source": {
+    "source": "Source",
+    "licence": "Licence",
+    "updated": "Dernière mise à jour",
+    "notRecorded": "pas encore enregistrée"
+  },
+  "soon": {
+    "title": "Données bientôt disponibles",
+    "text": "Les flux d'appels d'offres et d'adjudications de cette page sont en cours de raccordement. Revenez sous peu, ou écrivez directement à Ray au sujet d'un avis que vous consultez.",
+    "cta": "Écrire à Ray"
+  },
+  "table": {
+    "title": "Titre",
+    "buyer": "Acheteur",
+    "closes": "Fermeture",
+    "published": "Publié",
+    "value": "Valeur",
+    "supplier": "Fournisseur",
+    "awarded": "Adjugé",
+    "notStated": "non indiquée",
+    "sortBy": "Trier par {col}",
+    "soonOnly": "Fermeture dans les 7 jours seulement",
+    "shown": "{n} affichés",
+    "view": "Voir l'avis",
+    "opensNew": "ouvre l'avis officiel dans un nouvel onglet"
+  },
+  "hub": {
+    "metaTitle": "Appels d'offres et adjudications gouvernementaux en TI et en création",
+    "metaDescription": "Appels d'offres ouverts, adjudications passées et principaux acheteurs pour les travaux en TI, PGI, GRC, bases de données, conception et publicité au Canada, aux États-Unis, au Royaume-Uni et en Australie. Mis à jour chaque jour à partir des données ouvertes officielles.",
+    "eyebrow": "Données d'approvisionnement",
+    "title": "Appels d'offres gouvernementaux en TI et en création, mis à jour chaque jour",
+    "lead": "Appels d'offres ouverts, adjudications passées et acheteurs concernés, dans les 13 catégories de portail sous lesquelles Awesoon soumissionne. Choisissez un pays pour voir ce qui est ouvert maintenant.",
+    "countryLabel": "Pays",
+    "categoriesTitle": "Catégories",
+    "open": "ouverts",
+    "awards12": "adjudications en 12 mois",
+    "newestTitle": "Appels d'offres ouverts les plus récents",
+    "newestEmpty": "Aucun avis d'appel d'offres ouvert n'est publié aujourd'hui dans ce flux ({country}). L'historique des adjudications reste affiché dans chaque catégorie.",
+    "digestLink": "Résumé hebdomadaire, {country}",
+    "reportTitle": "État de l'approvisionnement public en TI et en création",
+    "reportText": "Un rapport trimestriel sur ce que les gouvernements achètent dans ces catégories, en quelle quantité et auprès de qui. Le premier numéro paraît une fois que deux trimestres de données sont recueillis.",
+    "reportCta": "À propos du rapport",
+    "framingTitle": "À propos de ces données",
+    "framing": [
+      "Les gouvernements du Canada, des États-Unis, du Royaume-Uni et de l'Australie publient leurs appels d'offres et leurs adjudications de contrats sous forme de données ouvertes. Chaque pays utilise son propre portail et ses propres codes, de sorte qu'un même type de travail, comme la conception de bases de données ou le matériel de marque, est inscrit sous des noms différents d'un endroit à l'autre. Cette section regroupe ces avis sous 13 catégories simples qui correspondent aux services qu'Awesoon offre.",
+      "Chaque nuit, les pages lisent les flux officiels : CanadaBuys, USAspending, Contracts Finder et Find a Tender, ainsi qu'AusTender. Un avis est associé à une catégorie selon ses codes de classification, jamais en devinant à partir du titre. Les décomptes, les médianes et les graphiques sont calculés à partir de ces seuls dossiers, et chaque bloc indique sa source, sa licence et la date de sa dernière mise à jour.",
+      "Servez-vous-en pour voir quels acheteurs publient votre type de travail, ce que les contrats coûtent habituellement à l'acheteur et ce qui ferme bientôt. Awesoon est une entreprise de Vancouver dirigée par son fondateur, Ray Rasouli. Si un avis correspond à ce que nous livrons, nous serons heureux de nous associer à vous ou de soumissionner."
+    ]
+  },
+  "category": {
+    "metaTitle": "{category} : contrats publics {countryIn}",
+    "metaDescription": "Appels d'offres ouverts, adjudications des 12 derniers mois, valeur médiane des adjudications et principaux acheteurs pour {category} {countryIn}. Mis à jour chaque jour à partir des données ouvertes officielles.",
+    "title": "{category} : contrats publics {countryIn}",
+    "summary": "{open} appels d'offres ouverts et {awards} adjudications au cours des 12 derniers mois {countryIn}.",
+    "summaryMedian": "L'adjudication médiane était de {median}.",
+    "summaryNone": "Aucune adjudication avec une valeur indiquée n'a été enregistrée au cours des 12 derniers mois.",
+    "ctaCall": "Réserver un appel de 30 minutes",
+    "ctaDigest": "Recevoir le résumé hebdomadaire",
+    "kOpen": "Appels d'offres ouverts",
+    "kSoon": "Fermeture dans 7 jours",
+    "kAwards": "Adjudications, 12 mois",
+    "kMedian": "Valeur médiane des adjudications",
+    "kMedianNote": "Valeur du contrat pour l'acheteur",
+    "openTitle": "Appels d'offres ouverts",
+    "openEmpty": "Aucun appel d'offres ouvert dans cette catégorie {countryIn} pour le moment. L'historique des adjudications ci-dessous montre à quelle fréquence les acheteurs publient ce type de travail.",
+    "chartTitle": "Adjudications, 12 derniers mois",
+    "chartLabel": "Diagramme à barres du nombre d'adjudications par mois pour les 12 derniers mois. Mois le plus élevé : {max} adjudications.",
+    "chartAwards": "adjudications",
+    "chartTotal": "Valeur totale",
+    "chartMedian": "Médiane",
+    "buyersTitle": "Principaux acheteurs, 12 mois",
+    "buyersEmpty": "Aucun acheteur n'a d'adjudication dans cette catégorie au cours des 12 derniers mois.",
+    "buyerAwards": "Contrats : {n}",
+    "howTitle": "Comment Awesoon livre cette catégorie",
+    "howLead": "Ce que nous livrons ici : {service}. Les mêmes quatre étapes pour chaque mandat, consignées par écrit pour que votre équipe soit propriétaire du résultat.",
+    "how": [
+      [
+        "Cartographier l'existant",
+        "Chaque système, fichier et processus concerné, avec qui l'utilise et pourquoi."
+      ],
+      [
+        "Concevoir le changement",
+        "Un plan clair avec la portée, les risques et les critères d'acceptation, revu avec votre personnel."
+      ],
+      [
+        "Livrer par étapes",
+        "De petites livraisons avec des tests, pour que chaque étape puisse être vérifiée avant la suivante."
+      ],
+      [
+        "Remettre la documentation",
+        "Des schémas, un guide d'exploitation et une formation que votre équipe conserve après notre départ."
+      ]
+    ],
+    "capTitle": "Énoncé de capacités",
+    "capText": "Une page avec nos services, nos codes, nos inscriptions et nos coordonnées pour les acheteurs du secteur public.",
+    "capCta": "Voir la page du secteur public",
+    "faqTitle": "Questions des acheteurs et des fournisseurs",
+    "faq": [
+      [
+        "D'où viennent ces données?",
+        "De {sources}, lues chaque nuit. Chaque bloc de cette page indique sa source, sa licence et la date de sa dernière mise à jour."
+      ],
+      [
+        "Comment un avis est-il classé dans cette catégorie?",
+        "Selon ses codes de classification officiels, comme UNSPSC, CPV, NAICS ou PSC, comparés aux codes de {category}. Les titres ne servent jamais à deviner."
+      ],
+      [
+        "Que signifie la valeur médiane des adjudications?",
+        "La moitié des adjudications avec une valeur indiquée au cours des 12 derniers mois dépassent cette valeur et l'autre moitié se situent en dessous. C'est la valeur du contrat pour l'acheteur, et non un prix facturé par Awesoon."
+      ],
+      [
+        "Awesoon peut-elle soumissionner ou s'associer pour ces appels d'offres?",
+        "Oui, lorsque le travail correspond à ce que nous livrons. Ray Rasouli examine lui-même chaque avis. Réservez un appel ou envoyez-nous la référence de l'avis par courriel."
+      ]
+    ],
+    "framingTitle": "À propos de cette page",
+    "framing": [
+      "Cette page suit chaque avis public {countryIn} classé sous {category}. Elle présente les appels d'offres ouverts aujourd'hui, les adjudications des 12 derniers mois et les acheteurs qui publient le plus souvent ce type de travail. Les chiffres sont calculés chaque nuit à partir des dossiers officiels, sans aucune estimation ajoutée, de sorte qu'un mois tranquille apparaît comme un mois tranquille.",
+      "Les acheteurs publics publient rarement ce type de travail sous un seul nom. Un ministère parle de modernisation, un autre de contrat de soutien, un troisième d'accord-cadre. Ce sont les codes de classification qui les relient, et c'est pourquoi la catégorie ici suit les codes et non le libellé du titre. Les valeurs sont celles que l'acheteur a convenu de payer au fournisseur, dans la monnaie locale, et certains avis n'indiquent aucune valeur.",
+      "Les fournisseurs s'en servent pour juger si une catégorie vaut la peine d'une soumission, pour trouver des acheteurs à qui se présenter et pour connaître la taille habituelle des contrats avant d'établir leur prix. Les acheteurs s'en servent pour voir ce que des organisations semblables ont acheté et auprès de qui."
+    ]
+  },
+  "buyer": {
+    "metaTitle": "{buyer} : contrats en TI et en création",
+    "metaDescription": "Ce que {buyer} achète en TI, PGI, GRC, bases de données, conception et publicité, à quelle fréquence et pour quelle valeur. À partir des données ouvertes officielles.",
+    "eyebrow": "Profil de l'acheteur, {country}",
+    "summary": "{awards} adjudications enregistrées dans les catégories d'Awesoon, dont {awards12} au cours des 12 derniers mois.",
+    "kAwards": "Adjudications enregistrées",
+    "kAwards12": "Adjudications, 12 mois",
+    "kMedian": "Valeur médiane des adjudications",
+    "kOpen": "Appels d'offres ouverts maintenant",
+    "catsTitle": "Ce qu'il achète",
+    "recentTitle": "Adjudications récentes",
+    "openTitle": "Appels d'offres ouverts de cet acheteur",
+    "openEmpty": "Aucun appel d'offres ouvert de cet acheteur pour le moment.",
+    "missingTitle": "Acheteur introuvable",
+    "missingText": "Cet acheteur ne figure pas dans les données actuelles. Il a peut-être été renommé dans le flux source.",
+    "back": "Retour aux données d'approvisionnement",
+    "framingTitle": "À propos de ce profil",
+    "framing": [
+      "Ce profil rassemble chaque adjudication de contrat et chaque appel d'offres ouvert que {buyer} a publiés dans les 13 catégories qu'Awesoon suit, des travaux en TI et en PGI à la conception et à la publicité. Il montre à quelle fréquence l'acheteur achète, dans quelles catégories et ce que vaut un contrat typique pour lui. Chaque chiffre provient des données ouvertes officielles de {country} et est actualisé chaque nuit.",
+      "Un acheteur qui publie le même type de travail plusieurs fois par année est habituellement une meilleure première conversation qu'un avis isolé. Le tableau des adjudications récentes montre qui a obtenu chaque contrat, ce qui aide un fournisseur à voir si l'acheteur préfère les grandes entreprises, les accords-cadres ou les petits spécialistes.",
+      "Les noms ici sont exactement ceux que l'acheteur a écrits dans le flux, de sorte qu'un même service peut apparaître sous deux graphies. Les valeurs sont en monnaie locale et représentent la valeur du contrat pour l'acheteur, et non le prix de quiconque. Les profils de moins de cinq adjudications restent hors des résultats de recherche jusqu'à ce que l'historique soit assez long pour être utile."
+    ]
+  },
+  "digest": {
+    "metaTitle": "Résumé hebdomadaire des appels d'offres en TI et en création, {country}",
+    "metaDescription": "Nouveaux appels d'offres et nouvelles adjudications gouvernementaux en TI, PGI, GRC, bases de données, conception et publicité {countryIn} cette semaine, à partir des données ouvertes officielles.",
+    "eyebrow": "Résumé hebdomadaire",
+    "title": "Nouveaux appels d'offres en TI et en création {countryIn} cette semaine",
+    "range": "Du {from} au {to}",
+    "tendersTitle": "Nouveaux appels d'offres",
+    "tendersEmpty": "Aucun nouvel avis d'appel d'offres n'a été publié dans ces catégories cette semaine.",
+    "awardsTitle": "Nouvelles adjudications",
+    "awardsEmpty": "Aucune nouvelle adjudication n'a été enregistrée dans ces catégories cette semaine.",
+    "signupTitle": "Recevoir le résumé hebdomadaire",
+    "signupText": "Les nouveaux appels d'offres en TI et en création dans un court courriel chaque lundi.",
+    "email": "Courriel professionnel",
+    "consent": "Oui, envoyez-moi le résumé hebdomadaire par courriel. Je peux me désabonner en tout temps.",
+    "privacy": "Avis de confidentialité",
+    "submit": "Envoyer la demande",
+    "mailtoNote": "L'inscription ouvre un courriel adressé à Ray. Rien n'est conservé sur ce site tant que la liste du résumé n'est pas en service.",
+    "mailSubject": "Inscription au résumé hebdomadaire ({country})",
+    "mailBody": "Veuillez ajouter {email} au résumé hebdomadaire de {country}. J'accepte de le recevoir et je peux me désabonner en tout temps.",
+    "framingTitle": "À propos du résumé",
+    "framing": [
+      "Chaque semaine, cette page présente les nouveaux appels d'offres publics et les nouvelles adjudications de contrats {countryIn} dans les 13 catégories qu'Awesoon suit : services-conseils en TI, travaux de PGI et de GRC, programmation, conception de bases de données, travaux d'interface, logiciels de jeux, dotation en personnel, ainsi que publicité et conception. Elle couvre les sept derniers jours et est reconstruite chaque nuit à partir des flux officiels.",
+      "Elle s'adresse aux petits fournisseurs qui ne peuvent pas lire chaque portail chaque jour. Parcourez les titres, ouvrez l'avis officiel de ceux qui conviennent et vérifiez la date de fermeture avant de planifier une soumission. Les appels d'offres qui ferment bientôt sont ceux à lire en premier.",
+      "La version par courriel enverra la même liste chaque lundi aux personnes qui en font la demande. Le consentement est toujours volontaire, la case est décochée au départ et vous pouvez vous désabonner en un clic. Tant que la liste d'envoi n'est pas en service, l'inscription ouvre simplement un courriel adressé à Ray Rasouli, et ce site ne conserve rien."
+    ]
+  },
+  "report": {
+    "metaTitle": "État de l'approvisionnement public en TI et en création",
+    "metaDescription": "Un rapport trimestriel sur les achats gouvernementaux de travaux en TI, PGI, GRC, bases de données, conception et publicité au Canada, aux États-Unis, au Royaume-Uni et en Australie.",
+    "eyebrow": "Rapport trimestriel",
+    "title": "État de l'approvisionnement public en TI et en création",
+    "placeholder": "Le premier numéro paraît une fois que deux trimestres complets de données sont recueillis. La collecte a commencé en {first}.",
+    "tableTitle": "Adjudications par pays et par trimestre",
+    "colCountry": "Pays",
+    "colQuarter": "Trimestre",
+    "colAwards": "Adjudications",
+    "colMedian": "Valeur médiane",
+    "framingTitle": "À propos du rapport",
+    "framing": [
+      "Chaque trimestre, ce rapport résumera la façon dont les gouvernements du Canada, des États-Unis, du Royaume-Uni et de l'Australie achètent des travaux en TI, PGI, GRC, bases de données, conception et publicité. Il compare le nombre d'adjudications, les valeurs habituelles des contrats et les acheteurs les plus actifs dans les quatre pays, en utilisant uniquement les données ouvertes officielles que chaque pays publie.",
+      "Il faut deux trimestres complets avant de pouvoir montrer une évolution plutôt qu'un simple instantané, c'est pourquoi il reste une page provisoire d'ici là. Chaque chiffre indiquera sa source et sa licence, et la méthode sera expliquée en détail pour que chacun puisse vérifier les chiffres.",
+      "Les journalistes, les chercheurs et les équipes d'approvisionnement peuvent le citer avec un lien. Les questions sur la méthode vont au fondateur, Ray Rasouli, qui lit lui-même chaque message. Le rapport ne remplace pas les avis officiels. Il sert à repérer les tendances, et chaque avis doit toujours être lu sur le portail du pays concerné avant de décider de soumissionner."
+    ]
+  }
+}

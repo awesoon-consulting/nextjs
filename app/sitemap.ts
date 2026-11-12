@@ -5,8 +5,11 @@ import { getAllSupportSlugs } from '@/src/data/support'
 import { getAllInsightSlugs } from '@/src/data/insights'
 import { getAllGameSlugs } from '@/src/data/games'
 import { getAllCaseStudies } from '@/src/data/work'
+import { procurementSitemap } from '@/src/lib/procurement/sitemap'
 
-export default function sitemap(): MetadataRoute.Sitemap {
+export const revalidate = 86400
+
+export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
   const baseUrl = process.env.NEXT_PUBLIC_SITE_URL ?? siteConfig.url
   const locales = siteConfig.locales
   const solutionSlugs = getAllSolutionSlugs()
@@ -122,6 +125,8 @@ export default function sitemap(): MetadataRoute.Sitemap {
     changeFrequency: 'monthly',
     priority: 0.5,
   })
+
+  entries.push(...(await procurementSitemap(baseUrl)))
 
   return entries
 }
