@@ -53,8 +53,8 @@ export default function WorkflowMap({ progress }: { progress: number }) {
                 }}
               >
                 <g transform={`rotate(${m.r} ${m.x + 28} ${m.y + 15})`} fill="none" stroke="currentColor" strokeOpacity={0.55} strokeWidth={1.5}>
-                  <rect x={m.x} y={m.y} width={56} height={34} rx={4} />
-                  <path d={`M${m.x} ${m.y} L${m.x + 28} ${m.y + 18} L${m.x + 56} ${m.y}`} />
+                  <rect x={m.x - 8} y={m.y - 5} width={72} height={44} rx={5} />
+                  <path d={`M${m.x - 8} ${m.y - 5} L${m.x + 28} ${m.y + 20} L${m.x + 64} ${m.y - 5}`} />
                 </g>
               </g>
             )
@@ -84,7 +84,7 @@ export default function WorkflowMap({ progress }: { progress: number }) {
               height={22}
               rx={6}
               fill={LAYERS[r]}
-              style={{ opacity: p > (r * 3 + c) / 12 ? 0.95 : 0.22, transition: 'opacity 0.6s' }}
+              style={{ opacity: p > (r * 3 + c) / 12 ? 1 : 0.85, transition: 'opacity 0.6s' }}
             />
           )),
         )}

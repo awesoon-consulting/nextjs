@@ -38,9 +38,9 @@
     "mobileNav": "Navigation mobile",
     "language": "Langue",
     "healthCheckTitle": "Bilan gratuit de vos systèmes",
-    "healthCheckText": "Un appel de 30 minutes, puis une liste claire de ce qui bloque, de ce que cela coûte et de quoi régler en premier.",
-    "healthCheckCta": "Commencer le bilan",
-    "healthCheckNote": "Commence par un appel de 30 minutes"
+    "healthCheckText": "Une liste claire de ce qui bloque, de ce que cela coûte et de quoi régler en premier.",
+    "healthCheckCta": "Réserver un appel découverte de 30 minutes",
+    "healthCheckNote": "Suit votre appel découverte de 30 minutes"
   },
   "hero": {
     "headline": "Vos opérations ont dépassé vos outils. Nous réglons ça.",
@@ -475,9 +475,9 @@
     "takeFirstStep": "Faites le premier pas"
   },
   "floatingCta": {
-    "message": "Votre bilan des systèmes est gratuit.",
-    "subtext": "30 minutes. Un vrai opérateur. Pas de présentation.",
-    "button": "Je le veux →"
+    "message": "Réservez un appel découverte de 30 minutes",
+    "subtext": "Votre bilan gratuit des systèmes suit l’appel.",
+    "button": "Réserver un appel →"
   },
   "solutionPage": {
     "painPointsTitle": "Cela vous semble familier?",
@@ -878,7 +878,7 @@
     "talkToRasoul": "En parler avec Rasoul",
     "bookLabel": "30 minutes avec Rasoul",
     "bookText": "Choisissez un moment à la page suivante. Rasoul lit votre résumé avant l’appel.",
-    "bookCta": "Choisir un moment",
+    "bookCta": "Réserver un appel découverte de 30 minutes",
     "keywordsOrders": "commande,saisi,courriel,email",
     "keywordsSpreadsheets": "tableur,excel,feuille",
     "keywordsGovernment": "gouvernement,public,appel d’offres,marché",
@@ -892,7 +892,8 @@
     "trust2": "Livraison par le fondateur",
     "trust3": "Aucun suivi avant votre accord",
     "trust4": "Une vraie personne répond",
-    "mapLabel": "Des étapes manuelles qui deviennent des systèmes connectés"
+    "mapLabel": "Des étapes manuelles qui deviennent des systèmes connectés",
+    "fitLine": "Pour les équipes d’opérations en croissance dans la fabrication, la distribution, les services industriels et le secteur public."
   },
   "placeholder": {
     "title": "Cette page arrive bientôt",
@@ -930,7 +931,6 @@
     "cta": "Réserver un appel découverte de 30 minutes"
   },
   "sampleBrief": {
-    "eyebrow": "Exemple de résumé",
     "title": "Ce que vous obtenez",
     "text": "Voici un exemple du résumé que l’assistant prépare. Il ne s’agit pas d’un vrai client.",
     "badge": "Exemple, pas un vrai client",
@@ -979,5 +979,20 @@
       "langchain": "Cadre pour bâtir des pipelines RAG, des agents et des flux d’IA en plusieurs étapes.",
       "postgresql": "Notre base de données par défaut, avec pgvector pour les vecteurs d’IA."
     }
+  },
+  "founder": {
+    "name": "Rasoul Rasouli",
+    "role": "Fondateur, ingénieur logiciel et responsable des systèmes. Vancouver (C.-B.).",
+    "linkedin": "Rasoul sur LinkedIn",
+    "photoAlt": "Rasoul Rasouli",
+    "quote": "Nous avons créé Awesoon pour faire les choses différemment.",
+    "bio": "Développeur full-stack qui a construit et remplacé des plateformes entières de A à Z."
+  },
+  "howWeWork": {
+    "title": "Notre façon de travailler",
+    "subtitle": "Quatre étapes. Commencez où vous voulez. Nous partons de là où vous en êtes.",
+    "freeAfterCall": "Gratuit, après votre appel découverte",
+    "supportToggle": "Voir les quatre volets de soutien",
+    "pathLabel": "Quatre étapes reliées, du bilan au soutien"
   }
 }

@@ -10,16 +10,15 @@ export default function SampleBrief() {
   ] as const
 
   return (
-    <section className="w-full bg-neutral-100 py-20 sm:py-24 dark:bg-primary" aria-labelledby="sample-title">
-      <div className="mx-auto grid max-w-6xl gap-10 px-4 sm:px-6 lg:grid-cols-[1fr_1.4fr] lg:items-start">
-        <div>
-          <p className="text-sm font-semibold text-text-muted dark:text-neutral-400">{t('eyebrow')}</p>
-          <h2 id="sample-title" className="mt-2 font-heading text-3xl font-bold tracking-tight text-text-primary sm:text-4xl dark:text-white">
+    <section className="w-full bg-neutral-100 py-[88px] dark:bg-primary" aria-labelledby="sample-title">
+      <div className="mx-auto max-w-3xl px-4 sm:px-6">
+        <div className="text-center">
+          <h2 id="sample-title" className=" font-heading text-3xl font-bold tracking-tight text-text-primary sm:text-4xl dark:text-white">
             {t('title')}
           </h2>
           <p className="mt-4 text-lg leading-relaxed text-text-secondary dark:text-neutral-300">{t('text')}</p>
         </div>
-        <article className="rounded-3xl border border-neutral-200 bg-white p-6 shadow-xl sm:p-8 dark:border-white/[0.08] dark:bg-[#111827]">
+        <article className="mt-10 rounded-3xl border border-neutral-200 bg-white p-6 shadow-xl sm:p-8 dark:border-white/[0.08] dark:bg-[#111827]">
           <div className="flex flex-wrap items-center justify-between gap-3 border-b border-neutral-200 pb-4 dark:border-white/10">
             <span className="flex items-center gap-2 font-heading text-base font-semibold text-text-primary dark:text-white">
               <Image src="/images/retina-logo.png" alt="" width={22} height={22} />

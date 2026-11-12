@@ -195,7 +195,7 @@ export default function Navbar() {
                         <p className="mt-3 text-sm font-medium text-white">{t('nav.healthCheckNote')}</p>
                       </div>
                       <Link
-                        href={localHref('/solutions/systems-audit')}
+                        href={localHref('/contact')}
                         className="mt-6 inline-flex w-fit items-center gap-2 rounded-full bg-white px-5 py-2.5 text-sm font-semibold text-accent hover:bg-neutral-100"
                       >
                         {t('nav.healthCheckCta')} <span aria-hidden="true">→</span>

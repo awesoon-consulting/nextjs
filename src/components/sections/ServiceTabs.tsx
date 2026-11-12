@@ -24,7 +24,7 @@ export default function ServiceTabs() {
   ].slice(0, 6)
 
   return (
-    <section className="w-full bg-white py-20 sm:py-24 dark:bg-primary" aria-labelledby="services-title">
+    <section className="w-full bg-white py-[88px] dark:bg-primary" aria-labelledby="services-title">
       <div className="mx-auto max-w-6xl px-4 sm:px-6">
         <h2 id="services-title" className="max-w-2xl font-heading text-3xl font-bold tracking-tight text-text-primary sm:text-4xl dark:text-white">
           {t('serviceLines.title')}
@@ -92,9 +92,9 @@ export default function ServiceTabs() {
             </ul>
             <Link
               href={`/${locale}${svc.href}`}
-              className="mt-8 w-fit rounded-full bg-primary px-6 py-3 text-sm font-semibold text-white hover:bg-secondary dark:bg-white dark:text-primary dark:hover:bg-neutral-200"
+              className="mt-8 inline-flex w-fit items-center gap-2 text-sm font-semibold text-text-primary underline-offset-4 hover:underline dark:text-white"
             >
-              {t('serviceLines.explore', { service: t(`serviceLines.${svc.key}.menuName`).toLowerCase() })}
+              {t('serviceLines.explore', { service: t(`serviceLines.${svc.key}.menuName`).toLowerCase() })} <span aria-hidden="true">→</span>
             </Link>
           </div>
         </div>

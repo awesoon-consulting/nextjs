@@ -9,6 +9,7 @@ import {
   Group,
   InstancedMesh,
   LineBasicMaterial,
+  LineDashedMaterial,
   LineSegments,
   MeshBasicMaterial,
   Object3D,
@@ -61,8 +62,8 @@ export default function WorkflowScene({ progress, energy, gap, dark, onReady }: 
     scene.add(left, right)
 
     const env = new BufferGeometry()
-    const W = 0.5
-    const H = 0.32
+    const W = 0.72
+    const H = 0.46
     env.setAttribute(
       'position',
       new BufferAttribute(
@@ -71,6 +72,12 @@ export default function WorkflowScene({ progress, energy, gap, dark, onReady }: 
       ),
     )
     const messyMat = new LineBasicMaterial({ color: '#0F1D33', transparent: true, opacity: 0.6 })
+    const trailPos = new Float32Array((MESSY_COUNT - 1) * 6)
+    const trailGeo = new BufferGeometry()
+    trailGeo.setAttribute('position', new BufferAttribute(trailPos, 3))
+    const trailMat = new LineDashedMaterial({ color: '#0F1D33', dashSize: 0.12, gapSize: 0.16, transparent: true, opacity: 0.45 })
+    const trail = new LineSegments(trailGeo, trailMat)
+    left.add(trail)
     const envelopes = Array.from({ length: MESSY_COUNT }, () => {
       const l = new LineSegments(env, messyMat)
       left.add(l)
@@ -84,7 +91,7 @@ export default function WorkflowScene({ progress, energy, gap, dark, onReady }: 
 
     const nodeGeo = new BoxGeometry(0.55, 0.18, 0.55)
     const nodeMat = new MeshBasicMaterial({ transparent: true, opacity: 0.95 })
-    const dim = new Color('#9AA6B8')
+    const dim = new Color('#FFFFFF')
     const tmp = new Color()
     const layerColors = LAYER_COLORS.map((c) => new Color(c))
     const count = GRID * GRID * 3
@@ -95,7 +102,7 @@ export default function WorkflowScene({ progress, energy, gap, dark, onReady }: 
       for (let x = 0; x < GRID; x++)
         for (let z = 0; z < GRID; z++) {
           nodeHome.push(new Vector3((x - 1) * 1.1, (1 - L) * 1.5, (z - 1) * 1.1))
-          nodes.setColorAt(nodeHome.length - 1, dim)
+          nodes.setColorAt(nodeHome.length - 1, new Color(LAYER_COLORS[L]))
         }
 
     const pairs: number[] = []
@@ -153,8 +160,8 @@ export default function WorkflowScene({ progress, energy, gap, dark, onReady }: 
       const k = ease(Math.max(0, Math.min(1, shown)))
       const ink = isDark ? '#6E8BB5' : '#0F1D33'
       messyMat.color.set(ink)
+      trailMat.color.set(ink)
       lineMat.color.set(ink)
-      dim.set(isDark ? '#3A4A63' : '#B7C1CF')
 
       for (let i = 0; i < MESSY_COUNT; i++) {
         const m = messyHome[i]
@@ -170,16 +177,26 @@ export default function WorkflowScene({ progress, energy, gap, dark, onReady }: 
         env.scale.setScalar(Math.max(0.001, 1 - fly * 0.8))
       }
 
+      for (let i = 0; i < MESSY_COUNT - 1; i++) {
+        const a = envelopes[i].position
+        const b = envelopes[i + 1].position
+        trailPos.set([a.x, a.y, a.z, b.x, b.y, b.z], i * 6)
+      }
+      trailGeo.attributes.position.needsUpdate = true
+      trail.computeLineDistances()
+      trailMat.opacity = 0.45 * (1 - k)
+
       for (let i = 0; i < count; i++) {
         const lit = Math.max(0, Math.min(1, (k - (i / count) * 0.8) * 4))
+        const pulse = 1 + lit * (1 - lit) * 0.6
         cur[i].copy(nodeHome[i])
         dummy.position.copy(cur[i])
-        dummy.position.y += Math.sin(t / 1200 + i) * 0.04 * (1 - lit)
+        dummy.position.y += Math.sin(t / 1200 + i) * 0.04
         dummy.rotation.set(0, 0, 0)
-        dummy.scale.setScalar(1)
+        dummy.scale.setScalar(pulse)
         dummy.updateMatrix()
         nodes.setMatrixAt(i, dummy.matrix)
-        nodes.setColorAt(i, tmp.copy(dim).lerp(layerColors[Math.floor(i / (GRID * GRID))], lit))
+        nodes.setColorAt(i, tmp.copy(layerColors[Math.floor(i / (GRID * GRID))]).lerp(dim.set('#FFFFFF'), lit * (1 - lit) * 0.5))
       }
       nodes.instanceMatrix.needsUpdate = true
       if (nodes.instanceColor) nodes.instanceColor.needsUpdate = true
@@ -211,6 +228,8 @@ export default function WorkflowScene({ progress, energy, gap, dark, onReady }: 
       ro.disconnect()
       window.removeEventListener('pointermove', onMove)
       env.dispose()
+      trailGeo.dispose()
+      trailMat.dispose()
       nodeGeo.dispose()
       lineGeo.dispose()
       messyMat.dispose()

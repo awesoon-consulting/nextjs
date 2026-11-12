@@ -5,7 +5,7 @@ export default function ClosingBand() {
   const t = useTranslations('closing')
   const locale = useLocale()
   return (
-    <section className="relative w-full overflow-hidden bg-[#0F1D33] py-20 sm:py-24" aria-labelledby="closing-title">
+    <section className="relative w-full overflow-hidden bg-[#0F1D33] py-[88px]" aria-labelledby="closing-title">
       <div className="relative mx-auto max-w-3xl px-4 text-center sm:px-6">
         <h2 id="closing-title" className="font-heading text-3xl font-bold tracking-tight text-white sm:text-5xl">
           {t('title')}

@@ -3,10 +3,10 @@ import { getTranslations, setRequestLocale } from 'next-intl/server'
 import ConversationHero from '@/src/components/sections/hero/ConversationHero'
 import ServiceTabs from '@/src/components/sections/ServiceTabs'
 import SampleBrief from '@/src/components/sections/SampleBrief'
+import HowWeWork from '@/src/components/sections/HowWeWork'
+import FounderBand from '@/src/components/sections/FounderBand'
 import ClosingBand from '@/src/components/sections/ClosingBand'
 import PlatformsShowcase from '@/src/components/sections/PlatformsShowcase'
-import ProcessSteps from '@/src/components/sections/ProcessSteps'
-import SupportGrid from '@/src/components/sections/SupportGrid'
 import { siteConfig } from '@/src/config/site'
 
 export async function generateMetadata({
@@ -33,8 +33,8 @@ export default async function HomePage({ params }: { params: Promise<{ locale: s
       <ServiceTabs />
       <SampleBrief />
       <PlatformsShowcase />
-      <ProcessSteps />
-      <SupportGrid variant="home" />
+      <HowWeWork />
+      <FounderBand />
       <ClosingBand />
     </>
   )

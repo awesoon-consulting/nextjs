@@ -82,7 +82,7 @@ export default function PlatformsShowcase() {
   const category = categories[activeCat]
 
   return (
-    <section className="w-full bg-white py-20 sm:py-24 dark:bg-primary" aria-labelledby="platforms-title">
+    <section className="w-full bg-white py-[88px] dark:bg-primary" aria-labelledby="platforms-title">
       <div className="mx-auto max-w-6xl px-4 sm:px-6">
         <div className="max-w-2xl">
           <h2 id="platforms-title" className="font-heading text-3xl font-bold tracking-tight text-text-primary sm:text-4xl dark:text-white">
@@ -115,46 +115,39 @@ export default function PlatformsShowcase() {
           ))}
         </div>
 
-        <div className="mt-6 grid grid-cols-2 gap-3 lg:grid-cols-5" aria-live="polite">
-          {category.platforms.map((p, i) => {
-            const open = activeIdx === i
-            return (
-              <div
-                key={p.slug}
-                className={`rounded-2xl border transition-all duration-300 ${
-                  open
-                    ? 'col-span-2 border-primary bg-white shadow-lg dark:border-white/30 dark:bg-[#111827]'
-                    : 'border-neutral-200 bg-white hover:border-neutral-400 dark:border-white/[0.08] dark:bg-[#111827]'
-                }`}
-              >
-                <button
-                  type="button"
-                  onClick={() => setActiveIdx(i)}
-                  aria-expanded={open}
-                  className={`flex w-full items-center gap-4 p-4 text-left ${open ? '' : 'flex-col justify-center py-6'}`}
-                >
-                  <span className="flex h-14 w-24 flex-shrink-0 items-center justify-center rounded-xl border border-neutral-200 bg-white px-3">
-                    {/* eslint-disable-next-line @next/next/no-img-element */}
-                    <img src={`/images/platforms/${p.slug}.svg`} alt="" className="max-h-8 w-full object-contain" />
-                  </span>
-                  <span className="font-heading text-base font-semibold text-text-primary dark:text-white">{p.name}</span>
-                </button>
-                {open && (
-                  <div className="px-4 pb-4">
-                    <p className="text-sm leading-relaxed text-text-secondary dark:text-neutral-300">{t(`fit.${p.slug}`)}</p>
-                    <a
-                      href={p.url}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="mt-3 inline-flex items-center gap-1 text-sm font-semibold text-text-primary underline-offset-4 hover:underline dark:text-white"
-                    >
-                      {t('officialSite')} <span aria-hidden="true">↗</span>
-                    </a>
-                  </div>
-                )}
-              </div>
-            )
-          })}
+        <div className="mt-6 grid grid-cols-2 gap-3 lg:grid-cols-4">
+          {category.platforms.map((p, i) => (
+            <button
+              key={p.slug}
+              type="button"
+              onClick={() => setActiveIdx(i)}
+              aria-pressed={activeIdx === i}
+              className={`flex h-16 items-center gap-3 rounded-2xl border px-4 text-left transition-colors ${
+                activeIdx === i
+                  ? 'border-primary bg-white dark:border-white/40 dark:bg-[#111827]'
+                  : 'border-neutral-200 bg-white hover:border-neutral-400 dark:border-white/[0.08] dark:bg-[#111827] dark:hover:border-white/20'
+              }`}
+            >
+              <span className="flex h-8 w-14 flex-shrink-0 items-center justify-center">
+                {/* eslint-disable-next-line @next/next/no-img-element */}
+                <img
+                  src={`/images/platforms/${p.slug}.svg`}
+                  alt=""
+                  className={`max-h-7 max-w-full object-contain dark:brightness-0 dark:invert ${p.slug === 'epicor' ? 'scale-150' : ''}`}
+                />
+              </span>
+              <span className="truncate text-sm font-semibold text-text-primary dark:text-white">{p.name}</span>
+            </button>
+          ))}
+        </div>
+        <div className="mt-4 rounded-2xl border border-neutral-200 bg-white p-5 dark:border-white/[0.08] dark:bg-[#111827]" aria-live="polite">
+          <p className="text-sm leading-relaxed text-text-secondary dark:text-neutral-300">
+            <span className="font-semibold text-text-primary dark:text-white">{category.platforms[activeIdx].name}. </span>
+            {t(`fit.${category.platforms[activeIdx].slug}`)}{' '}
+            <a href={category.platforms[activeIdx].url} target="_blank" rel="noopener noreferrer" className="font-semibold text-text-primary underline underline-offset-4 dark:text-white">
+              {t('officialSite')}
+            </a>
+          </p>
         </div>
 
         <div className="mt-8 flex flex-wrap items-center gap-2">

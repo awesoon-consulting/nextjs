@@ -38,9 +38,9 @@
     "mobileNav": "Navegación móvil",
     "language": "Idioma",
     "healthCheckTitle": "Revisión gratuita de sus sistemas",
-    "healthCheckText": "Una llamada de 30 minutos y luego una lista clara de qué falla, cuánto cuesta y qué arreglar primero.",
-    "healthCheckCta": "Empezar la revisión",
-    "healthCheckNote": "Empieza con una llamada de 30 minutos"
+    "healthCheckText": "Una lista clara de qué falla, cuánto cuesta y qué arreglar primero.",
+    "healthCheckCta": "Reservar una llamada de descubrimiento de 30 minutos",
+    "healthCheckNote": "Sigue a su llamada de descubrimiento de 30 minutos"
   },
   "hero": {
     "headline": "Tus operaciones superaron tus herramientas. Nosotros lo arreglamos.",
@@ -475,9 +475,9 @@
     "takeFirstStep": "Da el primer paso"
   },
   "floatingCta": {
-    "message": "Tu diagnóstico de sistemas es gratuito.",
-    "subtext": "30 minutos. Un operador real. Sin presentación.",
-    "button": "Reclamarlo →"
+    "message": "Reserve una llamada de descubrimiento de 30 minutos",
+    "subtext": "Su revisión gratuita de sistemas sigue a la llamada.",
+    "button": "Reservar una llamada →"
   },
   "solutionPage": {
     "painPointsTitle": "¿Te resulta familiar?",
@@ -878,7 +878,7 @@
     "talkToRasoul": "Hablarlo con Rasoul",
     "bookLabel": "30 minutos con Rasoul",
     "bookText": "Elija un horario en la página siguiente. Rasoul lee su resumen antes de la llamada.",
-    "bookCta": "Elegir un horario",
+    "bookCta": "Reservar una llamada de descubrimiento de 30 minutos",
     "keywordsOrders": "pedido,escrib,correo,email",
     "keywordsSpreadsheets": "hoja,excel,cálculo",
     "keywordsGovernment": "gobierno,público,licitación,compra",
@@ -892,7 +892,8 @@
     "trust2": "Entrega a cargo del fundador",
     "trust3": "Sin seguimiento antes de que acepte",
     "trust4": "Responde una persona real",
-    "mapLabel": "Pasos manuales que se unen en sistemas conectados"
+    "mapLabel": "Pasos manuales que se unen en sistemas conectados",
+    "fitLine": "Para equipos de operaciones en crecimiento en fabricación, distribución, servicios industriales y el sector público."
   },
   "placeholder": {
     "title": "Esta página llega pronto",
@@ -930,7 +931,6 @@
     "cta": "Reservar una llamada de descubrimiento de 30 minutos"
   },
   "sampleBrief": {
-    "eyebrow": "Resumen de ejemplo",
     "title": "Lo que se lleva",
     "text": "Este es un ejemplo del resumen que prepara el asistente. No es un cliente real.",
     "badge": "Ejemplo, no es un cliente real",
@@ -979,5 +979,20 @@
       "langchain": "Marco para crear pipelines RAG, agentes y flujos de IA de varios pasos.",
       "postgresql": "Nuestra base de datos por defecto, con pgvector para vectores de IA."
     }
+  },
+  "founder": {
+    "name": "Rasoul Rasouli",
+    "role": "Fundador, ingeniero de software y responsable de sistemas. Vancouver, BC.",
+    "linkedin": "Rasoul en LinkedIn",
+    "photoAlt": "Rasoul Rasouli",
+    "quote": "Creamos Awesoon para hacer las cosas de manera diferente.",
+    "bio": "Desarrollador full-stack que ha construido y reemplazado plataformas enteras desde cero."
+  },
+  "howWeWork": {
+    "title": "Cómo trabajamos",
+    "subtitle": "Cuatro pasos. Empiece donde quiera. Partimos de donde usted está.",
+    "freeAfterCall": "Gratis, después de su llamada de descubrimiento",
+    "supportToggle": "Ver las cuatro líneas de soporte",
+    "pathLabel": "Cuatro pasos conectados, de la revisión al soporte"
   }
 }

@@ -9,8 +9,8 @@
     "openMenu": "Open navigation menu",
     "closeMenu": "Close navigation menu",
     "megaMenu": {
-      "groupOps": "Operations & integration",
-      "groupImplementation": "Implementation & advisory",
+      "groupOps": "Operations and integration",
+      "groupImplementation": "Implementation and advisory",
       "aiOperations": "AI operations",
       "opsOutgrown": "Ops outgrown tools",
       "spreadsheetOps": "Spreadsheet operations",
@@ -37,9 +37,9 @@
     "mobileNav": "Mobile navigation",
     "language": "Language",
     "healthCheckTitle": "Free systems health check",
-    "healthCheckText": "A 30-minute call, then a clear list of what is broken, what it costs and what to fix first.",
-    "healthCheckCta": "Start the health check",
-    "healthCheckNote": "Starts with a 30-minute call"
+    "healthCheckText": "A clear list of what is broken, what it costs and what to fix first.",
+    "healthCheckCta": "Book a 30-minute discovery call",
+    "healthCheckNote": "Follows your 30-minute discovery call"
   },
   "hero": {
     "headline": "Your ops outgrew your tools. We fix that.",
@@ -55,7 +55,7 @@
       "seniorDelivery": "Senior operator delivery"
     },
     "teamLabels": {
-      "rayTitle": "Software engineer & solutions"
+      "rayTitle": "Software engineer and solutions"
     }
   },
   "whoWeHelp": {
@@ -67,7 +67,7 @@
         "description": "Production, inventory, and finance don't line up; and you're stuck stitching systems together just to keep things moving."
       },
       "distribution": {
-        "title": "Distribution & logistics",
+        "title": "Distribution and logistics",
         "description": "Orders, warehouse ops, and carrier integrations are disconnected; creating constant workarounds and missed visibility."
       },
       "industrial": {
@@ -127,7 +127,7 @@
       },
       {
         "number": "04",
-        "title": "Support & optimization",
+        "title": "Support and optimization",
         "description": "We stick with you; staying involved as much as you need, providing support, making improvements, and helping your systems evolve as your business grows."
       }
     ]
@@ -138,7 +138,7 @@
     "learnMore": "Learn more",
     "cards": {
       "aiOperations": {
-        "title": "AI operations & RAG enablement",
+        "title": "AI operations and RAG enablement",
         "description": "We help growing teams deploy RAG assistants, workflow agents, and AI copilots on top of stable systems, governed data, and real operational use cases.",
         "slug": "ai-operations"
       },
@@ -193,7 +193,7 @@
         "slug": "systems-audit"
       },
       "mobileWarehouse": {
-        "title": "Mobile warehouse & barcoding",
+        "title": "Mobile warehouse and barcoding",
         "description": "Manual processes, paper picking, and delayed updates create inventory inaccuracies and operational friction. A mobile warehouse solution enables real-time data capture integrated with your ERP.",
         "slug": "mobile-warehouse-barcoding"
       },
@@ -203,7 +203,7 @@
         "slug": "project-management"
       },
       "processFoundations": {
-        "title": "Operational process & system foundations",
+        "title": "Operational process and system foundations",
         "description": "Sometimes the issue isn't your system; it's how it's being used. We help you get the fundamentals right so your operations run the way they should.",
         "slug": "operational-process-foundations"
       }
@@ -219,7 +219,7 @@
     "learnMore": "Learn more",
     "cards": {
       "systemsOperationsSupport": {
-        "title": "Systems & operations support"
+        "title": "Systems and operations support"
       },
       "crmSupport": {
         "title": "CRM support"
@@ -228,7 +228,7 @@
         "title": "ERP support"
       },
       "ecommerceSupport": {
-        "title": "Ecommerce support & maintenance"
+        "title": "Ecommerce support and maintenance"
       }
     }
   },
@@ -282,7 +282,7 @@
       "subtitle": "An operator who's been in the weeds; and built systems to get out.",
       "members": {
         "ray": {
-          "title": "Software engineer & solution developer",
+          "title": "Software engineer and solution developer",
           "bio": "Full-stack developer who has built and replaced entire platforms from the ground up; from e-commerce migrations and ERP integrations to AI-assisted data pipelines and internal automation tools. Owns everything from database design to cloud infrastructure, with a focus on eliminating manual workflows and giving operations teams systems they can actually rely on."
         }
       }
@@ -299,7 +299,7 @@
     "steps": {
       "1": "Your Business",
       "2": "Your Challenges",
-      "3": "Timeline & Budget",
+      "3": "Timeline and Budget",
       "4": "Your Details"
     },
     "fields": {
@@ -329,7 +329,7 @@
     },
     "industries": {
       "manufacturing": "Manufacturing",
-      "distribution": "Distribution & Logistics",
+      "distribution": "Distribution and Logistics",
       "industrial": "Industrial Services",
       "other": "Other Growing Operations"
     },
@@ -378,9 +378,9 @@
     },
     "success": {
       "title": "We've received your request!",
-      "message": "Thank you for reaching out. Ray Rasouli, our Software Engineer & Solution Developer, will be in touch within 1 business day to schedule your free systems health check.",
+      "message": "Thank you for reaching out. Ray Rasouli, our Software Engineer and Solution Developer, will be in touch within 1 business day to schedule your free systems health check.",
       "responderName": "Ray Rasouli",
-      "responderTitle": "Software Engineer & Solution Developer, Awesoon"
+      "responderTitle": "Software Engineer and Solution Developer, Awesoon"
     },
     "error": {
       "generic": "Something went wrong. Please try again or email us directly at ray.rasouli@awesoontechnologies.com.",
@@ -474,9 +474,9 @@
     "takeFirstStep": "Take the first step"
   },
   "floatingCta": {
-    "message": "Your systems health check is free.",
-    "subtext": "30 minutes. A real operator. No pitch deck.",
-    "button": "Claim it →"
+    "message": "Book a 30-minute discovery call",
+    "subtext": "Your free systems health check follows the call.",
+    "button": "Book a call →"
   },
   "solutionPage": {
     "painPointsTitle": "Does This Sound Familiar?",
@@ -877,7 +877,7 @@
     "talkToRasoul": "Talk it through with Rasoul",
     "bookLabel": "30 minutes with Rasoul",
     "bookText": "Pick a time on the next page. Rasoul reads your brief before the call.",
-    "bookCta": "Choose a time",
+    "bookCta": "Book a 30-minute discovery call",
     "keywordsOrders": "order,key,email",
     "keywordsSpreadsheets": "spreadsheet,sheet,excel",
     "keywordsGovernment": "government,rfp,procure,public",
@@ -891,7 +891,8 @@
     "trust2": "Owner-led delivery",
     "trust3": "No tracking before you agree",
     "trust4": "A real person replies",
-    "mapLabel": "Manual steps joining into connected systems"
+    "mapLabel": "Manual steps joining into connected systems",
+    "fitLine": "For growing operations teams in manufacturing, distribution, industrial services and the public sector."
   },
   "placeholder": {
     "title": "This page is on its way",
@@ -929,7 +930,6 @@
     "cta": "Book a 30-minute discovery call"
   },
   "sampleBrief": {
-    "eyebrow": "Example brief",
     "title": "What you leave with",
     "text": "This is an example of the brief the assistant builds. It is not a real client.",
     "badge": "Example, not a real client",
@@ -978,5 +978,20 @@
       "langchain": "Framework for building RAG pipelines, agents and multi-step AI workflows.",
       "postgresql": "Our default database, with pgvector for AI embeddings and no separate vector store."
     }
+  },
+  "founder": {
+    "name": "Rasoul Rasouli",
+    "role": "Owner, software engineer and systems lead. Vancouver, BC.",
+    "linkedin": "Rasoul on LinkedIn",
+    "photoAlt": "Rasoul Rasouli",
+    "quote": "We started this to do things differently.",
+    "bio": "Full-stack developer who has built and replaced entire platforms from the ground up."
+  },
+  "howWeWork": {
+    "title": "How we work",
+    "subtitle": "Four steps. Start anywhere. We meet you where you are.",
+    "freeAfterCall": "Free, after your discovery call",
+    "supportToggle": "See the four support lines",
+    "pathLabel": "Four connected steps, from health check to support"
   }
 }

@@ -13,6 +13,43 @@ const heading = 'mb-4 text-sm font-semibold text-text-primary dark:text-white'
 const link =
   'rounded text-sm text-text-secondary transition-colors hover:text-text-primary focus:outline-none focus-visible:ring-2 focus-visible:ring-accent dark:text-neutral-400 dark:hover:text-white'
 
+function Group({ title, titleHref, items }: { title: string; titleHref?: string; items: { href: string; label: string }[] }) {
+  const list = (
+    <ul className="mt-3 space-y-2">
+      {items.map((x) => (
+        <li key={x.href + x.label}>
+          <Link href={x.href} className={link}>
+            {x.label}
+          </Link>
+        </li>
+      ))}
+    </ul>
+  )
+  return (
+    <>
+      <div className="hidden sm:block">
+        {titleHref ? (
+          <Link href={titleHref} className="font-heading text-sm font-semibold text-text-primary hover:underline dark:text-white">
+            {title}
+          </Link>
+        ) : (
+          <h3 className="font-heading text-sm font-semibold text-text-primary dark:text-white">{title}</h3>
+        )}
+        {list}
+      </div>
+      <details className="group border-b border-neutral-200 py-3 sm:hidden dark:border-white/10">
+        <summary className="flex cursor-pointer list-none items-center justify-between font-heading text-sm font-semibold text-text-primary dark:text-white">
+          {title}
+          <svg className="h-4 w-4 transition-transform group-open:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
+          </svg>
+        </summary>
+        {list}
+      </details>
+    </>
+  )
+}
+
 export default function Footer() {
   const t = useTranslations()
   const locale = useLocale()
@@ -43,59 +80,25 @@ export default function Footer() {
             </ul>
           </div>
 
-          <div className="grid grid-cols-2 gap-8 lg:col-span-6 lg:col-start-7">
-            <div>
-              <h3 className={heading}>{t('footer.support')}</h3>
-              <ul className="space-y-2">
-                {siteConfig.footer.supportLinks.map((l) => (
-                  <li key={l.href}>
-                    <Link href={localHref(l.href)} className={link}>
-                      {t(l.labelKey)}
-                    </Link>
-                  </li>
-                ))}
-              </ul>
-            </div>
-            <div>
-              <h3 className={heading}>{t('footer.company')}</h3>
-              <ul className="space-y-2">
-                {siteConfig.footer.companyLinks.map((l) => (
-                  <li key={l.href}>
-                    <Link href={localHref(l.href)} className={link}>
-                      {t(l.labelKey)}
-                    </Link>
-                  </li>
-                ))}
-              </ul>
-            </div>
+          <div className="grid gap-0 sm:grid-cols-2 sm:gap-8 lg:col-span-6 lg:col-start-7">
+            <Group title={t('footer.support')} items={siteConfig.footer.supportLinks.map((l) => ({ href: localHref(l.href), label: t(l.labelKey) }))} />
+            <Group title={t('footer.company')} items={siteConfig.footer.companyLinks.map((l) => ({ href: localHref(l.href), label: t(l.labelKey) }))} />
           </div>
         </div>
 
         <h3 className={`${heading} mt-14`}>{t('footer.services')}</h3>
-        <div className="grid grid-cols-2 gap-8 sm:grid-cols-3 lg:grid-cols-5">
+        <div className="grid gap-0 sm:grid-cols-3 sm:gap-8 lg:grid-cols-5">
           {siteConfig.services.map((s) => (
-            <div key={s.key}>
-              <Link href={localHref(s.href)} className="font-heading text-sm font-semibold text-text-primary hover:underline dark:text-white">
-                {t(`serviceLines.${s.key}.menuName`)}
-              </Link>
-              <ul className="mt-3 space-y-2">
-                {s.solutions.length > 0
-                  ? s.solutions.map((slug) => (
-                      <li key={slug}>
-                        <Link href={localHref(`/solutions/${slug}`)} className={link}>
-                          {t(solutionLabel.get(slug) ?? '')}
-                        </Link>
-                      </li>
-                    ))
-                  : s.extras.map((x) => (
-                      <li key={x.labelKey}>
-                        <Link href={localHref(x.href)} className={link}>
-                          {t(x.labelKey)}
-                        </Link>
-                      </li>
-                    ))}
-              </ul>
-            </div>
+            <Group
+              key={s.key}
+              title={t(`serviceLines.${s.key}.menuName`)}
+              titleHref={localHref(s.href)}
+              items={
+                s.solutions.length > 0
+                  ? s.solutions.map((slug) => ({ href: localHref(`/solutions/${slug}`), label: t(solutionLabel.get(slug) ?? '') }))
+                  : s.extras.map((x) => ({ href: localHref(x.href), label: t(x.labelKey) }))
+              }
+            />
           ))}
         </div>
         <Link href={localHref('/solutions')} className="mt-8 inline-block rounded-full border border-neutral-300 px-5 py-2 text-sm font-semibold text-text-primary dark:border-white/20 dark:text-white">

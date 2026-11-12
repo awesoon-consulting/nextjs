@@ -32,6 +32,25 @@ function canRun3D() {
   }
 }
 
+function MiniFlow() {
+  return (
+    <svg viewBox="0 0 300 44" className="h-9 w-full">
+      {[0, 1, 2].map((i) => (
+        <g key={i} className="mini-env" style={{ animationDelay: `${i * 0.8}s` }}>
+          <rect x={6} y={10} width={30} height={20} rx={3} fill="none" stroke="currentColor" strokeWidth={1.5} className="text-[#0F1D33] dark:text-[#6E8BB5]" />
+          <path d="M6 10 L21 21 L36 10" fill="none" stroke="currentColor" strokeWidth={1.5} className="text-[#0F1D33] dark:text-[#6E8BB5]" />
+        </g>
+      ))}
+      <path d="M60 22 H 220" stroke="currentColor" strokeDasharray="3 5" strokeWidth={1.5} className="text-[#0F1D33]/40 dark:text-white/30" />
+      {[0, 1, 2].map((l) => (
+        <g key={l} transform={`translate(258 ${10 + l * 11})`}>
+          <path d="M0 -6 L16 0 L0 6 L-16 0 Z" fill={['#0E6A9E', '#00AEEF', '#193C57'][l]} />
+        </g>
+      ))}
+    </svg>
+  )
+}
+
 const GHOSTS = ['ghost1', 'ghost2', 'ghost3'] as const
 
 function Check() {
@@ -199,7 +218,10 @@ export default function ConversationHero() {
           aria-hidden="true"
         />
         <div className="relative mx-auto w-full max-w-4xl px-4 sm:px-6 xl:max-w-3xl">
-        <div className="rounded-3xl border border-neutral-200 bg-white shadow-xl dark:border-white/[0.08] dark:bg-[#111827] dark:shadow-[0_30px_80px_-30px_rgba(15,29,51,0.9)]">
+        <div className="scroll-mt-24 rounded-3xl border border-neutral-200 bg-white shadow-xl dark:border-white/[0.08] dark:bg-[#111827] dark:shadow-[0_30px_80px_-30px_rgba(15,29,51,0.9)]">
+          <div className="flex items-center justify-between border-b border-neutral-200 px-5 py-3 sm:hidden dark:border-white/10" aria-hidden="true">
+            <MiniFlow />
+          </div>
           <div ref={logRef} className="max-h-[440px] space-y-5 overflow-y-auto p-5 sm:p-7" role="log" aria-live="polite">
             {messages.map((m) => (
               <div key={m.id} className={`flex items-start gap-3 ${m.bot ? '' : 'justify-end'}`}>
@@ -323,7 +345,7 @@ export default function ConversationHero() {
           {t('orBook')}
           <span aria-hidden="true" className="transition-transform group-hover:translate-x-1">→</span>
         </Link>
-        <ul className="grid grid-cols-2 gap-x-6 gap-y-2 lg:flex lg:flex-nowrap lg:gap-8">
+        <ul className="grid grid-cols-1 gap-x-6 gap-y-2 sm:grid-cols-2 lg:flex lg:flex-nowrap lg:gap-8">
           {(['trust1', 'trust2', 'trust3', 'trust4'] as const).map((k) => (
             <li key={k} className="flex items-center gap-2 text-sm text-text-secondary lg:whitespace-nowrap dark:text-neutral-300">
               <Check />
@@ -331,6 +353,7 @@ export default function ConversationHero() {
             </li>
           ))}
         </ul>
+        <p className="max-w-2xl text-center text-sm text-text-muted dark:text-neutral-400">{t('fitLine')}</p>
       </div>
     </section>
   )
