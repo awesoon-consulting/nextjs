@@ -1,16 +1,16 @@
 import Link from 'next/link'
 import { useLocale, useTranslations } from 'next-intl'
 
-export default function ClosingBand() {
+export default function ClosingBand({ title, text }: { title?: string; text?: string }) {
   const t = useTranslations('closing')
   const locale = useLocale()
   return (
     <section className="relative w-full overflow-hidden bg-[#0F1D33] py-24" aria-labelledby="closing-title">
       <div className="relative mx-auto max-w-3xl px-4 text-center sm:px-6">
         <h2 id="closing-title" className="font-heading text-3xl font-bold tracking-tight text-white sm:text-5xl">
-          {t('title')}
+          {title ?? t('title')}
         </h2>
-        <p className="mx-auto mt-4 max-w-xl text-lg text-white/75">{t('text')}</p>
+        <p className="mx-auto mt-4 max-w-xl text-lg text-white/75">{text ?? t('text')}</p>
         <div className="relative mt-10 inline-flex">
           <div className="pointer-events-none absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2" aria-hidden="true">
             {[200, 340, 480, 620].map((d) => (

@@ -1005,5 +1005,257 @@
       "Nous réalisons le plan avec vous. Autant ou aussi peu du travail que vous le souhaitez.",
       "Nous restons après le lancement. Soutien et améliorations à mesure que vous grandissez."
     ]
+  },
+  "advertisingPage": {
+    "meta": {
+      "title": "Campagnes, production et bannières publicitaires gérées comme un système",
+      "description": "Awesoon planifie, produit et mesure votre publicité comme un seul système : modèles créatifs, production automatisée des variantes et rapports qui se mettent à jour seuls. Vancouver, C.-B."
+    },
+    "hero": {
+      "eyebrow": "Publicité",
+      "title": "Une publicité qui tourne comme un système, pas dans l'urgence.",
+      "subtitle": "Nous planifions vos campagnes, créons les modèles, produisons chaque format à partir d'un seul brief et mettons en place des rapports qui se mettent à jour seuls. Votre équipe lance plus, avec les mêmes personnes.",
+      "chatLabel": "Assistant de campagne",
+      "chatNote": "Assistant scénarisé. Une personne lit chaque brief.",
+      "greeting": "Que voulez-vous que vos publicités accomplissent ?",
+      "chips": {
+        "leads": "Obtenir plus de prospects",
+        "launch": "Lancer quelque chose de nouveau",
+        "pipeline": "Remplir un pipeline de ventes",
+        "government": "Joindre des acheteurs publics"
+      },
+      "keywords": {
+        "leads": "prospect, demande, appel, inscription, formulaire, lead",
+        "launch": "lancement, lancer, nouveau produit, ouverture, événement",
+        "pipeline": "pipeline, ventes, b2b, comptes, contrats, clients potentiels",
+        "government": "gouvernement, secteur public, municipal, ville, province, fédéral, organisme"
+      },
+      "open": {
+        "leads": "Bon objectif. Pour les prospects, chaque publicité mène à un formulaire ou un appel clair, afin que chaque résultat soit compté.",
+        "launch": "Bon objectif. Pour un lancement, nous créons d'abord un ensemble créatif, puis chaque format en découle, pour une image identique partout.",
+        "pipeline": "Bon objectif. Pour un pipeline, les publicités suivent l'étape de l'acheteur et le rapport suit les ventes amorcées, pas seulement les clics.",
+        "government": "Bon objectif. Pour le secteur public, il faut être facile à trouver et clair, avec un langage simple et des visuels accessibles.",
+        "generic": "Merci, cela aide."
+      },
+      "q1": "Qui doit voir ces publicités ?",
+      "audience": {
+        "local": "Clients locaux",
+        "business": "D'autres entreprises",
+        "consumers": "Consommateurs partout au Canada",
+        "public": "Équipes du secteur public"
+      },
+      "q2": "Que faites-vous aujourd'hui ?",
+      "today": {
+        "nothing": "Rien pour l'instant",
+        "some": "Quelques publicités, à la main",
+        "agency": "Une agence ou un pigiste"
+      },
+      "briefIntro": "Voici un premier brief de campagne. Ray le lit avant votre appel.",
+      "briefLabel": "Votre brief de campagne",
+      "goalLabel": "Objectif",
+      "audienceLabel": "Pour qui",
+      "todayLabel": "Aujourd'hui",
+      "systemLabel": "Par où nous commencerions",
+      "system": {
+        "leads": "Un formulaire de prospects, des modèles dans tous les formats et un rapport hebdomadaire.",
+        "launch": "Un ensemble créatif de lancement, tous les formats qui en découlent et un rapport de la semaine de lancement.",
+        "pipeline": "Des publicités par étape d'achat, des modèles et un rapport qui suit les ventes.",
+        "government": "Des visuels simples et accessibles, des modèles et un rapport de portée.",
+        "generic": "Un court appel découverte pour choisir le premier système à mettre en place."
+      },
+      "talkToRay": "En parler avec Ray",
+      "consentLabel": "Envoyer ce brief à Ray avec ma réservation. Il sert uniquement à préparer l'appel.",
+      "bookLabel": "30 minutes avec Ray Rasouli",
+      "placeholder": "Tapez votre réponse",
+      "send": "Envoyer",
+      "typing": "L'assistant écrit",
+      "restart": "Recommencer",
+      "seeDemo": "Voir un brief devenir tous les formats",
+      "trust": [
+        "Une personne approuve chaque publicité avant sa diffusion",
+        "Suivi seulement avec consentement",
+        "Vous possédez chaque fichier et chaque compte"
+      ]
+    },
+    "services": {
+      "title": "Quatre services, un seul système derrière",
+      "subtitle": "Commencez où vous en êtes. Chacun utilise les mêmes modèles et les mêmes rapports.",
+      "includesLabel": "Ce qui est inclus",
+      "systemLabel": "La partie système",
+      "tabs": {
+        "campaigns": {
+          "name": "Campagnes publicitaires",
+          "line": "Des campagnes planifiées une fois, puis répétées et améliorées, sans repartir de zéro.",
+          "includes": [
+            "Plan d'objectif, de public et de canaux",
+            "Recherche, réseaux sociaux et affichage configurés dans vos comptes",
+            "Une liste de lancement réutilisable"
+          ],
+          "system": "Un guide de campagne : le prochain lancement est une copie à ajuster."
+        },
+        "production": {
+          "name": "Production publicitaire",
+          "line": "Textes, images et mises en page créés selon vos règles de marque, prêts pour chaque emplacement.",
+          "includes": [
+            "Modèles créatifs pour chaque canal",
+            "Variantes de textes et d'images à tester",
+            "Une personne révise chaque variante"
+          ],
+          "system": "Production automatisée des variantes : une idée approuvée devient toutes les versions nécessaires."
+        },
+        "banner": {
+          "name": "Bannières publicitaires",
+          "line": "Des bannières dans tous les formats standards, nettes et fidèles à la marque, à partir d'un seul design.",
+          "includes": [
+            "Les formats d'affichage courants",
+            "Versions fixes et légèrement animées",
+            "Fichiers vérifiés selon les règles de chaque réseau"
+          ],
+          "system": "Un design maître produit chaque format : un changement se fait une seule fois."
+        },
+        "playbooks": {
+          "name": "Guides de marque et de publicité",
+          "line": "Vos règles de marque et étapes de campagne écrites, pour que n'importe qui dans l'équipe lance la suivante.",
+          "includes": [
+            "Règles de ton, couleur, typographie et logo",
+            "Exemples à suivre et à éviter",
+            "Guides de campagne étape par étape"
+          ],
+          "system": "Un guide qui alimente les modèles : les règles sont intégrées, pas seulement écrites."
+        }
+      },
+      "comingNextLabel": "À venir",
+      "comingNext": "Automatisation des réseaux sociaux : publications planifiées à partir des mêmes modèles."
+    },
+    "demo": {
+      "eyebrow": "Essayez",
+      "title": "Un brief, tous les formats",
+      "subtitle": "Tapez un titre et choisissez une image. Les bannières, la publication sociale et l'annonce de recherche suivent. C'est ainsi que fonctionnent nos modèles.",
+      "headlineLabel": "Titre",
+      "headline": "Service de printemps, réservé en deux minutes",
+      "ctaLabel": "Texte du bouton",
+      "cta": "Réserver",
+      "imageLabel": "Image",
+      "images": {
+        "a": "Grille bleue",
+        "b": "Soleil chaud",
+        "c": "Ville de nuit"
+      },
+      "brand": "Votre marque",
+      "outputsLabel": "Formats produits",
+      "socialLabel": "Publication sociale",
+      "searchLabel": "Annonce de recherche",
+      "sponsored": "Commandité",
+      "searchUrl": "votremarque.com",
+      "searchDesc": "Choisissez le moment qui vous convient. De vraies personnes, des prix clairs, aucune surprise.",
+      "likes": "J'aime",
+      "note": "Aperçu seulement. Les vraies campagnes utilisent votre trousse de marque, et une personne approuve chaque publicité avant sa diffusion.",
+      "count": "{count} formats à partir d'un brief"
+    },
+    "reporting": {
+      "eyebrow": "Rapports",
+      "title": "Des rapports qui se mettent à jour seuls",
+      "subtitle": "Dépenses, prospects et résultats regroupés selon un horaire, avec un résumé clair en haut. Votre équipe lit les résultats au lieu de copier des chiffres.",
+      "sampleBadge": "Données d'exemple",
+      "sampleNote": "Chiffres d'exemple à titre d'illustration. Ce n'est pas un résultat client.",
+      "updated": "Mise à jour chaque lundi à 8 h",
+      "kpis": {
+        "spend": "Dépenses",
+        "leads": "Prospects",
+        "cost": "Coût par prospect",
+        "rate": "Taux de clic"
+      },
+      "chartLabel": "Prospects par semaine, données d'exemple",
+      "weeks": "Semaines 1 à 8",
+      "summaryLabel": "Cette semaine, en mots simples",
+      "summary": "Les prospects augmentent pour la troisième semaine. L'annonce avec le prix dans le titre a le mieux fonctionné, son budget a donc été augmenté. Rien n'attend votre approbation aujourd'hui.",
+      "points": [
+        "Tire les données de vos comptes publicitaires et de l'analytique du site",
+        "Compte seulement ce que les visiteurs ont accepté de partager",
+        "Un court résumé écrit pour des personnes, pas pour des analystes"
+      ]
+    },
+    "how": {
+      "title": "Comment ça marche",
+      "subtitle": "Quatre étapes. On commence par un appel, vous gardez le système à la fin.",
+      "pathLabel": "Quatre étapes reliées, du brief aux rapports",
+      "steps": [
+        {
+          "title": "Brief",
+          "text": "Un appel de 30 minutes avec Ray. Nous fixons l'objectif, le public et la définition du succès."
+        },
+        {
+          "title": "Construire le système",
+          "text": "Modèles, règles de marque, suivi avec consentement et rapport, configurés dans vos comptes."
+        },
+        {
+          "title": "Lancer et produire",
+          "text": "Des variantes tirées des modèles, approuvées par une personne, puis lancées."
+        },
+        {
+          "title": "Mesurer et améliorer",
+          "text": "Le rapport se met à jour seul. Nous changeons une chose à la fois selon ce qu'il montre."
+        }
+      ]
+    },
+    "keep": {
+      "title": "Ce que vous gardez",
+      "subtitle": "Tout ce que nous construisons vous appartient, pendant et après.",
+      "items": [
+        {
+          "title": "Des comptes publicitaires à votre nom",
+          "text": "Les comptes de recherche, sociaux et d'affichage restent à vous, avec votre facturation."
+        },
+        {
+          "title": "Les modèles créatifs",
+          "text": "Les fichiers maîtres et chaque format, prêts pour votre prochaine campagne."
+        },
+        {
+          "title": "Votre guide",
+          "text": "Règles de marque et étapes de campagne que votre équipe suit sans nous."
+        },
+        {
+          "title": "La configuration des rapports",
+          "text": "Le tableau de bord et ses connexions de données continuent de fonctionner."
+        },
+        {
+          "title": "Les fichiers sources",
+          "text": "Chaque image, mise en page et texte, dans des formats que votre équipe peut ouvrir."
+        }
+      ]
+    },
+    "faq": {
+      "title": "Questions fréquentes",
+      "items": [
+        {
+          "q": "Garantissez-vous des résultats ?",
+          "a": "Non. Personne d'honnête ne peut promettre un chiffre avant de connaître votre marché. Nous promettons un plan clair, un travail soigné et des rapports qui montrent exactement ce qui s'est passé."
+        },
+        {
+          "q": "Combien cela coûte-t-il ?",
+          "a": "Cela dépend des canaux, du nombre de formats et de la part du travail que vous nous confiez. Après l'appel découverte, vous recevez une portée et un prix écrits avant tout début."
+        },
+        {
+          "q": "Utilisez-vous l'IA pour créer les publicités ?",
+          "a": "Les modèles et l'automatisation produisent les variantes et assemblent les rapports. Une personne approuve chaque publicité et chaque affirmation avant sa diffusion."
+        },
+        {
+          "q": "Avec quels canaux travaillez-vous ?",
+          "a": "Recherche, réseaux sociaux payants et bannières d'affichage. Le choix dépend de l'endroit où sont vos clients; nous le faisons ensemble pendant l'appel."
+        },
+        {
+          "q": "Comment gérez-vous le suivi et la confidentialité ?",
+          "a": "Le suivi démarre seulement après l'accord du visiteur. Le consentement fait partie du système, donc vos rapports ne comptent que ce que les gens ont choisi de partager."
+        },
+        {
+          "q": "Pouvons-nous commencer petit ?",
+          "a": "Oui. Beaucoup commencent par un service, comme un ensemble de bannières ou un guide, et ajoutent le reste plus tard. Tout se branche sur le même système."
+        }
+      ]
+    },
+    "closing": {
+      "title": "Faites de votre prochaine campagne la plus simple.",
+      "text": "Parlez-en avec Ray. Vous repartez avec une première étape claire, que nous travaillions ensemble ou non."
+    }
   }
 }

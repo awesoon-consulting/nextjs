@@ -14,7 +14,7 @@ const LAYER = [
   { top: '#33B8F0', left: '#0E6A9E', right: '#0B5580' },
 ]
 
-function IsoPath({ lit, label }: { lit: number; label: string }) {
+export function IsoPath({ lit, label }: { lit: number; label: string }) {
   const pts = [0, 1, 2, 3].map((i) => ({ x: 60 + i * 160, y: 70 - (i % 2) * 24 }))
   return (
     <svg viewBox="0 0 600 120" className="h-auto w-full" role="img" aria-label={label}>
