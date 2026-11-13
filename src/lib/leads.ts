@@ -39,7 +39,7 @@ export async function insertLead(data: LeadFormData, meta: { ipHash: string; use
 }
 
 export async function mirrorLeadToSheet(data: LeadFormData) {
-  if (process.env.LEADS_SHEET_MIRROR === 'false') return
+  if (process.env.LEADS_SHEET_MIRROR !== 'true') return
   const { GOOGLE_SHEETS_CLIENT_EMAIL, GOOGLE_SHEETS_PRIVATE_KEY, GOOGLE_SHEETS_SPREADSHEET_ID } = process.env
   if (!GOOGLE_SHEETS_CLIENT_EMAIL || !GOOGLE_SHEETS_PRIVATE_KEY || !GOOGLE_SHEETS_SPREADSHEET_ID) return
   try {
