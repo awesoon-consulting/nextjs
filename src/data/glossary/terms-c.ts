@@ -398,7 +398,7 @@ export const TERMS_C: GlossaryTerm[] = [
         ],
         faq: [
           { q: "Which inventory valuation method is best?", a: "There is no single best one. FIFO, average cost and standard cost each suit different businesses. Your accountant should confirm which methods are allowed under the accounting and tax rules you follow." },
-          { q: "Is LIFO allowed in Canada?", a: "LIFO is not permitted under IFRS or for Canadian tax purposes. It is still allowed under US GAAP, with its own tax conditions." }
+          { q: "Is LIFO allowed in Canada?", a: "It depends on your accounting framework and tax rules. LIFO is used mainly in the United States. Confirm with your accountant before choosing a method." }
         ]
       },
       fr: {
@@ -412,7 +412,7 @@ export const TERMS_C: GlossaryTerm[] = [
         ],
         faq: [
           { q: "Quelle méthode d'évaluation des stocks est la meilleure?", a: "Il n'y en a pas une seule. Le PEPS, le coût moyen et le coût standard conviennent à des entreprises différentes. Votre comptable doit confirmer les méthodes permises selon vos règles comptables et fiscales." },
-          { q: "Le DEPS (LIFO) est-il permis au Canada?", a: "Le DEPS n'est pas permis selon les IFRS ni aux fins fiscales canadiennes. Il reste permis selon les PCGR américains, avec ses propres conditions fiscales." }
+          { q: "Le DEPS (LIFO) est-il permis au Canada?", a: "Cela dépend de votre référentiel comptable et des règles fiscales. Le DEPS est surtout utilisé aux États-Unis. Vérifiez avec votre comptable avant de choisir une méthode." }
         ]
       },
       es: {
@@ -426,7 +426,7 @@ export const TERMS_C: GlossaryTerm[] = [
         ],
         faq: [
           { q: "¿Cuál es el mejor método de valuación de inventario?", a: "No hay uno solo. PEPS, costo promedio y costo estándar se adaptan a negocios distintos. Su contador debe confirmar qué métodos permiten las normas contables y fiscales que aplica." },
-          { q: "¿Se permite UEPS (LIFO)?", a: "Las NIIF no permiten UEPS y tampoco se acepta para fines fiscales en Canadá. En Estados Unidos sigue permitido bajo US GAAP, con sus propias condiciones fiscales." }
+          { q: "¿Se permite UEPS (LIFO)?", a: "Depende de tu marco contable y de las reglas fiscales. UEPS se usa sobre todo en Estados Unidos. Confírmalo con tu contador antes de elegir un método." }
         ]
       }
     }

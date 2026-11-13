@@ -527,6 +527,282 @@
   "sitemap": {
     "title": "Mapa del sitio"
   },
+  "tools": {
+    "crumb": "Herramientas gratuitas",
+    "hub": {
+      "meta": {
+        "title": "Herramientas gratuitas para operaciones y licitaciones del sector público",
+        "description": "Herramientas gratuitas de Awesoon que responden cada una a una pregunta: cuánto le cuesta a su equipo el trabajo manual repetitivo y bajo qué códigos de contratación licita. Sin registro."
+      },
+      "eyebrow": "Gratis. Sin registro. Sus datos se quedan en su navegador.",
+      "title": "Herramientas gratuitas que responden cada una a una pregunta.",
+      "text": "Cuánto le cuesta el trabajo repetitivo, bajo qué códigos licita y más herramientas en camino. Cada resultado es suyo para guardar y compartir.",
+      "filterLabel": "Filtrar herramientas por área",
+      "filters": {
+        "all": "Todas",
+        "automation": "Automatización",
+        "procurement": "Contratación",
+        "erpCrm": "ERP y CRM",
+        "consulting": "Consultoría",
+        "design": "Diseño",
+        "advertising": "Publicidad"
+      },
+      "live": "Disponible",
+      "soon": "Próximamente",
+      "open": "Abrir la herramienta",
+      "soonNote": "En preparación. Pregunte a Ray si la necesita antes.",
+      "previewLabel": "Ejemplo real con datos",
+      "calcPreview": "{hours} horas a la semana de captura de datos en {region} cuestan unos {cost} al año en sueldos.",
+      "finderPreview": "El diseño gráfico es {code} en UNSPSC.",
+      "tools": {
+        "calculator": {
+          "name": "Calculadora del costo del trabajo manual",
+          "outcome": "Vea cuánto le cuesta a su equipo cada año la captura de datos, los pedidos y la facturación repetitivos, con datos salariales públicos de su región."
+        },
+        "finder": {
+          "name": "Buscador de códigos de contratación",
+          "outcome": "Escriba un servicio y obtenga sus códigos UNSPSC, GSIN, PSC y CPV, con una nota sencilla sobre dónde se usa cada uno."
+        },
+        "erp": {
+          "name": "Revisión de preparación para un ERP",
+          "outcome": "Una autoevaluación corta para saber si su equipo está listo para un ERP y qué corregir primero."
+        },
+        "health": {
+          "name": "Autoevaluación de salud de sistemas",
+          "outcome": "Califique qué tan bien encajan hoy sus herramientas, datos y traspasos."
+        },
+        "capability": {
+          "name": "Creador de declaración de capacidades",
+          "outcome": "Cree la declaración de capacidades de una página que piden los compradores, lista para imprimir."
+        },
+        "rfp": {
+          "name": "Lista de verificación para responder una licitación",
+          "outcome": "Convierta una licitación en una lista de todo lo que necesita su respuesta."
+        },
+        "integration": {
+          "name": "Creador de mapa de integración",
+          "outcome": "Dibuje sus sistemas y vea dónde se capturan los datos dos veces."
+        },
+        "brand": {
+          "name": "Inicio de guía de marca",
+          "outcome": "Elija una paleta y un par de tipografías y obtenga una página de guía inicial."
+        },
+        "adSpecs": {
+          "name": "Hoja de tamaños y especificaciones de anuncios",
+          "outcome": "Los tamaños y especificaciones de anuncios vigentes de las principales plataformas en una sola página."
+        },
+        "processMaps": {
+          "name": "Plantillas de mapas de procesos",
+          "outcome": "Plantillas gratuitas y sin formulario para mapear cómo se mueve hoy el trabajo."
+        }
+      },
+      "helpTitle": "¿No sabe qué herramienta le conviene?",
+      "helpText": "Elija lo que quiere averiguar. Si todavía no hay una herramienta para eso, una llamada de 30 minutos con Ray Rasouli le ayudará.",
+      "helpCost": "Cuánto nos cuesta el trabajo manual",
+      "helpCodes": "Bajo qué códigos licitamos",
+      "helpOther": "Otra cosa",
+      "helpOtherReply": "Esa herramienta aún no está disponible. Ray puede revisarlo con usted en una llamada gratuita de 30 minutos.",
+      "faqTitle": "Preguntas sobre las herramientas gratuitas",
+      "faq": [
+        {
+          "q": "¿De verdad son gratuitas?",
+          "a": "Sí. No hay registro ni muro de pago. Sus datos se quedan en su navegador y no se guarda nada."
+        },
+        {
+          "q": "¿De dónde vienen los datos?",
+          "a": "Cada herramienta nombra sus fuentes en la página: Statistics Canada (Statistique Canada), la Oficina de Estadísticas Laborales de Estados Unidos y la Oficina de Estadística de Australia para los sueldos, y las listas oficiales de códigos de Public Services and Procurement Canada, la Administración de Servicios Generales de Estados Unidos y la Unión Europea para los códigos."
+        },
+        {
+          "q": "¿Una herramienta me dirá cuánto cobra Awesoon?",
+          "a": "No. Cada resultado trata de su propio trabajo, como su propio costo de mano de obra. Los precios llegan solo después de una llamada sobre su alcance."
+        }
+      ]
+    },
+    "result": {
+      "label": "Qué sigue",
+      "share": "Compartir este resultado",
+      "copied": "Enlace copiado",
+      "ask": "Preguntar al asistente sobre este resultado",
+      "book": "Reservar una llamada de descubrimiento de 30 minutos",
+      "assistantLabel": "Asistente",
+      "close": "Cerrar",
+      "askPlaceholder": "Pregunte sobre este resultado",
+      "send": "Enviar",
+      "typing": "El asistente está escribiendo",
+      "email": "Enviarme esto por correo",
+      "optional": "(opcional)",
+      "emailLabel": "Su correo",
+      "consent": "Abre un correo para usted mismo con este resultado. No se guarda ni se envía nada a Awesoon.",
+      "emailCta": "Abrir el correo",
+      "emailSubject": "Mi resultado de Awesoon: {tool}"
+    },
+    "calc": {
+      "meta": {
+        "title": "Calculadora del costo del trabajo manual: cuánto le cuesta el trabajo administrativo repetitivo",
+        "description": "Calculadora gratuita que convierte horas de captura de datos, pedidos y facturación manuales en un costo anual de mano de obra, con datos salariales oficiales de provincias canadienses, estados de Estados Unidos y estados de Australia."
+      },
+      "title": "¿Cuánto le cuesta a su equipo el trabajo manual cada año?",
+      "text": "Elija su región y los puestos que hacen el trabajo repetitivo. Los sueldos vienen de datos públicos de su región, así que la cifra es suya. Sin registro.",
+      "country": "País",
+      "countries": {
+        "CA": "Canadá",
+        "US": "Estados Unidos",
+        "AU": "Australia",
+        "UK": "Reino Unido"
+      },
+      "regionWord": {
+        "CA": "Provincia o territorio",
+        "US": "Estado",
+        "AU": "Estado o territorio",
+        "UK": "Región"
+      },
+      "ukShort": "Datos salariales disponibles pronto",
+      "ukSoon": "Los datos salariales del Reino Unido llegarán pronto. Añadiremos los ingresos regionales de la Office for National Statistics en cuanto podamos leerlos de forma confiable.",
+      "roles": "Puestos que hacen el trabajo manual",
+      "roleNames": {
+        "dataEntry": "Captura de datos",
+        "orderClerk": "Auxiliar de pedidos",
+        "billingClerk": "Auxiliar de facturación",
+        "bookkeeping": "Auxiliar contable"
+      },
+      "perHour": "{wage} por hora",
+      "noWage": "Sin sueldo publicado",
+      "people": "Personas que lo hacen",
+      "hours": "Horas por persona, a la semana",
+      "privacy": "Sus datos se quedan en su navegador.",
+      "estimate": "Su estimación",
+      "liveData": "Datos salariales oficiales",
+      "perYear": "al año en sueldos dedicados al trabajo manual",
+      "hoursYear": "horas al año",
+      "fullTime": "personas de tiempo completo",
+      "avgHour": "sueldo promedio por hora",
+      "pickRole": "Elija al menos un puesto para ver su costo.",
+      "basis": "52 semanas al año, solo sueldos. Las prestaciones, los impuestos sobre la nómina y los gastos generales se suman, así que su costo real es mayor. Las horas se reparten por igual entre los puestos elegidos. Este es su propio costo de mano de obra, no un precio de Awesoon.",
+      "basisFte": "Tiempo completo significa {hours} horas a la semana.",
+      "sourceTitle": "De dónde vienen los sueldos",
+      "sourceLine": "Fuente: {source}.",
+      "period": "Periodo: {period}.",
+      "licence": "Licencia: {licence}",
+      "fetched": "Datos tomados el {date}.",
+      "usNote": "Sueldo anual mediano de cada ocupación (SOC {codes}), convertido a tarifa por hora con 2,080 horas al año, como lo hace el BLS.",
+      "caNote": "Sueldo mediano por hora de {occupation} ({code}). Statistics Canada no publica estos cuatro puestos por separado, así que se usa la misma cifra general para cada puesto.",
+      "auNote": "{occupation}. No es específico de un puesto e incluye personal de medio tiempo, así que es una guía aproximada; se convierte a tarifa por hora con 38 horas a la semana, la semana de tiempo completo de los National Employment Standards.",
+      "auPeriod": "{year}, primer semestre",
+      "summary": "{region}: {hours} horas a la semana, {people} personas, unos {cost} al año en sueldos.",
+      "faqTitle": "Preguntas sobre la calculadora",
+      "faq": [
+        {
+          "q": "¿Cómo se calcula el costo?",
+          "a": "Las horas por semana por las personas por 52 semanas dan sus horas al año. La parte de esas horas de cada puesto se multiplica por el sueldo publicado para su región. No se añade nada por prestaciones ni gastos generales, así que la cifra real es mayor."
+        },
+        {
+          "q": "¿Por qué el sueldo canadiense es el mismo para todos los puestos?",
+          "a": "Statistics Canada publica sueldos para el grupo amplio al que pertenecen estos puestos, las ocupaciones de apoyo administrativo y financiero, no para cada puesto de auxiliar. Mostramos esa cifra en lugar de adivinar."
+        },
+        {
+          "q": "¿Por qué no está disponible el Reino Unido?",
+          "a": "Las tablas de ingresos regionales de la Office for National Statistics no se pudieron leer de forma confiable cuando se tomaron estos datos. Las regiones del Reino Unido aparecerán en cuanto se puedan leer."
+        },
+        {
+          "q": "¿Esto es lo que ahorraría la automatización?",
+          "a": "No. Es lo que cuesta hoy el trabajo manual. Cuánto se puede eliminar depende de sus sistemas, y eso es lo que se define en una llamada de descubrimiento."
+        }
+      ]
+    },
+    "finder": {
+      "meta": {
+        "title": "Buscador de códigos de contratación: códigos UNSPSC, GSIN, PSC y CPV",
+        "description": "Herramienta gratuita que encuentra los códigos de contratación UNSPSC, GSIN, PSC y CPV para servicios de TI, software, datos, diseño y publicidad, a partir de las listas oficiales de códigos."
+      },
+      "title": "Encuentre los códigos de contratación de lo que vende.",
+      "text": "Escriba un servicio. Obtenga sus códigos UNSPSC, GSIN, PSC y CPV, con una nota sencilla sobre dónde se usa cada uno. Sin registro.",
+      "inputLabel": "Escriba un servicio",
+      "placeholder": "Por ejemplo, diseño de bases de datos",
+      "clear": "Borrar",
+      "tryLabel": "Pruebe uno",
+      "tries": [
+        "Diseño de bases de datos",
+        "Diseño gráfico",
+        "Mantenimiento de software",
+        "Diseño de sitios web",
+        "Publicidad"
+      ],
+      "loading": "Cargando las listas de códigos",
+      "results": "Códigos para \"{query}\"",
+      "none": "Aún no hay coincidencias en los códigos de TI, software, datos, diseño y publicidad. Pruebe software, base de datos, sitio web, diseño gráfico o publicidad.",
+      "noneScheme": "No hay una coincidencia cercana en esta lista.",
+      "copy": "Copiar",
+      "copiedCode": "{code} copiado",
+      "copyAll": "Copiar todos los códigos",
+      "copiedAll": "Todos los códigos copiados",
+      "linked": "UNSPSC vinculados en la tabla de equivalencias oficial: {codes}",
+      "linkedGsin": "GSIN vinculados en la tabla de equivalencias oficial: {codes}",
+      "cardLabel": "Sus códigos",
+      "check": "Revise cada código en la lista oficial antes de licitar. Los compradores pueden usar más de uno.",
+      "scope": "Este buscador cubre solo códigos de TI, software, datos, diseño y publicidad.",
+      "naics": "Los códigos NAICS aún no están en este buscador. Los añadiremos cuando se cargue la lista.",
+      "schemes": {
+        "UNSPSC": {
+          "name": "UNSPSC",
+          "where": "Canadá y muchos compradores en el mundo",
+          "explain": "El Código Estándar de Productos y Servicios de las Naciones Unidas. Los compradores federales de Canadá y muchos otros etiquetan las licitaciones con él."
+        },
+        "GSIN": {
+          "name": "GSIN",
+          "where": "Gobierno de Canadá",
+          "explain": "Número de Identificación de Bienes y Servicios. Avisos federales canadienses más antiguos aún lo usan, así que conviene incluirlo."
+        },
+        "PSC": {
+          "name": "PSC",
+          "where": "Gobierno federal de Estados Unidos",
+          "explain": "Código de Productos y Servicios. Los contratos federales de Estados Unidos lo usan para registrar lo que se compró."
+        },
+        "CPV": {
+          "name": "CPV",
+          "where": "Unión Europea y Reino Unido",
+          "explain": "Vocabulario Común de Contratos Públicos. Los avisos públicos de la UE y del Reino Unido se clasifican con él."
+        }
+      },
+      "sourceTitle": "De dónde vienen los códigos",
+      "sources": {
+        "UNSPSC": "Texto de UNSPSC y GSIN y tabla de equivalencias de GSIN a UNSPSC: contiene información con licencia Open Government Licence - Canada (Public Services and Procurement Canada).",
+        "PSC": "PSC: Códigos de Productos y Servicios de la Administración de Servicios Generales de Estados Unidos, servidos por USAspending.gov. Obra del gobierno de Estados Unidos, dominio público.",
+        "CPV": "CPV: Oficina de Publicaciones de la Unión Europea, Vocabulario Común de Contratos Públicos, con licencia CC BY 4.0. Reutilizado con atribución; la UE no respalda esta herramienta."
+      },
+      "fetched": "Datos tomados el {date}.",
+      "summary": "Códigos para {query}",
+      "faqTitle": "Preguntas sobre códigos de contratación",
+      "faq": [
+        {
+          "q": "¿Qué código debo usar?",
+          "a": "Use el sistema que usa el comprador. Las licitaciones federales de Canadá usan UNSPSC y a veces GSIN, los contratos federales de Estados Unidos usan PSC y NAICS, y los avisos de la UE y del Reino Unido usan CPV. Listar varios códigos cercanos ayuda a que los compradores lo encuentren."
+        },
+        {
+          "q": "¿Estos códigos son oficiales?",
+          "a": "Sí. Vienen de las listas oficiales publicadas por Public Services and Procurement Canada, la Administración de Servicios Generales de Estados Unidos y la Oficina de Publicaciones de la Unión Europea. Revise siempre el código en la lista oficial antes de licitar."
+        },
+        {
+          "q": "¿Por qué no encuentro NAICS?",
+          "a": "NAICS aún no está cargado en este buscador. Se añadirá cuando la lista esté lista."
+        },
+        {
+          "q": "¿Por qué solo códigos de TI, diseño y publicidad?",
+          "a": "Este buscador está hecho para los servicios en los que trabaja Awesoon, lo que lo mantiene pequeño y rápido. Otras familias podrían llegar después."
+        }
+      ]
+    },
+    "closing": {
+      "title": "¿Quiere ayuda para actuar con este resultado?",
+      "text": "Reserve una llamada de descubrimiento gratuita de 30 minutos con Ray Rasouli. Se lleva un siguiente paso claro, trabajemos juntos o no."
+    },
+    "assistant": {
+      "calc": "Su resultado es el costo anual en sueldos de su propio equipo para este trabajo, con datos salariales oficiales. No puedo cotizar lo que cobraría Awesoon. ¿Qué le gustaría saber?",
+      "finder": "Estos códigos vienen de las listas oficiales. Use el sistema que usa su comprador y liste algunos códigos cercanos. ¿Qué le gustaría saber?",
+      "reply": "Buena pregunta. La forma más rápida de obtener una respuesta para su equipo es una llamada gratuita de 30 minutos con Ray Rasouli, quien lee su resultado antes de la llamada.",
+      "price": "No puedo cotizar precios. Los precios llegan solo después de una llamada sobre su alcance. Ray se lo puede explicar en una llamada gratuita de 30 minutos.",
+      "priceWords": "precio,costo,cuesta,cuánto,cobran,cobra,cotización,cotizar,tarifa,presupuesto"
+    }
+  },
   "problemSolutions": {
     "title": "¿Reconoces alguno de estos?",
     "subtitle": "Si tus operaciones se parecen a esto, tenemos el manual para solucionarlo.",
@@ -849,7 +1125,15 @@
     "toggleBefore": "Antes",
     "toggleAfter": "Después",
     "toggleLabel": "Mostrar antes o después",
-    "artLabel": "Traspasos desordenados que se convierten en sistemas conectados"
+    "artLabel": "Traspasos desordenados que se convierten en sistemas conectados",
+    "erpCrm": {
+      "name": "ERP y CRM",
+      "short": "ERP y CRM que siguen cómo trabaja.",
+      "line": "Elegimos, configuramos y ampliamos el ERP y el CRM que manejan sus pedidos, inventario y ventas.",
+      "before": "Pedidos y oportunidades viven en correos y hojas de cálculo.",
+      "after": "Un ERP y un CRM que su equipo realmente usa.",
+      "menuName": "ERP y CRM"
+    }
   },
   "assistant": {
     "title": "¿Qué debería dejar de hacer a mano su empresa?",
@@ -1752,6 +2036,328 @@
     "closing": {
       "title": "Haga que su próxima campaña sea la fácil.",
       "text": "Hable con Ray. Sale con un primer paso claro, trabajemos juntos o no."
+    }
+  },
+  "hubs": {
+    "chrome": {
+      "home": "Inicio",
+      "services": "Servicios",
+      "eyebrowSuffix": "centro",
+      "trust": "Neutrales frente a proveedores · Sin comisiones · Dirigido por Ray Rasouli",
+      "askHero": "Preguntar al asistente",
+      "spokesKicker": "Puntos de entrada",
+      "spokesTitle": "Qué cubre {hub}",
+      "spokesIntro": "Cada página responde un problema completo. Empiece por la que se parece a su semana.",
+      "readPage": "Leer la página",
+      "askAbout": "Preguntar",
+      "chooserTitle": "¿Cuál le corresponde?",
+      "chooserIntro": "Elija lo que más le duele. Le llevamos a una sola página.",
+      "startHere": "Empiece aquí",
+      "askFits": "Preguntar si nos sirve",
+      "insightsTitle": "Artículos relacionados",
+      "faqTitle": "Preguntas frecuentes",
+      "onThisPage": "En esta página",
+      "sideTitle": "¿No sabe qué página le sirve?",
+      "sideText": "Cuéntele a Ray cómo se mueve el trabajo hoy. Él le dice qué hacer primero.",
+      "sideNote": "Con Ray Rasouli. Sin compromiso.",
+      "chat": {
+        "label": "Preguntas sobre {hub}",
+        "note": "Respuestas basadas en este centro y nuestro método. Solo informativo",
+        "greeting": "Hola. Cuénteme qué frena a su equipo y le llevaré a la página correcta.",
+        "placeholder": "Describa el problema en una frase",
+        "send": "Enviar",
+        "typing": "El asistente está escribiendo",
+        "restart": "Empezar de nuevo",
+        "openMatch": "Eso suena a {page}.",
+        "openGeneric": "Gracias, eso ayuda.",
+        "q1": "¿Qué sistemas o herramientas intervienen hoy?",
+        "q2": "¿Para cuándo le gustaría resolverlo?",
+        "briefIntro": "Aquí tiene un resumen corto. Puede enviarlo a Ray antes de su llamada.",
+        "briefLabel": "Su resumen",
+        "needLabel": "Lo que necesita",
+        "setupLabel": "Sistemas actuales",
+        "whenLabel": "Plazo",
+        "pageLabel": "Página a leer",
+        "talkToRay": "Enviar a Ray",
+        "bookLabel": "Elija un horario para una llamada de 30 minutos con Ray.",
+        "consentLabel": "Enviar esta conversación a Ray con mi reserva. Se guarda hasta 3 años y nunca se vende.",
+        "chips": [
+          "Los datos se escriben dos veces",
+          "Estamos eligiendo software nuevo",
+          "Un proyecto está atascado"
+        ],
+        "when": [
+          "Este mes",
+          "Este trimestre",
+          "Solo explorando"
+        ]
+      },
+      "spoke": {
+        "problemTitle": "¿Le suena familiar?",
+        "whatWeDoTitle": "Lo que hacemos",
+        "howTitle": "Cómo funciona",
+        "keepTitle": "Lo que conserva",
+        "outcomesTitle": "Lo que cambia",
+        "govTitle": "Para compradores públicos",
+        "govText": "En los portales de gobierno, este trabajo aparece en la categoría {category}.",
+        "govCodes": "Códigos de categoría: a solicitud.",
+        "govLink": "Cómo comprar a Awesoon",
+        "relatedTitle": "Páginas relacionadas",
+        "partOf": "Parte de {hub}",
+        "platformsTitle": "Plataformas con las que trabajamos",
+        "platformsSubtitle": "Somos neutrales frente a plataformas. Toque un logo para ver dónde encaja mejor.",
+        "platformsTapHint": "Toque una plataforma arriba para saber cuándo conviene.",
+        "closingTitle": "Háblelo con Ray",
+        "closingText": "Una llamada de descubrimiento de 30 minutos. Sale con un primer paso claro, trabajemos juntos o no.",
+        "sharedHow": [
+          "Una llamada de descubrimiento de 30 minutos con Ray sobre cómo funciona el trabajo hoy",
+          "Un plan escrito corto de qué cambiamos primero y por qué",
+          "El trabajo, en pasos que usted revisa, y una entrega que su equipo puede manejar"
+        ],
+        "sharedKeep": [
+          "Documentación escrita para su equipo",
+          "Cuentas, ajustes y código a su nombre",
+          "Un registro claro de cada cambio que hicimos"
+        ],
+        "sharedFaq": [
+          {
+            "q": "¿Quién hace el trabajo?",
+            "a": "Ray Rasouli dirige personalmente cada proyecto. Cuando se necesita un especialista, le decimos quién y por qué antes de empezar."
+          },
+          {
+            "q": "¿Cobran comisiones a los proveedores de software?",
+            "a": "No. Awesoon es neutral frente a proveedores y no cobra comisiones ni honorarios por referencia, así que el consejo es sobre lo que le conviene."
+          },
+          {
+            "q": "¿Cuánto cuesta?",
+            "a": "Depende del alcance. Después de la llamada de descubrimiento recibe un alcance escrito y una cotización antes de empezar."
+          }
+        ],
+        "includesQ": "¿Qué incluye {title}?"
+      },
+      "index": {
+        "title": "Servicios",
+        "metaTitle": "Servicios: todas las formas en que Awesoon ayuda",
+        "metaDescription": "Todos los servicios de Awesoon, agrupados en centros: automatización, desarrollo de software, ERP y CRM, consultoría, diseño, publicidad, soporte, juegos y sector público.",
+        "intro": "Elija el área que corresponde a su problema. Cada centro lo explica con palabras sencillas y enlaza una página por servicio.",
+        "open": "Abrir el centro",
+        "extra": {
+          "design": {
+            "name": "Diseño",
+            "line": "Marca, interfaces y sistemas de diseño que su equipo puede reutilizar."
+          },
+          "advertising": {
+            "name": "Publicidad",
+            "line": "Campañas, producción y publicidad con banners, con informes claros."
+          },
+          "support": {
+            "name": "Soporte",
+            "line": "Soporte continuo para sistemas, ERP, CRM y comercio electrónico."
+          },
+          "games": {
+            "name": "Juegos",
+            "line": "Nuestros propios juegos móviles, y mantenimiento de juegos y aplicaciones."
+          },
+          "public-sector": {
+            "name": "Sector público",
+            "line": "Cómo los compradores públicos encuentran y compran a Awesoon."
+          }
+        }
+      }
+    },
+    "hub": {
+      "automation": {
+        "name": "Automatización e integración",
+        "metaTitle": "Servicios de automatización e integración de sistemas",
+        "metaDescription": "La automatización conecta su tienda, ERP, CRM y contabilidad para que los datos se ingresen una vez y fluyan solos. Neutral frente a proveedores y documentado.",
+        "title": "Automatización e integración: sus sistemas se pasan el trabajo.",
+        "answer": "La automatización empresarial conecta su tienda, ERP, CRM y contabilidad para que los datos se ingresen una sola vez y fluyan solos. Las personas intervienen solo cuando hace falta criterio, y cada flujo queda documentado para que su equipo sea el dueño.",
+        "choose": [
+          {
+            "spoke": "system-integration",
+            "label": "Escribimos los mismos datos en dos sistemas"
+          },
+          {
+            "spoke": "spreadsheet-operations",
+            "label": "Una hoja de cálculo maneja un proceso clave"
+          },
+          {
+            "spoke": "mobile-warehouse-barcoding",
+            "label": "Los conteos del almacén nunca cuadran"
+          },
+          {
+            "spoke": "ai-operations",
+            "label": "Queremos IA pero no sabemos dónde encaja"
+          },
+          {
+            "spoke": "database-management-service",
+            "label": "Nadie cuida nuestra base de datos"
+          }
+        ],
+        "faq": [
+          {
+            "q": "¿Qué es la automatización empresarial?",
+            "a": "Es lograr que sus sistemas se pasen datos y tareas, para que la gente deje de reescribir y perseguir. Una persona sigue aprobando lo que requiere criterio."
+          },
+          {
+            "q": "¿Qué sistemas pueden conectar?",
+            "a": "La mayoría de herramientas con API o exportación, como Shopify, NetSuite, QuickBooks, HubSpot y Salesforce. En la llamada le decimos si algo no se puede conectar bien."
+          },
+          {
+            "q": "¿Qué pasa si una conexión falla?",
+            "a": "Cada flujo que construimos registra su trabajo y avisa a una persona designada si algo falla, con una guía escrita para resolverlo."
+          },
+          {
+            "q": "¿Las automatizaciones son nuestras?",
+            "a": "Sí. Corren en cuentas a su nombre y están documentadas para que su equipo u otro proveedor pueda continuar."
+          }
+        ],
+        "closingTitle": "Empiece por el flujo que su equipo reescribe más.",
+        "closingText": "Una llamada de descubrimiento de 30 minutos con Ray y una lista clara de qué conectar primero y por qué. Sin compromiso."
+      },
+      "software-development": {
+        "name": "Desarrollo de software",
+        "metaTitle": "Servicios de desarrollo de software a medida para empresas",
+        "metaDescription": "Desarrollo de software a medida: aplicaciones, API, bases de datos e interfaces hechas según cómo trabaja su equipo, con el código a su nombre.",
+        "title": "Desarrollo de software: herramientas a medida para lo que los productos no hacen.",
+        "answer": "El desarrollo de software a medida construye las aplicaciones, API, bases de datos y pantallas que su negocio necesita cuando ningún producto encaja. Awesoon las construye en pasos pequeños que usted ve, y usted es dueño del código, las cuentas y la documentación.",
+        "choose": [
+          {
+            "spoke": "application-programming",
+            "label": "Necesitamos una herramienta que ningún producto ofrece"
+          },
+          {
+            "spoke": "database-design",
+            "label": "Nuestros informes nunca coinciden"
+          },
+          {
+            "spoke": "client-server-programming",
+            "label": "Nuestra aplicación se vuelve lenta o falla"
+          },
+          {
+            "spoke": "custom-api-development",
+            "label": "Los socios necesitan conectarse a nuestros datos"
+          },
+          {
+            "spoke": "interface-development",
+            "label": "Nuestras pantallas son difíciles de usar"
+          }
+        ],
+        "faq": [
+          {
+            "q": "¿Construir software a medida o comprar un producto?",
+            "a": "Compre cuando un producto ya hace bien el trabajo. Construya solo cuando nada encaje, y le diremos si un producto basta."
+          },
+          {
+            "q": "¿De quién es el código?",
+            "a": "Suyo. Está en su repositorio desde el primer día, con cuentas de alojamiento a su nombre."
+          },
+          {
+            "q": "¿Cómo mantienen el proyecto en curso?",
+            "a": "Acordamos un alcance escrito corto, construimos en pasos pequeños que usted revisa y corregimos temprano si algo no encaja."
+          },
+          {
+            "q": "¿Pueden continuar una aplicación existente?",
+            "a": "Sí. Empezamos con una revisión escrita del código y le contamos lo que encontramos antes de sugerir cambios."
+          }
+        ],
+        "closingTitle": "Describa la herramienta que le gustaría tener.",
+        "closingText": "Una llamada de descubrimiento de 30 minutos con Ray y una respuesta clara: construir, comprar o conectar. Sin compromiso."
+      },
+      "erp-crm": {
+        "name": "ERP y CRM",
+        "metaTitle": "Servicios de implementación y configuración de ERP y CRM",
+        "metaDescription": "Implementación, configuración y programación a medida de ERP y CRM para empresas en crecimiento. Neutral, sin comisiones, dirigido por Ray Rasouli.",
+        "title": "ERP y CRM: sistemas que siguen cómo trabaja de verdad.",
+        "answer": "Los servicios de ERP y CRM eligen, configuran y amplían los sistemas que manejan sus pedidos, inventario, finanzas y ventas. Awesoon es neutral frente a proveedores y no cobra comisiones, así que el sistema se adapta a sus operaciones y no al revés.",
+        "choose": [
+          {
+            "spoke": "erp-implementation",
+            "label": "Nos cambiamos a un ERP nuevo"
+          },
+          {
+            "spoke": "crm-implementation",
+            "label": "Necesitamos un proyecto de CRM bien hecho"
+          },
+          {
+            "spoke": "crm-setup",
+            "label": "Compramos un CRM y nadie lo usa"
+          },
+          {
+            "spoke": "erp-database-applications",
+            "label": "Nuestro ERP necesita piezas a medida"
+          }
+        ],
+        "faq": [
+          {
+            "q": "¿Qué ERP o CRM deberíamos elegir?",
+            "a": "Depende de su tamaño, procesos y otros sistemas. Como no cobramos comisiones, comparamos opciones solo por encaje."
+          },
+          {
+            "q": "¿Por qué fallan los proyectos de ERP?",
+            "a": "La mayoría falla por procesos y datos, no por el software: requisitos poco claros, datos desordenados y sin responsable. Empezamos por ahí."
+          },
+          {
+            "q": "¿Dan soporte después de la puesta en marcha?",
+            "a": "Sí. Nuestras páginas de soporte de ERP y CRM cubren la ayuda continua después del lanzamiento."
+          },
+          {
+            "q": "¿Pueden arreglar un sistema que configuró otra persona?",
+            "a": "Sí. Revisamos lo que hay, dejamos por escrito lo que encontramos y arreglamos primero lo que más importa."
+          }
+        ],
+        "closingTitle": "Haga que el sistema se ajuste al negocio.",
+        "closingText": "Una llamada de descubrimiento de 30 minutos con Ray sobre su ERP o CRM y un primer paso claro. Sin compromiso."
+      },
+      "consulting": {
+        "name": "Consultoría y expertos en TI",
+        "metaTitle": "Consultoría y servicios de expertos en TI para empresas en crecimiento",
+        "metaDescription": "Consultoría de TI: revisiones de sistemas, selección de software, rescate de proyectos, bases de procesos y asesoría experta. Neutral frente a proveedores.",
+        "title": "Consultoría y expertos en TI: respuestas claras antes de gastar.",
+        "answer": "La consultoría de TI le da una visión sénior y neutral de sus sistemas antes de comprar, construir o arreglar algo. Awesoon revisa cómo funciona el trabajo de verdad, deja por escrito lo que encuentra y le dice con claridad qué hacer primero.",
+        "choose": [
+          {
+            "spoke": "systems-audit",
+            "label": "No sabemos por dónde empezar"
+          },
+          {
+            "spoke": "software-selection",
+            "label": "Estamos eligiendo software o proveedor"
+          },
+          {
+            "spoke": "project-management",
+            "label": "Un proyecto está atrasado o atascado"
+          },
+          {
+            "spoke": "ops-outgrown-tools",
+            "label": "Crecimos y nuestras herramientas no"
+          },
+          {
+            "spoke": "it-expert-services",
+            "label": "Necesitamos la opinión de un experto"
+          }
+        ],
+        "faq": [
+          {
+            "q": "¿Qué hace un consultor de TI para una pyme?",
+            "a": "Revisamos sus sistemas y procesos, comparamos opciones y le entregamos un plan escrito. Puede aplicarlo con nosotros o con quien quiera."
+          },
+          {
+            "q": "¿Están atados a algún proveedor de software?",
+            "a": "No. No cobramos comisiones ni honorarios por referencia, así que el consejo es sobre el encaje."
+          },
+          {
+            "q": "¿Qué es la revisión gratuita de sistemas?",
+            "a": "Una revisión corta de cómo encajan sus sistemas y procesos, con una lista escrita de qué arreglar primero."
+          },
+          {
+            "q": "¿Pueden ayudarnos a contratar desarrolladores?",
+            "a": "Sí, mediante un socio de reclutamiento verificado. Vea la página de desarrolladores permanentes."
+          }
+        ],
+        "closingTitle": "Obtenga un primer paso claro antes de gastar.",
+        "closingText": "Una llamada de descubrimiento de 30 minutos con Ray. Sale sabiendo qué arreglar primero. Sin compromiso."
+      }
     }
   },
   "glossaryPage": {

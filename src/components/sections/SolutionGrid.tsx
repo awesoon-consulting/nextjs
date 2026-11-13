@@ -1,4 +1,5 @@
 import Link from 'next/link'
+import { spokePath } from '@/src/data/hub-map'
 import { useTranslations, useLocale } from 'next-intl'
 import Card from '@/src/components/ui/Card'
 import Badge from '@/src/components/ui/Badge'
@@ -46,7 +47,7 @@ export default function SolutionGrid() {
             return (
               <AnimateIn key={key} variant="slide-up" delay={idx * 70} threshold={0.04}>
                 <Link
-                  href={`/${locale}/solutions/${slug}`}
+                  href={`/${locale}${spokePath(slug)}`}
                   className="group block rounded-xl focus:outline-none focus-visible:ring-2 focus-visible:ring-secondary"
                 >
                   <Card

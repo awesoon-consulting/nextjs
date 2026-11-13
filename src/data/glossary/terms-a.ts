@@ -513,7 +513,7 @@ export const TERMS_A: GlossaryTerm[] = [
           { title: "People assume FIFO and average cost are interchangeable.", detail: "Switching methods mid-year changes reported profit and may need accountant sign-off and disclosure." }
         ],
         faq: [
-          { q: "Is FIFO allowed in Canada?", a: "Yes. FIFO and weighted average cost are both accepted under Canadian standards. LIFO is not permitted under IFRS or Canadian private enterprise standards." },
+          { q: "Is FIFO allowed in Canada?", a: "Yes. FIFO and weighted average cost are both accepted under Canadian standards. Which other methods you may use depends on your accounting framework and tax rules, so confirm with your accountant." },
           { q: "What is the difference between FIFO and FEFO?", a: "FIFO ships the oldest received stock first. FEFO, first expired first out, ships the stock with the nearest expiry date first, which matters for food and pharmaceuticals." }
         ]
       },
@@ -528,7 +528,7 @@ export const TERMS_A: GlossaryTerm[] = [
           { title: "On croit que PEPS et coût moyen sont interchangeables.", detail: "Changer de méthode en cours d'année modifie le profit déclaré et peut exiger l'accord du comptable et une divulgation." }
         ],
         faq: [
-          { q: "PEPS est-il permis au Canada?", a: "Oui. PEPS et le coût moyen pondéré sont acceptés par les normes canadiennes. DEPS n'est pas permis sous les IFRS ni sous les normes pour les entreprises à capital fermé." },
+          { q: "PEPS est-il permis au Canada?", a: "Oui. PEPS et le coût moyen pondéré sont acceptés par les normes canadiennes. Les autres méthodes permises dépendent de votre référentiel comptable et des règles fiscales; vérifiez avec votre comptable." },
           { q: "Quelle différence entre PEPS et PPPS?", a: "PEPS expédie le stock reçu le plus tôt. PPPS, premier périmé premier sorti, expédie le stock dont la date d'expiration est la plus proche, ce qui compte pour les aliments et les médicaments." }
         ]
       },
@@ -543,7 +543,7 @@ export const TERMS_A: GlossaryTerm[] = [
           { title: "Se cree que PEPS y costo promedio son intercambiables.", detail: "Cambiar de método a mitad de año cambia la utilidad reportada y puede requerir aprobación del contador y revelación." }
         ],
         faq: [
-          { q: "¿PEPS está permitido en Canadá?", a: "Sí. PEPS y el costo promedio ponderado se aceptan bajo las normas canadienses. UEPS no se permite bajo las NIIF ni bajo las normas para empresas privadas." },
+          { q: "¿PEPS está permitido en Canadá?", a: "Sí. PEPS y el costo promedio ponderado se aceptan bajo las normas canadienses. Los demás métodos permitidos dependen de tu marco contable y de las reglas fiscales; confírmalo con tu contador." },
           { q: "¿Qué diferencia hay entre PEPS y PCPS?", a: "PEPS envía primero lo que se recibió antes. PCPS, primero en caducar primero en salir, envía primero lo que vence antes, algo clave en alimentos y medicamentos." }
         ]
       }
@@ -726,7 +726,7 @@ export const TERMS_A: GlossaryTerm[] = [
         ],
         faq: [
           { q: "What is the difference between lot tracking and serial tracking?", a: "Lot tracking groups many units under one batch number. Serial tracking gives each individual unit its own unique number, which suits higher-value items like equipment." },
-          { q: "Is lot tracking required by law?", a: "It depends on the product and country. Food, drugs and medical devices often have traceability rules, such as Canada's Safe Food for Canadians Regulations, so check what applies to your goods." }
+          { q: "Is lot tracking required by law?", a: "It depends on the product and country. Food, drugs and medical devices often have traceability rules, so check what applies to your goods." }
         ]
       },
       fr: {
@@ -741,7 +741,7 @@ export const TERMS_A: GlossaryTerm[] = [
         ],
         faq: [
           { q: "Quelle différence entre traçabilité des lots et numéros de série?", a: "La traçabilité des lots regroupe plusieurs unités sous un numéro de lot. Le suivi par numéro de série donne à chaque unité son propre numéro, ce qui convient aux articles plus coûteux comme l'équipement." },
-          { q: "La traçabilité des lots est-elle obligatoire?", a: "Cela dépend du produit et du pays. Les aliments, médicaments et instruments médicaux ont souvent des règles de traçabilité, comme le Règlement sur la salubrité des aliments au Canada; vérifiez ce qui s'applique." }
+          { q: "La traçabilité des lots est-elle obligatoire?", a: "Cela dépend du produit et du pays. Les aliments, médicaments et instruments médicaux ont souvent des règles de traçabilité. Vérifiez ce qui s'applique." }
         ]
       },
       es: {
@@ -1103,7 +1103,7 @@ export const TERMS_A: GlossaryTerm[] = [
         ],
         faq: [
           { q: "What is the difference between cash and accrual accounting?", a: "Cash accounting records transactions when money moves. Accrual accounting records them when they are earned or incurred, even if payment comes later." },
-          { q: "Do small businesses have to use accrual accounting?", a: "It depends on your country, structure and size. In Canada, most businesses must use accrual for tax purposes, with some exceptions such as farming and fishing. Ask your accountant what applies to you." }
+          { q: "Do small businesses have to use accrual accounting?", a: "It depends on your country, structure and size. Ask your accountant what applies to you." }
         ]
       },
       fr: {
@@ -1118,7 +1118,7 @@ export const TERMS_A: GlossaryTerm[] = [
         ],
         faq: [
           { q: "Quelle différence entre comptabilité de caisse et d'exercice?", a: "La comptabilité de caisse inscrit les opérations quand l'argent bouge. La comptabilité d'exercice les inscrit quand elles sont gagnées ou engagées, même si le paiement vient plus tard." },
-          { q: "Les petites entreprises doivent-elles utiliser la comptabilité d'exercice?", a: "Cela dépend du pays, de la structure et de la taille. Au Canada, la plupart des entreprises doivent l'utiliser à des fins fiscales, avec quelques exceptions comme l'agriculture et la pêche. Demandez à votre comptable." }
+          { q: "Les petites entreprises doivent-elles utiliser la comptabilité d'exercice?", a: "Cela dépend du pays, de la structure et de la taille. Demandez à votre comptable ce qui s'applique à vous." }
         ]
       },
       es: {
@@ -1212,7 +1212,7 @@ export const TERMS_A: GlossaryTerm[] = [
         ],
         faq: [
           { q: "What is deferred revenue?", a: "Deferred revenue is money received for goods or services not yet delivered. It sits as a liability until the business earns it." },
-          { q: "Does revenue recognition apply to small businesses?", a: "The principles apply to anyone using accrual accounting. Private companies in Canada may follow ASPE, which has simpler revenue rules than IFRS 15, so ask your accountant which framework you use." }
+          { q: "Does revenue recognition apply to small businesses?", a: "The principles apply to anyone using accrual accounting. The exact framework depends on your country and type of company, so ask your accountant which one you use." }
         ]
       },
       fr: {
@@ -1227,7 +1227,7 @@ export const TERMS_A: GlossaryTerm[] = [
         ],
         faq: [
           { q: "Que sont les produits reportés?", a: "C'est l'argent reçu pour des biens ou services pas encore livrés. Ils restent au passif jusqu'à ce que l'entreprise les gagne." },
-          { q: "La constatation des produits s'applique-t-elle aux petites entreprises?", a: "Les principes s'appliquent à toute entreprise en comptabilité d'exercice. Les sociétés fermées au Canada peuvent suivre les NCECF, dont les règles sont plus simples qu'IFRS 15; demandez à votre comptable." }
+          { q: "La constatation des produits s'applique-t-elle aux petites entreprises?", a: "Les principes s'appliquent à toute entreprise en comptabilité d'exercice. Le référentiel exact dépend de votre pays et du type d'entreprise; demandez à votre comptable lequel vous utilisez." }
         ]
       },
       es: {

@@ -526,6 +526,282 @@
   "sitemap": {
     "title": "Sitemap"
   },
+  "tools": {
+    "crumb": "Free tools",
+    "hub": {
+      "meta": {
+        "title": "Free tools for operations and public sector bids",
+        "description": "Free tools from Awesoon that each answer one question: what repeat manual work costs your team, and which procurement codes you bid under. No sign-up."
+      },
+      "eyebrow": "Free. No sign-up. Your inputs stay in your browser.",
+      "title": "Free tools that each answer one question.",
+      "text": "What repeat work costs you, which codes you bid under, and more on the way. Each result is yours to keep and share.",
+      "filterLabel": "Filter tools by area",
+      "filters": {
+        "all": "All",
+        "automation": "Automation",
+        "procurement": "Procurement",
+        "erpCrm": "ERP and CRM",
+        "consulting": "Consulting",
+        "design": "Design",
+        "advertising": "Advertising"
+      },
+      "live": "Live",
+      "soon": "Coming next",
+      "open": "Open the tool",
+      "soonNote": "In the works. Ask Ray if you need it sooner.",
+      "previewLabel": "Real example from the data",
+      "calcPreview": "{hours} hours a week of data entry in {region} costs about {cost} a year in wages.",
+      "finderPreview": "Graphic design is {code} in UNSPSC.",
+      "tools": {
+        "calculator": {
+          "name": "Manual work cost calculator",
+          "outcome": "See what repeat data entry, order and billing work costs your team each year, from public wage data for your region."
+        },
+        "finder": {
+          "name": "Procurement code finder",
+          "outcome": "Type a service and get its UNSPSC, GSIN, PSC and CPV codes, with a plain note on where each one is used."
+        },
+        "erp": {
+          "name": "ERP readiness check",
+          "outcome": "A short self-check on whether your team is ready for an ERP, and what to fix first."
+        },
+        "health": {
+          "name": "Systems health check self-score",
+          "outcome": "Score how well your tools, data and handoffs fit together today."
+        },
+        "capability": {
+          "name": "Capability statement builder",
+          "outcome": "Build the one-page capability statement buyers ask for, ready to print."
+        },
+        "rfp": {
+          "name": "RFP response checklist",
+          "outcome": "Turn a tender into a checklist of everything your response needs."
+        },
+        "integration": {
+          "name": "Integration map builder",
+          "outcome": "Draw your systems and see where data is typed twice."
+        },
+        "brand": {
+          "name": "Brand guideline starter",
+          "outcome": "Pick a palette and type pair and get a starter guideline page."
+        },
+        "adSpecs": {
+          "name": "Ad size and spec sheet",
+          "outcome": "Every major platform's current ad sizes and specs on one page."
+        },
+        "processMaps": {
+          "name": "Process map templates",
+          "outcome": "Free, ungated templates for mapping how work moves today."
+        }
+      },
+      "helpTitle": "Not sure which tool fits?",
+      "helpText": "Pick what you are trying to work out. If no tool fits yet, a 30-minute call with Ray Rasouli will.",
+      "helpCost": "What our manual work costs",
+      "helpCodes": "Which codes we bid under",
+      "helpOther": "Something else",
+      "helpOtherReply": "That tool is not live yet. Ray can work through it with you on a free 30-minute call.",
+      "faqTitle": "Questions about the free tools",
+      "faq": [
+        {
+          "q": "Are the tools really free?",
+          "a": "Yes. There is no sign-up and no paywall. Your inputs stay in your browser and nothing is stored."
+        },
+        {
+          "q": "Where does the data come from?",
+          "a": "Each tool names its sources on the page: Statistics Canada, the U.S. Bureau of Labor Statistics and the Australian Bureau of Statistics for wages, and the official code lists from Public Services and Procurement Canada, the U.S. General Services Administration and the European Union for codes."
+        },
+        {
+          "q": "Will a tool tell me what Awesoon charges?",
+          "a": "No. Each result is about your own work, like your own labour cost. Pricing only comes after a call about your scope."
+        }
+      ]
+    },
+    "result": {
+      "label": "What next",
+      "share": "Share this result",
+      "copied": "Link copied",
+      "ask": "Ask the assistant about this result",
+      "book": "Book a 30-minute discovery call",
+      "assistantLabel": "Assistant",
+      "close": "Close",
+      "askPlaceholder": "Ask about this result",
+      "send": "Send",
+      "typing": "Assistant is typing",
+      "email": "Email me this",
+      "optional": "(optional)",
+      "emailLabel": "Your email",
+      "consent": "Open an email to myself with this result. Nothing is stored or sent to Awesoon.",
+      "emailCta": "Open the email",
+      "emailSubject": "My result from Awesoon: {tool}"
+    },
+    "calc": {
+      "meta": {
+        "title": "Manual work cost calculator: what repeat admin work costs you",
+        "description": "Free calculator that turns hours of manual data entry, order and billing work into a yearly labour cost, using official wage data for Canadian provinces, U.S. states and Australian states."
+      },
+      "title": "What does manual work cost your team each year?",
+      "text": "Pick your region and the roles doing repeat work. The wages come from public data for your region, so the number is yours. No sign-up.",
+      "country": "Country",
+      "countries": {
+        "CA": "Canada",
+        "US": "United States",
+        "AU": "Australia",
+        "UK": "United Kingdom"
+      },
+      "regionWord": {
+        "CA": "Province or territory",
+        "US": "State",
+        "AU": "State or territory",
+        "UK": "Region"
+      },
+      "ukShort": "Wage data coming soon",
+      "ukSoon": "UK wage data coming soon. We will add regional earnings from the Office for National Statistics as soon as we can read it reliably.",
+      "roles": "Roles doing the manual work",
+      "roleNames": {
+        "dataEntry": "Data entry",
+        "orderClerk": "Order clerk",
+        "billingClerk": "Billing clerk",
+        "bookkeeping": "Bookkeeping clerk"
+      },
+      "perHour": "{wage} an hour",
+      "noWage": "No published wage",
+      "people": "People doing it",
+      "hours": "Hours each, per week",
+      "privacy": "Your inputs stay in your browser.",
+      "estimate": "Your estimate",
+      "liveData": "Official wage data",
+      "perYear": "a year in wages spent on manual work",
+      "hoursYear": "hours a year",
+      "fullTime": "full-time people",
+      "avgHour": "average wage per hour",
+      "pickRole": "Pick at least one role to see your cost.",
+      "basis": "52 weeks a year, wages only. Benefits, payroll taxes and overhead come on top, so your real cost is higher. Hours are split evenly across the roles you picked. This is your own labour cost, not an Awesoon price.",
+      "basisFte": "Full-time means {hours} hours a week.",
+      "sourceTitle": "Where the wages come from",
+      "sourceLine": "Source: {source}.",
+      "period": "Period: {period}.",
+      "licence": "Licence: {licence}",
+      "fetched": "Snapshot taken {date}.",
+      "usNote": "Median annual wage for each occupation (SOC {codes}), turned into an hourly rate at 2,080 hours a year, the way BLS does.",
+      "caNote": "Median hourly wage for {occupation} ({code}). Statistics Canada does not publish these four roles separately, so the same broad figure is used for each role.",
+      "auNote": "{occupation}. This is not role specific and includes part-time staff, so it is a rough guide; it is turned into an hourly rate at 38 hours a week, the full-time week in the National Employment Standards.",
+      "auPeriod": "{year}, first half",
+      "summary": "{region}: {hours} hours a week, {people} people, about {cost} a year in wages.",
+      "faqTitle": "Questions about the calculator",
+      "faq": [
+        {
+          "q": "How is the cost worked out?",
+          "a": "Hours per week times people times 52 weeks gives your yearly hours. Each role's share of those hours is multiplied by the published wage for your region. Nothing is added for benefits or overhead, so the real figure is higher."
+        },
+        {
+          "q": "Why is the Canadian wage the same for every role?",
+          "a": "Statistics Canada publishes wages for the broad group these roles belong to, administrative and financial support occupations, not for each clerk role. We show that figure rather than guess."
+        },
+        {
+          "q": "Why is the UK not available?",
+          "a": "The regional earnings tables from the Office for National Statistics could not be read reliably when this snapshot was taken. UK regions will appear once they can."
+        },
+        {
+          "q": "Is this what automation would save?",
+          "a": "No. It is what the manual work costs today. How much of it can be removed depends on your systems, and that is what a discovery call works out."
+        }
+      ]
+    },
+    "finder": {
+      "meta": {
+        "title": "Procurement code finder: UNSPSC, GSIN, PSC and CPV codes",
+        "description": "Free tool that finds the UNSPSC, GSIN, PSC and CPV procurement codes for IT, software, data, design and advertising services, from the official code lists."
+      },
+      "title": "Find the procurement codes for what you sell.",
+      "text": "Type a service. Get its UNSPSC, GSIN, PSC and CPV codes, with a plain note on where each one is used. No sign-up.",
+      "inputLabel": "Type a service",
+      "placeholder": "For example, database design",
+      "clear": "Clear",
+      "tryLabel": "Try one",
+      "tries": [
+        "Database design",
+        "Graphic design",
+        "Software maintenance",
+        "Website design",
+        "Advertising"
+      ],
+      "loading": "Loading the code lists",
+      "results": "Codes for \"{query}\"",
+      "none": "No match in the IT, software, data, design and advertising codes yet. Try software, database, website, graphic design or advertising.",
+      "noneScheme": "No close match in this list.",
+      "copy": "Copy",
+      "copiedCode": "Copied {code}",
+      "copyAll": "Copy all codes",
+      "copiedAll": "All codes copied",
+      "linked": "Linked UNSPSC in the official crosswalk: {codes}",
+      "linkedGsin": "Linked GSIN in the official crosswalk: {codes}",
+      "cardLabel": "Your codes",
+      "check": "Check each code in the official list before you bid. Buyers may use more than one.",
+      "scope": "This finder covers IT, software, data, design and advertising codes only.",
+      "naics": "NAICS codes are not in this finder yet. We will add them once the list is loaded.",
+      "schemes": {
+        "UNSPSC": {
+          "name": "UNSPSC",
+          "where": "Canada and many buyers worldwide",
+          "explain": "The United Nations Standard Products and Services Code. Canadian federal buyers and many others tag tenders with it."
+        },
+        "GSIN": {
+          "name": "GSIN",
+          "where": "Government of Canada",
+          "explain": "Goods and Services Identification Number. Older Canadian federal notices still use it, so it is worth listing."
+        },
+        "PSC": {
+          "name": "PSC",
+          "where": "U.S. federal government",
+          "explain": "Product and Service Code. U.S. federal contracts record what was bought with it."
+        },
+        "CPV": {
+          "name": "CPV",
+          "where": "European Union and United Kingdom",
+          "explain": "Common Procurement Vocabulary. EU and UK public notices are classified with it."
+        }
+      },
+      "sourceTitle": "Where the codes come from",
+      "sources": {
+        "UNSPSC": "UNSPSC and GSIN copy and the GSIN to UNSPSC crosswalk: contains information licensed under the Open Government Licence - Canada (Public Services and Procurement Canada).",
+        "PSC": "PSC: Product and Service Codes from the U.S. General Services Administration, served by USAspending.gov. U.S. Government work, public domain.",
+        "CPV": "CPV: Publications Office of the European Union, Common Procurement Vocabulary, licensed under CC BY 4.0. Reused with attribution; the EU does not endorse this tool."
+      },
+      "fetched": "Snapshot taken {date}.",
+      "summary": "Codes for {query}",
+      "faqTitle": "Questions about procurement codes",
+      "faq": [
+        {
+          "q": "Which code should I use?",
+          "a": "Use the scheme the buyer uses. Canadian federal tenders use UNSPSC and sometimes GSIN, U.S. federal contracts use PSC and NAICS, and EU and UK notices use CPV. Listing several close codes helps buyers find you."
+        },
+        {
+          "q": "Are these codes official?",
+          "a": "Yes. They come from the official lists published by Public Services and Procurement Canada, the U.S. General Services Administration and the Publications Office of the European Union. Always check the code in the official list before you bid."
+        },
+        {
+          "q": "Why can I not find NAICS?",
+          "a": "NAICS is not loaded into this finder yet. It will be added once the list is in."
+        },
+        {
+          "q": "Why only IT, design and advertising codes?",
+          "a": "This finder is built for the services Awesoon works in, which keeps it small and fast. Other families may come later."
+        }
+      ]
+    },
+    "closing": {
+      "title": "Want help acting on this result?",
+      "text": "Book a free 30-minute discovery call with Ray Rasouli. You leave with a clear next step, whether or not we work together."
+    },
+    "assistant": {
+      "calc": "Your result is your team's own yearly wage cost for this work, from official wage data. I cannot quote what Awesoon would charge. What would you like to know?",
+      "finder": "These codes come from the official lists. Use the scheme your buyer uses, and list a few close codes. What would you like to know?",
+      "reply": "Good question. The quickest way to an answer for your team is a free 30-minute call with Ray Rasouli, who reads your result before the call.",
+      "price": "I cannot quote prices. Pricing only comes after a call about your scope. Ray can walk you through it on a free 30-minute call.",
+      "priceWords": "price,cost you,charge,quote,how much do you"
+    }
+  },
   "problemSolutions": {
     "title": "Common Problems We Solve",
     "subtitle": "If your operations look like this, we've built the playbook to fix it.",
@@ -848,7 +1124,15 @@
     "toggleBefore": "Before",
     "toggleAfter": "After",
     "toggleLabel": "Show before or after",
-    "artLabel": "Messy hand-offs becoming connected systems"
+    "artLabel": "Messy hand-offs becoming connected systems",
+    "erpCrm": {
+      "name": "ERP and CRM",
+      "short": "ERP and CRM that match how you work.",
+      "line": "We choose, set up and extend the ERP and CRM that run your orders, stock and sales.",
+      "before": "Orders and deals live in inboxes and spreadsheets.",
+      "after": "One ERP and CRM your team actually uses.",
+      "menuName": "ERP and CRM"
+    }
   },
   "assistant": {
     "title": "What should your business stop doing by hand?",
@@ -1751,6 +2035,328 @@
     "closing": {
       "title": "Make your next campaign the easy one.",
       "text": "Talk it through with Ray. You leave with a clear first step, whether or not we work together."
+    }
+  },
+  "hubs": {
+    "chrome": {
+      "home": "Home",
+      "services": "Services",
+      "eyebrowSuffix": "hub",
+      "trust": "Vendor neutral · No commissions · Owner-led by Ray Rasouli",
+      "askHero": "Ask the assistant",
+      "spokesKicker": "Ways in",
+      "spokesTitle": "What {hub} covers",
+      "spokesIntro": "Each page answers one problem in full. Start with the one that sounds like your week.",
+      "readPage": "Read the page",
+      "askAbout": "Ask about it",
+      "chooserTitle": "Which one fits you?",
+      "chooserIntro": "Pick what hurts most. We point you to one page, not all of them.",
+      "startHere": "Start here",
+      "askFits": "Ask if it fits us",
+      "insightsTitle": "Related insights",
+      "faqTitle": "Common questions",
+      "onThisPage": "On this page",
+      "sideTitle": "Not sure which page fits?",
+      "sideText": "Tell Ray how work moves today. He sends back what to do first.",
+      "sideNote": "With Ray Rasouli. No obligation.",
+      "chat": {
+        "label": "Ask about {hub}",
+        "note": "Answers from this hub and our method. Informs only",
+        "greeting": "Hi. Tell me what is slowing your team down and I will point you to the right page.",
+        "placeholder": "Describe the problem in a sentence",
+        "send": "Send",
+        "typing": "Assistant is typing",
+        "restart": "Start over",
+        "openMatch": "That sounds like {page}.",
+        "openGeneric": "Thanks, that helps.",
+        "q1": "Which systems or tools are involved today?",
+        "q2": "When would you like this fixed?",
+        "briefIntro": "Here is a short brief. You can send it to Ray before your call.",
+        "briefLabel": "Your brief",
+        "needLabel": "What you need",
+        "setupLabel": "Systems today",
+        "whenLabel": "Timing",
+        "pageLabel": "Page to read",
+        "talkToRay": "Send this to Ray",
+        "bookLabel": "Pick a time for a 30-minute call with Ray.",
+        "consentLabel": "Send this chat to Ray with my booking. Kept up to 3 years, never sold.",
+        "chips": [
+          "Data gets typed twice",
+          "We are choosing new software",
+          "A project is stuck"
+        ],
+        "when": [
+          "This month",
+          "This quarter",
+          "Just exploring"
+        ]
+      },
+      "spoke": {
+        "problemTitle": "Does this sound familiar?",
+        "whatWeDoTitle": "What we do",
+        "howTitle": "How it runs",
+        "keepTitle": "What you keep",
+        "outcomesTitle": "What changes",
+        "govTitle": "For government buyers",
+        "govText": "On government portals this work is listed under the category {category}.",
+        "govCodes": "Category codes: on request.",
+        "govLink": "How to buy from Awesoon",
+        "relatedTitle": "Related pages",
+        "partOf": "Part of {hub}",
+        "platformsTitle": "Platforms we work with",
+        "platformsSubtitle": "We are platform neutral. Tap any logo to see where it fits best.",
+        "platformsTapHint": "Tap a platform above to learn when it is the right fit.",
+        "closingTitle": "Talk it through with Ray",
+        "closingText": "A 30-minute discovery call. You leave with a clear first step, whether or not we work together.",
+        "sharedHow": [
+          "A 30-minute discovery call with Ray about how the work runs today",
+          "A short written plan of what we will change first and why",
+          "The work, in steps you review, then a handover your team can run"
+        ],
+        "sharedKeep": [
+          "Documentation written for your team",
+          "Accounts, settings and code in your name",
+          "A clear record of every change we made"
+        ],
+        "sharedFaq": [
+          {
+            "q": "Who does the work?",
+            "a": "Ray Rasouli leads every engagement himself. When a specialist is needed, we tell you who and why before they start."
+          },
+          {
+            "q": "Do you take commissions from software vendors?",
+            "a": "No. Awesoon is vendor neutral and takes no commissions or referral fees, so our advice is about what fits you."
+          },
+          {
+            "q": "What does it cost?",
+            "a": "It depends on scope. After the discovery call you get a written scope and a quote before any work starts."
+          }
+        ],
+        "includesQ": "What does {title} include?"
+      },
+      "index": {
+        "title": "Services",
+        "metaTitle": "Services: every way Awesoon helps",
+        "metaDescription": "Every Awesoon service, grouped into hubs: automation, software development, ERP and CRM, consulting, design, advertising, support, games and public sector.",
+        "intro": "Pick the area that matches your problem. Each hub explains it in plain words and links to one page per service.",
+        "open": "Open the hub",
+        "extra": {
+          "design": {
+            "name": "Design",
+            "line": "Brand, interface and design systems your team can reuse."
+          },
+          "advertising": {
+            "name": "Advertising",
+            "line": "Campaigns, production and banner advertising with clear reporting."
+          },
+          "support": {
+            "name": "Support",
+            "line": "Ongoing support for systems, ERP, CRM and ecommerce."
+          },
+          "games": {
+            "name": "Games",
+            "line": "Our own mobile games, plus game and app maintenance."
+          },
+          "public-sector": {
+            "name": "Public sector",
+            "line": "How government buyers find and buy from Awesoon."
+          }
+        }
+      }
+    },
+    "hub": {
+      "automation": {
+        "name": "Automation and integration",
+        "metaTitle": "Business automation and system integration services",
+        "metaDescription": "Business automation connects your store, ERP, CRM and accounting so data is entered once and flows on its own. Vendor neutral, owner-led, documented.",
+        "title": "Automation and integration: your systems hand work to each other.",
+        "answer": "Business automation connects your store, ERP, CRM and accounting so data is entered once and flows on its own. People step in only where a judgment call is needed, and every flow is documented so your team owns it.",
+        "choose": [
+          {
+            "spoke": "system-integration",
+            "label": "We type the same data into two systems"
+          },
+          {
+            "spoke": "spreadsheet-operations",
+            "label": "A spreadsheet runs a key process"
+          },
+          {
+            "spoke": "mobile-warehouse-barcoding",
+            "label": "Warehouse counts are never right"
+          },
+          {
+            "spoke": "ai-operations",
+            "label": "We want AI but do not know where it fits"
+          },
+          {
+            "spoke": "database-management-service",
+            "label": "Nobody looks after our database"
+          }
+        ],
+        "faq": [
+          {
+            "q": "What is business automation?",
+            "a": "It is having your systems pass data and tasks to each other, so people stop re-typing and chasing. A person still approves anything that needs judgment."
+          },
+          {
+            "q": "Which systems can you connect?",
+            "a": "Most business tools with an API or export, such as Shopify, NetSuite, QuickBooks, HubSpot and Salesforce. We tell you on the discovery call if something cannot be connected cleanly."
+          },
+          {
+            "q": "What happens when a connection fails?",
+            "a": "Every flow we build logs its work and alerts a named person when something fails, with a written fix-it guide."
+          },
+          {
+            "q": "Do we own the automations?",
+            "a": "Yes. They run in accounts you own and are documented so your team or another provider can take over."
+          }
+        ],
+        "closingTitle": "Start with the flow your team re-keys most.",
+        "closingText": "A 30-minute discovery call with Ray, then a clear list of what to connect first and why. No obligation."
+      },
+      "software-development": {
+        "name": "Software development",
+        "metaTitle": "Custom business software development services",
+        "metaDescription": "Custom software development for businesses: apps, APIs, databases and interfaces built around how your team works, with the code in your name.",
+        "title": "Software development: custom tools for the work products cannot do.",
+        "answer": "Custom software development builds the apps, APIs, databases and screens your business needs when no product on the market fits. Awesoon builds them in small steps you can see, and you own the code, the accounts and the documentation.",
+        "choose": [
+          {
+            "spoke": "application-programming",
+            "label": "We need a tool no product offers"
+          },
+          {
+            "spoke": "database-design",
+            "label": "Our reports never agree"
+          },
+          {
+            "spoke": "client-server-programming",
+            "label": "Our app slows down or breaks under load"
+          },
+          {
+            "spoke": "custom-api-development",
+            "label": "Partners need to connect to our data"
+          },
+          {
+            "spoke": "interface-development",
+            "label": "Our screens are hard to use"
+          }
+        ],
+        "faq": [
+          {
+            "q": "Should we build custom software or buy a product?",
+            "a": "Buy when a product already does the job well. Build only when nothing fits, and we will say so if a product would do."
+          },
+          {
+            "q": "Who owns the code?",
+            "a": "You do. It lives in your own repository from the first day, with hosting accounts in your name."
+          },
+          {
+            "q": "How do you keep a build on track?",
+            "a": "We agree a short written scope, build in small steps you review, and change course early when something does not fit."
+          },
+          {
+            "q": "Can you take over an existing app?",
+            "a": "Yes. We start with a written review of the code and tell you what we find before suggesting changes."
+          }
+        ],
+        "closingTitle": "Describe the tool you wish you had.",
+        "closingText": "A 30-minute discovery call with Ray, then a plain answer on whether to build, buy or connect. No obligation."
+      },
+      "erp-crm": {
+        "name": "ERP and CRM",
+        "metaTitle": "ERP and CRM implementation and setup services",
+        "metaDescription": "ERP and CRM implementation, setup and custom programming for growing businesses. Vendor neutral, no commissions, owner-led by Ray Rasouli.",
+        "title": "ERP and CRM: systems that match how you actually work.",
+        "answer": "ERP and CRM services choose, set up and extend the systems that run your orders, inventory, finance and sales. Awesoon is vendor neutral and takes no commissions, so the system fits your operations instead of the other way around.",
+        "choose": [
+          {
+            "spoke": "erp-implementation",
+            "label": "We are moving to a new ERP"
+          },
+          {
+            "spoke": "crm-implementation",
+            "label": "We need a CRM project done right"
+          },
+          {
+            "spoke": "crm-setup",
+            "label": "We bought a CRM and nobody uses it"
+          },
+          {
+            "spoke": "erp-database-applications",
+            "label": "Our ERP needs custom pieces"
+          }
+        ],
+        "faq": [
+          {
+            "q": "Which ERP or CRM should we choose?",
+            "a": "It depends on your size, processes and other systems. Because we take no commissions, we compare options on fit alone."
+          },
+          {
+            "q": "Why do ERP projects fail?",
+            "a": "Most fail on process and data, not software: unclear requirements, messy data and no owner. We start there."
+          },
+          {
+            "q": "Do you support the system after go-live?",
+            "a": "Yes. Our ERP support and CRM support pages cover ongoing help after launch."
+          },
+          {
+            "q": "Can you fix a system someone else set up?",
+            "a": "Yes. We review what is there, write down what we find and fix the parts that matter most first."
+          }
+        ],
+        "closingTitle": "Get the system to fit the business.",
+        "closingText": "A 30-minute discovery call with Ray about your ERP or CRM, then a clear first step. No obligation."
+      },
+      "consulting": {
+        "name": "Consulting and IT experts",
+        "metaTitle": "IT consulting and expert services for growing businesses",
+        "metaDescription": "IT consulting for growing businesses: systems health checks, software selection, project rescue, process foundations and IT expert advice. Vendor neutral.",
+        "title": "Consulting and IT experts: clear answers before you spend.",
+        "answer": "IT consulting gives you a senior, vendor-neutral view of your systems before you buy, build or fix anything. Awesoon reviews how work really runs, writes down what we find and tells you plainly what to do first.",
+        "choose": [
+          {
+            "spoke": "systems-audit",
+            "label": "We do not know where to start"
+          },
+          {
+            "spoke": "software-selection",
+            "label": "We are choosing software or a vendor"
+          },
+          {
+            "spoke": "project-management",
+            "label": "A project is late or stuck"
+          },
+          {
+            "spoke": "ops-outgrown-tools",
+            "label": "We grew and our tools did not"
+          },
+          {
+            "spoke": "it-expert-services",
+            "label": "We need an expert opinion"
+          }
+        ],
+        "faq": [
+          {
+            "q": "What does an IT consultant do for a small or mid-sized business?",
+            "a": "We review your systems and processes, compare options, and give you a written plan. You can act on it with us or anyone else."
+          },
+          {
+            "q": "Are you tied to any software vendor?",
+            "a": "No. We take no commissions or referral fees, so our advice is about fit."
+          },
+          {
+            "q": "What is the free systems health check?",
+            "a": "A short review of how your systems and processes fit together, with a written list of what to fix first."
+          },
+          {
+            "q": "Can you help us hire developers?",
+            "a": "Yes, through a vetted staffing partner. See the permanent developers page for how that works."
+          }
+        ],
+        "closingTitle": "Get a clear first step before you spend.",
+        "closingText": "A 30-minute discovery call with Ray. You leave knowing what to fix first. No obligation."
+      }
     }
   },
   "glossaryPage": {
