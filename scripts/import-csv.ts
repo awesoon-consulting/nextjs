@@ -5,7 +5,8 @@ import { and, eq, getTableColumns } from 'drizzle-orm'
 import { getDb } from '../src/lib/ingest/db/client'
 import { ingestRuns } from '../src/lib/ingest/db/schema'
 import { parseCsv } from '../src/lib/ingest/parse'
-import { DATA_DIR, TABLES, upsert } from '../src/lib/ingest/sink'
+import { CONNECTORS } from '../src/lib/ingest/registry'
+import { DATA_DIR, TABLES, upsert, upsertSource } from '../src/lib/ingest/sink'
 import type { Output, Rows } from '../src/lib/ingest/types'
 
 /* eslint-disable @typescript-eslint/no-explicit-any */
@@ -35,6 +36,8 @@ async function main() {
     console.log('DATABASE_URL is not set; nothing to import.')
     process.exit(1)
   }
+  for (const c of CONNECTORS) await upsertSource(c)
+  console.log(`sources: ${CONNECTORS.length} rows`)
   const byFile = Object.fromEntries(Object.entries(TABLES).map(([k, v]) => [`${v.file}.csv`, k as keyof Rows]))
   for (const source of await readdir(DATA_DIR)) {
     const latest = path.join(DATA_DIR, source, 'latest')

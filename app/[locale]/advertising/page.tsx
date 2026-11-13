@@ -6,6 +6,7 @@ import FormatsDemo from '@/src/components/sections/advertising/FormatsDemo'
 import AdReporting from '@/src/components/sections/advertising/AdReporting'
 import AdHow from '@/src/components/sections/advertising/AdHow'
 import { AdFaq, AdKeep } from '@/src/components/sections/advertising/AdKeepFaq'
+import RelatedSpokes from '@/src/components/hubs/RelatedSpokes'
 import FounderBand from '@/src/components/sections/FounderBand'
 import ClosingBand from '@/src/components/sections/ClosingBand'
 import { siteConfig } from '@/src/config/site'
@@ -71,6 +72,7 @@ export default async function Page({ params }: { params: Promise<{ locale: strin
       <AdHow />
       <AdKeep />
       <AdFaq />
+      <RelatedSpokes slugs={['crm-setup', 'system-integration', 'interface-development']} locale={locale} />
       <FounderBand />
       <ClosingBand title={t('closing.title')} text={t('closing.text')} />
     </>

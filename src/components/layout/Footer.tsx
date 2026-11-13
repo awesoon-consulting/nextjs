@@ -2,18 +2,19 @@ import Link from 'next/link'
 import Image from 'next/image'
 import { useTranslations, useLocale } from 'next-intl'
 import { siteConfig } from '@/src/config/site'
+import { spokePath } from '@/src/data/hub-map'
 import TrackedEmailLink from '@/src/components/ui/TrackedEmailLink'
 import LanguageSwitcher from './LanguageSwitcher'
 
 const solutionLabel = new Map<string, string>(
-  siteConfig.footer.solutionLinks.map((l) => [l.href.replace('/solutions/', ''), l.labelKey]),
+  siteConfig.footer.solutionLinks.map((l) => [l.slug, l.labelKey]),
 )
 
 const heading = 'mb-4 text-sm font-semibold text-text-primary dark:text-white'
 const link =
   'rounded text-sm text-text-secondary transition-colors hover:text-text-primary focus:outline-none focus-visible:ring-2 focus-visible:ring-accent underline-offset-4 hover:underline dark:text-neutral-400 dark:hover:text-[#FAFAFA]'
 
-const FOOTER_COLUMNS = [['consultation'], ['programming', 'design'], ['automation'], ['advertising']] as const
+const FOOTER_COLUMNS = [['consultation'], ['programming', 'design'], ['automation', 'erpCrm'], ['advertising']] as const
 
 function Group({ title, titleHref, items }: { title: string; titleHref?: string; items: { href: string; label: string }[] }) {
   const list = (
@@ -100,9 +101,10 @@ export default function Footer() {
                     title={t(`serviceLines.${s.key}.menuName`)}
                     titleHref={localHref(s.href)}
                     items={
-                      s.solutions.length > 0
-                        ? s.solutions.map((slug) => ({ href: localHref(`/solutions/${slug}`), label: t(solutionLabel.get(slug) ?? '') }))
-                        : s.extras.map((x) => ({ href: localHref(x.href), label: t(x.labelKey) }))
+                      [
+                        ...s.solutions.map((slug) => ({ href: localHref(spokePath(slug)), label: t(solutionLabel.get(slug) ?? '') })),
+                        ...s.extras.map((x) => ({ href: localHref(x.href), label: t(x.labelKey) })),
+                      ]
                     }
                   />
                 ))}
