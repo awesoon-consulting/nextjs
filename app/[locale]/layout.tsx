@@ -124,7 +124,7 @@ export const viewport: Viewport = {
 }
 
 // Cache rendered pages for 1 hour, serve stale while revalidating in background
-export const revalidate = 3600
+export const revalidate = 86400
 
 export function generateStaticParams() {
   return siteConfig.locales.map((locale) => ({ locale }))
