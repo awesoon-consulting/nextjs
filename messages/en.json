@@ -2536,5 +2536,213 @@
     },
     "disclaimer": "A scripted guide for now. It does not store what you type.",
     "greetCompareAny": "Tell me about your setup: users, warehouses, entities and the tools you run today. I will say what to weigh."
+  },
+  "costPlatform": {
+    "common": {
+      "home": "Home",
+      "soonTitle": "Data loading soon",
+      "soonText": "This page reads public data that refreshes every day. The data store is being connected right now, so the figures are not here yet. Check back shortly, or talk to Ray Rasouli about your own numbers.",
+      "bookCall": "Book a 30-minute discovery call",
+      "source": "Source",
+      "licence": "Licence",
+      "lastUpdated": "Last updated",
+      "period": "Reference period",
+      "notYet": "not yet recorded",
+      "fromSpec": "From public spec",
+      "founderLine": "Ray Rasouli, founder of Awesoon, reads every message himself."
+    },
+    "costIndex": {
+      "metaTitle": "The real cost of manual work, by region",
+      "metaDescription": "Public wage data by region and occupation, with a calculator that shows your own yearly cost of manual order entry. Sources and licences on every page.",
+      "breadcrumb": "Cost of manual work",
+      "eyebrow": "Cost of manual work",
+      "title": "The real cost of manual work, by region",
+      "intro": "Most teams never add up the hours spent re-typing orders from email, PDFs and phone calls. Each page below uses official wage data for the place you work, so the estimate reflects local pay, not a national guess.",
+      "framing1": "Pick your region to see the median wage for the jobs that usually do order entry, billing and bookkeeping, and a calculator already filled in with those wages. You change the team size and hours to match your own week, and the page shows what that manual work costs you each year. The figure is your own labour cost. It is never a price from Awesoon, and nobody here will quote you one on these pages.",
+      "framing2": "Every figure comes from a national statistics office: the Bureau of Labor Statistics in the United States, Statistics Canada, the Australian Bureau of Statistics, and the Office for National Statistics in the United Kingdom. Each region page names its source, licence and reference period. A region only appears in search once it has wages for at least two occupations, so thin pages stay out of the way until the data fills in.",
+      "regions": "{count, plural, one {# region} other {# regions}}",
+      "occupations": "{count, plural, =0 {wage data coming} one {# occupation} other {# occupations}}",
+      "indexedCount": "{count, plural, one {# region page has enough data to be listed in search.} other {# region pages have enough data to be listed in search.}}",
+      "countries": {
+        "ca": "Canada",
+        "us": "United States",
+        "gb": "United Kingdom",
+        "au": "Australia"
+      }
+    },
+    "cost": {
+      "metaTitle": "The real cost of manual order entry in {region}",
+      "metaDescription": "{region} wages for order entry, billing and bookkeeping work, with a calculator for your own yearly cost. Source: {source}.",
+      "title": "The real cost of manual order entry in {region}",
+      "intro": "Most teams never add up the hours spent re-typing orders from email, PDFs and phone calls. This page uses {region} wage data for the jobs that usually do that work, so the estimate reflects local pay, not a national average. Change the inputs to match your team. The figure is your own labour cost. It is not a price from Awesoon.",
+      "comingTitle": "Wage data coming for {region}",
+      "comingText": "We use the Office for National Statistics earnings survey for UK regions. That feed is not loading yet, so this page has no wages to show. It stays out of search until it does. The calculator still works if you type your own hourly wage.",
+      "thinNote": "This region has wages for one occupation so far, so this page is not listed in search yet. The figures shown are real.",
+      "tableTitle": "{region} wages for order entry work",
+      "tableHint": "Pick a row to use it in your estimate.",
+      "colOccupation": "Occupation",
+      "colCode": "Code",
+      "colMedian": "Median",
+      "colMean": "Mean",
+      "use": "Use",
+      "inUse": "In use",
+      "unit": {
+        "hourly": "an hour",
+        "weekly": "a week",
+        "annual": "a year"
+      },
+      "method": {
+        "title": "Method and source",
+        "formulaTitle": "The formula",
+        "formula": "People × hours a week × working weeks × hourly wage × (1 + employer costs).",
+        "wageTitle": "The wage",
+        "wage": "The median wage for the occupation in {region} from the latest release, or the mean where only a mean is published. Annual and weekly figures become hourly using the full-time hours you set.",
+        "oncostTitle": "Employer costs",
+        "oncost": "Payroll taxes, benefits and paid leave on top of wages. 20% is a starting point; use your own.",
+        "leavesOutTitle": "What it leaves out",
+        "leavesOut": "Fixing errors, late orders, overtime and the cost of a customer who leaves after a wrong shipment. The real cost is usually higher than this."
+      },
+      "framing": "Manual order entry hides in plain sight. It is spread across a few people, a few hours each, and it never shows up as one line in the budget. Adding it up is the first step to deciding whether it is worth fixing. Some teams find the number is small and move on. Others find it pays for an integration within a year. Either answer is useful, and both come from your own inputs on this page, not from a sales pitch.",
+      "compareTitle": "The same team in neighbouring regions",
+      "compareHint": "Your inputs, with each region’s wage for the same job.",
+      "compareNone": "No neighbouring region has wage data for this job yet.",
+      "otherRegions": "More regions",
+      "ctaTitle": "Want the hours back?",
+      "ctaText": "Ray Rasouli looks at how orders reach your system today on a 30-minute call, and tells you plainly whether automating it is worth it.",
+      "chartTitle": "Yearly cost of your inputs, by region",
+      "chartNote": "Same team, same hours, each region’s published wage for the selected job."
+    },
+    "calc": {
+      "title": "Your estimate",
+      "occupation": "Job doing the work",
+      "people": "People doing order entry",
+      "hours": "Hours each, per week",
+      "weeks": "Working weeks a year",
+      "oncost": "Employer costs on top of wages",
+      "fullTime": "Full-time hours a week",
+      "wage": "Hourly wage",
+      "yearly": "Your manual order entry, per year",
+      "monthly": "Per month",
+      "hoursYear": "Hours a year",
+      "fte": "Full-time people",
+      "basis": "At the {region} {stat} of {rate} an hour for {occupation}.",
+      "basisOwn": "At the hourly wage you entered.",
+      "median": "median",
+      "mean": "mean",
+      "note": "This is your own labour cost. Awesoon does not quote prices here."
+    },
+    "integrationsIndex": {
+      "metaTitle": "Platform integrations, side by side",
+      "metaDescription": "Connect two business platforms: auth, webhooks and API facts from each public spec, what usually breaks, and a sample flow.",
+      "breadcrumb": "Integrations",
+      "eyebrow": "Integrations",
+      "title": "Platform integrations, side by side",
+      "intro": "Pick two tools you want talking to each other. Each page puts both public API specs next to each other, lists what usually breaks between tools of that kind, and sketches a clean flow.",
+      "framing1": "We only build a page when both platforms have a public OpenAPI spec in the APIs.guru directory that is genuinely that product, and when the platform is one we already work with. That rule keeps the facts honest: every auth method and webhook line on a pair page is read from the spec itself, and is labelled that way. Where a spec says nothing, the page says so instead of guessing.",
+      "framing2": "We earn no commissions from any platform and rank no tools. The pages exist to help you plan a sync before you build it, or understand why one you already have keeps failing. When you want a second opinion, Ray Rasouli will look at your setup on a short call.",
+      "qualify": "{pairs, plural, one {# pair qualifies} other {# pairs qualify}} from {platforms, plural, one {# platform} other {# platforms}} with a matching public spec, out of {specs} specs checked.",
+      "facts": "Facts for both sides"
+    },
+    "integration": {
+      "metaTitle": "Connect {a} to {b}",
+      "metaDescription": "{a} and {b} API facts from each public spec, side by side: auth and webhooks, what usually breaks, and a sample flow.",
+      "title": "Connect {a} to {b}",
+      "intro": "Below are both APIs’ public facts side by side, what usually breaks between a {catA} and a {catB}, and how a clean flow looks. Facts come from each vendor’s published OpenAPI spec through the APIs.guru directory and are checked on every refresh. We earn no commissions from either platform and rank no tools.",
+      "tableTitle": "Both APIs, side by side",
+      "fact": "Fact",
+      "auth": "Authentication",
+      "webhooks": "Webhooks",
+      "webhooksYes": "Declared in spec",
+      "webhooksNo": "None declared in spec",
+      "authNone": "None declared in spec",
+      "objects": "Objects",
+      "limits": "Rate limits",
+      "readSpec": "Read the spec for its objects",
+      "limitsNote": "Not in the spec; see the vendor’s docs",
+      "version": "Spec version",
+      "spec": "Spec file",
+      "open": "Open",
+      "authNames": {
+        "oauth2": "OAuth 2.0",
+        "apiKey": "API key",
+        "http-basic": "HTTP basic",
+        "http-bearer": "Bearer token",
+        "openIdConnect": "OpenID Connect"
+      },
+      "categories": {
+        "ai": "AI model API",
+        "automation": "automation platform",
+        "spreadsheet": "spreadsheet",
+        "workManagement": "work management tool"
+      },
+      "flowTitle": "Sample flow",
+      "flowLayer": "Integration layer",
+      "flowLayerSub": "Maps fields, logs every record, alerts on failure",
+      "flowRetry": "Retry with backoff when limits are hit",
+      "flowNote": "Illustrative flow, not a specific build. Your fields and rules decide the real one.",
+      "breaksTitle": "What usually breaks",
+      "breaksIntro": "These are the failures that show up most with each kind of tool. They are written per category, not claimed about {a} or {b} specifically.",
+      "breaks": {
+        "ai": [
+          "Answers vary between runs, so anything written back needs a check or a fixed format.",
+          "Long inputs hit the model’s size limit and get cut off without an obvious error.",
+          "Usage is billed per call, so a loop that retries forever turns into a surprise invoice."
+        ],
+        "automation": [
+          "A step fails quietly and the rest of the run carries on with empty fields.",
+          "Task or run limits on the plan stop the flow partway through a busy day.",
+          "Nobody owns the flow, so a renamed field breaks it for weeks before anyone notices."
+        ],
+        "spreadsheet": [
+          "Someone inserts a column or renames a tab and every mapping after it shifts.",
+          "Two people edit the same rows while a sync writes to them, and changes are lost.",
+          "Dates, currencies and leading zeros change format on the way in or out."
+        ],
+        "workManagement": [
+          "Custom fields differ between projects, so a mapping that works in one fails in another.",
+          "Status names change when a team edits its workflow, and synced items get stuck.",
+          "Comments and attachments sync twice, or not at all, after an edit on either side."
+        ]
+      },
+      "promptTitle": "Ask your assistant about your setup",
+      "promptHint": "Copy this into the AI assistant you already use. It never quotes a price; Ray does scope himself.",
+      "prompt": "I want to connect {a} to {b}. {a} is a {catA} and {b} is a {catB}. Per their public API specs, {a} supports {authA} and {b} supports {authB}. Ask me which records need to move, in which direction, how often, and who fixes a failed record. Then list the fields I need to map, where duplicates could appear, and what I should log so failures are easy to find.",
+      "copy": "Copy prompt",
+      "copied": "Copied",
+      "relatedTitle": "Related pairs",
+      "ctaTitle": "Have this sync already, and it breaks?",
+      "ctaText": "Ray Rasouli looks at your current setup on a 30-minute call and tells you where it fails.",
+      "introSame": "Below are both APIs’ public facts side by side, what usually breaks between two {catA}s, and how a clean flow looks. Facts come from each vendor’s published OpenAPI spec through the APIs.guru directory and are checked on every refresh. We earn no commissions from either platform and rank no tools."
+    },
+    "calendar": {
+      "metaTitle": "API change calendar",
+      "metaDescription": "Recent and upcoming API changes and status incidents for major platforms, each with its date, summary and a link to the vendor’s own notice.",
+      "breadcrumb": "API change calendar",
+      "eyebrow": "Support",
+      "title": "API change calendar",
+      "intro": "Platforms change their APIs and have outages on their own schedule. When a change lands, integrations built on the old behaviour can stop. This calendar lists recent and upcoming changes from vendor changelogs and status feeds, each with its date, a summary and a link to the vendor’s own notice.",
+      "framing1": "Changelog entries tell you what a vendor shipped, deprecated or plans to retire. Status entries tell you when a service had an incident, which helps explain a sync that failed on a given day. We quote each vendor’s own title and link to the original, so you can read the full notice before you act. Nothing here is rewritten or scored.",
+      "framing2": "The list refreshes every day from public feeds. Some platforms publish no feed we can read, and they are left out rather than filled in by hand. If a change on this list touches a system you rely on and you are not sure what it means for you, Ray Rasouli can look at it with you on a short call.",
+      "filter": "Filter by platform",
+      "all": "All platforms",
+      "upcoming": "Upcoming",
+      "upcomingNone": "No dated upcoming changes in the feeds right now. Retirements appear here as soon as a vendor posts one with a date.",
+      "recent": "Last {days} days",
+      "kind": {
+        "status": "Status",
+        "changelog": "Changelog"
+      },
+      "read": "Read the notice",
+      "count": "{count, plural, one {# change} other {# changes}}",
+      "subTitle": "Get change alerts",
+      "subText": "A short email when a platform you pick posts a change. Until our signup store is live, this opens an email to Ray with your request.",
+      "subConsent": "Yes, email me API change alerts. I can unsubscribe any time. See the",
+      "privacy": "privacy notice",
+      "subButton": "Request alerts by email",
+      "subNeedConsent": "Tick the box to continue.",
+      "mailSubject": "API change alerts",
+      "mailBody": "Please send me API change alerts for: {platforms}",
+      "more": "Show {count} more"
+    }
   }
 }

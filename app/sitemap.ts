@@ -5,6 +5,7 @@ import { getAllSupportSlugs } from '@/src/data/support'
 import { getAllInsightSlugs } from '@/src/data/insights'
 import { getAllGameSlugs } from '@/src/data/games'
 import { getAllCaseStudies } from '@/src/data/work'
+import { costPlatformSitemap } from '@/src/lib/cost-platform/sitemap'
 import { procurementSitemap } from '@/src/lib/procurement/sitemap'
 import { getAllTermSlugs } from '@/src/data/glossary'
 import { getAllComparisonSlugs } from '@/src/data/compare'
@@ -136,6 +137,8 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
       })
     }
   }
+
+  entries.push(...(await costPlatformSitemap(baseUrl, locales)))
 
   // AI-facing files
   entries.push({
