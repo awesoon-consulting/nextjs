@@ -86,8 +86,8 @@ function getPreSelectedChallenges(): string[] {
   if (!referrer) return []
   try {
     const url = new URL(referrer)
-    const match = url.pathname.match(/\/solutions\/([^/]+)/)
-    if (match) return SOLUTION_CHALLENGE_MAP[match[1]] ?? []
+    const match = url.pathname.match(/\/(?:solutions|automation|software-development|erp-crm|consulting)\/([^/]+)/)
+    if (match) return SOLUTION_CHALLENGE_MAP[match[1] === 'software-selection' ? 'vendor-management' : match[1]] ?? []
   } catch { /* ignore */ }
   return []
 }

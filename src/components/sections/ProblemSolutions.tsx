@@ -7,6 +7,7 @@
  */
 
 import Link from 'next/link'
+import { spokePath } from '@/src/data/hub-map'
 import { useTranslations, useLocale } from 'next-intl'
 import AnimateIn from '@/src/components/ui/AnimateIn'
 
@@ -73,7 +74,7 @@ export default function ProblemSolutions() {
                       <div className="flex items-center gap-2">
                         <div className="w-6 h-0.5 bg-accent dark:bg-white/30 flex-shrink-0" aria-hidden="true" />
                         <Link
-                          href={`/${locale}/solutions/${t(`items.${idx}.slug`)}`}
+                          href={`/${locale}${spokePath(t(`items.${idx}.slug`))}`}
                           className="inline-flex items-center gap-1 rounded text-sm font-semibold text-accent transition-colors hover:text-accent-dark focus:outline-none focus-visible:ring-2 focus-visible:ring-accent dark:text-neutral-200 dark:hover:text-white"
                         >
                           {t(`items.${idx}.solution`)}

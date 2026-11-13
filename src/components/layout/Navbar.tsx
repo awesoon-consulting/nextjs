@@ -6,14 +6,15 @@ import Image from 'next/image'
 import { useTranslations, useLocale } from 'next-intl'
 import { usePathname } from 'next/navigation'
 import { siteConfig } from '@/src/config/site'
+import { spokePath } from '@/src/data/hub-map'
 import LanguageSwitcher from './LanguageSwitcher'
 import ServiceIcon from '@/src/components/ui/ServiceIcon'
 
 const solutionLabel = new Map<string, string>(
-  siteConfig.footer.solutionLinks.map((l) => [l.href.replace('/solutions/', ''), l.labelKey]),
+  siteConfig.footer.solutionLinks.map((l) => [l.slug, l.labelKey]),
 )
 
-const MEGA_COLUMNS = [['consultation'], ['programming'], ['automation'], ['design', 'advertising']] as const
+const MEGA_COLUMNS = [['consultation'], ['programming'], ['automation', 'erpCrm'], ['design', 'advertising']] as const
 
 const megaLink =
   'text-sm text-text-secondary transition-colors hover:text-text-primary dark:text-neutral-300 dark:hover:text-[#FAFAFA]'
@@ -154,7 +155,7 @@ export default function Navbar() {
                           <ul className="mt-4 space-y-2">
                             {s.solutions.map((slug) => (
                               <li key={slug}>
-                                <Link href={localHref(`/solutions/${slug}`)} className={megaLink}>
+                                <Link href={localHref(spokePath(slug))} className={megaLink}>
                                   {t(solutionLabel.get(slug) ?? '')}
                                 </Link>
                               </li>
@@ -276,7 +277,7 @@ export default function Navbar() {
                 <ul className="space-y-1 pb-3">
                   {s.solutions.map((slug) => (
                     <li key={slug}>
-                      <Link href={localHref(`/solutions/${slug}`)} onClick={() => setIsMobileMenuOpen(false)} className="block rounded-lg px-2 py-2 text-sm text-text-secondary dark:text-neutral-300">
+                      <Link href={localHref(spokePath(slug))} onClick={() => setIsMobileMenuOpen(false)} className="block rounded-lg px-2 py-2 text-sm text-text-secondary dark:text-neutral-300">
                         {t(solutionLabel.get(slug) ?? '')}
                       </Link>
                     </li>
