@@ -6,6 +6,7 @@ import TokenDemo from '@/src/components/design/TokenDemo'
 import DesignProof from '@/src/components/design/DesignProof'
 import DesignProcess from '@/src/components/design/DesignProcess'
 import DesignKeepFaq from '@/src/components/design/DesignKeepFaq'
+import RelatedSpokes from '@/src/components/hubs/RelatedSpokes'
 import FounderBand from '@/src/components/sections/FounderBand'
 import ClosingBand from '@/src/components/sections/ClosingBand'
 import { siteConfig } from '@/src/config/site'
@@ -68,6 +69,7 @@ export default async function DesignPage({ params }: { params: Promise<{ locale:
       <DesignProof locale={locale} />
       <DesignProcess />
       <DesignKeepFaq locale={locale} />
+      <RelatedSpokes slugs={['interface-development', 'application-programming', 'crm-setup']} locale={locale} />
       <FounderBand />
       <ClosingBand />
     </div>

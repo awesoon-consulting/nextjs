@@ -1,4 +1,5 @@
 import type { Metadata } from 'next'
+import { spokePath } from '@/src/data/hub-map'
 import { notFound } from 'next/navigation'
 import Link from 'next/link'
 import { getTranslations, setRequestLocale } from 'next-intl/server'
@@ -201,7 +202,7 @@ export default async function SupportDetailPage({ params }: SupportDetailPagePro
                         return (
                           <Link
                             key={relSlug}
-                            href={`/${locale}/solutions/${relSlug}`}
+                            href={`/${locale}${spokePath(relSlug)}`}
                             className="block p-3 rounded-lg border border-white/[0.08] hover:border-white/[0.16] hover:bg-[#151C2B] transition-colors text-sm font-medium text-text-secondary hover:text-[#FAFAFA] focus:outline-none focus-visible:ring-2 focus-visible:ring-secondary"
                           >
                             {t(related.titleKey as Parameters<typeof t>[0])}
