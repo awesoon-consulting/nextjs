@@ -149,9 +149,9 @@ export default async function PrivacyPage({ params }: { params: Promise<{ locale
                 4. How We Store Your Data
               </h2>
               <p>
-                Contact form submissions are stored in a Google Sheets spreadsheet accessible only
-                to authorized {siteConfig.name} team members. Google Sheets data is stored on
-                Google&apos;s servers, which are SOC 2 and ISO 27001 certified.
+                Contact form submissions are stored in a Supabase database accessible only to
+                authorized {siteConfig.name} team members. Supabase stores data on its own servers,
+                which are SOC 2 certified.
               </p>
               <p className="mt-3">
                 We do not use a third-party CRM or marketing automation platform. Your data is not
@@ -266,14 +266,14 @@ export default async function PrivacyPage({ params }: { params: Promise<{ locale
                   .
                 </li>
                 <li>
-                  <strong>Google Sheets</strong>, Used to store contact form submissions. Subject to{' '}
+                  <strong>Supabase</strong>, Used to store contact form submissions. Subject to{' '}
                   <a
-                    href="https://policies.google.com/privacy"
+                    href="https://supabase.com/privacy"
                     target="_blank"
                     rel="noopener noreferrer"
                     className={linkClass}
                   >
-                    Google&apos;s Privacy Policy
+                    Supabase&apos;s Privacy Policy
                   </a>
                   .
                 </li>

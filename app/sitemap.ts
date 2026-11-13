@@ -1,18 +1,21 @@
 import { MetadataRoute } from 'next'
 import { siteConfig } from '@/src/config/site'
-import { getAllSolutionSlugs } from '@/src/data/solutions'
+import { HUB_IDS, HUB_SPOKES, spokePath } from '@/src/data/hub-map'
 import { getAllSupportSlugs } from '@/src/data/support'
 import { getAllInsightSlugs } from '@/src/data/insights'
 import { getAllGameSlugs } from '@/src/data/games'
 import { getAllCaseStudies } from '@/src/data/work'
 import { procurementSitemap } from '@/src/lib/procurement/sitemap'
+import { getAllTermSlugs } from '@/src/data/glossary'
+import { getAllComparisonSlugs } from '@/src/data/compare'
+import { TOOL_SITEMAP_PATHS } from '@/src/data/tools'
 
 export const revalidate = 86400
 
 export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
   const baseUrl = process.env.NEXT_PUBLIC_SITE_URL ?? siteConfig.url
   const locales = siteConfig.locales
-  const solutionSlugs = getAllSolutionSlugs()
+  const spokePaths = [...HUB_IDS.flatMap((h) => HUB_SPOKES[h].map(spokePath)), spokePath('maintenance')]
   const supportSlugs = getAllSupportSlugs()
   const insightSlugs = getAllInsightSlugs()
   const gameSlugs = getAllGameSlugs()
@@ -20,7 +23,7 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
   const entries: MetadataRoute.Sitemap = []
 
   // Static pages per locale
-  const staticPaths = ['', '/solutions', '/support', '/insights', '/about', '/contact', '/games', '/design', '/work', '/public-sector', '/advertising']
+  const staticPaths = ['', '/solutions', '/support', '/insights', '/about', '/contact', '/games', '/design', '/work', '/public-sector', '/advertising', '/glossary', '/compare', ...HUB_IDS.map((h) => `/${h}`)]
 
   for (const locale of locales) {
     for (const path of staticPaths) {
@@ -37,17 +40,24 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
       })
     }
 
-    // Solution pages
-    for (const slug of solutionSlugs) {
+    for (const path of [...getAllTermSlugs().map((s) => `/glossary/${s}`), ...getAllComparisonSlugs().map((s) => `/compare/${s}`)]) {
       entries.push({
-        url: `${baseUrl}/${locale}/solutions/${slug}`,
+        url: `${baseUrl}/${locale}${path}`,
+        lastModified: new Date(),
+        changeFrequency: 'monthly',
+        priority: 0.6,
+        alternates: { languages: Object.fromEntries(locales.map((l) => [l, `${baseUrl}/${l}${path}`])) },
+      })
+    }
+
+    for (const path of spokePaths) {
+      entries.push({
+        url: `${baseUrl}/${locale}${path}`,
         lastModified: new Date(),
         changeFrequency: 'monthly',
         priority: 0.7,
         alternates: {
-          languages: Object.fromEntries(
-            locales.map((l) => [l, `${baseUrl}/${l}/solutions/${slug}`])
-          ),
+          languages: Object.fromEntries(locales.map((l) => [l, `${baseUrl}/${l}${path}`])),
         },
       })
     }
@@ -77,6 +87,21 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
         alternates: {
           languages: Object.fromEntries(
             locales.map((l) => [l, `${baseUrl}/${l}/games/${slug}`])
+          ),
+        },
+      })
+    }
+
+    // Free tools
+    for (const path of TOOL_SITEMAP_PATHS) {
+      entries.push({
+        url: `${baseUrl}/${locale}${path}`,
+        lastModified: new Date(),
+        changeFrequency: 'monthly',
+        priority: 0.8,
+        alternates: {
+          languages: Object.fromEntries(
+            locales.map((l) => [l, `${baseUrl}/${l}${path}`])
           ),
         },
       })

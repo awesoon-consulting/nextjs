@@ -1,5 +1,6 @@
 import { NextRequest, NextResponse } from 'next/server'
-import { appendLeadRow, LeadFormData } from '@/src/lib/sheets'
+import type { LeadFormData } from '@/src/lib/sheets'
+import { hashIp, insertLead, mirrorLeadToSheet } from '@/src/lib/leads'
 
 // In-memory rate limiter: IP → { count, resetAt }
 const rateLimitMap = new Map<string, { count: number; resetAt: number }>()
@@ -34,6 +35,10 @@ function getClientIp(request: NextRequest): string {
 
 function validateEmail(email: string): boolean {
   return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)
+}
+
+function isValidDate(value: unknown): boolean {
+  return typeof value === 'string' && !Number.isNaN(Date.parse(value))
 }
 
 export async function POST(request: NextRequest) {
@@ -85,13 +90,13 @@ export async function POST(request: NextRequest) {
     phone: body.phone?.trim() || undefined,
     industry: body.industry!,
     companySize: body.companySize!,
-    problems: body.problems!,
+    problems: Array.isArray(body.problems) ? body.problems.filter((p) => typeof p === 'string') : [],
     otherProblem: body.otherProblem?.trim() || undefined,
     timeline: body.timeline!,
     budget: body.budget!,
     message: body.message?.trim() || undefined,
     locale: body.locale ?? 'en',
-    submittedAt: body.submittedAt ?? new Date().toISOString(),
+    submittedAt: isValidDate(body.submittedAt) ? new Date(body.submittedAt!).toISOString() : new Date().toISOString(),
     sourceUrl: body.sourceUrl ?? undefined,
     utm_source: body.utm_source?.trim() || undefined,
     utm_medium: body.utm_medium?.trim() || undefined,
@@ -102,16 +107,20 @@ export async function POST(request: NextRequest) {
     referrer: body.referrer?.trim() || undefined,
   }
 
-  // Append to Google Sheets
   try {
-    await appendLeadRow(leadData)
+    await insertLead(leadData, {
+      ipHash: hashIp(ip),
+      userAgent: request.headers.get('user-agent')?.slice(0, 500) ?? null,
+    })
   } catch (err) {
-    console.error('Failed to append lead to Google Sheets:', err)
+    console.error('Failed to save lead to the database:', err instanceof Error ? err.message : err)
     return NextResponse.json(
       { error: 'Failed to save submission. Please try again or email us directly.' },
       { status: 500 }
     )
   }
+
+  await mirrorLeadToSheet(leadData)
 
   return NextResponse.json(
     { success: true, message: 'Submission received. We will be in touch shortly.' },

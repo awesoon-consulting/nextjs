@@ -527,6 +527,282 @@
   "sitemap": {
     "title": "Plan du site"
   },
+  "tools": {
+    "crumb": "Outils gratuits",
+    "hub": {
+      "meta": {
+        "title": "Outils gratuits pour les opérations et les soumissions publiques",
+        "description": "Des outils gratuits d'Awesoon qui répondent chacun à une question : ce que le travail manuel répétitif coûte à votre équipe, et sous quels codes d'approvisionnement vous soumissionnez. Sans inscription."
+      },
+      "eyebrow": "Gratuit. Sans inscription. Vos données restent dans votre navigateur.",
+      "title": "Des outils gratuits qui répondent chacun à une question.",
+      "text": "Ce que le travail répétitif vous coûte, sous quels codes vous soumissionnez, et d'autres outils à venir. Chaque résultat vous appartient et se partage.",
+      "filterLabel": "Filtrer les outils par domaine",
+      "filters": {
+        "all": "Tous",
+        "automation": "Automatisation",
+        "procurement": "Approvisionnement",
+        "erpCrm": "ERP et CRM",
+        "consulting": "Conseil",
+        "design": "Design",
+        "advertising": "Publicité"
+      },
+      "live": "Disponible",
+      "soon": "Bientôt",
+      "open": "Ouvrir l'outil",
+      "soonNote": "En préparation. Demandez à Ray si vous en avez besoin plus tôt.",
+      "previewLabel": "Exemple réel tiré des données",
+      "calcPreview": "{hours} heures par semaine de saisie de données en {region} coûtent environ {cost} par an en salaires.",
+      "finderPreview": "Le design graphique correspond au code {code} dans l'UNSPSC.",
+      "tools": {
+        "calculator": {
+          "name": "Calculateur du coût du travail manuel",
+          "outcome": "Voyez ce que la saisie de données, le traitement des commandes et la facturation répétitifs coûtent chaque année à votre équipe, selon les données salariales publiques de votre région."
+        },
+        "finder": {
+          "name": "Recherche de codes d'approvisionnement",
+          "outcome": "Tapez un service et obtenez ses codes UNSPSC, GSIN, PSC et CPV, avec une note simple sur l'usage de chacun."
+        },
+        "erp": {
+          "name": "Bilan de préparation à l'ERP",
+          "outcome": "Un court bilan pour savoir si votre équipe est prête pour un ERP, et quoi corriger en premier."
+        },
+        "health": {
+          "name": "Autoévaluation de la santé des systèmes",
+          "outcome": "Évaluez à quel point vos outils, vos données et vos transferts s'agencent aujourd'hui."
+        },
+        "capability": {
+          "name": "Créateur d'énoncé de capacités",
+          "outcome": "Créez l'énoncé de capacités d'une page que demandent les acheteurs, prêt à imprimer."
+        },
+        "rfp": {
+          "name": "Liste de contrôle de réponse à un appel d'offres",
+          "outcome": "Transformez un appel d'offres en liste de tout ce dont votre réponse a besoin."
+        },
+        "integration": {
+          "name": "Créateur de carte d'intégration",
+          "outcome": "Dessinez vos systèmes et voyez où les données sont saisies deux fois."
+        },
+        "brand": {
+          "name": "Départ de guide de marque",
+          "outcome": "Choisissez une palette et un duo de polices et obtenez une page de guide de départ."
+        },
+        "adSpecs": {
+          "name": "Fiche des formats et spécifications publicitaires",
+          "outcome": "Les formats et spécifications publicitaires actuels de toutes les grandes plateformes sur une seule page."
+        },
+        "processMaps": {
+          "name": "Modèles de cartes de processus",
+          "outcome": "Des modèles gratuits et sans formulaire pour cartographier la façon dont le travail circule aujourd'hui."
+        }
+      },
+      "helpTitle": "Vous ne savez pas quel outil choisir?",
+      "helpText": "Choisissez ce que vous cherchez à comprendre. Si aucun outil ne convient encore, un appel de 30 minutes avec Ray Rasouli y répondra.",
+      "helpCost": "Ce que coûte notre travail manuel",
+      "helpCodes": "Sous quels codes nous soumissionnons",
+      "helpOther": "Autre chose",
+      "helpOtherReply": "Cet outil n'est pas encore disponible. Ray peut en discuter avec vous lors d'un appel gratuit de 30 minutes.",
+      "faqTitle": "Questions sur les outils gratuits",
+      "faq": [
+        {
+          "q": "Les outils sont-ils vraiment gratuits?",
+          "a": "Oui. Il n'y a ni inscription ni mur payant. Vos données restent dans votre navigateur et rien n'est conservé."
+        },
+        {
+          "q": "D'où viennent les données?",
+          "a": "Chaque outil indique ses sources sur la page : Statistique Canada, le Bureau of Labor Statistics des États-Unis et le Bureau australien de la statistique pour les salaires, ainsi que les listes de codes officielles de Services publics et Approvisionnement Canada, de la General Services Administration des États-Unis et de l'Union européenne pour les codes."
+        },
+        {
+          "q": "Un outil m'indiquera-t-il les tarifs d'Awesoon?",
+          "a": "Non. Chaque résultat porte sur votre propre travail, comme votre propre coût de main-d'œuvre. Les prix viennent seulement après un appel sur votre mandat."
+        }
+      ]
+    },
+    "result": {
+      "label": "Et ensuite",
+      "share": "Partager ce résultat",
+      "copied": "Lien copié",
+      "ask": "Poser une question à l'assistant sur ce résultat",
+      "book": "Réserver un appel de découverte de 30 minutes",
+      "assistantLabel": "Assistant",
+      "close": "Fermer",
+      "askPlaceholder": "Posez une question sur ce résultat",
+      "send": "Envoyer",
+      "typing": "L'assistant écrit",
+      "email": "M'envoyer ceci par courriel",
+      "optional": "(facultatif)",
+      "emailLabel": "Votre courriel",
+      "consent": "Ouvre un courriel à vous-même avec ce résultat. Rien n'est conservé ni envoyé à Awesoon.",
+      "emailCta": "Ouvrir le courriel",
+      "emailSubject": "Mon résultat Awesoon : {tool}"
+    },
+    "calc": {
+      "meta": {
+        "title": "Calculateur du coût du travail manuel : ce que le travail administratif répétitif vous coûte",
+        "description": "Calculateur gratuit qui transforme des heures de saisie de données, de traitement de commandes et de facturation en coût annuel de main-d'œuvre, à partir des données salariales officielles des provinces canadiennes, des États américains et des États australiens."
+      },
+      "title": "Combien le travail manuel coûte-t-il à votre équipe chaque année?",
+      "text": "Choisissez votre région et les rôles qui font le travail répétitif. Les salaires viennent de données publiques de votre région, donc le chiffre est le vôtre. Sans inscription.",
+      "country": "Pays",
+      "countries": {
+        "CA": "Canada",
+        "US": "États-Unis",
+        "AU": "Australie",
+        "UK": "Royaume-Uni"
+      },
+      "regionWord": {
+        "CA": "Province ou territoire",
+        "US": "État",
+        "AU": "État ou territoire",
+        "UK": "Région"
+      },
+      "ukShort": "Données salariales bientôt disponibles",
+      "ukSoon": "Les données salariales du Royaume-Uni arrivent bientôt. Nous ajouterons les revenus régionaux de l'Office for National Statistics dès que nous pourrons les lire de façon fiable.",
+      "roles": "Rôles qui font le travail manuel",
+      "roleNames": {
+        "dataEntry": "Saisie de données",
+        "orderClerk": "Commis aux commandes",
+        "billingClerk": "Commis à la facturation",
+        "bookkeeping": "Commis à la tenue de livres"
+      },
+      "perHour": "{wage} l'heure",
+      "noWage": "Aucun salaire publié",
+      "people": "Personnes qui le font",
+      "hours": "Heures chacune, par semaine",
+      "privacy": "Vos données restent dans votre navigateur.",
+      "estimate": "Votre estimation",
+      "liveData": "Données salariales officielles",
+      "perYear": "par an en salaires consacrés au travail manuel",
+      "hoursYear": "heures par an",
+      "fullTime": "personnes à temps plein",
+      "avgHour": "salaire moyen à l'heure",
+      "pickRole": "Choisissez au moins un rôle pour voir votre coût.",
+      "basis": "52 semaines par an, salaires seulement. Les avantages sociaux, les charges sociales et les frais généraux s'y ajoutent, donc votre coût réel est plus élevé. Les heures sont réparties également entre les rôles choisis. C'est votre propre coût de main-d'œuvre, pas un prix d'Awesoon.",
+      "basisFte": "Temps plein signifie {hours} heures par semaine.",
+      "sourceTitle": "D'où viennent les salaires",
+      "sourceLine": "Source : {source}.",
+      "period": "Période : {period}.",
+      "licence": "Licence : {licence}",
+      "fetched": "Données prises le {date}.",
+      "usNote": "Salaire annuel médian de chaque profession (SOC {codes}), converti en taux horaire sur 2 080 heures par an, comme le fait le BLS.",
+      "caNote": "Salaire horaire médian pour {occupation} ({code}). Statistique Canada ne publie pas ces quatre rôles séparément, donc le même chiffre général est utilisé pour chaque rôle.",
+      "auNote": "{occupation}. Ce chiffre n'est pas propre à un rôle et inclut le personnel à temps partiel, donc c'est un repère approximatif; il est converti en taux horaire sur 38 heures par semaine, la semaine à temps plein des National Employment Standards.",
+      "auPeriod": "{year}, premier semestre",
+      "summary": "{region} : {hours} heures par semaine, {people} personnes, environ {cost} par an en salaires.",
+      "faqTitle": "Questions sur le calculateur",
+      "faq": [
+        {
+          "q": "Comment le coût est-il calculé?",
+          "a": "Les heures par semaine fois le nombre de personnes fois 52 semaines donnent vos heures annuelles. La part de chaque rôle dans ces heures est multipliée par le salaire publié pour votre région. Rien n'est ajouté pour les avantages sociaux ou les frais généraux, donc le chiffre réel est plus élevé."
+        },
+        {
+          "q": "Pourquoi le salaire canadien est-il le même pour chaque rôle?",
+          "a": "Statistique Canada publie les salaires du grand groupe auquel appartiennent ces rôles, les professions de soutien administratif et financier, et non pour chaque rôle de commis. Nous montrons ce chiffre plutôt que de deviner."
+        },
+        {
+          "q": "Pourquoi le Royaume-Uni n'est-il pas disponible?",
+          "a": "Les tableaux de revenus régionaux de l'Office for National Statistics n'ont pas pu être lus de façon fiable au moment de cette prise de données. Les régions du Royaume-Uni apparaîtront dès que possible."
+        },
+        {
+          "q": "Est-ce ce que l'automatisation économiserait?",
+          "a": "Non. C'est ce que le travail manuel coûte aujourd'hui. La part qui peut être éliminée dépend de vos systèmes, et c'est ce que précise un appel de découverte."
+        }
+      ]
+    },
+    "finder": {
+      "meta": {
+        "title": "Recherche de codes d'approvisionnement : codes UNSPSC, GSIN, PSC et CPV",
+        "description": "Outil gratuit qui trouve les codes d'approvisionnement UNSPSC, GSIN, PSC et CPV pour les services de TI, de logiciels, de données, de design et de publicité, à partir des listes de codes officielles."
+      },
+      "title": "Trouvez les codes d'approvisionnement de ce que vous vendez.",
+      "text": "Tapez un service. Obtenez ses codes UNSPSC, GSIN, PSC et CPV, avec une note simple sur l'usage de chacun. Sans inscription.",
+      "inputLabel": "Tapez un service",
+      "placeholder": "Par exemple, conception de base de données",
+      "clear": "Effacer",
+      "tryLabel": "Essayez-en un",
+      "tries": [
+        "Conception de base de données",
+        "Design graphique",
+        "Maintenance de logiciels",
+        "Conception de site Web",
+        "Publicité"
+      ],
+      "loading": "Chargement des listes de codes",
+      "results": "Codes pour « {query} »",
+      "none": "Aucune correspondance pour l'instant dans les codes de TI, de logiciels, de données, de design et de publicité. Essayez logiciel, base de données, site Web, design graphique ou publicité.",
+      "noneScheme": "Aucune correspondance proche dans cette liste.",
+      "copy": "Copier",
+      "copiedCode": "{code} copié",
+      "copyAll": "Copier tous les codes",
+      "copiedAll": "Tous les codes sont copiés",
+      "linked": "UNSPSC liés dans la table de correspondance officielle : {codes}",
+      "linkedGsin": "GSIN liés dans la table de correspondance officielle : {codes}",
+      "cardLabel": "Vos codes",
+      "check": "Vérifiez chaque code dans la liste officielle avant de soumissionner. Les acheteurs peuvent en utiliser plus d'un.",
+      "scope": "Cette recherche couvre seulement les codes de TI, de logiciels, de données, de design et de publicité.",
+      "naics": "Les codes NAICS ne sont pas encore dans cette recherche. Nous les ajouterons une fois la liste chargée.",
+      "schemes": {
+        "UNSPSC": {
+          "name": "UNSPSC",
+          "where": "Canada et de nombreux acheteurs dans le monde",
+          "explain": "Le Code normalisé des produits et services des Nations Unies. Les acheteurs fédéraux canadiens et bien d'autres l'utilisent pour étiqueter les appels d'offres."
+        },
+        "GSIN": {
+          "name": "GSIN",
+          "where": "Gouvernement du Canada",
+          "explain": "Numéro d'identification des biens et services. D'anciens avis fédéraux canadiens l'utilisent encore, donc il vaut la peine de l'indiquer."
+        },
+        "PSC": {
+          "name": "PSC",
+          "where": "Gouvernement fédéral des États-Unis",
+          "explain": "Code des produits et services. Les contrats fédéraux américains s'en servent pour noter ce qui a été acheté."
+        },
+        "CPV": {
+          "name": "CPV",
+          "where": "Union européenne et Royaume-Uni",
+          "explain": "Vocabulaire commun pour les marchés publics. Les avis publics de l'UE et du Royaume-Uni sont classés avec lui."
+        }
+      },
+      "sourceTitle": "D'où viennent les codes",
+      "sources": {
+        "UNSPSC": "Texte UNSPSC et GSIN et table de correspondance GSIN vers UNSPSC : contient de l'information utilisée sous la Licence du gouvernement ouvert - Canada (Services publics et Approvisionnement Canada).",
+        "PSC": "PSC : codes des produits et services de la General Services Administration des États-Unis, diffusés par USAspending.gov. Œuvre du gouvernement américain, domaine public.",
+        "CPV": "CPV : Office des publications de l'Union européenne, Vocabulaire commun pour les marchés publics, sous licence CC BY 4.0. Réutilisé avec attribution; l'UE n'endosse pas cet outil."
+      },
+      "fetched": "Données prises le {date}.",
+      "summary": "Codes pour {query}",
+      "faqTitle": "Questions sur les codes d'approvisionnement",
+      "faq": [
+        {
+          "q": "Quel code dois-je utiliser?",
+          "a": "Utilisez le système de l'acheteur. Les appels d'offres fédéraux canadiens utilisent l'UNSPSC et parfois le GSIN, les contrats fédéraux américains utilisent le PSC et le NAICS, et les avis de l'UE et du Royaume-Uni utilisent le CPV. Indiquer plusieurs codes proches aide les acheteurs à vous trouver."
+        },
+        {
+          "q": "Ces codes sont-ils officiels?",
+          "a": "Oui. Ils viennent des listes officielles publiées par Services publics et Approvisionnement Canada, la General Services Administration des États-Unis et l'Office des publications de l'Union européenne. Vérifiez toujours le code dans la liste officielle avant de soumissionner."
+        },
+        {
+          "q": "Pourquoi est-ce que je ne trouve pas le NAICS?",
+          "a": "Le NAICS n'est pas encore chargé dans cette recherche. Il sera ajouté une fois la liste intégrée."
+        },
+        {
+          "q": "Pourquoi seulement les codes de TI, de design et de publicité?",
+          "a": "Cette recherche est conçue pour les services dans lesquels Awesoon travaille, ce qui la garde petite et rapide. D'autres familles pourraient venir plus tard."
+        }
+      ]
+    },
+    "closing": {
+      "title": "Besoin d'aide pour agir à partir de ce résultat?",
+      "text": "Réservez un appel de découverte gratuit de 30 minutes avec Ray Rasouli. Vous repartez avec une prochaine étape claire, que nous travaillions ensemble ou non."
+    },
+    "assistant": {
+      "calc": "Votre résultat est le coût salarial annuel de votre équipe pour ce travail, d'après les données salariales officielles. Je ne peux pas donner le prix d'Awesoon. Que voulez-vous savoir?",
+      "finder": "Ces codes viennent des listes officielles. Utilisez le système de votre acheteur et indiquez quelques codes proches. Que voulez-vous savoir?",
+      "reply": "Bonne question. Le moyen le plus rapide d'obtenir une réponse pour votre équipe est un appel gratuit de 30 minutes avec Ray Rasouli, qui lit votre résultat avant l'appel.",
+      "price": "Je ne peux pas donner de prix. Les prix viennent seulement après un appel sur votre mandat. Ray peut vous les expliquer lors d'un appel gratuit de 30 minutes.",
+      "priceWords": "prix,tarif,combien,soumission,devis,coût,coûte,facturez,tarification"
+    }
+  },
   "problemSolutions": {
     "title": "Vous reconnaissez-vous?",
     "subtitle": "Si vos opérations ressemblent à ceci, nous avons le manuel pour y remédier.",
@@ -849,7 +1125,15 @@
     "toggleBefore": "Avant",
     "toggleAfter": "Après",
     "toggleLabel": "Afficher avant ou après",
-    "artLabel": "Des transferts désordonnés qui deviennent des systèmes connectés"
+    "artLabel": "Des transferts désordonnés qui deviennent des systèmes connectés",
+    "erpCrm": {
+      "name": "ERP et CRM",
+      "short": "Des ERP et CRM adaptés à votre façon de travailler.",
+      "line": "Nous choisissons, configurons et prolongeons l'ERP et le CRM qui gèrent vos commandes, stocks et ventes.",
+      "before": "Commandes et occasions vivent dans les courriels et les tableurs.",
+      "after": "Un ERP et un CRM que votre équipe utilise vraiment.",
+      "menuName": "ERP et CRM"
+    }
   },
   "assistant": {
     "title": "Qu’est-ce que votre entreprise devrait arrêter de faire à la main ?",
@@ -1753,5 +2037,505 @@
       "title": "Faites de votre prochaine campagne la plus simple.",
       "text": "Parlez-en avec Ray. Vous repartez avec une première étape claire, que nous travaillions ensemble ou non."
     }
+  },
+  "hubs": {
+    "chrome": {
+      "home": "Accueil",
+      "services": "Services",
+      "eyebrowSuffix": "pôle",
+      "trust": "Indépendant des fournisseurs · Aucune commission · Dirigé par Ray Rasouli",
+      "askHero": "Demander à l'assistant",
+      "spokesKicker": "Points d'entrée",
+      "spokesTitle": "Ce que couvre {hub}",
+      "spokesIntro": "Chaque page répond à un problème en entier. Commencez par celle qui ressemble à votre semaine.",
+      "readPage": "Lire la page",
+      "askAbout": "Poser une question",
+      "chooserTitle": "Laquelle vous convient?",
+      "chooserIntro": "Choisissez ce qui fait le plus mal. Nous vous dirigeons vers une seule page.",
+      "startHere": "Commencez ici",
+      "askFits": "Demander si cela nous convient",
+      "insightsTitle": "Analyses liées",
+      "faqTitle": "Questions fréquentes",
+      "onThisPage": "Sur cette page",
+      "sideTitle": "Vous ne savez pas quelle page choisir?",
+      "sideText": "Expliquez à Ray comment le travail circule aujourd'hui. Il vous dit quoi faire en premier.",
+      "sideNote": "Avec Ray Rasouli. Sans engagement.",
+      "chat": {
+        "label": "Questions sur {hub}",
+        "note": "Réponses tirées de ce pôle et de notre méthode. À titre informatif",
+        "greeting": "Bonjour. Dites-moi ce qui ralentit votre équipe et je vous dirigerai vers la bonne page.",
+        "placeholder": "Décrivez le problème en une phrase",
+        "send": "Envoyer",
+        "typing": "L'assistant écrit",
+        "restart": "Recommencer",
+        "openMatch": "Cela ressemble à {page}.",
+        "openGeneric": "Merci, cela aide.",
+        "q1": "Quels systèmes ou outils sont en jeu aujourd'hui?",
+        "q2": "Quand aimeriez-vous que ce soit réglé?",
+        "briefIntro": "Voici un court résumé. Vous pouvez l'envoyer à Ray avant votre appel.",
+        "briefLabel": "Votre résumé",
+        "needLabel": "Votre besoin",
+        "setupLabel": "Systèmes actuels",
+        "whenLabel": "Échéance",
+        "pageLabel": "Page à lire",
+        "talkToRay": "Envoyer à Ray",
+        "bookLabel": "Choisissez un moment pour un appel de 30 minutes avec Ray.",
+        "consentLabel": "Envoyer cette conversation à Ray avec ma réservation. Conservée jusqu'à 3 ans, jamais vendue.",
+        "chips": [
+          "Les données sont saisies deux fois",
+          "Nous choisissons un nouveau logiciel",
+          "Un projet est bloqué"
+        ],
+        "when": [
+          "Ce mois-ci",
+          "Ce trimestre",
+          "Simple exploration"
+        ]
+      },
+      "spoke": {
+        "problemTitle": "Cela vous dit quelque chose?",
+        "whatWeDoTitle": "Ce que nous faisons",
+        "howTitle": "Comment cela se déroule",
+        "keepTitle": "Ce que vous gardez",
+        "outcomesTitle": "Ce qui change",
+        "govTitle": "Pour les acheteurs publics",
+        "govText": "Sur les portails gouvernementaux, ce travail figure sous la catégorie {category}.",
+        "govCodes": "Codes de catégorie : sur demande.",
+        "govLink": "Comment acheter d'Awesoon",
+        "relatedTitle": "Pages liées",
+        "partOf": "Fait partie de {hub}",
+        "platformsTitle": "Plateformes avec lesquelles nous travaillons",
+        "platformsSubtitle": "Nous sommes indépendants des plateformes. Touchez un logo pour voir où il convient le mieux.",
+        "platformsTapHint": "Touchez une plateforme ci-dessus pour savoir quand elle convient.",
+        "closingTitle": "Parlez-en avec Ray",
+        "closingText": "Un appel découverte de 30 minutes. Vous repartez avec une première étape claire, que nous travaillions ensemble ou non.",
+        "sharedHow": [
+          "Un appel découverte de 30 minutes avec Ray sur le déroulement actuel du travail",
+          "Un court plan écrit de ce que nous changeons en premier et pourquoi",
+          "Le travail, par étapes que vous révisez, puis un transfert que votre équipe peut assumer"
+        ],
+        "sharedKeep": [
+          "Une documentation rédigée pour votre équipe",
+          "Les comptes, réglages et le code à votre nom",
+          "Un registre clair de chaque changement effectué"
+        ],
+        "sharedFaq": [
+          {
+            "q": "Qui fait le travail?",
+            "a": "Ray Rasouli dirige lui-même chaque mandat. Quand un spécialiste est nécessaire, nous vous disons qui et pourquoi avant qu'il commence."
+          },
+          {
+            "q": "Touchez-vous des commissions des fournisseurs de logiciels?",
+            "a": "Non. Awesoon est indépendant des fournisseurs et ne touche ni commission ni frais de recommandation, donc nos conseils portent sur ce qui vous convient."
+          },
+          {
+            "q": "Combien cela coûte-t-il?",
+            "a": "Cela dépend de la portée. Après l'appel découverte, vous recevez une portée écrite et une soumission avant le début du travail."
+          }
+        ],
+        "includesQ": "Que comprend {title}?"
+      },
+      "index": {
+        "title": "Services",
+        "metaTitle": "Services : toutes les façons dont Awesoon vous aide",
+        "metaDescription": "Tous les services d'Awesoon, regroupés en pôles : automatisation, développement logiciel, ERP et CRM, conseil, design, publicité, soutien, jeux et secteur public.",
+        "intro": "Choisissez le domaine qui correspond à votre problème. Chaque pôle l'explique simplement et mène à une page par service.",
+        "open": "Ouvrir le pôle",
+        "extra": {
+          "design": {
+            "name": "Design",
+            "line": "Marque, interfaces et systèmes de design réutilisables par votre équipe."
+          },
+          "advertising": {
+            "name": "Publicité",
+            "line": "Campagnes, production et publicité par bannières avec des rapports clairs."
+          },
+          "support": {
+            "name": "Soutien",
+            "line": "Soutien continu pour vos systèmes, ERP, CRM et commerce en ligne."
+          },
+          "games": {
+            "name": "Jeux",
+            "line": "Nos propres jeux mobiles, et la maintenance de jeux et d'applications."
+          },
+          "public-sector": {
+            "name": "Secteur public",
+            "line": "Comment les acheteurs publics trouvent Awesoon et achètent auprès de nous."
+          }
+        }
+      }
+    },
+    "hub": {
+      "automation": {
+        "name": "Automatisation et intégration",
+        "metaTitle": "Services d'automatisation et d'intégration de systèmes",
+        "metaDescription": "L'automatisation relie votre boutique, votre ERP, votre CRM et votre comptabilité pour que les données soient saisies une fois et circulent seules. Indépendant, documenté.",
+        "title": "Automatisation et intégration : vos systèmes se passent le travail.",
+        "answer": "L'automatisation des affaires relie votre boutique, votre ERP, votre CRM et votre comptabilité pour que les données soient saisies une seule fois et circulent seules. Les gens interviennent seulement quand un jugement est nécessaire, et chaque flux est documenté pour que votre équipe en soit propriétaire.",
+        "choose": [
+          {
+            "spoke": "system-integration",
+            "label": "Nous saisissons les mêmes données dans deux systèmes"
+          },
+          {
+            "spoke": "spreadsheet-operations",
+            "label": "Un tableur gère un processus clé"
+          },
+          {
+            "spoke": "mobile-warehouse-barcoding",
+            "label": "Les inventaires de l'entrepôt ne sont jamais justes"
+          },
+          {
+            "spoke": "ai-operations",
+            "label": "Nous voulons l'IA sans savoir où elle sert"
+          },
+          {
+            "spoke": "database-management-service",
+            "label": "Personne ne s'occupe de notre base de données"
+          }
+        ],
+        "faq": [
+          {
+            "q": "Qu'est-ce que l'automatisation des affaires?",
+            "a": "C'est faire en sorte que vos systèmes se transmettent données et tâches, pour que les gens cessent de ressaisir et de relancer. Une personne approuve toujours ce qui demande du jugement."
+          },
+          {
+            "q": "Quels systèmes pouvez-vous connecter?",
+            "a": "La plupart des outils d'affaires avec une API ou une exportation, comme Shopify, NetSuite, QuickBooks, HubSpot et Salesforce. Nous vous disons lors de l'appel si un lien propre est impossible."
+          },
+          {
+            "q": "Que se passe-t-il si une connexion échoue?",
+            "a": "Chaque flux que nous construisons consigne son travail et alerte une personne désignée en cas d'échec, avec un guide de correction écrit."
+          },
+          {
+            "q": "Les automatisations nous appartiennent-elles?",
+            "a": "Oui. Elles tournent dans des comptes à votre nom et sont documentées pour que votre équipe ou un autre fournisseur puisse reprendre."
+          }
+        ],
+        "closingTitle": "Commencez par le flux que votre équipe ressaisit le plus.",
+        "closingText": "Un appel découverte de 30 minutes avec Ray, puis une liste claire de ce qu'il faut connecter en premier et pourquoi. Sans engagement."
+      },
+      "software-development": {
+        "name": "Développement logiciel",
+        "metaTitle": "Services de développement de logiciels sur mesure",
+        "metaDescription": "Développement de logiciels sur mesure : applications, API, bases de données et interfaces construites selon le travail de votre équipe, avec le code à votre nom.",
+        "title": "Développement logiciel : des outils sur mesure pour ce que les produits ne font pas.",
+        "answer": "Le développement de logiciels sur mesure construit les applications, API, bases de données et écrans dont votre entreprise a besoin quand aucun produit ne convient. Awesoon les construit par petites étapes visibles, et vous possédez le code, les comptes et la documentation.",
+        "choose": [
+          {
+            "spoke": "application-programming",
+            "label": "Il nous faut un outil qu'aucun produit n'offre"
+          },
+          {
+            "spoke": "database-design",
+            "label": "Nos rapports ne concordent jamais"
+          },
+          {
+            "spoke": "client-server-programming",
+            "label": "Notre application ralentit ou flanche"
+          },
+          {
+            "spoke": "custom-api-development",
+            "label": "Des partenaires doivent accéder à nos données"
+          },
+          {
+            "spoke": "interface-development",
+            "label": "Nos écrans sont difficiles à utiliser"
+          }
+        ],
+        "faq": [
+          {
+            "q": "Faut-il construire un logiciel sur mesure ou acheter un produit?",
+            "a": "Achetez quand un produit fait déjà bien le travail. Construisez seulement quand rien ne convient, et nous vous le dirons si un produit suffit."
+          },
+          {
+            "q": "À qui appartient le code?",
+            "a": "À vous. Il est dans votre dépôt dès le premier jour, avec les comptes d'hébergement à votre nom."
+          },
+          {
+            "q": "Comment gardez-vous un projet sur la bonne voie?",
+            "a": "Nous convenons d'une courte portée écrite, construisons par petites étapes que vous révisez et changeons de cap tôt si quelque chose ne convient pas."
+          },
+          {
+            "q": "Pouvez-vous reprendre une application existante?",
+            "a": "Oui. Nous commençons par un examen écrit du code et vous disons ce que nous trouvons avant de proposer des changements."
+          }
+        ],
+        "closingTitle": "Décrivez l'outil que vous aimeriez avoir.",
+        "closingText": "Un appel découverte de 30 minutes avec Ray, puis une réponse claire : construire, acheter ou connecter. Sans engagement."
+      },
+      "erp-crm": {
+        "name": "ERP et CRM",
+        "metaTitle": "Services d'implantation et de configuration ERP et CRM",
+        "metaDescription": "Implantation, configuration et programmation sur mesure d'ERP et de CRM pour les entreprises en croissance. Indépendant, sans commission, dirigé par Ray Rasouli.",
+        "title": "ERP et CRM : des systèmes adaptés à votre vraie façon de travailler.",
+        "answer": "Les services ERP et CRM choisissent, configurent et prolongent les systèmes qui gèrent vos commandes, stocks, finances et ventes. Awesoon est indépendant des fournisseurs et ne touche aucune commission, donc le système s'adapte à vos opérations et non l'inverse.",
+        "choose": [
+          {
+            "spoke": "erp-implementation",
+            "label": "Nous passons à un nouvel ERP"
+          },
+          {
+            "spoke": "crm-implementation",
+            "label": "Il nous faut un projet CRM bien mené"
+          },
+          {
+            "spoke": "crm-setup",
+            "label": "Nous avons acheté un CRM et personne ne l'utilise"
+          },
+          {
+            "spoke": "erp-database-applications",
+            "label": "Notre ERP a besoin de pièces sur mesure"
+          }
+        ],
+        "faq": [
+          {
+            "q": "Quel ERP ou CRM choisir?",
+            "a": "Cela dépend de votre taille, de vos processus et de vos autres systèmes. Comme nous ne touchons aucune commission, nous comparons les options sur l'adéquation seulement."
+          },
+          {
+            "q": "Pourquoi les projets ERP échouent-ils?",
+            "a": "La plupart échouent à cause des processus et des données, pas du logiciel : exigences floues, données en désordre et aucun responsable. Nous commençons par là."
+          },
+          {
+            "q": "Soutenez-vous le système après la mise en service?",
+            "a": "Oui. Nos pages de soutien ERP et CRM couvrent l'aide continue après le lancement."
+          },
+          {
+            "q": "Pouvez-vous corriger un système configuré par quelqu'un d'autre?",
+            "a": "Oui. Nous examinons l'existant, consignons nos constats et corrigeons d'abord ce qui compte le plus."
+          }
+        ],
+        "closingTitle": "Adaptez le système à l'entreprise.",
+        "closingText": "Un appel découverte de 30 minutes avec Ray sur votre ERP ou CRM, puis une première étape claire. Sans engagement."
+      },
+      "consulting": {
+        "name": "Conseil et experts en TI",
+        "metaTitle": "Services de conseil et d'experts en TI pour entreprises en croissance",
+        "metaDescription": "Conseil en TI : bilans de santé des systèmes, choix de logiciels, sauvetage de projets, bases des processus et avis d'experts. Indépendant des fournisseurs.",
+        "title": "Conseil et experts en TI : des réponses claires avant de dépenser.",
+        "answer": "Le conseil en TI vous donne un regard chevronné et indépendant sur vos systèmes avant d'acheter, de construire ou de corriger quoi que ce soit. Awesoon examine le travail réel, consigne ses constats et vous dit clairement quoi faire en premier.",
+        "choose": [
+          {
+            "spoke": "systems-audit",
+            "label": "Nous ne savons pas par où commencer"
+          },
+          {
+            "spoke": "software-selection",
+            "label": "Nous choisissons un logiciel ou un fournisseur"
+          },
+          {
+            "spoke": "project-management",
+            "label": "Un projet est en retard ou bloqué"
+          },
+          {
+            "spoke": "ops-outgrown-tools",
+            "label": "Nous avons grandi, pas nos outils"
+          },
+          {
+            "spoke": "it-expert-services",
+            "label": "Il nous faut l'avis d'un expert"
+          }
+        ],
+        "faq": [
+          {
+            "q": "Que fait un conseiller en TI pour une PME?",
+            "a": "Nous examinons vos systèmes et processus, comparons les options et vous remettons un plan écrit. Vous pouvez l'appliquer avec nous ou avec qui vous voulez."
+          },
+          {
+            "q": "Êtes-vous lié à un fournisseur de logiciels?",
+            "a": "Non. Nous ne touchons ni commission ni frais de recommandation, donc nos conseils portent sur l'adéquation."
+          },
+          {
+            "q": "Qu'est-ce que le bilan de santé gratuit des systèmes?",
+            "a": "Un court examen de la façon dont vos systèmes et processus s'imbriquent, avec une liste écrite de ce qu'il faut corriger en premier."
+          },
+          {
+            "q": "Pouvez-vous nous aider à embaucher des développeurs?",
+            "a": "Oui, par un partenaire de dotation vérifié. Voyez la page sur les développeurs permanents."
+          }
+        ],
+        "closingTitle": "Obtenez une première étape claire avant de dépenser.",
+        "closingText": "Un appel découverte de 30 minutes avec Ray. Vous repartez en sachant quoi corriger en premier. Sans engagement."
+      }
+    }
+  },
+  "glossaryPage": {
+    "meta": {
+      "title": "Glossaire des opérations et des systèmes",
+      "description": "Des définitions simples des termes ERP, CRM, intégration, automatisation, données, design, publicité et marchés publics, avec les points où chacun se brise en pratique."
+    },
+    "crumbHome": "Accueil",
+    "crumbGlossary": "Glossaire",
+    "badge": "Glossaire",
+    "badgeTerm": "Terme du glossaire",
+    "title": "Le glossaire des opérations et des systèmes, en mots simples.",
+    "lede": "De courtes définitions des termes qui reviennent quand on gère des commandes, des stocks, des finances et les systèmes derrière. Chacune dit ce que le terme veut dire, pourquoi il compte et où il se brise en pratique.",
+    "cta": "Réserver un appel découverte de 30 minutes",
+    "ctaNote": "Avec Ray Rasouli. Sans engagement.",
+    "askHero": "Demander à l'assistant",
+    "searchLabel": "Chercher dans le glossaire",
+    "searchPlaceholder": "Chercher un terme, par exemple rapprochement à trois voies",
+    "lettersLabel": "Aller à une lettre",
+    "categoriesLabel": "Filtrer par domaine",
+    "all": "Tous",
+    "count": "{count} termes affichés",
+    "empty": "Aucun terme ne correspond. L'assistant peut quand même l'expliquer.",
+    "clear": "Effacer",
+    "askApply": "Demander comment ça s'applique chez nous",
+    "categories": {
+      "operations": "Opérations",
+      "finance": "Finance",
+      "systems": "Systèmes",
+      "integration": "Intégration",
+      "erp": "ERP",
+      "crm": "CRM",
+      "data": "Données",
+      "automation": "Automatisation",
+      "design": "Design",
+      "advertising": "Publicité",
+      "procurement": "Marchés publics",
+      "support": "Soutien"
+    },
+    "aboutTitle": "À propos de ce glossaire",
+    "about": [
+      {
+        "q": "Qui rédige ces définitions?",
+        "a": "Ray Rasouli et l'équipe d'Awesoon rédigent et révisent chaque entrée à la main. Chacune est vérifiée selon l'usage du terme dans de vrais projets."
+      },
+      {
+        "q": "Pourquoi chaque terme dit-il où il se brise?",
+        "a": "La plupart des définitions s'arrêtent au sens théorique. Les ennuis commencent quand le terme rencontre de vraies données, de vraies personnes et deux systèmes qui ne s'entendent pas. C'est cette partie qui aide à décider quoi corriger."
+      },
+      {
+        "q": "Puis-je suggérer un terme?",
+        "a": "Oui. Envoyez-le par la page de contact ou demandez à l'assistant. Nous ajoutons les termes qui reviennent souvent."
+      }
+    ],
+    "sideTitle": "Un terme cause toujours des soucis?",
+    "sideBody": "S'il revient à chaque débat de fin de mois, Ray peut examiner le processus derrière.",
+    "closeTitle": "Quand les mots sont clairs, corrigez le processus derrière.",
+    "closeBody": "Un appel découverte de 30 minutes avec Ray. Sans engagement.",
+    "onPage": "Sur cette page",
+    "tocTerms": "Tous les termes",
+    "tocAbout": "À propos de ce glossaire",
+    "term": {
+      "metaTitle": "{term} : la définition",
+      "h1": "{term} : la définition",
+      "reviewed": "Révisé par Ray Rasouli",
+      "howTitle": "Comment ça fonctionne",
+      "howNote": "Le déroulement habituel, étape par étape.",
+      "explainTitle": "En mots simples",
+      "breaksEyebrow": "En pratique",
+      "breaksTitle": "Pourquoi ça se brise en pratique",
+      "askBreaks": "Demander pourquoi ça se brise chez nous",
+      "relatedTitle": "Termes liés",
+      "faqTitle": "Questions fréquentes",
+      "pagesTitle": "Pages liées",
+      "hubKind": "Service",
+      "compareKind": "Comparaison",
+      "glossaryKind": "Glossaire",
+      "backToGlossary": "Tous les termes du glossaire",
+      "sideTitle": "{term} vous ralentit?",
+      "sideBody": "Ray peut regarder comment votre équipe s'y prend aujourd'hui et ce qu'il faut corriger d'abord.",
+      "closeTitle": "Faites fonctionner {term} sans relances manuelles.",
+      "closeBody": "Un appel découverte de 30 minutes avec Ray, puis une liste claire de ce qu'il faut corriger d'abord. Sans engagement.",
+      "tocWhat": "Définition",
+      "tocHow": "Fonctionnement",
+      "tocBreaks": "Pourquoi ça se brise",
+      "tocRelated": "Termes liés",
+      "tocFaq": "Questions"
+    },
+    "hubs": {
+      "/automation": "Automatisation et intégration",
+      "/software-development": "Développement logiciel",
+      "/erp-crm": "ERP et CRM",
+      "/consulting": "Conseil en opérations",
+      "/design": "Design",
+      "/advertising": "Publicité",
+      "/support": "Soutien des systèmes",
+      "/public-sector": "Secteur public"
+    },
+    "total": "{count} termes"
+  },
+  "comparePage": {
+    "meta": {
+      "title": "Comparaisons de logiciels neutres",
+      "description": "Des options ERP, CRM, commerce en ligne et intégration comparées selon la situation, avec des faits tirés des pages des éditeurs et une date de vérification. Awesoon ne touche aucune commission."
+    },
+    "crumbHome": "Accueil",
+    "crumbCompare": "Comparaisons",
+    "badge": "Comparaison neutre",
+    "title": "Des comparaisons de logiciels sans vendeur dans la pièce.",
+    "lede": "Chaque comparaison commence par l'option qui convient à chaque situation. Les faits viennent uniquement des pages publiques des éditeurs, avec un lien et la date de vérification.",
+    "cta": "Réserver un appel découverte de 30 minutes",
+    "ctaNote": "Avec Ray Rasouli. Sans engagement.",
+    "askHero": "Comparer pour ma situation",
+    "read": "Lire la comparaison",
+    "noCommission": "Nous ne touchons aucune commission.",
+    "noCommissionBody": "Awesoon n'est payée par aucun éditeur ni partenaire nommé ici pour une recommandation. Nous travaillons avec ces outils, nous n'avons donc aucune raison d'en pousser un.",
+    "trust": [
+      "Aucune commission",
+      "Sources publiques seulement",
+      "Révisé par Ray Rasouli"
+    ],
+    "verdictEyebrow": "Verdict selon la situation",
+    "verdictTitle": "Le bon choix dépend de votre façon de travailler",
+    "verdictNote": "Choisissez la ligne la plus proche de votre entreprise. Il n'y a pas de gagnant unique.",
+    "inSituation": "Dans cette situation",
+    "situationsLabel": "Situations",
+    "sideTitle": "Côte à côte",
+    "area": "Domaine",
+    "source": "Source",
+    "asOf": "au {date}",
+    "sourceNote": "Établi à partir des pages publiques de chaque éditeur. Dernière vérification le {date}. Les faits que nous n'avons pas pu confirmer sur une page d'éditeur sont exclus.",
+    "framingTitle": "Ce qui décide vraiment",
+    "faqTitle": "Questions fréquentes",
+    "relatedTitle": "Liens utiles",
+    "allCompare": "Toutes les comparaisons",
+    "asideTitle": "Vous choisissez en ce moment?",
+    "asideBody": "Ray peut passer les deux options en revue selon votre vrai flux de commandes, sans vendeur dans la pièce.",
+    "closeTitle": "Choisissez selon l'adéquation, pas selon un argumentaire.",
+    "closeBody": "Un appel découverte de 30 minutes avec Ray, puis une courte liste neutre pour votre situation. Sans engagement.",
+    "onPage": "Sur cette page",
+    "tocVerdict": "Verdict",
+    "tocTable": "Côte à côte",
+    "tocFraming": "Ce qui décide",
+    "tocFaq": "Questions"
+  },
+  "glossaryAssistant": {
+    "label": "Demander à l'assistant",
+    "informs": "Informe seulement",
+    "termLabel": "Questions sur : {term}",
+    "termSub": "Des réponses simples, adaptées à votre situation.",
+    "indexLabel": "Questions sur n'importe quel terme",
+    "indexSub": "Des réponses simples, adaptées à votre situation.",
+    "compareLabel": "Comparer pour ma situation",
+    "compareSub": "Des réponses neutres tirées de sources publiques.",
+    "greetTerm": "Posez n'importe quelle question sur {term}. Par exemple, comment ça fonctionne dans vos outils actuels.",
+    "greetIndex": "Posez une question sur un terme d'opérations ou de systèmes, ou décrivez ce qui accroche.",
+    "greetCompare": "Décrivez votre situation et je vous dirai quoi peser entre {a} et {b}.",
+    "q1": "Merci. Quels systèmes utilisez-vous pour ça aujourd'hui?",
+    "q2": "Et quand ça accroche, qui corrige, et combien de temps ça prend?",
+    "brief": "Voici une courte note à garder ou à envoyer à Ray avant un appel.",
+    "briefHeading": "Votre note",
+    "briefTopic": "Sujet",
+    "briefSaid": "Ce que vous m'avez dit",
+    "book": "Réserver un appel découverte de 30 minutes",
+    "placeholder": "Tapez votre question",
+    "send": "Envoyer",
+    "reset": "Recommencer",
+    "typing": "L'assistant écrit",
+    "startersLabel": "Questions suggérées",
+    "starters": {
+      "term1": "Comment ça marche dans une petite équipe?",
+      "term2": "Pourquoi ça échoue toujours chez nous?",
+      "index1": "Quelle est la différence entre ERP et CRM?",
+      "index2": "Notre fin de mois prend trop de temps",
+      "compare1": "Nous avons un entrepôt et 15 utilisateurs",
+      "compare2": "Nous avons trois entités et deux devises"
+    },
+    "disclaimer": "Un guide scénarisé pour l'instant. Il ne conserve pas ce que vous tapez.",
+    "greetCompareAny": "Décrivez votre situation : utilisateurs, entrepôts, entités et outils actuels. Je vous dirai quoi peser."
   }
 }
