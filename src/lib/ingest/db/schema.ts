@@ -162,3 +162,40 @@ export const platformChanges = pgTable(
   },
   (t) => [uniqueIndex('platform_changes_uq').on(t.sourceId, t.externalId)],
 )
+
+// Website inquiries. RLS on with no policies: only the server connection reads or writes.
+export const leads = pgTable(
+  'leads',
+  {
+    id: serial('id').primaryKey(),
+    createdAt: timestamp('created_at', { withTimezone: true }).notNull().defaultNow(),
+    submittedAt: timestamp('submitted_at', { withTimezone: true }).notNull(),
+    name: text('name').notNull(),
+    company: text('company').notNull(),
+    email: text('email').notNull(),
+    phone: text('phone'),
+    industry: text('industry').notNull(),
+    companySize: text('company_size').notNull(),
+    problems: jsonb('problems').$type<string[]>().notNull().default([]),
+    otherProblem: text('other_problem'),
+    timeline: text('timeline').notNull(),
+    budget: text('budget').notNull(),
+    message: text('message'),
+    locale: text('locale').notNull(),
+    sourceUrl: text('source_url'),
+    utmSource: text('utm_source'),
+    utmMedium: text('utm_medium'),
+    utmCampaign: text('utm_campaign'),
+    utmTerm: text('utm_term'),
+    utmContent: text('utm_content'),
+    landingPage: text('landing_page'),
+    referrer: text('referrer'),
+    ipHash: text('ip_hash'),
+    userAgent: text('user_agent'),
+    status: text('status').notNull().default('new'),
+  },
+  (t) => [
+    uniqueIndex('leads_email_submitted_uq').on(t.email, t.submittedAt),
+    index('leads_created_idx').on(t.createdAt),
+  ],
+).enableRLS()
