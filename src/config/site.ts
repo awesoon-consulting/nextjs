@@ -26,6 +26,7 @@ export const siteConfig = {
     main: [
       { labelKey: 'nav.work', href: '/work' },
       { labelKey: 'nav.publicSector', href: '/public-sector' },
+      { labelKey: 'nav.tools', href: '/tools' },
       { labelKey: 'nav.insights', href: '/insights' },
       { labelKey: 'nav.about', href: '/about' },
     ] as const,
@@ -133,6 +134,7 @@ export const siteConfig = {
     companyLinks: [
       { labelKey: 'nav.work', href: '/work' },
       { labelKey: 'nav.publicSector', href: '/public-sector' },
+      { labelKey: 'nav.tools', href: '/tools' },
       { labelKey: 'nav.insights', href: '/insights' },
       { labelKey: 'nav.about', href: '/about' },
       { labelKey: 'nav.support', href: '/support' },
