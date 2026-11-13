@@ -1,0 +1,204 @@
+{
+  "countries": {
+    "ca": "Canada",
+    "us": "United States",
+    "uk": "United Kingdom",
+    "au": "Australia"
+  },
+  "countryIn": {
+    "ca": "in Canada",
+    "us": "in the United States",
+    "uk": "in the United Kingdom",
+    "au": "in Australia"
+  },
+  "crumb": "Procurement data",
+  "source": {
+    "source": "Source",
+    "licence": "Licence",
+    "updated": "Last updated",
+    "notRecorded": "not recorded yet"
+  },
+  "soon": {
+    "title": "Data loading soon",
+    "text": "The tender and award feeds for this page are being connected. Check back shortly, or ask Ray directly about a notice you are looking at.",
+    "cta": "Email Ray"
+  },
+  "table": {
+    "title": "Title",
+    "buyer": "Buyer",
+    "closes": "Closes",
+    "published": "Published",
+    "value": "Value",
+    "supplier": "Supplier",
+    "awarded": "Awarded",
+    "notStated": "not stated",
+    "sortBy": "Sort by {col}",
+    "soonOnly": "Closing in 7 days only",
+    "shown": "{n} shown",
+    "view": "View notice",
+    "opensNew": "opens the official notice in a new tab"
+  },
+  "hub": {
+    "metaTitle": "Government IT and creative tenders and awards",
+    "metaDescription": "Open tenders, past awards and top buyers for IT, ERP, CRM, database, design and advertising work in Canada, the United States, the United Kingdom and Australia. Updated daily from official open data.",
+    "eyebrow": "Procurement data",
+    "title": "Government IT and creative tenders, updated daily",
+    "lead": "Open tenders, past awards and the buyers behind them, in the 13 portal categories Awesoon bids under. Pick a country to see what is open now.",
+    "countryLabel": "Country",
+    "categoriesTitle": "Categories",
+    "open": "open",
+    "awards12": "awards in 12 months",
+    "newestTitle": "Newest open tenders",
+    "newestEmpty": "No open tender notices are published in this feed for {country} today. Award history is still shown in each category.",
+    "digestLink": "Weekly digest for {country}",
+    "reportTitle": "State of public IT and creative procurement",
+    "reportText": "A quarterly report on what governments buy in these categories, how much and from whom. The first issue publishes once two quarters of data are collected.",
+    "reportCta": "About the report",
+    "framingTitle": "About this data",
+    "framing": [
+      "Governments in Canada, the United States, the United Kingdom and Australia publish their tenders and contract awards as open data. Each country uses its own portal and its own codes, so the same kind of work, such as database design or brand materials, is listed under different names in each place. This section brings those notices together under 13 plain categories that match the services Awesoon delivers.",
+      "Every night the pages read the official feeds: CanadaBuys, USAspending, Contracts Finder and Find a Tender, and AusTender. A notice is matched to a category by its classification codes, never by guessing from the title. Counts, medians and charts are worked out from those records only, and each block names its source, its licence and when it was last updated.",
+      "Use it to see which buyers post your kind of work, what contracts usually cost the buyer, and what is closing soon. Awesoon is a Vancouver firm led by founder Ray Rasouli. If a notice fits what we deliver, we are glad to partner or bid."
+    ]
+  },
+  "category": {
+    "metaTitle": "{category}: government contracts {countryIn}",
+    "metaDescription": "Open tenders, 12 months of awards, the median award value and top buyers for {category} {countryIn}. Updated daily from official open data.",
+    "title": "{category}: government contracts {countryIn}",
+    "summary": "{open} open tenders and {awards} awards in the last 12 months {countryIn}.",
+    "summaryMedian": "The median award was {median}.",
+    "summaryNone": "No awards with a stated value were recorded in the last 12 months.",
+    "ctaCall": "Book a 30-minute call",
+    "ctaDigest": "Get the weekly digest",
+    "kOpen": "Open tenders",
+    "kSoon": "Closing in 7 days",
+    "kAwards": "Awards, 12 months",
+    "kMedian": "Median award value",
+    "kMedianNote": "Contract value to the buyer",
+    "openTitle": "Open tenders",
+    "openEmpty": "No open tenders in this category {countryIn} right now. The award history below shows how often buyers post this work.",
+    "chartTitle": "Awards, last 12 months",
+    "chartLabel": "Bar chart of award counts per month for the last 12 months. Highest month: {max} awards.",
+    "chartAwards": "awards",
+    "chartTotal": "Total value",
+    "chartMedian": "Median",
+    "buyersTitle": "Top buyers, 12 months",
+    "buyersEmpty": "No buyer has an award in this category in the last 12 months.",
+    "buyerAwards": "Awards: {n}",
+    "howTitle": "How Awesoon delivers this category",
+    "howLead": "What we deliver here: {service}. The same four steps on every job, written down so your team owns the result.",
+    "how": [
+      [
+        "Map what you have",
+        "Every system, file and process involved, with who uses it and why."
+      ],
+      [
+        "Design the change",
+        "A plain plan with scope, risks and acceptance checks, reviewed with your staff."
+      ],
+      [
+        "Deliver in stages",
+        "Small releases with tests, so each step can be checked before the next."
+      ],
+      [
+        "Hand over the documents",
+        "Diagrams, a runbook and training your team keeps after we leave."
+      ]
+    ],
+    "capTitle": "Capability statement",
+    "capText": "One page with our services, codes, registrations and contacts for public sector buyers.",
+    "capCta": "See the public sector page",
+    "faqTitle": "Questions buyers and suppliers ask",
+    "faq": [
+      [
+        "Where does this data come from?",
+        "From {sources}, read every night. Each block on this page names its source, its licence and when it was last updated."
+      ],
+      [
+        "How is a notice put in this category?",
+        "By its official classification codes, such as UNSPSC, CPV, NAICS or PSC, matched against the codes for {category}. Titles are never used to guess."
+      ],
+      [
+        "What does the median award value mean?",
+        "Half of the awards with a stated value in the last 12 months were above it and half below. It is the value of the contract to the buyer, not a price Awesoon charges."
+      ],
+      [
+        "Can Awesoon bid on or partner for these tenders?",
+        "Yes, where the work fits what we deliver. Ray Rasouli reviews each notice himself. Book a call or email the notice reference."
+      ]
+    ],
+    "framingTitle": "About this page",
+    "framing": [
+      "This page tracks every public notice {countryIn} that is coded as {category}. It shows the tenders open today, the awards made in the last 12 months and the buyers who post this work most often. The numbers are worked out each night from the official records, with no estimates added, so a quiet month shows as a quiet month.",
+      "Public buyers rarely post this work under one name. One department calls it a modernization, another a support contract, a third a framework. Classification codes are what tie them together, which is why the category here follows the codes and not the wording of the title. Values are what the buyer agreed to pay the supplier, in the local currency, and some notices do not state a value at all.",
+      "Suppliers use this page to judge whether a category is worth bidding on, to find buyers to introduce themselves to, and to see typical contract sizes before pricing. Buyers use it to see what similar organisations have bought and from whom."
+    ]
+  },
+  "buyer": {
+    "metaTitle": "{buyer}: IT and creative contracts",
+    "metaDescription": "What {buyer} buys in IT, ERP, CRM, database, design and advertising work, how often and at what value. From official open data.",
+    "eyebrow": "Buyer profile, {country}",
+    "summary": "{awards} recorded awards in Awesoon's categories, {awards12} in the last 12 months.",
+    "kAwards": "Awards recorded",
+    "kAwards12": "Awards, 12 months",
+    "kMedian": "Median award value",
+    "kOpen": "Open tenders now",
+    "catsTitle": "What they buy",
+    "recentTitle": "Recent awards",
+    "openTitle": "Open tenders from this buyer",
+    "openEmpty": "No open tenders from this buyer right now.",
+    "missingTitle": "Buyer not found",
+    "missingText": "This buyer is not in the current data. It may have been renamed in the source feed.",
+    "back": "Back to procurement data",
+    "framingTitle": "About this profile",
+    "framing": [
+      "This profile gathers every contract award and open tender that {buyer} has published in the 13 categories Awesoon follows, from IT and ERP work to design and advertising. It shows how often they buy, which categories they buy in and what a typical contract is worth to them. Every number comes from the official open data for {country} and is refreshed each night.",
+      "A buyer that posts the same kind of work several times a year is usually a better first conversation than a one-off notice. The recent awards table shows who won each contract, which helps a supplier see whether the buyer prefers large firms, frameworks or smaller specialists.",
+      "Names here are exactly as the buyer wrote them in the feed, so the same department can appear under two spellings. Values are in the local currency and are the contract value to the buyer, not anyone's price. Profiles with fewer than five awards stay out of search until there is enough history to be useful."
+    ]
+  },
+  "digest": {
+    "metaTitle": "Weekly IT and creative tenders digest, {country}",
+    "metaDescription": "New government tenders and awards in IT, ERP, CRM, database, design and advertising work {countryIn} this week, from official open data.",
+    "eyebrow": "Weekly digest",
+    "title": "New IT and creative tenders {countryIn} this week",
+    "range": "{from} to {to}",
+    "tendersTitle": "New tenders",
+    "tendersEmpty": "No new tender notices in these categories were published this week.",
+    "awardsTitle": "New awards",
+    "awardsEmpty": "No new awards in these categories were recorded this week.",
+    "signupTitle": "Get the weekly digest",
+    "signupText": "New IT and creative tenders in one short email each Monday.",
+    "email": "Work email",
+    "consent": "Yes, email me the weekly digest. I can unsubscribe any time.",
+    "privacy": "Privacy notice",
+    "submit": "Send the request",
+    "mailtoNote": "Signup opens an email to Ray. Nothing is stored on this site until the digest list is live.",
+    "mailSubject": "Weekly digest signup ({country})",
+    "mailBody": "Please add {email} to the weekly {country} digest. I agree to receive it and can unsubscribe any time.",
+    "framingTitle": "About the digest",
+    "framing": [
+      "Each week this page lists the new public tenders and contract awards {countryIn} in the 13 categories Awesoon follows: IT expert services, ERP and CRM work, programming, database design, interface work, game software, staffing, and advertising and design. It covers the last seven days and is rebuilt every night from the official feeds.",
+      "It is meant for small suppliers who cannot read every portal every day. Scan the titles, open the official notice for the ones that fit, and check the closing date before you plan a bid. Tenders that close soon are worth reading first. Values are shown in the local currency when the buyer states one.",
+      "The email version will send the same list each Monday to people who ask for it. Consent is always opt-in, the box starts unticked, and you can leave with one click. Until the mailing list is live, signing up simply opens an email to Ray Rasouli, and this site keeps nothing."
+    ]
+  },
+  "report": {
+    "metaTitle": "State of public IT and creative procurement",
+    "metaDescription": "A quarterly report on government buying of IT, ERP, CRM, database, design and advertising work in Canada, the United States, the United Kingdom and Australia.",
+    "eyebrow": "Quarterly report",
+    "title": "State of public IT and creative procurement",
+    "placeholder": "The first issue publishes once two full quarters of data are collected. Collection started in {first}.",
+    "tableTitle": "Awards by country and quarter",
+    "colCountry": "Country",
+    "colQuarter": "Quarter",
+    "colAwards": "Awards",
+    "colMedian": "Median value",
+    "framingTitle": "About the report",
+    "framing": [
+      "Each quarter this report will sum up how governments in Canada, the United States, the United Kingdom and Australia buy IT, ERP, CRM, database, design and advertising work. It compares the number of awards, typical contract values and the most active buyers across the four countries, using only the official open data each country publishes.",
+      "It needs two full quarters before it can show a change rather than a single snapshot, so it stays a placeholder until then. Every figure in it will name its source and licence, and the method will be written out so anyone can check the numbers.",
+      "Journalists, researchers and procurement teams are welcome to cite it with a link. Questions about the method go to founder Ray Rasouli, who reads every message himself. The report does not replace the official notices. It is a way to spot trends, and every notice should still be read on the country's own portal before anyone decides to bid."
+    ]
+  }
+}

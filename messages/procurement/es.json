@@ -1,0 +1,204 @@
+{
+  "countries": {
+    "ca": "Canadá",
+    "us": "Estados Unidos",
+    "uk": "Reino Unido",
+    "au": "Australia"
+  },
+  "countryIn": {
+    "ca": "en Canadá",
+    "us": "en Estados Unidos",
+    "uk": "en el Reino Unido",
+    "au": "en Australia"
+  },
+  "crumb": "Datos de contratación pública",
+  "source": {
+    "source": "Fuente",
+    "licence": "Licencia",
+    "updated": "Última actualización",
+    "notRecorded": "aún no registrada"
+  },
+  "soon": {
+    "title": "Datos disponibles pronto",
+    "text": "Se están conectando las fuentes de licitaciones y adjudicaciones de esta página. Vuelva en un momento, o escriba directamente a Ray sobre un aviso que esté revisando.",
+    "cta": "Escribir a Ray"
+  },
+  "table": {
+    "title": "Título",
+    "buyer": "Comprador",
+    "closes": "Cierre",
+    "published": "Publicado",
+    "value": "Valor",
+    "supplier": "Proveedor",
+    "awarded": "Adjudicado",
+    "notStated": "no indicado",
+    "sortBy": "Ordenar por {col}",
+    "soonOnly": "Solo los que cierran en 7 días",
+    "shown": "{n} mostrados",
+    "view": "Ver aviso",
+    "opensNew": "abre el aviso oficial en una pestaña nueva"
+  },
+  "hub": {
+    "metaTitle": "Licitaciones y adjudicaciones del gobierno en TI y creatividad",
+    "metaDescription": "Licitaciones abiertas, adjudicaciones pasadas y principales compradores de trabajos de TI, ERP, CRM, bases de datos, diseño y publicidad en Canadá, Estados Unidos, el Reino Unido y Australia. Se actualiza a diario con datos abiertos oficiales.",
+    "eyebrow": "Datos de contratación pública",
+    "title": "Licitaciones del gobierno en TI y creatividad, actualizadas a diario",
+    "lead": "Licitaciones abiertas, adjudicaciones pasadas y los compradores detrás de ellas, en las 13 categorías de portal en las que Awesoon presenta ofertas. Elija un país para ver qué está abierto ahora.",
+    "countryLabel": "País",
+    "categoriesTitle": "Categorías",
+    "open": "abiertas",
+    "awards12": "adjudicaciones en 12 meses",
+    "newestTitle": "Licitaciones abiertas más recientes",
+    "newestEmpty": "Hoy no se publica ningún aviso de licitación abierta en esta fuente ({country}). El historial de adjudicaciones se sigue mostrando en cada categoría.",
+    "digestLink": "Resumen semanal, {country}",
+    "reportTitle": "Estado de la contratación pública en TI y creatividad",
+    "reportText": "Un informe trimestral sobre lo que compran los gobiernos en estas categorías, cuánto y a quién. El primer número se publica cuando se hayan reunido dos trimestres de datos.",
+    "reportCta": "Acerca del informe",
+    "framingTitle": "Acerca de estos datos",
+    "framing": [
+      "Los gobiernos de Canadá, Estados Unidos, el Reino Unido y Australia publican sus licitaciones y adjudicaciones de contratos como datos abiertos. Cada país usa su propio portal y sus propios códigos, de modo que el mismo tipo de trabajo, como el diseño de bases de datos o los materiales de marca, aparece con nombres distintos en cada lugar. Esta sección reúne esos avisos en 13 categorías sencillas que corresponden a los servicios que ofrece Awesoon.",
+      "Cada noche las páginas leen las fuentes oficiales: CanadaBuys, USAspending, Contracts Finder y Find a Tender, y AusTender. Un aviso se asigna a una categoría por sus códigos de clasificación, nunca adivinando a partir del título. Los conteos, las medianas y los gráficos se calculan solo con esos registros, y cada bloque indica su fuente, su licencia y cuándo se actualizó por última vez.",
+      "Úselo para ver qué compradores publican su tipo de trabajo, cuánto suelen costarle los contratos al comprador y qué está por cerrar. Awesoon es una empresa de Vancouver dirigida por su fundador, Ray Rasouli. Si un aviso encaja con lo que entregamos, con gusto nos asociamos o presentamos una oferta."
+    ]
+  },
+  "category": {
+    "metaTitle": "{category}: contratos públicos {countryIn}",
+    "metaDescription": "Licitaciones abiertas, 12 meses de adjudicaciones, el valor mediano de las adjudicaciones y los principales compradores de {category} {countryIn}. Se actualiza a diario con datos abiertos oficiales.",
+    "title": "{category}: contratos públicos {countryIn}",
+    "summary": "{open} licitaciones abiertas y {awards} adjudicaciones en los últimos 12 meses {countryIn}.",
+    "summaryMedian": "La adjudicación mediana fue de {median}.",
+    "summaryNone": "En los últimos 12 meses no se registraron adjudicaciones con un valor indicado.",
+    "ctaCall": "Reservar una llamada de 30 minutos",
+    "ctaDigest": "Recibir el resumen semanal",
+    "kOpen": "Licitaciones abiertas",
+    "kSoon": "Cierran en 7 días",
+    "kAwards": "Adjudicaciones, 12 meses",
+    "kMedian": "Valor mediano de las adjudicaciones",
+    "kMedianNote": "Valor del contrato para el comprador",
+    "openTitle": "Licitaciones abiertas",
+    "openEmpty": "Por ahora no hay licitaciones abiertas en esta categoría {countryIn}. El historial de adjudicaciones de abajo muestra con qué frecuencia los compradores publican este trabajo.",
+    "chartTitle": "Adjudicaciones, últimos 12 meses",
+    "chartLabel": "Gráfico de barras con el número de adjudicaciones por mes en los últimos 12 meses. Mes más alto: {max} adjudicaciones.",
+    "chartAwards": "adjudicaciones",
+    "chartTotal": "Valor total",
+    "chartMedian": "Mediana",
+    "buyersTitle": "Principales compradores, 12 meses",
+    "buyersEmpty": "Ningún comprador tiene una adjudicación en esta categoría en los últimos 12 meses.",
+    "buyerAwards": "Contratos: {n}",
+    "howTitle": "Cómo entrega Awesoon esta categoría",
+    "howLead": "Lo que entregamos aquí: {service}. Los mismos cuatro pasos en cada trabajo, por escrito, para que su equipo sea dueño del resultado.",
+    "how": [
+      [
+        "Mapear lo que tiene",
+        "Cada sistema, archivo y proceso involucrado, con quién lo usa y por qué."
+      ],
+      [
+        "Diseñar el cambio",
+        "Un plan claro con alcance, riesgos y criterios de aceptación, revisado con su personal."
+      ],
+      [
+        "Entregar por etapas",
+        "Entregas pequeñas con pruebas, para poder comprobar cada paso antes del siguiente."
+      ],
+      [
+        "Entregar la documentación",
+        "Diagramas, un manual de operación y capacitación que su equipo conserva cuando nos vamos."
+      ]
+    ],
+    "capTitle": "Presentación de capacidades",
+    "capText": "Una página con nuestros servicios, códigos, registros y contactos para compradores del sector público.",
+    "capCta": "Ver la página del sector público",
+    "faqTitle": "Preguntas de compradores y proveedores",
+    "faq": [
+      [
+        "¿De dónde salen estos datos?",
+        "De {sources}, leídos cada noche. Cada bloque de esta página indica su fuente, su licencia y cuándo se actualizó por última vez."
+      ],
+      [
+        "¿Cómo se asigna un aviso a esta categoría?",
+        "Por sus códigos oficiales de clasificación, como UNSPSC, CPV, NAICS o PSC, comparados con los códigos de {category}. Nunca se usan los títulos para adivinar."
+      ],
+      [
+        "¿Qué significa el valor mediano de las adjudicaciones?",
+        "La mitad de las adjudicaciones con valor indicado en los últimos 12 meses estuvieron por encima y la otra mitad por debajo. Es el valor del contrato para el comprador, no un precio que cobra Awesoon."
+      ],
+      [
+        "¿Puede Awesoon presentar ofertas o asociarse en estas licitaciones?",
+        "Sí, cuando el trabajo encaja con lo que entregamos. Ray Rasouli revisa cada aviso personalmente. Reserve una llamada o envíenos por correo la referencia del aviso."
+      ]
+    ],
+    "framingTitle": "Acerca de esta página",
+    "framing": [
+      "Esta página sigue todos los avisos públicos {countryIn} codificados como {category}. Muestra las licitaciones abiertas hoy, las adjudicaciones de los últimos 12 meses y los compradores que más a menudo publican este trabajo. Las cifras se calculan cada noche a partir de los registros oficiales, sin estimaciones añadidas, así que un mes tranquilo se ve como un mes tranquilo.",
+      "Los compradores públicos rara vez publican este trabajo con un solo nombre. Un departamento lo llama modernización, otro contrato de soporte, un tercero acuerdo marco. Los códigos de clasificación son lo que los une, y por eso la categoría aquí sigue los códigos y no la redacción del título. Los valores son lo que el comprador acordó pagar al proveedor, en la moneda local, y algunos avisos no indican ningún valor.",
+      "Los proveedores usan esta página para decidir si vale la pena presentar ofertas en una categoría, para encontrar compradores a quienes presentarse y para conocer el tamaño habitual de los contratos antes de fijar precios. Los compradores la usan para ver qué han comprado organizaciones similares y a quién."
+    ]
+  },
+  "buyer": {
+    "metaTitle": "{buyer}: contratos de TI y creatividad",
+    "metaDescription": "Qué compra {buyer} en trabajos de TI, ERP, CRM, bases de datos, diseño y publicidad, con qué frecuencia y por qué valor. Con datos abiertos oficiales.",
+    "eyebrow": "Perfil del comprador, {country}",
+    "summary": "{awards} adjudicaciones registradas en las categorías de Awesoon, {awards12} en los últimos 12 meses.",
+    "kAwards": "Adjudicaciones registradas",
+    "kAwards12": "Adjudicaciones, 12 meses",
+    "kMedian": "Valor mediano de las adjudicaciones",
+    "kOpen": "Licitaciones abiertas ahora",
+    "catsTitle": "Qué compra",
+    "recentTitle": "Adjudicaciones recientes",
+    "openTitle": "Licitaciones abiertas de este comprador",
+    "openEmpty": "Por ahora no hay licitaciones abiertas de este comprador.",
+    "missingTitle": "Comprador no encontrado",
+    "missingText": "Este comprador no está en los datos actuales. Puede que se le haya cambiado el nombre en la fuente.",
+    "back": "Volver a los datos de contratación pública",
+    "framingTitle": "Acerca de este perfil",
+    "framing": [
+      "Este perfil reúne cada adjudicación de contrato y cada licitación abierta que {buyer} ha publicado en las 13 categorías que sigue Awesoon, desde trabajos de TI y ERP hasta diseño y publicidad. Muestra con qué frecuencia compra, en qué categorías y cuánto vale para él un contrato típico. Cada cifra proviene de los datos abiertos oficiales de {country} y se actualiza cada noche.",
+      "Un comprador que publica el mismo tipo de trabajo varias veces al año suele ser una mejor primera conversación que un aviso aislado. La tabla de adjudicaciones recientes muestra quién ganó cada contrato, lo que ayuda a un proveedor a ver si el comprador prefiere empresas grandes, acuerdos marco o especialistas más pequeños.",
+      "Los nombres aquí aparecen exactamente como los escribió el comprador en la fuente, así que un mismo departamento puede aparecer con dos grafías. Los valores están en moneda local y son el valor del contrato para el comprador, no el precio de nadie. Los perfiles con menos de cinco adjudicaciones quedan fuera de las búsquedas hasta que haya suficiente historial para ser útiles."
+    ]
+  },
+  "digest": {
+    "metaTitle": "Resumen semanal de licitaciones de TI y creatividad, {country}",
+    "metaDescription": "Nuevas licitaciones y adjudicaciones del gobierno en trabajos de TI, ERP, CRM, bases de datos, diseño y publicidad {countryIn} esta semana, con datos abiertos oficiales.",
+    "eyebrow": "Resumen semanal",
+    "title": "Nuevas licitaciones de TI y creatividad {countryIn} esta semana",
+    "range": "Del {from} al {to}",
+    "tendersTitle": "Nuevas licitaciones",
+    "tendersEmpty": "Esta semana no se publicaron nuevos avisos de licitación en estas categorías.",
+    "awardsTitle": "Nuevas adjudicaciones",
+    "awardsEmpty": "Esta semana no se registraron nuevas adjudicaciones en estas categorías.",
+    "signupTitle": "Recibir el resumen semanal",
+    "signupText": "Las nuevas licitaciones de TI y creatividad en un correo breve cada lunes.",
+    "email": "Correo de trabajo",
+    "consent": "Sí, envíenme el resumen semanal por correo. Puedo darme de baja en cualquier momento.",
+    "privacy": "Aviso de privacidad",
+    "submit": "Enviar la solicitud",
+    "mailtoNote": "La suscripción abre un correo dirigido a Ray. No se guarda nada en este sitio hasta que la lista del resumen esté activa.",
+    "mailSubject": "Suscripción al resumen semanal ({country})",
+    "mailBody": "Por favor agreguen {email} al resumen semanal de {country}. Acepto recibirlo y puedo darme de baja en cualquier momento.",
+    "framingTitle": "Acerca del resumen",
+    "framing": [
+      "Cada semana esta página enumera las nuevas licitaciones públicas y adjudicaciones de contratos {countryIn} en las 13 categorías que sigue Awesoon: servicios expertos de TI, trabajos de ERP y CRM, programación, diseño de bases de datos, trabajos de interfaz, software de juegos, dotación de personal, y publicidad y diseño. Cubre los últimos siete días y se reconstruye cada noche a partir de las fuentes oficiales.",
+      "Está pensado para proveedores pequeños que no pueden leer todos los portales todos los días. Revise los títulos, abra el aviso oficial de los que encajen y compruebe la fecha de cierre antes de planear una oferta. Conviene leer primero las licitaciones que cierran pronto.",
+      "La versión por correo enviará la misma lista cada lunes a quienes la pidan. El consentimiento siempre es voluntario, la casilla empieza sin marcar y puede darse de baja con un clic. Mientras la lista de correo no esté activa, suscribirse solo abre un correo dirigido a Ray Rasouli, y este sitio no guarda nada."
+    ]
+  },
+  "report": {
+    "metaTitle": "Estado de la contratación pública en TI y creatividad",
+    "metaDescription": "Un informe trimestral sobre las compras del gobierno de trabajos de TI, ERP, CRM, bases de datos, diseño y publicidad en Canadá, Estados Unidos, el Reino Unido y Australia.",
+    "eyebrow": "Informe trimestral",
+    "title": "Estado de la contratación pública en TI y creatividad",
+    "placeholder": "El primer número se publica cuando se hayan reunido dos trimestres completos de datos. La recopilación comenzó en {first}.",
+    "tableTitle": "Adjudicaciones por país y trimestre",
+    "colCountry": "País",
+    "colQuarter": "Trimestre",
+    "colAwards": "Adjudicaciones",
+    "colMedian": "Valor mediano",
+    "framingTitle": "Acerca del informe",
+    "framing": [
+      "Cada trimestre este informe resumirá cómo los gobiernos de Canadá, Estados Unidos, el Reino Unido y Australia compran trabajos de TI, ERP, CRM, bases de datos, diseño y publicidad. Compara el número de adjudicaciones, los valores habituales de los contratos y los compradores más activos en los cuatro países, usando solo los datos abiertos oficiales que publica cada país.",
+      "Necesita dos trimestres completos para poder mostrar un cambio y no solo una instantánea, así que seguirá como página provisional hasta entonces. Cada cifra indicará su fuente y su licencia, y el método se explicará por escrito para que cualquiera pueda comprobar los números.",
+      "Periodistas, investigadores y equipos de contratación pueden citarlo con un enlace. Las preguntas sobre el método van al fundador, Ray Rasouli, quien lee cada mensaje personalmente. El informe no reemplaza a los avisos oficiales. Sirve para ver tendencias, y cada aviso debe leerse siempre en el portal del país correspondiente antes de decidir si se presenta una oferta."
+    ]
+  }
+}
