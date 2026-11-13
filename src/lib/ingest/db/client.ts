@@ -4,9 +4,19 @@ import * as schema from './schema'
 
 let db: ReturnType<typeof drizzle<typeof schema>> | null = null
 
-// Null until DATABASE_URL exists; callers fall back to local snapshots.
+// The Vercel Supabase integration sets POSTGRES_URL, not DATABASE_URL.
+export function databaseUrl() {
+  const raw = process.env.DATABASE_URL || process.env.POSTGRES_URL
+  if (!raw) return null
+  const url = new URL(raw)
+  for (const p of ['supa', 'pgbouncer', 'sslmode']) url.searchParams.delete(p)
+  return url.toString()
+}
+
+// Null until a database URL exists; callers fall back to local snapshots.
 export function getDb() {
-  if (!process.env.DATABASE_URL) return null
-  if (!db) db = drizzle(postgres(process.env.DATABASE_URL, { max: 1, prepare: false }), { schema })
+  const url = databaseUrl()
+  if (!url) return null
+  if (!db) db = drizzle(postgres(url, { max: 1, prepare: false, ssl: 'require' }), { schema })
   return db
 }
