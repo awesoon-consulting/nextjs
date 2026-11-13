@@ -17,6 +17,7 @@ export function databaseUrl() {
 export function getDb() {
   const url = databaseUrl()
   if (!url) return null
-  if (!db) db = drizzle(postgres(url, { max: 1, prepare: false, ssl: 'require' }), { schema })
+  // Supabase's transaction pooler hangs on pipelined queries, so send one at a time.
+  if (!db) db = drizzle(postgres(url, { max: 1, max_pipeline: 1, prepare: false, ssl: 'require' }), { schema })
   return db
 }
