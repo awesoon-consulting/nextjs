@@ -1,6 +1,6 @@
 import { MetadataRoute } from 'next'
 import { siteConfig } from '@/src/config/site'
-import { getAllSolutionSlugs } from '@/src/data/solutions'
+import { HUB_IDS, HUB_SPOKES, spokePath } from '@/src/data/hub-map'
 import { getAllSupportSlugs } from '@/src/data/support'
 import { getAllInsightSlugs } from '@/src/data/insights'
 import { getAllGameSlugs } from '@/src/data/games'
@@ -9,7 +9,7 @@ import { getAllCaseStudies } from '@/src/data/work'
 export default function sitemap(): MetadataRoute.Sitemap {
   const baseUrl = process.env.NEXT_PUBLIC_SITE_URL ?? siteConfig.url
   const locales = siteConfig.locales
-  const solutionSlugs = getAllSolutionSlugs()
+  const spokePaths = [...HUB_IDS.flatMap((h) => HUB_SPOKES[h].map(spokePath)), spokePath('maintenance')]
   const supportSlugs = getAllSupportSlugs()
   const insightSlugs = getAllInsightSlugs()
   const gameSlugs = getAllGameSlugs()
@@ -17,7 +17,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
   const entries: MetadataRoute.Sitemap = []
 
   // Static pages per locale
-  const staticPaths = ['', '/solutions', '/support', '/insights', '/about', '/contact', '/games', '/design', '/work', '/public-sector', '/advertising']
+  const staticPaths = ['', '/solutions', '/support', '/insights', '/about', '/contact', '/games', '/design', '/work', '/public-sector', '/advertising', ...HUB_IDS.map((h) => `/${h}`)]
 
   for (const locale of locales) {
     for (const path of staticPaths) {
@@ -34,17 +34,14 @@ export default function sitemap(): MetadataRoute.Sitemap {
       })
     }
 
-    // Solution pages
-    for (const slug of solutionSlugs) {
+    for (const path of spokePaths) {
       entries.push({
-        url: `${baseUrl}/${locale}/solutions/${slug}`,
+        url: `${baseUrl}/${locale}${path}`,
         lastModified: new Date(),
         changeFrequency: 'monthly',
         priority: 0.7,
         alternates: {
-          languages: Object.fromEntries(
-            locales.map((l) => [l, `${baseUrl}/${l}/solutions/${slug}`])
-          ),
+          languages: Object.fromEntries(locales.map((l) => [l, `${baseUrl}/${l}${path}`])),
         },
       })
     }

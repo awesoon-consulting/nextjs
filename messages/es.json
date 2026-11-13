@@ -849,7 +849,15 @@
     "toggleBefore": "Antes",
     "toggleAfter": "Después",
     "toggleLabel": "Mostrar antes o después",
-    "artLabel": "Traspasos desordenados que se convierten en sistemas conectados"
+    "artLabel": "Traspasos desordenados que se convierten en sistemas conectados",
+    "erpCrm": {
+      "name": "ERP y CRM",
+      "short": "ERP y CRM que siguen cómo trabaja.",
+      "line": "Elegimos, configuramos y ampliamos el ERP y el CRM que manejan sus pedidos, inventario y ventas.",
+      "before": "Pedidos y oportunidades viven en correos y hojas de cálculo.",
+      "after": "Un ERP y un CRM que su equipo realmente usa.",
+      "menuName": "ERP y CRM"
+    }
   },
   "assistant": {
     "title": "¿Qué debería dejar de hacer a mano su empresa?",
@@ -1752,6 +1760,328 @@
     "closing": {
       "title": "Haga que su próxima campaña sea la fácil.",
       "text": "Hable con Ray. Sale con un primer paso claro, trabajemos juntos o no."
+    }
+  },
+  "hubs": {
+    "chrome": {
+      "home": "Inicio",
+      "services": "Servicios",
+      "eyebrowSuffix": "centro",
+      "trust": "Neutrales frente a proveedores · Sin comisiones · Dirigido por Ray Rasouli",
+      "askHero": "Preguntar al asistente",
+      "spokesKicker": "Puntos de entrada",
+      "spokesTitle": "Qué cubre {hub}",
+      "spokesIntro": "Cada página responde un problema completo. Empiece por la que se parece a su semana.",
+      "readPage": "Leer la página",
+      "askAbout": "Preguntar",
+      "chooserTitle": "¿Cuál le corresponde?",
+      "chooserIntro": "Elija lo que más le duele. Le llevamos a una sola página.",
+      "startHere": "Empiece aquí",
+      "askFits": "Preguntar si nos sirve",
+      "insightsTitle": "Artículos relacionados",
+      "faqTitle": "Preguntas frecuentes",
+      "onThisPage": "En esta página",
+      "sideTitle": "¿No sabe qué página le sirve?",
+      "sideText": "Cuéntele a Ray cómo se mueve el trabajo hoy. Él le dice qué hacer primero.",
+      "sideNote": "Con Ray Rasouli. Sin compromiso.",
+      "chat": {
+        "label": "Preguntas sobre {hub}",
+        "note": "Respuestas basadas en este centro y nuestro método. Solo informativo",
+        "greeting": "Hola. Cuénteme qué frena a su equipo y le llevaré a la página correcta.",
+        "placeholder": "Describa el problema en una frase",
+        "send": "Enviar",
+        "typing": "El asistente está escribiendo",
+        "restart": "Empezar de nuevo",
+        "openMatch": "Eso suena a {page}.",
+        "openGeneric": "Gracias, eso ayuda.",
+        "q1": "¿Qué sistemas o herramientas intervienen hoy?",
+        "q2": "¿Para cuándo le gustaría resolverlo?",
+        "briefIntro": "Aquí tiene un resumen corto. Puede enviarlo a Ray antes de su llamada.",
+        "briefLabel": "Su resumen",
+        "needLabel": "Lo que necesita",
+        "setupLabel": "Sistemas actuales",
+        "whenLabel": "Plazo",
+        "pageLabel": "Página a leer",
+        "talkToRay": "Enviar a Ray",
+        "bookLabel": "Elija un horario para una llamada de 30 minutos con Ray.",
+        "consentLabel": "Enviar esta conversación a Ray con mi reserva. Se guarda hasta 3 años y nunca se vende.",
+        "chips": [
+          "Los datos se escriben dos veces",
+          "Estamos eligiendo software nuevo",
+          "Un proyecto está atascado"
+        ],
+        "when": [
+          "Este mes",
+          "Este trimestre",
+          "Solo explorando"
+        ]
+      },
+      "spoke": {
+        "problemTitle": "¿Le suena familiar?",
+        "whatWeDoTitle": "Lo que hacemos",
+        "howTitle": "Cómo funciona",
+        "keepTitle": "Lo que conserva",
+        "outcomesTitle": "Lo que cambia",
+        "govTitle": "Para compradores públicos",
+        "govText": "En los portales de gobierno, este trabajo aparece en la categoría {category}.",
+        "govCodes": "Códigos de categoría: a solicitud.",
+        "govLink": "Cómo comprar a Awesoon",
+        "relatedTitle": "Páginas relacionadas",
+        "partOf": "Parte de {hub}",
+        "platformsTitle": "Plataformas con las que trabajamos",
+        "platformsSubtitle": "Somos neutrales frente a plataformas. Toque un logo para ver dónde encaja mejor.",
+        "platformsTapHint": "Toque una plataforma arriba para saber cuándo conviene.",
+        "closingTitle": "Háblelo con Ray",
+        "closingText": "Una llamada de descubrimiento de 30 minutos. Sale con un primer paso claro, trabajemos juntos o no.",
+        "sharedHow": [
+          "Una llamada de descubrimiento de 30 minutos con Ray sobre cómo funciona el trabajo hoy",
+          "Un plan escrito corto de qué cambiamos primero y por qué",
+          "El trabajo, en pasos que usted revisa, y una entrega que su equipo puede manejar"
+        ],
+        "sharedKeep": [
+          "Documentación escrita para su equipo",
+          "Cuentas, ajustes y código a su nombre",
+          "Un registro claro de cada cambio que hicimos"
+        ],
+        "sharedFaq": [
+          {
+            "q": "¿Quién hace el trabajo?",
+            "a": "Ray Rasouli dirige personalmente cada proyecto. Cuando se necesita un especialista, le decimos quién y por qué antes de empezar."
+          },
+          {
+            "q": "¿Cobran comisiones a los proveedores de software?",
+            "a": "No. Awesoon es neutral frente a proveedores y no cobra comisiones ni honorarios por referencia, así que el consejo es sobre lo que le conviene."
+          },
+          {
+            "q": "¿Cuánto cuesta?",
+            "a": "Depende del alcance. Después de la llamada de descubrimiento recibe un alcance escrito y una cotización antes de empezar."
+          }
+        ],
+        "includesQ": "¿Qué incluye {title}?"
+      },
+      "index": {
+        "title": "Servicios",
+        "metaTitle": "Servicios: todas las formas en que Awesoon ayuda",
+        "metaDescription": "Todos los servicios de Awesoon, agrupados en centros: automatización, desarrollo de software, ERP y CRM, consultoría, diseño, publicidad, soporte, juegos y sector público.",
+        "intro": "Elija el área que corresponde a su problema. Cada centro lo explica con palabras sencillas y enlaza una página por servicio.",
+        "open": "Abrir el centro",
+        "extra": {
+          "design": {
+            "name": "Diseño",
+            "line": "Marca, interfaces y sistemas de diseño que su equipo puede reutilizar."
+          },
+          "advertising": {
+            "name": "Publicidad",
+            "line": "Campañas, producción y publicidad con banners, con informes claros."
+          },
+          "support": {
+            "name": "Soporte",
+            "line": "Soporte continuo para sistemas, ERP, CRM y comercio electrónico."
+          },
+          "games": {
+            "name": "Juegos",
+            "line": "Nuestros propios juegos móviles, y mantenimiento de juegos y aplicaciones."
+          },
+          "public-sector": {
+            "name": "Sector público",
+            "line": "Cómo los compradores públicos encuentran y compran a Awesoon."
+          }
+        }
+      }
+    },
+    "hub": {
+      "automation": {
+        "name": "Automatización e integración",
+        "metaTitle": "Servicios de automatización e integración de sistemas",
+        "metaDescription": "La automatización conecta su tienda, ERP, CRM y contabilidad para que los datos se ingresen una vez y fluyan solos. Neutral frente a proveedores y documentado.",
+        "title": "Automatización e integración: sus sistemas se pasan el trabajo.",
+        "answer": "La automatización empresarial conecta su tienda, ERP, CRM y contabilidad para que los datos se ingresen una sola vez y fluyan solos. Las personas intervienen solo cuando hace falta criterio, y cada flujo queda documentado para que su equipo sea el dueño.",
+        "choose": [
+          {
+            "spoke": "system-integration",
+            "label": "Escribimos los mismos datos en dos sistemas"
+          },
+          {
+            "spoke": "spreadsheet-operations",
+            "label": "Una hoja de cálculo maneja un proceso clave"
+          },
+          {
+            "spoke": "mobile-warehouse-barcoding",
+            "label": "Los conteos del almacén nunca cuadran"
+          },
+          {
+            "spoke": "ai-operations",
+            "label": "Queremos IA pero no sabemos dónde encaja"
+          },
+          {
+            "spoke": "database-management-service",
+            "label": "Nadie cuida nuestra base de datos"
+          }
+        ],
+        "faq": [
+          {
+            "q": "¿Qué es la automatización empresarial?",
+            "a": "Es lograr que sus sistemas se pasen datos y tareas, para que la gente deje de reescribir y perseguir. Una persona sigue aprobando lo que requiere criterio."
+          },
+          {
+            "q": "¿Qué sistemas pueden conectar?",
+            "a": "La mayoría de herramientas con API o exportación, como Shopify, NetSuite, QuickBooks, HubSpot y Salesforce. En la llamada le decimos si algo no se puede conectar bien."
+          },
+          {
+            "q": "¿Qué pasa si una conexión falla?",
+            "a": "Cada flujo que construimos registra su trabajo y avisa a una persona designada si algo falla, con una guía escrita para resolverlo."
+          },
+          {
+            "q": "¿Las automatizaciones son nuestras?",
+            "a": "Sí. Corren en cuentas a su nombre y están documentadas para que su equipo u otro proveedor pueda continuar."
+          }
+        ],
+        "closingTitle": "Empiece por el flujo que su equipo reescribe más.",
+        "closingText": "Una llamada de descubrimiento de 30 minutos con Ray y una lista clara de qué conectar primero y por qué. Sin compromiso."
+      },
+      "software-development": {
+        "name": "Desarrollo de software",
+        "metaTitle": "Servicios de desarrollo de software a medida para empresas",
+        "metaDescription": "Desarrollo de software a medida: aplicaciones, API, bases de datos e interfaces hechas según cómo trabaja su equipo, con el código a su nombre.",
+        "title": "Desarrollo de software: herramientas a medida para lo que los productos no hacen.",
+        "answer": "El desarrollo de software a medida construye las aplicaciones, API, bases de datos y pantallas que su negocio necesita cuando ningún producto encaja. Awesoon las construye en pasos pequeños que usted ve, y usted es dueño del código, las cuentas y la documentación.",
+        "choose": [
+          {
+            "spoke": "application-programming",
+            "label": "Necesitamos una herramienta que ningún producto ofrece"
+          },
+          {
+            "spoke": "database-design",
+            "label": "Nuestros informes nunca coinciden"
+          },
+          {
+            "spoke": "client-server-programming",
+            "label": "Nuestra aplicación se vuelve lenta o falla"
+          },
+          {
+            "spoke": "custom-api-development",
+            "label": "Los socios necesitan conectarse a nuestros datos"
+          },
+          {
+            "spoke": "interface-development",
+            "label": "Nuestras pantallas son difíciles de usar"
+          }
+        ],
+        "faq": [
+          {
+            "q": "¿Construir software a medida o comprar un producto?",
+            "a": "Compre cuando un producto ya hace bien el trabajo. Construya solo cuando nada encaje, y le diremos si un producto basta."
+          },
+          {
+            "q": "¿De quién es el código?",
+            "a": "Suyo. Está en su repositorio desde el primer día, con cuentas de alojamiento a su nombre."
+          },
+          {
+            "q": "¿Cómo mantienen el proyecto en curso?",
+            "a": "Acordamos un alcance escrito corto, construimos en pasos pequeños que usted revisa y corregimos temprano si algo no encaja."
+          },
+          {
+            "q": "¿Pueden continuar una aplicación existente?",
+            "a": "Sí. Empezamos con una revisión escrita del código y le contamos lo que encontramos antes de sugerir cambios."
+          }
+        ],
+        "closingTitle": "Describa la herramienta que le gustaría tener.",
+        "closingText": "Una llamada de descubrimiento de 30 minutos con Ray y una respuesta clara: construir, comprar o conectar. Sin compromiso."
+      },
+      "erp-crm": {
+        "name": "ERP y CRM",
+        "metaTitle": "Servicios de implementación y configuración de ERP y CRM",
+        "metaDescription": "Implementación, configuración y programación a medida de ERP y CRM para empresas en crecimiento. Neutral, sin comisiones, dirigido por Ray Rasouli.",
+        "title": "ERP y CRM: sistemas que siguen cómo trabaja de verdad.",
+        "answer": "Los servicios de ERP y CRM eligen, configuran y amplían los sistemas que manejan sus pedidos, inventario, finanzas y ventas. Awesoon es neutral frente a proveedores y no cobra comisiones, así que el sistema se adapta a sus operaciones y no al revés.",
+        "choose": [
+          {
+            "spoke": "erp-implementation",
+            "label": "Nos cambiamos a un ERP nuevo"
+          },
+          {
+            "spoke": "crm-implementation",
+            "label": "Necesitamos un proyecto de CRM bien hecho"
+          },
+          {
+            "spoke": "crm-setup",
+            "label": "Compramos un CRM y nadie lo usa"
+          },
+          {
+            "spoke": "erp-database-applications",
+            "label": "Nuestro ERP necesita piezas a medida"
+          }
+        ],
+        "faq": [
+          {
+            "q": "¿Qué ERP o CRM deberíamos elegir?",
+            "a": "Depende de su tamaño, procesos y otros sistemas. Como no cobramos comisiones, comparamos opciones solo por encaje."
+          },
+          {
+            "q": "¿Por qué fallan los proyectos de ERP?",
+            "a": "La mayoría falla por procesos y datos, no por el software: requisitos poco claros, datos desordenados y sin responsable. Empezamos por ahí."
+          },
+          {
+            "q": "¿Dan soporte después de la puesta en marcha?",
+            "a": "Sí. Nuestras páginas de soporte de ERP y CRM cubren la ayuda continua después del lanzamiento."
+          },
+          {
+            "q": "¿Pueden arreglar un sistema que configuró otra persona?",
+            "a": "Sí. Revisamos lo que hay, dejamos por escrito lo que encontramos y arreglamos primero lo que más importa."
+          }
+        ],
+        "closingTitle": "Haga que el sistema se ajuste al negocio.",
+        "closingText": "Una llamada de descubrimiento de 30 minutos con Ray sobre su ERP o CRM y un primer paso claro. Sin compromiso."
+      },
+      "consulting": {
+        "name": "Consultoría y expertos en TI",
+        "metaTitle": "Consultoría y servicios de expertos en TI para empresas en crecimiento",
+        "metaDescription": "Consultoría de TI: revisiones de sistemas, selección de software, rescate de proyectos, bases de procesos y asesoría experta. Neutral frente a proveedores.",
+        "title": "Consultoría y expertos en TI: respuestas claras antes de gastar.",
+        "answer": "La consultoría de TI le da una visión sénior y neutral de sus sistemas antes de comprar, construir o arreglar algo. Awesoon revisa cómo funciona el trabajo de verdad, deja por escrito lo que encuentra y le dice con claridad qué hacer primero.",
+        "choose": [
+          {
+            "spoke": "systems-audit",
+            "label": "No sabemos por dónde empezar"
+          },
+          {
+            "spoke": "software-selection",
+            "label": "Estamos eligiendo software o proveedor"
+          },
+          {
+            "spoke": "project-management",
+            "label": "Un proyecto está atrasado o atascado"
+          },
+          {
+            "spoke": "ops-outgrown-tools",
+            "label": "Crecimos y nuestras herramientas no"
+          },
+          {
+            "spoke": "it-expert-services",
+            "label": "Necesitamos la opinión de un experto"
+          }
+        ],
+        "faq": [
+          {
+            "q": "¿Qué hace un consultor de TI para una pyme?",
+            "a": "Revisamos sus sistemas y procesos, comparamos opciones y le entregamos un plan escrito. Puede aplicarlo con nosotros o con quien quiera."
+          },
+          {
+            "q": "¿Están atados a algún proveedor de software?",
+            "a": "No. No cobramos comisiones ni honorarios por referencia, así que el consejo es sobre el encaje."
+          },
+          {
+            "q": "¿Qué es la revisión gratuita de sistemas?",
+            "a": "Una revisión corta de cómo encajan sus sistemas y procesos, con una lista escrita de qué arreglar primero."
+          },
+          {
+            "q": "¿Pueden ayudarnos a contratar desarrolladores?",
+            "a": "Sí, mediante un socio de reclutamiento verificado. Vea la página de desarrolladores permanentes."
+          }
+        ],
+        "closingTitle": "Obtenga un primer paso claro antes de gastar.",
+        "closingText": "Una llamada de descubrimiento de 30 minutos con Ray. Sale sabiendo qué arreglar primero. Sin compromiso."
+      }
     }
   }
 }

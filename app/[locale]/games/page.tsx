@@ -1,4 +1,5 @@
 import type { Metadata } from 'next'
+import RelatedSpokes from '@/src/components/hubs/RelatedSpokes'
 import Image from 'next/image'
 import Link from 'next/link'
 import { getTranslations, setRequestLocale } from 'next-intl/server'
@@ -101,6 +102,7 @@ export default async function GamesPage({ params }: GamesPageProps) {
           </p>
         </div>
       </section>
+      <RelatedSpokes slugs={['maintenance']} locale={locale} />
     </>
   )
 }
