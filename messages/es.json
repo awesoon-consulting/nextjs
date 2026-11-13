@@ -527,6 +527,282 @@
   "sitemap": {
     "title": "Mapa del sitio"
   },
+  "tools": {
+    "crumb": "Herramientas gratuitas",
+    "hub": {
+      "meta": {
+        "title": "Herramientas gratuitas para operaciones y licitaciones del sector público",
+        "description": "Herramientas gratuitas de Awesoon que responden cada una a una pregunta: cuánto le cuesta a su equipo el trabajo manual repetitivo y bajo qué códigos de contratación licita. Sin registro."
+      },
+      "eyebrow": "Gratis. Sin registro. Sus datos se quedan en su navegador.",
+      "title": "Herramientas gratuitas que responden cada una a una pregunta.",
+      "text": "Cuánto le cuesta el trabajo repetitivo, bajo qué códigos licita y más herramientas en camino. Cada resultado es suyo para guardar y compartir.",
+      "filterLabel": "Filtrar herramientas por área",
+      "filters": {
+        "all": "Todas",
+        "automation": "Automatización",
+        "procurement": "Contratación",
+        "erpCrm": "ERP y CRM",
+        "consulting": "Consultoría",
+        "design": "Diseño",
+        "advertising": "Publicidad"
+      },
+      "live": "Disponible",
+      "soon": "Próximamente",
+      "open": "Abrir la herramienta",
+      "soonNote": "En preparación. Pregunte a Ray si la necesita antes.",
+      "previewLabel": "Ejemplo real con datos",
+      "calcPreview": "{hours} horas a la semana de captura de datos en {region} cuestan unos {cost} al año en sueldos.",
+      "finderPreview": "El diseño gráfico es {code} en UNSPSC.",
+      "tools": {
+        "calculator": {
+          "name": "Calculadora del costo del trabajo manual",
+          "outcome": "Vea cuánto le cuesta a su equipo cada año la captura de datos, los pedidos y la facturación repetitivos, con datos salariales públicos de su región."
+        },
+        "finder": {
+          "name": "Buscador de códigos de contratación",
+          "outcome": "Escriba un servicio y obtenga sus códigos UNSPSC, GSIN, PSC y CPV, con una nota sencilla sobre dónde se usa cada uno."
+        },
+        "erp": {
+          "name": "Revisión de preparación para un ERP",
+          "outcome": "Una autoevaluación corta para saber si su equipo está listo para un ERP y qué corregir primero."
+        },
+        "health": {
+          "name": "Autoevaluación de salud de sistemas",
+          "outcome": "Califique qué tan bien encajan hoy sus herramientas, datos y traspasos."
+        },
+        "capability": {
+          "name": "Creador de declaración de capacidades",
+          "outcome": "Cree la declaración de capacidades de una página que piden los compradores, lista para imprimir."
+        },
+        "rfp": {
+          "name": "Lista de verificación para responder una licitación",
+          "outcome": "Convierta una licitación en una lista de todo lo que necesita su respuesta."
+        },
+        "integration": {
+          "name": "Creador de mapa de integración",
+          "outcome": "Dibuje sus sistemas y vea dónde se capturan los datos dos veces."
+        },
+        "brand": {
+          "name": "Inicio de guía de marca",
+          "outcome": "Elija una paleta y un par de tipografías y obtenga una página de guía inicial."
+        },
+        "adSpecs": {
+          "name": "Hoja de tamaños y especificaciones de anuncios",
+          "outcome": "Los tamaños y especificaciones de anuncios vigentes de las principales plataformas en una sola página."
+        },
+        "processMaps": {
+          "name": "Plantillas de mapas de procesos",
+          "outcome": "Plantillas gratuitas y sin formulario para mapear cómo se mueve hoy el trabajo."
+        }
+      },
+      "helpTitle": "¿No sabe qué herramienta le conviene?",
+      "helpText": "Elija lo que quiere averiguar. Si todavía no hay una herramienta para eso, una llamada de 30 minutos con Ray Rasouli le ayudará.",
+      "helpCost": "Cuánto nos cuesta el trabajo manual",
+      "helpCodes": "Bajo qué códigos licitamos",
+      "helpOther": "Otra cosa",
+      "helpOtherReply": "Esa herramienta aún no está disponible. Ray puede revisarlo con usted en una llamada gratuita de 30 minutos.",
+      "faqTitle": "Preguntas sobre las herramientas gratuitas",
+      "faq": [
+        {
+          "q": "¿De verdad son gratuitas?",
+          "a": "Sí. No hay registro ni muro de pago. Sus datos se quedan en su navegador y no se guarda nada."
+        },
+        {
+          "q": "¿De dónde vienen los datos?",
+          "a": "Cada herramienta nombra sus fuentes en la página: Statistics Canada (Statistique Canada), la Oficina de Estadísticas Laborales de Estados Unidos y la Oficina de Estadística de Australia para los sueldos, y las listas oficiales de códigos de Public Services and Procurement Canada, la Administración de Servicios Generales de Estados Unidos y la Unión Europea para los códigos."
+        },
+        {
+          "q": "¿Una herramienta me dirá cuánto cobra Awesoon?",
+          "a": "No. Cada resultado trata de su propio trabajo, como su propio costo de mano de obra. Los precios llegan solo después de una llamada sobre su alcance."
+        }
+      ]
+    },
+    "result": {
+      "label": "Qué sigue",
+      "share": "Compartir este resultado",
+      "copied": "Enlace copiado",
+      "ask": "Preguntar al asistente sobre este resultado",
+      "book": "Reservar una llamada de descubrimiento de 30 minutos",
+      "assistantLabel": "Asistente",
+      "close": "Cerrar",
+      "askPlaceholder": "Pregunte sobre este resultado",
+      "send": "Enviar",
+      "typing": "El asistente está escribiendo",
+      "email": "Enviarme esto por correo",
+      "optional": "(opcional)",
+      "emailLabel": "Su correo",
+      "consent": "Abre un correo para usted mismo con este resultado. No se guarda ni se envía nada a Awesoon.",
+      "emailCta": "Abrir el correo",
+      "emailSubject": "Mi resultado de Awesoon: {tool}"
+    },
+    "calc": {
+      "meta": {
+        "title": "Calculadora del costo del trabajo manual: cuánto le cuesta el trabajo administrativo repetitivo",
+        "description": "Calculadora gratuita que convierte horas de captura de datos, pedidos y facturación manuales en un costo anual de mano de obra, con datos salariales oficiales de provincias canadienses, estados de Estados Unidos y estados de Australia."
+      },
+      "title": "¿Cuánto le cuesta a su equipo el trabajo manual cada año?",
+      "text": "Elija su región y los puestos que hacen el trabajo repetitivo. Los sueldos vienen de datos públicos de su región, así que la cifra es suya. Sin registro.",
+      "country": "País",
+      "countries": {
+        "CA": "Canadá",
+        "US": "Estados Unidos",
+        "AU": "Australia",
+        "UK": "Reino Unido"
+      },
+      "regionWord": {
+        "CA": "Provincia o territorio",
+        "US": "Estado",
+        "AU": "Estado o territorio",
+        "UK": "Región"
+      },
+      "ukShort": "Datos salariales disponibles pronto",
+      "ukSoon": "Los datos salariales del Reino Unido llegarán pronto. Añadiremos los ingresos regionales de la Office for National Statistics en cuanto podamos leerlos de forma confiable.",
+      "roles": "Puestos que hacen el trabajo manual",
+      "roleNames": {
+        "dataEntry": "Captura de datos",
+        "orderClerk": "Auxiliar de pedidos",
+        "billingClerk": "Auxiliar de facturación",
+        "bookkeeping": "Auxiliar contable"
+      },
+      "perHour": "{wage} por hora",
+      "noWage": "Sin sueldo publicado",
+      "people": "Personas que lo hacen",
+      "hours": "Horas por persona, a la semana",
+      "privacy": "Sus datos se quedan en su navegador.",
+      "estimate": "Su estimación",
+      "liveData": "Datos salariales oficiales",
+      "perYear": "al año en sueldos dedicados al trabajo manual",
+      "hoursYear": "horas al año",
+      "fullTime": "personas de tiempo completo",
+      "avgHour": "sueldo promedio por hora",
+      "pickRole": "Elija al menos un puesto para ver su costo.",
+      "basis": "52 semanas al año, solo sueldos. Las prestaciones, los impuestos sobre la nómina y los gastos generales se suman, así que su costo real es mayor. Las horas se reparten por igual entre los puestos elegidos. Este es su propio costo de mano de obra, no un precio de Awesoon.",
+      "basisFte": "Tiempo completo significa {hours} horas a la semana.",
+      "sourceTitle": "De dónde vienen los sueldos",
+      "sourceLine": "Fuente: {source}.",
+      "period": "Periodo: {period}.",
+      "licence": "Licencia: {licence}",
+      "fetched": "Datos tomados el {date}.",
+      "usNote": "Sueldo anual mediano de cada ocupación (SOC {codes}), convertido a tarifa por hora con 2,080 horas al año, como lo hace el BLS.",
+      "caNote": "Sueldo mediano por hora de {occupation} ({code}). Statistics Canada no publica estos cuatro puestos por separado, así que se usa la misma cifra general para cada puesto.",
+      "auNote": "{occupation}. No es específico de un puesto e incluye personal de medio tiempo, así que es una guía aproximada; se convierte a tarifa por hora con 38 horas a la semana, la semana de tiempo completo de los National Employment Standards.",
+      "auPeriod": "{year}, primer semestre",
+      "summary": "{region}: {hours} horas a la semana, {people} personas, unos {cost} al año en sueldos.",
+      "faqTitle": "Preguntas sobre la calculadora",
+      "faq": [
+        {
+          "q": "¿Cómo se calcula el costo?",
+          "a": "Las horas por semana por las personas por 52 semanas dan sus horas al año. La parte de esas horas de cada puesto se multiplica por el sueldo publicado para su región. No se añade nada por prestaciones ni gastos generales, así que la cifra real es mayor."
+        },
+        {
+          "q": "¿Por qué el sueldo canadiense es el mismo para todos los puestos?",
+          "a": "Statistics Canada publica sueldos para el grupo amplio al que pertenecen estos puestos, las ocupaciones de apoyo administrativo y financiero, no para cada puesto de auxiliar. Mostramos esa cifra en lugar de adivinar."
+        },
+        {
+          "q": "¿Por qué no está disponible el Reino Unido?",
+          "a": "Las tablas de ingresos regionales de la Office for National Statistics no se pudieron leer de forma confiable cuando se tomaron estos datos. Las regiones del Reino Unido aparecerán en cuanto se puedan leer."
+        },
+        {
+          "q": "¿Esto es lo que ahorraría la automatización?",
+          "a": "No. Es lo que cuesta hoy el trabajo manual. Cuánto se puede eliminar depende de sus sistemas, y eso es lo que se define en una llamada de descubrimiento."
+        }
+      ]
+    },
+    "finder": {
+      "meta": {
+        "title": "Buscador de códigos de contratación: códigos UNSPSC, GSIN, PSC y CPV",
+        "description": "Herramienta gratuita que encuentra los códigos de contratación UNSPSC, GSIN, PSC y CPV para servicios de TI, software, datos, diseño y publicidad, a partir de las listas oficiales de códigos."
+      },
+      "title": "Encuentre los códigos de contratación de lo que vende.",
+      "text": "Escriba un servicio. Obtenga sus códigos UNSPSC, GSIN, PSC y CPV, con una nota sencilla sobre dónde se usa cada uno. Sin registro.",
+      "inputLabel": "Escriba un servicio",
+      "placeholder": "Por ejemplo, diseño de bases de datos",
+      "clear": "Borrar",
+      "tryLabel": "Pruebe uno",
+      "tries": [
+        "Diseño de bases de datos",
+        "Diseño gráfico",
+        "Mantenimiento de software",
+        "Diseño de sitios web",
+        "Publicidad"
+      ],
+      "loading": "Cargando las listas de códigos",
+      "results": "Códigos para \"{query}\"",
+      "none": "Aún no hay coincidencias en los códigos de TI, software, datos, diseño y publicidad. Pruebe software, base de datos, sitio web, diseño gráfico o publicidad.",
+      "noneScheme": "No hay una coincidencia cercana en esta lista.",
+      "copy": "Copiar",
+      "copiedCode": "{code} copiado",
+      "copyAll": "Copiar todos los códigos",
+      "copiedAll": "Todos los códigos copiados",
+      "linked": "UNSPSC vinculados en la tabla de equivalencias oficial: {codes}",
+      "linkedGsin": "GSIN vinculados en la tabla de equivalencias oficial: {codes}",
+      "cardLabel": "Sus códigos",
+      "check": "Revise cada código en la lista oficial antes de licitar. Los compradores pueden usar más de uno.",
+      "scope": "Este buscador cubre solo códigos de TI, software, datos, diseño y publicidad.",
+      "naics": "Los códigos NAICS aún no están en este buscador. Los añadiremos cuando se cargue la lista.",
+      "schemes": {
+        "UNSPSC": {
+          "name": "UNSPSC",
+          "where": "Canadá y muchos compradores en el mundo",
+          "explain": "El Código Estándar de Productos y Servicios de las Naciones Unidas. Los compradores federales de Canadá y muchos otros etiquetan las licitaciones con él."
+        },
+        "GSIN": {
+          "name": "GSIN",
+          "where": "Gobierno de Canadá",
+          "explain": "Número de Identificación de Bienes y Servicios. Avisos federales canadienses más antiguos aún lo usan, así que conviene incluirlo."
+        },
+        "PSC": {
+          "name": "PSC",
+          "where": "Gobierno federal de Estados Unidos",
+          "explain": "Código de Productos y Servicios. Los contratos federales de Estados Unidos lo usan para registrar lo que se compró."
+        },
+        "CPV": {
+          "name": "CPV",
+          "where": "Unión Europea y Reino Unido",
+          "explain": "Vocabulario Común de Contratos Públicos. Los avisos públicos de la UE y del Reino Unido se clasifican con él."
+        }
+      },
+      "sourceTitle": "De dónde vienen los códigos",
+      "sources": {
+        "UNSPSC": "Texto de UNSPSC y GSIN y tabla de equivalencias de GSIN a UNSPSC: contiene información con licencia Open Government Licence - Canada (Public Services and Procurement Canada).",
+        "PSC": "PSC: Códigos de Productos y Servicios de la Administración de Servicios Generales de Estados Unidos, servidos por USAspending.gov. Obra del gobierno de Estados Unidos, dominio público.",
+        "CPV": "CPV: Oficina de Publicaciones de la Unión Europea, Vocabulario Común de Contratos Públicos, con licencia CC BY 4.0. Reutilizado con atribución; la UE no respalda esta herramienta."
+      },
+      "fetched": "Datos tomados el {date}.",
+      "summary": "Códigos para {query}",
+      "faqTitle": "Preguntas sobre códigos de contratación",
+      "faq": [
+        {
+          "q": "¿Qué código debo usar?",
+          "a": "Use el sistema que usa el comprador. Las licitaciones federales de Canadá usan UNSPSC y a veces GSIN, los contratos federales de Estados Unidos usan PSC y NAICS, y los avisos de la UE y del Reino Unido usan CPV. Listar varios códigos cercanos ayuda a que los compradores lo encuentren."
+        },
+        {
+          "q": "¿Estos códigos son oficiales?",
+          "a": "Sí. Vienen de las listas oficiales publicadas por Public Services and Procurement Canada, la Administración de Servicios Generales de Estados Unidos y la Oficina de Publicaciones de la Unión Europea. Revise siempre el código en la lista oficial antes de licitar."
+        },
+        {
+          "q": "¿Por qué no encuentro NAICS?",
+          "a": "NAICS aún no está cargado en este buscador. Se añadirá cuando la lista esté lista."
+        },
+        {
+          "q": "¿Por qué solo códigos de TI, diseño y publicidad?",
+          "a": "Este buscador está hecho para los servicios en los que trabaja Awesoon, lo que lo mantiene pequeño y rápido. Otras familias podrían llegar después."
+        }
+      ]
+    },
+    "closing": {
+      "title": "¿Quiere ayuda para actuar con este resultado?",
+      "text": "Reserve una llamada de descubrimiento gratuita de 30 minutos con Ray Rasouli. Se lleva un siguiente paso claro, trabajemos juntos o no."
+    },
+    "assistant": {
+      "calc": "Su resultado es el costo anual en sueldos de su propio equipo para este trabajo, con datos salariales oficiales. No puedo cotizar lo que cobraría Awesoon. ¿Qué le gustaría saber?",
+      "finder": "Estos códigos vienen de las listas oficiales. Use el sistema que usa su comprador y liste algunos códigos cercanos. ¿Qué le gustaría saber?",
+      "reply": "Buena pregunta. La forma más rápida de obtener una respuesta para su equipo es una llamada gratuita de 30 minutos con Ray Rasouli, quien lee su resultado antes de la llamada.",
+      "price": "No puedo cotizar precios. Los precios llegan solo después de una llamada sobre su alcance. Ray se lo puede explicar en una llamada gratuita de 30 minutos.",
+      "priceWords": "precio,costo,cuesta,cuánto,cobran,cobra,cotización,cotizar,tarifa,presupuesto"
+    }
+  },
   "problemSolutions": {
     "title": "¿Reconoces alguno de estos?",
     "subtitle": "Si tus operaciones se parecen a esto, tenemos el manual para solucionarlo.",

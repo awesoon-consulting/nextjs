@@ -5,6 +5,7 @@ import { getAllSupportSlugs } from '@/src/data/support'
 import { getAllInsightSlugs } from '@/src/data/insights'
 import { getAllGameSlugs } from '@/src/data/games'
 import { getAllCaseStudies } from '@/src/data/work'
+import { TOOL_SITEMAP_PATHS } from '@/src/data/tools'
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const baseUrl = process.env.NEXT_PUBLIC_SITE_URL ?? siteConfig.url
@@ -71,6 +72,21 @@ export default function sitemap(): MetadataRoute.Sitemap {
         alternates: {
           languages: Object.fromEntries(
             locales.map((l) => [l, `${baseUrl}/${l}/games/${slug}`])
+          ),
+        },
+      })
+    }
+
+    // Free tools
+    for (const path of TOOL_SITEMAP_PATHS) {
+      entries.push({
+        url: `${baseUrl}/${locale}${path}`,
+        lastModified: new Date(),
+        changeFrequency: 'monthly',
+        priority: 0.8,
+        alternates: {
+          languages: Object.fromEntries(
+            locales.map((l) => [l, `${baseUrl}/${l}${path}`])
           ),
         },
       })
