@@ -4,7 +4,9 @@ import { PrivacyV1 } from '../_components/PrivacyV1'
 import { PrivacyV2 } from '../_components/PrivacyV2'
 import { siteConfig } from '@/src/config/site'
 
-const isV1 = siteConfig.games.privacyVersion === 'v1'
+const version = siteConfig.games.privacyVersion
+const isV1 = version === 'v1'
+const ns = version === 'v3' ? 'gamesPrivacyV3' : 'gamesPrivacy'
 
 export async function generateMetadata({
   params,
@@ -14,7 +16,7 @@ export async function generateMetadata({
   const { locale } = await params
   const t = await getTranslations({
     locale,
-    namespace: isV1 ? 'gamesPrivacyV1' : 'gamesPrivacy',
+    namespace: isV1 ? 'gamesPrivacyV1' : ns,
   })
 
   return {
@@ -33,6 +35,9 @@ export default async function GamesPrivacyPage({
 
   if (isV1) {
     return <PrivacyV1 locale={locale} isCurrent />
+  }
+  if (version === 'v3') {
+    return <PrivacyV2 locale={locale} ns="gamesPrivacyV3" previousHref="/games/privacy/v2" />
   }
   return <PrivacyV2 locale={locale} />
 }

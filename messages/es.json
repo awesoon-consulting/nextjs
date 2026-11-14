@@ -2746,5 +2746,257 @@
       "mailBody": "Por favor envíenme alertas de cambios de API para: {platforms}",
       "more": "Mostrar {count} más"
     }
+  },
+  "gamesPrivacyV3": {
+    "title": "Política de privacidad, juegos de Awesoon",
+    "updated": "Versión 3, para las versiones de los juegos que ofrecen un Awesoon ID. Última actualización: 13 de noviembre de 2026. Entra en vigor cuando se publique la primera versión de este tipo.",
+    "lead": "Todos los juegos de Awesoon se pueden jugar sin cuenta. Si decides crear un Awesoon ID, conservamos lo necesario para que funcione en nuestros juegos. Esta página explica qué es, quién lo ve, cuánto tiempo lo conservamos y qué puedes hacer.",
+    "appliesTo": "Se aplica a todos los juegos de Awesoon y al Awesoon ID que los conecta. Los juegos son publicados por Awesoon Technologies Inc., una empresa de la Columbia Británica, Canadá.",
+    "sections": [
+      {
+        "id": "without-id",
+        "h": "Si juegas sin un Awesoon ID",
+        "p": [
+          "Tu progreso, tus ajustes y la respuesta a la pregunta sobre la edad se quedan en tu dispositivo. No recibimos nada de eso. Los anuncios, cuando un juego los muestra, funcionan como se describe más abajo."
+        ]
+      },
+      {
+        "id": "id",
+        "h": "Si creas un Awesoon ID",
+        "p": [
+          "Inicias sesión con Apple o Google. Recibimos un identificador de inicio de sesión, y una dirección de correo electrónico solo si decides compartirla. Con Iniciar sesión con Apple puedes ocultar tu correo, y entonces recibimos una dirección de reenvío.",
+          "Un mismo Awesoon ID funciona en todos los juegos de Awesoon. Crearlo en un juego lo vincula con todos los demás, y la pantalla de registro lo indica.",
+          "Conservamos tu ID, el nombre visible que elijas, tu rango de edad (no tu fecha de nacimiento), tu lista de amigos, los juegos de Awesoon en los que juegas con el ID, tu progreso, tus compras y tus monedas en cada juego para que te acompañen entre dispositivos, tus mensajes, las recetas y fotos que subes, y los reportes que haces o recibes.",
+          "También conservamos los registros que el servicio necesita para funcionar y mantenerse seguro: la hora y el tipo de dispositivo de cada inicio de sesión, tu dirección IP y los informes de fallos."
+        ]
+      },
+      {
+        "id": "friends",
+        "h": "Amigos entre juegos",
+        "p": [
+          "Las amistades son mutuas: ambas personas aceptan. Cuando abres un juego, los amigos que ya juegan allí aparecen en él. Tus amigos ven tu nombre visible, tu avatar y los juegos de Awesoon en los que juegan los dos. Nunca ven tu correo, tu cuenta de inicio de sesión ni tu ubicación.",
+          "Las invitaciones van solo a las personas que tú elijas, una por una. No leemos tus contactos ni comprobamos qué otras aplicaciones hay en tu dispositivo."
+        ]
+      },
+      {
+        "id": "chat",
+        "h": "Chat y subidas",
+        "p": [
+          "El chat es para jugadores con un Awesoon ID, solo entre amigos. Los amigos se agregan solo con un enlace de invitación o un código de amigo, nunca por búsqueda ni sugerencias. Los mensajes y el contenido subido pasan por un filtro automático antes de entregarse o mostrarse. Las fotos y las recetas las revisa una persona antes de que otros puedan verlas. Un mensaje o contenido denunciado o marcado por el filtro lo lee una persona de nuestro equipo.",
+          "No leemos los mensajes privados a menos que se reporten o se marquen, o que la ley lo exija. Cuando la ley lo exige, informamos a las autoridades sobre material de abuso sexual infantil y amenazas contra la vida."
+        ]
+      },
+      {
+        "id": "ads",
+        "h": "Anuncios y Google AdMob",
+        "p": [
+          "Los juegos que muestran anuncios usan Google AdMob. Su software puede recopilar tu identificador de publicidad, tu dirección IP y datos del dispositivo como el modelo, la versión del sistema, el idioma y cómo interactúas con los anuncios. Google lo usa para mostrar y medir anuncios y para prevenir el fraude, según su propia política en policies.google.com/privacy. Solo vemos informes de ingresos agregados.",
+          "Los anuncios solo se personalizan si tienes 18 años o más y dices que sí: en iPhone y iPad mediante el aviso de seguimiento de Apple, y en el EEE, el Reino Unido, Suiza y Canadá mediante un formulario de consentimiento. Si dices que no, igualmente ves anuncios, pero no están personalizados. Los jugadores menores de 18 años ven solo anuncios no personalizados, y los menores de 13 ven anuncios aptos para niños y sin identificador de publicidad. Una fila en los Ajustes de cada juego vuelve a abrir tus opciones de anuncios.",
+          "Tu identificador de publicidad nunca se vincula con tu Awesoon ID. Los datos de Iniciar sesión con Apple y la señal de edad de tu dispositivo nunca se usan para anuncios."
+        ]
+      },
+      {
+        "id": "sharing",
+        "h": "Con quién compartimos los datos",
+        "p": [
+          "No vendemos tu información personal.",
+          "La compartimos solo con: Google AdMob, como se describe arriba; proveedores de servicios que alojan nuestros servidores, filtran y revisan contenido, procesan informes de fallos y gestionan el inicio de sesión, bajo contratos que les prohíben venderla o usarla para otro fin; las autoridades, cuando la ley lo exige o para proteger la seguridad de alguien; y un comprador, si Awesoon se vende o se fusiona, en cuyo caso te avisamos antes.",
+          "Según la ley de California, los anuncios personalizados pueden considerarse un intercambio con fines publicitarios. Puedes optar por no participar en cualquier momento diciendo que no en el aviso de seguimiento o en el formulario de consentimiento, o en los Ajustes del juego."
+        ]
+      },
+      {
+        "id": "children",
+        "h": "Jugadores más jóvenes",
+        "p": [
+          "Los jugadores que no tienen la edad de consentimiento digital del lugar donde viven (13 años en Estados Unidos, 14 en Canadá y hasta 16 en algunos países) juegan cada juego completo, sin Awesoon ID. No pueden agregar amigos, chatear, subir contenido ni ser encontrados por su nombre. Si sabemos que uno de estos jugadores tiene un Awesoon ID, lo eliminamos. Un padre, madre o tutor puede escribirnos para revisar o eliminar cualquier información sobre su hijo o hija."
+        ]
+      },
+      {
+        "id": "basis",
+        "h": "Por qué usamos tus datos",
+        "p": [
+          "Para hacer funcionar el Awesoon ID y las funciones que eliges (nuestro acuerdo contigo); para mantener seguros a los jugadores, evitar el fraude y las cuentas falsas, y resolver problemas (nuestro interés legítimo en un servicio seguro y que funcione); para personalizar anuncios (tu consentimiento, que puedes retirar); y para cumplir obligaciones legales."
+        ]
+      },
+      {
+        "id": "retention",
+        "h": "Cuánto tiempo conservamos los datos",
+        "p": [
+          "Datos de la cuenta: hasta que elimines tu Awesoon ID. Mensajes: 90 días, salvo que se reporten. Reportes y decisiones de moderación: 1 año. Subidas: hasta que tú o nosotros las retiremos, o hasta que elimines tu ID. Direcciones IP y registros de inicio de sesión: 30 días. Correos de soporte: 12 meses después de nuestra última respuesta.",
+          "Cuando eliminas tu Awesoon ID, lo eliminamos junto con todo lo vinculado a él en cada juego en un plazo de 30 días, y las copias de seguridad que lo contienen se sobrescriben en los 35 días siguientes. Los registros que la ley nos obliga a conservar, como los de compras, se conservan solo el tiempo que ella exige."
+        ]
+      },
+      {
+        "id": "delete",
+        "h": "Eliminar tu Awesoon ID",
+        "p": [
+          "Cada juego tiene una fila Eliminar cuenta en los Ajustes, y una página de nuestro sitio web hace lo mismo. Eliminarlo en un lugar elimina el ID en todos los juegos. El progreso guardado en tu dispositivo sin ID no se ve afectado."
+        ]
+      },
+      {
+        "id": "security",
+        "h": "Seguridad y almacenamiento",
+        "p": [
+          "Los datos se almacenan con un proveedor de alojamiento bajo un acuerdo escrito, cifrados en tránsito y en reposo, y solo pueden acceder a ellos las personas de nuestro equipo que los necesitan. Pueden tratarse fuera de tu país, incluidos Canadá y Estados Unidos, con las garantías que exige la ley. Si una brecha de seguridad te pone en un riesgo real, te lo comunicamos a ti y a los organismos reguladores que la ley indique."
+        ]
+      },
+      {
+        "id": "rights",
+        "h": "Tus derechos",
+        "p": [
+          "Vivas donde vivas, puedes pedirnos una copia de lo que tenemos sobre ti, pedirnos que lo corrijamos o eliminemos, y retirar cualquier consentimiento. Según dónde vivas (por ejemplo, el EEE, el Reino Unido, Brasil, Canadá o California), también puedes oponerte a su uso o limitarlo, llevarte una copia a otro lugar y presentar una queja ante tu autoridad de protección de datos. No te tratamos de forma distinta por ejercer estos derechos.",
+          "Escríbenos para ejercer cualquiera de ellos. Respondemos dentro del plazo que fije la ley de tu lugar de residencia: un mes según el RGPD y el RGPD del Reino Unido, 15 días en Brasil, 30 días en Canadá y 45 días en California.",
+          "La persona responsable de proteger la información personal es nuestro responsable de privacidad, al que puede escribir a la dirección de abajo."
+        ]
+      },
+      {
+        "id": "changes",
+        "h": "Cambios",
+        "p": [
+          "Si esta política cambia, la nueva versión se publica aquí con una nueva fecha antes de que se publique la versión del juego que la necesita. Un nuevo uso de tus datos viene con un nuevo aviso y, cuando la ley lo pide, una nueva opción. Las versiones anteriores siguen publicadas."
+        ]
+      }
+    ],
+    "contactH": "Contacto",
+    "contactB": "Preguntas sobre esta política, o una solicitud sobre tus datos:",
+    "termsLink": "Leer los términos de estos juegos",
+    "previousLink": "Leer la versión 2, para las versiones de los juegos con anuncios y sin Awesoon ID"
+  },
+  "gamesTermsV2": {
+    "title": "Términos de uso, juegos de Awesoon",
+    "updated": "Versión 2, para las versiones de los juegos que ofrecen un Awesoon ID. Última actualización: 13 de noviembre de 2026. Entra en vigor cuando se publique la primera versión de este tipo.",
+    "lead": "La versión corta, en cinco líneas. Los términos completos van a continuación.",
+    "appliesTo": "Se aplican a todos los juegos de Awesoon y al Awesoon ID que los conecta.",
+    "short": [
+      "Todos los juegos se pueden jugar sin cuenta. Un Awesoon ID es opcional y vincula a tus amigos, tu progreso y tus monedas en nuestros juegos.",
+      "Sé amable. Las reglas del chat y de las subidas están más abajo; retiramos lo que las incumple y te decimos por qué.",
+      "Lo que subes sigue siendo tuyo. Nos permites mostrarlo en nuestros juegos.",
+      "Las monedas son solo para jugar. No tienen valor en dinero y no se pueden vender.",
+      "Los juegos se ofrecen tal como están. La ley del lugar donde vives puede darte derechos que estos términos no pueden quitarte."
+    ],
+    "precedence": "Si estas cinco líneas y los términos de abajo difieren, prevalecen los términos de abajo.",
+    "sections": [
+      {
+        "id": "who",
+        "h": "Quiénes somos",
+        "p": [
+          "Los juegos son publicados por Awesoon Technologies Inc., una empresa de la Columbia Británica, Canadá (BC1381961), que opera como Awesoon Technologies. En estos términos, “nosotros” significa esa empresa."
+        ]
+      },
+      {
+        "id": "licence",
+        "h": "Tu licencia",
+        "p": [
+          "Te damos una licencia personal e intransferible para usar cada juego en tus propios dispositivos. No puedes copiar, vender, redistribuir ni sublicenciar un juego, ni desmontarlo para acceder a su código. Conservamos todos los derechos que no te damos aquí."
+        ]
+      },
+      {
+        "id": "id",
+        "h": "Tu Awesoon ID",
+        "p": [
+          "El Awesoon ID es opcional. Para crear uno debe tener al menos la edad de consentimiento digital del lugar donde vive: 13 años en Estados Unidos, 14 en Canadá y hasta 16 en algunos países. Usted protege su inicio de sesión y es responsable de lo que ocurra con su ID. Puede eliminarlo en cualquier momento desde los Ajustes de cualquier juego o desde nuestro sitio web."
+        ]
+      },
+      {
+        "id": "rules",
+        "h": "Reglas para todos",
+        "p": [
+          "Estas reglas se aplican a todos los jugadores, de cualquier edad. No publiques, envíes ni subas: contenido ilegal; contenido sexual; contenido que fomente el suicidio, las autolesiones o los trastornos alimentarios; acoso, amenazas, hostigamiento u odio; información personal de nadie, incluida tu propia dirección o número de teléfono; spam, estafas o enlaces a otros servicios; ni nada que no tengas derecho a compartir.",
+          "No hagas trampas, no aproveches errores, no uses bots ni crees cuentas adicionales, incluso para acumular monedas, regalías o resultados de concursos. No te hagas pasar por otra persona, incluidos nosotros."
+        ]
+      },
+      {
+        "id": "content",
+        "h": "Lo que subes",
+        "p": [
+          "Las recetas, fotos, nombres y mensajes que creas siguen siendo tuyos. Nos das una licencia mundial, no exclusiva y libre de regalías para alojarlos, mostrarlos, copiarlos, adaptarlos (por ejemplo, para ajustar una receta a los ingredientes de un juego) y distribuirlos en nuestros juegos y páginas, mientras estén en el servicio. La licencia termina cuando tú o nosotros los retiramos, salvo por las copias en las copias de seguridad, hasta 35 días.",
+          "Prometes que creaste lo que subes o que tienes derecho a compartirlo, y que cumple estas reglas. Tus recetas pueden acreditarse a tu nombre visible."
+        ]
+      },
+      {
+        "id": "moderation",
+        "h": "Reportes, retiradas y apelaciones",
+        "p": [
+          "Cada mensaje, perfil y subida tiene un botón de reporte. Filtramos el contenido automáticamente y una persona revisa los reportes. Podemos retirar contenido, limitar funciones, o suspender o cerrar una cuenta que incumpla estos términos o la ley. Cuando lo hacemos, te decimos qué hicimos y por qué, salvo que la ley o la seguridad de alguien lo impidan, y puedes apelar una vez respondiendo. Las quejas sobre cómo gestionamos los reportes van a la dirección de abajo. Informamos a las autoridades sobre contenido ilegal cuando la ley lo exige."
+        ]
+      },
+      {
+        "id": "coins",
+        "h": "Monedas, regalías y compras",
+        "p": [
+          "Las monedas y otros objetos del juego son una licencia para usarlos en nuestros juegos. No tienen valor en dinero, no se pueden cambiar por dinero y no se pueden vender ni transferir fuera del juego. Las regalías se pagan en monedas. Podemos retener o revertir monedas, regalías o resultados obtenidos incumpliendo estos términos, por ejemplo mediante cuentas adicionales.",
+          "Las compras se hacen a través de Apple o Google, según sus términos. Los reembolsos siguen el proceso de la tienda y la ley del lugar donde vives."
+        ]
+      },
+      {
+        "id": "others",
+        "h": "Otros jugadores",
+        "p": [
+          "Los demás jugadores son responsables de lo que publican y hacen. No revisamos cada mensaje por adelantado y no somos responsables del contenido ni de la conducta de otros jugadores, salvo cuando la ley nos haga responsables. Usa bloquear y reportar siempre que lo necesites."
+        ]
+      },
+      {
+        "id": "ads",
+        "h": "Anuncios",
+        "p": [
+          "Algunos juegos contienen anuncios servidos por Google AdMob. Lo que se recopila, y cómo controlarlo, está en la política de privacidad."
+        ]
+      },
+      {
+        "id": "asis",
+        "h": "Tal como está",
+        "p": [
+          "EN LA MÁXIMA MEDIDA QUE PERMITA LA LEY, CADA JUEGO Y EL AWESOON ID SE OFRECEN “TAL COMO ESTÁN” Y “SEGÚN DISPONIBILIDAD”, SIN GARANTÍAS DE NINGÚN TIPO, INCLUIDA CUALQUIER GARANTÍA IMPLÍCITA DE COMERCIABILIDAD, IDONEIDAD PARA UN FIN PARTICULAR O NO INFRACCIÓN. No prometemos que un juego o una función estará siempre disponible o libre de errores, y podemos cambiar o terminar funciones."
+        ]
+      },
+      {
+        "id": "liability",
+        "h": "Límite de responsabilidad",
+        "p": [
+          "Si eres consumidor en Quebec, esta sección no se aplica a ti.",
+          "En la máxima medida que permita la ley, no somos responsables de ninguna pérdida indirecta, incidental, especial o consecuente, ni de la pérdida de datos, monedas o progreso, que surja del uso de un juego o del Awesoon ID. Nuestra responsabilidad total hacia ti por todas las reclamaciones se limita al mayor de estos importes: lo que nos pagaste en los 12 meses anteriores a la reclamación y 50 dólares canadienses.",
+          "Nada en estos términos limita ni excluye nuestra responsabilidad por muerte o lesiones personales causadas por nuestra negligencia, por fraude, ni por negligencia grave o conducta dolosa, ni ningún derecho que tengas según la ley de consumo del lugar donde vives y que no pueda limitarse, como la UK Consumer Rights Act 2015, la legislación de consumo de la Unión Europea, la Australian Consumer Law o la Ley de Protección del Consumidor de Quebec."
+        ]
+      },
+      {
+        "id": "indemnity",
+        "h": "Tu responsabilidad",
+        "p": [
+          "En la medida que permita la ley, si incumples estos términos o la ley por lo que subes o haces, eres responsable de las reclamaciones que resulten. Esto no se aplica a los consumidores cuando la ley local no lo permita."
+        ]
+      },
+      {
+        "id": "disputes",
+        "h": "Disputas",
+        "p": [
+          "Escríbenos primero; así se resuelven la mayoría de los problemas. Estos términos se rigen por las leyes de la Columbia Británica y de Canadá, y los tribunales de la Columbia Británica pueden conocer las disputas. Si eres consumidor, también conservas la protección de las leyes del lugar donde vives y puedes presentar una reclamación ante tus tribunales locales. No hay arbitraje obligatorio ni renuncia a las demandas colectivas."
+        ]
+      },
+      {
+        "id": "who-answers",
+        "h": "Quién responde de qué",
+        "p": [
+          "Nosotros respondemos de los juegos, el Awesoon ID, el soporte, las reclamaciones sobre ellos, la propiedad intelectual y la privacidad. Apple y Google responden del pago, los reembolsos y la distribución a través de sus tiendas. El contrato de licencia estándar de Apple también se aplica a los juegos que obtienes en la App Store."
+        ]
+      },
+      {
+        "id": "ending",
+        "h": "Fin de estos términos",
+        "p": [
+          "Puedes dejar de usarlos en cualquier momento eliminando los juegos y tu Awesoon ID. Podemos cerrar un Awesoon ID que incumpla estos términos, como se describe arriba. Si alguna vez terminamos el servicio de Awesoon ID, avisamos con al menos 30 días de antelación, y los juegos siguen funcionando en tu dispositivo."
+        ]
+      },
+      {
+        "id": "changes",
+        "h": "Cambios",
+        "p": [
+          "Podemos cambiar estos términos cuando cambien las funciones, la ley o nuestros servicios. Publicamos la nueva versión aquí y avisamos en los juegos con al menos 30 días de antelación antes de que entre en vigor un cambio que te afecte. Si no lo aceptas, puedes eliminar tu Awesoon ID sin costo. Las versiones anteriores siguen publicadas."
+        ]
+      }
+    ],
+    "contactH": "Contacto",
+    "contactB": "Preguntas, quejas, apelaciones o reclamaciones sobre los juegos:",
+    "privacyLink": "Leer la política de privacidad de estos juegos",
+    "previousLink": "Leer la versión 1, para las versiones de los juegos sin Awesoon ID"
   }
 }

@@ -18,8 +18,11 @@ export const siteConfig = {
 
   games: {
     // Which policy /games/privacy serves. Switch to 'v2' when the first 1.1.0 build is submitted
-    // (privacy-v2-with-ads). v1 stays at /games/privacy/v1 either way.
-    privacyVersion: 'v1' as 'v1' | 'v2',
+    // (privacy-v2-with-ads), and to 'v3' with termsVersion 'v2' when the first build with an
+    // Awesoon ID is submitted (data-use-and-sharing, liability-limits). Every version stays
+    // posted at /games/privacy/vN and /games/terms/vN.
+    privacyVersion: 'v1' as 'v1' | 'v2' | 'v3',
+    termsVersion: 'v1' as 'v1' | 'v2',
   },
 
   nav: {

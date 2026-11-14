@@ -3,9 +3,17 @@ import { getTranslations, setRequestLocale } from 'next-intl/server'
 import { siteConfig } from '@/src/config/site'
 import { LegalSections, type LegalSection } from './LegalSections'
 
-export async function PrivacyV2({ locale }: { locale: string }) {
+export async function PrivacyV2({
+  locale,
+  ns = 'gamesPrivacy',
+  previousHref = '/games/privacy/v1',
+}: {
+  locale: string
+  ns?: 'gamesPrivacy' | 'gamesPrivacyV3'
+  previousHref?: string
+}) {
   setRequestLocale(locale)
-  const t = await getTranslations({ locale, namespace: 'gamesPrivacy' })
+  const t = await getTranslations({ locale, namespace: ns })
 
   const sections = t.raw('sections') as LegalSection[]
 
@@ -40,7 +48,7 @@ export async function PrivacyV2({ locale }: { locale: string }) {
               </a>
             </p>
             <p className="mt-3">
-              <Link href={`/${locale}/games/privacy/v1`} className="text-[#7D9CCB] underline underline-offset-4 hover:text-[#FAFAFA]">
+              <Link href={`/${locale}${previousHref}`} className="text-[#7D9CCB] underline underline-offset-4 hover:text-[#FAFAFA]">
                 {t('previousLink')}
               </Link>
             </p>
