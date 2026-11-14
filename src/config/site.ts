@@ -18,10 +18,10 @@ export const siteConfig = {
 
   games: {
     // Which policy /games/privacy serves. Switch to 'v2' when the first 1.1.0 build is submitted
-    // (privacy-v2-with-ads), and to 'v3' with termsVersion 'v2' when the first build with an
-    // Multiverse ID is submitted (data-use-and-sharing, liability-limits). Every version stays
-    // posted at /games/privacy/vN and /games/terms/vN.
-    privacyVersion: 'v1' as 'v1' | 'v2' | 'v3',
+    // (privacy-v2-with-ads), and to 'v4' with termsVersion 'v2' when the first build with a
+    // Multiverse ID is submitted (data-use-and-sharing, liability-limits). v4 replaces v3, which
+    // was never served as current. Every version stays posted at /games/privacy/vN and /games/terms/vN.
+    privacyVersion: 'v1' as 'v1' | 'v2' | 'v3' | 'v4',
     termsVersion: 'v1' as 'v1' | 'v2',
   },
 

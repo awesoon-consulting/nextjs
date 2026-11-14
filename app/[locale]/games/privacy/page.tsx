@@ -6,7 +6,7 @@ import { siteConfig } from '@/src/config/site'
 
 const version = siteConfig.games.privacyVersion
 const isV1 = version === 'v1'
-const ns = version === 'v3' ? 'gamesPrivacyV3' : 'gamesPrivacy'
+const ns = version === 'v4' ? 'gamesPrivacyV4' : version === 'v3' ? 'gamesPrivacyV3' : 'gamesPrivacy'
 
 export async function generateMetadata({
   params,
@@ -35,6 +35,9 @@ export default async function GamesPrivacyPage({
 
   if (isV1) {
     return <PrivacyV1 locale={locale} isCurrent />
+  }
+  if (version === 'v4') {
+    return <PrivacyV2 locale={locale} ns="gamesPrivacyV4" previousHref="/games/privacy/v3" />
   }
   if (version === 'v3') {
     return <PrivacyV2 locale={locale} ns="gamesPrivacyV3" previousHref="/games/privacy/v2" />

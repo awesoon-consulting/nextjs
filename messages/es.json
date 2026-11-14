@@ -2862,6 +2862,207 @@
     "termsLink": "Leer los términos de estos juegos",
     "previousLink": "Leer la versión 2, para las versiones de los juegos con anuncios y sin Multiverse ID"
   },
+  "gamesPrivacyV4": {
+    "title": "Política de privacidad, juegos de Awesoon",
+    "updated": "Versión 4, para las versiones de los juegos que ofrecen un Multiverse ID (tu cuenta de Awesoon para los juegos de Awesoon). Última actualización: 14 de noviembre de 2026. Entra en vigor cuando se publique la primera versión de este tipo.",
+    "lead": "Todos los juegos de Awesoon se juegan sin conexión y sin cuenta. Si decides crear un Multiverse ID, guardamos lo necesario para que funcione en nuestros juegos. Esta página explica qué guardamos, quién puede verlo, cuánto tiempo lo guardamos y qué puedes hacer.",
+    "appliesTo": "Se aplica a Penny Loaf, a Tower Draft cuando salga, a los futuros juegos de Awesoon y al Multiverse ID que los conecta. Los juegos los publica Awesoon Technologies Inc., una empresa de Columbia Británica, Canadá.",
+    "sections": [
+      {
+        "id": "games",
+        "h": "Qué juegos cubre",
+        "p": [
+          "Penny Loaf ya está disponible. Tower Draft llega pronto; hasta su lanzamiento, Penny Loaf muestra una tarjeta de «Próximamente» donde aparecería Tower Draft. Con el tiempo se sumarán más juegos de Awesoon, y esta política cubre a cada uno.",
+          "No todas las funciones de esta página están ya en todos los juegos. Algunas, como los amigos, el chat y la subida de recetas, llegan en actualizaciones. Cuando lleguen, funcionarán como describe esta página."
+        ]
+      },
+      {
+        "id": "offline",
+        "h": "Jugar sin cuenta",
+        "p": [
+          "Nunca necesitas una cuenta para jugar. Sin Multiverse ID, el juego guarda esto solo en tu teléfono: tu progreso, tus monedas y tu ciudad, los nombres que escribes en el juego, tus ajustes, tu rango de edad y un código al azar que el juego usa para identificar su partida guardada. No recibimos nada de eso.",
+          "Los juegos de Awesoon de un mismo teléfono pueden compartir tu ciudad, sin nombre ni ID.",
+          "Empezar de nuevo, en Ajustes, borra tu progreso y tu ciudad en este teléfono. Tu rango de edad y tu Multiverse ID, si tienes uno, se mantienen. Al eliminar el juego se borra todo lo que guardó en el teléfono."
+        ]
+      },
+      {
+        "id": "tools",
+        "h": "Sin herramientas de análisis ni de informes de fallos",
+        "p": [
+          "No añadimos a nuestros juegos herramientas de análisis ni de informes de fallos. Apple y Google nos dan informes generales sobre nuestros juegos, como el número de descargas. Esos informes no te identifican."
+        ]
+      },
+      {
+        "id": "age",
+        "h": "La pregunta de la edad",
+        "p": [
+          "El juego te pregunta una sola vez el mes y el año en que naciste: antes de crear un Multiverse ID o, en los juegos con anuncios, la primera vez que juegas. No hay nada rellenado de antemano.",
+          "El juego calcula un rango de edad (menos de 13, de 13 a 15, de 16 a 17, o 18 o más) y guarda solo el rango, nunca tu fecha de nacimiento. El rango se queda en tu teléfono. Si creas un Multiverse ID, se guarda con él.",
+          "Usamos el rango para saber si puedes tener un Multiverse ID, qué tipo de anuncios ves en los juegos con anuncios y qué jugadores pueden enviarte ofertas de terreno."
+        ]
+      },
+      {
+        "id": "id",
+        "h": "Tu Multiverse ID",
+        "p": [
+          "El Multiverse ID es opcional. Inicias sesión con Apple o Google. No hay contraseña nueva, y nunca vemos tu contraseña de Apple o Google.",
+          "De Apple o Google recibimos un código de inicio de sesión único para ti, una dirección de correo electrónico y tu nombre si tu cuenta lo comparte. Con Iniciar sesión con Apple puedes elegir Ocultar mi correo; entonces recibimos una dirección de reenvío de Apple en lugar de tu correo real.",
+          "Tu nombre visible empieza siendo el nombre de tu cuenta de Apple o Google. Tus amigos pueden verlo.",
+          "Un mismo Multiverse ID funciona en todos los juegos de Awesoon. Crearlo en un juego lo vincula con todos los demás.",
+          "Con tu ID guardamos: tu código de inicio de sesión, tu correo, tu nombre visible y tu rango de edad; tu lista de amigos; los juegos de Awesoon en los que juegas; tu progreso, tu ciudad, tus monedas y tus compras en cada juego, para que te acompañen a un teléfono o juego nuevo; tus ofertas de terreno y tus regalías; tus mensajes; las recetas y fotos que subes; y los reportes que haces o que se hacen sobre ti.",
+          "También guardamos registros que mantienen el servicio en marcha y seguro: cuándo inicias sesión, el tipo de dispositivo y tu dirección IP."
+        ]
+      },
+      {
+        "id": "who",
+        "h": "Quién puede crear un Multiverse ID",
+        "p": [
+          "Debes tener al menos la edad de consentimiento digital del lugar donde vives. Es 13 años en Estados Unidos y el Reino Unido, 14 en Canadá, Italia y España, 15 en Francia, 16 en muchos otros países y en cualquier lugar donde no estemos seguros, y 18 en la India. Nos guiamos por el país de tu tienda de aplicaciones.",
+          "Los jugadores más jóvenes juegan cada juego completo, y todo se queda en su teléfono. No pueden crear un Multiverse ID, añadir amigos, chatear, subir contenido ni ser encontrados por su nombre. No pedimos a un padre o madre que dé su consentimiento en su lugar. Si sabemos que un jugador por debajo de esa edad tiene un Multiverse ID, lo eliminamos.",
+          "Un padre, madre o tutor puede escribirnos para saber qué tenemos sobre su hijo o hija, o para que lo eliminemos."
+        ]
+      },
+      {
+        "id": "friends",
+        "h": "Amigos",
+        "p": [
+          "La amistad es mutua: las dos personas aceptan. Añades a un amigo solo con un enlace de invitación o un código de amigo que tú compartes. Nadie puede encontrarte buscando tu nombre, y no sugerimos desconocidos.",
+          "Tus amigos ven tu nombre visible y los juegos de Awesoon a los que ambos juegan. Cuando empiezas un juego, aparecen los amigos que ya lo juegan. Tus amigos nunca ven tu correo, tu cuenta de Apple o Google, ni dónde vives.",
+          "No leemos los contactos de tu teléfono ni comprobamos qué otras aplicaciones tienes."
+        ]
+      },
+      {
+        "id": "chat",
+        "h": "Chat",
+        "p": [
+          "El chat es solo entre amigos, para jugadores con un Multiverse ID que tienen 13 años o más. Es uno a uno o en grupos pequeños, y funciona en todos nuestros juegos. Cuando los amigos están en rangos de edad distintos, se aplican los ajustes más seguros del rango más joven.",
+          "Los mensajes pasan por un filtro automático antes de enviarse. Cada mensaje tiene un botón para reportarlo. Bloquear y reportar funcionan en todos los juegos de Awesoon a la vez.",
+          "No leemos los mensajes privados, salvo que se reporten, que el filtro los marque o que la ley lo exija. Una persona de nuestro equipo revisa lo que se reporta o se marca. Cuando la ley lo exige, denunciamos ante las autoridades el material de abuso sexual infantil.",
+          "Los amigos, el chat y la subida de contenido todavía no están abiertos en el Espacio Económico Europeo."
+        ]
+      },
+      {
+        "id": "moderation",
+        "h": "Reportes, retiradas y apelaciones",
+        "p": [
+          "Si retiramos algo que publicaste o limitamos tu cuenta, te decimos qué hicimos y por qué, y puedes apelar una vez. Los términos de estos juegos fijan las reglas."
+        ]
+      },
+      {
+        "id": "town",
+        "h": "La ciudad compartida y las ofertas de terreno",
+        "p": [
+          "Tus juegos de Awesoon comparten una sola ciudad. Las personas que viven en ella, los ciudadanos, son personajes del juego. Nunca son jugadores reales ni se muestran como tales. El juego calcula sus mudanzas en tu teléfono.",
+          "Con un Multiverse ID, tu ciudad se guarda con tu ID, para que te acompañe entre juegos y teléfonos.",
+          "Los jugadores pueden hacer ofertas por el terreno de otros. Las ofertas llegan solo de tus amigos, o de tus vecinos en la ciudad compartida que están en tu rango de edad. Para hacer una oferta, un jugador ve tu terreno y el precio que fija el juego. No ve tu correo, tu cuenta de Apple o Google, ni dónde vives.",
+          "Las ofertas usan monedas ganadas jugando, nunca dinero real. Cada jugador tiene como máximo tres ofertas al día. Nuestro servidor guarda cada oferta y la muestra en el juego de Awesoon que abras a continuación."
+        ]
+      },
+      {
+        "id": "recipes",
+        "h": "Recetas, fotos y regalías",
+        "p": [
+          "Con un Multiverse ID puedes fotografiar un horneado real y escribir su receta. Una persona de nuestro equipo revisa cada subida antes de que nadie más pueda verla.",
+          "Tu tarjeta de receta muestra tu foto y tu nombre de panadero, que puede ser el nombre de una panadería. Tu ciudad está oculta salvo que elijas mostrarla. Las recetas aparecen solo dentro de los juegos, nunca en un feed público, y no hay «me gusta» ni contadores de seguidores.",
+          "Lo que subes sigue siendo tuyo. Nos permites mostrarlo en nuestros juegos, como explican los términos.",
+          "Cuando otros jugadores hornean tu receta, ganas regalías en monedas. Las monedas no tienen valor en dinero y no se pueden vender, cobrar ni cambiar por dinero. Para frenar las cuentas falsas, un horneado solo cuenta si viene de otra cuenta establecida, de un jugador de 13 años o más, que no esté vinculada a tu dispositivo.",
+          "Las panaderías reales que hornean recetas de jugadores, y las tiendas propias de los panaderos, no forman parte de los juegos hoy. Si se abren, primero actualizamos esta política."
+        ]
+      },
+      {
+        "id": "purchases",
+        "h": "Compras",
+        "p": [
+          "Algunos juegos venden artículos a través de la App Store o Google Play. Apple o Google cobran el pago, y nunca vemos los datos de tu tarjeta. Si tienes un Multiverse ID, nuestro servidor comprueba el recibo de la tienda y guarda lo que compraste en tu ID."
+        ]
+      },
+      {
+        "id": "ads",
+        "h": "Anuncios y Google AdMob",
+        "p": [
+          "Algunas versiones de nuestros juegos no muestran anuncios ni llevan ningún software de anuncios. Las versiones con anuncios usan Google AdMob. Antes de publicar una de esas versiones, nuestro equipo la prueba con los anuncios de muestra de Google, que funcionan igual.",
+          "El software de AdMob puede recopilar el identificador de publicidad de tu dispositivo, tu dirección IP, datos del dispositivo como el modelo, la versión del sistema y el idioma, y cómo interactúas con los anuncios. Google lo usa para mostrar y medir anuncios y para prevenir el fraude, según su propia política en policies.google.com/privacy. Solo vemos los ingresos totales, no datos sobre ti.",
+          "Lo que ves depende de tu rango de edad. Menos de 13: solo anuncios aptos para niños, sin identificador de publicidad, sin aviso de seguimiento y sin formulario de consentimiento. De 13 a 17, o si no conocemos tu edad: anuncios no personalizados y sin aviso de seguimiento. 18 o más: primero una pantalla breve explica la elección. En iPhone y iPad, el aviso de seguimiento de Apple pregunta si los anuncios pueden personalizarse. En el EEE, el Reino Unido, Suiza y Canadá, el formulario de consentimiento de Google pregunta lo mismo; en Quebec, los anuncios personalizados empiezan desactivados. Si dices que no, sigues viendo anuncios, pero no personalizados.",
+          "En iPhone, un juego con anuncios puede pedir a Apple tu rango de edad. Si indica que tienes menos de 13 años, recibes anuncios aptos para niños. Tu rango de edad de Apple nunca se comparte con Google ni con ninguna otra empresa de publicidad.",
+          "En los juegos con anuncios, una fila en Ajustes te permite cambiar tus opciones de anuncios en cualquier momento. No vinculamos tu identificador de publicidad con tu Multiverse ID."
+        ]
+      },
+      {
+        "id": "sharing",
+        "h": "Con quién compartimos datos",
+        "p": [
+          "No vendemos tu información personal. Las reglas de Apple y Google para las aplicaciones no lo permiten.",
+          "Solo la compartimos con: Google AdMob, en los juegos con anuncios, como se describe arriba; Apple y Google, para el inicio de sesión y las compras; proveedores que trabajan para nosotros, como Supabase, que aloja nuestro servidor y gestiona el inicio de sesión, y proveedores que filtran y revisan contenido, con contratos que les prohíben venderla o usarla para cualquier otro fin; las autoridades, cuando la ley lo exige o para proteger la seguridad de alguien; y un comprador, si Awesoon se vende o se fusiona, después de avisarte.",
+          "Los datos de Iniciar sesión con Apple, y tu rango de edad de Apple o Google, nunca van a empresas de publicidad.",
+          "Según la ley de California, los anuncios personalizados pueden contar como compartir datos con fines publicitarios. Puedes negarte en cualquier momento diciendo que no al aviso de seguimiento o al formulario de consentimiento, o en los Ajustes del juego. Los jugadores menores de 18 años nunca reciben anuncios personalizados.",
+          "Cada elección que haces es independiente y opcional. Decir que no nunca te impide jugar, y cambiar de opinión es tan fácil como decir que sí. Si queremos usar tus datos de una forma nueva, te avisamos primero y, cuando la ley lo pide, te lo volvemos a preguntar."
+        ]
+      },
+      {
+        "id": "basis",
+        "h": "Por qué usamos tus datos",
+        "p": [
+          "Para que funcionen el Multiverse ID y las funciones que eliges (nuestro acuerdo contigo); para proteger a los jugadores, frenar el fraude y las cuentas falsas, y corregir problemas (nuestro interés legítimo en un servicio seguro que funcione); para personalizar anuncios (tu consentimiento, que puedes retirar en cualquier momento); y para cumplir nuestras obligaciones legales."
+        ]
+      },
+      {
+        "id": "retention",
+        "h": "Cuánto tiempo guardamos los datos",
+        "p": [
+          "En tu teléfono: hasta que uses Empezar de nuevo o elimines el juego.",
+          "Con un Multiverse ID: los datos de la cuenta hasta que elimines tu ID. Mensajes: 90 días, salvo que se reporten. Contenido subido: hasta que tú o nosotros lo retiremos, o elimines tu ID. Reportes y decisiones de moderación: el tiempo necesario para resolver el reporte y cualquier apelación. Registros de inicio de sesión y direcciones IP: 30 días. Correos que nos envías: 12 meses después de nuestra última respuesta.",
+          "Los registros que la ley nos obliga a guardar, como los de compras, se guardan solo el tiempo que la ley exige."
+        ]
+      },
+      {
+        "id": "delete",
+        "h": "Eliminar tu Multiverse ID",
+        "p": [
+          "En cualquier juego de Awesoon, abre Ajustes, toca Multiverse ID y luego Eliminar mi Multiverse ID. También puedes pedírnoslo por correo.",
+          "Así se elimina tu Multiverse ID en todos los juegos de Awesoon en un plazo de 30 días: tu ID, tus amigos, tus mensajes, tu contenido subido, tus ofertas de terreno, y el progreso, las monedas y las regalías guardados en él.",
+          "El progreso guardado en tu teléfono se queda, y el juego sigue funcionando sin ID. Cerrar sesión es distinto: tu ID se mantiene y solo se cierra la sesión en este teléfono."
+        ]
+      },
+      {
+        "id": "security",
+        "h": "Dónde se guardan tus datos",
+        "p": [
+          "Los datos del Multiverse ID se guardan en nuestro servidor en Canadá, que Supabase opera para nosotros con un acuerdo por escrito. Cada juego solo accede a su propia parte, y solo las personas de nuestro equipo que lo necesitan pueden acceder. No guardamos contraseñas, porque inicias sesión con Apple o Google.",
+          "Google trata los datos de anuncios según su propia política, y puede hacerlo fuera de tu país.",
+          "Si una brecha de seguridad te expone a un riesgo real de daño significativo, te lo decimos a ti y a las autoridades que exige la ley."
+        ]
+      },
+      {
+        "id": "rights",
+        "h": "Tus derechos",
+        "p": [
+          "Vivas donde vivas, puedes pedirnos una copia de lo que tenemos sobre ti, pedirnos que lo corrijamos o eliminemos, y retirar cualquier consentimiento que hayas dado.",
+          "Según dónde vivas (por ejemplo, el EEE, el Reino Unido, Suiza, Brasil, Canadá o California), también puedes oponerte a cómo se usan tus datos o limitarlo, llevarte una copia a otro servicio y presentar una queja ante tu autoridad de protección de datos. En California, también puedes negarte a que se compartan tus datos para anuncios personalizados, como se explica arriba.",
+          "No te tratamos de forma diferente por usar estos derechos. Escríbenos para usar cualquiera de ellos y te responderemos en el plazo que fije tu ley local.",
+          "Nuestro Responsable de privacidad se encarga de proteger la información personal y puedes contactarlo en la dirección de abajo."
+        ]
+      },
+      {
+        "id": "liability",
+        "h": "Los límites de nuestros términos",
+        "p": [
+          "Los términos de estos juegos explican hasta dónde llega nuestra responsabilidad. En resumen, en la medida en que la ley lo permita: los juegos y el Multiverse ID se ofrecen tal como están; no respondemos de lo que otros jugadores publican o envían; y nuestra responsabilidad total se limita a la mayor de estas cantidades: lo que nos pagaste en los últimos 12 meses o 50 dólares canadienses.",
+          "Estos límites nunca cubren la muerte o las lesiones causadas por nuestra negligencia, el fraude ni la negligencia grave, y no te quitan los derechos que te da la ley de consumo del lugar donde vives. Si eres consumidor en Quebec, el límite no se aplica a ti."
+        ]
+      },
+      {
+        "id": "changes",
+        "h": "Cambios en esta política",
+        "p": [
+          "Si esta política cambia, publicamos aquí la nueva versión, con una nueva fecha, antes de que salga la versión del juego que la necesita. Un nuevo uso de tus datos llega con un nuevo aviso y, cuando la ley lo pide, una nueva elección. Las versiones anteriores siguen publicadas."
+        ]
+      }
+    ],
+    "contactH": "Contacto",
+    "contactB": "Preguntas sobre esta política, o una solicitud sobre tus datos:",
+    "termsLink": "Leer los términos de estos juegos",
+    "previousLink": "Leer la versión 3, la política anterior para las versiones de los juegos con un Multiverse ID"
+  },
   "gamesTermsV2": {
     "title": "Términos de uso, juegos de Awesoon",
     "updated": "Versión 2, para las versiones de los juegos que ofrecen un Multiverse ID (tu cuenta de Awesoon para los juegos de Awesoon). Última actualización: 13 de noviembre de 2026. Entra en vigor cuando se publique la primera versión de este tipo.",
@@ -2894,7 +3095,7 @@
         "id": "id",
         "h": "Tu Multiverse ID",
         "p": [
-          "El Multiverse ID es opcional. Para crear uno debe tener al menos la edad de consentimiento digital del lugar donde vive: 13 años en Estados Unidos, 14 en Canadá y hasta 16 en algunos países. Usted protege su inicio de sesión y es responsable de lo que ocurra con su ID. Puede eliminarlo en cualquier momento desde los Ajustes de cualquier juego o desde nuestro sitio web."
+          "El Multiverse ID es opcional. Para crear uno debe tener al menos la edad de consentimiento digital del lugar donde vive: 13 años en Estados Unidos, 14 en Canadá y 16 en muchos otros países, y 18 en la India. Usted protege su inicio de sesión y es responsable de lo que ocurra con su ID. Puede eliminarlo en cualquier momento desde los Ajustes de cualquier juego o escribiéndonos."
         ]
       },
       {
@@ -2946,7 +3147,7 @@
         "id": "asis",
         "h": "Tal como está",
         "p": [
-          "EN LA MÁXIMA MEDIDA QUE PERMITA LA LEY, CADA JUEGO Y EL AWESOON ID SE OFRECEN “TAL COMO ESTÁN” Y “SEGÚN DISPONIBILIDAD”, SIN GARANTÍAS DE NINGÚN TIPO, INCLUIDA CUALQUIER GARANTÍA IMPLÍCITA DE COMERCIABILIDAD, IDONEIDAD PARA UN FIN PARTICULAR O NO INFRACCIÓN. No prometemos que un juego o una función estará siempre disponible o libre de errores, y podemos cambiar o terminar funciones."
+          "EN LA MÁXIMA MEDIDA QUE PERMITA LA LEY, CADA JUEGO Y EL MULTIVERSE ID SE OFRECEN “TAL COMO ESTÁN” Y “SEGÚN DISPONIBILIDAD”, SIN GARANTÍAS DE NINGÚN TIPO, INCLUIDA CUALQUIER GARANTÍA IMPLÍCITA DE COMERCIABILIDAD, IDONEIDAD PARA UN FIN PARTICULAR O NO INFRACCIÓN. No prometemos que un juego o una función estará siempre disponible o libre de errores, y podemos cambiar o terminar funciones."
         ]
       },
       {

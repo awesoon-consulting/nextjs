@@ -9,7 +9,7 @@ export async function PrivacyV2({
   previousHref = '/games/privacy/v1',
 }: {
   locale: string
-  ns?: 'gamesPrivacy' | 'gamesPrivacyV3'
+  ns?: 'gamesPrivacy' | 'gamesPrivacyV3' | 'gamesPrivacyV4'
   previousHref?: string
 }) {
   setRequestLocale(locale)
