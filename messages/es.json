@@ -2998,5 +2998,84 @@
     "contactB": "Preguntas, quejas, apelaciones o reclamaciones sobre los juegos:",
     "privacyLink": "Leer la política de privacidad de estos juegos",
     "previousLink": "Leer la versión 1, para las versiones de los juegos sin Multiverse ID"
+  },
+  "gamesMultiverse": {
+    "title": "El multiverso de Awesoon",
+    "description": "Los juegos de Awesoon comparten un mismo pueblo vivo. Cada juego se puede jugar sin conexión y sin cuenta. El Multiverse ID es opcional y lleva tu nombre, tus amigos y tu progreso de un juego a otro.",
+    "eyebrow": "Para jugadores y familias",
+    "headline": "Un pueblo, muchos juegos",
+    "lead": "Awesoon hace juegos pequeños que comparten un mismo pueblo vivo. Cada juego es un lugar distinto de ese pueblo. Puedes jugar cada juego por separado, sin conexión y sin cuenta.",
+    "gamesTitle": "Los juegos",
+    "pennyLoaf": "Penny Loaf",
+    "pennyLoafNote": "El primer juego. Hornea, vende y haz crecer tu tienda.",
+    "towerDraft": "Tower Draft",
+    "comingSoon": "Próximamente",
+    "cards": [
+      {
+        "title": "Sin conexión y sin cuenta",
+        "text": "Cada juego funciona por completo sin conexión. Nunca necesitas una cuenta para jugar, y no te pierdes nada si no la creas."
+      },
+      {
+        "title": "El Multiverse ID es opcional",
+        "text": "Si quieres, un Multiverse ID lleva tu nombre, tus amigos y tu progreso de un juego de Awesoon al siguiente. Inicias sesión con Apple o Google."
+      },
+      {
+        "title": "Primero, una verificación de edad",
+        "text": "Crear un Multiverse ID empieza con una verificación de edad. Los amigos y el chat se abren solo para los grupos de edad adecuados. Los jugadores más jóvenes igual juegan cada juego completo."
+      },
+      {
+        "title": "Un pueblo que cambia",
+        "text": "Con el tiempo, llegan y se van vecinos de tu pueblo, para que siempre se sienta vivo."
+      },
+      {
+        "title": "Ofertas de terreno, con límites",
+        "text": "Los jugadores pueden hacer ofertas por el terreno de otros. Las ofertas tienen límites, para que los intercambios sean justos y tranquilos."
+      },
+      {
+        "title": "Sin compra de monedas entre jugadores",
+        "text": "Las monedas no se compran a otros jugadores. Las monedas se ganan jugando."
+      }
+    ],
+    "keptTitle": "Lo que guardamos",
+    "keptText": "Con un Multiverse ID, guardamos tu nombre, tus amigos y tu progreso para que te acompañen de un juego a otro. Sobre la edad, guardamos solo un grupo de edad, nunca tu fecha de nacimiento.",
+    "keptLinksIntro": "Todos los detalles están en la",
+    "privacyLink": "política de privacidad de los juegos",
+    "and": "y en los",
+    "termsLink": "términos",
+    "deleteTitle": "Cómo eliminar tu Multiverse ID",
+    "deleteLead": "Puedes eliminarlo cuando quieras, desde cualquier juego de Awesoon.",
+    "deleteSteps": [
+      "Abre Ajustes",
+      "Toca Multiverse ID",
+      "Toca Eliminar"
+    ],
+    "deleteNote": "Esto elimina tu Multiverse ID en todos los juegos de Awesoon. Los juegos siguen funcionando en tu dispositivo sin él.",
+    "faqTitle": "Preguntas",
+    "faq": [
+      {
+        "q": "¿Necesito un Multiverse ID para jugar?",
+        "a": "No. Cada juego de Awesoon se puede jugar por completo sin conexión y sin cuenta. Un Multiverse ID solo suma tu nombre, tus amigos y tu progreso entre juegos."
+      },
+      {
+        "q": "¿Qué juegos forman parte del multiverso?",
+        "a": "Penny Loaf es el primero. Tower Draft llega próximamente. Con el tiempo, más juegos pequeños se sumarán al mismo pueblo."
+      },
+      {
+        "q": "¿Cómo inicio sesión?",
+        "a": "Con tu cuenta de Apple o Google. No necesitas crear una contraseña nueva."
+      },
+      {
+        "q": "¿Por qué hay una verificación de edad?",
+        "a": "Para que los amigos y el chat se abran solo a jugadores con edad suficiente. Guardamos solo un grupo de edad, nunca una fecha de nacimiento."
+      },
+      {
+        "q": "¿Mi hijo puede jugar sin un Multiverse ID?",
+        "a": "Sí. Cada juego se puede jugar completo sin él. Los amigos y el chat necesitan un Multiverse ID y el grupo de edad adecuado."
+      },
+      {
+        "q": "¿Qué pasa si elimino mi Multiverse ID?",
+        "a": "Se elimina en todos los juegos de Awesoon. Puedes seguir jugando cada juego en tu dispositivo, sin el nombre, los amigos y el progreso compartidos."
+      }
+    ]
   }
 }

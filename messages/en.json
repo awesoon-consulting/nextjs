@@ -2997,5 +2997,84 @@
     "contactB": "Questions, complaints, appeals or claims about the games:",
     "privacyLink": "Read the privacy policy for these games",
     "previousLink": "Read version 1, for game versions without a Multiverse ID"
+  },
+  "gamesMultiverse": {
+    "title": "The Awesoon Multiverse",
+    "description": "Awesoon games share one living town. Every game plays offline with no account. A Multiverse ID is optional and carries your name, friends and progress between games.",
+    "eyebrow": "For players and parents",
+    "headline": "One town, many games",
+    "lead": "Awesoon makes small games that share one living town. Each game is a different place in that town. You can play every game on its own, offline, with no account.",
+    "gamesTitle": "The games",
+    "pennyLoaf": "Penny Loaf",
+    "pennyLoafNote": "The first game. Bake, sell and grow your shop.",
+    "towerDraft": "Tower Draft",
+    "comingSoon": "Coming soon",
+    "cards": [
+      {
+        "title": "Plays offline, no account",
+        "text": "Every game works fully offline. You never need an account to play, and nothing is held back if you skip one."
+      },
+      {
+        "title": "A Multiverse ID is optional",
+        "text": "If you want, a Multiverse ID carries your name, friends and progress from one Awesoon game to the next. You sign in with Apple or Google."
+      },
+      {
+        "title": "An age check first",
+        "text": "Making a Multiverse ID starts with an age check. Friends and chat open only for the age bands they suit. Younger players still play every game in full."
+      },
+      {
+        "title": "A town that changes",
+        "text": "People move in and out of your town over time, so it always feels alive."
+      },
+      {
+        "title": "Land offers, with limits",
+        "text": "Players can make offers on each other's land. Offers have limits, so trading stays fair and calm."
+      },
+      {
+        "title": "No buying coins from players",
+        "text": "Coins cannot be bought from other players. Coins come from playing the games."
+      }
+    ],
+    "keptTitle": "What we keep",
+    "keptText": "With a Multiverse ID, we keep your name, your friends and your progress so they can follow you between games. For age, we keep only an age band, never your birth date.",
+    "keptLinksIntro": "The full details are in our games",
+    "privacyLink": "privacy policy",
+    "and": "and",
+    "termsLink": "terms",
+    "deleteTitle": "How to delete your Multiverse ID",
+    "deleteLead": "You can delete it any time, from any Awesoon game.",
+    "deleteSteps": [
+      "Open Settings",
+      "Tap Multiverse ID",
+      "Tap Delete"
+    ],
+    "deleteNote": "This deletes your Multiverse ID in every Awesoon game. The games keep working on your device without it.",
+    "faqTitle": "Questions",
+    "faq": [
+      {
+        "q": "Do I need a Multiverse ID to play?",
+        "a": "No. Every Awesoon game plays fully offline with no account. A Multiverse ID only adds your name, friends and progress across games."
+      },
+      {
+        "q": "Which games are part of the Multiverse?",
+        "a": "Penny Loaf is the first. Tower Draft is coming soon. More small games will join the same town over time."
+      },
+      {
+        "q": "How do I sign in?",
+        "a": "With your Apple or Google account. There is no new password to make."
+      },
+      {
+        "q": "Why is there an age check?",
+        "a": "So friends and chat open only for players old enough for them. We keep only an age band, never a birth date."
+      },
+      {
+        "q": "Can my child play safely without a Multiverse ID?",
+        "a": "Yes. Every game plays in full without one. Friends and chat need a Multiverse ID and the right age band."
+      },
+      {
+        "q": "What happens if I delete my Multiverse ID?",
+        "a": "It is deleted in every Awesoon game. You can keep playing each game on your device, just without the shared name, friends and progress."
+      }
+    ]
   }
 }

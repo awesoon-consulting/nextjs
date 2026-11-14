@@ -22,7 +22,11 @@ const nextConfig: NextConfig = {
     ],
   },
   async redirects() {
-    return solutionRedirects()
+    return [
+      { source: '/multiverse', destination: '/en/games/multiverse', permanent: true },
+      { source: '/:locale(en|fr|es)/multiverse', destination: '/:locale/games/multiverse', permanent: true },
+      ...solutionRedirects(),
+    ]
   },
   async headers() {
     return [
