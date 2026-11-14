@@ -2749,23 +2749,23 @@
   },
   "gamesPrivacyV3": {
     "title": "Política de privacidad, juegos de Awesoon",
-    "updated": "Versión 3, para las versiones de los juegos que ofrecen un Awesoon ID. Última actualización: 13 de noviembre de 2026. Entra en vigor cuando se publique la primera versión de este tipo.",
-    "lead": "Todos los juegos de Awesoon se pueden jugar sin cuenta. Si decides crear un Awesoon ID, conservamos lo necesario para que funcione en nuestros juegos. Esta página explica qué es, quién lo ve, cuánto tiempo lo conservamos y qué puedes hacer.",
-    "appliesTo": "Se aplica a todos los juegos de Awesoon y al Awesoon ID que los conecta. Los juegos son publicados por Awesoon Technologies Inc., una empresa de la Columbia Británica, Canadá.",
+    "updated": "Versión 3, para las versiones de los juegos que ofrecen un Multiverse ID (tu cuenta de Awesoon para los juegos de Awesoon). Última actualización: 13 de noviembre de 2026. Entra en vigor cuando se publique la primera versión de este tipo.",
+    "lead": "Todos los juegos de Awesoon se pueden jugar sin cuenta. Si decides crear un Multiverse ID, conservamos lo necesario para que funcione en nuestros juegos. Esta página explica qué es, quién lo ve, cuánto tiempo lo conservamos y qué puedes hacer.",
+    "appliesTo": "Se aplica a todos los juegos de Awesoon y al Multiverse ID que los conecta. Los juegos son publicados por Awesoon Technologies Inc., una empresa de la Columbia Británica, Canadá.",
     "sections": [
       {
         "id": "without-id",
-        "h": "Si juegas sin un Awesoon ID",
+        "h": "Si juegas sin un Multiverse ID",
         "p": [
           "Tu progreso, tus ajustes y la respuesta a la pregunta sobre la edad se quedan en tu dispositivo. No recibimos nada de eso. Los anuncios, cuando un juego los muestra, funcionan como se describe más abajo."
         ]
       },
       {
         "id": "id",
-        "h": "Si creas un Awesoon ID",
+        "h": "Si creas un Multiverse ID",
         "p": [
           "Inicias sesión con Apple o Google. Recibimos un identificador de inicio de sesión, y una dirección de correo electrónico solo si decides compartirla. Con Iniciar sesión con Apple puedes ocultar tu correo, y entonces recibimos una dirección de reenvío.",
-          "Un mismo Awesoon ID funciona en todos los juegos de Awesoon. Crearlo en un juego lo vincula con todos los demás, y la pantalla de registro lo indica.",
+          "Un mismo Multiverse ID funciona en todos los juegos de Awesoon. Crearlo en un juego lo vincula con todos los demás, y la pantalla de registro lo indica.",
           "Conservamos tu ID, el nombre visible que elijas, tu rango de edad (no tu fecha de nacimiento), tu lista de amigos, los juegos de Awesoon en los que juegas con el ID, tu progreso, tus compras y tus monedas en cada juego para que te acompañen entre dispositivos, tus mensajes, las recetas y fotos que subes, y los reportes que haces o recibes.",
           "También conservamos los registros que el servicio necesita para funcionar y mantenerse seguro: la hora y el tipo de dispositivo de cada inicio de sesión, tu dirección IP y los informes de fallos."
         ]
@@ -2782,7 +2782,7 @@
         "id": "chat",
         "h": "Chat y subidas",
         "p": [
-          "El chat es para jugadores con un Awesoon ID, solo entre amigos. Los amigos se agregan solo con un enlace de invitación o un código de amigo, nunca por búsqueda ni sugerencias. Los mensajes y el contenido subido pasan por un filtro automático antes de entregarse o mostrarse. Las fotos y las recetas las revisa una persona antes de que otros puedan verlas. Un mensaje o contenido denunciado o marcado por el filtro lo lee una persona de nuestro equipo.",
+          "El chat es para jugadores con un Multiverse ID, solo entre amigos. Los amigos se agregan solo con un enlace de invitación o un código de amigo, nunca por búsqueda ni sugerencias. Los mensajes y el contenido subido pasan por un filtro automático antes de entregarse o mostrarse. Las fotos y las recetas las revisa una persona antes de que otros puedan verlas. Un mensaje o contenido denunciado o marcado por el filtro lo lee una persona de nuestro equipo.",
           "No leemos los mensajes privados a menos que se reporten o se marquen, o que la ley lo exija. Cuando la ley lo exige, informamos a las autoridades sobre material de abuso sexual infantil y amenazas contra la vida."
         ]
       },
@@ -2792,7 +2792,7 @@
         "p": [
           "Los juegos que muestran anuncios usan Google AdMob. Su software puede recopilar tu identificador de publicidad, tu dirección IP y datos del dispositivo como el modelo, la versión del sistema, el idioma y cómo interactúas con los anuncios. Google lo usa para mostrar y medir anuncios y para prevenir el fraude, según su propia política en policies.google.com/privacy. Solo vemos informes de ingresos agregados.",
           "Los anuncios solo se personalizan si tienes 18 años o más y dices que sí: en iPhone y iPad mediante el aviso de seguimiento de Apple, y en el EEE, el Reino Unido, Suiza y Canadá mediante un formulario de consentimiento. Si dices que no, igualmente ves anuncios, pero no están personalizados. Los jugadores menores de 18 años ven solo anuncios no personalizados, y los menores de 13 ven anuncios aptos para niños y sin identificador de publicidad. Una fila en los Ajustes de cada juego vuelve a abrir tus opciones de anuncios.",
-          "Tu identificador de publicidad nunca se vincula con tu Awesoon ID. Los datos de Iniciar sesión con Apple y la señal de edad de tu dispositivo nunca se usan para anuncios."
+          "Tu identificador de publicidad nunca se vincula con tu Multiverse ID. Los datos de Iniciar sesión con Apple y la señal de edad de tu dispositivo nunca se usan para anuncios."
         ]
       },
       {
@@ -2808,27 +2808,27 @@
         "id": "children",
         "h": "Jugadores más jóvenes",
         "p": [
-          "Los jugadores que no tienen la edad de consentimiento digital del lugar donde viven (13 años en Estados Unidos, 14 en Canadá y hasta 16 en algunos países) juegan cada juego completo, sin Awesoon ID. No pueden agregar amigos, chatear, subir contenido ni ser encontrados por su nombre. Si sabemos que uno de estos jugadores tiene un Awesoon ID, lo eliminamos. Un padre, madre o tutor puede escribirnos para revisar o eliminar cualquier información sobre su hijo o hija."
+          "Los jugadores que no tienen la edad de consentimiento digital del lugar donde viven (13 años en Estados Unidos, 14 en Canadá y hasta 16 en algunos países) juegan cada juego completo, sin Multiverse ID. No pueden agregar amigos, chatear, subir contenido ni ser encontrados por su nombre. Si sabemos que uno de estos jugadores tiene un Multiverse ID, lo eliminamos. Un padre, madre o tutor puede escribirnos para revisar o eliminar cualquier información sobre su hijo o hija."
         ]
       },
       {
         "id": "basis",
         "h": "Por qué usamos tus datos",
         "p": [
-          "Para hacer funcionar el Awesoon ID y las funciones que eliges (nuestro acuerdo contigo); para mantener seguros a los jugadores, evitar el fraude y las cuentas falsas, y resolver problemas (nuestro interés legítimo en un servicio seguro y que funcione); para personalizar anuncios (tu consentimiento, que puedes retirar); y para cumplir obligaciones legales."
+          "Para hacer funcionar el Multiverse ID y las funciones que eliges (nuestro acuerdo contigo); para mantener seguros a los jugadores, evitar el fraude y las cuentas falsas, y resolver problemas (nuestro interés legítimo en un servicio seguro y que funcione); para personalizar anuncios (tu consentimiento, que puedes retirar); y para cumplir obligaciones legales."
         ]
       },
       {
         "id": "retention",
         "h": "Cuánto tiempo conservamos los datos",
         "p": [
-          "Datos de la cuenta: hasta que elimines tu Awesoon ID. Mensajes: 90 días, salvo que se reporten. Reportes y decisiones de moderación: 1 año. Subidas: hasta que tú o nosotros las retiremos, o hasta que elimines tu ID. Direcciones IP y registros de inicio de sesión: 30 días. Correos de soporte: 12 meses después de nuestra última respuesta.",
-          "Cuando eliminas tu Awesoon ID, lo eliminamos junto con todo lo vinculado a él en cada juego en un plazo de 30 días, y las copias de seguridad que lo contienen se sobrescriben en los 35 días siguientes. Los registros que la ley nos obliga a conservar, como los de compras, se conservan solo el tiempo que ella exige."
+          "Datos de la cuenta: hasta que elimines tu Multiverse ID. Mensajes: 90 días, salvo que se reporten. Reportes y decisiones de moderación: 1 año. Subidas: hasta que tú o nosotros las retiremos, o hasta que elimines tu ID. Direcciones IP y registros de inicio de sesión: 30 días. Correos de soporte: 12 meses después de nuestra última respuesta.",
+          "Cuando eliminas tu Multiverse ID, lo eliminamos junto con todo lo vinculado a él en cada juego en un plazo de 30 días, y las copias de seguridad que lo contienen se sobrescriben en los 35 días siguientes. Los registros que la ley nos obliga a conservar, como los de compras, se conservan solo el tiempo que ella exige."
         ]
       },
       {
         "id": "delete",
-        "h": "Eliminar tu Awesoon ID",
+        "h": "Eliminar tu Multiverse ID",
         "p": [
           "Cada juego tiene una fila Eliminar cuenta en los Ajustes, y una página de nuestro sitio web hace lo mismo. Eliminarlo en un lugar elimina el ID en todos los juegos. El progreso guardado en tu dispositivo sin ID no se ve afectado."
         ]
@@ -2860,15 +2860,15 @@
     "contactH": "Contacto",
     "contactB": "Preguntas sobre esta política, o una solicitud sobre tus datos:",
     "termsLink": "Leer los términos de estos juegos",
-    "previousLink": "Leer la versión 2, para las versiones de los juegos con anuncios y sin Awesoon ID"
+    "previousLink": "Leer la versión 2, para las versiones de los juegos con anuncios y sin Multiverse ID"
   },
   "gamesTermsV2": {
     "title": "Términos de uso, juegos de Awesoon",
-    "updated": "Versión 2, para las versiones de los juegos que ofrecen un Awesoon ID. Última actualización: 13 de noviembre de 2026. Entra en vigor cuando se publique la primera versión de este tipo.",
+    "updated": "Versión 2, para las versiones de los juegos que ofrecen un Multiverse ID (tu cuenta de Awesoon para los juegos de Awesoon). Última actualización: 13 de noviembre de 2026. Entra en vigor cuando se publique la primera versión de este tipo.",
     "lead": "La versión corta, en cinco líneas. Los términos completos van a continuación.",
-    "appliesTo": "Se aplican a todos los juegos de Awesoon y al Awesoon ID que los conecta.",
+    "appliesTo": "Se aplican a todos los juegos de Awesoon y al Multiverse ID que los conecta.",
     "short": [
-      "Todos los juegos se pueden jugar sin cuenta. Un Awesoon ID es opcional y vincula a tus amigos, tu progreso y tus monedas en nuestros juegos.",
+      "Todos los juegos se pueden jugar sin cuenta. Un Multiverse ID es opcional y vincula a tus amigos, tu progreso y tus monedas en nuestros juegos.",
       "Sé amable. Las reglas del chat y de las subidas están más abajo; retiramos lo que las incumple y te decimos por qué.",
       "Lo que subes sigue siendo tuyo. Nos permites mostrarlo en nuestros juegos.",
       "Las monedas son solo para jugar. No tienen valor en dinero y no se pueden vender.",
@@ -2892,9 +2892,9 @@
       },
       {
         "id": "id",
-        "h": "Tu Awesoon ID",
+        "h": "Tu Multiverse ID",
         "p": [
-          "El Awesoon ID es opcional. Para crear uno debe tener al menos la edad de consentimiento digital del lugar donde vive: 13 años en Estados Unidos, 14 en Canadá y hasta 16 en algunos países. Usted protege su inicio de sesión y es responsable de lo que ocurra con su ID. Puede eliminarlo en cualquier momento desde los Ajustes de cualquier juego o desde nuestro sitio web."
+          "El Multiverse ID es opcional. Para crear uno debe tener al menos la edad de consentimiento digital del lugar donde vive: 13 años en Estados Unidos, 14 en Canadá y hasta 16 en algunos países. Usted protege su inicio de sesión y es responsable de lo que ocurra con su ID. Puede eliminarlo en cualquier momento desde los Ajustes de cualquier juego o desde nuestro sitio web."
         ]
       },
       {
@@ -2954,7 +2954,7 @@
         "h": "Límite de responsabilidad",
         "p": [
           "Si eres consumidor en Quebec, esta sección no se aplica a ti.",
-          "En la máxima medida que permita la ley, no somos responsables de ninguna pérdida indirecta, incidental, especial o consecuente, ni de la pérdida de datos, monedas o progreso, que surja del uso de un juego o del Awesoon ID. Nuestra responsabilidad total hacia ti por todas las reclamaciones se limita al mayor de estos importes: lo que nos pagaste en los 12 meses anteriores a la reclamación y 50 dólares canadienses.",
+          "En la máxima medida que permita la ley, no somos responsables de ninguna pérdida indirecta, incidental, especial o consecuente, ni de la pérdida de datos, monedas o progreso, que surja del uso de un juego o del Multiverse ID. Nuestra responsabilidad total hacia ti por todas las reclamaciones se limita al mayor de estos importes: lo que nos pagaste en los 12 meses anteriores a la reclamación y 50 dólares canadienses.",
           "Nada en estos términos limita ni excluye nuestra responsabilidad por muerte o lesiones personales causadas por nuestra negligencia, por fraude, ni por negligencia grave o conducta dolosa, ni ningún derecho que tengas según la ley de consumo del lugar donde vives y que no pueda limitarse, como la UK Consumer Rights Act 2015, la legislación de consumo de la Unión Europea, la Australian Consumer Law o la Ley de Protección del Consumidor de Quebec."
         ]
       },
@@ -2976,27 +2976,27 @@
         "id": "who-answers",
         "h": "Quién responde de qué",
         "p": [
-          "Nosotros respondemos de los juegos, el Awesoon ID, el soporte, las reclamaciones sobre ellos, la propiedad intelectual y la privacidad. Apple y Google responden del pago, los reembolsos y la distribución a través de sus tiendas. El contrato de licencia estándar de Apple también se aplica a los juegos que obtienes en la App Store."
+          "Nosotros respondemos de los juegos, el Multiverse ID, el soporte, las reclamaciones sobre ellos, la propiedad intelectual y la privacidad. Apple y Google responden del pago, los reembolsos y la distribución a través de sus tiendas. El contrato de licencia estándar de Apple también se aplica a los juegos que obtienes en la App Store."
         ]
       },
       {
         "id": "ending",
         "h": "Fin de estos términos",
         "p": [
-          "Puedes dejar de usarlos en cualquier momento eliminando los juegos y tu Awesoon ID. Podemos cerrar un Awesoon ID que incumpla estos términos, como se describe arriba. Si alguna vez terminamos el servicio de Awesoon ID, avisamos con al menos 30 días de antelación, y los juegos siguen funcionando en tu dispositivo."
+          "Puedes dejar de usarlos en cualquier momento eliminando los juegos y tu Multiverse ID. Podemos cerrar un Multiverse ID que incumpla estos términos, como se describe arriba. Si alguna vez terminamos el servicio de Multiverse ID, avisamos con al menos 30 días de antelación, y los juegos siguen funcionando en tu dispositivo."
         ]
       },
       {
         "id": "changes",
         "h": "Cambios",
         "p": [
-          "Podemos cambiar estos términos cuando cambien las funciones, la ley o nuestros servicios. Publicamos la nueva versión aquí y avisamos en los juegos con al menos 30 días de antelación antes de que entre en vigor un cambio que te afecte. Si no lo aceptas, puedes eliminar tu Awesoon ID sin costo. Las versiones anteriores siguen publicadas."
+          "Podemos cambiar estos términos cuando cambien las funciones, la ley o nuestros servicios. Publicamos la nueva versión aquí y avisamos en los juegos con al menos 30 días de antelación antes de que entre en vigor un cambio que te afecte. Si no lo aceptas, puedes eliminar tu Multiverse ID sin costo. Las versiones anteriores siguen publicadas."
         ]
       }
     ],
     "contactH": "Contacto",
     "contactB": "Preguntas, quejas, apelaciones o reclamaciones sobre los juegos:",
     "privacyLink": "Leer la política de privacidad de estos juegos",
-    "previousLink": "Leer la versión 1, para las versiones de los juegos sin Awesoon ID"
+    "previousLink": "Leer la versión 1, para las versiones de los juegos sin Multiverse ID"
   }
 }
