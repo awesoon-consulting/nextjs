@@ -44,6 +44,8 @@ Create a `.env.local` file in the project root with these values:
 | `GOOGLE_SHEETS_SPREADSHEET_ID` | Yes (for form) | ID from the Google Sheet URL |
 | `NEXT_PUBLIC_GA_MEASUREMENT_ID` | No | Google Analytics 4 Measurement ID (format: `G-XXXXXXXXXX`) |
 | `NEXT_PUBLIC_SITE_URL` | No | Production URL (default: `https://awesoon.com`) |
+| `INNGEST_SIGNING_KEY` | Yes (for Inngest Cloud sync) | Server-only signing key for the matching Inngest environment |
+| `INNGEST_EVENT_KEY` | No (until sending events) | Server-only key used to send events to Inngest |
 
 Example `.env.local`:
 
@@ -149,6 +151,14 @@ npm i -g vercel
 vercel login
 vercel --prod
 ```
+
+### Inngest endpoint
+
+The website exposes `GET`, `POST`, and `PUT` at `/api/inngest` for Inngest
+discovery, signed execution, and sync. After Vercel deploys, manually sync
+`https://awesoontechnologies.com/api/inngest`. Configure `INNGEST_SIGNING_KEY`
+in Vercel first. The initial registry contains no functions or schedules.
+See [`src/inngest/README.md`](src/inngest/README.md) for setup details.
 
 ### Post-Deploy Checklist
 
