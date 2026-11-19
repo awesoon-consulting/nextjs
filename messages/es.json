@@ -2746,5 +2746,121 @@
       "mailBody": "Por favor envíenme alertas de cambios de API para: {platforms}",
       "more": "Mostrar {count} más"
     }
+  },
+  "tapbody": {
+    "title": "TapBody: un diario privado para tu cuerpo",
+    "description": "Toca donde lo sientes, escríbelo en segundos y muestra a tu médico una página clara. Únete a la lista de espera de TapBody.",
+    "eyebrow": "TAPBODY · PRÓXIMAMENTE EN IPHONE Y ANDROID",
+    "headline": "Listo para la cita, con tus propias palabras.",
+    "lead": "Un diario privado para tu cuerpo. Toca donde lo sientes, escríbelo en pocos segundos y muestra a tu médico una página clara, en su idioma si lo necesitas.",
+    "hint": "Arrastra para girar. Toca un punto.",
+    "bodyLabel": "Un cuerpo 3D luminoso que puedes girar y tocar",
+    "loading": "Cargando el cuerpo",
+    "sided": "{part}, lado {side}",
+    "left": "izquierdo",
+    "right": "derecho",
+    "regions": {
+      "head": "Cabeza",
+      "neck": "Cuello",
+      "chest": "Pecho",
+      "upperBack": "Parte alta de la espalda",
+      "lowerBack": "Zona lumbar",
+      "stomach": "Abdomen",
+      "shoulder": "Hombro",
+      "hip": "Cadera",
+      "thigh": "Muslo",
+      "knee": "Rodilla",
+      "shin": "Espinilla",
+      "calf": "Pantorrilla",
+      "foot": "Pie",
+      "upperArm": "Brazo",
+      "forearm": "Antebrazo",
+      "hand": "Mano"
+    },
+    "form": {
+      "email": "Tu correo",
+      "placeholder": "tu@ejemplo.com",
+      "consent": "Envíame un correo cuando TapBody esté listo, y algunas novedades antes del lanzamiento. TapBody está hecho por Awesoon Technologies Inc., {address}, {contact}. Mi correo se guarda con nuestros proveedores de base de datos y de correo en los Estados Unidos. Si TapBody pasa a ser su propia empresa, esa empresa también podrá enviarme estos correos. Puedo darme de baja en cualquier momento.",
+      "submit": "Unirme a la lista de espera",
+      "sending": "Uniéndote",
+      "success": "Revisa tu correo para confirmar tu lugar.",
+      "errorEmail": "Escribe un correo válido.",
+      "errorConsent": "Marca la casilla para que podamos escribirte.",
+      "errorBusy": "Demasiados intentos. Espera un poco y vuelve a intentarlo.",
+      "errorGeneric": "Algo salió mal. Inténtalo de nuevo.",
+      "note": "Enviamos un solo correo para confirmar. Nada más hasta que confirmes."
+    },
+    "stepsTitle": "Tres pasos, en segundos",
+    "steps": [
+      {
+        "title": "Toca el punto",
+        "text": "Cabeza, pecho, rodilla izquierda, zona lumbar. Cada nota pertenece a un punto y a una fecha."
+      },
+      {
+        "title": "Escríbelo o dilo",
+        "text": "Qué tan fuerte, del 1 al 10, y unas palabras. En menos de 10 segundos."
+      },
+      {
+        "title": "Muéstralo a tu médico",
+        "text": "Una página de visita clara, que se lee en 30 segundos."
+      }
+    ],
+    "featuresTitle": "Hecho para el momento que importa",
+    "features": [
+      {
+        "title": "La página de visita",
+        "text": "Tus notas con fecha, agrupadas por punto, en pantalla o en un PDF que tu médico conserva."
+      },
+      {
+        "title": "Tus palabras, traducidas",
+        "text": "Una traducción palabra por palabra junto a tu original, para un médico que habla otro idioma. Puedes corregir cualquier palabra antes de compartir."
+      },
+      {
+        "title": "Voz e intérprete en vivo",
+        "text": "Dilo en tu propio idioma. En la visita, tú y tu médico hablan por turnos y cada frase se repite en el otro idioma. Tu médico da su permiso primero."
+      },
+      {
+        "title": "Privado por diseño",
+        "text": "Tus notas se quedan en tu teléfono. TapBody nunca las recibe. Sin anuncios y sin rastreo."
+      }
+    ],
+    "neverTitle": "Registra. Nunca interpreta.",
+    "neverText": "TapBody guarda lo que escribiste, tal como lo escribiste. Nunca dice qué significa una nota, no sugiere qué hacer y no califica cómo te sientes.",
+    "faqTitle": "Preguntas",
+    "faq": [
+      {
+        "q": "¿TapBody es un dispositivo médico?",
+        "a": "No. TapBody es un diario personal. Guarda tus notas y te ayuda a mostrarlas. No las lee ni te dice qué hacer. Para cualquier tema de tu salud, habla con un médico o una enfermera."
+      },
+      {
+        "q": "¿Dónde se guardan mis notas?",
+        "a": "En tu teléfono. Puedes guardar un archivo de respaldo cifrado donde quieras, y solo tu clave de recuperación lo abre. TapBody nunca recibe tus notas."
+      },
+      {
+        "q": "¿Cuándo se lanza y cuánto costará?",
+        "a": "Primero lo estamos probando con personas que ven a varios médicos. Únete a la lista de espera y te avisaremos cuando esté listo y cuánto cuesta."
+      },
+      {
+        "q": "¿Qué hacen con mi correo?",
+        "a": "Lo usamos solo para contarte sobre TapBody. Primero lo confirmas, y puedes darte de baja en cualquier momento."
+      }
+    ],
+    "disclaimer": "TapBody es un diario personal, no un dispositivo médico. Hecho por Awesoon Technologies Inc.",
+    "confirm": {
+      "title": "Confirma tu correo",
+      "lead": "Un toque y estarás en la lista de espera de TapBody.",
+      "button": "Confirmar mi correo",
+      "done": "Ya estás en la lista de espera de TapBody.",
+      "invalid": "Este enlace no es válido.",
+      "error": "Algo salió mal. Inténtalo de nuevo."
+    },
+    "unsubscribe": {
+      "title": "Darse de baja",
+      "lead": "Dejar de recibir todos los correos de TapBody en esta dirección.",
+      "button": "Darme de baja",
+      "done": "Te diste de baja. No volveremos a escribirte.",
+      "invalid": "Este enlace no es válido.",
+      "error": "Algo salió mal. Inténtalo de nuevo."
+    }
   }
 }

@@ -2746,5 +2746,121 @@
       "mailBody": "Veuillez m’envoyer des alertes de changement d’API pour : {platforms}",
       "more": "Afficher {count} de plus"
     }
+  },
+  "tapbody": {
+    "title": "TapBody : un journal privé pour votre corps",
+    "description": "Touchez l’endroit où vous le ressentez, notez-le en quelques secondes et montrez une page claire à votre médecin. Rejoignez la liste d’attente TapBody.",
+    "eyebrow": "TAPBODY · BIENTÔT SUR IPHONE ET ANDROID",
+    "headline": "Prêt pour le rendez-vous, avec vos propres mots.",
+    "lead": "Un journal privé pour votre corps. Touchez l’endroit où vous le ressentez, notez-le en quelques secondes et montrez une page claire à votre médecin, dans sa langue si besoin.",
+    "hint": "Faites glisser pour tourner. Touchez un endroit.",
+    "bodyLabel": "Un corps 3D lumineux que vous pouvez tourner et toucher",
+    "loading": "Chargement du corps",
+    "sided": "{part}, côté {side}",
+    "left": "gauche",
+    "right": "droit",
+    "regions": {
+      "head": "Tête",
+      "neck": "Cou",
+      "chest": "Poitrine",
+      "upperBack": "Haut du dos",
+      "lowerBack": "Bas du dos",
+      "stomach": "Ventre",
+      "shoulder": "Épaule",
+      "hip": "Hanche",
+      "thigh": "Cuisse",
+      "knee": "Genou",
+      "shin": "Tibia",
+      "calf": "Mollet",
+      "foot": "Pied",
+      "upperArm": "Bras",
+      "forearm": "Avant-bras",
+      "hand": "Main"
+    },
+    "form": {
+      "email": "Votre courriel",
+      "placeholder": "vous@exemple.com",
+      "consent": "Envoyez-moi un courriel quand TapBody sera prêt, ainsi que quelques nouvelles avant le lancement. TapBody est conçu par Awesoon Technologies Inc., {address}, {contact}. Mon courriel est conservé chez nos fournisseurs de base de données et de courriel aux États-Unis. Si TapBody devient sa propre entreprise, celle-ci pourra aussi m’envoyer ces courriels. Je peux me désabonner à tout moment.",
+      "submit": "Rejoindre la liste d’attente",
+      "sending": "Inscription",
+      "success": "Vérifiez vos courriels pour confirmer votre place.",
+      "errorEmail": "Veuillez entrer un courriel valide.",
+      "errorConsent": "Veuillez cocher la case pour que nous puissions vous écrire.",
+      "errorBusy": "Trop d’essais. Patientez un peu et réessayez.",
+      "errorGeneric": "Un problème est survenu. Veuillez réessayer.",
+      "note": "Nous envoyons un seul courriel de confirmation. Rien d’autre avant votre confirmation."
+    },
+    "stepsTitle": "Trois étapes, en quelques secondes",
+    "steps": [
+      {
+        "title": "Touchez l’endroit",
+        "text": "Tête, poitrine, genou gauche, bas du dos. Chaque note appartient à un endroit et à une date."
+      },
+      {
+        "title": "Écrivez-le ou dites-le",
+        "text": "L’intensité de 1 à 10 et quelques mots. En moins de 10 secondes."
+      },
+      {
+        "title": "Montrez-le à votre médecin",
+        "text": "Une page de visite claire, lisible en 30 secondes."
+      }
+    ],
+    "featuresTitle": "Pensé pour le moment qui compte",
+    "features": [
+      {
+        "title": "La page de visite",
+        "text": "Vos notes datées, regroupées par endroit, à l’écran ou en PDF que votre médecin garde."
+      },
+      {
+        "title": "Vos mots, traduits",
+        "text": "Une traduction mot à mot à côté de votre original, pour un médecin qui parle une autre langue. Vous pouvez corriger chaque mot avant de partager."
+      },
+      {
+        "title": "La voix et un interprète en direct",
+        "text": "Dites-le dans votre langue. Pendant la visite, vous et votre médecin parlez chacun votre tour et chaque phrase est répétée dans l’autre langue. Votre médecin donne son accord d’abord."
+      },
+      {
+        "title": "Privé dès la conception",
+        "text": "Vos notes restent sur votre téléphone. TapBody ne les reçoit jamais. Pas de publicité, pas de suivi."
+      }
+    ],
+    "neverTitle": "Il consigne. Il n’interprète jamais.",
+    "neverText": "TapBody garde ce que vous avez écrit, tel que vous l’avez écrit. Il ne dit jamais ce qu’une note signifie, ne suggère rien et ne note pas ce que vous ressentez.",
+    "faqTitle": "Questions",
+    "faq": [
+      {
+        "q": "TapBody est-il un dispositif médical ?",
+        "a": "Non. TapBody est un journal personnel. Il garde vos notes et vous aide à les montrer. Il ne les lit pas et ne vous dit pas quoi faire. Pour toute question sur votre santé, parlez à un médecin ou à une infirmière."
+      },
+      {
+        "q": "Où sont conservées mes notes ?",
+        "a": "Sur votre téléphone. Vous pouvez enregistrer un fichier de sauvegarde chiffré où vous voulez, et seule votre clé de récupération l’ouvre. TapBody ne reçoit jamais vos notes."
+      },
+      {
+        "q": "Quand sera-t-il lancé, et combien coûtera-t-il ?",
+        "a": "Nous le testons d’abord avec des personnes qui consultent plusieurs médecins. Rejoignez la liste d’attente et nous vous dirons quand il sera prêt et combien il coûtera."
+      },
+      {
+        "q": "Que faites-vous de mon courriel ?",
+        "a": "Nous l’utilisons uniquement pour vous parler de TapBody. Vous le confirmez d’abord, et vous pouvez vous désabonner à tout moment."
+      }
+    ],
+    "disclaimer": "TapBody est un journal personnel, pas un dispositif médical. Conçu par Awesoon Technologies Inc.",
+    "confirm": {
+      "title": "Confirmez votre courriel",
+      "lead": "Un seul geste et vous êtes sur la liste d’attente TapBody.",
+      "button": "Confirmer mon courriel",
+      "done": "Vous êtes sur la liste d’attente TapBody.",
+      "invalid": "Ce lien n’est pas valide.",
+      "error": "Un problème est survenu. Veuillez réessayer."
+    },
+    "unsubscribe": {
+      "title": "Se désabonner",
+      "lead": "Arrêter tous les courriels TapBody à cette adresse.",
+      "button": "Me désabonner",
+      "done": "Vous êtes désabonné. Nous ne vous écrirons plus.",
+      "invalid": "Ce lien n’est pas valide.",
+      "error": "Un problème est survenu. Veuillez réessayer."
+    }
   }
 }
