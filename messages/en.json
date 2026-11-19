@@ -2752,30 +2752,6 @@
     "eyebrow": "AWESOON APPS · COMING TO IPHONE AND ANDROID",
     "headline": "Ready for the appointment, in your own words.",
     "lead": "A private journal for your body. Tap where you feel it, write it in a few seconds, and show your doctor one clean page, in their language if you need.",
-    "hint": "Drag to turn. Tap a spot.",
-    "bodyLabel": "A glowing 3D body you can turn and tap",
-    "loading": "Loading the body",
-    "sided": "{side} {part}",
-    "left": "Left",
-    "right": "Right",
-    "regions": {
-      "head": "Head",
-      "neck": "Neck",
-      "chest": "Chest",
-      "upperBack": "Upper back",
-      "lowerBack": "Lower back",
-      "stomach": "Stomach",
-      "shoulder": "shoulder",
-      "hip": "hip",
-      "thigh": "thigh",
-      "knee": "knee",
-      "shin": "shin",
-      "calf": "calf",
-      "foot": "foot",
-      "upperArm": "upper arm",
-      "forearm": "forearm",
-      "hand": "hand"
-    },
     "form": {
       "email": "Your email",
       "placeholder": "you@example.com",
@@ -2873,6 +2849,7 @@
       "If TapBody becomes its own company, we will ask you again before it emails you."
     ],
     "privacyMore": "Read the full Awesoon privacy policy",
-    "showcase": "TapBody · interactive preview"
+    "showcase": "TapBody · try the demo",
+    "demoLabel": "Interactive TapBody demo"
   }
 }

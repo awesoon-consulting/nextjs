@@ -39,6 +39,11 @@ const nextConfig: NextConfig = {
           },
         ],
       },
+      {
+        // The TapBody demo is framed by the TapBody page on this same site.
+        source: '/images/tapbody/demo/:path*',
+        headers: [{ key: 'X-Frame-Options', value: 'SAMEORIGIN' }],
+      },
     ]
   },
 }

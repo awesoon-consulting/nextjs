@@ -5,7 +5,6 @@ import Badge from '@/src/components/ui/Badge'
 import { siteConfig } from '@/src/config/site'
 import { CURRENT_CONSENT_VERSION } from '@/src/lib/tapbody/consent'
 import { tapbodyWaitlistReady } from '@/src/lib/tapbody/env'
-import BodyHero, { type BodyHeroLabels } from './_components/BodyHero'
 import WaitlistForm, { type WaitlistLabels } from './_components/WaitlistForm'
 
 interface TapBodyPageProps {
@@ -14,7 +13,6 @@ interface TapBodyPageProps {
 
 type TapBodyMessages = {
   tapbody: {
-    regions: BodyHeroLabels['regions']
     form: WaitlistLabels & { soon: string }
     steps: { title: string; text: string }[]
     features: { title: string; text: string }[]
@@ -51,20 +49,8 @@ export default async function TapBodyPage({ params }: TapBodyPageProps) {
   const m = ((await getMessages({ locale })) as unknown as TapBodyMessages).tapbody
   const fill = (s: string) => s.replace('{address}', siteConfig.contact.address).replace('{contact}', siteConfig.contact.email)
 
-  const heroLabels: BodyHeroLabels = {
-    sided: t.raw('sided') as string,
-    left: t('left'),
-    right: t('right'),
-    regions: m.regions,
-    hint: t('hint'),
-    bodyLabel: t('bodyLabel'),
-    loading: t('loading'),
-  }
-
   return (
     <>
-      <style>{`@keyframes tbTag{from{opacity:0;transform:translate(-50%,-110%) scale(.96)}to{opacity:1;transform:translate(-50%,-140%) scale(1)}}`}</style>
-
       <section className="bg-neutral-50 pt-32 pb-16 dark:bg-secondary/30">
         <div className="mx-auto grid max-w-6xl items-center gap-10 px-4 sm:px-6 lg:grid-cols-[minmax(0,1fr)_minmax(0,1fr)] lg:px-8">
           <div className="flex min-w-0 flex-col gap-5">
@@ -83,12 +69,17 @@ export default async function TapBodyPage({ params }: TapBodyPageProps) {
             </div>
           </div>
 
-          <figure
-            className="relative h-[520px] min-w-0 overflow-hidden rounded-3xl border border-white/[0.08] sm:h-[600px]"
-            style={{ background: 'radial-gradient(100% 70% at 50% 45%, #3A1420 0%, #160B10 55%, #0B0608 100%)' }}
-          >
-            <figcaption className="absolute left-5 top-4 z-10 font-mono text-[11px] uppercase tracking-[0.16em] text-[#C9ABA3]">{t('showcase')}</figcaption>
-            <BodyHero labels={heroLabels} />
+          <figure className="flex min-w-0 flex-col items-center gap-4">
+            <div className="overflow-hidden rounded-[52px] border-[10px] border-[#1E1116] shadow-[0_0_0_1px_#3A2129,0_40px_100px_rgba(255,92,138,0.22)]" style={{ width: 300, height: 626 }}>
+              <iframe
+                src="/images/tapbody/demo/index.html#body"
+                title={t('demoLabel')}
+                loading="lazy"
+                className="block origin-top-left border-0"
+                style={{ width: 390, height: 844, transform: 'scale(0.7179)' }}
+              />
+            </div>
+            <figcaption className="font-mono text-[11px] uppercase tracking-[0.16em] text-text-muted">{t('showcase')}</figcaption>
           </figure>
         </div>
       </section>
