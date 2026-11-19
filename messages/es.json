@@ -2753,30 +2753,6 @@
     "eyebrow": "APPS DE AWESOON · PRÓXIMAMENTE EN IPHONE Y ANDROID",
     "headline": "Listo para la cita, con tus propias palabras.",
     "lead": "Un diario privado para tu cuerpo. Toca donde lo sientes, escríbelo en pocos segundos y muestra a tu médico una página clara, en su idioma si lo necesitas.",
-    "hint": "Arrastra para girar. Toca un punto.",
-    "bodyLabel": "Un cuerpo 3D luminoso que puedes girar y tocar",
-    "loading": "Cargando el cuerpo",
-    "sided": "{part}, lado {side}",
-    "left": "izquierdo",
-    "right": "derecho",
-    "regions": {
-      "head": "Cabeza",
-      "neck": "Cuello",
-      "chest": "Pecho",
-      "upperBack": "Parte alta de la espalda",
-      "lowerBack": "Zona lumbar",
-      "stomach": "Abdomen",
-      "shoulder": "Hombro",
-      "hip": "Cadera",
-      "thigh": "Muslo",
-      "knee": "Rodilla",
-      "shin": "Espinilla",
-      "calf": "Pantorrilla",
-      "foot": "Pie",
-      "upperArm": "Brazo",
-      "forearm": "Antebrazo",
-      "hand": "Mano"
-    },
     "form": {
       "email": "Tu correo",
       "placeholder": "tu@ejemplo.com",
@@ -2874,6 +2850,7 @@
       "Si TapBody pasa a ser su propia empresa, te volveremos a preguntar antes de que te escriba."
     ],
     "privacyMore": "Leer la política de privacidad completa de Awesoon",
-    "showcase": "TapBody · vista interactiva"
+    "showcase": "TapBody · prueba la demo",
+    "demoLabel": "Demo interactiva de TapBody"
   }
 }

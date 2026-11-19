@@ -1,0 +1,809 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="robots" content="noindex">
+<meta charset="utf-8">
+<title>TapBody Prototype</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Unbounded:wght@500;600&family=Manrope:wght@400;500;600;700&family=Space+Mono:wght@400;700&family=Vazirmatn:wght@400;500&display=swap">
+<style>
+/* Layout: a live phone on a warm stage; the phone holds stacked screens that glide, with the 3D body as the home screen. */
+:root{
+  --ground:#0E080B; --stage:#160B10; --plum:#3A1420; --ink:#F8EFEB; --muted:#C9ABA3; --soft:#E3CFC8;
+  --apricot:#FFB36B; --coral:#FF8A74; --rose:#FF5C8A; --lime:#CCFF4D; --glass:rgba(255,255,255,.055); --line:rgba(255,255,255,.11);
+  --display:'Unbounded',Manrope,Arial,sans-serif; --text:'Manrope',system-ui,sans-serif; --mono:'Space Mono',ui-monospace,monospace; --fa:'Vazirmatn',Manrope,sans-serif;
+  --spring:cubic-bezier(.22,.9,.24,1); color-scheme:dark;
+}
+html,body{height:100%}
+body{background:radial-gradient(90% 70% at 70% 40%,#2A0F1A 0%,var(--ground) 60%);color:var(--ink);font-family:var(--text);overflow:hidden;padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px))}
+button,input,textarea{font:inherit;color:inherit}
+button{cursor:pointer}
+:focus-visible{outline:2px solid var(--lime);outline-offset:2px}
+.stage{height:100%;display:flex;align-items:center;justify-content:center;gap:64px}
+.intro{width:360px;display:flex;flex-direction:column;gap:22px}
+.intro .eyebrow{font-family:var(--mono);font-size:11px;letter-spacing:.18em;color:var(--muted)}
+.intro h1{font-family:var(--display);font-weight:600;font-size:34px;line-height:1.15;margin:0;text-wrap:balance}
+.intro p{margin:0;color:var(--soft);line-height:1.55;font-size:15px}
+.jump{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:8px}
+.jump button{background:var(--glass);border:1px solid var(--line);border-radius:12px;padding:10px 12px;text-align:left;font-size:13px;color:var(--soft);transition:background .2s,border-color .2s}
+.jump button:hover{background:rgba(255,179,107,.10);border-color:rgba(255,179,107,.4)}
+.jump button.on{border-color:var(--apricot);color:var(--ink)}
+.note{font-size:12px;color:var(--muted);line-height:1.5}
+
+.phone{position:relative;width:390px;height:844px;border-radius:54px;background:#0B0608;box-shadow:0 0 0 10px #1E1116,0 0 0 11px #3A2129,0 40px 120px rgba(255,92,138,.22);overflow:hidden;transform-origin:center;flex-shrink:0}
+.screen{position:absolute;inset:0;display:flex;flex-direction:column;padding:56px 20px 22px;gap:14px;background:radial-gradient(120% 55% at 50% 0%,var(--plum) 0%,var(--stage) 52%,#0B0608 100%);opacity:0;transform:translateX(30px) scale(.985);pointer-events:none;transition:opacity .45s var(--spring),transform .55s var(--spring)}
+.screen.active{opacity:1;transform:none;pointer-events:auto}
+.screen.left{transform:translateX(-30px) scale(.985)}
+.screen#s-body{background:radial-gradient(110% 65% at 50% 46%,#3A1420 0%,#160B10 48%,#0B0608 100%)}
+.top{display:flex;align-items:center;gap:12px;z-index:2}
+.top .titles{display:flex;flex-direction:column;gap:5px;flex:1;min-width:0}
+.eb{font-family:var(--mono);font-size:10px;letter-spacing:.15em;color:var(--muted)}
+h2{font-family:var(--display);font-weight:600;font-size:21px;margin:0;letter-spacing:-.01em}
+.icon-btn{width:46px;height:46px;border-radius:16px;background:var(--glass);border:1px solid var(--line);display:grid;place-items:center;flex-shrink:0;transition:transform .2s var(--spring),background .2s}
+.icon-btn:active{transform:scale(.94)}
+.glass{background:var(--glass);border:1px solid var(--line);border-radius:20px}
+.cta{height:56px;border:0;border-radius:18px;background:linear-gradient(100deg,var(--apricot),var(--coral) 55%,var(--rose));color:#1C0A10;font-weight:700;font-size:16px;box-shadow:0 10px 30px rgba(255,92,138,.28);transition:transform .2s var(--spring),box-shadow .2s}
+.cta:active{transform:scale(.97)}
+.ghost{height:52px;border-radius:18px;border:1px solid rgba(255,255,255,.16);background:rgba(255,255,255,.04);font-weight:600;font-size:15px}
+.small{font-size:11px;line-height:1.45;color:#C2A4A8}
+
+/* Body screen */
+#gl{position:absolute;inset:0;width:100%;height:100%;touch-action:none;cursor:grab}
+#s-body:before{content:"";position:absolute;left:0;right:0;top:0;height:210px;background:linear-gradient(180deg,rgba(11,6,8,.92) 0%,rgba(11,6,8,.55) 55%,rgba(11,6,8,0) 100%);z-index:1;pointer-events:none}
+.seg{align-self:center;display:flex;gap:4px;padding:4px;border-radius:14px;background:rgba(255,255,255,.05);border:1px solid var(--line);z-index:2}
+.seg button{min-width:84px;height:34px;border:0;border-radius:10px;background:transparent;font-size:13px;color:var(--muted);transition:background .25s,color .25s}
+.seg button.on{background:rgba(255,179,107,.16);box-shadow:inset 0 0 0 1px rgba(255,179,107,.45);color:var(--ink);font-weight:600}
+.tags{position:absolute;inset:0;pointer-events:none;z-index:2}
+.tag{position:absolute;padding:8px 11px;border-radius:13px;background:rgba(26,12,16,.66);border:1px solid rgba(204,255,77,.35);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);display:flex;flex-direction:column;gap:3px;transform:translate(-50%,-130%);white-space:nowrap;transition:opacity .25s}
+.tag b{font-size:12px}
+.tag span{font-family:var(--mono);font-size:9px;letter-spacing:.08em;color:var(--muted)}
+.hint{margin-top:auto;display:flex;align-items:center;justify-content:center;gap:8px;color:var(--muted);font-size:13px;z-index:2}
+.dock{display:flex;gap:10px;padding:8px;border-radius:22px;background:rgba(20,10,14,.55);border:1px solid var(--line);backdrop-filter:blur(18px);-webkit-backdrop-filter:blur(18px);z-index:2}
+.dock .cta{flex:1}
+.tabs{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:4px;z-index:2}
+.tabs button{height:44px;border:0;background:transparent;border-radius:12px;font-size:11px;color:var(--muted);display:flex;flex-direction:column;align-items:center;justify-content:center;gap:3px}
+.tabs button.on{color:var(--ink)}
+.tabs button.on svg{stroke:var(--apricot)}
+
+/* Sheet */
+.sheet{position:absolute;left:10px;right:10px;bottom:10px;border-radius:30px;background:rgba(28,14,18,.86);border:1px solid rgba(255,255,255,.12);backdrop-filter:blur(26px);-webkit-backdrop-filter:blur(26px);padding:12px 20px 20px;display:flex;flex-direction:column;gap:16px;transform:translateY(110%);transition:transform .6s var(--spring);z-index:5;box-shadow:0 -14px 50px rgba(0,0,0,.5)}
+.sheet.open{transform:none}
+.grab{width:40px;height:4px;border-radius:2px;background:rgba(255,255,255,.22);align-self:center}
+.bars{display:grid;grid-template-columns:repeat(10,minmax(0,1fr));gap:5px;align-items:end;height:62px}
+.bars button{border:0;border-radius:8px;padding:0;background:rgba(255,255,255,.08);transition:background .25s,box-shadow .25s,transform .2s var(--spring)}
+.bars button.on{background:linear-gradient(180deg,var(--apricot),var(--rose))}
+.bars button.top{box-shadow:0 0 18px rgba(255,179,107,.6)}
+.bars button:active{transform:scaleY(.94)}
+.nums{display:grid;grid-template-columns:repeat(10,minmax(0,1fr));gap:5px;font-family:var(--mono);font-size:10px;color:var(--muted);text-align:center}
+textarea{width:100%;box-sizing:border-box;border:1px solid rgba(255,255,255,.14);border-radius:16px;padding:12px 14px;resize:none;background:rgba(255,255,255,.04);font-size:16px;line-height:1.45}
+.row{display:flex;gap:10px}
+
+/* Lists */
+.timeline{position:relative;display:flex;flex-direction:column;gap:11px;padding-left:22px;overflow-y:auto;min-height:0}
+.timeline:before{content:"";position:absolute;left:5px;top:10px;bottom:10px;width:1px;background:linear-gradient(180deg,rgba(255,179,107,.7),rgba(255,92,138,.1))}
+.entry{position:relative;border-radius:18px;background:var(--glass);border:1px solid var(--line);padding:13px 15px;display:flex;flex-direction:column;gap:7px;animation:in .5s var(--spring) both}
+.entry:before{content:"";position:absolute;left:-22px;top:17px;width:11px;height:11px;border-radius:6px;background:var(--apricot);box-shadow:0 0 12px rgba(255,179,107,.8)}
+.entry .h{display:flex;justify-content:space-between;align-items:center}
+.entry .h div{display:flex;gap:9px;align-items:baseline}
+.entry b{font-size:14px}
+.mono{font-family:var(--mono);font-size:11px;color:var(--muted)}
+.lvl{font-family:var(--mono);font-size:12px;padding:4px 8px;border-radius:8px;background:rgba(204,255,77,.12);color:#E2FF8F}
+.entry p{margin:0;font-size:15px;line-height:1.45;color:#EADAD4}
+.fa{font-family:var(--fa);direction:rtl;text-align:right}
+@keyframes in{from{opacity:0;transform:translateY(10px)}}
+.orig{transition:opacity .42s ease;animation:fadeIn .5s ease both}
+.orig.out{opacity:0}
+@keyframes fadeIn{from{opacity:0}}
+.chips{display:flex;gap:8px;flex-wrap:wrap}
+.chip{height:36px;padding:0 14px;border-radius:12px;border:1px solid var(--line);background:rgba(255,255,255,.04);font-size:13px;color:var(--soft);transition:all .25s}
+.chip.on{border-color:rgba(255,179,107,.55);background:rgba(255,179,107,.16);color:var(--ink);font-weight:600}
+
+/* Visit */
+.paper{flex:1;min-height:0;border-radius:22px;background:#FBF7F5;color:#1C0A10;padding:16px 16px 12px;display:flex;flex-direction:column;gap:10px;box-shadow:0 0 0 1px rgba(255,179,107,.35),0 18px 50px rgba(255,179,107,.18);overflow:auto}
+.paper .ph{display:flex;justify-content:space-between;align-items:baseline;border-bottom:1px solid #E5D8D3;padding-bottom:9px}
+.paper .grp b{font-size:13px}
+.paper .it{display:grid;grid-template-columns:52px minmax(0,1fr);gap:2px 10px;margin-top:6px}
+.paper .it .d{font-family:var(--mono);font-size:10px;color:#6B5753;padding-top:3px}
+.paper .it p{margin:0;font-size:12.5px;line-height:1.45}
+.paper .it .tr{color:#5C4A46;font-size:12px}
+.paper .foot{margin-top:auto;border-top:1px solid #E5D8D3;padding-top:8px;font-size:10px;color:#6B5753;line-height:1.4}
+
+/* Orb, talk */
+.orb{width:220px;height:220px;border-radius:50%;margin:auto;background:radial-gradient(circle at 42% 38%,#FFD2A8,var(--coral) 45%,var(--rose) 100%);box-shadow:0 0 80px rgba(255,92,138,.55);display:grid;place-items:center;transition:transform .4s var(--spring)}
+.orb.live{animation:breathe 1.4s ease-in-out infinite}
+@keyframes breathe{50%{transform:scale(1.07);box-shadow:0 0 120px rgba(255,92,138,.75)}}
+.wave{display:flex;gap:6px;align-items:center;height:60px}
+.wave i{width:6px;border-radius:3px;background:#1C0A10;opacity:.75;height:20px}
+.orb.live .wave i{animation:wv .9s ease-in-out infinite}
+.wave i:nth-child(2){animation-delay:.1s!important}.wave i:nth-child(3){animation-delay:.2s!important}.wave i:nth-child(4){animation-delay:.3s!important}.wave i:nth-child(5){animation-delay:.4s!important}
+@keyframes wv{50%{height:54px}}
+.bubbles{flex:1;min-height:0;display:flex;flex-direction:column;gap:10px;overflow-y:auto}
+.bub{max-width:86%;border-radius:18px;padding:10px 14px;display:flex;flex-direction:column;gap:4px;animation:in .45s var(--spring) both}
+.bub.me{align-self:flex-start;background:rgba(255,179,107,.10);border:1px solid rgba(255,179,107,.35);border-bottom-left-radius:6px}
+.bub.dr{align-self:flex-end;background:rgba(255,92,138,.10);border:1px solid rgba(255,92,138,.35);border-bottom-right-radius:6px}
+.bub p{margin:0;font-size:15px;line-height:1.5}
+.bub .sub{font-size:13px;color:var(--soft)}
+.hold{height:76px;border-radius:20px;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:4px;font-weight:700;font-size:14px;transition:transform .15s var(--spring)}
+.hold:active,.hold.down{transform:scale(.96)}
+.banner{display:flex;gap:8px;align-items:center;padding:9px 12px;border-radius:12px;background:rgba(204,255,77,.08);border:1px solid rgba(204,255,77,.3);font-size:12px;color:#E9F7C8}
+.check{display:flex;gap:10px;font-size:15px;line-height:1.45}
+.switch{width:52px;height:32px;border-radius:16px;border:0;padding:3px;display:flex;background:rgba(255,255,255,.18);transition:background .25s}
+.switch span{width:26px;height:26px;border-radius:13px;background:var(--ink);transition:transform .3s var(--spring)}
+.switch.on{background:var(--lime)}
+.switch.on span{transform:translateX(20px);background:#1C0A10}
+.toast{position:absolute;left:50%;top:60px;transform:translate(-50%,-30px);opacity:0;padding:10px 16px;border-radius:14px;background:rgba(204,255,77,.95);color:#1C0A10;font-weight:700;font-size:13px;z-index:9;transition:all .45s var(--spring);pointer-events:none;white-space:nowrap}
+.toast.show{opacity:1;transform:translate(-50%,0)}
+.loader{position:absolute;inset:0;display:grid;place-items:center;color:var(--muted);font-family:var(--mono);font-size:11px;letter-spacing:.14em;z-index:1;transition:opacity .6s}
+
+@media (max-width:900px){.intro{display:none}}
+@media (max-width:520px){
+  body{padding:0}
+  .stage{display:block}
+  .phone{width:100%;height:100%;border-radius:0;box-shadow:none}
+  .screen{padding-top:calc(18px + env(safe-area-inset-top,0px));padding-bottom:calc(14px + env(safe-area-inset-bottom,0px))}
+}
+@media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}}
+</style>
+
+<div class="stage">
+  <div class="intro">
+    <span class="eyebrow">TAPBODY · INTERACTIVE PROTOTYPE</span>
+    <h1>Ready for the appointment, in your own words.</h1>
+    <p>A working mockup on a real 3D body. Drag to turn it. Tap anywhere on the body to write a note, then open your history and the visit page.</p>
+    <div class="jump" id="jump"></div>
+    <p class="note">Sample data only. The body is a MakeHuman model (CC0), about 10,000 triangles, drawn with a hologram shader. Nothing you type leaves this page.</p>
+  </div>
+
+  <div class="phone" id="phone">
+    <div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+    <!-- Welcome -->
+    <section class="screen" id="s-welcome" aria-label="Welcome">
+      <span class="eb" style="margin-top:10px">TAPBODY</span>
+      <div style="flex:1;display:grid;place-items:center">
+        <div class="orb" style="width:180px;height:180px;background:radial-gradient(circle at 42% 38%,#FFD2A8,#FF8A74 45%,#FF5C8A);">
+          <svg width="80" height="120" viewBox="0 0 240 340" aria-hidden="true"><g fill="none" stroke="#1C0A10" stroke-width="7" stroke-linejoin="round" opacity=".8"><circle cx="120" cy="42" r="29"/><path d="M67 96 Q120 80 173 96 L181 200 Q175 236 165 252 L75 252 Q65 236 59 200 Z"/></g><circle cx="146" cy="160" r="14" fill="#CCFF4D"/></svg>
+        </div>
+      </div>
+      <h2 style="font-size:25px;line-height:1.25">Ready for the appointment, in your own words.</h2>
+      <p style="margin:0;color:var(--soft);line-height:1.5">Tap where you feel it. Write it in a few seconds. Show your doctor a clean page when it counts.</p>
+      <div class="glass" style="padding:12px 14px;display:flex;gap:12px;align-items:center;font-size:14px"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#CCFF4D" stroke-width="1.8" aria-hidden="true"><rect x="6" y="2" width="12" height="20" rx="3"/><path d="M11 18h2"/></svg>Your notes stay on this phone. We never see them.</div>
+      <button class="cta" data-go="body">Start my body journal</button>
+      <span class="small" style="text-align:center">TapBody is a personal journal, not a medical device. For anything about your health, talk to a doctor or nurse.</span>
+    </section>
+
+    <!-- Body -->
+    <section class="screen" id="s-body" aria-label="Body">
+      <canvas id="gl" aria-label="3D body. Drag to turn, tap a spot to write a note."></canvas>
+      <div class="loader" id="loader">LOADING BODY</div>
+      <div class="tags" id="tags"></div>
+      <div class="top">
+        <div class="titles"><span class="eb" id="today">TAPBODY</span><h2>Where do you feel it?</h2></div>
+        <button class="icon-btn" aria-label="History" data-go="history"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#F8EFEB" stroke-width="1.6" stroke-linecap="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg></button>
+      </div>
+      <div class="seg" role="group" aria-label="View"><button id="vFront">Front</button><button id="vBack" class="on">Back</button></div>
+      <div class="hint"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#C9ABA3" stroke-width="1.6" stroke-linecap="round"><path d="M3 12a9 9 0 0 1 15.5-6.3L21 8"/><path d="M21 3v5h-5"/></svg>Tap a spot to write. Drag to turn.</div>
+      <div class="dock">
+        <button class="icon-btn" aria-label="Speak an entry" data-go="speak" style="width:56px;height:56px"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#F8EFEB" stroke-width="1.7" stroke-linecap="round"><rect x="9" y="3" width="6" height="11" rx="3"/><path d="M5 11a7 7 0 0 0 14 0M12 18v3"/></svg></button>
+        <button class="cta" data-go="visit">Visit page</button>
+      </div>
+      <nav class="tabs" data-tabs></nav>
+
+      <div class="sheet" id="sheet" role="dialog" aria-label="Write how it feels">
+        <div class="grab"></div>
+        <div style="display:flex;justify-content:space-between;align-items:center">
+          <div style="display:flex;flex-direction:column;gap:4px"><span class="eb" id="spotSide">SPOT</span><h2 id="spotName" style="font-size:22px">Lower back</h2></div>
+          <button class="icon-btn" aria-label="Close" id="closeSheet"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#F8EFEB" stroke-width="1.8" stroke-linecap="round"><path d="M6 6l12 12M18 6L6 18"/></svg></button>
+        </div>
+        <div style="display:flex;flex-direction:column;gap:9px">
+          <div style="display:flex;justify-content:space-between;align-items:baseline"><span style="font-size:14px;font-weight:600">How strong, 1 to 10</span><span id="lvlNum" style="font-family:var(--display);font-size:22px;color:var(--apricot)">6</span></div>
+          <div class="bars" id="bars"></div>
+          <div class="nums"><span>1</span><span>2</span><span>3</span><span>4</span><span>5</span><span>6</span><span>7</span><span>8</span><span>9</span><span>10</span></div>
+        </div>
+        <label for="words" style="font-size:14px;font-weight:600;margin-bottom:-8px">A few words</label>
+        <textarea id="words" rows="2" placeholder="How does it feel?">Dull ache after sitting all morning.</textarea>
+        <button class="cta" id="saveEntry">Save</button>
+      </div>
+    </section>
+
+    <!-- Speak -->
+    <section class="screen" id="s-speak" aria-label="Speak an entry">
+      <div class="top"><button class="icon-btn" aria-label="Back" data-go="body"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#F8EFEB" stroke-width="1.6" stroke-linecap="round"><path d="M15 5l-7 7 7 7"/></svg></button><div class="titles"><span class="eb">LOWER BACK · ON THIS PHONE</span><h2>Say how it feels</h2></div></div>
+      <div class="banner" style="align-self:center" id="listenState">Tap the orb and speak in Spanish</div>
+      <button class="orb" id="orb" aria-label="Start or stop listening" style="border:0"><span class="wave"><i></i><i></i><i></i><i></i><i></i></span></button>
+      <div class="glass" style="padding:14px 16px;display:flex;flex-direction:column;gap:6px;min-height:86px"><span class="eb">YOUR WORDS, AS YOU SAID THEM</span><p id="transcript" style="margin:0;font-size:17px;line-height:1.7"></p></div>
+      <div class="row"><button class="ghost" style="flex:1" data-go="body">Type instead</button><button class="cta" style="flex:1" id="saveVoice">Stop and save</button></div>
+    </section>
+
+    <!-- History -->
+    <section class="screen" id="s-history" aria-label="History">
+      <div class="top"><button class="icon-btn" aria-label="Back" data-go="body"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#F8EFEB" stroke-width="1.6" stroke-linecap="round"><path d="M15 5l-7 7 7 7"/></svg></button><div class="titles"><span class="eb" id="histCount">ENTRIES</span><h2>History</h2></div></div>
+      <div class="chips" id="histChips"></div>
+      <div class="timeline" id="timeline"></div>
+      <nav class="tabs" data-tabs style="margin-top:auto"></nav>
+    </section>
+
+    <!-- Visit -->
+    <section class="screen" id="s-visit" aria-label="Visit page">
+      <div class="top"><button class="icon-btn" aria-label="Back" data-go="body"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#F8EFEB" stroke-width="1.6" stroke-linecap="round"><path d="M15 5l-7 7 7 7"/></svg></button><div class="titles"><span class="eb">READY FOR THE APPOINTMENT</span><h2>Visit page</h2></div>
+        <button class="chip on" data-go="translate" style="height:36px">Translate</button></div>
+      <div class="paper" id="paper"></div>
+      <div class="row"><button class="ghost" style="flex:1" data-go="consent">Talk live</button><button class="cta" style="flex:1" id="sendPdf">Send as PDF</button></div>
+      <nav class="tabs" data-tabs></nav>
+    </section>
+
+    <!-- Translate -->
+    <section class="screen" id="s-translate" aria-label="Translate">
+      <div class="top"><button class="icon-btn" aria-label="Back" data-go="visit"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#F8EFEB" stroke-width="1.6" stroke-linecap="round"><path d="M15 5l-7 7 7 7"/></svg></button><div class="titles"><span class="eb">WORD FOR WORD · ON THIS PHONE</span><h2>Translate</h2></div></div>
+      <span style="font-size:13px;color:var(--soft)">Your doctor reads</span>
+      <div class="chips" id="langs"></div>
+      <div class="glass" style="padding:14px 16px;display:flex;flex-direction:column;gap:8px"><div style="display:flex;justify-content:space-between"><span class="eb orig" id="trOrigLabel">YOUR WORDS</span><span class="mono">NECK · 09 NOV · 3/10</span></div><p id="trOrig" style="margin:0;font-size:17px;line-height:1.7"></p></div>
+      <div class="glass" id="trCard" style="padding:14px 16px;display:flex;flex-direction:column;gap:8px;border-color:rgba(255,92,138,.4)">
+        <div style="display:flex;justify-content:space-between;align-items:center"><span class="eb" id="trLang">ENGLISH · FOR YOUR DOCTOR</span><span id="trChecked" hidden style="font-size:11px;font-weight:700;color:var(--lime)">Checked by you</span></div>
+        <p id="trText" style="margin:0;font-size:17px;line-height:1.55"></p>
+        <textarea id="trEdit" rows="3" hidden aria-label="Fix a word in the translation"></textarea>
+        <span class="small" id="trLabel"></span>
+      </div>
+      <div class="row" style="margin-top:auto"><button class="ghost" style="flex:1" id="fixBtn">Fix a word</button><button class="cta" style="flex:1" data-go="visit">Add to visit page</button></div>
+    </section>
+
+    <!-- Consent -->
+    <section class="screen" id="s-consent" aria-label="Doctor agrees first">
+      <div class="banner" style="background:var(--glass);border-color:var(--line);color:var(--soft)">Turn the phone toward your doctor</div>
+      <span class="eb">FOR THE DOCTOR · ENGLISH</span>
+      <h2 style="font-size:22px;line-height:1.3">May this visit be translated live?</h2>
+      <div class="glass" style="padding:18px;display:flex;flex-direction:column;gap:12px;border-color:rgba(255,179,107,.35)">
+        <p style="margin:0;font-size:16px;line-height:1.5">This patient is using TapBody to translate this visit live, between their language and yours.</p>
+        <div class="check"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#CCFF4D" stroke-width="2" style="flex-shrink:0;margin-top:3px"><path d="M5 12l5 5 9-10"/></svg>Your words are processed on this phone only.</div>
+        <div class="check"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#CCFF4D" stroke-width="2" style="flex-shrink:0;margin-top:3px"><path d="M5 12l5 5 9-10"/></svg>Your voice is never saved or sent anywhere.</div>
+        <div class="check"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#CCFF4D" stroke-width="2" style="flex-shrink:0;margin-top:3px"><path d="M5 12l5 5 9-10"/></svg>It listens only while someone holds a talk button.</div>
+        <div class="check"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#CCFF4D" stroke-width="2" style="flex-shrink:0;margin-top:3px"><path d="M5 12l5 5 9-10"/></svg>The patient may save only their own words, as text.</div>
+      </div>
+      <button class="cta" style="margin-top:auto" data-go="talk">I agree to live translation</button>
+      <button class="ghost" data-go="visit">No thanks</button>
+      <span class="small" style="text-align:center">Asked at every visit. Translation is word for word by machine and adds nothing.</span>
+    </section>
+
+    <!-- Talk -->
+    <section class="screen" id="s-talk" aria-label="Live interpreter">
+      <div class="top"><button class="icon-btn" aria-label="Back" data-go="visit"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#F8EFEB" stroke-width="1.6" stroke-linecap="round"><path d="M15 5l-7 7 7 7"/></svg></button><div class="titles"><span class="eb" id="talkLabel">SPANISH · ENGLISH · LIVE</span><h2>Talk with your doctor</h2></div></div>
+      <div class="banner">Nothing is recorded or saved. Your doctor said OK.</div>
+      <div class="bubbles" id="bubbles"></div>
+      <span class="small" style="text-align:center">Spoken word for word by machine. It says only what was said.</span>
+      <div style="display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px">
+        <button class="hold cta" id="holdMe" style="height:76px">Hold: I speak</button>
+        <button class="hold" id="holdDr" style="border:1px solid rgba(255,92,138,.55);background:rgba(255,92,138,.12)">Hold: doctor speaks</button>
+      </div>
+    </section>
+
+    <!-- Backup -->
+    <section class="screen" id="s-backup" aria-label="Backup and privacy">
+      <div class="top"><div class="titles"><span class="eb" id="bkCount">ON THIS PHONE</span><h2>Backup and privacy</h2></div></div>
+      <div class="banner" style="font-size:14px;line-height:1.45;align-items:flex-start"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#CCFF4D" stroke-width="1.8" style="flex-shrink:0"><rect x="5" y="11" width="14" height="10" rx="2"/><path d="M8 11V8a4 4 0 0 1 8 0v3"/></svg>Your notes, photos and voice clips live only on this phone. TapBody never receives them.</div>
+      <div class="glass" style="padding:14px 16px;display:flex;flex-direction:column;gap:12px">
+        <div style="display:flex;justify-content:space-between"><b style="font-size:15px">Encrypted backup</b><span class="mono" id="lastBk">LAST · 16 NOV</span></div>
+        <span style="font-size:13px;line-height:1.45;color:var(--soft)">A locked file only your recovery key opens. You choose where it goes: Files, iCloud Drive, Google Drive or anywhere else.</span>
+        <button class="cta" style="height:50px" id="bkNow">Save a backup now</button>
+      </div>
+      <div class="glass" style="display:flex;flex-direction:column">
+        <div style="display:flex;justify-content:space-between;align-items:center;padding:12px 16px;border-bottom:1px solid rgba(255,255,255,.08)"><div><b style="font-size:14px">Reminder to write</b><div class="mono" id="remText">EVERY EVENING · 8:00 PM</div></div><button class="switch on" id="remSw" role="switch" aria-checked="true" aria-label="Reminder to write"><span></span></button></div>
+        <div style="display:flex;justify-content:space-between;padding:12px 16px;border-bottom:1px solid rgba(255,255,255,.08)"><b style="font-size:14px">App language</b><span style="color:var(--muted);font-size:13px">English</span></div>
+        <div style="display:flex;justify-content:space-between;padding:12px 16px"><b style="font-size:14px">Health privacy page</b><span style="color:var(--apricot);font-size:13px">Read</span></div>
+      </div>
+      <span class="small">TapBody is a personal journal, not a medical device. It does not read your entries or tell you what to do.</span>
+      <nav class="tabs" data-tabs style="margin-top:auto"></nav>
+    </section>
+  </div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/three@0.147.0/build/three.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/three@0.147.0/examples/js/loaders/GLTFLoader.js"></script>
+<script src="body.js"></script>
+<script>
+(() => {
+  const $ = (s, r = document) => r.querySelector(s);
+  const $$ = (s, r = document) => [...r.querySelectorAll(s)];
+  const reduce = matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+  // ---------- state ----------
+  const state = {
+    entries: [
+      { part: 'Lower back', side: 'BACK', date: '18 NOV', level: 6, words: 'Dull ache after sitting all morning. Better after a walk.', orig: {
+        es: 'Después de estar sentado toda la mañana tenía un dolor sordo. Mejoró después de caminar.',
+        de: 'Nachdem ich den ganzen Morgen gesessen hatte, hatte ich einen dumpfen Schmerz. Nach einem Spaziergang wurde es besser.',
+        en: 'After sitting all morning, I had a dull ache. It got better after a walk.',
+        fa: 'بعد از اینکه تمام صبح نشستم، درد مبهم داشتم. بعد از پیاده‌روی بهتر شد.' } },
+      { part: 'Left knee', side: 'BACK', date: '15 NOV', level: 4, words: 'Stiff on the stairs. Fine once warmed up.', orig: {
+        es: 'Estaba rígida en las escaleras. Cuando entré en calor, estaba bien.',
+        de: 'Auf der Treppe war es steif. Nachdem ich mich aufgewärmt hatte, war es gut.',
+        en: 'It was stiff on the stairs. Once I warmed up it was fine.',
+        fa: 'روی پله‌ها خشک بود. وقتی گرم شدم خوب شد.' } },
+      { part: 'Lower back', side: 'BACK', date: '12 NOV', level: 8, words: 'Sharp when I bent to tie my shoe. Lasted about an hour.', orig: {
+        es: 'Al agacharme para atarme el zapato fue agudo. Duró como una hora.',
+        de: 'Als ich mich bückte, um meinen Schuh zu binden, war es stechend. Es hielt etwa eine Stunde an.',
+        en: 'When I bent to tie my shoe, it was sharp. It lasted about an hour.',
+        fa: 'وقتی خم شدم تا بند کفشم را ببندم، تیز بود. حدود یک ساعت طول کشید.' } },
+      { part: 'Neck', side: 'BACK', date: '09 NOV', level: 3, words: 'Tight on the right side after a long drive.', orig: {
+        es: 'Después de un viaje largo en coche, el lado derecho del cuello estaba tenso.',
+        de: 'Nach einer langen Autofahrt war die rechte Seite meines Nackens verspannt.',
+        en: 'After a long drive, the right side of my neck was tight.',
+        fa: 'بعد از رانندگی طولانی، سمت راست گردنم سفت بود.' } },
+      { part: 'Lower back', side: 'BACK', date: '02 NOV', level: 5, words: 'Started this morning. Hard to get out of bed.', orig: {
+        es: 'Empezó esta mañana. Me costó levantarme de la cama.',
+        de: 'Hat heute Morgen angefangen. Das Aufstehen fiel mir schwer.',
+        en: 'Started this morning. Getting out of bed was hard.',
+        fa: 'از امروز صبح شروع شد. بلند شدن از تخت سخت بود.' } }
+    ],
+    filter: 'All', level: 6, spot: null, lang: 'English', edits: {}, editing: false
+  };
+  // The demo cycles the language the notes were written in, starting with Spanish.
+  const LANGS = ['es', 'de', 'en', 'fa'];
+  const LNAME = { es: 'SPANISH', de: 'GERMAN', en: 'ENGLISH', fa: 'FARSI' };
+  const LWORD = { es: 'Spanish', de: 'German', en: 'English', fa: 'Farsi' };
+  let langIdx = 0;
+  const curLang = () => LANGS[langIdx];
+  const dirAttr = l => l === 'fa' ? ' class="orig fa" dir="rtl"' : ' class="orig"';
+  const now = new Date();
+  const todayLabel = now.toLocaleDateString('en-GB', { day: '2-digit', month: 'short' }).toUpperCase();
+  $('#today').textContent = 'TAPBODY · ' + now.toLocaleDateString('en-US', { weekday: 'short', day: 'numeric', month: 'short' }).toUpperCase();
+
+  // ---------- navigation ----------
+  const order = ['welcome', 'body', 'speak', 'history', 'visit', 'translate', 'consent', 'talk', 'backup'];
+  const labels = { welcome: 'Welcome', body: '3D body', speak: 'Speak it', history: 'History', visit: 'Visit page', translate: 'Translate', consent: 'Doctor agrees', talk: 'Live interpreter', backup: 'Privacy' };
+  let current = null;
+  function go(id) {
+    if (id === current) return;
+    const prev = current ? $('#s-' + current) : null;
+    const next = $('#s-' + id);
+    const fwd = !current || order.indexOf(id) >= order.indexOf(current);
+    if (prev) { prev.classList.remove('active'); prev.classList.toggle('left', fwd); prev.setAttribute('aria-hidden', 'true'); }
+    next.classList.remove('left'); next.classList.add('active'); next.removeAttribute('aria-hidden');
+    current = id;
+    closeSheet();
+    renderTabs(); renderJump();
+    if (id === 'history') renderHistory();
+    if (id === 'visit' || id === 'translate') langIdx = 0;
+    if (id === 'visit') renderVisit();
+    if (id === 'translate') renderTranslate();
+    if (id === 'talk') startTalk();
+    if (id === 'speak') prepSpeak();
+    if (id === 'body') { body3d.wake(); }
+    try { history.replaceState(null, '', '#' + id); } catch (e) {}
+  }
+  document.addEventListener('click', e => { const b = e.target.closest('[data-go]'); if (b) go(b.dataset.go); });
+  function renderJump() {
+    $('#jump').innerHTML = order.map(k => `<button data-go="${k}" class="${k === current ? 'on' : ''}">${labels[k]}</button>`).join('');
+  }
+  const tabDefs = [
+    ['body', 'Body', '<circle cx="12" cy="5" r="2.5"/><path d="M8 9h8l-1 6h-2l-.5 6h-1L11 15H9z"/>'],
+    ['history', 'History', '<circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/>'],
+    ['visit', 'Visit', '<path d="M7 3h7l5 5v13H7z"/><path d="M14 3v5h5"/>'],
+    ['backup', 'Privacy', '<rect x="5" y="11" width="14" height="10" rx="2"/><path d="M8 11V8a4 4 0 0 1 8 0v3"/>']
+  ];
+  function renderTabs() {
+    $$('[data-tabs]').forEach(n => n.innerHTML = tabDefs.map(([k, l, p]) => `<button data-go="${k}" class="${k === current ? 'on' : ''}" aria-label="${l}"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#C9ABA3" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">${p}</svg>${l}</button>`).join(''));
+  }
+  function toast(msg) { const t = $('#toast'); t.textContent = msg; t.classList.add('show'); clearTimeout(toast._t); toast._t = setTimeout(() => t.classList.remove('show'), 1800); }
+
+  // ---------- log sheet ----------
+  function renderBars() {
+    $('#bars').innerHTML = Array.from({ length: 10 }, (_, i) => {
+      const n = i + 1, h = 20 + n * 4.2;
+      return `<button aria-label="Level ${n}" data-lv="${n}" class="${n <= state.level ? 'on' : ''} ${n === state.level ? 'top' : ''}" style="height:${h}px;min-height:44px"></button>`;
+    }).join('');
+    $('#lvlNum').textContent = state.level;
+  }
+  $('#bars').addEventListener('click', e => { const b = e.target.closest('[data-lv]'); if (!b) return; state.level = +b.dataset.lv; renderBars(); });
+  function openSheet(spot) {
+    state.spot = spot; $('#spotName').textContent = spot.part; $('#spotSide').textContent = 'SPOT · ' + spot.side;
+    $('#words').value = ''; state.level = 5; renderBars();
+    $('#sheet').classList.add('open');
+  }
+  function closeSheet() { $('#sheet').classList.remove('open'); body3d && body3d.unfocus && body3d.unfocus(); }
+  $('#closeSheet').addEventListener('click', closeSheet);
+  $('#saveEntry').addEventListener('click', () => {
+    const s = state.spot || { part: 'Lower back', side: 'BACK' };
+    const words = $('#words').value.trim() || 'No words, just the level.';
+    state.entries.unshift({ part: s.part, side: s.side, date: todayLabel, level: state.level, words });
+    if (s.point) body3d.addPin(s.point, s.normal, s.part);
+    closeSheet(); toast('Saved to ' + s.part.toLowerCase());
+  });
+
+  // ---------- speak ----------
+  const SAY = { es: 'Esta mañana tenía la espalda rígida. Mejoró después de una ducha caliente.', de: 'Heute Morgen war mein Rücken steif. Nach einer warmen Dusche wurde es besser.', en: 'This morning my back was stiff. It got better after a hot shower.', fa: 'امروز صبح کمرم خشک بود. بعد از دوش گرم بهتر شد.' };
+  let speakLang = 'es';
+  function prepSpeak() { speakLang = curLang(); const t = $('#transcript'); t.textContent = ''; t.className = speakLang === 'fa' ? 'fa' : ''; t.dir = speakLang === 'fa' ? 'rtl' : 'ltr'; t.style.textAlign = speakLang === 'fa' ? 'right' : 'left'; $('#listenState').textContent = 'Tap the orb and speak in ' + LWORD[speakLang]; }
+  let listening = false, typeT = null;
+  $('#orb').addEventListener('click', () => {
+    listening = !listening; $('#orb').classList.toggle('live', listening);
+    $('#listenState').textContent = listening ? 'Listening in ' + LWORD[speakLang] : 'Paused';
+    const say = SAY[speakLang];
+    if (listening) { let i = $('#transcript').textContent.length; clearInterval(typeT); typeT = setInterval(() => { if (i >= say.length) { clearInterval(typeT); return; } $('#transcript').textContent = say.slice(0, ++i); }, 40); }
+    else clearInterval(typeT);
+  });
+  $('#saveVoice').addEventListener('click', () => {
+    state.entries.unshift({ part: 'Lower back', side: 'BACK', date: todayLabel, level: 4, words: SAY.en, orig: { ...SAY } });
+    listening = false; $('#orb').classList.remove('live'); clearInterval(typeT); $('#transcript').textContent = '';
+    go('history'); toast('Voice entry saved');
+  });
+
+  // ---------- history ----------
+  function renderHistory() {
+    const parts = ['All', ...new Set(state.entries.map(e => e.part))];
+    $('#histChips').innerHTML = parts.map(p => `<button class="chip ${p === state.filter ? 'on' : ''}" data-f="${p}">${p}</button>`).join('');
+    const list = state.filter === 'All' ? state.entries : state.entries.filter(e => e.part === state.filter);
+    $('#histCount').textContent = list.length + ' ENTRIES · NOV';
+    $('#timeline').innerHTML = list.map((e, i) => `<article class="entry" style="animation-delay:${i * 50}ms"><div class="h"><div><b>${e.part}</b><span class="mono">${e.date}</span></div><span class="lvl">${e.level}/10</span></div><p>${esc(e.words)}</p></article>`).join('');
+  }
+  $('#histChips').addEventListener('click', e => { const b = e.target.closest('[data-f]'); if (!b) return; state.filter = b.dataset.f; renderHistory(); });
+  function esc(s) { return s.replace(/[&<>"]/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c])); }
+
+  // ---------- visit ----------
+  function renderVisit() {
+    const groups = {};
+    state.entries.forEach(e => (groups[e.part] = groups[e.part] || []).push(e));
+    $('#paper').innerHTML = `<div class="ph"><div><b style="font-size:15px">Leila Ahmadi</b><div class="mono" style="color:#6B5753;font-size:10px">${state.entries.length} ENTRIES · ${Object.keys(groups).length} SPOTS</div></div><span class="mono" style="color:#6B5753">02 TO ${todayLabel}</span></div><div class="mono orig" style="color:#9A3412;font-size:10px">WRITTEN IN ${LNAME[curLang()]} · ${curLang() === 'en' ? 'SPANISH' : 'ENGLISH'} BELOW</div>` +
+      Object.entries(groups).map(([part, list]) => {
+        const lv = list.map(x => x.level); const range = Math.min(...lv) === Math.max(...lv) ? lv[0] + '/10' : Math.min(...lv) + ' TO ' + Math.max(...lv) + '/10';
+        return `<div class="grp"><div style="display:flex;justify-content:space-between"><b>${part}</b><span class="mono" style="color:#6B5753;font-size:10px">${list.length} · ${range}</span></div>` +
+          list.slice().reverse().map(x => { const l = curLang(); const tr = l === 'en' ? x.orig && x.orig.es : x.orig && x.orig.en; return `<div class="it"><span class="d">${x.date.slice(0, 2)} · ${x.level}</span><div>${x.orig ? `<p${dirAttr(l)}>${x.orig[l]}</p><p class="tr orig">${tr}</p>` : `<p>${esc(x.words)}</p>`}</div></div>`; }).join('') + '</div>';
+      }).join('') +
+      `<div class="foot">Original words first, in the language they were written. Translated word for word by machine, checked by the writer.<br>TapBody keeps what you wrote, as you wrote it. It never interprets your entries and is not a medical device.</div>`;
+  }
+  $('#sendPdf').addEventListener('click', () => toast('PDF ready to share'));
+
+  // ---------- translate ----------
+  const neck = state.entries.find(e => e.part === 'Neck').orig;
+  const machine = { English: neck.en, Spanish: neck.es, German: neck.de, French: 'Après un long trajet en voiture, le côté droit de mon cou était raide.' };
+  const TARGET_CODE = { English: 'en', Spanish: 'es', German: 'de', French: 'fr' };
+  function trSource() { let l = curLang(); if (l === TARGET_CODE[state.lang]) l = LANGS[(LANGS.indexOf(l) + 1) % LANGS.length]; return l; }
+  function renderTranslate() {
+    const t = state.lang, txt = state.edits[t] ?? machine[t], checked = state.edits[t] !== undefined && state.edits[t] !== machine[t];
+    $('#langs').innerHTML = Object.keys(machine).map(k => `<button class="chip ${k === t ? 'on' : ''}" data-l="${k}">${k}</button>`).join('');
+    $('#trLang').textContent = t.toUpperCase() + ' · FOR YOUR DOCTOR';
+    const src = trSource(); const o = $('#trOrig'); o.className = 'orig' + (src === 'fa' ? ' fa' : ''); o.dir = src === 'fa' ? 'rtl' : 'ltr'; o.textContent = neck[src];
+    $('#trOrigLabel').className = 'eb orig'; $('#trOrigLabel').textContent = 'YOUR WORDS · ' + LNAME[src];
+    $('#trText').textContent = txt; $('#trEdit').value = txt;
+    $('#trText').hidden = state.editing; $('#trEdit').hidden = !state.editing;
+    $('#trChecked').hidden = !checked;
+    $('#trCard').style.borderColor = checked ? 'rgba(204,255,77,.5)' : 'rgba(255,92,138,.4)';
+    $('#trLabel').textContent = checked ? 'Translated by machine, checked by you.' : 'Translated word for word by machine. Not reviewed by anyone.';
+    $('#fixBtn').textContent = state.editing ? 'Done' : 'Fix a word';
+  }
+  $('#langs').addEventListener('click', e => { const b = e.target.closest('[data-l]'); if (!b) return; state.lang = b.dataset.l; state.editing = false; renderTranslate(); });
+  $('#fixBtn').addEventListener('click', () => { if (state.editing) state.edits[state.lang] = $('#trEdit').value; state.editing = !state.editing; renderTranslate(); if (state.editing) $('#trEdit').focus(); });
+
+  // ---------- talk ----------
+  const turns = {
+    me: [
+      { es: 'Me duele la zona lumbar desde hace dos semanas, sobre todo por las mañanas.', de: 'Mein unterer Rücken tut seit zwei Wochen weh, vor allem morgens.', fa: 'از دو هفته پیش کمرم درد می‌کند، بیشتر صبح‌ها.', en: 'My lower back has hurt since two weeks ago, mostly in the mornings.' },
+      { es: 'Sí, es peor después de estar sentado mucho tiempo.', de: 'Ja, es ist schlimmer, wenn ich lange sitze.', fa: 'بله، بعد از نشستن طولانی بدتر است.', en: 'Yes, it is worse after sitting for a long time.' },
+      { es: 'Camino dos veces por semana.', de: 'Ich gehe zweimal pro Woche spazieren.', fa: 'دو بار در هفته پیاده‌روی می‌کنم.', en: 'I walk twice a week.' }
+    ],
+    dr: [
+      { en: 'Does it get worse when you sit for a long time?', es: '¿Empeora cuando está sentado mucho tiempo?', de: 'Wird es schlimmer, wenn Sie lange sitzen?', fa: 'آیا وقتی مدت طولانی می‌نشینید بدتر می‌شود؟' },
+      { en: 'Do you do any exercise right now?', es: '¿Hace algún ejercicio ahora mismo?', de: 'Treiben Sie zurzeit Sport?', fa: 'الان ورزش می‌کنید؟' },
+      { en: 'Thank you. Show me where it is worst.', es: 'Gracias. Muéstreme dónde es peor.', de: 'Danke. Zeigen Sie mir, wo es am schlimmsten ist.', fa: 'ممنون. به من نشان دهید کجا از همه بدتر است.' }
+    ]
+  };
+  let talkLang = 'es';
+  let ti = { me: 0, dr: 0 };
+  function startTalk() {
+    const l = curLang() === 'en' ? 'es' : curLang();
+    if (l !== talkLang) { talkLang = l; $('#bubbles').innerHTML = ''; ti = { me: 0, dr: 0 }; }
+    $('#talkLabel').textContent = LNAME[talkLang] + ' · ENGLISH · LIVE';
+    if (!$('#bubbles').children.length) addTurn('me');
+  }
+  function addTurn(who) {
+    const t = turns[who][ti[who]++ % turns[who].length], L = talkLang, rtl = L === 'fa' ? ' class="fa" dir="rtl"' : '', rtlSub = L === 'fa' ? ' class="sub fa" dir="rtl"' : ' class="sub"';
+    const el = document.createElement('div'); el.className = 'bub ' + (who === 'me' ? 'me' : 'dr');
+    el.innerHTML = who === 'me'
+      ? `<span class="eb" style="color:#FFD2A8">YOU · ${LNAME[L]}</span><p${rtl}>${t[L]}</p><p class="sub">Spoken: “${t.en}”</p>`
+      : `<span class="eb" style="color:#FFB8CB">DOCTOR · ENGLISH</span><p>${t.en}</p><p${rtlSub}>${t[L]}</p>`;
+    $('#bubbles').appendChild(el); el.scrollIntoView({ behavior: reduce ? 'auto' : 'smooth', block: 'end' });
+  }
+  ['holdMe', 'holdDr'].forEach(id => {
+    const b = $('#' + id), who = id === 'holdMe' ? 'me' : 'dr';
+    const down = () => b.classList.add('down');
+    const up = () => { if (b.classList.contains('down')) { b.classList.remove('down'); addTurn(who); } };
+    b.addEventListener('pointerdown', down); b.addEventListener('pointerup', up); b.addEventListener('pointerleave', () => b.classList.remove('down'));
+    b.addEventListener('keydown', e => { if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); addTurn(who); } });
+  });
+
+  // ---------- backup ----------
+  $('#bkNow').addEventListener('click', () => { $('#lastBk').textContent = 'LAST · ' + todayLabel; toast('Encrypted backup saved'); });
+  $('#remSw').addEventListener('click', e => { const s = e.currentTarget; const on = !s.classList.contains('on'); s.classList.toggle('on', on); s.setAttribute('aria-checked', on); $('#remText').textContent = on ? 'EVERY EVENING · 8:00 PM' : 'OFF'; });
+
+  // ---------- 3D body ----------
+  const body3d = (() => {
+    const canvas = $('#gl'), host = $('#s-body');
+    const api = { wake() {}, addPin() {}, unfocus() {} };
+    if (!window.THREE || !THREE.GLTFLoader) { $('#loader').textContent = '3D UNAVAILABLE'; return api; }
+    const renderer = new THREE.WebGLRenderer({ canvas, antialias: true, alpha: true, powerPreference: 'high-performance' });
+    renderer.setPixelRatio(Math.min(devicePixelRatio || 1, 2));
+    const scene = new THREE.Scene();
+    const camera = new THREE.PerspectiveCamera(30, 1, 0.05, 50);
+    const rig = new THREE.Group(); scene.add(rig);
+    const pinsGroup = new THREE.Group(); rig.add(pinsGroup);
+    const ray = new THREE.Raycaster(), ndc = new THREE.Vector2();
+    let mesh = null, H = 1.7, yMin = 0, center = new THREE.Vector3();
+    let yaw = Math.PI, yawV = 0, tilt = 0.06, dragging = false, moved = 0, lastX = 0, lastY = 0, idle = 0;
+    let focus = { t: 0, target: 0, point: new THREE.Vector3() };
+    const tags = [];
+
+    const NOISE_GLSL = `
+        vec3 mod289(vec3 x){return x-floor(x*(1.0/289.0))*289.0;} vec4 mod289(vec4 x){return x-floor(x*(1.0/289.0))*289.0;}
+        vec4 permute(vec4 x){return mod289(((x*34.0)+1.0)*x);} vec4 taylorInvSqrt(vec4 r){return 1.79284291400159-0.85373472095314*r;}
+        float snoise(vec3 v){ const vec2 C=vec2(1.0/6.0,1.0/3.0); const vec4 D=vec4(0.0,0.5,1.0,2.0);
+          vec3 i=floor(v+dot(v,C.yyy)); vec3 x0=v-i+dot(i,C.xxx); vec3 g=step(x0.yzx,x0.xyz); vec3 l=1.0-g; vec3 i1=min(g.xyz,l.zxy); vec3 i2=max(g.xyz,l.zxy);
+          vec3 x1=x0-i1+C.xxx; vec3 x2=x0-i2+C.yyy; vec3 x3=x0-D.yyy; i=mod289(i);
+          vec4 p=permute(permute(permute(i.z+vec4(0.0,i1.z,i2.z,1.0))+i.y+vec4(0.0,i1.y,i2.y,1.0))+i.x+vec4(0.0,i1.x,i2.x,1.0));
+          float n_=0.142857142857; vec3 ns=n_*D.wyz-D.xzx; vec4 j=p-49.0*floor(p*ns.z*ns.z); vec4 x_=floor(j*ns.z); vec4 y_=floor(j-7.0*x_);
+          vec4 x=x_*ns.x+ns.yyyy; vec4 y=y_*ns.x+ns.yyyy; vec4 h=1.0-abs(x)-abs(y); vec4 b0=vec4(x.xy,y.xy); vec4 b1=vec4(x.zw,y.zw);
+          vec4 s0=floor(b0)*2.0+1.0; vec4 s1=floor(b1)*2.0+1.0; vec4 sh=-step(h,vec4(0.0)); vec4 a0=b0.xzyw+s0.xzyw*sh.xxyy; vec4 a1=b1.xzyw+s1.xzyw*sh.zzww;
+          vec3 p0=vec3(a0.xy,h.x); vec3 p1=vec3(a0.zw,h.y); vec3 p2=vec3(a1.xy,h.z); vec3 p3=vec3(a1.zw,h.w);
+          vec4 norm=taylorInvSqrt(vec4(dot(p0,p0),dot(p1,p1),dot(p2,p2),dot(p3,p3))); p0*=norm.x; p1*=norm.y; p2*=norm.z; p3*=norm.w;
+          vec4 m=max(0.6-vec4(dot(x0,x0),dot(x1,x1),dot(x2,x2),dot(x3,x3)),0.0); m=m*m;
+          return 42.0*dot(m*m,vec4(dot(p0,x0),dot(p1,x1),dot(p2,x2),dot(p3,x3))); }
+        float fbm(vec3 p){ float f=0.0, a=0.5; for(int i=0;i<4;i++){ f+=a*snoise(p); p*=2.03; a*=0.5; } return 0.5+0.5*f; }
+`;
+    const MAXS = 10;
+    const uni = {
+      uTime: { value: 0 }, uYMin: { value: 0 }, uH: { value: 1.7 },
+      uA: { value: new THREE.Color('#FFB36B') }, uR: { value: new THREE.Color('#FF5C8A') },
+      uSpot: { value: Array.from({ length: MAXS }, () => new THREE.Vector4(0, -9, 0, 0.05)) },
+      uSpotA: { value: new Array(MAXS).fill(0) },
+      uSpotK: { value: new Array(MAXS).fill(0) },
+      uRipple: { value: new THREE.Vector4(0, -9, 0, -10) },
+      uHover: { value: new THREE.Vector4(0, -9, 0, 0) }
+    };
+    const holo = new THREE.ShaderMaterial({
+      uniforms: uni, transparent: true, depthWrite: true, side: THREE.FrontSide,
+      vertexShader: `varying vec3 vN; varying vec3 vV; varying vec3 vW; varying vec3 vL;
+        void main(){ vL = position; vec4 w = modelMatrix * vec4(position,1.0); vW = w.xyz; vN = normalize(mat3(modelMatrix) * normal); vV = normalize(cameraPosition - w.xyz); gl_Position = projectionMatrix * viewMatrix * w; }`,
+      fragmentShader: `uniform float uTime, uYMin, uH; uniform vec3 uA, uR;
+        uniform vec4 uSpot[${MAXS}]; uniform float uSpotA[${MAXS}]; uniform float uSpotK[${MAXS}];
+        uniform vec4 uRipple; uniform vec4 uHover;
+        varying vec3 vN; varying vec3 vV; varying vec3 vW; varying vec3 vL;
+        __NOISE__
+        void main(){
+          vec3 p = vL;
+          float h = clamp((p.y - uYMin) / uH, 0.0, 1.0);
+          vec3 col = mix(uR, uA, smoothstep(0.05, 0.95, h));
+          float rim = pow(1.0 - abs(dot(normalize(vN), normalize(vV))), 2.2);
+          float scan = 0.5 + 0.5 * sin(p.y * 260.0 - uTime * 1.6);
+          float band = fract(h - uTime * 0.08); float bd = min(band, 1.0 - band) / 0.035; float sweep = exp(-bd * bd) * (0.75 + 0.25 * snoise(vec3(p.x * 6.0, p.z * 6.0, uTime * 0.4)));
+          vec3 cloud = vec3(0.0); float cover = 0.0;
+          for (int i = 0; i < ${MAXS}; i++) {
+            float amp = uSpotA[i];
+            if (amp < 0.002) continue;
+            vec3 c = uSpot[i].xyz; float r = uSpot[i].w;
+            float d = distance(p, c);
+            if (d > r * 2.6) continue;
+            float drift = fbm(p * 20.0 + c * 9.0 + vec3(uTime * 0.16, -uTime * 0.11, uTime * 0.09));
+            float rr = r * (0.70 + 0.65 * drift);
+            float g = exp(-(d * d) / (rr * rr) * 2.0) * amp;
+            g *= 0.70 + 0.45 * fbm(p * 46.0 - vec3(0.0, uTime * 0.22, 0.0));
+            vec3 warm = vec3(1.0, 0.66, 0.40), lime = vec3(0.82, 1.0, 0.34);
+            vec3 cc = mix(warm, lime, smoothstep(0.15, 0.85, g) * (0.55 + 0.45 * uSpotK[i]));
+            cloud += cc * g; cover += g;
+          }
+          float rt = uTime - uRipple.w;
+          if (rt > 0.0 && rt < 1.8) {
+            float d = distance(p, uRipple.xyz);
+            float rad = 0.02 + rt * 0.20; float w = 0.025 + rt * 0.035;
+            float ring = exp(-pow((d - rad) / w, 2.0)) * pow(1.0 - rt / 1.8, 1.5);
+            ring *= 0.55 + 0.7 * fbm(p * 24.0 + vec3(rt));
+            cloud += vec3(1.0, 0.84, 0.62) * ring * 0.85; cover += ring * 0.5;
+          }
+          if (uHover.w > 0.002) {
+            float hd = distance(p, uHover.xyz);
+            float hg = exp(-(hd * hd) / 0.0028) * uHover.w * (0.6 + 0.5 * fbm(p * 30.0 + uTime * 0.3));
+            cloud += vec3(1.0, 0.78, 0.55) * hg * 0.45; cover += hg * 0.25;
+          }
+          float glow = 0.32 + rim * 1.25 + scan * 0.035 + sweep * 0.55;
+          float a = clamp(0.20 + rim * 0.95 + sweep * 0.14 + cover * 0.55, 0.0, 1.0);
+          gl_FragColor = vec4(col * glow + cloud * 1.45, a);
+        }`.replace('__NOISE__', NOISE_GLSL)
+    });
+
+    // soft-glow sprite textures (no hard edges)
+    function softTex(stops) { const c = document.createElement('canvas'); c.width = c.height = 128; const x = c.getContext('2d'); const g = x.createRadialGradient(64, 64, 0, 64, 64, 64); stops.forEach(([o, col]) => g.addColorStop(o, col)); x.fillStyle = g; x.fillRect(0, 0, 128, 128); const t = new THREE.CanvasTexture(c); return t; }
+    const haloTex = softTex([[0, 'rgba(226,255,143,0.9)'], [0.25, 'rgba(204,255,77,0.45)'], [0.6, 'rgba(255,179,107,0.12)'], [1, 'rgba(255,179,107,0)']]);
+    const coreTex = softTex([[0, 'rgba(255,255,240,1)'], [0.35, 'rgba(226,255,143,0.85)'], [1, 'rgba(204,255,77,0)']]);
+    const spots = [];
+    function setSpot(pos, r, kind, target) { const s = { pos: pos.clone(), r, kind, a: 0, target, born: performance.now() }; spots.push(s); return s; }
+    let active = null;
+    const hover = { pos: new THREE.Vector3(0, -9, 0), a: 0, target: 0 };
+
+    function ring(r, w, color, op) {
+      const g = new THREE.RingGeometry(r - w, r, 128); const m = new THREE.MeshBasicMaterial({ color, transparent: true, opacity: op, side: THREE.DoubleSide, blending: THREE.AdditiveBlending, depthWrite: false });
+      const o = new THREE.Mesh(g, m); o.rotation.x = -Math.PI / 2; return o;
+    }
+    const floor = new THREE.Group(); scene.add(floor);
+    floor.add(ring(0.36, 0.006, '#FF8A74', 0.9), ring(0.46, 0.004, '#FF5C8A', 0.6), ring(0.56, 0.003, '#FFB36B', 0.25));
+    const glowTex = (() => { const c = document.createElement('canvas'); c.width = c.height = 128; const x = c.getContext('2d'); const g = x.createRadialGradient(64, 64, 0, 64, 64, 64); g.addColorStop(0, 'rgba(255,138,116,0.55)'); g.addColorStop(1, 'rgba(255,138,116,0)'); x.fillStyle = g; x.fillRect(0, 0, 128, 128); return new THREE.CanvasTexture(c); })();
+    const pool = new THREE.Mesh(new THREE.PlaneGeometry(1.4, 1.4), new THREE.MeshBasicMaterial({ map: glowTex, transparent: true, depthWrite: false, blending: THREE.AdditiveBlending })); pool.rotation.x = -Math.PI / 2; floor.add(pool);
+    // drifting motes
+    const motes = (() => { const n = 70, p = new Float32Array(n * 3); for (let i = 0; i < n; i++) { p[i * 3] = (Math.random() - .5) * 1.4; p[i * 3 + 1] = Math.random() * 1.9; p[i * 3 + 2] = (Math.random() - .5) * 1.0; } const g = new THREE.BufferGeometry(); g.setAttribute('position', new THREE.BufferAttribute(p, 3)); return new THREE.Points(g, new THREE.PointsMaterial({ color: '#FFB36B', size: 0.008, transparent: true, opacity: .55, blending: THREE.AdditiveBlending, depthWrite: false })); })();
+    scene.add(motes);
+
+    function addPin(point, normal, label) {
+      const g = new THREE.Group();
+      const halo = new THREE.Sprite(new THREE.SpriteMaterial({ map: haloTex, transparent: true, depthWrite: false, blending: THREE.AdditiveBlending }));
+      const core = new THREE.Sprite(new THREE.SpriteMaterial({ map: coreTex, transparent: true, depthWrite: false, blending: THREE.AdditiveBlending }));
+      halo.scale.setScalar(0.09); core.scale.setScalar(0.03);
+      g.add(halo, core); g.position.copy(point).addScaledVector(normal, 0.01);
+      const spot = setSpot(point, 0.05, 1, 0.75);
+      g.userData = { born: performance.now(), label, normal: normal.clone(), spot };
+      pinsGroup.add(g);
+      const el = document.createElement('div'); el.className = 'tag';
+      const count = state.entries.filter(e => e.part === label).length;
+      const last = state.entries.find(e => e.part === label);
+      el.innerHTML = `<b>${label}</b><span>${count} ${count === 1 ? 'ENTRY' : 'ENTRIES'}${last ? ' · LAST ' + last.level + '/10' : ''}</span>`;
+      $('#tags').appendChild(el); tags.push({ el, obj: g });
+    }
+    api.addPin = (p, n, l) => {
+      tags.filter(t => t.obj.userData.label === l).forEach(t => { t.el.remove(); pinsGroup.remove(t.obj); t.obj.userData.spot.target = 0; });
+      tags.splice(0, tags.length, ...tags.filter(t => t.obj.parent));
+      if (active) { active.target = 0; active = null; }
+      addPin(p, n, l);
+    };
+
+    function regionOf(local, normal) {
+      const h = (local.y - yMin) / H, x = local.x, ax = Math.abs(x), back = normal.z < 0;
+      const side = x > 0 ? 'Left' : 'Right';
+      if (h > 0.87) return { part: 'Head', side: back ? 'BACK' : 'FRONT' };
+      if (h > 0.82) return { part: 'Neck', side: back ? 'BACK' : 'FRONT' };
+      if (ax > 0.15 && h > 0.45) {
+        const arm = h > 0.70 ? 'upper arm' : h > 0.58 ? 'forearm' : 'hand';
+        return { part: side + ' ' + arm, side: back ? 'BACK' : 'FRONT' };
+      }
+      if (h > 0.70) return { part: back ? 'Upper back' : (ax > 0.09 ? side + ' shoulder' : 'Chest'), side: back ? 'BACK' : 'FRONT' };
+      if (h > 0.56) return { part: back ? 'Lower back' : 'Stomach', side: back ? 'BACK' : 'FRONT' };
+      if (h > 0.47) return { part: back ? side + ' hip' : side + ' hip', side: back ? 'BACK' : 'FRONT' };
+      if (h > 0.33) return { part: side + ' thigh', side: back ? 'BACK' : 'FRONT' };
+      if (h > 0.25) return { part: side + ' knee', side: back ? 'BACK' : 'FRONT' };
+      if (h > 0.06) return { part: side + (back ? ' calf' : ' shin'), side: back ? 'BACK' : 'FRONT' };
+      return { part: side + ' foot', side: back ? 'BACK' : 'FRONT' };
+    }
+
+    function resize() {
+      const w = host.clientWidth, h = host.clientHeight; if (!w) return;
+      renderer.setSize(w, h, false);
+      camera.aspect = w / h; camera.updateProjectionMatrix();
+    }
+    new ResizeObserver(resize).observe(host);
+
+    const glbBytes = (() => { const bin = atob(window.TAPBODY_GLB || ''); const u = new Uint8Array(bin.length); for (let i = 0; i < bin.length; i++) u[i] = bin.charCodeAt(i); return u.buffer; })();
+    new THREE.GLTFLoader().parse(glbBytes, '', gltf => {
+      gltf.scene.traverse(o => { if (o.isMesh && !mesh) mesh = o; });
+      mesh.geometry.computeBoundingBox();
+      const bb = mesh.geometry.boundingBox; H = bb.max.y - bb.min.y; yMin = bb.min.y; bb.getCenter(center);
+      mesh.geometry.translate(-center.x, 0, -center.z);
+      mesh.material = holo; rig.add(mesh);
+      uni.uYMin.value = yMin; uni.uH.value = H;
+      floor.position.y = yMin + 0.002;
+      motes.position.y = yMin;
+      // sample pins from earlier entries, found on the real surface from behind
+      [['Lower back', 0.6, 0.0], ['Left knee', 0.29, 0.1], ['Neck', 0.85, 0.03]].forEach(([label, hh, x]) => {
+        ray.set(new THREE.Vector3(x, yMin + hh * H, -3), new THREE.Vector3(0, 0, 1));
+        const hit = ray.intersectObject(mesh)[0];
+        if (hit) addPin(hit.point, hit.face.normal.clone().transformDirection(mesh.matrixWorld), label);
+      });
+      $('#loader').style.opacity = 0; setTimeout(() => $('#loader').remove(), 700);
+      resize(); wake();
+    }, () => { $('#loader').textContent = 'COULD NOT LOAD THE BODY'; });
+
+    function pick(cx, cy) {
+      if (!mesh) return;
+      const r = canvas.getBoundingClientRect();
+      ndc.set(((cx - r.left) / r.width) * 2 - 1, -((cy - r.top) / r.height) * 2 + 1);
+      ray.setFromCamera(ndc, camera);
+      const hit = ray.intersectObject(mesh)[0]; if (!hit) return;
+      const local = rig.worldToLocal(hit.point.clone());
+      const n = hit.face.normal.clone().transformDirection(mesh.matrixWorld);
+      const nLocal = n.clone().applyQuaternion(rig.quaternion.clone().invert());
+      const reg = regionOf(local, nLocal);
+      focus.point.copy(local); focus.target = 1;
+      if (active) active.target = 0;
+      active = setSpot(local, 0.085, 0, 1);
+      uni.uRipple.value.set(local.x, local.y, local.z, uni.uTime.value);
+      openSheet({ ...reg, point: local, normal: nLocal });
+      wake();
+    }
+    api.unfocus = () => { focus.target = 0; if (active) { active.target = 0; active = null; } wake(); };
+
+    canvas.addEventListener('pointerdown', e => { dragging = true; moved = 0; lastX = e.clientX; lastY = e.clientY; canvas.setPointerCapture(e.pointerId); idle = 0; wake(); });
+    let hoverT = 0;
+    canvas.addEventListener('pointerleave', () => { hover.target = 0; });
+    canvas.addEventListener('pointermove', e => {
+      if (!dragging && e.pointerType === 'mouse' && mesh) {
+        const nowT = performance.now(); if (nowT - hoverT > 40) { hoverT = nowT;
+          const r = canvas.getBoundingClientRect(); ndc.set(((e.clientX - r.left) / r.width) * 2 - 1, -((e.clientY - r.top) / r.height) * 2 + 1);
+          ray.setFromCamera(ndc, camera); const hit = ray.intersectObject(mesh)[0];
+          if (hit) { hover.pos.copy(rig.worldToLocal(hit.point.clone())); hover.target = 1; canvas.style.cursor = 'pointer'; } else { hover.target = 0; canvas.style.cursor = 'grab'; }
+          wake(); }
+      }
+      if (!dragging) return; const dx = e.clientX - lastX, dy = e.clientY - lastY; moved += Math.abs(dx) + Math.abs(dy); lastX = e.clientX; lastY = e.clientY; yawV = dx * 0.0085; yaw += yawV; tilt = Math.max(-0.12, Math.min(0.28, tilt + dy * 0.002)); wake(); });
+    canvas.addEventListener('pointerup', e => { dragging = false; if (moved < 6) pick(e.clientX, e.clientY); });
+    $('#vFront').addEventListener('click', () => turnTo(0));
+    $('#vBack').addEventListener('click', () => turnTo(Math.PI));
+    let turnGoal = null;
+    function turnTo(a) { const d = ((a - yaw) % (2 * Math.PI) + 3 * Math.PI) % (2 * Math.PI) - Math.PI; turnGoal = yaw + d; yawV = 0; wake(); }
+    function syncSeg() { const f = Math.cos(yaw) > 0; $('#vFront').classList.toggle('on', f); $('#vBack').classList.toggle('on', !f); }
+
+    let running = false, t0 = performance.now(), last = t0, quietSince = t0;
+    function wake() { quietSince = performance.now(); if (!running) { running = true; last = performance.now(); requestAnimationFrame(frame); } }
+    api.wake = wake;
+    const tmp = new THREE.Vector3();
+    function frame(t) {
+      const dt = Math.min(0.05, (t - last) / 1000); last = t;
+      if (current !== 'body' || document.hidden) { running = false; return; }
+      uni.uTime.value = (t - t0) / 1000;
+      if (!dragging) {
+        if (turnGoal !== null) { yaw += (turnGoal - yaw) * Math.min(1, dt * 7); if (Math.abs(turnGoal - yaw) < 0.002) turnGoal = null; }
+        else { yaw += yawV; yawV *= Math.pow(0.04, dt); if (!reduce && focus.target === 0 && Math.abs(yawV) < 0.0005) { idle += dt; if (idle > 4) yaw += dt * 0.12; } }
+      }
+      rig.rotation.y = yaw; syncSeg();
+      focus.t += (focus.target - focus.t) * Math.min(1, dt * 5);
+      // camera: framed body, glides toward a tapped spot
+      const base = new THREE.Vector3(0, yMin + H * 0.47, 0);
+      const fp = rig.localToWorld(focus.point.clone());
+      const look = base.clone().lerp(fp, focus.t * 0.85);
+      const dist = THREE.MathUtils.lerp(5.6, 3.3, focus.t);
+      camera.position.set(Math.sin(0) * dist, look.y + Math.sin(tilt) * dist * 0.5 + focus.t * -0.25, Math.cos(0) * dist);
+      camera.lookAt(look.x, look.y - focus.t * 0.12, look.z);
+      motes.rotation.y += dt * 0.03;
+      const now2 = performance.now();
+      pinsGroup.children.forEach(g => { const k = (now2 - g.userData.born) / 1000; const breath = 1 + 0.16 * Math.sin(k * 2.2); const age = Math.min(1, k / 0.6); const ease = 1 - Math.pow(1 - age, 3); g.children[0].scale.setScalar(0.09 * breath * ease); g.children[1].scale.setScalar(0.03 * (0.85 + 0.15 * breath) * ease); });
+      for (let i = spots.length - 1; i >= 0; i--) {
+        const sp = spots[i]; const k = (now2 - sp.born) / 1000;
+        const goal = sp.target * (sp === active ? 0.9 + 0.12 * Math.sin(k * 3.1) : 0.92 + 0.08 * Math.sin(k * 1.7 + i));
+        sp.a += (goal - sp.a) * Math.min(1, dt * (sp.target > 0 ? 3.2 : 2.2));
+        if (sp.target === 0 && sp.a < 0.004) spots.splice(i, 1);
+      }
+      hover.a += (hover.target - hover.a) * Math.min(1, dt * 6);
+      uni.uHover.value.set(hover.pos.x, hover.pos.y, hover.pos.z, focus.t > 0.2 ? 0 : hover.a);
+      for (let i = 0; i < MAXS; i++) {
+        const sp = spots[spots.length - 1 - i];
+        if (sp) { uni.uSpot.value[i].set(sp.pos.x, sp.pos.y, sp.pos.z, sp.r * (sp === active ? 0.6 + 0.4 * Math.min(1, (now2 - sp.born) / 600) : 1)); uni.uSpotA.value[i] = sp.a; uni.uSpotK.value[i] = sp.kind; }
+        else uni.uSpotA.value[i] = 0;
+      }
+      renderer.render(scene, camera);
+      const r = { width: canvas.clientWidth, height: canvas.clientHeight };
+      tags.forEach(({ el, obj }) => {
+        obj.getWorldPosition(tmp); const facing = obj.userData.normal.clone().applyQuaternion(rig.quaternion).dot(camera.position.clone().sub(tmp).normalize());
+        tmp.project(camera);
+        el.style.left = ((tmp.x + 1) / 2 * r.width) + 'px'; el.style.top = ((1 - tmp.y) / 2 * r.height) + 'px';
+        el.style.opacity = facing > 0.15 && focus.t < 0.3 ? 1 : 0;
+      });
+      const busy = dragging || turnGoal !== null || Math.abs(yawV) > 0.0005 || Math.abs(focus.target - focus.t) > 0.002;
+      if (busy) quietSince = now2;
+      // keeps drawing for the shimmer while the body screen is open; a real build would idle after a few seconds
+      requestAnimationFrame(frame);
+    }
+    return api;
+  })();
+
+  function fit() {
+    const ph = $('#phone');
+    if (innerWidth > 520) { const sc = Math.min(1, (innerHeight - 48) / 866); ph.style.transform = 'scale(' + sc + ')'; }
+    else ph.style.transform = '';
+  }
+  addEventListener('resize', fit); fit();
+  // fade the written language every few seconds on the screens that show original words
+  setInterval(() => {
+    if (current !== 'visit' && current !== 'translate') return;
+    if (state.editing) return;
+    $$('.orig').forEach(el => el.classList.add('out'));
+    setTimeout(() => { langIdx = (langIdx + 1) % LANGS.length; if (current === 'visit') renderVisit(); if (current === 'translate') renderTranslate(); }, 420);
+  }, 4200);
+  renderBars(); renderTabs();
+  const start = (location.hash || '').slice(1);
+  go(order.includes(start) ? start : 'welcome');
+})();
+</script>
+
+</html>

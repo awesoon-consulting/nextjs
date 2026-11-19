@@ -2753,30 +2753,6 @@
     "eyebrow": "APPLICATIONS AWESOON · BIENTÔT SUR IPHONE ET ANDROID",
     "headline": "Prêt pour le rendez-vous, avec vos propres mots.",
     "lead": "Un journal privé pour votre corps. Touchez l’endroit où vous le ressentez, notez-le en quelques secondes et montrez une page claire à votre médecin, dans sa langue si besoin.",
-    "hint": "Faites glisser pour tourner. Touchez un endroit.",
-    "bodyLabel": "Un corps 3D lumineux que vous pouvez tourner et toucher",
-    "loading": "Chargement du corps",
-    "sided": "{part}, côté {side}",
-    "left": "gauche",
-    "right": "droit",
-    "regions": {
-      "head": "Tête",
-      "neck": "Cou",
-      "chest": "Poitrine",
-      "upperBack": "Haut du dos",
-      "lowerBack": "Bas du dos",
-      "stomach": "Ventre",
-      "shoulder": "Épaule",
-      "hip": "Hanche",
-      "thigh": "Cuisse",
-      "knee": "Genou",
-      "shin": "Tibia",
-      "calf": "Mollet",
-      "foot": "Pied",
-      "upperArm": "Bras",
-      "forearm": "Avant-bras",
-      "hand": "Main"
-    },
     "form": {
       "email": "Votre courriel",
       "placeholder": "vous@exemple.com",
@@ -2874,6 +2850,7 @@
       "Si TapBody devient sa propre entreprise, nous vous redemanderons votre accord avant qu’elle vous écrive."
     ],
     "privacyMore": "Lire la politique de confidentialité complète d’Awesoon",
-    "showcase": "TapBody · aperçu interactif"
+    "showcase": "TapBody · essayez la démo",
+    "demoLabel": "Démo interactive de TapBody"
   }
 }
