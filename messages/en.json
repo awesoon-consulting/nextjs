@@ -2749,7 +2749,7 @@
   "tapbody": {
     "title": "TapBody: a private journal for your body",
     "description": "Tap where you feel it, write it in seconds, and show your doctor one clean page. Join the TapBody waitlist.",
-    "eyebrow": "AWESOON APPS · COMING TO IPHONE AND ANDROID",
+    "eyebrow": "AWESOON APPS",
     "headline": "Ready for the appointment, in your own words.",
     "lead": "A private journal for your body. Tap where you feel it, write it in a few seconds, and show your doctor one clean page, in their language if you need.",
     "form": {
@@ -2850,6 +2850,7 @@
     ],
     "privacyMore": "Read the full Awesoon privacy policy",
     "showcase": "TapBody · try the demo",
-    "demoLabel": "Interactive TapBody demo"
+    "demoLabel": "Interactive TapBody demo",
+    "platforms": "Coming to iPhone and Android"
   }
 }

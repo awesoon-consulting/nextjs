@@ -84,7 +84,7 @@ export default function WaitlistForm({ labels, locale, consentVersion, source }:
           value={email}
           onChange={(e) => setEmail(e.target.value)}
           placeholder={labels.placeholder}
-          className="h-12 min-w-0 flex-1 rounded-full border border-neutral-300 bg-white px-5 text-base text-text-primary placeholder:text-text-muted focus:outline-none focus-visible:ring-2 focus-visible:ring-accent dark:border-white/[0.12] dark:bg-[#111827]"
+          className="h-12 w-full min-w-0 rounded-full sm:flex-1 border border-neutral-300 bg-white px-5 text-base text-text-primary placeholder:text-text-muted focus:outline-none focus-visible:ring-2 focus-visible:ring-accent dark:border-white/[0.12] dark:bg-[#111827]"
         />
         <Button type="submit" loading={status === 'sending'} className="h-12 whitespace-nowrap px-6">
           {status === 'sending' ? labels.sending : labels.submit}

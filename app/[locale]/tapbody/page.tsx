@@ -54,9 +54,12 @@ export default async function TapBodyPage({ params }: TapBodyPageProps) {
       <section className="bg-neutral-50 pt-32 pb-16 dark:bg-secondary/30">
         <div className="mx-auto grid max-w-6xl items-center gap-10 px-4 sm:px-6 lg:grid-cols-[minmax(0,1fr)_minmax(0,1fr)] lg:px-8">
           <div className="flex min-w-0 flex-col gap-5">
-            <Badge variant="accent" size="sm" className="self-start">
-              {t('eyebrow')}
-            </Badge>
+            <div className="flex flex-wrap items-center gap-x-3 gap-y-2">
+              <Badge variant="accent" size="sm">
+                {t('eyebrow')}
+              </Badge>
+              <span className="text-sm text-text-muted">{t('platforms')}</span>
+            </div>
             <h1 className="font-heading text-5xl font-bold leading-tight text-text-primary sm:text-6xl">{t('appName')}</h1>
             <p className="font-heading text-2xl font-semibold leading-snug text-text-primary text-balance">{t('headline')}</p>
             <p className="max-w-xl text-lg leading-relaxed text-text-secondary">{t('lead')}</p>
@@ -70,13 +73,13 @@ export default async function TapBodyPage({ params }: TapBodyPageProps) {
           </div>
 
           <figure className="flex min-w-0 flex-col items-center gap-4">
-            <div className="overflow-hidden rounded-[52px] border-[10px] border-[#1E1116] shadow-[0_0_0_1px_#3A2129,0_40px_100px_rgba(255,92,138,0.22)]" style={{ width: 300, height: 626 }}>
+            <div className="h-[626px] w-[300px] overflow-hidden rounded-[52px] border-[10px] border-[#1E1116] shadow-[0_0_0_1px_#3A2129,0_40px_100px_rgba(255,92,138,0.22)] max-[340px]:h-[544px] max-[340px]:w-[262px] max-[340px]:rounded-[44px]">
               <iframe
                 src="/images/tapbody/demo/index.html#body"
                 title={t('demoLabel')}
                 loading="lazy"
-                className="block origin-top-left border-0"
-                style={{ width: 390, height: 844, transform: 'scale(0.7179)' }}
+                className="block origin-top-left border-0 [transform:scale(0.7179)] max-[340px]:[transform:scale(0.6205)]"
+                style={{ width: 390, height: 844 }}
               />
             </div>
             <figcaption className="font-mono text-[11px] uppercase tracking-[0.16em] text-text-muted">{t('showcase')}</figcaption>
