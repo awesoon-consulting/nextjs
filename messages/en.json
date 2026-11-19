@@ -2749,7 +2749,7 @@
   "tapbody": {
     "title": "TapBody: a private journal for your body",
     "description": "Tap where you feel it, write it in seconds, and show your doctor one clean page. Join the TapBody waitlist.",
-    "eyebrow": "TAPBODY · COMING TO IPHONE AND ANDROID",
+    "eyebrow": "AWESOON APPS · COMING TO IPHONE AND ANDROID",
     "headline": "Ready for the appointment, in your own words.",
     "lead": "A private journal for your body. Tap where you feel it, write it in a few seconds, and show your doctor one clean page, in their language if you need.",
     "hint": "Drag to turn. Tap a spot.",
@@ -2779,7 +2779,7 @@
     "form": {
       "email": "Your email",
       "placeholder": "you@example.com",
-      "consent": "Email me when TapBody is ready, plus a few updates before launch. TapBody is made by Awesoon Technologies Inc., {address}, {contact}. My email is stored with our database and email providers in the United States. If TapBody moves to its own company, that company may send these emails too. I can unsubscribe at any time.",
+      "consent": "Email me about TapBody from Awesoon Technologies Inc. I can unsubscribe at any time.",
       "submit": "Join the waitlist",
       "sending": "Joining",
       "success": "Check your email to confirm your spot.",
@@ -2787,7 +2787,9 @@
       "errorConsent": "Please tick the box so we can email you.",
       "errorBusy": "Too many tries. Please wait a little and try again.",
       "errorGeneric": "Something went wrong. Please try again.",
-      "note": "We send one email to confirm. Nothing else until you do."
+      "note": "We send one email to confirm. Nothing else until you do.",
+      "soon": "The waitlist opens in a few days. Come back soon to join.",
+      "details": "How we handle your email"
     },
     "stepsTitle": "Three steps, done in seconds",
     "steps": [
@@ -2860,6 +2862,17 @@
       "done": "You are unsubscribed. We will not email you again.",
       "invalid": "This link is not valid.",
       "error": "Something went wrong. Please try again."
-    }
+    },
+    "appName": "TapBody",
+    "privacyTitle": "Your email and the TapBody waitlist",
+    "privacyItems": [
+      "Sent by Awesoon Technologies Inc., {address}. Questions: {contact}.",
+      "We keep your email, where you signed up, your language and the consent you gave. Nothing about your health.",
+      "It is stored with our database provider (Supabase) and email provider (Resend) in the United States.",
+      "We use it only for TapBody emails. You confirm first, and every email has an unsubscribe link.",
+      "If TapBody becomes its own company, we will ask you again before it emails you."
+    ],
+    "privacyMore": "Read the full Awesoon privacy policy",
+    "showcase": "TapBody · interactive preview"
   }
 }

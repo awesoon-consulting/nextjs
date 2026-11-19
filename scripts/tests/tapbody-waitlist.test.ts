@@ -177,7 +177,7 @@ test('maskEmail hides the local part', () => {
 
 test('earlier consent versions stay accepted and current wording fills address and contact', () => {
   assert.equal(parseSignup({ ...good, consentVersion: '2026-11-17' }).kind, 'ok')
-  const text = consentText(CURRENT_CONSENT_VERSION, '1 Test St', 'hello@tapbody.test')
+  const text = consentText('2026-11-18', '1 Test St', 'hello@tapbody.test')
   assert.match(text, /1 Test St, hello@tapbody\.test/)
   assert.match(text, /United States/)
   assert.ok(!text.includes('['))

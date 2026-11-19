@@ -2750,7 +2750,7 @@
   "tapbody": {
     "title": "TapBody : un journal privé pour votre corps",
     "description": "Touchez l’endroit où vous le ressentez, notez-le en quelques secondes et montrez une page claire à votre médecin. Rejoignez la liste d’attente TapBody.",
-    "eyebrow": "TAPBODY · BIENTÔT SUR IPHONE ET ANDROID",
+    "eyebrow": "APPLICATIONS AWESOON · BIENTÔT SUR IPHONE ET ANDROID",
     "headline": "Prêt pour le rendez-vous, avec vos propres mots.",
     "lead": "Un journal privé pour votre corps. Touchez l’endroit où vous le ressentez, notez-le en quelques secondes et montrez une page claire à votre médecin, dans sa langue si besoin.",
     "hint": "Faites glisser pour tourner. Touchez un endroit.",
@@ -2780,7 +2780,7 @@
     "form": {
       "email": "Votre courriel",
       "placeholder": "vous@exemple.com",
-      "consent": "Envoyez-moi un courriel quand TapBody sera prêt, ainsi que quelques nouvelles avant le lancement. TapBody est conçu par Awesoon Technologies Inc., {address}, {contact}. Mon courriel est conservé chez nos fournisseurs de base de données et de courriel aux États-Unis. Si TapBody devient sa propre entreprise, celle-ci pourra aussi m’envoyer ces courriels. Je peux me désabonner à tout moment.",
+      "consent": "Envoyez-moi des courriels sur TapBody de la part d’Awesoon Technologies Inc. Je peux me désabonner à tout moment.",
       "submit": "Rejoindre la liste d’attente",
       "sending": "Inscription",
       "success": "Vérifiez vos courriels pour confirmer votre place.",
@@ -2788,7 +2788,9 @@
       "errorConsent": "Veuillez cocher la case pour que nous puissions vous écrire.",
       "errorBusy": "Trop d’essais. Patientez un peu et réessayez.",
       "errorGeneric": "Un problème est survenu. Veuillez réessayer.",
-      "note": "Nous envoyons un seul courriel de confirmation. Rien d’autre avant votre confirmation."
+      "note": "Nous envoyons un seul courriel de confirmation. Rien d’autre avant votre confirmation.",
+      "soon": "La liste d’attente ouvre dans quelques jours. Revenez bientôt pour vous inscrire.",
+      "details": "Comment nous traitons votre courriel"
     },
     "stepsTitle": "Trois étapes, en quelques secondes",
     "steps": [
@@ -2861,6 +2863,17 @@
       "done": "Vous êtes désabonné. Nous ne vous écrirons plus.",
       "invalid": "Ce lien n’est pas valide.",
       "error": "Un problème est survenu. Veuillez réessayer."
-    }
+    },
+    "appName": "TapBody",
+    "privacyTitle": "Votre courriel et la liste d’attente TapBody",
+    "privacyItems": [
+      "Envoyé par Awesoon Technologies Inc., {address}. Questions : {contact}.",
+      "Nous gardons votre courriel, l’endroit où vous vous êtes inscrit, votre langue et le consentement donné. Rien sur votre santé.",
+      "Il est conservé chez notre fournisseur de base de données (Supabase) et notre fournisseur de courriel (Resend) aux États-Unis.",
+      "Nous l’utilisons uniquement pour les courriels TapBody. Vous confirmez d’abord, et chaque courriel contient un lien de désabonnement.",
+      "Si TapBody devient sa propre entreprise, nous vous redemanderons votre accord avant qu’elle vous écrive."
+    ],
+    "privacyMore": "Lire la politique de confidentialité complète d’Awesoon",
+    "showcase": "TapBody · aperçu interactif"
   }
 }

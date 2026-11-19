@@ -1,11 +1,13 @@
 'use client'
 
 import { useId, useState } from 'react'
+import Button from '@/src/components/ui/Button'
 
 export interface WaitlistLabels {
   email: string
   placeholder: string
   consent: string
+  details: string
   submit: string
   sending: string
   success: string
@@ -60,56 +62,51 @@ export default function WaitlistForm({ labels, locale, consentVersion, source }:
 
   if (status === 'done') {
     return (
-      <div role="status" className="rounded-3xl border border-[#CCFF4D]/40 bg-[#CCFF4D]/10 p-6 text-[#F8EFEB]">
-        <p className="text-lg font-semibold">{message}</p>
-        <p className="mt-2 text-sm text-[#C9ABA3]">{labels.note}</p>
+      <div role="status" className="rounded-3xl border border-neutral-200 bg-white p-6 dark:border-white/[0.08] dark:bg-[#111827]">
+        <p className="font-heading text-lg font-semibold text-text-primary">{message}</p>
+        <p className="mt-2 text-sm text-text-secondary">{labels.note}</p>
       </div>
     )
   }
 
   return (
-    <form onSubmit={onSubmit} noValidate className="flex flex-col gap-4 rounded-3xl border border-white/10 bg-[#1C0E12]/70 p-5 backdrop-blur-md">
-      <label htmlFor={`${id}-email`} className="text-sm font-semibold text-[#F8EFEB]">
+    <form onSubmit={onSubmit} noValidate className="flex flex-col gap-3">
+      <label htmlFor={`${id}-email`} className="sr-only">
         {labels.email}
       </label>
-      <input
-        id={`${id}-email`}
-        type="email"
-        inputMode="email"
-        autoComplete="email"
-        required
-        value={email}
-        onChange={(e) => setEmail(e.target.value)}
-        placeholder={labels.placeholder}
-        className="h-12 rounded-2xl border border-white/15 bg-white/[0.04] px-4 text-base text-[#F8EFEB] placeholder:text-[#8F7A76] focus:border-[#FFB36B] focus:outline-none"
-      />
-      <div aria-hidden="true" className="absolute -left-[9999px] h-px w-px overflow-hidden">
-        <label htmlFor={`${id}-website`}>Website</label>
-        <input id={`${id}-website`} tabIndex={-1} autoComplete="off" value={website} onChange={(e) => setWebsite(e.target.value)} />
-      </div>
-      <label htmlFor={`${id}-consent`} className="flex cursor-pointer items-start gap-3 text-xs leading-relaxed text-[#E3CFC8]">
+      <div className="flex flex-col gap-3 sm:flex-row">
         <input
-          id={`${id}-consent`}
-          type="checkbox"
-          checked={consent}
-          onChange={(e) => setConsent(e.target.checked)}
-          className="mt-0.5 h-5 w-5 shrink-0 accent-[#CCFF4D]"
+          id={`${id}-email`}
+          type="email"
+          inputMode="email"
+          autoComplete="email"
+          required
+          value={email}
+          onChange={(e) => setEmail(e.target.value)}
+          placeholder={labels.placeholder}
+          className="h-12 min-w-0 flex-1 rounded-full border border-neutral-300 bg-white px-5 text-base text-text-primary placeholder:text-text-muted focus:outline-none focus-visible:ring-2 focus-visible:ring-accent dark:border-white/[0.12] dark:bg-[#111827]"
         />
-        <span>{labels.consent}</span>
+        <Button type="submit" loading={status === 'sending'} className="h-12 whitespace-nowrap px-6">
+          {status === 'sending' ? labels.sending : labels.submit}
+        </Button>
+      </div>
+      <div aria-hidden="true" className="absolute -left-[9999px] h-px w-px overflow-hidden">
+        <input tabIndex={-1} autoComplete="off" value={website} onChange={(e) => setWebsite(e.target.value)} />
+      </div>
+      <label htmlFor={`${id}-consent`} className="flex cursor-pointer items-start gap-2.5 text-sm text-text-secondary">
+        <input id={`${id}-consent`} type="checkbox" checked={consent} onChange={(e) => setConsent(e.target.checked)} className="mt-0.5 h-4 w-4 shrink-0 accent-current" />
+        <span>
+          {labels.consent}{' '}
+          <a href="#waitlist-privacy" className="underline underline-offset-4 hover:text-text-primary">
+            {labels.details}
+          </a>
+        </span>
       </label>
-      <button
-        type="submit"
-        disabled={status === 'sending'}
-        className="h-14 rounded-2xl bg-gradient-to-r from-[#FFB36B] via-[#FF8A74] to-[#FF5C8A] text-base font-bold text-[#1C0A10] shadow-[0_10px_30px_rgba(255,92,138,0.28)] transition-transform active:scale-[0.98] disabled:opacity-70"
-      >
-        {status === 'sending' ? labels.sending : labels.submit}
-      </button>
       {status === 'error' && (
-        <p role="alert" className="text-sm text-[#FFB8CB]">
+        <p role="alert" className="text-sm text-error">
           {message}
         </p>
       )}
-      <p className="text-center text-xs text-[#C9ABA3]">{labels.note}</p>
     </form>
   )
 }

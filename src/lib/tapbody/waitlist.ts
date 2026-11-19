@@ -12,6 +12,8 @@ export type Env = {
   siteUrl: string
   senderAddress: string
   contactEmail: string
+  // When set, database functions run through this instead of the REST API (the site's own Postgres connection).
+  call?: (fn: string, args: Record<string, unknown>) => Promise<unknown[]>
 }
 
 const EMAIL = /^[^\s@]+@[^\s@]+\.[^\s@]+$/
@@ -48,6 +50,7 @@ export type SignupResult = {
 }
 
 async function rpc<T>(env: Env, fn: string, args: Record<string, unknown>, fetchImpl: typeof fetch): Promise<T[]> {
+  if (env.call) return (await env.call(fn, args)) as T[]
   const res = await fetchImpl(`${env.supabaseUrl}/rest/v1/rpc/${fn}`, {
     method: 'POST',
     headers: { apikey: env.supabaseKey, 'Content-Type': 'application/json' },
