@@ -2750,7 +2750,7 @@
   "tapbody": {
     "title": "TapBody : un journal privé pour votre corps",
     "description": "Touchez l’endroit où vous le ressentez, notez-le en quelques secondes et montrez une page claire à votre médecin. Rejoignez la liste d’attente TapBody.",
-    "eyebrow": "APPLICATIONS AWESOON · BIENTÔT SUR IPHONE ET ANDROID",
+    "eyebrow": "APPLICATIONS AWESOON",
     "headline": "Prêt pour le rendez-vous, avec vos propres mots.",
     "lead": "Un journal privé pour votre corps. Touchez l’endroit où vous le ressentez, notez-le en quelques secondes et montrez une page claire à votre médecin, dans sa langue si besoin.",
     "form": {
@@ -2851,6 +2851,7 @@
     ],
     "privacyMore": "Lire la politique de confidentialité complète d’Awesoon",
     "showcase": "TapBody · essayez la démo",
-    "demoLabel": "Démo interactive de TapBody"
+    "demoLabel": "Démo interactive de TapBody",
+    "platforms": "Bientôt sur iPhone et Android"
   }
 }
