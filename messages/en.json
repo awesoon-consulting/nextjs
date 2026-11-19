@@ -2745,5 +2745,134 @@
       "mailBody": "Please send me API change alerts for: {platforms}",
       "more": "Show {count} more"
     }
+  },
+  "tapbody": {
+    "title": "TapBody: a private journal for your body",
+    "description": "Tap where you feel it, write it in seconds, and show your doctor one clean page. Join the TapBody waitlist.",
+    "eyebrow": "AWESOON APPS · COMING TO IPHONE AND ANDROID",
+    "headline": "Ready for the appointment, in your own words.",
+    "lead": "A private journal for your body. Tap where you feel it, write it in a few seconds, and show your doctor one clean page, in their language if you need.",
+    "hint": "Drag to turn. Tap a spot.",
+    "bodyLabel": "A glowing 3D body you can turn and tap",
+    "loading": "Loading the body",
+    "sided": "{side} {part}",
+    "left": "Left",
+    "right": "Right",
+    "regions": {
+      "head": "Head",
+      "neck": "Neck",
+      "chest": "Chest",
+      "upperBack": "Upper back",
+      "lowerBack": "Lower back",
+      "stomach": "Stomach",
+      "shoulder": "shoulder",
+      "hip": "hip",
+      "thigh": "thigh",
+      "knee": "knee",
+      "shin": "shin",
+      "calf": "calf",
+      "foot": "foot",
+      "upperArm": "upper arm",
+      "forearm": "forearm",
+      "hand": "hand"
+    },
+    "form": {
+      "email": "Your email",
+      "placeholder": "you@example.com",
+      "consent": "Email me about TapBody from Awesoon Technologies Inc. I can unsubscribe at any time.",
+      "submit": "Join the waitlist",
+      "sending": "Joining",
+      "success": "Check your email to confirm your spot.",
+      "errorEmail": "Please enter a valid email.",
+      "errorConsent": "Please tick the box so we can email you.",
+      "errorBusy": "Too many tries. Please wait a little and try again.",
+      "errorGeneric": "Something went wrong. Please try again.",
+      "note": "We send one email to confirm. Nothing else until you do.",
+      "soon": "The waitlist opens in a few days. Come back soon to join.",
+      "details": "How we handle your email"
+    },
+    "stepsTitle": "Three steps, done in seconds",
+    "steps": [
+      {
+        "title": "Tap the spot",
+        "text": "Head, chest, left knee, lower back. Every note belongs to one spot and one date."
+      },
+      {
+        "title": "Write or say it",
+        "text": "How strong, 1 to 10, and a few words. Under 10 seconds."
+      },
+      {
+        "title": "Show your doctor",
+        "text": "One clean visit page, readable in 30 seconds."
+      }
+    ],
+    "featuresTitle": "Made for the moment that counts",
+    "features": [
+      {
+        "title": "The visit page",
+        "text": "Your dated notes grouped by spot, on screen or as a PDF your doctor keeps."
+      },
+      {
+        "title": "Your words, translated",
+        "text": "A word-for-word translation beside your original, for a doctor in another language. You can fix any word before you share it."
+      },
+      {
+        "title": "Voice and a live interpreter",
+        "text": "Say it in your own language. At the visit, you and your doctor each speak and it repeats each turn in the other language. Your doctor agrees first."
+      },
+      {
+        "title": "Private by design",
+        "text": "Your notes stay on your phone. TapBody never receives them. No ads and no tracking."
+      }
+    ],
+    "neverTitle": "It records. It never interprets.",
+    "neverText": "TapBody keeps what you wrote, as you wrote it. It never says what an entry means, suggests what to do, or scores how you feel.",
+    "faqTitle": "Questions",
+    "faq": [
+      {
+        "q": "Is TapBody a medical device?",
+        "a": "No. TapBody is a personal journal. It keeps your notes and helps you show them. It does not read them or tell you what to do. For anything about your health, talk to a doctor or nurse."
+      },
+      {
+        "q": "Where are my notes stored?",
+        "a": "On your phone. You can save an encrypted backup file wherever you choose, and only your recovery key opens it. TapBody never receives your notes."
+      },
+      {
+        "q": "When does it launch, and what will it cost?",
+        "a": "We are testing it first with people who see several doctors. Join the waitlist and we will tell you when it is ready and what it costs."
+      },
+      {
+        "q": "What do you do with my email?",
+        "a": "We use it only to tell you about TapBody. You confirm it first, and you can unsubscribe at any time."
+      }
+    ],
+    "disclaimer": "TapBody is a personal journal, not a medical device. Made by Awesoon Technologies Inc.",
+    "confirm": {
+      "title": "Confirm your email",
+      "lead": "One tap and you are on the TapBody waitlist.",
+      "button": "Confirm my email",
+      "done": "You are on the TapBody waitlist.",
+      "invalid": "This link is not valid.",
+      "error": "Something went wrong. Please try again."
+    },
+    "unsubscribe": {
+      "title": "Unsubscribe",
+      "lead": "Stop all TapBody emails to this address.",
+      "button": "Unsubscribe",
+      "done": "You are unsubscribed. We will not email you again.",
+      "invalid": "This link is not valid.",
+      "error": "Something went wrong. Please try again."
+    },
+    "appName": "TapBody",
+    "privacyTitle": "Your email and the TapBody waitlist",
+    "privacyItems": [
+      "Sent by Awesoon Technologies Inc., {address}. Questions: {contact}.",
+      "We keep your email, where you signed up, your language and the consent you gave. Nothing about your health.",
+      "It is stored with our database provider (Supabase) and email provider (Resend) in the United States.",
+      "We use it only for TapBody emails. You confirm first, and every email has an unsubscribe link.",
+      "If TapBody becomes its own company, we will ask you again before it emails you."
+    ],
+    "privacyMore": "Read the full Awesoon privacy policy",
+    "showcase": "TapBody · interactive preview"
   }
 }
