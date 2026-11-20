@@ -24,7 +24,7 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
   const entries: MetadataRoute.Sitemap = []
 
   // Static pages per locale
-  const staticPaths = ['', '/solutions', '/support', '/insights', '/about', '/contact', '/games', '/design', '/work', '/public-sector', '/advertising', '/glossary', '/compare', ...HUB_IDS.map((h) => `/${h}`)]
+  const staticPaths = ['', '/solutions', '/support', '/insights', '/about', '/contact', '/games', '/design', '/work', '/public-sector', '/advertising', '/glossary', '/compare', '/ownvane', ...HUB_IDS.map((h) => `/${h}`)]
 
   for (const locale of locales) {
     for (const path of staticPaths) {

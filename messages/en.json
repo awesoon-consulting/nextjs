@@ -2852,5 +2852,255 @@
     "showcase": "TapBody · try the demo",
     "demoLabel": "Interactive TapBody demo",
     "platforms": "Coming to iPhone and Android"
+  },
+  "ownvane": {
+    "title": "Ownvane: your own platform for licensed real estate agents",
+    "description": "One platform in your name for licensed real estate agents: site, CRM, AI and ads on your own accounts. It moves with you when you change brokerages. Launching in early 2027 in Canada and the US.",
+    "ogTitle": "Ownvane: your business, your platform, your name",
+    "logoAlt": "Ownvane",
+    "hero": {
+      "titleA": "Your business. Your platform.",
+      "titleB": "Your name.",
+      "lede": "One platform for licensed real estate agents, in your own name. It moves with you when you change brokerages.",
+      "when": "Launching in early 2027 in Canada and the US.",
+      "join": "Join the waitlist"
+    },
+    "get": {
+      "title": "Everything you run, under your own name.",
+      "sub": "Your own domain, or yourname.ownvane.com the same day. Your brokerage name shows on every page.",
+      "items": [
+        {
+          "title": "Website and lead pages",
+          "text": "Home value requests and lead pages built in."
+        },
+        {
+          "title": "CRM and phone line",
+          "text": "Every call, text and form in one pipeline."
+        },
+        {
+          "title": "Client portal",
+          "text": "Saved homes, showings and documents on your site."
+        },
+        {
+          "title": "Offer writer and e-signature",
+          "text": "Draft on your market's forms, sign by link."
+        },
+        {
+          "title": "Social tools",
+          "text": "Schedule your posts once for nine networks."
+        },
+        {
+          "title": "Apps, themes and experts",
+          "text": "Add what you need without switching platforms."
+        }
+      ]
+    },
+    "ai": {
+      "title": "AI does the busywork. You make the calls.",
+      "items": [
+        "It builds your site from your brand and listings.",
+        "It drafts every reply, and you send it.",
+        "It answers calls, texts and site chat, and says it is AI first.",
+        "It runs the Ad Engine on your own ad accounts."
+      ],
+      "never": "It never gives price, legal or mortgage advice. Those questions come to you."
+    },
+    "ads": {
+      "title": "Ads on your own accounts.",
+      "sub": "The Ad Engine runs buyer and seller campaigns on Meta and Google at launch, from your own profiles. You approve every campaign.",
+      "feeLabel": "Ad Engine fee:",
+      "fee": "3x each click's cost, all in, at the start, falling to no less than the click's cost plus 25%.",
+      "noLead": "Nothing is charged because a lead arrives."
+    },
+    "plans": {
+      "title": "Three plans. Never per lead.",
+      "per": "USD a month",
+      "items": [
+        {
+          "name": "Starter",
+          "price": "$199",
+          "text": "AI CRM, the AI Ad Engine and a premium theme set up with AI."
+        },
+        {
+          "name": "Pro",
+          "price": "$499",
+          "text": "Every app and the AI assistant, plus IDX and property data."
+        },
+        {
+          "name": "Team",
+          "price": "$1,499 to $4,999",
+          "text": "For teams of three to five agents."
+        }
+      ],
+      "terms": "No setup fee and a free trial. The Ad Engine fee applies only when your ads run. Apps, themes and experts from the stores are extra."
+    },
+    "yours": {
+      "title": "What's yours stays yours.",
+      "sub": "Change brokerages and your site, domain, brand, ads and tools come with you. Your own contacts come where your brokerage agreement allows, and signed deals stay with your brokerage.",
+      "cols": [
+        {
+          "title": "You own",
+          "items": [
+            "Your domain and site",
+            "Your brand",
+            "Your social profiles",
+            "Your ad accounts"
+          ]
+        },
+        {
+          "title": "We run",
+          "items": [
+            "The software and themes",
+            "Your ads, in your own accounts",
+            "Compliance built into every theme"
+          ]
+        },
+        {
+          "title": "We never",
+          "items": [
+            "Sell your leads",
+            "Run an ad without your OK",
+            "Take a cut of your commission"
+          ]
+        }
+      ]
+    },
+    "waitlist": {
+      "title": "Get your invite.",
+      "sub": "Ownvane is launching in early 2027 in Canada and the US. Join the waitlist and we'll email your invite before launch."
+    },
+    "form": {
+      "email": "Email",
+      "placeholder": "you@example.com",
+      "region": "Where you are licensed",
+      "regionPlaceholder": "Choose a province, territory or state",
+      "canada": "Canada",
+      "us": "United States",
+      "firstName": "First name",
+      "optional": "(optional)",
+      "honeypot": "Leave this empty",
+      "consent": "Email me my Ownvane invite and launch news from Awesoon Technologies Inc. I can unsubscribe at any time.",
+      "details": "Who is asking, and how we use your email",
+      "submit": "Join the waitlist",
+      "sending": "Joining",
+      "success": "Check your email to confirm your spot.",
+      "note": "We send one email to confirm. Nothing else until you do.",
+      "errorEmail": "Enter an email like name@example.com.",
+      "errorRegion": "Choose where you are licensed.",
+      "errorFirstName": "Enter just your first name, without @, / or < >.",
+      "errorConsent": "Check the box so we can email your invite.",
+      "errorBusy": "Too many tries. Please wait a little and try again.",
+      "errorGeneric": "We could not add you just now. Check your connection and try again.",
+      "soon": "The waitlist opens soon. Come back in a few days to join."
+    },
+    "privacy": {
+      "title": "Your email and the Ownvane waitlist",
+      "items": [
+        "Sent by Awesoon Technologies Inc., which owns and operates Ownvane, {address}. Questions: {contact}.",
+        "We keep your email, where you are licensed, your first name if you give it, your language and the consent you gave.",
+        "It is stored with our database provider (Supabase) and email provider (Resend) in the United States.",
+        "We use it only for your Ownvane invite and launch news, and never sell it. You confirm first, and every email has an unsubscribe link.",
+        "To see or delete what we keep, email {contact}."
+      ],
+      "more": "Read the full Awesoon privacy policy",
+      "owner": "Ownvane is owned and operated by Awesoon Technologies Inc."
+    },
+    "confirm": {
+      "title": "Confirm your email",
+      "lead": "One tap and you are on the Ownvane waitlist.",
+      "button": "Confirm my email",
+      "done": "You are on the Ownvane waitlist. We'll email your invite before launch.",
+      "invalid": "This link is not valid.",
+      "error": "Something went wrong. Please try again."
+    },
+    "unsubscribe": {
+      "title": "Unsubscribe",
+      "lead": "Stop all Ownvane emails to this address.",
+      "button": "Unsubscribe",
+      "done": "You are unsubscribed. We will not email you again.",
+      "invalid": "This link is not valid.",
+      "error": "Something went wrong. Please try again."
+    },
+    "email": {
+      "subject": "Confirm your spot on the Ownvane waitlist",
+      "intro": "Thanks for joining the Ownvane waitlist. Please confirm your email here:",
+      "ignore": "If you did not sign up, you can ignore this email and we will not write again. You can also unsubscribe here:",
+      "footer": "Ownvane is owned and operated by Awesoon Technologies Inc., {address}. Questions: {contact}"
+    },
+    "regions": {
+      "CA-AB": "Alberta",
+      "CA-BC": "British Columbia",
+      "CA-MB": "Manitoba",
+      "CA-NB": "New Brunswick",
+      "CA-NL": "Newfoundland and Labrador",
+      "CA-NS": "Nova Scotia",
+      "CA-ON": "Ontario",
+      "CA-PE": "Prince Edward Island",
+      "CA-QC": "Quebec",
+      "CA-SK": "Saskatchewan",
+      "CA-NT": "Northwest Territories",
+      "CA-NU": "Nunavut",
+      "CA-YT": "Yukon",
+      "US-AL": "Alabama",
+      "US-AK": "Alaska",
+      "US-AZ": "Arizona",
+      "US-AR": "Arkansas",
+      "US-CA": "California",
+      "US-CO": "Colorado",
+      "US-CT": "Connecticut",
+      "US-DE": "Delaware",
+      "US-DC": "District of Columbia",
+      "US-FL": "Florida",
+      "US-GA": "Georgia",
+      "US-HI": "Hawaii",
+      "US-ID": "Idaho",
+      "US-IL": "Illinois",
+      "US-IN": "Indiana",
+      "US-IA": "Iowa",
+      "US-KS": "Kansas",
+      "US-KY": "Kentucky",
+      "US-LA": "Louisiana",
+      "US-ME": "Maine",
+      "US-MD": "Maryland",
+      "US-MA": "Massachusetts",
+      "US-MI": "Michigan",
+      "US-MN": "Minnesota",
+      "US-MS": "Mississippi",
+      "US-MO": "Missouri",
+      "US-MT": "Montana",
+      "US-NE": "Nebraska",
+      "US-NV": "Nevada",
+      "US-NH": "New Hampshire",
+      "US-NJ": "New Jersey",
+      "US-NM": "New Mexico",
+      "US-NY": "New York",
+      "US-NC": "North Carolina",
+      "US-ND": "North Dakota",
+      "US-OH": "Ohio",
+      "US-OK": "Oklahoma",
+      "US-OR": "Oregon",
+      "US-PA": "Pennsylvania",
+      "US-RI": "Rhode Island",
+      "US-SC": "South Carolina",
+      "US-SD": "South Dakota",
+      "US-TN": "Tennessee",
+      "US-TX": "Texas",
+      "US-UT": "Utah",
+      "US-VT": "Vermont",
+      "US-VA": "Virginia",
+      "US-WA": "Washington",
+      "US-WV": "West Virginia",
+      "US-WI": "Wisconsin",
+      "US-WY": "Wyoming"
+    },
+    "journey": {
+      "label": "Ownvane, step by step",
+      "showMe": "Show me",
+      "skip": "Skip to waitlist",
+      "next": "Next",
+      "back": "Back",
+      "progress": "Step {n} of {total}",
+      "moves": "It moves with you when you change brokerages."
+    }
   }
 }

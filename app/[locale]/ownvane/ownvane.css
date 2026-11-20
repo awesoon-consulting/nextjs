@@ -1,0 +1,267 @@
+/* Ownvane's own look (businesses/ownvane/brand/tokens.css, night theme), scoped to .ov so the Awesoon site keeps its own. */
+.ov {
+  --canvas: #0A0D12;
+  --surface: #10151C;
+  --surface-raised: #171D26;
+  --line: #232B36;
+  --line-strong: #5A6576;
+  --ink: #EDF0F3;
+  --ink-muted: #A3ACB8;
+  --ink-subtle: #808A97;
+  --on-ink: #0A0D12;
+  --petrol: #6BD1D2;
+  --petrol-300: #6BD1D2;
+  --petrol-400: #40B9BA;
+  --slate: #8598A5;
+  --sheen-blue: #8EC5FF;
+  --sheen-violet: #B9A7FF;
+  --sheen: linear-gradient(90deg, #229C9D, #40B9BA, #8EC5FF, #B9A7FF, #6BD1D2, #229C9D);
+  --error: #FF7A6E;
+  --focus-ring: #6BD1D2;
+  --input-bg: #10151C;
+  --input-border: #5A6576;
+  --radius-sm: 8px;
+  --control-md: 44px;
+  --control-lg: 52px;
+  --nav-h: 64px;
+  --ease: cubic-bezier(0.2, 0, 0, 1);
+  --font-ov: var(--font-geist), system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif;
+
+  position: relative;
+  color-scheme: dark;
+  background: var(--canvas);
+  color: var(--ink);
+  font: 400 16px/24px var(--font-ov);
+  -webkit-font-smoothing: antialiased;
+  overflow-x: clip;
+}
+.ov *,
+.ov *::before,
+.ov *::after { box-sizing: border-box; }
+.ov a { color: inherit; }
+.ov :focus-visible { outline: 2px solid var(--focus-ring); outline-offset: 2px; }
+.ov h1, .ov h2, .ov h3, .ov p, .ov ul, .ov ol, .ov dl, .ov dd { margin: 0; }
+.ov h2:focus { outline: none; }
+.ov [id], .ov-form input, .ov-form select { scroll-margin-top: 96px; }
+.ov-sr { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; }
+
+/* Bar */
+.ov-bar { display: flex; align-items: center; justify-content: space-between; gap: 16px; max-width: 1200px; margin: 0 auto; padding: calc(var(--nav-h) + 20px) 24px 0; }
+.ov-bar img { display: block; width: 120px; height: auto; }
+.ov-skip { font: 500 15px/20px var(--font-ov); color: var(--ink-muted) !important; text-decoration: none; padding: 12px 0; }
+.ov-skip:hover { color: var(--ink) !important; }
+
+/* Stage: the illustrated still, then the three.js canvas over it */
+.ov-stage { position: relative; height: 56vh; min-height: 320px; overflow: hidden; }
+.ov-still,
+.ov-canvas { position: absolute; inset: 0; width: 100%; height: 100%; display: block; }
+.ov-canvas { opacity: 0; transition: opacity 900ms var(--ease); }
+.ov-j[data-live='true'] .ov-canvas { opacity: 1; }
+.ov-j[data-live='true'] .ov-still { opacity: 0; transition: opacity 900ms var(--ease); }
+
+.ov-still g { transition: opacity 500ms var(--ease); }
+.ov-s-hero { stroke: #EDF0F3; stroke-opacity: 0.5; }
+.ov-s-sign { stroke: #8598A5; }
+.ov-s-ads, .ov-s-ai, .ov-s-portal, .ov-s-plans, .ov-s-yours, .ov-s-sign { opacity: 0; }
+.ov-s-ads circle, .ov-s-portal path, .ov-s-yours rect, .ov-s-plans path { stroke: #6BD1D2; }
+.ov-s-plans .ov-s-muted { stroke: #EDF0F3; stroke-opacity: 0.4; }
+.ov-s-dot { fill: #6BD1D2; stroke: none !important; }
+.ov-s-dot.is-blue { fill: #8EC5FF; }
+.ov-s-dot.is-violet { fill: #B9A7FF; }
+.ov-s-fill { fill: #6BD1D2; stroke: #6BD1D2; }
+.ov-j:not([data-step='intro']) .ov-s-hero { stroke: #6BD1D2; stroke-opacity: 1; }
+.ov-j:not([data-step='intro']):not([data-step='plans']) .ov-s-sign { opacity: 1; }
+.ov-j[data-step='moves'] .ov-s-sign,
+.ov-j[data-step='yours'] .ov-s-sign,
+.ov-j[data-step='waitlist'] .ov-s-sign { stroke: #B9A7FF; }
+.ov-j[data-step='ads'] .ov-s-ads,
+.ov-j[data-step='ai'] .ov-s-ai,
+.ov-j[data-step='portal'] .ov-s-portal,
+.ov-j[data-step='plans'] .ov-s-plans,
+.ov-j[data-step='yours'] .ov-s-yours { opacity: 1; }
+.ov-j[data-step='moves'] .ov-s-ads,
+.ov-j[data-step='waitlist'] .ov-s-ads,
+.ov-j[data-step='waitlist'] .ov-s-portal,
+.ov-j[data-step='waitlist'] .ov-s-yours { opacity: 0.45; }
+.ov-j[data-step='plans'] .ov-s-hero,
+.ov-j[data-step='plans'] .ov-s-client { opacity: 0.2; }
+
+/* Steps as a readable page (crawlers, no-JS) */
+.ov-step { max-width: 1200px; margin: 0 auto; padding: 56px 24px; border-top: 1px solid var(--line); }
+.ov-step-intro { border-top: 0; }
+.ov h1 { font: 500 72px/0.98 var(--font-ov); letter-spacing: -0.02em; text-wrap: balance; overflow-wrap: break-word; }
+.ov h2 { font: 500 44px/1.04 var(--font-ov); letter-spacing: -0.015em; text-wrap: balance; overflow-wrap: break-word; }
+.ov-sheen-word { background: var(--sheen) 0 0 / 200% 100%; -webkit-background-clip: text; background-clip: text; color: transparent; animation: ov-sheen 9s linear infinite; }
+@keyframes ov-sheen { from { background-position: 0% 50%; } to { background-position: 200% 50%; } }
+.ov-lede { font: 400 20px/30px var(--font-ov); color: var(--ink-muted); margin-top: 20px !important; max-width: 36ch; }
+.ov-when { font: 500 16px/24px var(--font-ov); margin-top: 12px !important; }
+.ov-actions { display: flex; flex-wrap: wrap; align-items: center; gap: 12px 28px; margin-top: 32px; }
+.ov-btn { display: inline-flex; align-items: center; justify-content: center; min-height: var(--control-lg); padding: 0 28px; border: 0; border-radius: var(--radius-sm); background: var(--ink); color: var(--on-ink) !important; font: 600 16px/1.2 var(--font-ov); text-decoration: none; text-align: center; cursor: pointer; transition: background 160ms var(--ease); }
+.ov-btn:hover { background: #fff; }
+.ov-btn:disabled { opacity: 0.4; cursor: default; }
+.ov-quiet { font: 500 16px/24px var(--font-ov); color: var(--ink-muted) !important; text-decoration: none; padding: 12px 0; }
+.ov-quiet:hover { color: var(--ink) !important; }
+.ov-sub { font: 400 18px/28px var(--font-ov); color: var(--ink-muted); margin-top: 16px !important; max-width: 48ch; }
+.ov-fee { margin-top: 20px !important; padding: 14px 0; border-top: 1px solid var(--line); border-bottom: 1px solid var(--line); max-width: 52ch; }
+.ov-fee b { font-weight: 600; }
+.ov-list { list-style: none; padding: 0; margin-top: 18px !important; max-width: 52ch; }
+.ov-list li { padding: 9px 0; border-bottom: 1px solid var(--line); color: var(--ink-muted); }
+.ov-list li:first-child { border-top: 1px solid var(--line); }
+.ov-list b { color: var(--ink); font-weight: 600; }
+.ov-plans { display: grid; gap: 0; margin-top: 20px !important; max-width: 52ch; }
+.ov-plans > div { padding: 12px 0; border-top: 1px solid var(--line-strong); }
+.ov-plans > div.is-pro { border-top: 2px solid var(--petrol); }
+.ov-plans dt { font: 600 18px/26px var(--font-ov); }
+.ov-plans .is-pro dt { color: var(--petrol); }
+.ov-price { font: 500 30px/1.1 var(--font-ov); letter-spacing: -0.02em; font-variant-numeric: tabular-nums; margin-top: 2px !important; }
+.ov-price span { font: 400 14px/20px var(--font-ov); letter-spacing: 0; color: var(--ink-muted); }
+.ov-plans dd + dd { color: var(--ink-muted); margin-top: 2px !important; }
+.ov-terms { margin-top: 14px !important; color: var(--ink-muted); font-size: 14px; line-height: 20px; max-width: 56ch; }
+.ov-yours { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 24px; margin-top: 20px; max-width: 720px; }
+.ov-yours h3 { font: 600 17px/24px var(--font-ov); margin-bottom: 6px !important; }
+.ov-yours .is-own h3 { color: var(--petrol); }
+.ov-yours ul { list-style: none; padding: 0; }
+.ov-yours li { padding: 6px 0; border-bottom: 1px solid var(--line); color: var(--ink-muted); font-size: 15px; line-height: 22px; }
+
+.ov-form-wrap { margin-top: 24px; }
+.ov-privacy { margin-top: 40px; padding-top: 24px; border-top: 1px solid var(--line); }
+.ov-privacy h3 { font: 500 22px/1.25 var(--font-ov); }
+.ov-privacy ul { margin-top: 12px !important; padding-left: 20px; list-style: disc; color: var(--ink-muted); max-width: 68ch; font-size: 15px; line-height: 22px; }
+.ov-privacy li { margin-top: 6px; }
+.ov-privacy a { color: var(--petrol); text-underline-offset: 4px; }
+.ov-owner { margin-top: 16px !important; font: 400 14px/20px var(--font-ov); color: var(--ink-muted); }
+
+/* Waitlist form (port of pitch/waitlist.css) */
+.ov-form { display: flex; flex-direction: column; gap: 14px; max-width: 560px; }
+.ov-field { display: flex; flex-direction: column; gap: 6px; min-width: 0; }
+.ov-field label { font: 500 14px/20px var(--font-ov); color: var(--ink-muted); }
+.ov-opt { color: var(--ink-subtle); font-weight: 400; }
+.ov-field input,
+.ov-field select { width: 100%; height: var(--control-md); padding: 0 12px; border: 1px solid var(--input-border); border-radius: var(--radius-sm); background: var(--input-bg); color: var(--ink); font: 400 16px/1 var(--font-ov); transition: border-color 160ms var(--ease); }
+.ov-field select { appearance: none; -webkit-appearance: none; padding-right: 36px; text-overflow: ellipsis; background-image: linear-gradient(45deg, transparent 50%, var(--ink-muted) 50%), linear-gradient(135deg, var(--ink-muted) 50%, transparent 50%); background-position: calc(100% - 18px) 50%, calc(100% - 13px) 50%; background-size: 5px 5px; background-repeat: no-repeat; }
+.ov-field input:focus,
+.ov-field select:focus { outline: none; border-color: var(--petrol); box-shadow: 0 0 0 1px var(--petrol); }
+.ov-field [aria-invalid='true'] { border-color: var(--error); }
+.ov-err { font: 400 14px/20px var(--font-ov); color: var(--error); }
+.ov-hp { position: absolute; left: -10000px; width: 1px; height: 1px; overflow: hidden; }
+.ov-consent { display: flex; gap: 12px; align-items: flex-start; padding-top: 4px; }
+.ov-consent input { flex: none; width: 22px; height: 22px; margin: 1px 0 0; accent-color: var(--petrol-400); cursor: pointer; }
+.ov-consent label { font: 400 16px/24px var(--font-ov); cursor: pointer; }
+.ov-small { font: 400 14px/20px var(--font-ov); color: var(--ink-muted); }
+.ov-small a { color: var(--petrol); text-underline-offset: 3px; }
+.ov-status { font: 400 16px/24px var(--font-ov); color: var(--error); }
+.ov-done:focus { outline: none; }
+.ov-done p:first-child { font: 500 24px/32px var(--font-ov); max-width: 28ch; }
+.ov-done p + p { margin-top: 8px !important; color: var(--ink-muted); }
+.ov-soon { font: 500 18px/28px var(--font-ov); max-width: 36ch; padding: 16px 0; border-top: 1px solid var(--line-strong); border-bottom: 1px solid var(--line-strong); }
+
+.ov-controls { display: none; }
+
+/* Journey: JavaScript is on (the layout sets .js-ready before paint), so the steps become one stage */
+.js-ready .ov-j { height: 100svh; min-height: 560px; overflow: hidden; }
+.js-ready .ov-j .ov-bar { position: absolute; z-index: 4; top: 0; left: 0; right: 0; }
+.js-ready .ov-j .ov-stage { position: absolute; inset: 0; height: auto; min-height: 0; }
+.js-ready .ov-j .ov-stage::after { content: ''; position: absolute; inset: 0; pointer-events: none; background: linear-gradient(90deg, rgba(10, 13, 18, 0.92) 0%, rgba(10, 13, 18, 0.72) 34%, rgba(10, 13, 18, 0) 62%); }
+.js-ready .ov-j .ov-step {
+  position: absolute; z-index: 3; margin: 0; border: 0;
+  left: max(24px, calc((100% - 1200px) / 2 + 24px));
+  top: calc(var(--nav-h) + 76px); bottom: 104px;
+  width: min(540px, calc(100% - 48px));
+  padding: 0; display: flex; flex-direction: column; justify-content: center;
+  overflow-y: auto; overscroll-behavior: contain; scrollbar-width: thin;
+  visibility: hidden; opacity: 0; transform: translateY(10px);
+  transition: opacity 420ms var(--ease), transform 420ms var(--ease), visibility 0s linear 420ms;
+}
+.js-ready .ov-j .ov-step > * { flex: none; }
+.js-ready .ov-j[data-step='intro'] #intro,
+.js-ready .ov-j[data-step='home'] #home,
+.js-ready .ov-j[data-step='ads'] #ads,
+.js-ready .ov-j[data-step='ai'] #ai,
+.js-ready .ov-j[data-step='portal'] #portal,
+.js-ready .ov-j[data-step='moves'] #moves,
+.js-ready .ov-j[data-step='plans'] #plans,
+.js-ready .ov-j[data-step='yours'] #yours,
+.js-ready .ov-j[data-step='waitlist'] #waitlist { visibility: visible; }
+.js-ready .ov-j[data-settled='true'][data-step='intro'] #intro,
+.js-ready .ov-j[data-settled='true'][data-step='home'] #home,
+.js-ready .ov-j[data-settled='true'][data-step='ads'] #ads,
+.js-ready .ov-j[data-settled='true'][data-step='ai'] #ai,
+.js-ready .ov-j[data-settled='true'][data-step='portal'] #portal,
+.js-ready .ov-j[data-settled='true'][data-step='moves'] #moves,
+.js-ready .ov-j[data-settled='true'][data-step='plans'] #plans,
+.js-ready .ov-j[data-settled='true'][data-step='yours'] #yours,
+.js-ready .ov-j[data-settled='true'][data-step='waitlist'] #waitlist { opacity: 1; transform: none; transition: opacity 420ms var(--ease), transform 420ms var(--ease), visibility 0s; }
+.js-ready .ov-j .ov-step-waitlist { justify-content: flex-start; width: min(620px, calc(100% - 48px)); }
+.js-ready .ov-j[data-step='waitlist'] .ov-stage::after { background: linear-gradient(90deg, rgba(10, 13, 18, 0.95) 0%, rgba(10, 13, 18, 0.85) 46%, rgba(10, 13, 18, 0.1) 80%); }
+
+.js-ready .ov-j .ov-controls {
+  position: absolute; z-index: 4; bottom: 28px;
+  left: max(24px, calc((100% - 1200px) / 2 + 24px)); right: max(24px, calc((100% - 1200px) / 2 + 24px));
+  display: flex; align-items: center; gap: 16px;
+  transition: opacity 300ms var(--ease);
+}
+.js-ready .ov-j[data-step='intro'] .ov-controls { opacity: 0; visibility: hidden; }
+.ov-ctl { min-height: var(--control-lg); padding: 0 18px; border: 1px solid var(--line-strong); border-radius: var(--radius-sm); background: transparent; color: var(--ink); font: 500 16px/1 var(--font-ov); cursor: pointer; }
+.ov-ctl:disabled { opacity: 0.4; cursor: default; }
+.ov-progress { position: relative; flex: 1; height: 1px; background: var(--line-strong); max-width: 520px; }
+.ov-progress span { position: absolute; inset: -0.5px 0; background: var(--petrol); transform-origin: left; transition: transform 600ms var(--ease); }
+.ov-count { font: 500 14px/20px var(--font-ov); color: var(--ink-muted); font-variant-numeric: tabular-nums; min-width: 44px; }
+.ov-next { min-width: 132px; margin-left: auto; }
+
+/* Confirm and unsubscribe pages */
+.ov-token { min-height: 70vh; padding: 128px 0 80px; }
+.ov-token .ov-wrap { max-width: 640px; margin: 0 auto; padding: 0 24px; display: flex; flex-direction: column; align-items: flex-start; gap: 24px; }
+.ov-token h1 { font-size: 40px; line-height: 1.1; }
+.ov-token p { font: 400 18px/28px var(--font-ov); color: var(--ink-muted); }
+.ov-token [role='status'] { color: var(--ink); font-weight: 600; }
+
+@media (max-width: 1100px) {
+  .ov h1 { font-size: 60px; }
+  .ov h2 { font-size: 38px; }
+}
+@media (max-width: 760px) {
+  .ov-bar { padding: calc(var(--nav-h) + 12px) 16px 0; }
+  .ov-bar img { width: 104px; }
+  .ov-step { padding: 40px 16px; }
+  .ov h1 { font-size: 40px; line-height: 1.02; }
+  .ov h2 { font-size: 28px; line-height: 1.1; }
+  .ov-lede { font-size: 17px; line-height: 26px; margin-top: 14px !important; }
+  .ov-sub { font-size: 16px; line-height: 24px; margin-top: 10px !important; }
+  .ov-actions { margin-top: 20px; }
+  .ov-list li { padding: 6px 0; font-size: 15px; line-height: 22px; }
+  .ov-yours { grid-template-columns: minmax(0, 1fr); gap: 10px; }
+  .ov-yours ul { display: flex; flex-wrap: wrap; gap: 0 14px; }
+  .ov-yours li { border: 0; padding: 0; }
+  .ov-price { font-size: 24px; }
+  .ov-plans > div { padding: 8px 0; }
+  .ov-form .ov-btn { width: 100%; }
+
+  /* Phone journey: copy in the lower third over the scene, Next in thumb reach */
+  .js-ready .ov-j .ov-stage::after { background: linear-gradient(180deg, rgba(10, 13, 18, 0) 30%, rgba(10, 13, 18, 0.8) 52%, rgba(10, 13, 18, 0.96) 70%); }
+  .js-ready .ov-j .ov-step { left: 16px; right: 16px; width: auto; top: auto; bottom: 96px; max-height: calc(100% - var(--nav-h) - 60px - 96px - 120px); justify-content: flex-start; }
+  .js-ready .ov-j .ov-step-intro { max-height: calc(100% - var(--nav-h) - 60px - 40px); bottom: 32px; }
+  .js-ready .ov-j .ov-step-waitlist { top: calc(var(--nav-h) + 56px); max-height: none; width: auto; }
+  .js-ready .ov-j[data-step='waitlist'] .ov-stage::after { background: rgba(10, 13, 18, 0.9); }
+  .js-ready .ov-j .ov-actions .ov-btn { flex: 1 1 100%; }
+  .js-ready .ov-j .ov-controls { left: 16px; right: 16px; bottom: 20px; gap: 12px; flex-wrap: wrap; }
+  .js-ready .ov-j .ov-progress { order: -1; flex: 1 1 100%; max-width: none; }
+  .js-ready .ov-j .ov-count { display: none; }
+  .js-ready .ov-j .ov-ctl { padding: 0 16px; }
+  .js-ready .ov-j .ov-next { flex: 1; max-width: 220px; min-height: 56px; }
+  .js-ready .ov-j .ov-ctl { min-height: 56px; }
+  .js-ready .ov-j .ov-step { bottom: 100px; }
+  .js-ready .ov-j #home .ov-list { display: flex; flex-wrap: wrap; gap: 6px 16px; }
+  .js-ready .ov-j #home .ov-list li { border: 0; padding: 0; font-size: 0; line-height: 0; }
+  .js-ready .ov-j #home .ov-list b { font-size: 15px; line-height: 22px; font-weight: 500; }
+}
+@media (max-width: 760px) and (max-height: 700px) {
+  .js-ready .ov-j .ov-step { max-height: calc(100% - var(--nav-h) - 52px - 100px - 40px); }
+}
+@media (prefers-reduced-motion: reduce) {
+  .ov-sheen-word { animation: none; }
+  .js-ready .ov-j .ov-step,
+  .js-ready .ov-j .ov-canvas,
+  .js-ready .ov-j .ov-still,
+  .ov-still g,
+  .ov-progress span { transition: none !important; transform: none !important; }
+}

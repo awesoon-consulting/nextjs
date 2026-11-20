@@ -2853,5 +2853,255 @@
     "showcase": "TapBody · essayez la démo",
     "demoLabel": "Démo interactive de TapBody",
     "platforms": "Bientôt sur iPhone et Android"
+  },
+  "ownvane": {
+    "title": "Ownvane : votre propre plateforme pour les agents immobiliers titulaires d'un permis",
+    "description": "Une plateforme à votre nom pour les agents immobiliers titulaires d'un permis : site, CRM, IA et publicités sur vos propres comptes. Elle vous suit quand vous changez d'agence. Lancement au début de 2027 au Canada et aux États-Unis.",
+    "ogTitle": "Ownvane : votre entreprise, votre plateforme, votre nom",
+    "logoAlt": "Ownvane",
+    "hero": {
+      "titleA": "Votre entreprise. Votre plateforme.",
+      "titleB": "Votre nom.",
+      "lede": "Une plateforme pour les agents immobiliers titulaires d'un permis, à votre nom. Elle vous suit quand vous changez d'agence.",
+      "when": "Lancement au début de 2027 au Canada et aux États-Unis.",
+      "join": "Rejoindre la liste d'attente"
+    },
+    "get": {
+      "title": "Tout ce que vous gérez, à votre propre nom.",
+      "sub": "Votre propre domaine, ou votrenom.ownvane.com le jour même. Le nom de votre agence figure sur chaque page.",
+      "items": [
+        {
+          "title": "Site web et pages de prospects",
+          "text": "Demandes d'évaluation et pages de prospects intégrées."
+        },
+        {
+          "title": "CRM et ligne téléphonique",
+          "text": "Chaque appel, texto et formulaire dans un seul pipeline."
+        },
+        {
+          "title": "Portail client",
+          "text": "Propriétés enregistrées, visites et documents sur votre site."
+        },
+        {
+          "title": "Rédaction d'offres et signature électronique",
+          "text": "Rédigez sur les formulaires de votre marché, signez par lien."
+        },
+        {
+          "title": "Outils sociaux",
+          "text": "Planifiez vos publications une fois pour neuf réseaux."
+        },
+        {
+          "title": "Applications, thèmes et experts",
+          "text": "Ajoutez ce dont vous avez besoin sans changer de plateforme."
+        }
+      ]
+    },
+    "ai": {
+      "title": "L'IA s'occupe des tâches répétitives. Vous prenez les décisions.",
+      "items": [
+        "Elle crée votre site à partir de votre image de marque et de vos inscriptions.",
+        "Elle rédige chaque réponse, et c'est vous qui l'envoyez.",
+        "Elle répond aux appels, aux textos et au clavardage du site, et dit d'abord qu'elle est une IA.",
+        "Elle gère l'Ad Engine sur vos propres comptes publicitaires."
+      ],
+      "never": "Elle ne donne jamais de conseils sur les prix, le droit ou le financement hypothécaire. Ces questions vous reviennent."
+    },
+    "ads": {
+      "title": "Des publicités sur vos propres comptes.",
+      "sub": "Au lancement, l'Ad Engine diffuse des campagnes acheteurs et vendeurs sur Meta et Google, depuis vos propres profils. Vous approuvez chaque campagne.",
+      "feeLabel": "Frais de l'Ad Engine :",
+      "fee": "3 fois le coût de chaque clic, tout compris, au départ, puis en baisse, jamais sous le coût du clic plus 25 %.",
+      "noLead": "Rien n'est facturé parce qu'un prospect arrive."
+    },
+    "plans": {
+      "title": "Trois forfaits. Jamais au prospect.",
+      "per": "USD par mois",
+      "items": [
+        {
+          "name": "Starter",
+          "price": "199 $",
+          "text": "CRM avec IA, l'Ad Engine avec IA et un thème premium configuré par l'IA."
+        },
+        {
+          "name": "Pro",
+          "price": "499 $",
+          "text": "Toutes les applications et l'assistant IA, plus l'IDX et les données immobilières."
+        },
+        {
+          "name": "Team",
+          "price": "1 499 $ à 4 999 $",
+          "text": "Pour les équipes de trois à cinq agents."
+        }
+      ],
+      "terms": "Aucuns frais d'installation et un essai gratuit. Les frais de l'Ad Engine s'appliquent seulement quand vos publicités sont diffusées. Les applications, thèmes et experts des boutiques sont en sus."
+    },
+    "yours": {
+      "title": "Ce qui est à vous reste à vous.",
+      "sub": "Changez d'agence : votre site, votre domaine, votre marque, vos publicités et vos outils vous suivent. Vos propres contacts vous suivent dans la mesure permise par votre entente avec l'agence, et les transactions signées restent à l'agence.",
+      "cols": [
+        {
+          "title": "Vous possédez",
+          "items": [
+            "Votre domaine et votre site",
+            "Votre marque",
+            "Vos profils sociaux",
+            "Vos comptes publicitaires"
+          ]
+        },
+        {
+          "title": "Nous gérons",
+          "items": [
+            "Le logiciel et les thèmes",
+            "Vos publicités, dans vos propres comptes",
+            "La conformité intégrée à chaque thème"
+          ]
+        },
+        {
+          "title": "Nous ne faisons jamais",
+          "items": [
+            "Vendre vos prospects",
+            "Diffuser une publicité sans votre accord",
+            "Prendre une part de votre commission"
+          ]
+        }
+      ]
+    },
+    "waitlist": {
+      "title": "Obtenez votre invitation.",
+      "sub": "Ownvane sera lancé au début de 2027 au Canada et aux États-Unis. Rejoignez la liste d'attente et nous vous enverrons votre invitation par courriel avant le lancement."
+    },
+    "form": {
+      "email": "Courriel",
+      "placeholder": "vous@exemple.com",
+      "region": "Où vous détenez votre permis",
+      "regionPlaceholder": "Choisissez une province, un territoire ou un État",
+      "canada": "Canada",
+      "us": "États-Unis",
+      "firstName": "Prénom",
+      "optional": "(facultatif)",
+      "honeypot": "Laissez ce champ vide",
+      "consent": "Envoyez-moi par courriel mon invitation Ownvane et les nouvelles du lancement de la part d'Awesoon Technologies Inc. Je peux me désabonner en tout temps.",
+      "details": "Qui le demande, et comment nous utilisons votre courriel",
+      "submit": "Rejoindre la liste d'attente",
+      "sending": "Inscription",
+      "success": "Vérifiez vos courriels pour confirmer votre place.",
+      "note": "Nous envoyons un courriel de confirmation. Rien d'autre avant que vous confirmiez.",
+      "errorEmail": "Entrez un courriel comme nom@exemple.com.",
+      "errorRegion": "Choisissez où vous détenez votre permis.",
+      "errorFirstName": "Entrez seulement votre prénom, sans @, / ni < >.",
+      "errorConsent": "Cochez la case pour que nous puissions vous envoyer votre invitation.",
+      "errorBusy": "Trop d'essais. Attendez un peu et réessayez.",
+      "errorGeneric": "Nous n'avons pas pu vous inscrire pour le moment. Vérifiez votre connexion et réessayez.",
+      "soon": "La liste d'attente ouvre bientôt. Revenez dans quelques jours pour vous inscrire."
+    },
+    "privacy": {
+      "title": "Votre courriel et la liste d'attente Ownvane",
+      "items": [
+        "Envoyé par Awesoon Technologies Inc., qui possède et exploite Ownvane, {address}. Questions : {contact}.",
+        "Nous conservons votre courriel, l'endroit où vous détenez votre permis, votre prénom si vous le donnez, votre langue et le consentement que vous avez donné.",
+        "Il est stocké chez notre fournisseur de base de données (Supabase) et notre fournisseur de courriel (Resend) aux États-Unis.",
+        "Nous l'utilisons seulement pour votre invitation Ownvane et les nouvelles du lancement, et ne le vendons jamais. Vous confirmez d'abord, et chaque courriel contient un lien de désabonnement.",
+        "Pour consulter ou supprimer ce que nous conservons, écrivez à {contact}."
+      ],
+      "more": "Lire la politique de confidentialité complète d'Awesoon",
+      "owner": "Ownvane est la propriété d'Awesoon Technologies Inc., qui l'exploite."
+    },
+    "confirm": {
+      "title": "Confirmez votre courriel",
+      "lead": "Un seul geste et vous êtes sur la liste d'attente Ownvane.",
+      "button": "Confirmer mon courriel",
+      "done": "Vous êtes sur la liste d'attente Ownvane. Nous vous enverrons votre invitation avant le lancement.",
+      "invalid": "Ce lien n'est pas valide.",
+      "error": "Une erreur s'est produite. Veuillez réessayer."
+    },
+    "unsubscribe": {
+      "title": "Se désabonner",
+      "lead": "Arrêter tous les courriels Ownvane à cette adresse.",
+      "button": "Me désabonner",
+      "done": "Vous êtes désabonné. Nous ne vous écrirons plus.",
+      "invalid": "Ce lien n'est pas valide.",
+      "error": "Une erreur s'est produite. Veuillez réessayer."
+    },
+    "email": {
+      "subject": "Confirmez votre place sur la liste d'attente Ownvane",
+      "intro": "Merci de vous être inscrit à la liste d'attente Ownvane. Veuillez confirmer votre courriel ici :",
+      "ignore": "Si vous ne vous êtes pas inscrit, ignorez ce courriel et nous ne vous écrirons plus. Vous pouvez aussi vous désabonner ici :",
+      "footer": "Ownvane est la propriété d'Awesoon Technologies Inc., qui l'exploite, {address}. Questions : {contact}"
+    },
+    "regions": {
+      "CA-AB": "Alberta",
+      "CA-BC": "Colombie-Britannique",
+      "CA-MB": "Manitoba",
+      "CA-NB": "Nouveau-Brunswick",
+      "CA-NL": "Terre-Neuve-et-Labrador",
+      "CA-NS": "Nouvelle-Écosse",
+      "CA-ON": "Ontario",
+      "CA-PE": "Île-du-Prince-Édouard",
+      "CA-QC": "Québec",
+      "CA-SK": "Saskatchewan",
+      "CA-NT": "Territoires du Nord-Ouest",
+      "CA-NU": "Nunavut",
+      "CA-YT": "Yukon",
+      "US-AL": "Alabama",
+      "US-AK": "Alaska",
+      "US-AZ": "Arizona",
+      "US-AR": "Arkansas",
+      "US-CA": "Californie",
+      "US-CO": "Colorado",
+      "US-CT": "Connecticut",
+      "US-DE": "Delaware",
+      "US-DC": "District de Columbia",
+      "US-FL": "Floride",
+      "US-GA": "Géorgie",
+      "US-HI": "Hawaï",
+      "US-ID": "Idaho",
+      "US-IL": "Illinois",
+      "US-IN": "Indiana",
+      "US-IA": "Iowa",
+      "US-KS": "Kansas",
+      "US-KY": "Kentucky",
+      "US-LA": "Louisiane",
+      "US-ME": "Maine",
+      "US-MD": "Maryland",
+      "US-MA": "Massachusetts",
+      "US-MI": "Michigan",
+      "US-MN": "Minnesota",
+      "US-MS": "Mississippi",
+      "US-MO": "Missouri",
+      "US-MT": "Montana",
+      "US-NE": "Nebraska",
+      "US-NV": "Nevada",
+      "US-NH": "New Hampshire",
+      "US-NJ": "New Jersey",
+      "US-NM": "Nouveau-Mexique",
+      "US-NY": "New York",
+      "US-NC": "Caroline du Nord",
+      "US-ND": "Dakota du Nord",
+      "US-OH": "Ohio",
+      "US-OK": "Oklahoma",
+      "US-OR": "Oregon",
+      "US-PA": "Pennsylvanie",
+      "US-RI": "Rhode Island",
+      "US-SC": "Caroline du Sud",
+      "US-SD": "Dakota du Sud",
+      "US-TN": "Tennessee",
+      "US-TX": "Texas",
+      "US-UT": "Utah",
+      "US-VT": "Vermont",
+      "US-VA": "Virginie",
+      "US-WA": "Washington",
+      "US-WV": "Virginie-Occidentale",
+      "US-WI": "Wisconsin",
+      "US-WY": "Wyoming"
+    },
+    "journey": {
+      "label": "Ownvane, étape par étape",
+      "showMe": "Montrez-moi",
+      "skip": "Passer à la liste d'attente",
+      "next": "Suivant",
+      "back": "Retour",
+      "progress": "Étape {n} sur {total}",
+      "moves": "Elle vous suit quand vous changez d'agence."
+    }
   }
 }
