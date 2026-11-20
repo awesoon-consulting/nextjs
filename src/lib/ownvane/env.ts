@@ -27,14 +27,14 @@ function hasDatabase() {
   return Boolean(process.env.DATABASE_URL || process.env.POSTGRES_URL)
 }
 
-// OWNVANE_WAITLIST_ENABLED is set only after the migration is applied, so the form never opens onto missing functions.
+// The migration is applied on the live database (Nov 19, 2026), so the list is on unless OWNVANE_WAITLIST_ENABLED=0 switches it off.
 export function ownvaneWaitlistReady(): boolean {
   const restReady = Boolean(process.env.SUPABASE_URL && process.env.SUPABASE_SECRET_KEY)
-  return process.env.OWNVANE_WAITLIST_ENABLED === '1' && Boolean(process.env.RESEND_API_KEY) && (hasDatabase() || restReady)
+  return process.env.OWNVANE_WAITLIST_ENABLED !== '0' && Boolean(process.env.RESEND_API_KEY) && (hasDatabase() || restReady)
 }
 
 export function readOwnvaneEnv(): Env {
-  if (!ownvaneWaitlistReady()) throw new Error('Ownvane waitlist needs OWNVANE_WAITLIST_ENABLED=1, RESEND_API_KEY and a database connection.')
+  if (!ownvaneWaitlistReady()) throw new Error('Ownvane waitlist needs RESEND_API_KEY and a database connection.')
   return {
     supabaseUrl: process.env.SUPABASE_URL ?? '',
     supabaseKey: process.env.SUPABASE_SECRET_KEY ?? '',
