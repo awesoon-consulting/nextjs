@@ -2853,5 +2853,291 @@
     "showcase": "TapBody · prueba la demo",
     "demoLabel": "Demo interactiva de TapBody",
     "platforms": "Próximamente en iPhone y Android"
+  },
+  "ownvane": {
+    "title": "Ownvane: tu propia plataforma para agentes inmobiliarios con licencia",
+    "description": "Una plataforma a tu nombre para agentes inmobiliarios con licencia: sitio, CRM, IA y anuncios en tus propias cuentas. Se va contigo cuando cambias de agencia. Lanzamiento a principios de 2027 en Canadá y Estados Unidos.",
+    "ogTitle": "Ownvane: tu negocio, tu plataforma, tu nombre",
+    "logoAlt": "Ownvane",
+    "byline": "De Awesoon Technologies",
+    "nav": {
+      "label": "Secciones de Ownvane",
+      "get": "Lo que obtienes",
+      "ai": "IA",
+      "plans": "Planes",
+      "join": "Unirme a la lista de espera"
+    },
+    "hero": {
+      "titleA": "Tu negocio. Tu plataforma.",
+      "titleB": "Tu nombre.",
+      "lede": "Una plataforma para agentes inmobiliarios con licencia, a tu propio nombre. Se va contigo cuando cambias de agencia.",
+      "when": "Lanzamiento a principios de 2027 en Canadá y Estados Unidos.",
+      "join": "Unirme a la lista de espera",
+      "figureLabel": "Tu plataforma en tunombre.com: nuevos contactos y respuestas redactadas por IA en tu CRM",
+      "url": "tunombre.com",
+      "rows": [
+        {
+          "title": "Nuevo contacto vendedor",
+          "text": "Solicitud de valoración desde tu sitio",
+          "tag": "Ahora"
+        },
+        {
+          "title": "Respuesta redactada para ti",
+          "text": "Lista para que la leas y la envíes",
+          "tag": "Lista"
+        },
+        {
+          "title": "Visita reservada",
+          "text": "En tu calendario, sábado 11:00",
+          "tag": "Hoy"
+        },
+        {
+          "title": "Campaña aprobada",
+          "text": "Activa en tu propia cuenta de anuncios",
+          "tag": "Activa"
+        }
+      ]
+    },
+    "get": {
+      "title": "Todo lo que gestionas, a tu propio nombre.",
+      "sub": "Tu propio dominio, o tunombre.ownvane.com el mismo día. El nombre de tu agencia aparece en cada página.",
+      "items": [
+        {
+          "title": "Sitio web y páginas de contactos",
+          "text": "Solicitudes de valoración y páginas de contactos incluidas."
+        },
+        {
+          "title": "CRM y línea telefónica",
+          "text": "Cada llamada, mensaje y formulario en un solo flujo."
+        },
+        {
+          "title": "Portal de clientes",
+          "text": "Casas guardadas, visitas y documentos en tu sitio."
+        },
+        {
+          "title": "Redactor de ofertas y firma electrónica",
+          "text": "Redacta en los formularios de tu mercado y firma con un enlace."
+        },
+        {
+          "title": "Herramientas sociales",
+          "text": "Programa tus publicaciones una vez para nueve redes."
+        },
+        {
+          "title": "Apps, temas y expertos",
+          "text": "Añade lo que necesites sin cambiar de plataforma."
+        }
+      ]
+    },
+    "ai": {
+      "title": "La IA hace el trabajo pesado. Tú tomas las decisiones.",
+      "items": [
+        "Crea tu sitio a partir de tu marca y tus propiedades.",
+        "Redacta cada respuesta, y tú la envías.",
+        "Contesta llamadas, mensajes y el chat del sitio, y primero dice que es una IA.",
+        "Gestiona el Ad Engine en tus propias cuentas de anuncios."
+      ],
+      "never": "Nunca da consejos sobre precios, temas legales o hipotecas. Esas preguntas llegan a ti.",
+      "figureLabel": "Chat del sitio donde el asistente dice que es una IA y pasa una pregunta de precio al agente",
+      "url": "tunombre.com, chat del sitio",
+      "who": "Asistente",
+      "msg1": "Hola, soy un asistente de IA de este agente. Puedo reservar una hora o tomar un mensaje.",
+      "msg2": "¿Cuánto debería ofrecer por la casa de la calle Elm?",
+      "msg3": "Esa es una pregunta para tu agente. Ya se la envié, y te llamará.",
+      "handoff": "Te llega a ti, con todo el chat"
+    },
+    "ads": {
+      "title": "Anuncios en tus propias cuentas.",
+      "sub": "En el lanzamiento, el Ad Engine ejecuta campañas para compradores y vendedores en Meta y Google, desde tus propios perfiles. Tú apruebas cada campaña.",
+      "feeLabel": "Tarifa del Ad Engine:",
+      "fee": "3 veces el costo de cada clic, todo incluido, al principio, y luego baja, nunca por debajo del costo del clic más un 25 %.",
+      "noLead": "No se cobra nada porque llegue un contacto.",
+      "flowLabel": "Tu cuenta de anuncios, el Ad Engine, tu CRM",
+      "flow": [
+        "Tu cuenta de anuncios",
+        "Ad Engine",
+        "Tu CRM"
+      ]
+    },
+    "plans": {
+      "title": "Tres planes. Nunca por contacto.",
+      "per": "USD al mes",
+      "items": [
+        {
+          "name": "Starter",
+          "price": "$199",
+          "text": "CRM con IA, el Ad Engine con IA y un tema premium configurado con IA."
+        },
+        {
+          "name": "Pro",
+          "price": "$499",
+          "text": "Todas las apps y el asistente de IA, más IDX y datos de propiedades."
+        },
+        {
+          "name": "Team",
+          "price": "$1,499 a $4,999",
+          "text": "Para equipos de tres a cinco agentes."
+        }
+      ],
+      "terms": "Sin cuota de alta y con prueba gratuita. La tarifa del Ad Engine solo se aplica cuando tus anuncios están activos. Las apps, temas y expertos de las tiendas se pagan aparte."
+    },
+    "yours": {
+      "title": "Lo tuyo sigue siendo tuyo.",
+      "sub": "Si cambias de agencia, tu sitio, dominio, marca, anuncios y herramientas se van contigo. Tus propios contactos se van contigo en la medida en que lo permita tu acuerdo con la agencia, y las operaciones firmadas se quedan en la agencia.",
+      "cols": [
+        {
+          "title": "Es tuyo",
+          "items": [
+            "Tu dominio y tu sitio",
+            "Tu marca",
+            "Tus perfiles sociales",
+            "Tus cuentas de anuncios"
+          ]
+        },
+        {
+          "title": "Nosotros gestionamos",
+          "items": [
+            "El software y los temas",
+            "Tus anuncios, en tus propias cuentas",
+            "El cumplimiento integrado en cada tema"
+          ]
+        },
+        {
+          "title": "Nunca",
+          "items": [
+            "Vendemos tus contactos",
+            "Publicamos un anuncio sin tu aprobación",
+            "Nos quedamos con parte de tu comisión"
+          ]
+        }
+      ]
+    },
+    "waitlist": {
+      "title": "Consigue tu invitación.",
+      "sub": "Ownvane se lanza a principios de 2027 en Canadá y Estados Unidos. Únete a la lista de espera y te enviaremos tu invitación por correo antes del lanzamiento."
+    },
+    "form": {
+      "email": "Correo electrónico",
+      "placeholder": "tu@ejemplo.com",
+      "region": "Dónde tienes tu licencia",
+      "regionPlaceholder": "Elige una provincia, territorio o estado",
+      "canada": "Canadá",
+      "us": "Estados Unidos",
+      "firstName": "Nombre",
+      "optional": "(opcional)",
+      "honeypot": "Deja este campo vacío",
+      "consent": "Envíenme por correo mi invitación a Ownvane y novedades del lanzamiento de parte de Awesoon Technologies Inc. Puedo darme de baja en cualquier momento.",
+      "details": "Quién lo pide y cómo usamos tu correo",
+      "submit": "Unirme a la lista de espera",
+      "sending": "Uniéndote",
+      "success": "Revisa tu correo para confirmar tu lugar.",
+      "note": "Enviamos un correo para confirmar. Nada más hasta que confirmes.",
+      "errorEmail": "Escribe un correo como nombre@ejemplo.com.",
+      "errorRegion": "Elige dónde tienes tu licencia.",
+      "errorFirstName": "Escribe solo tu nombre, sin @, / ni < >.",
+      "errorConsent": "Marca la casilla para que podamos enviarte tu invitación.",
+      "errorBusy": "Demasiados intentos. Espera un poco y vuelve a intentarlo.",
+      "errorGeneric": "No pudimos añadirte ahora. Revisa tu conexión y vuelve a intentarlo.",
+      "soon": "La lista de espera abre pronto. Vuelve en unos días para unirte."
+    },
+    "privacy": {
+      "title": "Tu correo y la lista de espera de Ownvane",
+      "items": [
+        "Enviado por Awesoon Technologies Inc., propietaria y operadora de Ownvane, {address}. Preguntas: {contact}.",
+        "Guardamos tu correo, dónde tienes tu licencia, tu nombre si lo das, tu idioma y el consentimiento que diste.",
+        "Se almacena con nuestro proveedor de base de datos (Supabase) y nuestro proveedor de correo (Resend) en Estados Unidos.",
+        "Solo lo usamos para tu invitación a Ownvane y novedades del lanzamiento, y nunca lo vendemos. Primero confirmas, y cada correo tiene un enlace para darte de baja.",
+        "Para ver o borrar lo que guardamos, escribe a {contact}."
+      ],
+      "more": "Lee la política de privacidad completa de Awesoon",
+      "owner": "Ownvane es propiedad de Awesoon Technologies Inc., que lo opera."
+    },
+    "confirm": {
+      "title": "Confirma tu correo",
+      "lead": "Un toque y estarás en la lista de espera de Ownvane.",
+      "button": "Confirmar mi correo",
+      "done": "Estás en la lista de espera de Ownvane. Te enviaremos tu invitación antes del lanzamiento.",
+      "invalid": "Este enlace no es válido.",
+      "error": "Algo salió mal. Inténtalo de nuevo."
+    },
+    "unsubscribe": {
+      "title": "Darse de baja",
+      "lead": "Dejar de recibir todos los correos de Ownvane en esta dirección.",
+      "button": "Darme de baja",
+      "done": "Te has dado de baja. No volveremos a escribirte.",
+      "invalid": "Este enlace no es válido.",
+      "error": "Algo salió mal. Inténtalo de nuevo."
+    },
+    "email": {
+      "subject": "Confirma tu lugar en la lista de espera de Ownvane",
+      "intro": "Gracias por unirte a la lista de espera de Ownvane. Confirma tu correo aquí:",
+      "ignore": "Si no te registraste, puedes ignorar este correo y no volveremos a escribirte. También puedes darte de baja aquí:",
+      "footer": "Ownvane es propiedad de Awesoon Technologies Inc., que lo opera, {address}. Preguntas: {contact}"
+    },
+    "regions": {
+      "CA-AB": "Alberta",
+      "CA-BC": "Columbia Británica",
+      "CA-MB": "Manitoba",
+      "CA-NB": "Nuevo Brunswick",
+      "CA-NL": "Terranova y Labrador",
+      "CA-NS": "Nueva Escocia",
+      "CA-ON": "Ontario",
+      "CA-PE": "Isla del Príncipe Eduardo",
+      "CA-QC": "Quebec",
+      "CA-SK": "Saskatchewan",
+      "CA-NT": "Territorios del Noroeste",
+      "CA-NU": "Nunavut",
+      "CA-YT": "Yukón",
+      "US-AL": "Alabama",
+      "US-AK": "Alaska",
+      "US-AZ": "Arizona",
+      "US-AR": "Arkansas",
+      "US-CA": "California",
+      "US-CO": "Colorado",
+      "US-CT": "Connecticut",
+      "US-DE": "Delaware",
+      "US-DC": "Distrito de Columbia",
+      "US-FL": "Florida",
+      "US-GA": "Georgia",
+      "US-HI": "Hawái",
+      "US-ID": "Idaho",
+      "US-IL": "Illinois",
+      "US-IN": "Indiana",
+      "US-IA": "Iowa",
+      "US-KS": "Kansas",
+      "US-KY": "Kentucky",
+      "US-LA": "Luisiana",
+      "US-ME": "Maine",
+      "US-MD": "Maryland",
+      "US-MA": "Massachusetts",
+      "US-MI": "Míchigan",
+      "US-MN": "Minnesota",
+      "US-MS": "Misisipi",
+      "US-MO": "Misuri",
+      "US-MT": "Montana",
+      "US-NE": "Nebraska",
+      "US-NV": "Nevada",
+      "US-NH": "Nuevo Hampshire",
+      "US-NJ": "Nueva Jersey",
+      "US-NM": "Nuevo México",
+      "US-NY": "Nueva York",
+      "US-NC": "Carolina del Norte",
+      "US-ND": "Dakota del Norte",
+      "US-OH": "Ohio",
+      "US-OK": "Oklahoma",
+      "US-OR": "Oregón",
+      "US-PA": "Pensilvania",
+      "US-RI": "Rhode Island",
+      "US-SC": "Carolina del Sur",
+      "US-SD": "Dakota del Sur",
+      "US-TN": "Tennessee",
+      "US-TX": "Texas",
+      "US-UT": "Utah",
+      "US-VT": "Vermont",
+      "US-VA": "Virginia",
+      "US-WA": "Washington",
+      "US-WV": "Virginia Occidental",
+      "US-WI": "Wisconsin",
+      "US-WY": "Wyoming"
+    }
   }
 }
