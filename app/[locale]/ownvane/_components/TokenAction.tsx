@@ -32,7 +32,7 @@ export default function TokenAction({
 
   if (message) return <p role="status">{message}</p>
   return (
-    <button type="button" onClick={run} disabled={busy || !token} className="ov-btn ov-btn-sheen">
+    <button type="button" onClick={run} disabled={busy || !token} className="ov-btn">
       {labels.button}
     </button>
   )

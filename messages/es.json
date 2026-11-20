@@ -2859,44 +2859,12 @@
     "description": "Una plataforma a tu nombre para agentes inmobiliarios con licencia: sitio, CRM, IA y anuncios en tus propias cuentas. Se va contigo cuando cambias de agencia. Lanzamiento a principios de 2027 en Canadá y Estados Unidos.",
     "ogTitle": "Ownvane: tu negocio, tu plataforma, tu nombre",
     "logoAlt": "Ownvane",
-    "byline": "De Awesoon Technologies",
-    "nav": {
-      "label": "Secciones de Ownvane",
-      "get": "Lo que obtienes",
-      "ai": "IA",
-      "plans": "Planes",
-      "join": "Unirme a la lista de espera"
-    },
     "hero": {
       "titleA": "Tu negocio. Tu plataforma.",
       "titleB": "Tu nombre.",
       "lede": "Una plataforma para agentes inmobiliarios con licencia, a tu propio nombre. Se va contigo cuando cambias de agencia.",
       "when": "Lanzamiento a principios de 2027 en Canadá y Estados Unidos.",
-      "join": "Unirme a la lista de espera",
-      "figureLabel": "Tu plataforma en tunombre.com: nuevos contactos y respuestas redactadas por IA en tu CRM",
-      "url": "tunombre.com",
-      "rows": [
-        {
-          "title": "Nuevo contacto vendedor",
-          "text": "Solicitud de valoración desde tu sitio",
-          "tag": "Ahora"
-        },
-        {
-          "title": "Respuesta redactada para ti",
-          "text": "Lista para que la leas y la envíes",
-          "tag": "Lista"
-        },
-        {
-          "title": "Visita reservada",
-          "text": "En tu calendario, sábado 11:00",
-          "tag": "Hoy"
-        },
-        {
-          "title": "Campaña aprobada",
-          "text": "Activa en tu propia cuenta de anuncios",
-          "tag": "Activa"
-        }
-      ]
+      "join": "Unirme a la lista de espera"
     },
     "get": {
       "title": "Todo lo que gestionas, a tu propio nombre.",
@@ -2936,27 +2904,14 @@
         "Contesta llamadas, mensajes y el chat del sitio, y primero dice que es una IA.",
         "Gestiona el Ad Engine en tus propias cuentas de anuncios."
       ],
-      "never": "Nunca da consejos sobre precios, temas legales o hipotecas. Esas preguntas llegan a ti.",
-      "figureLabel": "Chat del sitio donde el asistente dice que es una IA y pasa una pregunta de precio al agente",
-      "url": "tunombre.com, chat del sitio",
-      "who": "Asistente",
-      "msg1": "Hola, soy un asistente de IA de este agente. Puedo reservar una hora o tomar un mensaje.",
-      "msg2": "¿Cuánto debería ofrecer por la casa de la calle Elm?",
-      "msg3": "Esa es una pregunta para tu agente. Ya se la envié, y te llamará.",
-      "handoff": "Te llega a ti, con todo el chat"
+      "never": "Nunca da consejos sobre precios, temas legales o hipotecas. Esas preguntas llegan a ti."
     },
     "ads": {
       "title": "Anuncios en tus propias cuentas.",
       "sub": "En el lanzamiento, el Ad Engine ejecuta campañas para compradores y vendedores en Meta y Google, desde tus propios perfiles. Tú apruebas cada campaña.",
       "feeLabel": "Tarifa del Ad Engine:",
       "fee": "3 veces el costo de cada clic, todo incluido, al principio, y luego baja, nunca por debajo del costo del clic más un 25 %.",
-      "noLead": "No se cobra nada porque llegue un contacto.",
-      "flowLabel": "Tu cuenta de anuncios, el Ad Engine, tu CRM",
-      "flow": [
-        "Tu cuenta de anuncios",
-        "Ad Engine",
-        "Tu CRM"
-      ]
+      "noLead": "No se cobra nada porque llegue un contacto."
     },
     "plans": {
       "title": "Tres planes. Nunca por contacto.",
@@ -3138,6 +3093,15 @@
       "US-WV": "Virginia Occidental",
       "US-WI": "Wisconsin",
       "US-WY": "Wyoming"
+    },
+    "journey": {
+      "label": "Ownvane, paso a paso",
+      "showMe": "Muéstrame",
+      "skip": "Ir a la lista de espera",
+      "next": "Siguiente",
+      "back": "Atrás",
+      "progress": "Paso {n} de {total}",
+      "moves": "Se va contigo cuando cambias de agencia."
     }
   }
 }

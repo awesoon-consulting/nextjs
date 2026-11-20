@@ -207,7 +207,7 @@ export default function WaitlistForm({
         <a href="#waitlist-privacy">{labels.details}</a>
       </p>
       <div>
-        <button type="submit" className="ov-btn ov-btn-sheen" disabled={status === 'sending'}>
+        <button type="submit" className="ov-btn" disabled={status === 'sending'}>
           {status === 'sending' ? labels.sending : labels.submit}
         </button>
       </div>

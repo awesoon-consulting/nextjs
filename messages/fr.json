@@ -2859,44 +2859,12 @@
     "description": "Une plateforme à votre nom pour les agents immobiliers titulaires d'un permis : site, CRM, IA et publicités sur vos propres comptes. Elle vous suit quand vous changez d'agence. Lancement au début de 2027 au Canada et aux États-Unis.",
     "ogTitle": "Ownvane : votre entreprise, votre plateforme, votre nom",
     "logoAlt": "Ownvane",
-    "byline": "Par Awesoon Technologies",
-    "nav": {
-      "label": "Sections d'Ownvane",
-      "get": "Ce que vous obtenez",
-      "ai": "IA",
-      "plans": "Forfaits",
-      "join": "Rejoindre la liste d'attente"
-    },
     "hero": {
       "titleA": "Votre entreprise. Votre plateforme.",
       "titleB": "Votre nom.",
       "lede": "Une plateforme pour les agents immobiliers titulaires d'un permis, à votre nom. Elle vous suit quand vous changez d'agence.",
       "when": "Lancement au début de 2027 au Canada et aux États-Unis.",
-      "join": "Rejoindre la liste d'attente",
-      "figureLabel": "Votre plateforme sur votrenom.com : nouveaux prospects et réponses rédigées par l'IA dans votre CRM",
-      "url": "votrenom.com",
-      "rows": [
-        {
-          "title": "Nouveau prospect vendeur",
-          "text": "Demande d'évaluation depuis votre site",
-          "tag": "Maintenant"
-        },
-        {
-          "title": "Réponse rédigée pour vous",
-          "text": "Prête à relire et à envoyer",
-          "tag": "Prête"
-        },
-        {
-          "title": "Visite réservée",
-          "text": "Dans votre agenda, samedi 11 h",
-          "tag": "Aujourd'hui"
-        },
-        {
-          "title": "Campagne approuvée",
-          "text": "Diffusée sur votre propre compte publicitaire",
-          "tag": "En ligne"
-        }
-      ]
+      "join": "Rejoindre la liste d'attente"
     },
     "get": {
       "title": "Tout ce que vous gérez, à votre propre nom.",
@@ -2936,27 +2904,14 @@
         "Elle répond aux appels, aux textos et au clavardage du site, et dit d'abord qu'elle est une IA.",
         "Elle gère l'Ad Engine sur vos propres comptes publicitaires."
       ],
-      "never": "Elle ne donne jamais de conseils sur les prix, le droit ou le financement hypothécaire. Ces questions vous reviennent.",
-      "figureLabel": "Clavardage du site où l'assistant dit qu'il est une IA et transmet une question de prix à l'agent",
-      "url": "votrenom.com, clavardage du site",
-      "who": "Assistant",
-      "msg1": "Bonjour, je suis un assistant IA pour cet agent. Je peux réserver un moment ou prendre un message.",
-      "msg2": "Combien devrais-je offrir pour la maison de la rue Elm?",
-      "msg3": "C'est une question pour votre agent. Je la lui ai transmise, et il vous rappellera.",
-      "handoff": "Transmis à vous, avec toute la conversation"
+      "never": "Elle ne donne jamais de conseils sur les prix, le droit ou le financement hypothécaire. Ces questions vous reviennent."
     },
     "ads": {
       "title": "Des publicités sur vos propres comptes.",
       "sub": "Au lancement, l'Ad Engine diffuse des campagnes acheteurs et vendeurs sur Meta et Google, depuis vos propres profils. Vous approuvez chaque campagne.",
       "feeLabel": "Frais de l'Ad Engine :",
       "fee": "3 fois le coût de chaque clic, tout compris, au départ, puis en baisse, jamais sous le coût du clic plus 25 %.",
-      "noLead": "Rien n'est facturé parce qu'un prospect arrive.",
-      "flowLabel": "Votre compte publicitaire, l'Ad Engine, votre CRM",
-      "flow": [
-        "Votre compte publicitaire",
-        "Ad Engine",
-        "Votre CRM"
-      ]
+      "noLead": "Rien n'est facturé parce qu'un prospect arrive."
     },
     "plans": {
       "title": "Trois forfaits. Jamais au prospect.",
@@ -3138,6 +3093,15 @@
       "US-WV": "Virginie-Occidentale",
       "US-WI": "Wisconsin",
       "US-WY": "Wyoming"
+    },
+    "journey": {
+      "label": "Ownvane, étape par étape",
+      "showMe": "Montrez-moi",
+      "skip": "Passer à la liste d'attente",
+      "next": "Suivant",
+      "back": "Retour",
+      "progress": "Étape {n} sur {total}",
+      "moves": "Elle vous suit quand vous changez d'agence."
     }
   }
 }

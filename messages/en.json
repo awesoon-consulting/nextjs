@@ -2858,44 +2858,12 @@
     "description": "One platform in your name for licensed real estate agents: site, CRM, AI and ads on your own accounts. It moves with you when you change brokerages. Launching in early 2027 in Canada and the US.",
     "ogTitle": "Ownvane: your business, your platform, your name",
     "logoAlt": "Ownvane",
-    "byline": "From Awesoon Technologies",
-    "nav": {
-      "label": "Ownvane sections",
-      "get": "What you get",
-      "ai": "AI",
-      "plans": "Plans",
-      "join": "Join the waitlist"
-    },
     "hero": {
       "titleA": "Your business. Your platform.",
       "titleB": "Your name.",
       "lede": "One platform for licensed real estate agents, in your own name. It moves with you when you change brokerages.",
       "when": "Launching in early 2027 in Canada and the US.",
-      "join": "Join the waitlist",
-      "figureLabel": "Your platform at yourname.com: new leads and AI drafted replies in your CRM",
-      "url": "yourname.com",
-      "rows": [
-        {
-          "title": "New seller lead",
-          "text": "Home value request from your site",
-          "tag": "Now"
-        },
-        {
-          "title": "Reply drafted for you",
-          "text": "Ready for you to read and send",
-          "tag": "Ready"
-        },
-        {
-          "title": "Showing booked",
-          "text": "On your calendar, Saturday 11:00",
-          "tag": "Today"
-        },
-        {
-          "title": "Ad campaign approved",
-          "text": "Running on your own ad account",
-          "tag": "Live"
-        }
-      ]
+      "join": "Join the waitlist"
     },
     "get": {
       "title": "Everything you run, under your own name.",
@@ -2935,27 +2903,14 @@
         "It answers calls, texts and site chat, and says it is AI first.",
         "It runs the Ad Engine on your own ad accounts."
       ],
-      "never": "It never gives price, legal or mortgage advice. Those questions come to you.",
-      "figureLabel": "Site chat where the assistant says it is AI and hands a price question to the agent",
-      "url": "yourname.com, site chat",
-      "who": "Assistant",
-      "msg1": "Hi, I'm an AI assistant for this agent. I can book a time or take a message.",
-      "msg2": "What should I offer on the house on Elm Street?",
-      "msg3": "That is a question for your agent. I've sent it to them, and they will call you back.",
-      "handoff": "Handed to you, with the full chat"
+      "never": "It never gives price, legal or mortgage advice. Those questions come to you."
     },
     "ads": {
       "title": "Ads on your own accounts.",
       "sub": "The Ad Engine runs buyer and seller campaigns on Meta and Google at launch, from your own profiles. You approve every campaign.",
       "feeLabel": "Ad Engine fee:",
       "fee": "3x each click's cost, all in, at the start, falling to no less than the click's cost plus 25%.",
-      "noLead": "Nothing is charged because a lead arrives.",
-      "flowLabel": "Your ad account, the Ad Engine, your CRM",
-      "flow": [
-        "Your ad account",
-        "Ad Engine",
-        "Your CRM"
-      ]
+      "noLead": "Nothing is charged because a lead arrives."
     },
     "plans": {
       "title": "Three plans. Never per lead.",
@@ -3137,6 +3092,15 @@
       "US-WV": "West Virginia",
       "US-WI": "Wisconsin",
       "US-WY": "Wyoming"
+    },
+    "journey": {
+      "label": "Ownvane, step by step",
+      "showMe": "Show me",
+      "skip": "Skip to waitlist",
+      "next": "Next",
+      "back": "Back",
+      "progress": "Step {n} of {total}",
+      "moves": "It moves with you when you change brokerages."
     }
   }
 }
