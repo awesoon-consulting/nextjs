@@ -24,6 +24,13 @@ const nextConfig: NextConfig = {
   async redirects() {
     return solutionRedirects()
   },
+  // The Tower Draft web taster is a static Expo export in public/play/tower-draft, served without a locale.
+  async rewrites() {
+    return [
+      { source: '/play/tower-draft', destination: '/play/tower-draft/index.html' },
+      { source: '/play/tower-draft/', destination: '/play/tower-draft/index.html' },
+    ]
+  },
   async headers() {
     return [
       {
@@ -43,6 +50,15 @@ const nextConfig: NextConfig = {
         // The TapBody demo is framed by the TapBody page on this same site.
         source: '/images/tapbody/demo/:path*',
         headers: [{ key: 'X-Frame-Options', value: 'SAMEORIGIN' }],
+      },
+      {
+        // The Tower Draft page frames the taster from this same site.
+        source: '/play/tower-draft/:path*',
+        headers: [{ key: 'X-Frame-Options', value: 'SAMEORIGIN' }],
+      },
+      {
+        source: '/play/tower-draft/_expo/:path*',
+        headers: [{ key: 'Cache-Control', value: 'public, max-age=31536000, immutable' }],
       },
     ]
   },

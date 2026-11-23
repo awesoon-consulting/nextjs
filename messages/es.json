@@ -3103,5 +3103,65 @@
       "progress": "Paso {n} de {total}",
       "moves": "Se va contigo cuando cambias de agencia."
     }
+  },
+  "towerDraft": {
+    "metaTitle": "Tower Draft, un juego de construcción para iPhone y Android",
+    "metaDescription": "Dibuja casas, torres y puentes con el pulgar y luego pruébalos. Las construcciones fuertes ganan estrellas. Las débiles se caen, y lo intentas de nuevo. Funciona sin conexión, sin registro.",
+    "eyebrow": "Un juego de construcción para iPhone y Android",
+    "tagline": "Dibújalo. Pruébalo. Haz crecer un pueblo.",
+    "lead": "Dibuja casas, torres y puentes con el pulgar y luego pruébalos. Las construcciones fuertes ganan estrellas. Las débiles se caen, y lo intentas de nuevo.",
+    "play": "Jugar en el navegador",
+    "playNote": "Los primeros trabajos, gratis en tu navegador. Sin registro.",
+    "facts": [
+      "Funciona sin conexión",
+      "Sin registro",
+      "Descarga gratuita"
+    ],
+    "videoLabel": "Tower Draft en juego: un puente se rompe, se arregla y aguanta un tren, luego crecen calles y un pueblo.",
+    "pause": "Pausar el video",
+    "resume": "Reproducir el video",
+    "stepsTitle": "Cómo se juega",
+    "steps": [
+      {
+        "title": "Dibuja y prueba",
+        "body": "Traza cada viga punto a punto y toca Test. Las construcciones débiles se caen, y lo intentas de nuevo."
+      },
+      {
+        "title": "Traza calles",
+        "body": "Dibuja calles con un dedo. La gente se muda a las casas de al lado."
+      },
+      {
+        "title": "Haz crecer el pueblo",
+        "body": "Casas, torres y puentes llenan tu pueblo, un trabajo a la vez."
+      },
+      {
+        "title": "Mira lo que sigue",
+        "body": "Tu camino muestra el próximo trabajo y para quién es."
+      }
+    ],
+    "shots": [
+      "Un puente con un poste débil se dobla y cae al río.",
+      "Una calle trazada con un dedo entre nuevos terrenos.",
+      "Un pueblo de casas y torres junto a un río.",
+      "El camino de los próximos trabajos, de torres a tejados."
+    ],
+    "tryTitle": "Prueba los primeros trabajos",
+    "tryBody": "Construye, prueba y mira tu pueblo aquí mismo. Tu pueblo se queda solo en este navegador. El juego completo está en el teléfono.",
+    "tryButton": "Empezar a jugar",
+    "tryFull": "Abrir en pantalla completa",
+    "frameTitle": "Tower Draft, jugable en el navegador",
+    "getTitle": "Consigue Tower Draft",
+    "getBody": "Descarga gratuita en iPhone y Android.",
+    "appStore": "App Store",
+    "googlePlay": "Google Play",
+    "coming": "Llega el 30 de noviembre",
+    "appStoreBadge": "Descarga Tower Draft en la App Store",
+    "googlePlayBadge": "Consigue Tower Draft en Google Play",
+    "privacy": "Privacidad",
+    "terms": "Términos",
+    "support": "Ayuda",
+    "publisher": "Hecho por Awesoon Technologies Inc. en Columbia Británica, Canadá.",
+    "storesLine": "En la App Store y Google Play, el 30 de noviembre.",
+    "heroArt": "Un pueblo de Tower Draft: casas y torres junto a un río, con calles y árboles."
   }
 }
