@@ -914,19 +914,21 @@
     "q1": "Mi progreso desapareció.",
     "a1": "El progreso se guarda solo en el dispositivo. Borrar un juego, o configurar un teléfono nuevo sin restaurar una copia de seguridad, lo elimina.",
     "q2": "¿Los juegos necesitan conexión a internet?",
-    "a2": "No. Los juegos se juegan sin conexión, de principio a fin. Solo los anuncios necesitan conexión.",
+    "a2": "No. Los juegos se juegan sin conexión, de principio a fin.",
     "q3": "¿Hace falta una cuenta?",
-    "a3": "No. No hay inicio de sesión y nosotros no subimos nada tuyo. El software publicitario de Google recopila datos de anuncios, como explica la política de privacidad.",
+    "a3": "No. No hay inicio de sesión y nosotros no subimos nada tuyo.",
     "q4": "¿Cómo reinicio un juego?",
     "a4": "Varios juegos tienen un reinicio en los ajustes. Desinstalar y volver a instalar lo borra todo.",
     "q5": "¿Los juegos muestran publicidad?",
-    "a5": "Sí. Cada juego contiene anuncios, que sirve Google AdMob. La política de privacidad explica qué se recopila y cómo cambiar tus decisiones.",
+    "a5": "Las versiones actuales no muestran publicidad. Si una versión futura la muestra, la política de privacidad se actualiza antes de publicar esa versión.",
     "contactH": "Contacto",
     "contactB": "Preguntas, errores o un juego que no arranca:",
     "privacyH": "Privacidad",
     "privacyLink": "Leer la política de privacidad de estos juegos",
     "termsH": "Condiciones",
-    "termsLink": "Leer las condiciones de uso de estos juegos"
+    "termsLink": "Leer las condiciones de uso de estos juegos",
+    "towerDraftNote": "¿Juegas a Tower Draft? Tiene su propia página de ayuda, en inglés.",
+    "towerDraftLink": "Ir a la ayuda de Tower Draft"
   },
   "games": {
     "title": "Juegos de Awesoon",
@@ -956,13 +958,13 @@
   },
   "gamesTerms": {
     "title": "Condiciones de uso, juegos de Awesoon",
-    "updated": "Última actualización: 10 de noviembre de 2026",
+    "updated": "Última actualización: 22 de noviembre de 2026",
     "lead": "La versión corta, en cinco líneas. Las condiciones completas van debajo.",
     "appliesTo": "Se aplican a los diez juegos de Awesoon: Stack Snap, Loop Weaver, Tidy Tiles, Penny Loaf, Quick Trivia Blitz, Dodge Rush, Word Chain Dash, Color Match Frenzy, Knot Untangle y Bounce Blitz.",
     "short": [
-      "Los juegos se juegan sin conexión, de principio a fin. Solo los anuncios necesitan conexión.",
+      "Los juegos se juegan sin conexión, de principio a fin.",
       "No hay cuenta ni inicio de sesión.",
-      "No recopilamos nada nosotros mismos, salvo los correos que nos envías. El software publicitario de Google recopila datos de anuncios. La política de privacidad da el detalle y tus opciones.",
+      "No recopilamos nada nosotros mismos, salvo los correos que nos envías. La política de privacidad da el detalle.",
       "Los juegos se ofrecen tal cual, sin garantía.",
       "Escríbenos a la dirección que aparece al final de esta página. Una persona lee cada mensaje."
     ],
@@ -986,7 +988,7 @@
         "id": "ads",
         "h": "Anuncios",
         "p": [
-          "Los juegos contienen anuncios. Los sirve Google AdMob. Lo que se recopila, y cómo controlarlo, está en la política de privacidad."
+          "Las versiones actuales de los juegos no muestran publicidad. Si una versión futura la muestra, estas condiciones y la política de privacidad se actualizan antes de publicar esa versión."
         ]
       },
       {
@@ -1014,7 +1016,7 @@
         "id": "third",
         "h": "Otras condiciones",
         "p": [
-          "Al usar un juego también cumples las condiciones de los terceros de los que depende, como la tienda de tu dispositivo y Google AdMob."
+          "Al usar un juego también cumples las condiciones de la tienda de tu dispositivo."
         ]
       },
       {
@@ -1027,11 +1029,13 @@
     ],
     "contactH": "Contacto",
     "contactB": "Preguntas, quejas o reclamaciones sobre los juegos:",
-    "privacyLink": "Leer la política de privacidad de estos juegos"
+    "privacyLink": "Leer la política de privacidad de estos juegos",
+    "towerDraftNote": "¿Juegas a Tower Draft? Tiene sus propias condiciones de uso, en inglés.",
+    "towerDraftLink": "Leer las condiciones de uso de Tower Draft"
   },
   "gamesPrivacyV1": {
     "title": "Política de privacidad, juegos de Awesoon, versión 1",
-    "updated": "Última actualización: 23 de septiembre de 2026",
+    "updated": "Última actualización: 22 de noviembre de 2026",
     "lead": "Estos juegos no recopilan ningún dato personal.",
     "appliesTo": "Se aplica a los diez juegos de Awesoon: Stack Snap, Loop Weaver, Tidy Tiles, Penny Loaf, Quick Trivia Blitz, Dodge Rush, Word Chain Dash, Color Match Frenzy, Knot Untangle y Bounce Blitz.",
     "note": "Esta es la versión 1 de la política. Se aplicaba a las versiones de los juegos anteriores a 1.1.0, que no muestran anuncios. La versión 2 la sustituye.",
@@ -1062,7 +1066,7 @@
         "id": "children",
         "h": "Menores",
         "p": [
-          "Estos juegos no están dirigidos a menores de 13 años y, como no recopilan nada, no conservan datos de nadie, sea cual sea su edad."
+          "Como estos juegos no recopilan nada, no conservan datos de nadie, sea cual sea su edad."
         ]
       },
       {
@@ -1075,7 +1079,9 @@
     ],
     "contactH": "Contacto",
     "contactB": "Preguntas sobre esta política:",
-    "currentLink": "Leer la versión 2, la política vigente"
+    "currentLink": "Leer la versión 2, la política vigente",
+    "towerDraftNote": "¿Juegas a Tower Draft? Tiene su propia política de privacidad, en inglés.",
+    "towerDraftLink": "Leer la política de privacidad de Tower Draft"
   },
   "serviceLines": {
     "consultation": {

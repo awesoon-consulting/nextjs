@@ -40,7 +40,13 @@ export default async function GamesSupportPage({
       <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
         <h1 className="font-heading font-bold text-4xl text-text-primary mb-2">{t('title')}</h1>
         <p className="text-lg text-text-secondary mb-2">{t('lead')}</p>
-        <p className="text-sm text-text-muted mb-12">{t('appliesTo')}</p>
+        <p className="text-sm text-text-muted">{t('appliesTo')}</p>
+        <p className="mt-2 mb-12 text-sm text-text-muted">
+          {t('towerDraftNote')}{' '}
+          <Link href={`/${locale}/games/tower-draft/support`} className="text-[#7D9CCB] underline underline-offset-4 hover:text-[#FAFAFA]">
+            {t('towerDraftLink')}
+          </Link>
+        </p>
 
         <div className="prose prose-neutral max-w-none space-y-10 text-text-secondary">
           <section aria-labelledby="games-support-contact">

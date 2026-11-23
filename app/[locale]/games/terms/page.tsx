@@ -50,6 +50,12 @@ export default async function GamesTermsPage({
             </ol>
             <p className="mt-3 text-sm text-text-muted">{t('precedence')}</p>
             <p className="mt-3 text-sm text-text-muted">{t('appliesTo')}</p>
+            <p className="mt-3 text-sm text-text-muted">
+              {t('towerDraftNote')}{' '}
+              <Link href={`/${locale}/games/tower-draft/terms`} className="text-[#7D9CCB] underline underline-offset-4 hover:text-[#FAFAFA]">
+                {t('towerDraftLink')}
+              </Link>
+            </p>
           </section>
 
           <LegalSections sections={sections} idPrefix="games-terms" />

@@ -23,6 +23,12 @@ export async function PrivacyV1({ locale, isCurrent }: { locale: string; isCurre
             <p className="text-lg text-text-primary font-semibold">{t('lead')}</p>
             <p className="mt-3">{t('intro')}</p>
             <p className="mt-3 text-sm text-text-muted">{t('appliesTo')}</p>
+            <p className="mt-3 text-sm text-text-muted">
+              {t('towerDraftNote')}{' '}
+              <Link href={`/${locale}/games/tower-draft/privacy`} className="text-[#7D9CCB] underline underline-offset-4 hover:text-[#FAFAFA]">
+                {t('towerDraftLink')}
+              </Link>
+            </p>
             {!isCurrent && (
               <>
                 <p className="mt-3 text-sm text-text-muted">{t('note')}</p>
