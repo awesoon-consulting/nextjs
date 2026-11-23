@@ -22,7 +22,11 @@ const nextConfig: NextConfig = {
     ],
   },
   async redirects() {
-    return solutionRedirects()
+    const towerDraftPages = ['privacy', 'support'].flatMap((page) => [
+      { source: `/games/tower-draft/${page}`, destination: `/en/games/${page}`, permanent: true },
+      { source: `/:locale(en|fr|es)/games/tower-draft/${page}`, destination: `/:locale/games/${page}`, permanent: true },
+    ])
+    return [...solutionRedirects(), ...towerDraftPages]
   },
   // The Tower Draft web taster is a static Expo export in public/play/tower-draft, served without a locale.
   async rewrites() {
