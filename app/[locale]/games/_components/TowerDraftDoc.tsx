@@ -4,7 +4,7 @@ import { getTranslations, setRequestLocale } from 'next-intl/server'
 import { siteConfig } from '@/src/config/site'
 import { LegalSections, type LegalSection } from './LegalSections'
 
-type Doc = 'home' | 'privacy' | 'support' | 'terms'
+type Doc = 'privacy' | 'support' | 'terms'
 
 const link = 'text-[#7D9CCB] underline underline-offset-4 hover:text-[#FAFAFA]'
 
@@ -34,9 +34,8 @@ export async function TowerDraftDoc({ doc, locale }: { doc: Doc; locale: string 
         <div className="prose prose-neutral max-w-none space-y-10 text-text-secondary">
           <section>
             <p className="text-lg text-text-primary font-semibold">{t('lead')}</p>
-            {doc === 'home' ? <p className="mt-3">{t('play')}</p> : null}
             {doc === 'privacy' ? <p className="mt-3">{t('intro')}</p> : null}
-            {doc !== 'home' ? <p className="mt-3 text-sm text-text-muted">{t('appliesTo')}</p> : null}
+            <p className="mt-3 text-sm text-text-muted">{t('appliesTo')}</p>
             {doc === 'terms' ? (
               <>
                 <ul className="mt-3 list-disc pl-5">
@@ -67,52 +66,33 @@ export async function TowerDraftDoc({ doc, locale }: { doc: Doc; locale: string 
             </section>
           ) : null}
 
-          {doc === 'home' ? (
-            <section aria-labelledby="td-home-links">
-              <h2 id="td-home-links" className="font-heading font-bold text-2xl text-text-primary mb-4">
-                {t('linksH')}
-              </h2>
-              <ul className="space-y-2">
-                {(['privacy', 'support', 'terms'] as const).map((p) => (
-                  <li key={p}>
-                    <Link href={`${base}/${p}`} className={link}>
-                      {t(`${p}Link`)}
-                    </Link>
-                  </li>
-                ))}
-              </ul>
+          <section aria-labelledby={`td-${doc}-contact`}>
+            <h2 id={`td-${doc}-contact`} className="font-heading font-bold text-2xl text-text-primary mb-4">
+              {t('contactH')}
+            </h2>
+            <p>
+              {t('contactB')} {email}
+            </p>
+          </section>
+          {doc === 'support' ? (
+            <section>
+              <p>
+                <Link href={`${base}/privacy`} className={link}>
+                  {t('privacyLink')}
+                </Link>
+              </p>
+              <p className="mt-3">
+                <Link href={`${base}/terms`} className={link}>
+                  {t('termsLink')}
+                </Link>
+              </p>
             </section>
           ) : (
-            <>
-              <section aria-labelledby={`td-${doc}-contact`}>
-                <h2 id={`td-${doc}-contact`} className="font-heading font-bold text-2xl text-text-primary mb-4">
-                  {t('contactH')}
-                </h2>
-                <p>
-                  {t('contactB')} {email}
-                </p>
-              </section>
-              {doc === 'support' ? (
-                <section>
-                  <p>
-                    <Link href={`${base}/privacy`} className={link}>
-                      {t('privacyLink')}
-                    </Link>
-                  </p>
-                  <p className="mt-3">
-                    <Link href={`${base}/terms`} className={link}>
-                      {t('termsLink')}
-                    </Link>
-                  </p>
-                </section>
-              ) : (
-                <p>
-                  <Link href={`${base}/${doc === 'privacy' ? 'terms' : 'privacy'}`} className={link}>
-                    {t(doc === 'privacy' ? 'termsLink' : 'privacyLink')}
-                  </Link>
-                </p>
-              )}
-            </>
+            <p>
+              <Link href={`${base}/${doc === 'privacy' ? 'terms' : 'privacy'}`} className={link}>
+                {t(doc === 'privacy' ? 'termsLink' : 'privacyLink')}
+              </Link>
+            </p>
           )}
         </div>
       </div>

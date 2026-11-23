@@ -3104,21 +3104,12 @@
     }
   },
   "towerDraftLegal": {
-    "home": {
-      "title": "Tower Draft",
-      "lead": "Tower Draft is a building game for iPhone and Android phones. You draft homes and bridges, test them against wind and weight, and grow a small town.",
-      "play": "It plays offline, with no account and no sign-up.",
-      "linksH": "About this game",
-      "privacyLink": "Privacy policy",
-      "supportLink": "Support",
-      "termsLink": "Terms of use"
-    },
     "privacy": {
       "title": "Privacy policy, Tower Draft",
       "updated": "Last updated 22 November 2026",
       "lead": "Tower Draft does not collect personal data.",
-      "intro": "The game runs on your phone. There is no account, no sign-in, no ads and no analytics. Your town, your progress and your settings are saved on your phone, and they are never sent to us or to anyone else.",
-      "appliesTo": "Applies to Tower Draft 2.0.0 on iPhone and Android. This page is in English.",
+      "intro": "The game runs on your phone. There is no account and no sign-in. This version shows no advertising and has no analytics. What you make and choose in the game is saved on your phone, and it is never sent to us or to anyone else.",
+      "appliesTo": "Applies to Tower Draft 2.0.0 on iPhone and Android, made by Awesoon Technologies. This page is in English.",
       "sections": [
         {
           "id": "collect",
@@ -3128,59 +3119,83 @@
           ]
         },
         {
+          "id": "on-phone",
+          "h": "What stays on your phone",
+          "p": [
+            "The game saves these on your phone only: your town, your progress and coins, your builder name, your settings and your age group. We cannot see any of them."
+          ]
+        },
+        {
           "id": "age",
           "h": "The age question",
           "p": [
-            "The first time you play, Tower Draft asks how old you are, and you tap an age. It is saved on your phone as a group (under 13, 13 to 17, or 18 and over), never as a birthday, and it is never sent to us. The game uses the group to decide which features appear. Players of every age can play the whole game."
+            "The first time you play, Tower Draft asks you to tap your age. It keeps only a group: under 13, 13 to 17, or 18 and over. It does not ask for a birthday, and the group is never sent to us.",
+            "The group changes a few small things. For example, players under 13 pick a builder name from a list. Players 13 and over may type one, and the game turns away emails, web links, phone numbers and names that look like a real full name. Players of every age can play the whole game."
           ]
         },
         {
           "id": "shared",
           "h": "Other Awesoon apps on your phone",
           "p": [
-            "Your town is saved in a folder that other Awesoon apps on the same phone can read, so a town can be shared between them. The folder stays on your phone."
+            "Your town is saved in a folder on your phone that other Awesoon apps can also open, so a town can be shared between them. The folder stays on your phone. Nothing in it is sent to us."
           ]
         },
         {
           "id": "reminders",
           "h": "Reminders",
           "p": [
-            "If you say yes, Tower Draft sets reminders on your phone, for example when a building is finished. They come from your phone, not from a server of ours. You can turn them off in the game's Settings or in your phone's settings."
+            "If you say yes, Tower Draft sets reminders on your phone, for example when a home is finished or a new stack is ready. Your phone makes them. They do not come from a server of ours. You can turn them off with Morning bell in the game's Settings, or in your phone's settings."
           ]
         },
         {
           "id": "purchases",
           "h": "Purchases",
           "p": [
-            "This version of Tower Draft does not sell anything. If a future version does, the store handles the payment, we never see your card details, and this page is updated before that version is released."
+            "This version does not sell anything. When the game opens, it asks the App Store or Google Play if any items are for sale. None are. That check is between your phone and the store, and it sends nothing to us.",
+            "If a future version sells items, the store takes the payment and we never see your card details. This page is updated before that version is released."
           ]
         },
         {
           "id": "ads",
           "h": "Advertising",
           "p": [
-            "This version shows no advertising. If a future version does, this page is updated before that version is released, and the update names the advertising provider and what it collects."
+            "This version shows no advertising. If a future version shows ads, this page is updated before that version is released, and the update names the ad company and what it collects."
           ]
         },
         {
           "id": "links",
           "h": "Links to our website",
           "p": [
-            "The Privacy and Update buttons open our website in your phone's browser. The website has its own privacy and cookie notices."
+            "The Privacy and Update buttons open our website in your phone's browser. The website has its own privacy policy and cookie notice."
+          ]
+        },
+        {
+          "id": "backups",
+          "h": "Phone backups",
+          "p": [
+            "Your phone may copy the game's saved data into your own backup. On Android this is the backup to your Google account. On iPhone it is your iCloud or computer backup. Google and Apple run these backups under your settings. They are not sent to us."
           ]
         },
         {
           "id": "delete",
           "h": "Deleting your data",
           "p": [
-            "Everything is on your phone. Choose Erase Tower Draft data in Settings, or delete the app, and it is gone. Apple or Google may keep a copy in your own phone backup, which you control in your phone's settings."
+            "To delete everything, choose Erase Tower Draft data in Settings, or delete the app. If another Awesoon app on your phone uses your town, it forgets it the next time it opens.",
+            "A copy may stay in your own phone backup until that backup is replaced. If you delete the app and install it again, your phone may bring your town back from that backup. You can delete the backup in your phone's settings."
+          ]
+        },
+        {
+          "id": "email",
+          "h": "If you write to us",
+          "p": [
+            "If you email us, we get your email address and your message. We use them only to answer you."
           ]
         },
         {
           "id": "children",
           "h": "Children",
           "p": [
-            "Players of every age can play Tower Draft. Because it collects nothing, we hold no data about anyone of any age."
+            "Players of every age can play Tower Draft. The game does not ask anyone for a real name, a birthday, an email address, a photo or a location, and it sends nothing to us. So we hold no game data about any player of any age. A parent or guardian with a question can write to us at the address below."
           ]
         },
         {
@@ -3203,7 +3218,11 @@
       "faqs": [
         {
           "q": "My town disappeared.",
-          "a": "Your town is saved on your phone only. Deleting the app, or setting up a new phone without restoring a phone backup that includes the app, clears it."
+          "a": "Your town is saved on your phone only. It is cleared if you erase it in Settings, delete the app, or set up a new phone without restoring a phone backup that has the game in it."
+        },
+        {
+          "q": "Can I move my town to a new phone?",
+          "a": "Your phone's own backup may bring it across when you restore that backup on the new phone. There is no account in this version."
         },
         {
           "q": "Does Tower Draft need an internet connection?",
@@ -3211,7 +3230,7 @@
         },
         {
           "q": "Is there an account?",
-          "a": "No. There is no sign-in and nothing of yours is uploaded by us."
+          "a": "No. There is no sign-in, and we do not upload anything of yours."
         },
         {
           "q": "How do I start fresh?",
@@ -3219,11 +3238,11 @@
         },
         {
           "q": "Does Tower Draft show ads or sell anything?",
-          "a": "This version shows no advertising and sells nothing. Tower Draft is a free download."
+          "a": "This version shows no advertising and sells nothing. Tower Draft is free to download."
         },
         {
           "q": "How do I turn reminders off?",
-          "a": "Open Settings in the game and switch reminders off, or turn off notifications for Tower Draft in your phone's settings."
+          "a": "Open Settings in the game and turn off Morning bell, or turn off notifications for Tower Draft in your phone's settings."
         }
       ],
       "contactH": "Contact",
