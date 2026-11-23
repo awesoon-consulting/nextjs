@@ -3102,5 +3102,65 @@
       "progress": "Step {n} of {total}",
       "moves": "It moves with you when you change brokerages."
     }
+  },
+  "towerDraft": {
+    "metaTitle": "Tower Draft, a building game for iPhone and Android",
+    "metaDescription": "Draw homes, towers and bridges with your thumb, then test them. Strong builds earn stars. Weak ones fall, and you try again. Plays offline, no sign-up.",
+    "eyebrow": "A building game for iPhone and Android",
+    "tagline": "Draw it. Test it. Grow a town.",
+    "lead": "Draw homes, towers and bridges with your thumb, then test them. Strong builds earn stars. Weak ones fall, and you try again.",
+    "play": "Play in your browser",
+    "playNote": "The first jobs, free in your browser. No sign-up.",
+    "facts": [
+      "Plays offline",
+      "No sign-up",
+      "Free to download"
+    ],
+    "videoLabel": "Tower Draft gameplay: a bridge breaks, gets fixed and holds a train, then roads and a town grow.",
+    "pause": "Pause video",
+    "resume": "Play video",
+    "stepsTitle": "How it plays",
+    "steps": [
+      {
+        "title": "Draw and test",
+        "body": "Draw each beam dot to dot, then tap Test. Weak builds fall, and you try again."
+      },
+      {
+        "title": "Lay roads",
+        "body": "Draw roads with one finger. People move into the homes beside them."
+      },
+      {
+        "title": "Grow a town",
+        "body": "Homes, towers and bridges fill your town, one job at a time."
+      },
+      {
+        "title": "See what is next",
+        "body": "Your path shows the next job and who it is for."
+      }
+    ],
+    "shots": [
+      "A bridge with a weak post bends and falls into the river.",
+      "A road drawn with one finger through new building plots.",
+      "A town of homes and towers beside a river.",
+      "The path of jobs ahead, from towers to roofs."
+    ],
+    "tryTitle": "Try the first jobs now",
+    "tryBody": "Build, test and look at your town right here. Your town stays in this browser only. The whole game is on the phone.",
+    "tryButton": "Start playing",
+    "tryFull": "Open full screen",
+    "frameTitle": "Tower Draft, playable in the browser",
+    "getTitle": "Get Tower Draft",
+    "getBody": "Free to download on iPhone and Android.",
+    "appStore": "App Store",
+    "googlePlay": "Google Play",
+    "coming": "Coming November 30",
+    "appStoreBadge": "Download Tower Draft on the App Store",
+    "googlePlayBadge": "Get Tower Draft on Google Play",
+    "privacy": "Privacy",
+    "terms": "Terms",
+    "support": "Support",
+    "publisher": "Made by Awesoon Technologies Inc. in British Columbia, Canada.",
+    "storesLine": "On the App Store and Google Play, November 30.",
+    "heroArt": "A Tower Draft town: homes and towers beside a river, with roads and trees."
   }
 }

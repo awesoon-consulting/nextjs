@@ -36,7 +36,7 @@ export default function FloatingCTA() {
     }
   }, [pathname])
 
-  if (pathname.includes('/contact')) return null
+  if (pathname.includes('/contact') || pathname.includes('/games/tower-draft')) return null
   const visible = scrolled && blocked === 0
 
   return (
