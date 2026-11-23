@@ -185,9 +185,9 @@ export default async function TowerDraftPage({ params }: PageProps) {
           <p className="mt-4 text-lg text-[#EAF2FF]">{t('getBody')}</p>
           <div className="mt-8">{stores}</div>
           <nav aria-label="Tower Draft" className="mt-12 flex flex-wrap gap-x-6 gap-y-3 text-sm text-[#EAF2FF]">
-            <Link href={`/${locale}/games/privacy`} className="td-link">{t('privacy')}</Link>
-            <Link href={`/${locale}/games/terms`} className="td-link">{t('terms')}</Link>
-            <Link href={`/${locale}/games/support`} className="td-link">{t('support')}</Link>
+            <Link href={`/${locale}/games/tower-draft/privacy`} className="td-link">{t('privacy')}</Link>
+            <Link href={`/${locale}/games/tower-draft/terms`} className="td-link">{t('terms')}</Link>
+            <Link href={`/${locale}/games/tower-draft/support`} className="td-link">{t('support')}</Link>
           </nav>
           <p className="mt-6 text-sm text-[#BFD4EE]">{t('publisher')}</p>
         </div>
