@@ -1,0 +1,153 @@
+.td-page {
+  --td-navy: #0f3b73;
+  --td-blue: #134c98;
+  --td-paper: #eaf2ff;
+  --td-sky: #bfd4ee;
+  --td-gold: #ffc14d;
+  --td-gold-edge: #c9821f;
+  font-family: var(--font-td-body), system-ui, sans-serif;
+  color: var(--td-paper);
+  background-color: var(--td-blue);
+}
+
+.td-sheet {
+  background-color: var(--td-blue);
+  background-image:
+    linear-gradient(rgba(255, 255, 255, 0.09) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255, 255, 255, 0.09) 1px, transparent 1px),
+    linear-gradient(rgba(255, 255, 255, 0.04) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255, 255, 255, 0.04) 1px, transparent 1px);
+  background-size: 96px 96px, 96px 96px, 24px 24px, 24px 24px;
+  background-position: -1px -1px;
+}
+
+.td-deep {
+  background-color: var(--td-navy);
+}
+
+.td-head {
+  font-family: var(--font-td-head), system-ui, sans-serif;
+  letter-spacing: -0.01em;
+}
+
+.td-mono {
+  font-family: ui-monospace, 'SF Mono', Menlo, Consolas, monospace;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+/* A dimension line, the drafting mark under each heading. */
+.td-dim {
+  position: relative;
+  height: 12px;
+  border-bottom: 1.5px solid rgba(234, 242, 255, 0.55);
+}
+.td-dim::before,
+.td-dim::after {
+  content: '';
+  position: absolute;
+  bottom: -5px;
+  width: 1.5px;
+  height: 10px;
+  background: rgba(234, 242, 255, 0.55);
+}
+.td-dim::before {
+  left: 0;
+}
+.td-dim::after {
+  right: 0;
+}
+
+.td-gold {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  min-height: 48px;
+  color: var(--td-navy);
+  font-weight: 700;
+  background: linear-gradient(#ffd36e, #ffb23e);
+  box-shadow: 0 4px 0 var(--td-gold-edge), 0 10px 24px rgba(6, 36, 79, 0.35);
+  transition: transform 120ms ease, box-shadow 120ms ease;
+}
+.td-gold:hover {
+  transform: translateY(-1px);
+}
+.td-gold:active {
+  transform: translateY(3px);
+  box-shadow: 0 1px 0 var(--td-gold-edge), 0 4px 10px rgba(6, 36, 79, 0.35);
+}
+.td-gold:focus-visible {
+  outline: 3px solid var(--td-paper);
+  outline-offset: 3px;
+}
+
+.td-phone {
+  padding: 8px;
+  border-radius: 2.1rem;
+  background: var(--td-navy);
+  box-shadow:
+    0 0 0 1.5px rgba(234, 242, 255, 0.35),
+    0 30px 60px rgba(3, 20, 48, 0.55);
+}
+
+.td-store {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  min-height: 56px;
+  padding: 0.6rem 1.1rem 0.6rem 0.9rem;
+  border-radius: 14px;
+  border: 1.5px solid rgba(234, 242, 255, 0.45);
+  background: rgba(15, 59, 115, 0.55);
+}
+
+.td-shots {
+  scroll-snap-type: x mandatory;
+  scrollbar-width: none;
+}
+.td-shots::-webkit-scrollbar {
+  display: none;
+}
+.td-shots > li {
+  scroll-snap-align: center;
+}
+
+.td-link {
+  border-radius: 4px;
+  text-decoration: underline;
+  text-decoration-color: rgba(255, 193, 77, 0.8);
+  text-decoration-thickness: 2px;
+  text-underline-offset: 4px;
+}
+.td-link:hover {
+  color: #fff;
+}
+.td-link:focus-visible {
+  outline: 2px solid var(--td-gold);
+  outline-offset: 2px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .td-gold {
+    transition: none;
+  }
+}
+
+/* The town art sits on top of the phone hero and to the right on wide screens, fading into the sheet. */
+.td-hero-art {
+  position: absolute;
+  inset: 0 0 auto 0;
+  height: 96vw;
+  -webkit-mask-image: linear-gradient(to bottom, #000 55%, transparent 100%);
+  mask-image: linear-gradient(to bottom, #000 55%, transparent 100%);
+}
+@media (min-width: 768px) {
+  .td-hero-art {
+    inset: 0 0 0 auto;
+    width: 62%;
+    height: 100%;
+    -webkit-mask-image: linear-gradient(to right, transparent 0%, #000 40%);
+    mask-image: linear-gradient(to right, transparent 0%, #000 40%);
+  }
+}

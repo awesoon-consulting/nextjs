@@ -3309,5 +3309,65 @@
       "contactB": "Questions, complaints or claims about Tower Draft:",
       "privacyLink": "Read the privacy policy for Tower Draft"
     }
+  },
+  "towerDraft": {
+    "metaTitle": "Tower Draft, un jeu de construction pour iPhone et Android",
+    "metaDescription": "Dessinez des maisons, des tours et des ponts du pouce, puis testez-les. Les constructions solides gagnent des étoiles. Les faibles tombent, et vous recommencez. Fonctionne hors ligne, sans inscription.",
+    "eyebrow": "Un jeu de construction pour iPhone et Android",
+    "tagline": "Dessinez. Testez. Faites grandir une ville.",
+    "lead": "Dessinez des maisons, des tours et des ponts du pouce, puis testez-les. Les constructions solides gagnent des étoiles. Les faibles tombent, et vous recommencez.",
+    "play": "Jouer dans le navigateur",
+    "playNote": "Les premiers chantiers, gratuits dans votre navigateur. Sans inscription.",
+    "facts": [
+      "Fonctionne hors ligne",
+      "Sans inscription",
+      "Téléchargement gratuit"
+    ],
+    "videoLabel": "Tower Draft en jeu : un pont casse, il est réparé et porte un train, puis des routes et une ville grandissent.",
+    "pause": "Mettre la vidéo en pause",
+    "resume": "Lire la vidéo",
+    "stepsTitle": "Comment on joue",
+    "steps": [
+      {
+        "title": "Dessiner et tester",
+        "body": "Tracez chaque poutre point par point, puis touchez Test. Les constructions faibles tombent, et vous recommencez."
+      },
+      {
+        "title": "Tracer des routes",
+        "body": "Tracez des routes d’un doigt. Des gens emménagent dans les maisons voisines."
+      },
+      {
+        "title": "Faire grandir la ville",
+        "body": "Maisons, tours et ponts remplissent votre ville, un chantier à la fois."
+      },
+      {
+        "title": "Voir la suite",
+        "body": "Votre chemin montre le prochain chantier et pour qui il est."
+      }
+    ],
+    "shots": [
+      "Un pont avec un pilier faible plie et tombe dans la rivière.",
+      "Une route tracée d’un doigt entre de nouveaux terrains.",
+      "Une ville de maisons et de tours au bord d’une rivière.",
+      "Le chemin des prochains chantiers, des tours aux toits."
+    ],
+    "tryTitle": "Essayez les premiers chantiers",
+    "tryBody": "Construisez, testez et regardez votre ville ici même. Votre ville reste dans ce navigateur seulement. Le jeu complet est sur le téléphone.",
+    "tryButton": "Commencer",
+    "tryFull": "Ouvrir en plein écran",
+    "frameTitle": "Tower Draft, jouable dans le navigateur",
+    "getTitle": "Obtenir Tower Draft",
+    "getBody": "Téléchargement gratuit sur iPhone et Android.",
+    "appStore": "App Store",
+    "googlePlay": "Google Play",
+    "coming": "Disponible le 30 novembre",
+    "appStoreBadge": "Télécharger Tower Draft dans l’App Store",
+    "googlePlayBadge": "Obtenir Tower Draft sur Google Play",
+    "privacy": "Confidentialité",
+    "terms": "Conditions",
+    "support": "Aide",
+    "publisher": "Créé par Awesoon Technologies Inc. en Colombie-Britannique, Canada.",
+    "storesLine": "Sur l’App Store et Google Play, le 30 novembre.",
+    "heroArt": "Une ville de Tower Draft : maisons et tours au bord d’une rivière, avec routes et arbres."
   }
 }
