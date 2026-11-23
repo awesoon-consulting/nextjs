@@ -3102,5 +3102,211 @@
       "progress": "Step {n} of {total}",
       "moves": "It moves with you when you change brokerages."
     }
+  },
+  "towerDraftLegal": {
+    "home": {
+      "title": "Tower Draft",
+      "lead": "Tower Draft is a building game for iPhone and Android phones. You draft homes and bridges, test them against wind and weight, and grow a small town.",
+      "play": "It plays offline, with no account and no sign-up.",
+      "linksH": "About this game",
+      "privacyLink": "Privacy policy",
+      "supportLink": "Support",
+      "termsLink": "Terms of use"
+    },
+    "privacy": {
+      "title": "Privacy policy, Tower Draft",
+      "updated": "Last updated 22 November 2026",
+      "lead": "Tower Draft does not collect personal data.",
+      "intro": "The game runs on your phone. There is no account, no sign-in, no ads and no analytics. Your town, your progress and your settings are saved on your phone, and they are never sent to us or to anyone else.",
+      "appliesTo": "Applies to Tower Draft 2.0.0 on iPhone and Android. This page is in English.",
+      "sections": [
+        {
+          "id": "collect",
+          "h": "What we collect",
+          "p": [
+            "Nothing. We do not collect your name, email address, contacts, location, photos, device identifiers or usage data. Nothing you do in Tower Draft is sent to us."
+          ]
+        },
+        {
+          "id": "age",
+          "h": "The age question",
+          "p": [
+            "The first time you play, Tower Draft asks how old you are, and you tap an age. It is saved on your phone as a group (under 13, 13 to 17, or 18 and over), never as a birthday, and it is never sent to us. The game uses the group to decide which features appear. Players of every age can play the whole game."
+          ]
+        },
+        {
+          "id": "shared",
+          "h": "Other Awesoon apps on your phone",
+          "p": [
+            "Your town is saved in a folder that other Awesoon apps on the same phone can read, so a town can be shared between them. The folder stays on your phone."
+          ]
+        },
+        {
+          "id": "reminders",
+          "h": "Reminders",
+          "p": [
+            "If you say yes, Tower Draft sets reminders on your phone, for example when a building is finished. They come from your phone, not from a server of ours. You can turn them off in the game's Settings or in your phone's settings."
+          ]
+        },
+        {
+          "id": "purchases",
+          "h": "Purchases",
+          "p": [
+            "This version of Tower Draft does not sell anything. If a future version does, the store handles the payment, we never see your card details, and this page is updated before that version is released."
+          ]
+        },
+        {
+          "id": "ads",
+          "h": "Advertising",
+          "p": [
+            "This version shows no advertising. If a future version does, this page is updated before that version is released, and the update names the advertising provider and what it collects."
+          ]
+        },
+        {
+          "id": "links",
+          "h": "Links to our website",
+          "p": [
+            "The Privacy and Update buttons open our website in your phone's browser. The website has its own privacy and cookie notices."
+          ]
+        },
+        {
+          "id": "delete",
+          "h": "Deleting your data",
+          "p": [
+            "Everything is on your phone. Choose Erase Tower Draft data in Settings, or delete the app, and it is gone. Apple or Google may keep a copy in your own phone backup, which you control in your phone's settings."
+          ]
+        },
+        {
+          "id": "children",
+          "h": "Children",
+          "p": [
+            "Players of every age can play Tower Draft. Because it collects nothing, we hold no data about anyone of any age."
+          ]
+        },
+        {
+          "id": "changes",
+          "h": "Changes",
+          "p": [
+            "If this policy changes, the new version is posted on this page with a new date above, and the old version stays posted at its own address."
+          ]
+        }
+      ],
+      "contactH": "Contact",
+      "contactB": "Questions about this policy:",
+      "termsLink": "Read the terms of use for Tower Draft"
+    },
+    "support": {
+      "title": "Support, Tower Draft",
+      "lead": "Write to us about Tower Draft and a person reads it.",
+      "appliesTo": "Covers Tower Draft 2.0.0. This page is in English.",
+      "faqH": "Common questions",
+      "faqs": [
+        {
+          "q": "My town disappeared.",
+          "a": "Your town is saved on your phone only. Deleting the app, or setting up a new phone without restoring a phone backup that includes the app, clears it."
+        },
+        {
+          "q": "Does Tower Draft need an internet connection?",
+          "a": "No. It plays offline, start to finish."
+        },
+        {
+          "q": "Is there an account?",
+          "a": "No. There is no sign-in and nothing of yours is uploaded by us."
+        },
+        {
+          "q": "How do I start fresh?",
+          "a": "Open Settings and choose Erase Tower Draft data. This removes your town and settings from your phone."
+        },
+        {
+          "q": "Does Tower Draft show ads or sell anything?",
+          "a": "This version shows no advertising and sells nothing. Tower Draft is a free download."
+        },
+        {
+          "q": "How do I turn reminders off?",
+          "a": "Open Settings in the game and switch reminders off, or turn off notifications for Tower Draft in your phone's settings."
+        }
+      ],
+      "contactH": "Contact",
+      "contactB": "Questions, bugs or a game that will not start:",
+      "privacyH": "Privacy",
+      "privacyLink": "Read the privacy policy for Tower Draft",
+      "termsH": "Terms",
+      "termsLink": "Read the terms of use for Tower Draft"
+    },
+    "terms": {
+      "title": "Terms of use, Tower Draft",
+      "updated": "Last updated 22 November 2026",
+      "lead": "The short version, in five lines. The full terms are below.",
+      "appliesTo": "Applies to Tower Draft 2.0.0 on iPhone and Android. This page is in English.",
+      "short": [
+        "Tower Draft plays offline, start to finish.",
+        "There is no account and no sign-in.",
+        "We collect nothing ourselves except the emails you send us. The privacy policy has the detail.",
+        "The game is provided as it is, with no warranty.",
+        "Write to us at the address at the bottom of this page. A person reads every message."
+      ],
+      "precedence": "If these five lines and the terms below differ, the terms below govern.",
+      "sections": [
+        {
+          "id": "who",
+          "h": "Who we are",
+          "p": [
+            "Tower Draft is published by Awesoon Technologies Inc., a company in British Columbia, Canada, trading as Awesoon Technologies. In these terms, \"we\" means that company."
+          ]
+        },
+        {
+          "id": "licence",
+          "h": "Your licence",
+          "p": [
+            "We give you a personal, non-transferable licence to use Tower Draft on your own devices. You may not copy, sell, redistribute or sublicense it, or take it apart to get at its code. We keep every right we have not given you here."
+          ]
+        },
+        {
+          "id": "coins",
+          "h": "Coins",
+          "p": [
+            "Coins in Tower Draft are game items. They have no cash value and cannot be exchanged for money."
+          ]
+        },
+        {
+          "id": "asis",
+          "h": "As is",
+          "p": [
+            "Tower Draft is provided \"as is\" and \"as available\", with no warranty of any kind, to the fullest extent the law allows. You use it at your own risk."
+          ]
+        },
+        {
+          "id": "liability",
+          "h": "Limit of liability",
+          "p": [
+            "To the fullest extent the law allows, we are not liable for personal injury or for any incidental, special, indirect or consequential damages arising from your use of the game. Nothing in these terms limits a right the law does not allow to be limited."
+          ]
+        },
+        {
+          "id": "who-answers",
+          "h": "Who answers for what",
+          "p": [
+            "We answer for the game, support, claims about it, intellectual property and privacy. Apple and Google answer for payment, refunds and distribution through their stores. Apple's standard licence agreement also applies to the game if you get it from the App Store."
+          ]
+        },
+        {
+          "id": "third",
+          "h": "Other terms",
+          "p": [
+            "When you use Tower Draft you also follow the terms of your device's store."
+          ]
+        },
+        {
+          "id": "changes",
+          "h": "Changes",
+          "p": [
+            "If these terms change, the new version is posted on this page with a new date above, and the old version stays posted at its own address."
+          ]
+        }
+      ],
+      "contactH": "Contact",
+      "contactB": "Questions, complaints or claims about Tower Draft:",
+      "privacyLink": "Read the privacy policy for Tower Draft"
+    }
   }
 }
