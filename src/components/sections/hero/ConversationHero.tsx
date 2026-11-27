@@ -1,9 +1,9 @@
 'use client'
 
 import { useCallback, useEffect, useRef, useState, type FormEvent } from 'react'
+import CubeMark from '@/src/components/ui/CubeMark'
 import dynamic from 'next/dynamic'
 import Link from 'next/link'
-import Image from 'next/image'
 import { useLocale, useTranslations } from 'next-intl'
 import { getAssistantReply, type AssistantReplyKind } from '@/src/lib/assistant'
 
@@ -232,7 +232,7 @@ export default function ConversationHero() {
           <div ref={logRef} className="max-h-[440px] space-y-5 overflow-y-auto p-5 sm:p-7" role="log" aria-live="polite">
             {messages.map((m) => (
               <div key={m.id} className={`flex items-start gap-3 ${m.bot ? '' : 'justify-end'}`}>
-                {m.bot && <Image src="/images/awesoon-cube.png" alt="" width={28} height={28} className="mt-0.5 flex-shrink-0" />}
+                {m.bot && <CubeMark alt="" size={28} className="mt-0.5 flex-shrink-0" />}
                 <div className={m.bot ? 'max-w-[620px] min-w-0 flex-1' : 'max-w-[520px]'}>
                   <p
                     className={
@@ -282,7 +282,7 @@ export default function ConversationHero() {
             ))}
             {typing && (
               <div className="flex items-center gap-3" role="status" aria-label={t('typing')}>
-                <Image src="/images/awesoon-cube.png" alt="" width={28} height={28} />
+                <CubeMark alt="" size={28} />
                 <span className="flex gap-1">
                   {[0, 1, 2].map((i) => (
                     <span key={i} className="h-2 w-2 animate-pulse rounded-full bg-neutral-400" style={{ animationDelay: `${i * 150}ms` }} />

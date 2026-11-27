@@ -1,7 +1,7 @@
 'use client'
 
 import { useEffect, useRef, useState, type FormEvent } from 'react'
-import Image from 'next/image'
+import CubeMark from '@/src/components/ui/CubeMark'
 import Link from 'next/link'
 import { useLocale, useTranslations } from 'next-intl'
 import { getDesignAssistantReply, matchDesignNeed, type DesignNeed } from '@/src/lib/assistant'
@@ -198,7 +198,7 @@ export default function DesignHero() {
         <div ref={cardRef} id="design-assistant" className="scroll-mt-24 rounded-3xl border border-white/[0.08] bg-[#111827] shadow-[0_30px_80px_-30px_rgba(15,29,51,0.9)]">
           <div className="flex items-center justify-between gap-3 border-b border-white/[0.08] px-5 py-3.5">
             <div className="flex items-center gap-2.5">
-              <Image src="/images/awesoon-cube.png" alt="" width={24} height={24} />
+              <CubeMark alt="" size={24} />
               <p className="font-heading text-sm font-semibold text-white">{t('assistant.label')}</p>
             </div>
             {step > 0 && (

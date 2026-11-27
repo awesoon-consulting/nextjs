@@ -1,7 +1,7 @@
 'use client'
 
 import { useEffect, useRef, useState, type FormEvent } from 'react'
-import Image from 'next/image'
+import CubeMark from '@/src/components/ui/CubeMark'
 import Link from 'next/link'
 import { useLocale, useMessages, useTranslations } from 'next-intl'
 import { getGuidedReply } from '@/src/lib/assistant'
@@ -171,7 +171,7 @@ export default function AdHero() {
           <div ref={logRef} className="max-h-[440px] space-y-4 overflow-y-auto p-5 sm:p-6" role="log" aria-live="polite">
             {messages.map((m) => (
               <div key={m.id} className={`ad-msg flex items-start gap-3 ${m.bot ? '' : 'justify-end'}`}>
-                {m.bot && <Image src="/images/awesoon-cube.png" alt="" width={26} height={26} className="mt-0.5 flex-shrink-0" />}
+                {m.bot && <CubeMark alt="" size={26} className="mt-0.5 flex-shrink-0" />}
                 <div className={m.bot ? 'min-w-0 flex-1' : 'max-w-[85%]'}>
                   <p
                     className={
@@ -221,7 +221,7 @@ export default function AdHero() {
             ))}
             {typing && (
               <div className="flex items-center gap-3" role="status" aria-label={t('typing')}>
-                <Image src="/images/awesoon-cube.png" alt="" width={26} height={26} />
+                <CubeMark alt="" size={26} />
                 <span className="flex gap-1">
                   {[0, 1, 2].map((i) => (
                     <span key={i} className="h-2 w-2 animate-pulse rounded-full bg-neutral-400 motion-reduce:animate-none" style={{ animationDelay: `${i * 150}ms` }} />

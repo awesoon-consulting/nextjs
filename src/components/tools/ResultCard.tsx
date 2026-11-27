@@ -1,7 +1,7 @@
 'use client'
 
 import { useEffect, useId, useRef, useState, type FormEvent } from 'react'
-import Image from 'next/image'
+import CubeMark from '@/src/components/ui/CubeMark'
 import Link from 'next/link'
 import { useLocale, useTranslations } from 'next-intl'
 import { fieldClass, ghostBtn, primaryBtn } from './styles'
@@ -110,7 +110,7 @@ export default function ResultCard({ tool, toolName, summary, shareUrl }: { tool
           <div className="max-h-80 space-y-4 overflow-y-auto p-4" role="log" aria-live="polite">
             {chat.map((m) => (
               <div key={m.id} className={`tl-rise flex items-start gap-3 ${m.bot ? '' : 'justify-end'}`}>
-                {m.bot && <Image src="/images/awesoon-cube.png" alt="" width={24} height={24} className="mt-0.5 flex-shrink-0" />}
+                {m.bot && <CubeMark alt="" size={24} className="mt-0.5 flex-shrink-0" />}
                 <div className={m.bot ? 'min-w-0 flex-1' : 'max-w-[85%]'}>
                   <p className={m.bot ? 'text-[15px] leading-relaxed text-white' : 'rounded-[18px_18px_4px_18px] bg-white px-4 py-2.5 text-[15px] text-[#0A0A0A]'}>{m.text}</p>
                   {m.book && (

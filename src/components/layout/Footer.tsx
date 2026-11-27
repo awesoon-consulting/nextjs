@@ -1,5 +1,5 @@
 import Link from 'next/link'
-import Image from 'next/image'
+import CubeMark from '@/src/components/ui/CubeMark'
 import { useTranslations, useLocale } from 'next-intl'
 import { siteConfig } from '@/src/config/site'
 import { spokePath } from '@/src/data/hub-map'
@@ -65,7 +65,7 @@ export default function Footer() {
         <div className="grid grid-cols-1 gap-12 md:grid-cols-2 lg:grid-cols-12">
           <div className="lg:col-span-5">
             <Link href={localHref('')} className="inline-flex items-center gap-2 rounded-full focus:outline-none focus-visible:ring-2 focus-visible:ring-accent">
-              <Image src="/images/awesoon-cube.png" alt="" width={30} height={30} />
+              <CubeMark alt="" size={30} />
               <span className="font-heading text-xl font-bold lowercase">{siteConfig.name}</span>
             </Link>
             <p className="mt-4 max-w-xs text-sm leading-relaxed text-text-secondary dark:text-neutral-400">{t('footer.tagline')}</p>
