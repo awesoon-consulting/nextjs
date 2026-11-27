@@ -116,7 +116,7 @@ export default function Navbar() {
               className="flex items-center gap-2 rounded-full focus:outline-none focus-visible:ring-2 focus-visible:ring-accent"
               aria-label={t('nav.home')}
             >
-              <Image src="/images/retina-logo.png" alt="" width={26} height={26} className="flex-shrink-0" priority />
+              <Image src="/images/awesoon-cube.png" alt="" width={30} height={30} className="flex-shrink-0" priority />
               <span className="font-heading text-xl font-bold tracking-tight text-text-primary lowercase dark:text-white">
                 {siteConfig.name}
               </span>
@@ -254,7 +254,7 @@ export default function Navbar() {
         >
           <div className="flex items-center justify-between border-b border-neutral-200 px-5 py-4 dark:border-white/10">
             <span className="flex items-center gap-2 font-heading text-lg font-bold lowercase text-text-primary dark:text-white">
-              <Image src="/images/retina-logo.png" alt="" width={22} height={22} />
+              <Image src="/images/awesoon-cube.png" alt="" width={22} height={22} />
               {siteConfig.name}
             </span>
             <button onClick={() => setIsMobileMenuOpen(false)} aria-label={t('nav.closeMenu')} className={iconBtn}>

@@ -92,7 +92,7 @@ export default function GlossaryAssistant({ mode, topic }: { mode: Mode; topic: 
     <div id="ask" className="ps-rise scroll-mt-28 rounded-3xl border border-white/[0.08] bg-[#111827] shadow-[0_30px_80px_-30px_rgba(15,29,51,0.9)]">
       <div className="flex items-center justify-between gap-3 border-b border-white/10 px-5 py-3.5 sm:px-6">
         <div className="flex min-w-0 items-center gap-3">
-          <Image src="/images/retina-logo.png" alt="" width={28} height={28} className="flex-shrink-0" />
+          <Image src="/images/awesoon-cube.png" alt="" width={28} height={28} className="flex-shrink-0" />
           <div className="min-w-0">
             <p className="truncate text-sm font-semibold text-white">{label}</p>
             <p className="truncate text-xs text-neutral-400">{sub}</p>

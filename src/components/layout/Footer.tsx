@@ -65,7 +65,7 @@ export default function Footer() {
         <div className="grid grid-cols-1 gap-12 md:grid-cols-2 lg:grid-cols-12">
           <div className="lg:col-span-5">
             <Link href={localHref('')} className="inline-flex items-center gap-2 rounded-full focus:outline-none focus-visible:ring-2 focus-visible:ring-accent">
-              <Image src="/images/retina-logo.png" alt="" width={26} height={26} />
+              <Image src="/images/awesoon-cube.png" alt="" width={30} height={30} />
               <span className="font-heading text-xl font-bold lowercase">{siteConfig.name}</span>
             </Link>
             <p className="mt-4 max-w-xs text-sm leading-relaxed text-text-secondary dark:text-neutral-400">{t('footer.tagline')}</p>

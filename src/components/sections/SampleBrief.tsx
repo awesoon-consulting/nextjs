@@ -21,7 +21,7 @@ export default function SampleBrief() {
         <article className="mt-10 rounded-3xl border border-neutral-200 bg-white p-6 shadow-xl sm:p-8 dark:border-white/[0.08] dark:bg-[#111827]">
           <div className="flex flex-wrap items-center justify-between gap-3 border-b border-neutral-200 pb-4 dark:border-white/10">
             <span className="flex items-center gap-2 font-heading text-base font-semibold text-text-primary dark:text-white">
-              <Image src="/images/retina-logo.png" alt="" width={22} height={22} />
+              <Image src="/images/awesoon-cube.png" alt="" width={22} height={22} />
               {a('briefLabel')}
             </span>
             <span className="rounded-full bg-neutral-100 px-3 py-1 text-xs font-semibold text-text-secondary dark:bg-white/10 dark:text-neutral-300">{t('badge')}</span>
